@@ -1,2 +1,3 @@
-# Housing-Bottleneck-Mapper
-A tool that reads through thousands of public housing records and figures out exactly what’s causing housing project delays. putting it all on a map so anyone can see the patterns at a glance.
+# HAP-Project (Housing Accountability Pipeline Project)
+
+The Housing Accountability Pipeline (HAP) is an AI system developed for Rep. Jim Himes’s office to monitor whether the 21st Century ROAD to Housing Act is really building more homes in Connecticut’s 4th District. It works in five stages — assessing how restrictive zoning is, tracking permits approved and denied, clustering public hearing sentiment, predicting which towns are in danger of missing housing benchmarks, and checking real-world construction and demolition from satellite imagery — to turn disparate town-by-town data into monthly, source-linked reports. The idea is to provide the office with early, verifiable evidence of where the law is working, where it’s stalled, and why.
