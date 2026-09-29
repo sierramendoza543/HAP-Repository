@@ -1,0 +1,67 @@
+{
+  "jurisdiction": "Greenwich, Connecticut",
+  "document_name": "Town of Greenwich Building Zone Regulations",
+  "pdf_filename": "greenwich_building_zone_regulations_full_2023-08.pdf",
+  "source_url": "https://www.greenwichct.gov/442/Building-Zone-Regulations",
+  "document_version_date": "August 2023",
+  "date_retrieved": "2026-09-29",
+  "canonical_source": true,
+  "pdf_path_relative_to_stage_a": "data/raw/greenwich/greenwich_building_zone_regulations_full_2023-08.pdf",
+  "pdf_page_count": 313,
+  "pdf_size_mb": 4.115,
+  "sha256": "18417c5e9074d765ab4483571b9ac3d6aeb162b37b1b302f7a8ce1f13e963dcb",
+  "pdf_metadata": {
+    "format": "PDF 1.6",
+    "author": "Patrick LaRow",
+    "subject": "BUILDING ZONE REGULATIONS",
+    "creator": "Adobe Acrobat Pro 2017 17.12.30205",
+    "producer": "Adobe Acrobat Pro 2017 17.12.30205",
+    "creationDate": "D:20230802110515-04'00'",
+    "modDate": "D:20230802110515-04'00'"
+  },
+  "pipeline_run_timestamp_utc": "20260929T011503Z",
+  "quality_config": {
+    "weights": {
+      "text_coverage": 0.35,
+      "character_quality": 0.25,
+      "reading_order": 0.2,
+      "table_integrity": 0.2
+    },
+    "thresholds": {
+      "high_quality_native_threshold": 0.85,
+      "manual_review_threshold": 0.5
+    }
+  },
+  "module_config": {
+    "native_pdf_extraction": true,
+    "page_quality_scoring": true,
+    "targeted_ocr": false,
+    "dual_stream_reconciliation": false,
+    "hierarchy_tree_construction": false,
+    "district_anchor_detection": false,
+    "cross_reference_resolution": false,
+    "townwide_rule_library": false,
+    "structural_table_parsing": false,
+    "overlay_zone_separation": false,
+    "conflict_resolution": false,
+    "gis_polygon_join": false
+  },
+  "regex_patterns": {
+    "title": "^(title|chapter)\\s+[\\wivxlcdm]+",
+    "article": "^article\\s+[\\wivxlcdm]+",
+    "section": "^(section|sec\\.?|§)\\s*\\d+([.-]\\d+)*",
+    "subsection": "^(\\([a-z0-9]+\\)|\\d+\\.\\d+([.-]\\d+)*)",
+    "appendix": "^appendix\\s+[\\wivxlcdm]+",
+    "district_heading": "\\b(RA-\\d+|R-\\d+|B-[A-Z0-9-]+|CGB|CGBR|LB|GB|GBO|HO|CO|M[0-9A-Z-]*)\\b",
+    "citation": "(§\\s*\\d+([.-]\\d+)*(\\([a-z0-9]+\\))?)|(section\\s+\\d+([.-]\\d+)*)|(article\\s+[IVXLCDM]+(\\.[A-Z])?)"
+  },
+  "library_versions": {
+    "python": "3.12.0",
+    "operating_system": "macOS-26.5.1-arm64-arm-64bit",
+    "pandas": "3.0.6",
+    "pymupdf": "1.28.2",
+    "pdfplumber": "0.11.10",
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.3"
+  }
+}
