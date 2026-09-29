@@ -14,6 +14,7 @@ cffi==2.1.1
 charset-normalizer==3.5.1
 comm==0.2.3
 contourpy==1.4.0
+cramjam==2.12.1
 cryptography==50.0.1
 cycler==0.12.1
 debugpy==1.8.22
@@ -26,6 +27,7 @@ h11==0.16.0
 httpcore==1.0.9
 httpx==0.28.1
 idna==3.20
+ijson==3.5.1
 ipykernel==7.3.0
 ipython==9.17.1
 ipython_pygments_lexers==1.1.1
@@ -63,6 +65,7 @@ nest-asyncio2==1.7.3
 notebook==7.6.3
 notebook_shim==0.2.4
 numpy==2.5.3
+opencv-python==5.0.0.93
 packaging==26.3
 pandas==3.0.6
 pandocfilters==1.5.1
@@ -72,17 +75,19 @@ pdfplumber==0.11.10
 pexpect==4.9.0
 pillow==12.3.0
 platformdirs==4.12.1
+ply==3.11
 prometheus_client==0.26.0
 prompt_toolkit==3.0.53
 psutil==7.2.2
 ptyprocess==0.7.0
 pure_eval==0.2.4
-pyarrow>=22.0.0,<23.0.0
+pyarrow==22.0.0
 pycparser==3.0
 Pygments==2.21.0
 pymupdf==1.28.2
 pyparsing==3.3.3
 pypdfium2==5.13.0
+pytesseract==0.3.13
 python-dateutil==2.9.0.post0
 python-json-logger==4.2.0
 PyYAML==6.0.3
@@ -93,6 +98,7 @@ rfc3339-validator==0.1.4
 rfc3986-validator==0.1.1
 rfc3987-syntax==1.1.0
 rpds-py==2026.6.3
+scipy==1.18.1
 seaborn==0.13.2
 Send2Trash==2.1.0
 setuptools==75.8.0
@@ -111,4 +117,5 @@ wcwidth==0.9.1
 webcolors==25.10.0
 webencodings==0.6.1
 websocket-client==1.9.2
+wheel==0.48.0
 widgetsnbextension==4.0.16
