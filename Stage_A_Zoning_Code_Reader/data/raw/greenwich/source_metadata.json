@@ -4,7 +4,7 @@
   "pdf_filename": "greenwich_building_zone_regulations_full_2023-08.pdf",
   "source_url": "https://www.greenwichct.gov/442/Building-Zone-Regulations",
   "document_version_date": "August 2023",
-  "date_retrieved": "2026-09-30",
+  "date_retrieved": "2026-10-01",
   "canonical_source": true,
   "pdf_path_relative_to_stage_a": "data/raw/greenwich/greenwich_building_zone_regulations_full_2023-08.pdf",
   "pdf_page_count": 313,
@@ -19,7 +19,7 @@
     "creationDate": "D:20230802110515-04'00'",
     "modDate": "D:20230802110515-04'00'"
   },
-  "pipeline_run_timestamp_utc": "20260930T021558Z",
+  "pipeline_run_timestamp_utc": "20261001T024102Z",
   "quality_config": {
     "weights": {
       "text_coverage": 0.35,
