@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "comparative-index-v1",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8787", "--directory", "Stage_A_Zoning_Code_Reader/outputs/interactive/comparative_residential_regulation_index_v1"],
+      "port": 8787
+    }
+  ]
+}

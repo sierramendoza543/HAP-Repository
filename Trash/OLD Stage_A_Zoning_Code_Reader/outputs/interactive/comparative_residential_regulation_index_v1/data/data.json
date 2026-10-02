@@ -1,0 +1,3008 @@
+{
+  "meta": {
+    "title": "Scenario-Aware Comparative Residential Regulation Index",
+    "subtitle": "Greenwich RA-4 and Bridgeport Residential Building-Form Scenarios",
+    "version": "Version 1.0 \u2014 Source-Linked Pilot",
+    "warning": "Important: This is a source-linked, scenario-aware pilot comparison of selected residential regulatory constructs. It does not constitute a complete townwide zoning-restrictiveness ranking, statewide ranking, causal estimate of housing production, legal opinion, or conclusion that one municipality is universally more or less restrictive than the other.",
+    "freeze_file_hash": "97969cdc26e6344841fea9fb9b2d80bc322b8c1daadb06c599ce91037daa042e",
+    "release_version": "v1.0.0-pilot",
+    "generated_at": "2026-10-01T21:48:09.634144+00:00"
+  },
+  "greenwich_benchmark": {
+    "key": "Greenwich|RA-4|single_family_detached_RA4",
+    "label": "Greenwich RA-4 (single-family detached)",
+    "town": "Greenwich",
+    "district": "RA-4",
+    "building_form": "single_family_detached_RA4",
+    "R_s_baseline": 76.5,
+    "coverage_fraction": 0.9,
+    "domains": {
+      "land": 100.0,
+      "placement": 100.0,
+      "parking": null,
+      "housing_entitlement": 82.5,
+      "process": 0.0
+    },
+    "variants": {
+      "1_baseline": 76.5,
+      "2_equal_weight": 78.8,
+      "3_land_density_heavy": 79.6,
+      "4_housing_entitlement_heavy": 74.1,
+      "5_process_heavy_dependency_adjusted": 57.6,
+      "6_conservative_exclude_caveated_v9_buildto": 71.8
+    },
+    "variables": {
+      "V1": {
+        "score": 100.0,
+        "value_numeric": 174240.0,
+        "value_categorical": null,
+        "source_page": "233.0",
+        "section": null
+      },
+      "V2": {
+        "score": 100.0,
+        "value_numeric": 200.0,
+        "value_categorical": null,
+        "source_page": "233.0",
+        "section": null
+      },
+      "V5": {
+        "score": 100.0,
+        "value_numeric": 250.0,
+        "value_categorical": null,
+        "source_page": "233.0",
+        "section": null
+      },
+      "V7": {
+        "score": 100.0,
+        "value_numeric": null,
+        "value_categorical": "prohibited",
+        "source_page": "77.0",
+        "section": null
+      },
+      "V8": {
+        "score": 30.0,
+        "value_numeric": null,
+        "value_categorical": "allowed_subject_to_objective_conditions",
+        "source_page": "86.0",
+        "section": null
+      },
+      "V9": {
+        "score": 100.0,
+        "value_numeric": null,
+        "value_categorical": "1_unit_per_lot_detached_single_family",
+        "source_page": "77.0",
+        "section": "\u00a76-93"
+      },
+      "V11": {
+        "score": 0.0,
+        "value_numeric": null,
+        "value_categorical": "ministerial_or_zoning_permit_only",
+        "source_page": "77.0",
+        "section": "\u00a76-93"
+      },
+      "V12": {
+        "score": 100.0,
+        "value_numeric": null,
+        "value_categorical": "prohibited",
+        "source_page": "77.0",
+        "section": "\u00a76-93"
+      }
+    },
+    "excluded_variables": [
+      {
+        "variable": "V6",
+        "status": "confirmed_qualitative_rule",
+        "reason": "confirmed status but no specific mappable rubric value recorded in the canonical matrix -- downgraded during Notebook 15 scoring, not fabricated"
+      }
+    ],
+    "shared_underlying_rule_v7_v11": true
+  },
+  "bridgeport_scenarios": [
+    {
+      "key": "Bridgeport|CX|General",
+      "label": "CX \u2014 General",
+      "town": "Bridgeport",
+      "district": "CX",
+      "building_form": "General",
+      "R_s_baseline": 46.9,
+      "coverage_fraction": 1.0,
+      "domains": {
+        "land": 50.0,
+        "placement": 50.0,
+        "parking": 0.0,
+        "housing_entitlement": 68.2,
+        "process": 20.0
+      },
+      "variants": {
+        "1_baseline": 46.9,
+        "2_equal_weight": 41.7,
+        "3_land_density_heavy": 47.5,
+        "4_housing_entitlement_heavy": 53.0,
+        "5_process_heavy_dependency_adjusted": 42.5,
+        "6_conservative_exclude_caveated_v9_buildto": 44.8
+      },
+      "variables": {
+        "V12": {
+          "score": 100.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_entitlement_absent",
+          "source_page": "48.0",
+          "section": "3.50.9"
+        },
+        "V5": {
+          "score": 50.0,
+          "value_numeric": 23.0,
+          "value_categorical": "build_to_flexibility",
+          "source_page": "44.0",
+          "section": null
+        },
+        "V6": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "no_minimum_parking_requirement",
+          "source_page": "228.0",
+          "section": "8.20.1 MINIMUM RATIOS"
+        },
+        "V8": {
+          "score": 30.0,
+          "value_numeric": null,
+          "value_categorical": "allowed_subject_to_objective_conditions",
+          "source_page": "155.0",
+          "section": "4.70.2 Accessory Apartments"
+        },
+        "V9": {
+          "score": 50.0,
+          "value_numeric": null,
+          "value_categorical": "building_type_only_density_control",
+          "source_page": null,
+          "section": "3.0 Site & Building Types (document-wide)"
+        },
+        "V11": {
+          "score": 20.0,
+          "value_numeric": null,
+          "value_categorical": "administrative_review_with_objective_standards",
+          "source_page": "142.0",
+          "section": "4.10.3 PERMITTED USES"
+        }
+      },
+      "excluded_variables": [
+        {
+          "variable": "V7",
+          "status": "confirmed_not_applicable",
+          "reason": "final_determination=confirmed_not_applicable (not_applicable scenarios excluded from housing-entitlement domain, not scored as restrictive or permissive)"
+        },
+        {
+          "variable": "V1",
+          "status": "no_evidence_recorded_for_this_scenario",
+          "reason": "no_evidence_recorded_for_this_scenario"
+        },
+        {
+          "variable": "V2",
+          "status": "not_applicable",
+          "reason": "final_determination=not_applicable"
+        }
+      ],
+      "shared_underlying_rule_v7_v11": false
+    },
+    {
+      "key": "Bridgeport|CX|Workshop",
+      "label": "CX \u2014 Workshop",
+      "town": "Bridgeport",
+      "district": "CX",
+      "building_form": "Workshop",
+      "R_s_baseline": 42.1,
+      "coverage_fraction": 1.0,
+      "domains": {
+        "land": 42.9,
+        "placement": 30.0,
+        "parking": 0.0,
+        "housing_entitlement": 68.2,
+        "process": 20.0
+      },
+      "variants": {
+        "1_baseline": 42.1,
+        "2_equal_weight": 37.1,
+        "3_land_density_heavy": 42.3,
+        "4_housing_entitlement_heavy": 49.9,
+        "5_process_heavy_dependency_adjusted": 39.0,
+        "6_conservative_exclude_caveated_v9_buildto": 40.4
+      },
+      "variables": {
+        "V12": {
+          "score": 100.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_entitlement_absent",
+          "source_page": "112.0",
+          "section": "3.130.9"
+        },
+        "V5": {
+          "score": 30.0,
+          "value_numeric": 15.0,
+          "value_categorical": "build_to_flexibility",
+          "source_page": "108.0",
+          "section": null
+        },
+        "V2": {
+          "score": 30.0,
+          "value_numeric": 25.0,
+          "value_categorical": null,
+          "source_page": "108.0",
+          "section": "X.X0.4 BUILDING SITING -- Workshop"
+        },
+        "V6": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "no_minimum_parking_requirement",
+          "source_page": "228.0",
+          "section": "8.20.1 MINIMUM RATIOS"
+        },
+        "V8": {
+          "score": 30.0,
+          "value_numeric": null,
+          "value_categorical": "allowed_subject_to_objective_conditions",
+          "source_page": "155.0",
+          "section": "4.70.2 Accessory Apartments"
+        },
+        "V9": {
+          "score": 50.0,
+          "value_numeric": null,
+          "value_categorical": "building_type_only_density_control",
+          "source_page": null,
+          "section": "3.0 Site & Building Types (document-wide)"
+        },
+        "V11": {
+          "score": 20.0,
+          "value_numeric": null,
+          "value_categorical": "administrative_review_with_objective_standards",
+          "source_page": "142.0",
+          "section": "4.10.3 PERMITTED USES"
+        }
+      },
+      "excluded_variables": [
+        {
+          "variable": "V7",
+          "status": "confirmed_not_applicable",
+          "reason": "final_determination=confirmed_not_applicable (not_applicable scenarios excluded from housing-entitlement domain, not scored as restrictive or permissive)"
+        },
+        {
+          "variable": "V1",
+          "status": "no_evidence_recorded_for_this_scenario",
+          "reason": "no_evidence_recorded_for_this_scenario"
+        }
+      ],
+      "shared_underlying_rule_v7_v11": false
+    },
+    {
+      "key": "Bridgeport|DX1|Civic",
+      "label": "DX1 \u2014 Civic",
+      "town": "Bridgeport",
+      "district": "DX1",
+      "building_form": "Civic",
+      "R_s_baseline": 45.6,
+      "coverage_fraction": 1.0,
+      "domains": {
+        "land": 57.1,
+        "placement": 30.0,
+        "parking": 0.0,
+        "housing_entitlement": 68.2,
+        "process": 20.0
+      },
+      "variants": {
+        "1_baseline": 45.6,
+        "2_equal_weight": 42.9,
+        "3_land_density_heavy": 48.8,
+        "4_housing_entitlement_heavy": 52.1,
+        "5_process_heavy_dependency_adjusted": 41.9,
+        "6_conservative_exclude_caveated_v9_buildto": 48.9
+      },
+      "variables": {
+        "V12": {
+          "score": 100.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_entitlement_absent",
+          "source_page": "120.0",
+          "section": "3.140.9"
+        },
+        "V5": {
+          "score": 30.0,
+          "value_numeric": 25.0,
+          "value_categorical": "conventional_setback",
+          "source_page": "116.0",
+          "section": null
+        },
+        "V2": {
+          "score": 70.0,
+          "value_numeric": 50.0,
+          "value_categorical": null,
+          "source_page": "116.0",
+          "section": "X.X0.4 BUILDING SITING -- Civic"
+        },
+        "V6": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "no_minimum_parking_requirement",
+          "source_page": "228.0",
+          "section": "8.20.1 MINIMUM RATIOS"
+        },
+        "V8": {
+          "score": 30.0,
+          "value_numeric": null,
+          "value_categorical": "allowed_subject_to_objective_conditions",
+          "source_page": "155.0",
+          "section": "4.70.2 Accessory Apartments"
+        },
+        "V9": {
+          "score": 50.0,
+          "value_numeric": null,
+          "value_categorical": "building_type_only_density_control",
+          "source_page": null,
+          "section": "3.0 Site & Building Types (document-wide)"
+        },
+        "V11": {
+          "score": 20.0,
+          "value_numeric": null,
+          "value_categorical": "administrative_review_with_objective_standards",
+          "source_page": "142.0",
+          "section": "4.10.3 PERMITTED USES"
+        }
+      },
+      "excluded_variables": [
+        {
+          "variable": "V7",
+          "status": "confirmed_not_applicable",
+          "reason": "final_determination=confirmed_not_applicable (not_applicable scenarios excluded from housing-entitlement domain, not scored as restrictive or permissive)"
+        },
+        {
+          "variable": "V1",
+          "status": "no_evidence_recorded_for_this_scenario",
+          "reason": "no_evidence_recorded_for_this_scenario"
+        }
+      ],
+      "shared_underlying_rule_v7_v11": false
+    },
+    {
+      "key": "Bridgeport|DX1|Storefront",
+      "label": "DX1 \u2014 Storefront",
+      "town": "Bridgeport",
+      "district": "DX1",
+      "building_form": "Storefront",
+      "R_s_baseline": 19.1,
+      "coverage_fraction": 1.0,
+      "domains": {
+        "land": 35.7,
+        "placement": 30.0,
+        "parking": 0.0,
+        "housing_entitlement": 7.5,
+        "process": 20.0
+      },
+      "variants": {
+        "1_baseline": 19.1,
+        "2_equal_weight": 17.5,
+        "3_land_density_heavy": 23.9,
+        "4_housing_entitlement_heavy": 15.5,
+        "5_process_heavy_dependency_adjusted": 19.4,
+        "6_conservative_exclude_caveated_v9_buildto": 9.6
+      },
+      "variables": {
+        "V7": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_allowed_by_right",
+          "source_page": "24.0",
+          "section": "3.20.9"
+        },
+        "V12": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_entitlement_present",
+          "source_page": "24.0",
+          "section": "3.20.9"
+        },
+        "V5": {
+          "score": 30.0,
+          "value_numeric": 15.0,
+          "value_categorical": "build_to_flexibility",
+          "source_page": "20.0",
+          "section": null
+        },
+        "V2": {
+          "score": 10.0,
+          "value_numeric": 18.0,
+          "value_categorical": null,
+          "source_page": "20.0",
+          "section": "X.X0.4 BUILDING SITING -- Storefront"
+        },
+        "V6": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "no_minimum_parking_requirement",
+          "source_page": "228.0",
+          "section": "8.20.1 MINIMUM RATIOS"
+        },
+        "V8": {
+          "score": 30.0,
+          "value_numeric": null,
+          "value_categorical": "allowed_subject_to_objective_conditions",
+          "source_page": "155.0",
+          "section": "4.70.2 Accessory Apartments"
+        },
+        "V9": {
+          "score": 50.0,
+          "value_numeric": null,
+          "value_categorical": "building_type_only_density_control",
+          "source_page": null,
+          "section": "3.0 Site & Building Types (document-wide)"
+        },
+        "V11": {
+          "score": 20.0,
+          "value_numeric": null,
+          "value_categorical": "administrative_review_with_objective_standards",
+          "source_page": "142.0",
+          "section": "4.10.3 PERMITTED USES"
+        }
+      },
+      "excluded_variables": [
+        {
+          "variable": "V1",
+          "status": "no_evidence_recorded_for_this_scenario",
+          "reason": "no_evidence_recorded_for_this_scenario"
+        }
+      ],
+      "shared_underlying_rule_v7_v11": false
+    },
+    {
+      "key": "Bridgeport|DX2|General",
+      "label": "DX2 \u2014 General",
+      "town": "Bridgeport",
+      "district": "DX2",
+      "building_form": "General",
+      "R_s_baseline": 25.6,
+      "coverage_fraction": 1.0,
+      "domains": {
+        "land": 50.0,
+        "placement": 50.0,
+        "parking": 0.0,
+        "housing_entitlement": 7.5,
+        "process": 20.0
+      },
+      "variants": {
+        "1_baseline": 25.6,
+        "2_equal_weight": 21.4,
+        "3_land_density_heavy": 32.4,
+        "4_housing_entitlement_heavy": 19.6,
+        "5_process_heavy_dependency_adjusted": 24.2,
+        "6_conservative_exclude_caveated_v9_buildto": 9.4
+      },
+      "variables": {
+        "V7": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_allowed_by_right",
+          "source_page": "48.0",
+          "section": "3.50.9"
+        },
+        "V12": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_entitlement_present",
+          "source_page": "48.0",
+          "section": "3.50.9"
+        },
+        "V5": {
+          "score": 50.0,
+          "value_numeric": 23.0,
+          "value_categorical": "build_to_flexibility",
+          "source_page": "44.0",
+          "section": null
+        },
+        "V6": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "no_minimum_parking_requirement",
+          "source_page": "228.0",
+          "section": "8.20.1 MINIMUM RATIOS"
+        },
+        "V8": {
+          "score": 30.0,
+          "value_numeric": null,
+          "value_categorical": "allowed_subject_to_objective_conditions",
+          "source_page": "155.0",
+          "section": "4.70.2 Accessory Apartments"
+        },
+        "V9": {
+          "score": 50.0,
+          "value_numeric": null,
+          "value_categorical": "building_type_only_density_control",
+          "source_page": null,
+          "section": "3.0 Site & Building Types (document-wide)"
+        },
+        "V11": {
+          "score": 20.0,
+          "value_numeric": null,
+          "value_categorical": "administrative_review_with_objective_standards",
+          "source_page": "142.0",
+          "section": "4.10.3 PERMITTED USES"
+        }
+      },
+      "excluded_variables": [
+        {
+          "variable": "V1",
+          "status": "no_evidence_recorded_for_this_scenario",
+          "reason": "no_evidence_recorded_for_this_scenario"
+        },
+        {
+          "variable": "V2",
+          "status": "not_applicable",
+          "reason": "final_determination=not_applicable"
+        }
+      ],
+      "shared_underlying_rule_v7_v11": false
+    },
+    {
+      "key": "Bridgeport|MX1|Commercial House",
+      "label": "MX1 \u2014 Commercial House",
+      "town": "Bridgeport",
+      "district": "MX1",
+      "building_form": "Commercial House",
+      "R_s_baseline": 27.4,
+      "coverage_fraction": 1.0,
+      "domains": {
+        "land": 57.1,
+        "placement": 50.0,
+        "parking": 0.0,
+        "housing_entitlement": 7.5,
+        "process": 20.0
+      },
+      "variants": {
+        "1_baseline": 27.4,
+        "2_equal_weight": 27.5,
+        "3_land_density_heavy": 35.6,
+        "4_housing_entitlement_heavy": 20.7,
+        "5_process_heavy_dependency_adjusted": 25.7,
+        "6_conservative_exclude_caveated_v9_buildto": 30.6
+      },
+      "variables": {
+        "V7": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_allowed_by_right",
+          "source_page": "40.0",
+          "section": "3.40.9"
+        },
+        "V12": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_entitlement_present",
+          "source_page": "40.0",
+          "section": "3.40.9"
+        },
+        "V5": {
+          "score": 50.0,
+          "value_numeric": 37.0,
+          "value_categorical": "conventional_setback",
+          "source_page": "36.0",
+          "section": null
+        },
+        "V2": {
+          "score": 70.0,
+          "value_numeric": 50.0,
+          "value_categorical": null,
+          "source_page": "36.0",
+          "section": "X.X0.4 BUILDING SITING -- Commercial House"
+        },
+        "V6": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "no_minimum_parking_requirement",
+          "source_page": "228.0",
+          "section": "8.20.1 MINIMUM RATIOS"
+        },
+        "V8": {
+          "score": 30.0,
+          "value_numeric": null,
+          "value_categorical": "allowed_subject_to_objective_conditions",
+          "source_page": "155.0",
+          "section": "4.70.2 Accessory Apartments"
+        },
+        "V9": {
+          "score": 50.0,
+          "value_numeric": null,
+          "value_categorical": "building_type_only_density_control",
+          "source_page": null,
+          "section": "3.0 Site & Building Types (document-wide)"
+        },
+        "V11": {
+          "score": 20.0,
+          "value_numeric": null,
+          "value_categorical": "administrative_review_with_objective_standards",
+          "source_page": "142.0",
+          "section": "4.10.3 PERMITTED USES"
+        }
+      },
+      "excluded_variables": [
+        {
+          "variable": "V1",
+          "status": "no_evidence_recorded_for_this_scenario",
+          "reason": "no_evidence_recorded_for_this_scenario"
+        }
+      ],
+      "shared_underlying_rule_v7_v11": false
+    },
+    {
+      "key": "Bridgeport|MX1|Storefront",
+      "label": "MX1 \u2014 Storefront",
+      "town": "Bridgeport",
+      "district": "MX1",
+      "building_form": "Storefront",
+      "R_s_baseline": 22.6,
+      "coverage_fraction": 1.0,
+      "domains": {
+        "land": 50.0,
+        "placement": 30.0,
+        "parking": 0.0,
+        "housing_entitlement": 7.5,
+        "process": 20.0
+      },
+      "variants": {
+        "1_baseline": 22.6,
+        "2_equal_weight": 18.6,
+        "3_land_density_heavy": 30.4,
+        "4_housing_entitlement_heavy": 17.6,
+        "5_process_heavy_dependency_adjusted": 22.2,
+        "6_conservative_exclude_caveated_v9_buildto": 9.4
+      },
+      "variables": {
+        "V7": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_allowed_by_right",
+          "source_page": "24.0",
+          "section": "3.20.9"
+        },
+        "V12": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_entitlement_present",
+          "source_page": "24.0",
+          "section": "3.20.9"
+        },
+        "V5": {
+          "score": 30.0,
+          "value_numeric": 15.0,
+          "value_categorical": "build_to_flexibility",
+          "source_page": "20.0",
+          "section": null
+        },
+        "V6": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "no_minimum_parking_requirement",
+          "source_page": "228.0",
+          "section": "8.20.1 MINIMUM RATIOS"
+        },
+        "V8": {
+          "score": 30.0,
+          "value_numeric": null,
+          "value_categorical": "allowed_subject_to_objective_conditions",
+          "source_page": "155.0",
+          "section": "4.70.2 Accessory Apartments"
+        },
+        "V9": {
+          "score": 50.0,
+          "value_numeric": null,
+          "value_categorical": "building_type_only_density_control",
+          "source_page": null,
+          "section": "3.0 Site & Building Types (document-wide)"
+        },
+        "V11": {
+          "score": 20.0,
+          "value_numeric": null,
+          "value_categorical": "administrative_review_with_objective_standards",
+          "source_page": "142.0",
+          "section": "4.10.3 PERMITTED USES"
+        }
+      },
+      "excluded_variables": [
+        {
+          "variable": "V1",
+          "status": "no_evidence_recorded_for_this_scenario",
+          "reason": "no_evidence_recorded_for_this_scenario"
+        },
+        {
+          "variable": "V2",
+          "status": "not_applicable",
+          "reason": "final_determination=not_applicable"
+        }
+      ],
+      "shared_underlying_rule_v7_v11": false
+    },
+    {
+      "key": "Bridgeport|MX2|Commercial Center",
+      "label": "MX2 \u2014 Commercial Center",
+      "town": "Bridgeport",
+      "district": "MX2",
+      "building_form": "Commercial Center",
+      "R_s_baseline": 21.4,
+      "coverage_fraction": 1.0,
+      "domains": {
+        "land": 57.1,
+        "placement": 10.0,
+        "parking": 0.0,
+        "housing_entitlement": 7.5,
+        "process": 20.0
+      },
+      "variants": {
+        "1_baseline": 21.4,
+        "2_equal_weight": 22.5,
+        "3_land_density_heavy": 31.6,
+        "4_housing_entitlement_heavy": 16.7,
+        "5_process_heavy_dependency_adjusted": 21.7,
+        "6_conservative_exclude_caveated_v9_buildto": 27.2
+      },
+      "variables": {
+        "V7": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_allowed_by_right",
+          "source_page": "32.0",
+          "section": "3.30.9"
+        },
+        "V12": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_entitlement_present",
+          "source_page": "32.0",
+          "section": "3.30.9"
+        },
+        "V5": {
+          "score": 10.0,
+          "value_numeric": 10.0,
+          "value_categorical": "build_to_flexibility",
+          "source_page": "28.0",
+          "section": null
+        },
+        "V2": {
+          "score": 70.0,
+          "value_numeric": 60.0,
+          "value_categorical": null,
+          "source_page": "28.0",
+          "section": "X.X0.4 BUILDING SITING -- Commercial Center"
+        },
+        "V6": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "no_minimum_parking_requirement",
+          "source_page": "228.0",
+          "section": "8.20.1 MINIMUM RATIOS"
+        },
+        "V8": {
+          "score": 30.0,
+          "value_numeric": null,
+          "value_categorical": "allowed_subject_to_objective_conditions",
+          "source_page": "155.0",
+          "section": "4.70.2 Accessory Apartments"
+        },
+        "V9": {
+          "score": 50.0,
+          "value_numeric": null,
+          "value_categorical": "building_type_only_density_control",
+          "source_page": null,
+          "section": "3.0 Site & Building Types (document-wide)"
+        },
+        "V11": {
+          "score": 20.0,
+          "value_numeric": null,
+          "value_categorical": "administrative_review_with_objective_standards",
+          "source_page": "142.0",
+          "section": "4.10.3 PERMITTED USES"
+        }
+      },
+      "excluded_variables": [
+        {
+          "variable": "V1",
+          "status": "no_evidence_recorded_for_this_scenario",
+          "reason": "no_evidence_recorded_for_this_scenario"
+        }
+      ],
+      "shared_underlying_rule_v7_v11": false
+    },
+    {
+      "key": "Bridgeport|MX2|Commercial House",
+      "label": "MX2 \u2014 Commercial House",
+      "town": "Bridgeport",
+      "district": "MX2",
+      "building_form": "Commercial House",
+      "R_s_baseline": 27.4,
+      "coverage_fraction": 1.0,
+      "domains": {
+        "land": 57.1,
+        "placement": 50.0,
+        "parking": 0.0,
+        "housing_entitlement": 7.5,
+        "process": 20.0
+      },
+      "variants": {
+        "1_baseline": 27.4,
+        "2_equal_weight": 27.5,
+        "3_land_density_heavy": 35.6,
+        "4_housing_entitlement_heavy": 20.7,
+        "5_process_heavy_dependency_adjusted": 25.7,
+        "6_conservative_exclude_caveated_v9_buildto": 30.6
+      },
+      "variables": {
+        "V7": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_allowed_by_right",
+          "source_page": "40.0",
+          "section": "3.40.9"
+        },
+        "V12": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_entitlement_present",
+          "source_page": "40.0",
+          "section": "3.40.9"
+        },
+        "V5": {
+          "score": 50.0,
+          "value_numeric": 37.0,
+          "value_categorical": "conventional_setback",
+          "source_page": "36.0",
+          "section": null
+        },
+        "V2": {
+          "score": 70.0,
+          "value_numeric": 50.0,
+          "value_categorical": null,
+          "source_page": "36.0",
+          "section": "X.X0.4 BUILDING SITING -- Commercial House"
+        },
+        "V6": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "no_minimum_parking_requirement",
+          "source_page": "228.0",
+          "section": "8.20.1 MINIMUM RATIOS"
+        },
+        "V8": {
+          "score": 30.0,
+          "value_numeric": null,
+          "value_categorical": "allowed_subject_to_objective_conditions",
+          "source_page": "155.0",
+          "section": "4.70.2 Accessory Apartments"
+        },
+        "V9": {
+          "score": 50.0,
+          "value_numeric": null,
+          "value_categorical": "building_type_only_density_control",
+          "source_page": null,
+          "section": "3.0 Site & Building Types (document-wide)"
+        },
+        "V11": {
+          "score": 20.0,
+          "value_numeric": null,
+          "value_categorical": "administrative_review_with_objective_standards",
+          "source_page": "142.0",
+          "section": "4.10.3 PERMITTED USES"
+        }
+      },
+      "excluded_variables": [
+        {
+          "variable": "V1",
+          "status": "no_evidence_recorded_for_this_scenario",
+          "reason": "no_evidence_recorded_for_this_scenario"
+        }
+      ],
+      "shared_underlying_rule_v7_v11": false
+    },
+    {
+      "key": "Bridgeport|MX2|Storefront",
+      "label": "MX2 \u2014 Storefront",
+      "town": "Bridgeport",
+      "district": "MX2",
+      "building_form": "Storefront",
+      "R_s_baseline": 22.6,
+      "coverage_fraction": 1.0,
+      "domains": {
+        "land": 50.0,
+        "placement": 30.0,
+        "parking": 0.0,
+        "housing_entitlement": 7.5,
+        "process": 20.0
+      },
+      "variants": {
+        "1_baseline": 22.6,
+        "2_equal_weight": 18.6,
+        "3_land_density_heavy": 30.4,
+        "4_housing_entitlement_heavy": 17.6,
+        "5_process_heavy_dependency_adjusted": 22.2,
+        "6_conservative_exclude_caveated_v9_buildto": 9.4
+      },
+      "variables": {
+        "V7": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_allowed_by_right",
+          "source_page": "24.0",
+          "section": "3.20.9"
+        },
+        "V12": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_entitlement_present",
+          "source_page": "24.0",
+          "section": "3.20.9"
+        },
+        "V5": {
+          "score": 30.0,
+          "value_numeric": 15.0,
+          "value_categorical": "build_to_flexibility",
+          "source_page": "20.0",
+          "section": null
+        },
+        "V6": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "no_minimum_parking_requirement",
+          "source_page": "228.0",
+          "section": "8.20.1 MINIMUM RATIOS"
+        },
+        "V8": {
+          "score": 30.0,
+          "value_numeric": null,
+          "value_categorical": "allowed_subject_to_objective_conditions",
+          "source_page": "155.0",
+          "section": "4.70.2 Accessory Apartments"
+        },
+        "V9": {
+          "score": 50.0,
+          "value_numeric": null,
+          "value_categorical": "building_type_only_density_control",
+          "source_page": null,
+          "section": "3.0 Site & Building Types (document-wide)"
+        },
+        "V11": {
+          "score": 20.0,
+          "value_numeric": null,
+          "value_categorical": "administrative_review_with_objective_standards",
+          "source_page": "142.0",
+          "section": "4.10.3 PERMITTED USES"
+        }
+      },
+      "excluded_variables": [
+        {
+          "variable": "V1",
+          "status": "no_evidence_recorded_for_this_scenario",
+          "reason": "no_evidence_recorded_for_this_scenario"
+        },
+        {
+          "variable": "V2",
+          "status": "not_applicable",
+          "reason": "final_determination=not_applicable"
+        }
+      ],
+      "shared_underlying_rule_v7_v11": false
+    },
+    {
+      "key": "Bridgeport|MXN|Commercial House",
+      "label": "MXN \u2014 Commercial House",
+      "town": "Bridgeport",
+      "district": "MXN",
+      "building_form": "Commercial House",
+      "R_s_baseline": 27.4,
+      "coverage_fraction": 1.0,
+      "domains": {
+        "land": 57.1,
+        "placement": 50.0,
+        "parking": 0.0,
+        "housing_entitlement": 7.5,
+        "process": 20.0
+      },
+      "variants": {
+        "1_baseline": 27.4,
+        "2_equal_weight": 27.5,
+        "3_land_density_heavy": 35.6,
+        "4_housing_entitlement_heavy": 20.7,
+        "5_process_heavy_dependency_adjusted": 25.7,
+        "6_conservative_exclude_caveated_v9_buildto": 30.6
+      },
+      "variables": {
+        "V7": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_allowed_by_right",
+          "source_page": "40.0",
+          "section": "3.40.9"
+        },
+        "V12": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_entitlement_present",
+          "source_page": "40.0",
+          "section": "3.40.9"
+        },
+        "V5": {
+          "score": 50.0,
+          "value_numeric": 37.0,
+          "value_categorical": "conventional_setback",
+          "source_page": "36.0",
+          "section": null
+        },
+        "V2": {
+          "score": 70.0,
+          "value_numeric": 50.0,
+          "value_categorical": null,
+          "source_page": "36.0",
+          "section": "X.X0.4 BUILDING SITING -- Commercial House"
+        },
+        "V6": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "no_minimum_parking_requirement",
+          "source_page": "228.0",
+          "section": "8.20.1 MINIMUM RATIOS"
+        },
+        "V8": {
+          "score": 30.0,
+          "value_numeric": null,
+          "value_categorical": "allowed_subject_to_objective_conditions",
+          "source_page": "155.0",
+          "section": "4.70.2 Accessory Apartments"
+        },
+        "V9": {
+          "score": 50.0,
+          "value_numeric": null,
+          "value_categorical": "building_type_only_density_control",
+          "source_page": null,
+          "section": "3.0 Site & Building Types (document-wide)"
+        },
+        "V11": {
+          "score": 20.0,
+          "value_numeric": null,
+          "value_categorical": "administrative_review_with_objective_standards",
+          "source_page": "142.0",
+          "section": "4.10.3 PERMITTED USES"
+        }
+      },
+      "excluded_variables": [
+        {
+          "variable": "V1",
+          "status": "no_evidence_recorded_for_this_scenario",
+          "reason": "no_evidence_recorded_for_this_scenario"
+        }
+      ],
+      "shared_underlying_rule_v7_v11": false
+    },
+    {
+      "key": "Bridgeport|MXN|Storefront",
+      "label": "MXN \u2014 Storefront",
+      "town": "Bridgeport",
+      "district": "MXN",
+      "building_form": "Storefront",
+      "R_s_baseline": 24.4,
+      "coverage_fraction": 1.0,
+      "domains": {
+        "land": 57.1,
+        "placement": 30.0,
+        "parking": 0.0,
+        "housing_entitlement": 7.5,
+        "process": 20.0
+      },
+      "variants": {
+        "1_baseline": 24.4,
+        "2_equal_weight": 25.0,
+        "3_land_density_heavy": 33.6,
+        "4_housing_entitlement_heavy": 18.7,
+        "5_process_heavy_dependency_adjusted": 23.7,
+        "6_conservative_exclude_caveated_v9_buildto": 27.2
+      },
+      "variables": {
+        "V7": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_allowed_by_right",
+          "source_page": "24.0",
+          "section": "3.20.9"
+        },
+        "V12": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_entitlement_present",
+          "source_page": "24.0",
+          "section": "3.20.9"
+        },
+        "V5": {
+          "score": 30.0,
+          "value_numeric": 20.0,
+          "value_categorical": "build_to_flexibility",
+          "source_page": "20.0",
+          "section": null
+        },
+        "V2": {
+          "score": 70.0,
+          "value_numeric": 50.0,
+          "value_categorical": null,
+          "source_page": "20.0",
+          "section": "X.X0.4 BUILDING SITING -- Storefront"
+        },
+        "V6": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "no_minimum_parking_requirement",
+          "source_page": "228.0",
+          "section": "8.20.1 MINIMUM RATIOS"
+        },
+        "V8": {
+          "score": 30.0,
+          "value_numeric": null,
+          "value_categorical": "allowed_subject_to_objective_conditions",
+          "source_page": "155.0",
+          "section": "4.70.2 Accessory Apartments"
+        },
+        "V9": {
+          "score": 50.0,
+          "value_numeric": null,
+          "value_categorical": "building_type_only_density_control",
+          "source_page": null,
+          "section": "3.0 Site & Building Types (document-wide)"
+        },
+        "V11": {
+          "score": 20.0,
+          "value_numeric": null,
+          "value_categorical": "administrative_review_with_objective_standards",
+          "source_page": "142.0",
+          "section": "4.10.3 PERMITTED USES"
+        }
+      },
+      "excluded_variables": [
+        {
+          "variable": "V1",
+          "status": "no_evidence_recorded_for_this_scenario",
+          "reason": "no_evidence_recorded_for_this_scenario"
+        }
+      ],
+      "shared_underlying_rule_v7_v11": false
+    },
+    {
+      "key": "Bridgeport|N1|House A",
+      "label": "N1 \u2014 House A",
+      "town": "Bridgeport",
+      "district": "N1",
+      "building_form": "House A",
+      "R_s_baseline": 44.4,
+      "coverage_fraction": 1.0,
+      "domains": {
+        "land": 50.0,
+        "placement": 70.0,
+        "parking": 0.0,
+        "housing_entitlement": 52.5,
+        "process": 20.0
+      },
+      "variants": {
+        "1_baseline": 44.4,
+        "2_equal_weight": 40.0,
+        "3_land_density_heavy": 45.6,
+        "4_housing_entitlement_heavy": 46.4,
+        "5_process_heavy_dependency_adjusted": 39.8,
+        "6_conservative_exclude_caveated_v9_buildto": 39.9
+      },
+      "variables": {
+        "V7": {
+          "score": 100.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_not_available_by_right",
+          "source_page": "80.0",
+          "section": "3.90.9"
+        },
+        "V12": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_entitlement_present",
+          "source_page": "80.0",
+          "section": "3.90.9"
+        },
+        "V5": {
+          "score": 70.0,
+          "value_numeric": 36.0,
+          "value_categorical": "build_to_flexibility",
+          "source_page": "76.0",
+          "section": null
+        },
+        "V2": {
+          "score": 50.0,
+          "value_numeric": 45.0,
+          "value_categorical": null,
+          "source_page": "76.0",
+          "section": "X.X0.4 BUILDING SITING -- House A"
+        },
+        "V6": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "no_minimum_parking_requirement",
+          "source_page": "228.0",
+          "section": "8.20.1 MINIMUM RATIOS"
+        },
+        "V8": {
+          "score": 30.0,
+          "value_numeric": null,
+          "value_categorical": "allowed_subject_to_objective_conditions",
+          "source_page": "155.0",
+          "section": "4.70.2 Accessory Apartments"
+        },
+        "V9": {
+          "score": 50.0,
+          "value_numeric": null,
+          "value_categorical": "building_type_only_density_control",
+          "source_page": null,
+          "section": "3.0 Site & Building Types (document-wide)"
+        },
+        "V11": {
+          "score": 20.0,
+          "value_numeric": null,
+          "value_categorical": "administrative_review_with_objective_standards",
+          "source_page": "142.0",
+          "section": "4.10.3 PERMITTED USES"
+        }
+      },
+      "excluded_variables": [
+        {
+          "variable": "V1",
+          "status": "no_evidence_recorded_for_this_scenario",
+          "reason": "no_evidence_recorded_for_this_scenario"
+        }
+      ],
+      "shared_underlying_rule_v7_v11": false
+    },
+    {
+      "key": "Bridgeport|N2|House B",
+      "label": "N2 \u2014 House B",
+      "town": "Bridgeport",
+      "district": "N2",
+      "building_form": "House B",
+      "R_s_baseline": 51.9,
+      "coverage_fraction": 1.0,
+      "domains": {
+        "land": 50.0,
+        "placement": 50.0,
+        "parking": 0.0,
+        "housing_entitlement": 82.5,
+        "process": 20.0
+      },
+      "variants": {
+        "1_baseline": 51.9,
+        "2_equal_weight": 50.0,
+        "3_land_density_heavy": 51.1,
+        "4_housing_entitlement_heavy": 60.9,
+        "5_process_heavy_dependency_adjusted": 46.8,
+        "6_conservative_exclude_caveated_v9_buildto": 51.9
+      },
+      "variables": {
+        "V7": {
+          "score": 100.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_not_available_by_right",
+          "source_page": "88.0",
+          "section": "3.100.9"
+        },
+        "V12": {
+          "score": 100.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_entitlement_absent",
+          "source_page": "88.0",
+          "section": "3.100.9"
+        },
+        "V5": {
+          "score": 50.0,
+          "value_numeric": 46.0,
+          "value_categorical": "conventional_setback",
+          "source_page": "84.0",
+          "section": null
+        },
+        "V2": {
+          "score": 50.0,
+          "value_numeric": 45.0,
+          "value_categorical": null,
+          "source_page": "84.0",
+          "section": "X.X0.4 BUILDING SITING -- House B"
+        },
+        "V6": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "no_minimum_parking_requirement",
+          "source_page": "228.0",
+          "section": "8.20.1 MINIMUM RATIOS"
+        },
+        "V8": {
+          "score": 30.0,
+          "value_numeric": null,
+          "value_categorical": "allowed_subject_to_objective_conditions",
+          "source_page": "155.0",
+          "section": "4.70.2 Accessory Apartments"
+        },
+        "V9": {
+          "score": 50.0,
+          "value_numeric": null,
+          "value_categorical": "building_type_only_density_control",
+          "source_page": null,
+          "section": "3.0 Site & Building Types (document-wide)"
+        },
+        "V11": {
+          "score": 20.0,
+          "value_numeric": null,
+          "value_categorical": "administrative_review_with_objective_standards",
+          "source_page": "142.0",
+          "section": "4.10.3 PERMITTED USES"
+        }
+      },
+      "excluded_variables": [
+        {
+          "variable": "V1",
+          "status": "no_evidence_recorded_for_this_scenario",
+          "reason": "no_evidence_recorded_for_this_scenario"
+        }
+      ],
+      "shared_underlying_rule_v7_v11": false
+    },
+    {
+      "key": "Bridgeport|N3|House C",
+      "label": "N3 \u2014 House C",
+      "town": "Bridgeport",
+      "district": "N3",
+      "building_form": "House C",
+      "R_s_baseline": 45.6,
+      "coverage_fraction": 1.0,
+      "domains": {
+        "land": 55.0,
+        "placement": 70.0,
+        "parking": 0.0,
+        "housing_entitlement": 52.5,
+        "process": 20.0
+      },
+      "variants": {
+        "1_baseline": 45.6,
+        "2_equal_weight": 43.3,
+        "3_land_density_heavy": 47.9,
+        "4_housing_entitlement_heavy": 47.1,
+        "5_process_heavy_dependency_adjusted": 40.8,
+        "6_conservative_exclude_caveated_v9_buildto": 46.6
+      },
+      "variables": {
+        "V7": {
+          "score": 100.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_not_available_by_right",
+          "source_page": "96.0",
+          "section": "3.110.9"
+        },
+        "V12": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_entitlement_present",
+          "source_page": "96.0",
+          "section": "3.110.9"
+        },
+        "V5": {
+          "score": 70.0,
+          "value_numeric": 85.0,
+          "value_categorical": "conventional_setback",
+          "source_page": "92.0",
+          "section": null
+        },
+        "V1": {
+          "score": 50.0,
+          "value_numeric": 9000.0,
+          "value_categorical": null,
+          "source_page": "92.0",
+          "section": "X.X0.4 BUILDING SITING -- House C"
+        },
+        "V2": {
+          "score": 70.0,
+          "value_numeric": 75.0,
+          "value_categorical": null,
+          "source_page": "92.0",
+          "section": "X.X0.4 BUILDING SITING -- House C"
+        },
+        "V6": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "no_minimum_parking_requirement",
+          "source_page": "228.0",
+          "section": "8.20.1 MINIMUM RATIOS"
+        },
+        "V8": {
+          "score": 30.0,
+          "value_numeric": null,
+          "value_categorical": "allowed_subject_to_objective_conditions",
+          "source_page": "155.0",
+          "section": "4.70.2 Accessory Apartments"
+        },
+        "V9": {
+          "score": 50.0,
+          "value_numeric": null,
+          "value_categorical": "building_type_only_density_control",
+          "source_page": null,
+          "section": "3.0 Site & Building Types (document-wide)"
+        },
+        "V11": {
+          "score": 20.0,
+          "value_numeric": null,
+          "value_categorical": "administrative_review_with_objective_standards",
+          "source_page": "142.0",
+          "section": "4.10.3 PERMITTED USES"
+        }
+      },
+      "excluded_variables": [],
+      "shared_underlying_rule_v7_v11": false
+    },
+    {
+      "key": "Bridgeport|N4|House D",
+      "label": "N4 \u2014 House D",
+      "town": "Bridgeport",
+      "district": "N4",
+      "building_form": "House D",
+      "R_s_baseline": 42.6,
+      "coverage_fraction": 1.0,
+      "domains": {
+        "land": 55.0,
+        "placement": 50.0,
+        "parking": 0.0,
+        "housing_entitlement": 52.5,
+        "process": 20.0
+      },
+      "variants": {
+        "1_baseline": 42.6,
+        "2_equal_weight": 41.1,
+        "3_land_density_heavy": 45.9,
+        "4_housing_entitlement_heavy": 45.1,
+        "5_process_heavy_dependency_adjusted": 38.8,
+        "6_conservative_exclude_caveated_v9_buildto": 43.6
+      },
+      "variables": {
+        "V7": {
+          "score": 100.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_not_available_by_right",
+          "source_page": "104.0",
+          "section": "3.120.9"
+        },
+        "V12": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_entitlement_present",
+          "source_page": "104.0",
+          "section": "3.120.9"
+        },
+        "V5": {
+          "score": 50.0,
+          "value_numeric": 46.0,
+          "value_categorical": "conventional_setback",
+          "source_page": "100.0",
+          "section": null
+        },
+        "V1": {
+          "score": 50.0,
+          "value_numeric": 7500.0,
+          "value_categorical": null,
+          "source_page": "100.0",
+          "section": "X.X0.4 BUILDING SITING -- House D"
+        },
+        "V2": {
+          "score": 70.0,
+          "value_numeric": 60.0,
+          "value_categorical": null,
+          "source_page": "100.0",
+          "section": "X.X0.4 BUILDING SITING -- House D"
+        },
+        "V6": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "no_minimum_parking_requirement",
+          "source_page": "228.0",
+          "section": "8.20.1 MINIMUM RATIOS"
+        },
+        "V8": {
+          "score": 30.0,
+          "value_numeric": null,
+          "value_categorical": "allowed_subject_to_objective_conditions",
+          "source_page": "155.0",
+          "section": "4.70.2 Accessory Apartments"
+        },
+        "V9": {
+          "score": 50.0,
+          "value_numeric": null,
+          "value_categorical": "building_type_only_density_control",
+          "source_page": null,
+          "section": "3.0 Site & Building Types (document-wide)"
+        },
+        "V11": {
+          "score": 20.0,
+          "value_numeric": null,
+          "value_categorical": "administrative_review_with_objective_standards",
+          "source_page": "142.0",
+          "section": "4.10.3 PERMITTED USES"
+        }
+      },
+      "excluded_variables": [],
+      "shared_underlying_rule_v7_v11": false
+    },
+    {
+      "key": "Bridgeport|NX1|Double House A",
+      "label": "NX1 \u2014 Double House A",
+      "town": "Bridgeport",
+      "district": "NX1",
+      "building_form": "Double House A",
+      "R_s_baseline": 27.4,
+      "coverage_fraction": 1.0,
+      "domains": {
+        "land": 57.1,
+        "placement": 50.0,
+        "parking": 0.0,
+        "housing_entitlement": 7.5,
+        "process": 20.0
+      },
+      "variants": {
+        "1_baseline": 27.4,
+        "2_equal_weight": 27.5,
+        "3_land_density_heavy": 35.6,
+        "4_housing_entitlement_heavy": 20.7,
+        "5_process_heavy_dependency_adjusted": 25.7,
+        "6_conservative_exclude_caveated_v9_buildto": 27.2
+      },
+      "variables": {
+        "V7": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_allowed_by_right",
+          "source_page": "72.0",
+          "section": "3.80.9"
+        },
+        "V12": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_entitlement_present",
+          "source_page": "72.0",
+          "section": "3.80.9"
+        },
+        "V5": {
+          "score": 50.0,
+          "value_numeric": 22.0,
+          "value_categorical": "build_to_flexibility",
+          "source_page": "68.0",
+          "section": null
+        },
+        "V2": {
+          "score": 70.0,
+          "value_numeric": 50.0,
+          "value_categorical": null,
+          "source_page": "68.0",
+          "section": "X.X0.4 BUILDING SITING -- Double House A"
+        },
+        "V6": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "no_minimum_parking_requirement",
+          "source_page": "228.0",
+          "section": "8.20.1 MINIMUM RATIOS"
+        },
+        "V8": {
+          "score": 30.0,
+          "value_numeric": null,
+          "value_categorical": "allowed_subject_to_objective_conditions",
+          "source_page": "155.0",
+          "section": "4.70.2 Accessory Apartments"
+        },
+        "V9": {
+          "score": 50.0,
+          "value_numeric": null,
+          "value_categorical": "building_type_only_density_control",
+          "source_page": null,
+          "section": "3.0 Site & Building Types (document-wide)"
+        },
+        "V11": {
+          "score": 20.0,
+          "value_numeric": null,
+          "value_categorical": "administrative_review_with_objective_standards",
+          "source_page": "142.0",
+          "section": "4.10.3 PERMITTED USES"
+        }
+      },
+      "excluded_variables": [
+        {
+          "variable": "V1",
+          "status": "no_evidence_recorded_for_this_scenario",
+          "reason": "no_evidence_recorded_for_this_scenario"
+        }
+      ],
+      "shared_underlying_rule_v7_v11": false
+    },
+    {
+      "key": "Bridgeport|NX1|House A",
+      "label": "NX1 \u2014 House A",
+      "town": "Bridgeport",
+      "district": "NX1",
+      "building_form": "House A",
+      "R_s_baseline": 25.6,
+      "coverage_fraction": 1.0,
+      "domains": {
+        "land": 50.0,
+        "placement": 50.0,
+        "parking": 0.0,
+        "housing_entitlement": 7.5,
+        "process": 20.0
+      },
+      "variants": {
+        "1_baseline": 25.6,
+        "2_equal_weight": 25.0,
+        "3_land_density_heavy": 32.4,
+        "4_housing_entitlement_heavy": 19.6,
+        "5_process_heavy_dependency_adjusted": 24.2,
+        "6_conservative_exclude_caveated_v9_buildto": 21.3
+      },
+      "variables": {
+        "V7": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_allowed_by_right",
+          "source_page": "80.0",
+          "section": "3.90.9"
+        },
+        "V12": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_entitlement_present",
+          "source_page": "80.0",
+          "section": "3.90.9"
+        },
+        "V5": {
+          "score": 50.0,
+          "value_numeric": 22.0,
+          "value_categorical": "build_to_flexibility",
+          "source_page": "76.0",
+          "section": null
+        },
+        "V2": {
+          "score": 50.0,
+          "value_numeric": 45.0,
+          "value_categorical": null,
+          "source_page": "76.0",
+          "section": "X.X0.4 BUILDING SITING -- House A"
+        },
+        "V6": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "no_minimum_parking_requirement",
+          "source_page": "228.0",
+          "section": "8.20.1 MINIMUM RATIOS"
+        },
+        "V8": {
+          "score": 30.0,
+          "value_numeric": null,
+          "value_categorical": "allowed_subject_to_objective_conditions",
+          "source_page": "155.0",
+          "section": "4.70.2 Accessory Apartments"
+        },
+        "V9": {
+          "score": 50.0,
+          "value_numeric": null,
+          "value_categorical": "building_type_only_density_control",
+          "source_page": null,
+          "section": "3.0 Site & Building Types (document-wide)"
+        },
+        "V11": {
+          "score": 20.0,
+          "value_numeric": null,
+          "value_categorical": "administrative_review_with_objective_standards",
+          "source_page": "142.0",
+          "section": "4.10.3 PERMITTED USES"
+        }
+      },
+      "excluded_variables": [
+        {
+          "variable": "V1",
+          "status": "no_evidence_recorded_for_this_scenario",
+          "reason": "no_evidence_recorded_for_this_scenario"
+        }
+      ],
+      "shared_underlying_rule_v7_v11": false
+    },
+    {
+      "key": "Bridgeport|NX1|Row",
+      "label": "NX1 \u2014 Row",
+      "town": "Bridgeport",
+      "district": "NX1",
+      "building_form": "Row",
+      "R_s_baseline": 56.7,
+      "coverage_fraction": 1.0,
+      "domains": {
+        "land": 57.1,
+        "placement": 70.0,
+        "parking": 0.0,
+        "housing_entitlement": 82.5,
+        "process": 20.0
+      },
+      "variants": {
+        "1_baseline": 56.7,
+        "2_equal_weight": 55.0,
+        "3_land_density_heavy": 56.3,
+        "4_housing_entitlement_heavy": 63.9,
+        "5_process_heavy_dependency_adjusted": 50.2,
+        "6_conservative_exclude_caveated_v9_buildto": 58.1
+      },
+      "variables": {
+        "V7": {
+          "score": 100.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_not_available_by_right",
+          "source_page": "64.0",
+          "section": "3.70.9"
+        },
+        "V12": {
+          "score": 100.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_entitlement_absent",
+          "source_page": "64.0",
+          "section": "3.70.9"
+        },
+        "V5": {
+          "score": 70.0,
+          "value_numeric": 36.0,
+          "value_categorical": "build_to_flexibility",
+          "source_page": "60.0",
+          "section": null
+        },
+        "V2": {
+          "score": 70.0,
+          "value_numeric": 60.0,
+          "value_categorical": null,
+          "source_page": "60.0",
+          "section": "X.X0.4 BUILDING SITING -- Row"
+        },
+        "V6": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "no_minimum_parking_requirement",
+          "source_page": "228.0",
+          "section": "8.20.1 MINIMUM RATIOS"
+        },
+        "V8": {
+          "score": 30.0,
+          "value_numeric": null,
+          "value_categorical": "allowed_subject_to_objective_conditions",
+          "source_page": "155.0",
+          "section": "4.70.2 Accessory Apartments"
+        },
+        "V9": {
+          "score": 50.0,
+          "value_numeric": null,
+          "value_categorical": "building_type_only_density_control",
+          "source_page": null,
+          "section": "3.0 Site & Building Types (document-wide)"
+        },
+        "V11": {
+          "score": 20.0,
+          "value_numeric": null,
+          "value_categorical": "administrative_review_with_objective_standards",
+          "source_page": "142.0",
+          "section": "4.10.3 PERMITTED USES"
+        }
+      },
+      "excluded_variables": [
+        {
+          "variable": "V1",
+          "status": "no_evidence_recorded_for_this_scenario",
+          "reason": "no_evidence_recorded_for_this_scenario"
+        }
+      ],
+      "shared_underlying_rule_v7_v11": false
+    },
+    {
+      "key": "Bridgeport|NX2|Small General",
+      "label": "NX2 \u2014 Small General",
+      "town": "Bridgeport",
+      "district": "NX2",
+      "building_form": "Small General",
+      "R_s_baseline": 27.4,
+      "coverage_fraction": 1.0,
+      "domains": {
+        "land": 57.1,
+        "placement": 50.0,
+        "parking": 0.0,
+        "housing_entitlement": 7.5,
+        "process": 20.0
+      },
+      "variants": {
+        "1_baseline": 27.4,
+        "2_equal_weight": 27.5,
+        "3_land_density_heavy": 35.6,
+        "4_housing_entitlement_heavy": 20.7,
+        "5_process_heavy_dependency_adjusted": 25.7,
+        "6_conservative_exclude_caveated_v9_buildto": 27.2
+      },
+      "variables": {
+        "V7": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_allowed_by_right",
+          "source_page": "56.0",
+          "section": "3.60.9"
+        },
+        "V12": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_entitlement_present",
+          "source_page": "56.0",
+          "section": "3.60.9"
+        },
+        "V5": {
+          "score": 50.0,
+          "value_numeric": 22.0,
+          "value_categorical": "build_to_flexibility",
+          "source_page": "52.0",
+          "section": null
+        },
+        "V2": {
+          "score": 70.0,
+          "value_numeric": 50.0,
+          "value_categorical": null,
+          "source_page": "52.0",
+          "section": "X.X0.4 BUILDING SITING -- Small General"
+        },
+        "V6": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "no_minimum_parking_requirement",
+          "source_page": "228.0",
+          "section": "8.20.1 MINIMUM RATIOS"
+        },
+        "V8": {
+          "score": 30.0,
+          "value_numeric": null,
+          "value_categorical": "allowed_subject_to_objective_conditions",
+          "source_page": "155.0",
+          "section": "4.70.2 Accessory Apartments"
+        },
+        "V9": {
+          "score": 50.0,
+          "value_numeric": null,
+          "value_categorical": "building_type_only_density_control",
+          "source_page": null,
+          "section": "3.0 Site & Building Types (document-wide)"
+        },
+        "V11": {
+          "score": 20.0,
+          "value_numeric": null,
+          "value_categorical": "administrative_review_with_objective_standards",
+          "source_page": "142.0",
+          "section": "4.10.3 PERMITTED USES"
+        }
+      },
+      "excluded_variables": [
+        {
+          "variable": "V1",
+          "status": "no_evidence_recorded_for_this_scenario",
+          "reason": "no_evidence_recorded_for_this_scenario"
+        }
+      ],
+      "shared_underlying_rule_v7_v11": false
+    },
+    {
+      "key": "Bridgeport|NX3|General",
+      "label": "NX3 \u2014 General",
+      "town": "Bridgeport",
+      "district": "NX3",
+      "building_form": "General",
+      "R_s_baseline": 25.6,
+      "coverage_fraction": 1.0,
+      "domains": {
+        "land": 50.0,
+        "placement": 50.0,
+        "parking": 0.0,
+        "housing_entitlement": 7.5,
+        "process": 20.0
+      },
+      "variants": {
+        "1_baseline": 25.6,
+        "2_equal_weight": 21.4,
+        "3_land_density_heavy": 32.4,
+        "4_housing_entitlement_heavy": 19.6,
+        "5_process_heavy_dependency_adjusted": 24.2,
+        "6_conservative_exclude_caveated_v9_buildto": 9.4
+      },
+      "variables": {
+        "V7": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_allowed_by_right",
+          "source_page": "48.0",
+          "section": "3.50.9"
+        },
+        "V12": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_entitlement_present",
+          "source_page": "48.0",
+          "section": "3.50.9"
+        },
+        "V5": {
+          "score": 50.0,
+          "value_numeric": 22.0,
+          "value_categorical": "build_to_flexibility",
+          "source_page": "44.0",
+          "section": null
+        },
+        "V6": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "no_minimum_parking_requirement",
+          "source_page": "228.0",
+          "section": "8.20.1 MINIMUM RATIOS"
+        },
+        "V8": {
+          "score": 30.0,
+          "value_numeric": null,
+          "value_categorical": "allowed_subject_to_objective_conditions",
+          "source_page": "155.0",
+          "section": "4.70.2 Accessory Apartments"
+        },
+        "V9": {
+          "score": 50.0,
+          "value_numeric": null,
+          "value_categorical": "building_type_only_density_control",
+          "source_page": null,
+          "section": "3.0 Site & Building Types (document-wide)"
+        },
+        "V11": {
+          "score": 20.0,
+          "value_numeric": null,
+          "value_categorical": "administrative_review_with_objective_standards",
+          "source_page": "142.0",
+          "section": "4.10.3 PERMITTED USES"
+        }
+      },
+      "excluded_variables": [
+        {
+          "variable": "V1",
+          "status": "no_evidence_recorded_for_this_scenario",
+          "reason": "no_evidence_recorded_for_this_scenario"
+        },
+        {
+          "variable": "V2",
+          "status": "not_applicable",
+          "reason": "final_determination=not_applicable"
+        }
+      ],
+      "shared_underlying_rule_v7_v11": false
+    },
+    {
+      "key": "Bridgeport|NX3|Row",
+      "label": "NX3 \u2014 Row",
+      "town": "Bridgeport",
+      "district": "NX3",
+      "building_form": "Row",
+      "R_s_baseline": 27.4,
+      "coverage_fraction": 1.0,
+      "domains": {
+        "land": 57.1,
+        "placement": 50.0,
+        "parking": 0.0,
+        "housing_entitlement": 7.5,
+        "process": 20.0
+      },
+      "variants": {
+        "1_baseline": 27.4,
+        "2_equal_weight": 27.5,
+        "3_land_density_heavy": 35.6,
+        "4_housing_entitlement_heavy": 20.7,
+        "5_process_heavy_dependency_adjusted": 25.7,
+        "6_conservative_exclude_caveated_v9_buildto": 27.2
+      },
+      "variables": {
+        "V7": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_allowed_by_right",
+          "source_page": "64.0",
+          "section": "3.70.9"
+        },
+        "V12": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_entitlement_present",
+          "source_page": "64.0",
+          "section": "3.70.9"
+        },
+        "V5": {
+          "score": 50.0,
+          "value_numeric": 22.0,
+          "value_categorical": "build_to_flexibility",
+          "source_page": "60.0",
+          "section": null
+        },
+        "V2": {
+          "score": 70.0,
+          "value_numeric": 60.0,
+          "value_categorical": null,
+          "source_page": "60.0",
+          "section": "X.X0.4 BUILDING SITING -- Row"
+        },
+        "V6": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "no_minimum_parking_requirement",
+          "source_page": "228.0",
+          "section": "8.20.1 MINIMUM RATIOS"
+        },
+        "V8": {
+          "score": 30.0,
+          "value_numeric": null,
+          "value_categorical": "allowed_subject_to_objective_conditions",
+          "source_page": "155.0",
+          "section": "4.70.2 Accessory Apartments"
+        },
+        "V9": {
+          "score": 50.0,
+          "value_numeric": null,
+          "value_categorical": "building_type_only_density_control",
+          "source_page": null,
+          "section": "3.0 Site & Building Types (document-wide)"
+        },
+        "V11": {
+          "score": 20.0,
+          "value_numeric": null,
+          "value_categorical": "administrative_review_with_objective_standards",
+          "source_page": "142.0",
+          "section": "4.10.3 PERMITTED USES"
+        }
+      },
+      "excluded_variables": [
+        {
+          "variable": "V1",
+          "status": "no_evidence_recorded_for_this_scenario",
+          "reason": "no_evidence_recorded_for_this_scenario"
+        }
+      ],
+      "shared_underlying_rule_v7_v11": false
+    },
+    {
+      "key": "Bridgeport|NX4|General",
+      "label": "NX4 \u2014 General",
+      "town": "Bridgeport",
+      "district": "NX4",
+      "building_form": "General",
+      "R_s_baseline": 25.6,
+      "coverage_fraction": 1.0,
+      "domains": {
+        "land": 50.0,
+        "placement": 50.0,
+        "parking": 0.0,
+        "housing_entitlement": 7.5,
+        "process": 20.0
+      },
+      "variants": {
+        "1_baseline": 25.6,
+        "2_equal_weight": 21.4,
+        "3_land_density_heavy": 32.4,
+        "4_housing_entitlement_heavy": 19.6,
+        "5_process_heavy_dependency_adjusted": 24.2,
+        "6_conservative_exclude_caveated_v9_buildto": 9.4
+      },
+      "variables": {
+        "V7": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_allowed_by_right",
+          "source_page": "48.0",
+          "section": "3.50.9"
+        },
+        "V12": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_entitlement_present",
+          "source_page": "48.0",
+          "section": "3.50.9"
+        },
+        "V5": {
+          "score": 50.0,
+          "value_numeric": 23.0,
+          "value_categorical": "build_to_flexibility",
+          "source_page": "44.0",
+          "section": null
+        },
+        "V6": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "no_minimum_parking_requirement",
+          "source_page": "228.0",
+          "section": "8.20.1 MINIMUM RATIOS"
+        },
+        "V8": {
+          "score": 30.0,
+          "value_numeric": null,
+          "value_categorical": "allowed_subject_to_objective_conditions",
+          "source_page": "155.0",
+          "section": "4.70.2 Accessory Apartments"
+        },
+        "V9": {
+          "score": 50.0,
+          "value_numeric": null,
+          "value_categorical": "building_type_only_density_control",
+          "source_page": null,
+          "section": "3.0 Site & Building Types (document-wide)"
+        },
+        "V11": {
+          "score": 20.0,
+          "value_numeric": null,
+          "value_categorical": "administrative_review_with_objective_standards",
+          "source_page": "142.0",
+          "section": "4.10.3 PERMITTED USES"
+        }
+      },
+      "excluded_variables": [
+        {
+          "variable": "V1",
+          "status": "no_evidence_recorded_for_this_scenario",
+          "reason": "no_evidence_recorded_for_this_scenario"
+        },
+        {
+          "variable": "V2",
+          "status": "not_applicable",
+          "reason": "final_determination=not_applicable"
+        }
+      ],
+      "shared_underlying_rule_v7_v11": false
+    },
+    {
+      "key": "Bridgeport|NX4|Row",
+      "label": "NX4 \u2014 Row",
+      "town": "Bridgeport",
+      "district": "NX4",
+      "building_form": "Row",
+      "R_s_baseline": 27.4,
+      "coverage_fraction": 1.0,
+      "domains": {
+        "land": 57.1,
+        "placement": 50.0,
+        "parking": 0.0,
+        "housing_entitlement": 7.5,
+        "process": 20.0
+      },
+      "variants": {
+        "1_baseline": 27.4,
+        "2_equal_weight": 27.5,
+        "3_land_density_heavy": 35.6,
+        "4_housing_entitlement_heavy": 20.7,
+        "5_process_heavy_dependency_adjusted": 25.7,
+        "6_conservative_exclude_caveated_v9_buildto": 27.2
+      },
+      "variables": {
+        "V7": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_allowed_by_right",
+          "source_page": "64.0",
+          "section": "3.70.9"
+        },
+        "V12": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_entitlement_present",
+          "source_page": "64.0",
+          "section": "3.70.9"
+        },
+        "V5": {
+          "score": 50.0,
+          "value_numeric": 22.0,
+          "value_categorical": "build_to_flexibility",
+          "source_page": "60.0",
+          "section": null
+        },
+        "V2": {
+          "score": 70.0,
+          "value_numeric": 60.0,
+          "value_categorical": null,
+          "source_page": "60.0",
+          "section": "X.X0.4 BUILDING SITING -- Row"
+        },
+        "V6": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "no_minimum_parking_requirement",
+          "source_page": "228.0",
+          "section": "8.20.1 MINIMUM RATIOS"
+        },
+        "V8": {
+          "score": 30.0,
+          "value_numeric": null,
+          "value_categorical": "allowed_subject_to_objective_conditions",
+          "source_page": "155.0",
+          "section": "4.70.2 Accessory Apartments"
+        },
+        "V9": {
+          "score": 50.0,
+          "value_numeric": null,
+          "value_categorical": "building_type_only_density_control",
+          "source_page": null,
+          "section": "3.0 Site & Building Types (document-wide)"
+        },
+        "V11": {
+          "score": 20.0,
+          "value_numeric": null,
+          "value_categorical": "administrative_review_with_objective_standards",
+          "source_page": "142.0",
+          "section": "4.10.3 PERMITTED USES"
+        }
+      },
+      "excluded_variables": [
+        {
+          "variable": "V1",
+          "status": "no_evidence_recorded_for_this_scenario",
+          "reason": "no_evidence_recorded_for_this_scenario"
+        }
+      ],
+      "shared_underlying_rule_v7_v11": false
+    },
+    {
+      "key": "Bridgeport|RX1|Small General",
+      "label": "RX1 \u2014 Small General",
+      "town": "Bridgeport",
+      "district": "RX1",
+      "building_form": "Small General",
+      "R_s_baseline": 22.6,
+      "coverage_fraction": 1.0,
+      "domains": {
+        "land": 50.0,
+        "placement": 30.0,
+        "parking": 0.0,
+        "housing_entitlement": 7.5,
+        "process": 20.0
+      },
+      "variants": {
+        "1_baseline": 22.6,
+        "2_equal_weight": 18.6,
+        "3_land_density_heavy": 30.4,
+        "4_housing_entitlement_heavy": 17.6,
+        "5_process_heavy_dependency_adjusted": 22.2,
+        "6_conservative_exclude_caveated_v9_buildto": 9.4
+      },
+      "variables": {
+        "V7": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_allowed_by_right",
+          "source_page": "56.0",
+          "section": "3.60.9"
+        },
+        "V12": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_entitlement_present",
+          "source_page": "56.0",
+          "section": "3.60.9"
+        },
+        "V5": {
+          "score": 30.0,
+          "value_numeric": 17.0,
+          "value_categorical": "build_to_flexibility",
+          "source_page": "52.0",
+          "section": null
+        },
+        "V6": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "no_minimum_parking_requirement",
+          "source_page": "228.0",
+          "section": "8.20.1 MINIMUM RATIOS"
+        },
+        "V8": {
+          "score": 30.0,
+          "value_numeric": null,
+          "value_categorical": "allowed_subject_to_objective_conditions",
+          "source_page": "155.0",
+          "section": "4.70.2 Accessory Apartments"
+        },
+        "V9": {
+          "score": 50.0,
+          "value_numeric": null,
+          "value_categorical": "building_type_only_density_control",
+          "source_page": null,
+          "section": "3.0 Site & Building Types (document-wide)"
+        },
+        "V11": {
+          "score": 20.0,
+          "value_numeric": null,
+          "value_categorical": "administrative_review_with_objective_standards",
+          "source_page": "142.0",
+          "section": "4.10.3 PERMITTED USES"
+        }
+      },
+      "excluded_variables": [
+        {
+          "variable": "V1",
+          "status": "no_evidence_recorded_for_this_scenario",
+          "reason": "no_evidence_recorded_for_this_scenario"
+        },
+        {
+          "variable": "V2",
+          "status": "not_applicable",
+          "reason": "final_determination=not_applicable"
+        }
+      ],
+      "shared_underlying_rule_v7_v11": false
+    },
+    {
+      "key": "Bridgeport|RX2|Commercial House",
+      "label": "RX2 \u2014 Commercial House",
+      "town": "Bridgeport",
+      "district": "RX2",
+      "building_form": "Commercial House",
+      "R_s_baseline": 22.6,
+      "coverage_fraction": 1.0,
+      "domains": {
+        "land": 50.0,
+        "placement": 30.0,
+        "parking": 0.0,
+        "housing_entitlement": 7.5,
+        "process": 20.0
+      },
+      "variants": {
+        "1_baseline": 22.6,
+        "2_equal_weight": 22.5,
+        "3_land_density_heavy": 30.4,
+        "4_housing_entitlement_heavy": 17.6,
+        "5_process_heavy_dependency_adjusted": 22.2,
+        "6_conservative_exclude_caveated_v9_buildto": 22.6
+      },
+      "variables": {
+        "V7": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_allowed_by_right",
+          "source_page": "40.0",
+          "section": "3.40.9"
+        },
+        "V12": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_entitlement_present",
+          "source_page": "40.0",
+          "section": "3.40.9"
+        },
+        "V5": {
+          "score": 30.0,
+          "value_numeric": 27.0,
+          "value_categorical": "conventional_setback",
+          "source_page": "36.0",
+          "section": null
+        },
+        "V2": {
+          "score": 50.0,
+          "value_numeric": 45.0,
+          "value_categorical": null,
+          "source_page": "36.0",
+          "section": "X.X0.4 BUILDING SITING -- Commercial House"
+        },
+        "V6": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "no_minimum_parking_requirement",
+          "source_page": "228.0",
+          "section": "8.20.1 MINIMUM RATIOS"
+        },
+        "V8": {
+          "score": 30.0,
+          "value_numeric": null,
+          "value_categorical": "allowed_subject_to_objective_conditions",
+          "source_page": "155.0",
+          "section": "4.70.2 Accessory Apartments"
+        },
+        "V9": {
+          "score": 50.0,
+          "value_numeric": null,
+          "value_categorical": "building_type_only_density_control",
+          "source_page": null,
+          "section": "3.0 Site & Building Types (document-wide)"
+        },
+        "V11": {
+          "score": 20.0,
+          "value_numeric": null,
+          "value_categorical": "administrative_review_with_objective_standards",
+          "source_page": "142.0",
+          "section": "4.10.3 PERMITTED USES"
+        }
+      },
+      "excluded_variables": [
+        {
+          "variable": "V1",
+          "status": "no_evidence_recorded_for_this_scenario",
+          "reason": "no_evidence_recorded_for_this_scenario"
+        }
+      ],
+      "shared_underlying_rule_v7_v11": false
+    },
+    {
+      "key": "Bridgeport|RX2|General",
+      "label": "RX2 \u2014 General",
+      "town": "Bridgeport",
+      "district": "RX2",
+      "building_form": "General",
+      "R_s_baseline": 25.6,
+      "coverage_fraction": 1.0,
+      "domains": {
+        "land": 50.0,
+        "placement": 50.0,
+        "parking": 0.0,
+        "housing_entitlement": 7.5,
+        "process": 20.0
+      },
+      "variants": {
+        "1_baseline": 25.6,
+        "2_equal_weight": 21.4,
+        "3_land_density_heavy": 32.4,
+        "4_housing_entitlement_heavy": 19.6,
+        "5_process_heavy_dependency_adjusted": 24.2,
+        "6_conservative_exclude_caveated_v9_buildto": 9.4
+      },
+      "variables": {
+        "V7": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_allowed_by_right",
+          "source_page": "48.0",
+          "section": "3.50.9"
+        },
+        "V12": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_entitlement_present",
+          "source_page": "48.0",
+          "section": "3.50.9"
+        },
+        "V5": {
+          "score": 50.0,
+          "value_numeric": 23.0,
+          "value_categorical": "build_to_flexibility",
+          "source_page": "44.0",
+          "section": null
+        },
+        "V6": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "no_minimum_parking_requirement",
+          "source_page": "228.0",
+          "section": "8.20.1 MINIMUM RATIOS"
+        },
+        "V8": {
+          "score": 30.0,
+          "value_numeric": null,
+          "value_categorical": "allowed_subject_to_objective_conditions",
+          "source_page": "155.0",
+          "section": "4.70.2 Accessory Apartments"
+        },
+        "V9": {
+          "score": 50.0,
+          "value_numeric": null,
+          "value_categorical": "building_type_only_density_control",
+          "source_page": null,
+          "section": "3.0 Site & Building Types (document-wide)"
+        },
+        "V11": {
+          "score": 20.0,
+          "value_numeric": null,
+          "value_categorical": "administrative_review_with_objective_standards",
+          "source_page": "142.0",
+          "section": "4.10.3 PERMITTED USES"
+        }
+      },
+      "excluded_variables": [
+        {
+          "variable": "V1",
+          "status": "no_evidence_recorded_for_this_scenario",
+          "reason": "no_evidence_recorded_for_this_scenario"
+        },
+        {
+          "variable": "V2",
+          "status": "not_applicable",
+          "reason": "final_determination=not_applicable"
+        }
+      ],
+      "shared_underlying_rule_v7_v11": false
+    },
+    {
+      "key": "Bridgeport|RX2|Row",
+      "label": "RX2 \u2014 Row",
+      "town": "Bridgeport",
+      "district": "RX2",
+      "building_form": "Row",
+      "R_s_baseline": 27.4,
+      "coverage_fraction": 1.0,
+      "domains": {
+        "land": 57.1,
+        "placement": 50.0,
+        "parking": 0.0,
+        "housing_entitlement": 7.5,
+        "process": 20.0
+      },
+      "variants": {
+        "1_baseline": 27.4,
+        "2_equal_weight": 27.5,
+        "3_land_density_heavy": 35.6,
+        "4_housing_entitlement_heavy": 20.7,
+        "5_process_heavy_dependency_adjusted": 25.7,
+        "6_conservative_exclude_caveated_v9_buildto": 27.2
+      },
+      "variables": {
+        "V7": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_allowed_by_right",
+          "source_page": "64.0",
+          "section": "3.70.9"
+        },
+        "V12": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "confirmed_entitlement_present",
+          "source_page": "64.0",
+          "section": "3.70.9"
+        },
+        "V5": {
+          "score": 50.0,
+          "value_numeric": 22.0,
+          "value_categorical": "build_to_flexibility",
+          "source_page": "60.0",
+          "section": null
+        },
+        "V2": {
+          "score": 70.0,
+          "value_numeric": 60.0,
+          "value_categorical": null,
+          "source_page": "60.0",
+          "section": "X.X0.4 BUILDING SITING -- Row"
+        },
+        "V6": {
+          "score": 0.0,
+          "value_numeric": null,
+          "value_categorical": "no_minimum_parking_requirement",
+          "source_page": "228.0",
+          "section": "8.20.1 MINIMUM RATIOS"
+        },
+        "V8": {
+          "score": 30.0,
+          "value_numeric": null,
+          "value_categorical": "allowed_subject_to_objective_conditions",
+          "source_page": "155.0",
+          "section": "4.70.2 Accessory Apartments"
+        },
+        "V9": {
+          "score": 50.0,
+          "value_numeric": null,
+          "value_categorical": "building_type_only_density_control",
+          "source_page": null,
+          "section": "3.0 Site & Building Types (document-wide)"
+        },
+        "V11": {
+          "score": 20.0,
+          "value_numeric": null,
+          "value_categorical": "administrative_review_with_objective_standards",
+          "source_page": "142.0",
+          "section": "4.10.3 PERMITTED USES"
+        }
+      },
+      "excluded_variables": [
+        {
+          "variable": "V1",
+          "status": "no_evidence_recorded_for_this_scenario",
+          "reason": "no_evidence_recorded_for_this_scenario"
+        }
+      ],
+      "shared_underlying_rule_v7_v11": false
+    }
+  ],
+  "sensitivity_summary": [
+    {
+      "variant": "1_baseline",
+      "greenwich_benchmark": 76.52777777777779,
+      "bridgeport_min": 19.05357142857143,
+      "bridgeport_median": 27.410714285714285,
+      "bridgeport_max": 56.66071428571428,
+      "n_bridgeport_above_benchmark": 0,
+      "n_bridgeport_below_benchmark": 28,
+      "pct_bridgeport_below_benchmark": 100.0
+    },
+    {
+      "variant": "2_equal_weight",
+      "greenwich_benchmark": 78.75,
+      "bridgeport_min": 17.5,
+      "bridgeport_median": 27.5,
+      "bridgeport_max": 55.0,
+      "n_bridgeport_above_benchmark": 0,
+      "n_bridgeport_below_benchmark": 28,
+      "pct_bridgeport_below_benchmark": 100.0
+    },
+    {
+      "variant": "3_land_density_heavy",
+      "greenwich_benchmark": 79.60526315789474,
+      "bridgeport_min": 23.946428571428573,
+      "bridgeport_median": 35.589285714285715,
+      "bridgeport_max": 56.339285714285715,
+      "n_bridgeport_above_benchmark": 0,
+      "n_bridgeport_below_benchmark": 28,
+      "pct_bridgeport_below_benchmark": 100.0
+    },
+    {
+      "variant": "4_housing_entitlement_heavy",
+      "greenwich_benchmark": 74.07894736842104,
+      "bridgeport_min": 15.482142857142858,
+      "bridgeport_median": 20.69642857142857,
+      "bridgeport_max": 63.94642857142858,
+      "n_bridgeport_above_benchmark": 0,
+      "n_bridgeport_below_benchmark": 28,
+      "pct_bridgeport_below_benchmark": 100.0
+    },
+    {
+      "variant": "5_process_heavy_dependency_adjusted",
+      "greenwich_benchmark": 57.631578947368425,
+      "bridgeport_min": 19.392857142857142,
+      "bridgeport_median": 25.67857142857143,
+      "bridgeport_max": 50.17857142857143,
+      "n_bridgeport_above_benchmark": 0,
+      "n_bridgeport_below_benchmark": 28,
+      "pct_bridgeport_below_benchmark": 100.0
+    },
+    {
+      "variant": "6_conservative_exclude_caveated_v9_buildto",
+      "greenwich_benchmark": 71.83333333333333,
+      "bridgeport_min": 9.375,
+      "bridgeport_median": 27.205882352941178,
+      "bridgeport_max": 58.08823529411765,
+      "n_bridgeport_above_benchmark": 0,
+      "n_bridgeport_below_benchmark": 28,
+      "pct_bridgeport_below_benchmark": 100.0
+    }
+  ],
+  "rubrics": [
+    {
+      "variable_id": "V1",
+      "accepted_legal_forms": "minimum_lot_size_sqft; no_minimum",
+      "inputs": "value_numeric (sqft)",
+      "transform": "predeclared tier bands",
+      "direction": "larger=more_restrictive",
+      "score_range": "0-100",
+      "scenario_applicability": "all",
+      "no_minimum_treatment": "score 0 (lowest tier)",
+      "qualitative_treatment": null,
+      "excluded_legal_forms": "area-per-unit, open space, building footprint never substituted",
+      "uncertainty_rule": "unresolved excluded from denominator",
+      "source_gate": "confirmed only",
+      "example_greenwich": "RA-4: 174,240 sqft -> 100",
+      "example_bridgeport": "House C/N3: 9,000 sqft -> 50",
+      "limitations": "Bridgeport confirmed V1 evidence exists for only 2 of 28 eligible scenarios"
+    },
+    {
+      "variable_id": "V2",
+      "accepted_legal_forms": "minimum_lot_width_ft; no_minimum",
+      "inputs": "value_numeric (ft)",
+      "transform": "predeclared tier bands",
+      "direction": "larger=more_restrictive",
+      "score_range": "0-100",
+      "scenario_applicability": "all",
+      "no_minimum_treatment": "score 0",
+      "qualitative_treatment": null,
+      "excluded_legal_forms": "frontage scored as width only where source-defined equivalent",
+      "uncertainty_rule": "unresolved excluded",
+      "source_gate": "confirmed only",
+      "example_greenwich": "RA-4: 200 ft -> 90",
+      "example_bridgeport": "Storefront/DX1: 18 ft -> 10",
+      "limitations": "none material"
+    },
+    {
+      "variable_id": "V5",
+      "accepted_legal_forms": "conventional summed setback (front+side+rear); build-to flexibility (side+rear only)",
+      "inputs": "value_numeric (ft), value_categorical (form)",
+      "transform": "two independent predeclared tier bands by form",
+      "direction": "larger=more_restrictive",
+      "score_range": "0-100",
+      "scenario_applicability": "all eligible V5 scenarios",
+      "no_minimum_treatment": null,
+      "qualitative_treatment": null,
+      "excluded_legal_forms": "parking/accessory-structure setbacks never substituted for principal-building placement (see Notebook 14 fix)",
+      "uncertainty_rule": "structurally_different_placement_form scenarios excluded from V5 unless a frozen alternative rubric exists",
+      "source_gate": "confirmed only, BUILDING SITING source exclusively",
+      "example_greenwich": "RA-4: 250 ft summed -> 100",
+      "example_bridgeport": "House C/N3: 85 ft summed -> 70",
+      "limitations": "build-to flexibility tier is a proxy, not a direct legal equivalent of a conventional setback"
+    },
+    {
+      "variable_id": "V6",
+      "accepted_legal_forms": "no-minimum; numeric spaces/unit; qualitative/discretionary",
+      "inputs": "value_categorical",
+      "transform": "categorical tier map",
+      "direction": "higher_burden=more_restrictive",
+      "score_range": "0-100",
+      "scenario_applicability": "all",
+      "no_minimum_treatment": "score 0 only where source-supported scope applies",
+      "qualitative_treatment": "separate ordinal branch (70)",
+      "excluded_legal_forms": "bedroom/GFA formulas not forced into spaces/unit",
+      "uncertainty_rule": "formula-based flagged for manual harmonization, excluded if unresolved",
+      "source_gate": "confirmed_qualitative_rule or confirmed",
+      "example_greenwich": "no direct V6 categorical match recorded for RA-4 in this registry pass -- excluded from Greenwich benchmark, see limitations",
+      "example_bridgeport": "citywide no-minimum (\u00a78.20.1) -> 0",
+      "limitations": "Greenwich V6 not independently scored this pass (see Notebook 13 KNOWN_LIMITATIONS)"
+    },
+    {
+      "variable_id": "V7",
+      "accepted_legal_forms": "by-right; administrative; special permit; discretionary; legislative; prohibited/unavailable",
+      "inputs": "value_categorical",
+      "transform": "ordinal categorical tier map",
+      "direction": "more_discretionary_or_prohibited=more_restrictive",
+      "score_range": "0-100",
+      "scenario_applicability": "gated: excluded where Household Living is not an allowed use at all (confirmed_not_applicable)",
+      "no_minimum_treatment": null,
+      "qualitative_treatment": null,
+      "excluded_legal_forms": "two-family never counted as 3+-unit multifamily",
+      "uncertainty_rule": "not_applicable excluded from the housing-entitlement domain entirely for that scenario, never scored 0 or 100",
+      "source_gate": "confirmed_allowed_by_right / confirmed_not_available_by_right only",
+      "example_greenwich": "RA-4: prohibited -> 100",
+      "example_bridgeport": "Storefront/DX1: allowed by right -> 0",
+      "limitations": "25 of 28 eligible Bridgeport scenarios are allowed-by-right; 3 gated out as not_applicable"
+    },
+    {
+      "variable_id": "V8",
+      "accepted_legal_forms": "by-right; objective conditions; discretionary; effectively unavailable; prohibited",
+      "inputs": "value_categorical",
+      "transform": "ordinal categorical tier map",
+      "direction": "more_discretionary_or_unavailable=more_restrictive",
+      "score_range": "0-100",
+      "scenario_applicability": "all",
+      "no_minimum_treatment": null,
+      "qualitative_treatment": null,
+      "excluded_legal_forms": "state-default rules not scored without local applicability evidence",
+      "uncertainty_rule": "unresolved excluded",
+      "source_gate": "confirmed only",
+      "example_greenwich": "RA-4: allowed subject to objective conditions -> 30",
+      "example_bridgeport": "citywide \u00a74.70.2: allowed subject to objective conditions -> 30",
+      "limitations": "identical categorical value both towns this pass"
+    },
+    {
+      "variable_id": "V9",
+      "accepted_legal_forms": "numeric units/acre or units/lot or units/building; building-type-only control; 1-unit-per-lot",
+      "inputs": "value_categorical",
+      "transform": "categorical tier map",
+      "direction": "higher_capacity=less_restrictive",
+      "score_range": "0-100",
+      "scenario_applicability": "all",
+      "no_minimum_treatment": "no_cap scores 0",
+      "qualitative_treatment": "building-type-only control scored at a fixed caveated midpoint (50)",
+      "excluded_legal_forms": "density never inferred from lot size/height/GIS",
+      "uncertainty_rule": "caveated -- run with and without in sensitivity (variant 6)",
+      "source_gate": "confirmed_qualitative_rule accepted with explicit caveat flag",
+      "example_greenwich": "RA-4 \u00a76-93: 1 unit/lot detached SF -> 100",
+      "example_bridgeport": "citywide building-type-only control -> 50 (caveated)",
+      "limitations": "V9 is Notebook 09's score_ready_with_caveat variable; caveat carried through explicitly"
+    },
+    {
+      "variable_id": "V11",
+      "accepted_legal_forms": "ministerial; administrative objective; site plan objective; site plan discretionary; special permit; design review; rezoning; prohibited",
+      "inputs": "value_categorical",
+      "transform": "ordinal categorical tier map",
+      "direction": "more_discretionary=more_restrictive",
+      "score_range": "0-100",
+      "scenario_applicability": "all",
+      "no_minimum_treatment": null,
+      "qualitative_treatment": null,
+      "excluded_legal_forms": "not double-counted with V7's identical citation unless shared_underlying_rule=true (see dependency section)",
+      "uncertainty_rule": "unresolved excluded",
+      "source_gate": "confirmed_qualitative_rule accepted",
+      "example_greenwich": "RA-4 \u00a76-93: ministerial only -> 0 (same citation as V7 -- shared_underlying_rule=true)",
+      "example_bridgeport": "citywide administrative review with objective standards -> 20",
+      "limitations": "Greenwich V7/V11 share a citation; Bridgeport's do not (see B5)"
+    },
+    {
+      "variable_id": "V12",
+      "accepted_legal_forms": "broadly by-right; by-right for some forms; administrative; special permit; overlay-limited; prohibited/unavailable",
+      "inputs": "value_categorical",
+      "transform": "ordinal categorical tier map",
+      "direction": "narrower_or_prohibited=more_restrictive",
+      "score_range": "0-100",
+      "scenario_applicability": "gated identically to V7",
+      "no_minimum_treatment": null,
+      "qualitative_treatment": null,
+      "excluded_legal_forms": "building form never assumed missing-middle without unit-count verification",
+      "uncertainty_rule": "not_applicable excluded, never defaulted",
+      "source_gate": "confirmed_entitlement_present / confirmed_entitlement_absent only",
+      "example_greenwich": "RA-4 \u00a76-93: prohibited -> 100",
+      "example_bridgeport": "27 of 50 scenarios entitlement present -> 0; 23 absent -> 100",
+      "limitations": "mirrors V7's dependency relationship, see dependency map"
+    }
+  ],
+  "excluded_constructs": [
+    {
+      "variable": "V3",
+      "label": "Vertical development capacity",
+      "reason": "No common score-ready cross-town representation (Bridgeport stories-only cap vs. Greenwich documented genuine absence)"
+    },
+    {
+      "variable": "V4",
+      "label": "Site-intensity / ground-plane control",
+      "reason": "No common score-ready cross-town representation (Bridgeport coverage % vs. Greenwich not-applicable)"
+    },
+    {
+      "variable": "V10",
+      "label": "Floor-area capacity",
+      "reason": "Both towns independently show genuine absence of a comparable differentiating rule"
+    }
+  ],
+  "methodology": {
+    "release_version": "v1.0.0-pilot",
+    "timestamp": "2026-10-01T21:48:09.634144+00:00",
+    "frozen_input_hash": "97969cdc26e6344841fea9fb9b2d80bc322b8c1daadb06c599ce91037daa042e",
+    "unit_of_analysis": "scenario = <town, district, building_form/use, site/frontage condition>",
+    "score_direction": "0=least restrictive, 100=most restrictive",
+    "domain_formula": {
+      "L_s": "0.30*V1 + 0.25*V2 + 0.45*V9 (renormalized over available components)",
+      "B_s": "V5 (conventional_setback or build_to_flexibility sub-rubric)",
+      "P_s": "V6",
+      "H_s": "0.45*V7 + 0.25*V8 + 0.30*V12 (gated off entirely where V7=not_applicable)",
+      "D_s": "V11 (halved when shared_underlying_rule=true with V7)",
+      "R_s": "0.25*L + 0.15*B + 0.10*P + 0.35*H + 0.15*D (renormalized over available domains)"
+    },
+    "weights_are_theory_driven_not_empirical": true,
+    "dependency_policy": "V7/V11 shared-citation check computed per scenario from actual source_page/section match; V9 caveat carried through and tested in sensitivity variant 6",
+    "sensitivity_variants_run": [
+      "1_baseline",
+      "2_equal_weight",
+      "3_land_density_heavy",
+      "4_housing_entitlement_heavy",
+      "5_process_heavy_dependency_adjusted",
+      "6_conservative_exclude_caveated_v9_buildto"
+    ],
+    "greenwich_benchmark_R_s_baseline": 76.52777777777779,
+    "bridgeport_scenario_count": 28,
+    "bridgeport_baseline_distribution": {
+      "min": 19.05357142857143,
+      "median": 27.410714285714285,
+      "max": 56.66071428571428
+    },
+    "pct_bridgeport_below_benchmark_range_across_variants": [
+      100.0,
+      100.0
+    ],
+    "excluded_context_variables": [
+      "V3",
+      "V4",
+      "V10"
+    ],
+    "no_townwide_ranking_statement": "No single Bridgeport townwide score was computed. No ranking, dominant district, statewide percentile, or causal claim is made anywhere in this notebook."
+  },
+  "score_manifest": {
+    "release_version": "v1.0.0-pilot",
+    "timestamp": "2026-10-01T21:48:09.634144+00:00",
+    "freeze_file_hash": "97969cdc26e6344841fea9fb9b2d80bc322b8c1daadb06c599ce91037daa042e",
+    "rubric_file_hash": "e24c6d7a37a83405679253c30fb750eb26b094748336368bea91c250ee578b30",
+    "formulas": {
+      "L_s": "0.30*V1 + 0.25*V2 + 0.45*V9 (renormalized over available components)",
+      "B_s": "V5 (conventional_setback or build_to_flexibility sub-rubric)",
+      "P_s": "V6",
+      "H_s": "0.45*V7 + 0.25*V8 + 0.30*V12 (gated off entirely where V7=not_applicable)",
+      "D_s": "V11 (halved when shared_underlying_rule=true with V7)",
+      "R_s": "0.25*L + 0.15*B + 0.10*P + 0.35*H + 0.15*D (renormalized over available domains)"
+    },
+    "weights": {
+      "land": 0.25,
+      "placement": 0.15,
+      "parking": 0.1,
+      "housing_entitlement": 0.35,
+      "process": 0.15
+    },
+    "dependency_policy": "V7/V11 shared-citation check computed per scenario from actual source_page/section match; V9 caveat carried through and tested in sensitivity variant 6",
+    "scenario_counts": {
+      "greenwich": 1,
+      "bridgeport_eligible": 28
+    },
+    "inclusion_exclusion_counts": {
+      "frozen_rows_eligible": 223,
+      "frozen_rows_excluded": 38
+    },
+    "coverage_statistics": {
+      "mean_coverage_fraction": 0.996551724137931
+    },
+    "sensitivity_models": [
+      "1_baseline",
+      "2_equal_weight",
+      "3_land_density_heavy",
+      "4_housing_entitlement_heavy",
+      "5_process_heavy_dependency_adjusted",
+      "6_conservative_exclude_caveated_v9_buildto"
+    ],
+    "quality_flags": {
+      "low_coverage_scenarios": 1,
+      "dependency_overlap_flags": 1
+    },
+    "limitations": [
+      "Greenwich V6 not independently scored this pass (see rubric limitations field)",
+      "V9 is a caveated variable; sensitivity variant 6 reports the conservative exclusion",
+      "This is a pilot: nine of twelve registry variables are scored; three (V3/V4/V10) are excluded context"
+    ],
+    "no_townwide_ranking_statement": "No townwide ranking, dominant-district selection, statewide percentile, or causal conclusion was produced."
+  },
+  "release_manifest": {
+    "release_version": "v1.0.0-pilot",
+    "timestamp": "2026-10-01T21:30:19.223838+00:00",
+    "source_hashes": {
+      "data/raw/bridgeport/bridgeport_zoning_code_full_2022-01.pdf.pdf": "afe7c678fa5dfc8581cca968c59eac168aa3b69b0807d26272e274fe88a21d90",
+      "data/raw/greenwich/greenwich_building_zone_regulations_full_2023-08.pdf": "18417c5e9074d765ab4483571b9ac3d6aeb162b37b1b302f7a8ce1f13e963dcb",
+      "data/raw/bridgeport/source_metadata.json": "5a51c30b50ec077535c89b8f3fce53429e2e5ab84abf664b45bdd70f2234f3c7",
+      "data/raw/greenwich/source_metadata.json": "462dd20fb7d4caaa0d948238c633c50f54cb534fa8c6385d29704d5a694fea3a",
+      "data/raw/bridgeport/gis/bridgeport_zoning_districts_2021.geojson": "31f0a2bebb60914a11b4a5b168c291b82af2968c5eff922a24e404878d949ff9",
+      "data/raw/greenwich_gis/greenwich_zone_boundaries.geojson": "9d069caf06047ff73437e312d464cecc2dde0c1c2aca7d55bc488e763edb7fba",
+      "data/processed/expanded_variable_recovery_matrix_bridgeport_greenwich.csv": "2d96a18194fcce129d20a7fb80c4b1431f09af7d612daf8212d7ad7cf1de9787",
+      "data/processed/fixed_variable_recovery_matrix_bridgeport_greenwich.csv": "f89d53fff67db97488ccf97584eab3228ff265c1fa49ab1b9d9e2a126c96b52f",
+      "data/processed/bridgeport_v7_v12_master_use_table_addendum.csv": "636addfb62ddacafca8a377e45dd01177fd32b666d1715776666bbd48e34e1a7",
+      "data/processed/bridgeport_v7_v12_scenario_matched_for_scoring.csv": "990119c22e4b953c1ba6a7ba1c9aadce8de0897a913accd8036176579ef6b5eb",
+      "data/processed/bridgeport_v5_scenario_resolved_addendum.csv": "c0c47b01bb8496195c020580f38e8d0633f1a068f8176d2f2975c397fa189c87",
+      "data/processed/bridgeport_scenario_registry_addendum.csv": "2fcaf1d203ea1138b79ed542fcf69e6a0649d26db6432285936a0ace8467684b",
+      "data/processed/bridgeport_scenario_score_eligibility_universe.csv": "9f308b4e3cfa567bbcd821b8e4381d5198e587afebad99cf789b166d03ad2634",
+      "data/processed/bridgeport_parking_full_13_building_type_recovery.csv": "823bb79b7a056a64b1e621a2b6a52cbe3367276d16918ab26b5b128553c7b280",
+      "data/processed/bridgeport/bridgeport_all_district_scenarios.parquet": "337408571e4cf428493983d2c94cdb42d01bedecec144444ef692762c919e1f5",
+      "data/processed/bridgeport/bridgeport_district_metadata.csv": "a2e9b93faf969a3cbdf497895667a97eceee2144973b74b02d06fe144920d6b7"
+    },
+    "freeze_file_sha256": "97969cdc26e6344841fea9fb9b2d80bc322b8c1daadb06c599ce91037daa042e",
+    "v1_0_score_core_variables": [
+      "V1",
+      "V2",
+      "V5",
+      "V6",
+      "V7",
+      "V8",
+      "V9",
+      "V11",
+      "V12"
+    ],
+    "v1_0_excluded_context_variables": [
+      "V3",
+      "V4",
+      "V10"
+    ],
+    "eligibility_rule": "V7 and V12 resolved at scenario grain AND >=6/7 of remaining Notebook-11 candidate variables resolved (Bridgeport); Greenwich: all 9 score-core variables independently confirmed",
+    "coverage_statistics": {
+      "bridgeport_candidate_scenarios": 44,
+      "bridgeport_eligible_scenarios": 28,
+      "bridgeport_excluded_scenarios": 16,
+      "greenwich_scenarios": 1,
+      "freeze_total_rows": 261,
+      "freeze_eligible_rows": 224,
+      "freeze_excluded_rows": 37
+    },
+    "validation_results": {
+      "source_documents_hash_verified": true,
+      "scenario_ids_or_keys_well_formed": true,
+      "district_codes_valid": true,
+      "no_generic_missing_in_final_determination": true,
+      "every_eligible_row_has_source_page_or_section": true,
+      "every_excluded_row_has_exclusion_reason": true,
+      "v7_v12_counts_reconciled": true,
+      "structurally_different_placement_never_fabricated": true,
+      "v5_principal_placement_never_sourced_from_parking_pages": true,
+      "greenwich_benchmark_scenario_present_and_fully_evaluated": true,
+      "scoring_blocked_flag_is_false": true
+    },
+    "all_critical_validations_passed": true,
+    "known_limitations": [
+      "Bridgeport V1 (lot size) has confirmed numeric evidence for only 2 of 44 scenarios",
+      "28 of 44 scenarios reach the Notebook-11 eligibility bar; 16 are excluded with a disclosed missing-variable reason",
+      "This freeze integrates already-verified evidence (Notebook 10/11/13); it does not re-read the raw PDFs a second time"
+    ],
+    "no_score_yet_statement": "No score has been calculated in this notebook. Scoring is performed only in Notebook 15, reading exclusively from comparative_scoring_input_freeze_v1.parquet."
+  },
+  "coverage_stats": {
+    "bridgeport_candidate_scenarios": 44,
+    "bridgeport_eligible_scenarios": 28,
+    "bridgeport_excluded_scenarios": 16,
+    "greenwich_scenarios": 1,
+    "freeze_total_rows": 261,
+    "freeze_eligible_rows": 224,
+    "freeze_excluded_rows": 37
+  }
+}

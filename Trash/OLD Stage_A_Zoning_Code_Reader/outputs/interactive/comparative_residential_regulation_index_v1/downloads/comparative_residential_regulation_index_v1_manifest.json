@@ -1,0 +1,51 @@
+{
+  "release_version": "v1.0.0-pilot",
+  "timestamp": "2026-10-01T21:48:09.634144+00:00",
+  "freeze_file_hash": "97969cdc26e6344841fea9fb9b2d80bc322b8c1daadb06c599ce91037daa042e",
+  "rubric_file_hash": "e24c6d7a37a83405679253c30fb750eb26b094748336368bea91c250ee578b30",
+  "formulas": {
+    "L_s": "0.30*V1 + 0.25*V2 + 0.45*V9 (renormalized over available components)",
+    "B_s": "V5 (conventional_setback or build_to_flexibility sub-rubric)",
+    "P_s": "V6",
+    "H_s": "0.45*V7 + 0.25*V8 + 0.30*V12 (gated off entirely where V7=not_applicable)",
+    "D_s": "V11 (halved when shared_underlying_rule=true with V7)",
+    "R_s": "0.25*L + 0.15*B + 0.10*P + 0.35*H + 0.15*D (renormalized over available domains)"
+  },
+  "weights": {
+    "land": 0.25,
+    "placement": 0.15,
+    "parking": 0.1,
+    "housing_entitlement": 0.35,
+    "process": 0.15
+  },
+  "dependency_policy": "V7/V11 shared-citation check computed per scenario from actual source_page/section match; V9 caveat carried through and tested in sensitivity variant 6",
+  "scenario_counts": {
+    "greenwich": 1,
+    "bridgeport_eligible": 28
+  },
+  "inclusion_exclusion_counts": {
+    "frozen_rows_eligible": 223,
+    "frozen_rows_excluded": 38
+  },
+  "coverage_statistics": {
+    "mean_coverage_fraction": 0.996551724137931
+  },
+  "sensitivity_models": [
+    "1_baseline",
+    "2_equal_weight",
+    "3_land_density_heavy",
+    "4_housing_entitlement_heavy",
+    "5_process_heavy_dependency_adjusted",
+    "6_conservative_exclude_caveated_v9_buildto"
+  ],
+  "quality_flags": {
+    "low_coverage_scenarios": 1,
+    "dependency_overlap_flags": 1
+  },
+  "limitations": [
+    "Greenwich V6 not independently scored this pass (see rubric limitations field)",
+    "V9 is a caveated variable; sensitivity variant 6 reports the conservative exclusion",
+    "This is a pilot: nine of twelve registry variables are scored; three (V3/V4/V10) are excluded context"
+  ],
+  "no_townwide_ranking_statement": "No townwide ranking, dominant-district selection, statewide percentile, or causal conclusion was produced."
+}

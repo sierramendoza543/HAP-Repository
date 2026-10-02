@@ -1,0 +1,37 @@
+{
+  "release_version": "v1.0.0-pilot",
+  "timestamp": "2026-10-02T00:13:37.438811+00:00",
+  "checks_passed": 20,
+  "checks_total": 20,
+  "check_results": {
+    "1_raw_source_unchanged": true,
+    "2_release_v1_files_are_new_not_overwrites": true,
+    "3_small_general_additive_source_linked": true,
+    "4_v7_v12_counts_reconcile": true,
+    "5_placement_recovery_reconciles": true,
+    "6_every_eligible_input_has_provenance": true,
+    "7_baseline_scores_reproducible_from_frozen_inputs_and_rubric": true,
+    "8_sensitivity_scores_present_and_well_formed": true,
+    "9_no_prohibited_conflation_in_score": true,
+    "10_not_applicable_never_scored": true,
+    "11_no_unresolved_evidence_in_baseline_scoring": true,
+    "12_dependency_treatment_applied": true,
+    "13_v3_v4_v10_excluded_from_aggregate": true,
+    "14_app_data_reconciles_to_frozen_outputs": true,
+    "15_app_contains_required_warning": true,
+    "16_interactive_links_resolve_locally": true,
+    "17_no_external_network_dependency": true,
+    "18_all_visualizations_render": true,
+    "19_core_documentation_present": true,
+    "20_no_prohibited_claims_in_app": true
+  },
+  "release_gate": "READY_FOR_MENTOR_DEMO_WITH_DOCUMENTED_LIMITATIONS",
+  "known_limitations": [
+    "Evidence-card page-crop image library not built (metadata-only Evidence Explorer this version)",
+    "Greenwich V6 excluded from scoring (no specific categorical value recorded)",
+    "V9 is a caveated variable; conservative sensitivity variant reports its exclusion",
+    "16 of 44 Bridgeport candidate scenarios excluded from v1.0 scoring with disclosed reasons",
+    "Accessibility: core keyboard/contrast support present; full WCAG 2.1 AA ARIA audit not performed"
+  ],
+  "no_claim_statement": "No universal townwide restrictiveness ranking, statewide ranking, dominant-district selection, causal conclusion, or unsupported legal claim was produced."
+}

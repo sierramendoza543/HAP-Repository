@@ -1,0 +1,26 @@
+# DEPENDENCY_AND_DOUBLE_COUNTING.md
+
+Source: `data/processed/expanded_variable_dependency_map.csv` (8 declared pairs).
+Every pair below was declared *before* any scoring notebook ran, to prevent post-hoc rationalization
+of a convenient weighting.
+
+| pair                                                        | relationship                   | treatment                    | note                                                                                                                                                 |
+|:------------------------------------------------------------|:-------------------------------|:-----------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| V1 lot size <-> V9 density/unit cap                         | partially_overlapping          | reduced_secondary_weight     | both constrain how much housing a lot can hold, but from different legal angles (area threshold vs unit count); V9 can tighten what V1 alone implies |
+| V3 vertical capacity <-> V10 floor-area capacity            | partially_overlapping          | shared_subdomain_cap         | height and FAR jointly bound building bulk; in a form-based code with no FAR (Bridgeport), V3 effectively carries this alone                         |
+| V4 site intensity <-> V10 floor-area capacity               | needs_manual_harmonization     | shared_subdomain_cap         | coverage and FAR both describe development intensity but are legally distinct; never converted into each other                                       |
+| V5 setbacks/build-to <-> V4 site intensity                  | independent                    | full_separate_scoring        | placement and ground-plane coverage are legally and spatially distinct controls                                                                      |
+| V7 3+-unit entitlement <-> V11 general discretionary review | shared_underlying_rule         | binding_constraint_treatment | when the SAME special-permit citation is the only evidence for both, V11 should not add a full second penalty -- flag shared_underlying_rule=true    |
+| V7 multifamily <-> V12 missing-middle                       | mutually_exclusive_by_scenario | scenario_specific_selection  | V7 covers 3+ units, V12 covers 2-4 units with overlap only at exactly 3-4; apply by actual unit count of the scenario, not both at full weight       |
+| V8 ADU <-> V6 ADU-specific parking                          | partially_overlapping          | descriptive_only_treatment   | ADU parking condition is informative context for V8, not a separate V6 scenario                                                                      |
+| V6 parking <-> V11 procedural review (parking waiver)       | needs_manual_harmonization     | scenario_specific_selection  | when a parking reduction itself requires discretionary review, that review burden belongs to V11, not counted again as a V6 penalty                  |
+
+## How Notebook 12 applied this map
+
+- V7 <-> V12 (`mutually_exclusive_by_scenario`): both retained inside a single capped
+  housing-entitlement domain (max 30% of total index weight), never summed at full weight.
+- V7 <-> V11 (`shared_underlying_rule`, conditional): Notebook 12 checked whether V7's and V11's
+  determinations for the same scenario traced to the *same* citation before applying any reduction.
+  For the scenarios scored, they did not (V7 traced to the Allowed-Uses master-use table, V11 to a
+  separate general procedural-review rule), so no reduction was applied -- this reasoning is logged
+  explicitly in Notebook 12, Section 3, rather than a blanket discount.
