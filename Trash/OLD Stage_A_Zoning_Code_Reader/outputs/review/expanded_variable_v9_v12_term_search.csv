@@ -1,0 +1,35 @@
+town,category,term,hit_count
+Bridgeport,V9_density,floor area ratio,0
+Bridgeport,V9_density,\bFAR\b,0
+Bridgeport,V9_density,units per acre,0
+Bridgeport,V9_density,dwelling units per,0
+Bridgeport,V9_density,density cap,0
+Bridgeport,V9_density,"maximum.{0,15}units",0
+Bridgeport,V10_far,floor area ratio,0
+Bridgeport,V10_far,\bFAR\b,0
+Bridgeport,V10_far,gross floor area,8
+Bridgeport,V10_far,floorplate,0
+Bridgeport,V12_missing_middle,duplex,0
+Bridgeport,V12_missing_middle,two-family,0
+Bridgeport,V12_missing_middle,three-family,0
+Bridgeport,V12_missing_middle,four-family,0
+Bridgeport,V12_missing_middle,townhouse,0
+Bridgeport,V12_missing_middle,row house,15
+Bridgeport,V12_missing_middle,rowhouse,3
+Greenwich,V9_density,floor area ratio,50
+Greenwich,V9_density,\bFAR\b,68
+Greenwich,V9_density,units per acre,3
+Greenwich,V9_density,dwelling units per,13
+Greenwich,V9_density,density cap,0
+Greenwich,V9_density,"maximum.{0,15}units",0
+Greenwich,V10_far,floor area ratio,50
+Greenwich,V10_far,\bFAR\b,68
+Greenwich,V10_far,gross floor area,39
+Greenwich,V10_far,floorplate,0
+Greenwich,V12_missing_middle,duplex,0
+Greenwich,V12_missing_middle,two-family,30
+Greenwich,V12_missing_middle,three-family,1
+Greenwich,V12_missing_middle,four-family,0
+Greenwich,V12_missing_middle,townhouse,0
+Greenwich,V12_missing_middle,row house,0
+Greenwich,V12_missing_middle,rowhouse,0

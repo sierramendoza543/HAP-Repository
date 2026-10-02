@@ -1,0 +1,48 @@
+{
+  "document_id": "bridgeport-connecticut-afe7c678fa5dfc85",
+  "generated_at_utc": "2026-10-01T16:24:17.786025+00:00",
+  "raw_file_hashes": {
+    "pdf_sha256": "afe7c678fa5dfc8581cca968c59eac168aa3b69b0807d26272e274fe88a21d90"
+  },
+  "canonical_source_identity": {
+    "jurisdiction": "Bridgeport, Connecticut",
+    "document_name": "City of Bridgeport Zoning Code",
+    "pdf_filename": "bridgeport_zoning_code_full_2022-01.pdf.pdf",
+    "source_url": null,
+    "document_version_date": "effective January 1, 2022 (adopted November 29, 2021)",
+    "date_retrieved": "unknown -- manually downloaded before pipeline run",
+    "canonical_source": true
+  },
+  "pdf_page_count": 304,
+  "native_word_token_count": 112783,
+  "ocr_route_counts": {
+    "native": 304,
+    "ocr_reconcile": 0,
+    "manual_review": 0
+  },
+  "layout_type_counts": {
+    "single_column": 163,
+    "multi_column_or_complex": 77,
+    "two_column": 58,
+    "table_dominant": 6
+  },
+  "hierarchy_node_count": 1941,
+  "table_candidate_count": 392,
+  "verified_table_count": 32,
+  "diagram_or_unverified_table_candidate_count": 75,
+  "raw_district_candidate_count": 203,
+  "deduplicated_district_count": 24,
+  "citation_resolution_rate": 0.9321,
+  "gis_feature_count": 2000,
+  "gis_crosswalk_exact_match_rate": 0.6667,
+  "gross_area_limitation_statement": "gross_mapped_area_acres is parcel-level/parcel-derived, not a pre-dissolved zone-boundary layer; it is a gross figure only, never a buildable or developable area estimate.",
+  "conflict_candidate_count": 250,
+  "manual_review_item_count": 547,
+  "final_artifact_paths": {
+    "final_evidence_bundles_parquet": "data/processed/bridgeport/bridgeport_final_evidence_bundles.parquet",
+    "final_evidence_bundles_csv": "data/processed/bridgeport/bridgeport_final_evidence_bundles.csv",
+    "district_metadata": "data/processed/bridgeport/bridgeport_district_metadata.csv",
+    "gis_zone_crosswalk": "data/processed/bridgeport/bridgeport_gis_zone_crosswalk.csv",
+    "dashboard": "outputs/figures/bridgeport/bridgeport_collection_dashboard.png"
+  }
+}

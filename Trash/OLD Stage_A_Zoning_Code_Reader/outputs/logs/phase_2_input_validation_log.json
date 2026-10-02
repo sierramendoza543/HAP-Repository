@@ -1,0 +1,144 @@
+{
+  "pipeline_run_timestamp": "2026-10-01T09:09:02.964715+00:00",
+  "source_inventory": [
+    {
+      "input_name": "district_evidence_bundles",
+      "loaded": true,
+      "row_count": 12,
+      "required": true,
+      "required_columns_present": true,
+      "source_path": "/Users/sierramendoza/Documents/HAP-Repository/Stage_A_Zoning_Code_Reader/outputs/tables/final_collection_deliverables/greenwich_district_evidence_bundles.parquet"
+    },
+    {
+      "input_name": "district_metadata",
+      "loaded": true,
+      "row_count": 12,
+      "required": true,
+      "required_columns_present": true,
+      "source_path": "/Users/sierramendoza/Documents/HAP-Repository/Stage_A_Zoning_Code_Reader/outputs/tables/final_collection_deliverables/greenwich_district_metadata.csv"
+    },
+    {
+      "input_name": "district_table_cells",
+      "loaded": true,
+      "row_count": 170,
+      "required": true,
+      "required_columns_present": true,
+      "source_path": "/Users/sierramendoza/Documents/HAP-Repository/Stage_A_Zoning_Code_Reader/data/interim/step_15_district_table_cells.parquet"
+    },
+    {
+      "input_name": "unified_tokens_full",
+      "loaded": true,
+      "row_count": 125290,
+      "required": false,
+      "required_columns_present": true,
+      "source_path": "/Users/sierramendoza/Documents/HAP-Repository/Stage_A_Zoning_Code_Reader/data/interim/step_09_unified_tokens_with_table_ids.parquet"
+    },
+    {
+      "input_name": "district_table_matches",
+      "loaded": true,
+      "row_count": 12,
+      "required": true,
+      "required_columns_present": true,
+      "source_path": "/Users/sierramendoza/Documents/HAP-Repository/Stage_A_Zoning_Code_Reader/outputs/tables/step_15_district_table_row_matches.csv"
+    },
+    {
+      "input_name": "dimensional_parameter_preview",
+      "loaded": true,
+      "row_count": 12,
+      "required": false,
+      "required_columns_present": true,
+      "source_path": "/Users/sierramendoza/Documents/HAP-Repository/Stage_A_Zoning_Code_Reader/outputs/tables/step_15_dimensional_parameter_preview.csv"
+    },
+    {
+      "input_name": "townwide_rule_library",
+      "loaded": true,
+      "row_count": 290,
+      "required": true,
+      "required_columns_present": true,
+      "source_path": "/Users/sierramendoza/Documents/HAP-Repository/Stage_A_Zoning_Code_Reader/outputs/tables/step_14_townwide_rule_library.csv"
+    },
+    {
+      "input_name": "matched_townwide_rules",
+      "loaded": true,
+      "row_count": 15151,
+      "required": true,
+      "required_columns_present": true,
+      "source_path": "/Users/sierramendoza/Documents/HAP-Repository/Stage_A_Zoning_Code_Reader/outputs/tables/step_14_matched_townwide_rules.csv"
+    },
+    {
+      "input_name": "district_linked_references",
+      "loaded": true,
+      "row_count": 11,
+      "required": false,
+      "required_columns_present": true,
+      "source_path": "/Users/sierramendoza/Documents/HAP-Repository/Stage_A_Zoning_Code_Reader/data/interim/step_16_district_linked_references.parquet"
+    },
+    {
+      "input_name": "district_general_rules",
+      "loaded": true,
+      "row_count": 3282,
+      "required": false,
+      "required_columns_present": true,
+      "source_path": "/Users/sierramendoza/Documents/HAP-Repository/Stage_A_Zoning_Code_Reader/data/interim/step_16_district_general_rules.parquet"
+    },
+    {
+      "input_name": "district_overlay_candidates",
+      "loaded": true,
+      "row_count": 24,
+      "required": false,
+      "required_columns_present": true,
+      "source_path": "/Users/sierramendoza/Documents/HAP-Repository/Stage_A_Zoning_Code_Reader/data/interim/step_16_district_overlay_candidates.parquet"
+    },
+    {
+      "input_name": "citation_normalization",
+      "loaded": true,
+      "row_count": 1006,
+      "required": false,
+      "required_columns_present": true,
+      "source_path": "/Users/sierramendoza/Documents/HAP-Repository/Stage_A_Zoning_Code_Reader/outputs/tables/step_13_citation_normalization.csv"
+    },
+    {
+      "input_name": "district_reference_summary",
+      "loaded": true,
+      "row_count": 69,
+      "required": false,
+      "required_columns_present": true,
+      "source_path": "/Users/sierramendoza/Documents/HAP-Repository/Stage_A_Zoning_Code_Reader/outputs/tables/step_13_district_reference_summary.csv"
+    },
+    {
+      "input_name": "conflict_log",
+      "loaded": true,
+      "row_count": 41,
+      "required": true,
+      "required_columns_present": true,
+      "source_path": "/Users/sierramendoza/Documents/HAP-Repository/Stage_A_Zoning_Code_Reader/outputs/tables/step_17_conflict_log.csv"
+    },
+    {
+      "input_name": "bundle_conflict_summary",
+      "loaded": true,
+      "row_count": 12,
+      "required": false,
+      "required_columns_present": true,
+      "source_path": "/Users/sierramendoza/Documents/HAP-Repository/Stage_A_Zoning_Code_Reader/outputs/tables/step_17_bundle_conflict_summary.csv"
+    },
+    {
+      "input_name": "manual_conflict_review_queue",
+      "loaded": true,
+      "row_count": 0,
+      "required": false,
+      "required_columns_present": true,
+      "source_path": "/Users/sierramendoza/Documents/HAP-Repository/Stage_A_Zoning_Code_Reader/outputs/review/step_17_manual_conflict_review_queue.csv"
+    }
+  ],
+  "input_summary": {
+    "base_district_count": 12,
+    "overlay_district_count": 0,
+    "district_table_match_count": 12,
+    "townwide_rule_candidate_count": 290,
+    "matched_townwide_rule_count": 15151,
+    "unresolved_conflict_count": 0,
+    "manual_conflict_review_count": 0,
+    "document_id": "greenwich-connecticut-18417c5e9074d765",
+    "document_hash_sha256": "18417c5e9074d765ab4483571b9ac3d6aeb162b37b1b302f7a8ce1f13e963dcb"
+  }
+}

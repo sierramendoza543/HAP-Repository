@@ -1,0 +1,31 @@
+{
+  "town": "Greenwich",
+  "document_id": "greenwich-connecticut-18417c5e9074d765",
+  "document_hash_sha256": "18417c5e9074d765ab4483571b9ac3d6aeb162b37b1b302f7a8ce1f13e963dcb",
+  "pipeline_run_timestamp": "2026-10-01T09:09:02.964715+00:00",
+  "dominant_district": "RA-4",
+  "dominant_district_status": "verified",
+  "confirmed_variable_count": 5,
+  "not_applicable_variable_count": 2,
+  "missing_variable_count": 1,
+  "review_required_variable_count": 0,
+  "greenwich_prototype_score": 55.55555555555556,
+  "score_label": "GREENWICH PROTOTYPE SCORE -- NOT A CONNECTICUT STATEWIDE PERCENTILE OR RANKING",
+  "scored_component_count": 9,
+  "informational_component_count": 1,
+  "statewide_scoring_status": "blocked",
+  "export_paths": {
+    "evidence_profile": "outputs/tables/greenwich_prototype_final/greenwich_evidence_profile.csv",
+    "rule_extraction_audit": "outputs/tables/greenwich_prototype_final/greenwich_rule_extraction_audit.csv",
+    "score_components": "outputs/tables/greenwich_prototype_final/greenwich_prototype_score_components.csv",
+    "score_summary": "outputs/tables/greenwich_prototype_final/greenwich_prototype_score_summary.csv",
+    "scoring_rubric": "outputs/tables/greenwich_prototype_final/greenwich_prototype_scoring_rubric.csv",
+    "manual_review_history": "outputs/tables/greenwich_prototype_final/greenwich_manual_review_history.csv",
+    "assumptions_and_limitations": "outputs/review/greenwich_prototype_final/greenwich_scoring_assumptions_and_limitations.csv",
+    "pipeline_status_flow_figure": "outputs/figures/greenwich_prototype_final/greenwich_pipeline_status_flow.png",
+    "evidence_source_contribution_figure": "outputs/figures/greenwich_prototype_final/greenwich_evidence_source_contribution.png",
+    "rule_status_chart_figure": "outputs/figures/greenwich_prototype_final/greenwich_rule_status_chart.png",
+    "component_scores_figure": "outputs/figures/greenwich_prototype_final/greenwich_prototype_component_scores.png",
+    "dashboard_figure": "outputs/figures/greenwich_prototype_final/greenwich_end_to_end_dashboard.png"
+  }
+}

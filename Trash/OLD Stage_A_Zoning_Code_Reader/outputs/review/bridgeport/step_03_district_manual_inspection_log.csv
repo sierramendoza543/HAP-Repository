@@ -1,0 +1,7 @@
+category,district_code,preliminary_district_category,inspection_outcome,inspection_note
+representative_high_confidence,NX1,BASE_CANDIDATE,pending_agent_review,Rendered for direct visual inspection; outcome to be finalized after review.
+representative_high_confidence,N1,BASE_CANDIDATE,pending_agent_review,Rendered for direct visual inspection; outcome to be finalized after review.
+representative_high_confidence,P4,PUBLIC_OR_INSTITUTIONAL_CANDIDATE,pending_agent_review,Rendered for direct visual inspection; outcome to be finalized after review.
+uncertain_taxonomy,CX,UNCERTAIN,pending_agent_review,Rendered for direct visual inspection; outcome to be finalized after review.
+uncertain_taxonomy,DX1,UNCERTAIN,pending_agent_review,Rendered for direct visual inspection; outcome to be finalized after review.
+uncertain_taxonomy,DX2,UNCERTAIN,pending_agent_review,Rendered for direct visual inspection; outcome to be finalized after review.

@@ -1,0 +1,9 @@
+{
+  "pipeline_run_timestamp": "2026-10-01T09:09:02.964715+00:00",
+  "town": "Greenwich",
+  "target_district_code": "RA-4",
+  "dominant_district_status": "verified",
+  "confirmed_variable_count": 5,
+  "phase_2_status": "PHASE 2 DIAGNOSTIC ONLY \u2014 SCORING BLOCKED",
+  "legal_bert_used": false
+}

@@ -1,0 +1,69 @@
+{
+  "release_version": "v1.0.0-pilot",
+  "timestamp": "2026-10-01T21:30:19.223838+00:00",
+  "source_hashes": {
+    "data/raw/bridgeport/bridgeport_zoning_code_full_2022-01.pdf.pdf": "afe7c678fa5dfc8581cca968c59eac168aa3b69b0807d26272e274fe88a21d90",
+    "data/raw/greenwich/greenwich_building_zone_regulations_full_2023-08.pdf": "18417c5e9074d765ab4483571b9ac3d6aeb162b37b1b302f7a8ce1f13e963dcb",
+    "data/raw/bridgeport/source_metadata.json": "5a51c30b50ec077535c89b8f3fce53429e2e5ab84abf664b45bdd70f2234f3c7",
+    "data/raw/greenwich/source_metadata.json": "462dd20fb7d4caaa0d948238c633c50f54cb534fa8c6385d29704d5a694fea3a",
+    "data/raw/bridgeport/gis/bridgeport_zoning_districts_2021.geojson": "31f0a2bebb60914a11b4a5b168c291b82af2968c5eff922a24e404878d949ff9",
+    "data/raw/greenwich_gis/greenwich_zone_boundaries.geojson": "9d069caf06047ff73437e312d464cecc2dde0c1c2aca7d55bc488e763edb7fba",
+    "data/processed/expanded_variable_recovery_matrix_bridgeport_greenwich.csv": "2d96a18194fcce129d20a7fb80c4b1431f09af7d612daf8212d7ad7cf1de9787",
+    "data/processed/fixed_variable_recovery_matrix_bridgeport_greenwich.csv": "f89d53fff67db97488ccf97584eab3228ff265c1fa49ab1b9d9e2a126c96b52f",
+    "data/processed/bridgeport_v7_v12_master_use_table_addendum.csv": "636addfb62ddacafca8a377e45dd01177fd32b666d1715776666bbd48e34e1a7",
+    "data/processed/bridgeport_v7_v12_scenario_matched_for_scoring.csv": "990119c22e4b953c1ba6a7ba1c9aadce8de0897a913accd8036176579ef6b5eb",
+    "data/processed/bridgeport_v5_scenario_resolved_addendum.csv": "c0c47b01bb8496195c020580f38e8d0633f1a068f8176d2f2975c397fa189c87",
+    "data/processed/bridgeport_scenario_registry_addendum.csv": "2fcaf1d203ea1138b79ed542fcf69e6a0649d26db6432285936a0ace8467684b",
+    "data/processed/bridgeport_scenario_score_eligibility_universe.csv": "9f308b4e3cfa567bbcd821b8e4381d5198e587afebad99cf789b166d03ad2634",
+    "data/processed/bridgeport_parking_full_13_building_type_recovery.csv": "823bb79b7a056a64b1e621a2b6a52cbe3367276d16918ab26b5b128553c7b280",
+    "data/processed/bridgeport/bridgeport_all_district_scenarios.parquet": "337408571e4cf428493983d2c94cdb42d01bedecec144444ef692762c919e1f5",
+    "data/processed/bridgeport/bridgeport_district_metadata.csv": "a2e9b93faf969a3cbdf497895667a97eceee2144973b74b02d06fe144920d6b7"
+  },
+  "freeze_file_sha256": "97969cdc26e6344841fea9fb9b2d80bc322b8c1daadb06c599ce91037daa042e",
+  "v1_0_score_core_variables": [
+    "V1",
+    "V2",
+    "V5",
+    "V6",
+    "V7",
+    "V8",
+    "V9",
+    "V11",
+    "V12"
+  ],
+  "v1_0_excluded_context_variables": [
+    "V3",
+    "V4",
+    "V10"
+  ],
+  "eligibility_rule": "V7 and V12 resolved at scenario grain AND >=6/7 of remaining Notebook-11 candidate variables resolved (Bridgeport); Greenwich: all 9 score-core variables independently confirmed",
+  "coverage_statistics": {
+    "bridgeport_candidate_scenarios": 44,
+    "bridgeport_eligible_scenarios": 28,
+    "bridgeport_excluded_scenarios": 16,
+    "greenwich_scenarios": 1,
+    "freeze_total_rows": 261,
+    "freeze_eligible_rows": 224,
+    "freeze_excluded_rows": 37
+  },
+  "validation_results": {
+    "source_documents_hash_verified": true,
+    "scenario_ids_or_keys_well_formed": true,
+    "district_codes_valid": true,
+    "no_generic_missing_in_final_determination": true,
+    "every_eligible_row_has_source_page_or_section": true,
+    "every_excluded_row_has_exclusion_reason": true,
+    "v7_v12_counts_reconciled": true,
+    "structurally_different_placement_never_fabricated": true,
+    "v5_principal_placement_never_sourced_from_parking_pages": true,
+    "greenwich_benchmark_scenario_present_and_fully_evaluated": true,
+    "scoring_blocked_flag_is_false": true
+  },
+  "all_critical_validations_passed": true,
+  "known_limitations": [
+    "Bridgeport V1 (lot size) has confirmed numeric evidence for only 2 of 44 scenarios",
+    "28 of 44 scenarios reach the Notebook-11 eligibility bar; 16 are excluded with a disclosed missing-variable reason",
+    "This freeze integrates already-verified evidence (Notebook 10/11/13); it does not re-read the raw PDFs a second time"
+  ],
+  "no_score_yet_statement": "No score has been calculated in this notebook. Scoring is performed only in Notebook 15, reading exclusively from comparative_scoring_input_freeze_v1.parquet."
+}

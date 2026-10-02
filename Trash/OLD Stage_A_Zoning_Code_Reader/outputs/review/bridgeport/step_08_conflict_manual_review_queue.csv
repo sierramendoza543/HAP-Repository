@@ -1,0 +1,207 @@
+district_code,topic,rule_id,role,conflict_group_size,severity,heading
+CX,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00016,modifier_evidence,3,high,3.50 General Building Type
+CX,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00048,primary_evidence,3,high,3.130 Workshop Building Type
+CX,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00052,modifier_evidence,3,high,3.140 Civic Building Type
+CX,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00017,modifier_evidence,4,high,3.50.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.50-C .
+CX,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00049,primary_evidence,4,high,3.130.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.50-C .
+CX,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00053,modifier_evidence,4,high,3.140.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.50-C .
+CX,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00058,modifier_evidence,4,high,3.160.6. PARKING AND ACCESSORY STRUCTURES. See Figure 3.50-B
+CX,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00018,modifier_evidence,4,high,3.50.8. PRIMARY & NON-PRIMARY FACADES. Figure 3.50-E
+CX,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00050,primary_evidence,4,high,3.130.8. PRIMARY & NON-PRIMARY FACADES. Figure 3.50-E
+CX,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00054,modifier_evidence,4,high,3.140.8. PRIMARY & NON-PRIMARY FACADES. Figure 3.50-E
+CX,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00064,modifier_evidence,4,high,6.40 Facade Materials
+CX,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00019,interpretive_context,4,high,"3.50.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+CX,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00051,interpretive_context,4,high,"3.130.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+CX,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00055,interpretive_context,4,high,"3.140.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+CX,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00059,interpretive_context,4,high,"3.160.7. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+CX,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00019,modifier_evidence,4,high,"3.50.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+CX,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00051,primary_evidence,4,high,"3.130.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+CX,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00055,modifier_evidence,4,high,"3.140.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+CX,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00059,modifier_evidence,4,high,"3.160.7. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+DX1,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00005,modifier_evidence,3,high,3.20.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.20-C .
+DX1,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00053,modifier_evidence,3,high,3.140.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.50-C .
+DX1,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00056,primary_evidence,3,high,3.150.6. PARKING AND ACCESSORY STRUCTURES. See Figure 3.50-B
+DX1,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00007,interpretive_context,3,high,"3.20.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+DX1,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00055,interpretive_context,3,high,"3.140.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+DX1,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00057,interpretive_context,3,high,"3.150.7. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+DX1,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00007,modifier_evidence,3,high,"3.20.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+DX1,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00055,modifier_evidence,3,high,"3.140.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+DX1,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00057,primary_evidence,3,high,"3.150.7. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+DX2,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00007,interpretive_context,3,high,"3.20.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+DX2,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00019,interpretive_context,3,high,"3.50.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+DX2,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00055,interpretive_context,3,high,"3.140.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+DX2,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00007,primary_evidence,3,high,"3.20.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+DX2,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00019,modifier_evidence,3,high,"3.50.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+DX2,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00055,modifier_evidence,3,high,"3.140.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+I,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00017,modifier_evidence,3,high,3.50.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.50-C .
+I,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00049,primary_evidence,3,high,3.130.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.50-C .
+I,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00058,modifier_evidence,3,high,3.160.6. PARKING AND ACCESSORY STRUCTURES. See Figure 3.50-B
+I,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00018,modifier_evidence,4,high,3.50.8. PRIMARY & NON-PRIMARY FACADES. Figure 3.50-E
+I,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00050,modifier_evidence,4,high,3.130.8. PRIMARY & NON-PRIMARY FACADES. Figure 3.50-E
+I,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00064,modifier_evidence,4,high,6.40 Facade Materials
+I,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00083,primary_evidence,4,high,14.20.12 BUILDING ENTRANCES
+I,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00019,interpretive_context,3,high,"3.50.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+I,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00051,interpretive_context,3,high,"3.130.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+I,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00059,interpretive_context,3,high,"3.160.7. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+I,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00019,modifier_evidence,3,high,"3.50.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+I,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00051,primary_evidence,3,high,"3.130.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+I,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00059,modifier_evidence,3,high,"3.160.7. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+MX1,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00004,primary_evidence,3,high,3.20 Storefront Building Type
+MX1,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00012,modifier_evidence,3,high,3.40 Commercial House Building Type
+MX1,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00052,modifier_evidence,3,high,3.140 Civic Building Type
+MX1,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00005,modifier_evidence,4,high,3.20.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.20-C .
+MX1,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00013,modifier_evidence,4,high,3.40.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.90-C .
+MX1,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00053,modifier_evidence,4,high,3.140.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.50-C .
+MX1,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00056,primary_evidence,4,high,3.150.6. PARKING AND ACCESSORY STRUCTURES. See Figure 3.50-B
+MX1,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00006,primary_evidence,3,high,3.20.8. PRIMARY & NON-PRIMARY FACADES. See Figure 3.20-E
+MX1,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00014,modifier_evidence,3,high,3.40.8. PRIMARY & NON-PRIMARY FACADES. See Figure 3.90-E
+MX1,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00054,modifier_evidence,3,high,3.140.8. PRIMARY & NON-PRIMARY FACADES. Figure 3.50-E
+MX1,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00007,interpretive_context,4,high,"3.20.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+MX1,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00015,interpretive_context,4,high,"3.40.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+MX1,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00055,interpretive_context,4,high,"3.140.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+MX1,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00057,interpretive_context,4,high,"3.150.7. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+MX1,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00007,modifier_evidence,4,high,"3.20.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+MX1,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00015,modifier_evidence,4,high,"3.40.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+MX1,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00055,modifier_evidence,4,high,"3.140.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+MX1,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00057,primary_evidence,4,high,"3.150.7. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+MX2,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00004,modifier_evidence,4,high,3.20 Storefront Building Type
+MX2,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00008,primary_evidence,4,high,3.30 Commercial Center Building Type
+MX2,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00012,modifier_evidence,4,high,3.40 Commercial House Building Type
+MX2,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00052,modifier_evidence,4,high,3.140 Civic Building Type
+MX2,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00005,modifier_evidence,5,high,3.20.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.20-C .
+MX2,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00009,primary_evidence,5,high,3.30.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.20-C.
+MX2,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00013,modifier_evidence,5,high,3.40.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.90-C .
+MX2,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00053,modifier_evidence,5,high,3.140.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.50-C .
+MX2,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00056,modifier_evidence,5,high,3.150.6. PARKING AND ACCESSORY STRUCTURES. See Figure 3.50-B
+MX2,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00006,modifier_evidence,4,high,3.20.8. PRIMARY & NON-PRIMARY FACADES. See Figure 3.20-E
+MX2,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00010,primary_evidence,4,high,3.30.8. PRIMARY & NON-PRIMARY FACADES. See Figure 3.20-E
+MX2,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00014,modifier_evidence,4,high,3.40.8. PRIMARY & NON-PRIMARY FACADES. See Figure 3.90-E
+MX2,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00054,modifier_evidence,4,high,3.140.8. PRIMARY & NON-PRIMARY FACADES. Figure 3.50-E
+MX2,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00007,interpretive_context,5,high,"3.20.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+MX2,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00011,interpretive_context,5,high,"3.30.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+MX2,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00015,interpretive_context,5,high,"3.40.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+MX2,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00055,interpretive_context,5,high,"3.140.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+MX2,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00057,interpretive_context,5,high,"3.150.7. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+MX2,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00007,modifier_evidence,5,high,"3.20.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+MX2,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00011,primary_evidence,5,high,"3.30.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+MX2,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00015,modifier_evidence,5,high,"3.40.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+MX2,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00055,modifier_evidence,5,high,"3.140.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+MX2,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00057,modifier_evidence,5,high,"3.150.7. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+NX1,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00024,modifier_evidence,3,high,3.70 Row Building Type
+NX1,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00028,primary_evidence,3,high,3.80 Double House A Building Type
+NX1,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00032,modifier_evidence,3,high,3.90 House A Building Type
+NX1,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00025,modifier_evidence,3,high,3.70.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.70-C .
+NX1,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00029,primary_evidence,3,high,3.80.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.80-C .
+NX1,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00033,modifier_evidence,3,high,3.90.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.90-C .
+NX1,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00026,modifier_evidence,3,high,3.70.8. PRIMARY & NON-PRIMARY FACADES. See Figure 3.70-E
+NX1,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00030,primary_evidence,3,high,3.80.8. FACADES. See Figure 3.80-E
+NX1,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00034,modifier_evidence,3,high,3.90.8. PRIMARY & NON-PRIMARY FACADES. See Figure 3.90-E
+NX1,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00027,interpretive_context,3,high,"3.70.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+NX1,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00031,interpretive_context,3,high,"3.80.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+NX1,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00035,interpretive_context,3,high,"3.90.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+NX1,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00027,modifier_evidence,3,high,"3.70.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+NX1,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00031,primary_evidence,3,high,"3.80.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+NX1,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00035,modifier_evidence,3,high,"3.90.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+NX2,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00020,primary_evidence,4,high,3.60 Small General Building Type
+NX2,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00024,modifier_evidence,4,high,3.70 Row Building Type
+NX2,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00028,modifier_evidence,4,high,3.80 Double House A Building Type
+NX2,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00032,modifier_evidence,4,high,3.90 House A Building Type
+NX2,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00021,primary_evidence,4,high,3.60.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.60-C .
+NX2,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00025,modifier_evidence,4,high,3.70.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.70-C .
+NX2,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00029,modifier_evidence,4,high,3.80.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.80-C .
+NX2,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00033,modifier_evidence,4,high,3.90.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.90-C .
+NX2,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00022,primary_evidence,4,high,3.60.8. PRIMARY & NON-PRIMARY FACADES. Figure 3.60-E
+NX2,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00026,modifier_evidence,4,high,3.70.8. PRIMARY & NON-PRIMARY FACADES. See Figure 3.70-E
+NX2,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00030,modifier_evidence,4,high,3.80.8. FACADES. See Figure 3.80-E
+NX2,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00034,modifier_evidence,4,high,3.90.8. PRIMARY & NON-PRIMARY FACADES. See Figure 3.90-E
+NX2,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00023,interpretive_context,4,high,"3.60.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+NX2,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00027,interpretive_context,4,high,"3.70.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+NX2,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00031,interpretive_context,4,high,"3.80.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+NX2,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00035,interpretive_context,4,high,"3.90.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+NX2,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00023,primary_evidence,4,high,"3.60.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+NX2,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00027,modifier_evidence,4,high,"3.70.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+NX2,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00031,modifier_evidence,4,high,"3.80.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+NX2,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00035,modifier_evidence,4,high,"3.90.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+NX3,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00016,modifier_evidence,3,high,3.50 General Building Type
+NX3,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00024,primary_evidence,3,high,3.70 Row Building Type
+NX3,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00052,modifier_evidence,3,high,3.140 Civic Building Type
+NX3,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00017,modifier_evidence,3,high,3.50.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.50-C .
+NX3,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00025,primary_evidence,3,high,3.70.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.70-C .
+NX3,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00053,modifier_evidence,3,high,3.140.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.50-C .
+NX3,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00018,modifier_evidence,3,high,3.50.8. PRIMARY & NON-PRIMARY FACADES. Figure 3.50-E
+NX3,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00026,primary_evidence,3,high,3.70.8. PRIMARY & NON-PRIMARY FACADES. See Figure 3.70-E
+NX3,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00054,modifier_evidence,3,high,3.140.8. PRIMARY & NON-PRIMARY FACADES. Figure 3.50-E
+NX3,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00019,interpretive_context,3,high,"3.50.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+NX3,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00027,interpretive_context,3,high,"3.70.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+NX3,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00055,interpretive_context,3,high,"3.140.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+NX3,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00019,modifier_evidence,3,high,"3.50.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+NX3,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00027,primary_evidence,3,high,"3.70.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+NX3,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00055,modifier_evidence,3,high,"3.140.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+NX4,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00016,modifier_evidence,3,high,3.50 General Building Type
+NX4,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00024,primary_evidence,3,high,3.70 Row Building Type
+NX4,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00052,modifier_evidence,3,high,3.140 Civic Building Type
+NX4,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00017,modifier_evidence,3,high,3.50.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.50-C .
+NX4,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00025,primary_evidence,3,high,3.70.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.70-C .
+NX4,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00053,modifier_evidence,3,high,3.140.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.50-C .
+NX4,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00018,modifier_evidence,3,high,3.50.8. PRIMARY & NON-PRIMARY FACADES. Figure 3.50-E
+NX4,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00026,primary_evidence,3,high,3.70.8. PRIMARY & NON-PRIMARY FACADES. See Figure 3.70-E
+NX4,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00054,modifier_evidence,3,high,3.140.8. PRIMARY & NON-PRIMARY FACADES. Figure 3.50-E
+NX4,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00019,interpretive_context,3,high,"3.50.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+NX4,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00027,interpretive_context,3,high,"3.70.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+NX4,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00055,interpretive_context,3,high,"3.140.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+NX4,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00019,modifier_evidence,3,high,"3.50.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+NX4,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00027,primary_evidence,3,high,"3.70.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+NX4,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00055,modifier_evidence,3,high,"3.140.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+P2,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00007,interpretive_context,4,high,"3.20.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+P2,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00019,interpretive_context,4,high,"3.50.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+P2,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00055,interpretive_context,4,high,"3.140.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+P2,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00059,interpretive_context,4,high,"3.160.7. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+P2,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00007,modifier_evidence,4,high,"3.20.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+P2,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00019,modifier_evidence,4,high,"3.50.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+P2,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00055,modifier_evidence,4,high,"3.140.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+P2,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00059,primary_evidence,4,high,"3.160.7. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+P2,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00017,modifier_evidence,3,high,3.50.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.50-C .
+P2,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00053,modifier_evidence,3,high,3.140.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.50-C .
+P2,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00058,primary_evidence,3,high,3.160.6. PARKING AND ACCESSORY STRUCTURES. See Figure 3.50-B
+RX1,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00007,interpretive_context,5,high,"3.20.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+RX1,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00015,interpretive_context,5,high,"3.40.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+RX1,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00023,interpretive_context,5,high,"3.60.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+RX1,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00027,interpretive_context,5,high,"3.70.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+RX1,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00055,interpretive_context,5,high,"3.140.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+RX1,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00007,modifier_evidence,5,high,"3.20.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+RX1,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00015,modifier_evidence,5,high,"3.40.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+RX1,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00023,primary_evidence,5,high,"3.60.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+RX1,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00027,modifier_evidence,5,high,"3.70.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+RX1,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00055,modifier_evidence,5,high,"3.140.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+RX1,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00012,modifier_evidence,4,high,3.40 Commercial House Building Type
+RX1,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00020,primary_evidence,4,high,3.60 Small General Building Type
+RX1,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00024,modifier_evidence,4,high,3.70 Row Building Type
+RX1,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00052,modifier_evidence,4,high,3.140 Civic Building Type
+RX1,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00013,modifier_evidence,4,high,3.40.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.90-C .
+RX1,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00021,primary_evidence,4,high,3.60.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.60-C .
+RX1,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00025,modifier_evidence,4,high,3.70.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.70-C .
+RX1,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00053,modifier_evidence,4,high,3.140.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.50-C .
+RX1,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00014,modifier_evidence,4,high,3.40.8. PRIMARY & NON-PRIMARY FACADES. See Figure 3.90-E
+RX1,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00022,primary_evidence,4,high,3.60.8. PRIMARY & NON-PRIMARY FACADES. Figure 3.60-E
+RX1,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00026,modifier_evidence,4,high,3.70.8. PRIMARY & NON-PRIMARY FACADES. See Figure 3.70-E
+RX1,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00054,modifier_evidence,4,high,3.140.8. PRIMARY & NON-PRIMARY FACADES. Figure 3.50-E
+RX2,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00012,primary_evidence,4,high,3.40 Commercial House Building Type
+RX2,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00016,modifier_evidence,4,high,3.50 General Building Type
+RX2,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00024,modifier_evidence,4,high,3.70 Row Building Type
+RX2,building_types,bridgeport-connecticut-afe7c678fa5dfc85-rule-00052,modifier_evidence,4,high,3.140 Civic Building Type
+RX2,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00013,primary_evidence,4,high,3.40.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.90-C .
+RX2,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00017,modifier_evidence,4,high,3.50.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.50-C .
+RX2,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00025,modifier_evidence,4,high,3.70.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.70-C .
+RX2,parking,bridgeport-connecticut-afe7c678fa5dfc85-rule-00053,modifier_evidence,4,high,3.140.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.50-C .
+RX2,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00014,primary_evidence,4,high,3.40.8. PRIMARY & NON-PRIMARY FACADES. See Figure 3.90-E
+RX2,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00018,modifier_evidence,4,high,3.50.8. PRIMARY & NON-PRIMARY FACADES. Figure 3.50-E
+RX2,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00026,modifier_evidence,4,high,3.70.8. PRIMARY & NON-PRIMARY FACADES. See Figure 3.70-E
+RX2,building_form,bridgeport-connecticut-afe7c678fa5dfc85-rule-00054,modifier_evidence,4,high,3.140.8. PRIMARY & NON-PRIMARY FACADES. Figure 3.50-E
+RX2,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00015,interpretive_context,4,high,"3.40.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+RX2,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00019,interpretive_context,4,high,"3.50.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+RX2,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00027,interpretive_context,4,high,"3.70.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+RX2,definitions,bridgeport-connecticut-afe7c678fa5dfc85-rule-00055,interpretive_context,4,high,"3.140.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+RX2,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00015,primary_evidence,4,high,"3.40.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+RX2,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00019,modifier_evidence,4,high,"3.50.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+RX2,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00027,modifier_evidence,4,high,"3.70.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+RX2,permitted_uses,bridgeport-connecticut-afe7c678fa5dfc85-rule-00055,modifier_evidence,4,high,"3.140.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."

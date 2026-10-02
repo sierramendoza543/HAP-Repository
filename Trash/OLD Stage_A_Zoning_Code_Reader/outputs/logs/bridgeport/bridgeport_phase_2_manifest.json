@@ -1,0 +1,41 @@
+{
+  "document_id": "bridgeport-connecticut-afe7c678fa5dfc85",
+  "generated_at_utc": "2026-10-01T16:59:54.314054+00:00",
+  "all_district_count": 24,
+  "classification_counts": {
+    "mixed_use_residential_capable": 7,
+    "residential_capable": 7,
+    "public_or_institutional": 5,
+    "nonresidential": 2,
+    "uncertain": 2,
+    "overlay_or_historic_modifier": 1
+  },
+  "scenario_count": 46,
+  "candidate_count": 782,
+  "final_status_counts": {
+    "missing": 285,
+    "review_required": 234,
+    "confirmed": 234,
+    "qualitative_only": 23,
+    "not_applicable": 6
+  },
+  "comparability_status_counts": {
+    "missing": 285,
+    "needs_manual_harmonization": 234,
+    "comparable_with_documented_transform": 120,
+    "directly_comparable": 68,
+    "qualitative_only": 46,
+    "structurally_non_equivalent": 23,
+    "not_applicable": 6
+  },
+  "review_count": 234,
+  "held_district_count": 10,
+  "no_score_statement": "No Bridgeport composite score, dominant-district selection, statewide percentile, or validated Greenwich ranking was produced.",
+  "artifact_paths": {
+    "evidence_profile": "data/processed/bridgeport/bridgeport_phase_2_evidence_profile.csv",
+    "rule_extractions": "data/processed/bridgeport/bridgeport_all_district_rule_extractions.parquet",
+    "comparability": "data/processed/bridgeport/bridgeport_all_district_comparability.csv",
+    "greenwich_bridgeport_comparison_csv": "outputs/tables/bridgeport/bridgeport_greenwich_exploratory_comparison.csv",
+    "greenwich_bridgeport_comparison_md": "outputs/tables/bridgeport/bridgeport_greenwich_exploratory_comparison.md"
+  }
+}

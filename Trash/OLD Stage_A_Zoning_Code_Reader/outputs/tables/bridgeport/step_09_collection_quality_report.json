@@ -1,0 +1,21 @@
+{
+  "document_id": "bridgeport-connecticut-afe7c678fa5dfc85",
+  "pdf_page_count": 304,
+  "ocr_pages_required": 0,
+  "hierarchy_node_count": 1941,
+  "retained_table_count": 107,
+  "verified_vs_diagram_table_ratio": 0.299,
+  "canonical_district_count": 24,
+  "districts_with_primary_text": 22,
+  "citation_resolution_rate": 0.9321,
+  "gis_crosswalk_exact_match_rate": 0.6667,
+  "explicit_scope_rule_rate": 0.8434,
+  "conflict_candidate_count": 250,
+  "known_limitations": [
+    "77 of 304 pages remain multi_column_or_complex and were not auto-reordered (Stage 1.5).",
+    "building_form_table_candidate and parking_schedule_candidate tables are frequently vector-line diagrams, not data tables, per direct Stage 2 visual inspection (3/3 sampled).",
+    "District-category keyword rules are a preliminary heuristic over narrative text, not a validated legal taxonomy.",
+    "Most 'high severity' Stage 8 conflict candidates reflect a form-based code's natural multiplicity (several building types allowed per district, each with its own parking/form subsection) rather than a detected legal contradiction -- severity is a co-occurrence-count proxy, not semantic conflict detection.",
+    "No rule values (numeric standards) were extracted in this notebook -- Collection Phase only."
+  ]
+}

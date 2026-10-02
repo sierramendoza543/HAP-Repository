@@ -1,0 +1,13 @@
+variable_id,has_rubric_draft,appears_in_dependency_map,pre_notebook10_score_readiness,included_in_notebook12_pilot_index
+V1,True,True,score_ready,True
+V2,True,False,score_ready,True
+V3,True,True,not_score_ready_genuine_absence,False
+V4,True,True,not_score_ready_manual_review,False
+V5,True,True,score_ready,True
+V6,True,True,score_ready,True
+V7,True,True,not_score_ready_pending_recovery,True
+V8,True,True,score_ready,True
+V9,True,True,score_ready_with_caveat,True
+V10,True,True,not_score_ready_genuine_absence,False
+V11,True,True,score_ready,True
+V12,True,True,not_score_ready_manual_review,True

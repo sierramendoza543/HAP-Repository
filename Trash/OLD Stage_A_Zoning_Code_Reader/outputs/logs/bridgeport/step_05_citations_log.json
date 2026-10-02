@@ -1,0 +1,16 @@
+{
+  "document_id": "bridgeport-connecticut-afe7c678fa5dfc85",
+  "pipeline_run_timestamp": "2026-10-01T16:20:55.394243+00:00",
+  "raw_citation_count": 368,
+  "resolution_status_counts": {
+    "resolved_exact": 241,
+    "resolved_to_ancestor_section": 74,
+    "resolved_table": 28,
+    "unresolved": 25
+  },
+  "resolution_rate": 0.9321,
+  "graph_nodes": 2047,
+  "graph_edges": 319,
+  "edges_skipped_for_cycle": 0,
+  "sources_beyond_max_depth": 0
+}

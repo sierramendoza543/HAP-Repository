@@ -1,0 +1,57 @@
+{
+  "document_id": "greenwich-connecticut-18417c5e9074d765",
+  "ocr_config": {
+    "enabled": true,
+    "language": "eng",
+    "render_zoom": 2.5,
+    "tesseract_page_segmentation_mode": 6,
+    "tesseract_ocr_engine_mode": 3,
+    "minimum_word_confidence": 30.0,
+    "minimum_mean_page_confidence": 55.0,
+    "minimum_ocr_word_count": 10,
+    "native_text_nearly_empty_characters": 50,
+    "high_similarity_threshold": 0.92,
+    "intermediate_similarity_threshold": 0.65,
+    "adaptive_threshold_block_size": 31,
+    "adaptive_threshold_constant": 11,
+    "gaussian_blur_kernel_size": 3,
+    "deskew_enabled": true,
+    "save_rendered_page_images": true,
+    "save_preprocessed_page_images": true,
+    "save_ocr_word_boxes": true,
+    "tesseract_cmd": null,
+    "output_ocr_tokens_filename": "step_05_ocr_word_tokens.parquet",
+    "output_reconciliation_filename": "step_05_reconciliation_results.csv"
+  },
+  "ocr_target_page_count": 313,
+  "ocr_reconciliation_page_count": 307,
+  "manual_review_diagnostic_ocr_page_count": 6,
+  "ocr_word_token_count": 121856,
+  "reconciliation_record_count": 313,
+  "reconciliation_decision_counts": {
+    "native_retained_high_agreement": 255,
+    "low_agreement_or_low_ocr_confidence": 28,
+    "native_retained_ocr_comparison_required": 18,
+    "ocr_accepted_provisionally": 6,
+    "manual_review_required": 6
+  },
+  "review_status_counts": {
+    "reconciled_high_agreement": 255,
+    "manual_review_required": 34,
+    "reconciliation_review_required": 18,
+    "ocr_selected_requires_spot_check": 6
+  },
+  "ocr_confidence_summary": {
+    "mean": 93.94614254399454,
+    "median": 96.512711,
+    "minimum": 0.0,
+    "maximum": 97.022415
+  },
+  "ocr_overlay_paths": [
+    "outputs/figures/step_05_ocr_word_bbox_overlay_page_246.png",
+    "outputs/figures/step_05_ocr_word_bbox_overlay_page_015.png",
+    "outputs/figures/step_05_ocr_word_bbox_overlay_page_288.png",
+    "outputs/figures/step_05_ocr_word_bbox_overlay_page_045.png",
+    "outputs/figures/step_05_ocr_word_bbox_overlay_page_248.png"
+  ]
+}

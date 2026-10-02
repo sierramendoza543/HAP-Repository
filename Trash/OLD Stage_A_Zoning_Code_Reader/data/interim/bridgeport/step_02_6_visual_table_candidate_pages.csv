@@ -1,0 +1,27 @@
+page_number,subsection_family,building_type_heading
+22,HEIGHT,3.20 Storefront Building Type
+30,HEIGHT,3.30 Commercial Center Building Type
+38,HEIGHT,3.40 Commercial House Building Type
+46,HEIGHT,3.50 General Building Type
+54,HEIGHT,3.60 Small General Building Type
+62,HEIGHT,3.70 Row Building Type
+70,HEIGHT,3.80 Double House A Building Type
+78,HEIGHT,3.90 House A Building Type
+86,HEIGHT,3.100 House B Building Type
+94,HEIGHT,3.110 House C Building Type
+102,HEIGHT,3.120 House D Building Type
+110,HEIGHT,3.130 Workshop Building Type
+118,HEIGHT,3.140 Civic Building Type
+21,PARKING_AND_ACCESSORY_STRUCTURES,3.20 Storefront Building Type
+29,PARKING_AND_ACCESSORY_STRUCTURES,3.30 Commercial Center Building Type
+37,PARKING_AND_ACCESSORY_STRUCTURES,3.40 Commercial House Building Type
+45,PARKING_AND_ACCESSORY_STRUCTURES,3.50 General Building Type
+53,PARKING_AND_ACCESSORY_STRUCTURES,3.60 Small General Building Type
+61,PARKING_AND_ACCESSORY_STRUCTURES,3.70 Row Building Type
+69,PARKING_AND_ACCESSORY_STRUCTURES,3.80 Double House A Building Type
+77,PARKING_AND_ACCESSORY_STRUCTURES,3.90 House A Building Type
+85,PARKING_AND_ACCESSORY_STRUCTURES,3.100 House B Building Type
+93,PARKING_AND_ACCESSORY_STRUCTURES,3.110 House C Building Type
+101,PARKING_AND_ACCESSORY_STRUCTURES,3.120 House D Building Type
+109,PARKING_AND_ACCESSORY_STRUCTURES,3.130 Workshop Building Type
+117,PARKING_AND_ACCESSORY_STRUCTURES,3.140 Civic Building Type

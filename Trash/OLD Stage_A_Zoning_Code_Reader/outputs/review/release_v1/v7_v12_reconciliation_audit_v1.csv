@@ -1,0 +1,6 @@
+variable,status,expected,actual,match
+V7,confirmed_allowed_by_right,24,24,True
+V7,confirmed_not_available_by_right,6,6,True
+V7,confirmed_not_applicable,20,20,True
+V12,confirmed_entitlement_present,27,27,True
+V12,confirmed_entitlement_absent,23,23,True

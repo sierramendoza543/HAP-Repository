@@ -1,0 +1,212 @@
+{
+  "repository_version": "stage_a_notebook_13_finalization",
+  "finalization_timestamp": "2026-10-01T21:11:33.275290+00:00",
+  "source_document_inventory": {
+    "data/raw/bridgeport/bridgeport_zoning_code_full_2022-01.pdf.pdf": "afe7c678fa5dfc8581cca968c59eac168aa3b69b0807d26272e274fe88a21d90",
+    "data/raw/greenwich/greenwich_building_zone_regulations_full_2023-08.pdf": "18417c5e9074d765ab4483571b9ac3d6aeb162b37b1b302f7a8ce1f13e963dcb",
+    "data/raw/bridgeport/source_metadata.json": "5a51c30b50ec077535c89b8f3fce53429e2e5ab84abf664b45bdd70f2234f3c7",
+    "data/raw/greenwich/source_metadata.json": "462dd20fb7d4caaa0d948238c633c50f54cb534fa8c6385d29704d5a694fea3a",
+    "data/raw/bridgeport/gis/bridgeport_zoning_districts_2021.geojson": "31f0a2bebb60914a11b4a5b168c291b82af2968c5eff922a24e404878d949ff9",
+    "data/raw/greenwich_gis/greenwich_zone_boundaries.geojson": "9d069caf06047ff73437e312d464cecc2dde0c1c2aca7d55bc488e763edb7fba"
+  },
+  "notebook_inventory": [
+    {
+      "notebook": "01_collection_phase.ipynb",
+      "exists": true,
+      "total_cells": 214,
+      "code_cells": 153,
+      "executed_cells": 153,
+      "fully_executed": true,
+      "embedded_errors": 0,
+      "hardcoded_absolute_path_occurrences": 17,
+      "external_api_reference_occurrences": 0
+    },
+    {
+      "notebook": "02_phase_2_extraction_and_phase_3_scoring.ipynb",
+      "exists": true,
+      "total_cells": 80,
+      "code_cells": 61,
+      "executed_cells": 61,
+      "fully_executed": true,
+      "embedded_errors": 0,
+      "hardcoded_absolute_path_occurrences": 34,
+      "external_api_reference_occurrences": 0
+    },
+    {
+      "notebook": "04_bridgeport_collection_phase.ipynb",
+      "exists": true,
+      "total_cells": 191,
+      "code_cells": 119,
+      "executed_cells": 119,
+      "fully_executed": true,
+      "embedded_errors": 0,
+      "hardcoded_absolute_path_occurrences": 3,
+      "external_api_reference_occurrences": 0
+    },
+    {
+      "notebook": "05_bridgeport_all_district_extraction_and_comparability.ipynb",
+      "exists": true,
+      "total_cells": 66,
+      "code_cells": 39,
+      "executed_cells": 39,
+      "fully_executed": true,
+      "embedded_errors": 0,
+      "hardcoded_absolute_path_occurrences": 1,
+      "external_api_reference_occurrences": 0
+    },
+    {
+      "notebook": "06_bridgeport_visual_diagram_recovery_and_validation.ipynb",
+      "exists": true,
+      "total_cells": 34,
+      "code_cells": 19,
+      "executed_cells": 19,
+      "fully_executed": true,
+      "embedded_errors": 0,
+      "hardcoded_absolute_path_occurrences": 1,
+      "external_api_reference_occurrences": 12
+    },
+    {
+      "notebook": "07_bridgeport_targeted_visual_table_recovery.ipynb",
+      "exists": true,
+      "total_cells": 35,
+      "code_cells": 20,
+      "executed_cells": 20,
+      "fully_executed": true,
+      "embedded_errors": 0,
+      "hardcoded_absolute_path_occurrences": 1,
+      "external_api_reference_occurrences": 0
+    },
+    {
+      "notebook": "08_fixed_variable_targeted_recovery_bridgeport_greenwich.ipynb",
+      "exists": true,
+      "total_cells": 32,
+      "code_cells": 17,
+      "executed_cells": 17,
+      "fully_executed": true,
+      "embedded_errors": 0,
+      "hardcoded_absolute_path_occurrences": 1,
+      "external_api_reference_occurrences": 0
+    },
+    {
+      "notebook": "09_expanded_variable_recovery_and_score_readiness.ipynb",
+      "exists": true,
+      "total_cells": 35,
+      "code_cells": 18,
+      "executed_cells": 18,
+      "fully_executed": true,
+      "embedded_errors": 0,
+      "hardcoded_absolute_path_occurrences": 1,
+      "external_api_reference_occurrences": 0
+    },
+    {
+      "notebook": "10_bridgeport_master_use_table_and_parking_completion.ipynb",
+      "exists": true,
+      "total_cells": 23,
+      "code_cells": 12,
+      "executed_cells": 12,
+      "fully_executed": true,
+      "embedded_errors": 0,
+      "hardcoded_absolute_path_occurrences": 4,
+      "external_api_reference_occurrences": 0
+    },
+    {
+      "notebook": "11_bridgeport_score_readiness_integration.ipynb",
+      "exists": true,
+      "total_cells": 24,
+      "code_cells": 12,
+      "executed_cells": 12,
+      "fully_executed": true,
+      "embedded_errors": 0,
+      "hardcoded_absolute_path_occurrences": 3,
+      "external_api_reference_occurrences": 0
+    },
+    {
+      "notebook": "12_bridgeport_phase3_pilot_scenario_scoring.ipynb",
+      "exists": true,
+      "total_cells": 24,
+      "code_cells": 12,
+      "executed_cells": 12,
+      "fully_executed": true,
+      "embedded_errors": 0,
+      "hardcoded_absolute_path_occurrences": 2,
+      "external_api_reference_occurrences": 0
+    }
+  ],
+  "canonical_artifact_count": 1455,
+  "canonical_artifact_catalog_path": "data/processed/repository_artifact_catalog.csv",
+  "raw_baseline_integrity": true,
+  "town_district_scenario_counts": {
+    "bridgeport_districts": 24,
+    "bridgeport_phase2_baseline_scenarios": 46,
+    "small_general_addendum_scenarios": 2,
+    "combined_scenario_universe": 44,
+    "score_eligible_scenarios": 28
+  },
+  "variable_coverage": {
+    "variables_in_registry": 12,
+    "variables_with_rubric_draft": 12,
+    "pre_notebook10_cross_town_score_ready_count": 7
+  },
+  "visual_recovery_counts": {
+    "height_pages_recovered": 13,
+    "building_siting_pages_recovered": 13,
+    "parking_pages_recovered": 13,
+    "allowed_uses_building_types_recovered": 13
+  },
+  "validation_test_counts": {
+    "integrity_tests_run": 13,
+    "integrity_tests_passed": 13,
+    "conflation_checks_run": 5,
+    "conflation_checks_passed": 5,
+    "reconciliation_claims_checked": 20,
+    "reconciliation_claims_matched": 20
+  },
+  "documentation_inventory": [
+    "ADVERSARIAL_REVIEW.md",
+    "ARTIFACT_MAP.md",
+    "CHANGELOG.md",
+    "COMPARABILITY_FRAMEWORK.md",
+    "DATA_DICTIONARY.md",
+    "DEPENDENCY_AND_DOUBLE_COUNTING.md",
+    "ENVIRONMENT.md",
+    "EXECUTION_ORDER.md",
+    "FUTURE_INTERACTIVE_DELIVERABLE_SPEC.md",
+    "GIS_METHODS_AND_LIMITATIONS.md",
+    "KNOWN_LIMITATIONS.md",
+    "MANUAL_REVIEW_PROTOCOL.md",
+    "METHODOLOGY.md",
+    "PROVENANCE_STANDARD.md",
+    "README.md",
+    "REPRODUCIBILITY.md",
+    "RESEARCH_PROTOCOL.md",
+    "RESULTS_STATUS.md",
+    "SCENARIO_MODEL.md",
+    "SCHEMA_CONTRACTS.md",
+    "STATUS_TAXONOMY.md",
+    "VARIABLE_REGISTRY.md",
+    "VISUAL_TABLE_RECOVERY.md",
+    "phase_2_extraction_theoretical_framework.md",
+    "phase_3_scoring_theoretical_framework.md"
+  ],
+  "figure_inventory": [
+    "outputs/figures/finalization/fig01_notebook_execution_lineage.png",
+    "outputs/figures/finalization/fig02_variable_score_readiness_baseline.png",
+    "outputs/figures/finalization/fig03_table_family_recovery_progression.png",
+    "outputs/figures/finalization/fig04_provenance_completeness.png"
+  ],
+  "known_limitations_summary": [
+    "hardcoded_paths_present",
+    "undocumented_status_values_present",
+    "full_evidence_card_image_library_not_produced_this_pass",
+    "scenario_registry_incomplete_beyond_small_general",
+    "cross_town_score_readiness_recount_not_performed"
+  ],
+  "release_gate_result": "READY_WITH_DOCUMENTED_LIMITATIONS",
+  "interactive_readiness_result": "DATA_FOUNDATION_READY_INTERFACE_NOT_BUILT",
+  "future_phase3_scoring_prerequisites": [
+    "second-reviewer spot-check of a sample of manually transcribed cells",
+    "resolve whether Notebook 10/11 scenario-level V7/V12 readiness updates Notebook 09's cross-town score-readiness count",
+    "complete the Phase-2 scenario registry beyond Small General to raise the 28/44 eligible-scenario count"
+  ],
+  "no_score_no_ranking_statement": "No interactive deliverable, final score, municipal ranking, dominant district selection, statewide percentile, or causal claim was produced by this notebook or any notebook in this repository as of this timestamp."
+}

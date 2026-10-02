@@ -1,0 +1,40 @@
+{
+  "scenario_aware_extraction_necessary": true,
+  "scenario_aware_rationale": "13 building types + 3 site types create legitimate (district, form, variable) multiplicity; a flat (district, variable) model would mislabel this as conflict.",
+  "apparent_conflict_groups": 85,
+  "true_direct_conflicts": 0,
+  "unresolved_groups": 0,
+  "building_form_or_site_variant_groups": 73,
+  "duplicate_evidence_groups": 0,
+  "table_or_diagram_uncertainty_groups": 12,
+  "gis_crosswalk_sufficiency": "sufficient for 16/24 districts (exact match); 8 ordinance_only codes explained and classified, not fuzzy-matched",
+  "district_families_ready_for_extraction": [
+    "I",
+    "IX",
+    "MX1",
+    "MXN",
+    "N1",
+    "N2",
+    "N3",
+    "NX1",
+    "NX3",
+    "NX4",
+    "P1",
+    "P2",
+    "P4",
+    "RX2"
+  ],
+  "district_families_needing_manual_review": [
+    "CX",
+    "DX1",
+    "DX2",
+    "MX2",
+    "N4",
+    "NX2",
+    "OH",
+    "P3",
+    "P5",
+    "RX1"
+  ],
+  "recommended_next_stage": "Proceed to all-district extraction using the scenario-aware schema (step_00_scenario_aware_rule_schema.parquet) for the 16 GIS-matched, primary-text-verified districts first; hold NX2/RX1 (no verified anchor) and the 8 GIS-unmatched codes for a targeted manual pass before extracting their rule values."
+}

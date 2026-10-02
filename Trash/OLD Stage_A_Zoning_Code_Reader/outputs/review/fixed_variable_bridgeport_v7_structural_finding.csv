@@ -1,0 +1,40 @@
+zone_code,building_type,multifamily_capable_building_type_present
+DX1,Storefront,True
+MX1,Storefront,True
+MX2,Storefront,True
+MXN,Storefront,True
+MX2,Commercial Center,True
+MX1,Commercial House,True
+MXN,Commercial House,True
+MX2,Commercial House,True
+RX1,Commercial House,True
+RX2,Commercial House,True
+DX2,General,True
+RX2,General,True
+P2,General,True
+IX,General,True
+NX4,General,True
+NX3,General,True
+CX,General,True
+I,General,True
+NX2,Small General,True
+RX1,Small General,True
+NX1,Row,True
+NX2,Row,True
+NX3,Row,True
+NX4,Row,True
+RX1,Row,True
+RX2,Row,True
+NX1,Double House A,True
+NX2,Double House A,True
+N1,House A,False
+NX1,House A,False
+NX2,House A,False
+N2,House B,False
+N3,House C,False
+N4,House D,False
+CX,Workshop,True
+I,Workshop,True
+DX1,Civic,True
+P1,Civic,True
+P3,Civic,True

@@ -1,0 +1,11 @@
+{
+  "document_id": "bridgeport-connecticut-afe7c678fa5dfc85",
+  "pipeline_run_timestamp": "2026-10-01T16:20:55.394243+00:00",
+  "evidence_bundle_count": 24,
+  "districts_with_primary_text": 22,
+  "districts_needing_review": 2,
+  "total_verified_table_links": 19,
+  "total_diagram_unverified_table_links": 39,
+  "conflict_candidate_count": 250,
+  "conflict_review_queue_count": 206
+}

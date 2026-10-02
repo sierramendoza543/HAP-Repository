@@ -1,0 +1,51 @@
+{
+  "document_id": "greenwich-connecticut-18417c5e9074d765",
+  "document_name": "Town of Greenwich Building Zone Regulations",
+  "jurisdiction": "Greenwich, Connecticut",
+  "source_url": "https://www.greenwichct.gov/442/Building-Zone-Regulations",
+  "document_version_date": "August 2023",
+  "date_retrieved": "2026-10-01",
+  "source_hash_sha256": "18417c5e9074d765ab4483571b9ac3d6aeb162b37b1b302f7a8ce1f13e963dcb",
+  "final_bundle_record_count": 12,
+  "quality_report": {
+    "document_page_count": 313.0,
+    "pages_with_quality_scores": 313.0,
+    "native_routed_pages": 0.0,
+    "ocr_reconciliation_routed_pages": 307.0,
+    "manual_review_routed_pages": 6.0,
+    "unified_token_count": 125290.0,
+    "native_selected_token_count": 125228.0,
+    "ocr_selected_token_count": 62.0,
+    "hierarchy_node_count": 2697.0,
+    "detected_district_count": 15.0,
+    "base_district_bundle_count": 12.0,
+    "districts_with_table_match": 12.0,
+    "district_table_match_rate": 1.0,
+    "detected_table_count": 56.0,
+    "detected_citation_count": 1006.0,
+    "resolved_citation_count": 630.0,
+    "resolved_citation_rate": 0.6262425447316103,
+    "conflict_count": 41.0,
+    "manual_conflict_review_count": 0.0,
+    "district_records_requiring_review": 0.0,
+    "district_records_with_geometry": 12.0
+  },
+  "final_deliverables": {
+    "evidence_bundles_csv": "outputs/tables/final_collection_deliverables/greenwich_district_evidence_bundles.csv",
+    "evidence_bundles_json": "outputs/tables/final_collection_deliverables/greenwich_district_evidence_bundles.json",
+    "evidence_bundles_parquet": "outputs/tables/final_collection_deliverables/greenwich_district_evidence_bundles.parquet",
+    "district_metadata_csv": "outputs/tables/final_collection_deliverables/greenwich_district_metadata.csv",
+    "quality_report_csv": "outputs/tables/final_collection_deliverables/greenwich_collection_quality_report.csv",
+    "quality_dashboard": "outputs/figures/step_19_collection_quality_dashboard.png",
+    "audit_files": {
+      "unified_tokens": "outputs/tables/final_collection_deliverables/audit_unified_tokens.parquet",
+      "hierarchy_nodes": "outputs/tables/final_collection_deliverables/audit_hierarchy_nodes.parquet",
+      "table_inventory": "outputs/tables/final_collection_deliverables/audit_table_inventory.csv",
+      "table_cells": "outputs/tables/final_collection_deliverables/audit_table_cells.parquet",
+      "citations": "outputs/tables/final_collection_deliverables/audit_citations.csv",
+      "district_table_matches": "outputs/tables/final_collection_deliverables/audit_district_table_matches.csv",
+      "conflict_log": "outputs/tables/final_collection_deliverables/audit_conflict_log.csv",
+      "manual_conflict_review_queue": "outputs/tables/final_collection_deliverables/audit_manual_conflict_review_queue.csv"
+    }
+  }
+}

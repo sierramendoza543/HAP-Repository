@@ -1,0 +1,4 @@
+district_id,district_code,district_name,base_or_overlay,match_count,max_match_confidence,match_status
+greenwich-connecticut-18417c5e9074d765-district-ho,HO,Sec. 6-109 HISTORIC OVERLAY ZONE (),OVERLAY,0,,missing_match
+greenwich-connecticut-18417c5e9074d765-district-mrco,MRCO,Sec. 6-115. MANAGED RESIDENTIAL COMMUNITY OVERLAY ZONE () (12/1/2021),OVERLAY,0,,missing_match
+greenwich-connecticut-18417c5e9074d765-district-mrc,MRC,(3) Building Area – For all Managed Residential Community () facilities “Building Area” shall,UNCERTAIN,0,,missing_match

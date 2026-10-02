@@ -1,0 +1,4 @@
+base_or_overlay,district_count,mean_confidence
+BASE,46,0.8
+OVERLAY,2,0.85
+UNCERTAIN,21,0.4

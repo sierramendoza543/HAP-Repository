@@ -1,0 +1,30 @@
+scenario_key,shared_underlying_rule_v7_v11
+Bridgeport|CX|General,False
+Bridgeport|CX|Workshop,False
+Bridgeport|DX1|Civic,False
+Bridgeport|DX1|Storefront,False
+Bridgeport|DX2|General,False
+Bridgeport|MX1|Commercial House,False
+Bridgeport|MX1|Storefront,False
+Bridgeport|MX2|Commercial Center,False
+Bridgeport|MX2|Commercial House,False
+Bridgeport|MX2|Storefront,False
+Bridgeport|MXN|Commercial House,False
+Bridgeport|MXN|Storefront,False
+Bridgeport|N1|House A,False
+Bridgeport|N2|House B,False
+Bridgeport|N3|House C,False
+Bridgeport|N4|House D,False
+Bridgeport|NX1|Double House A,False
+Bridgeport|NX1|House A,False
+Bridgeport|NX1|Row,False
+Bridgeport|NX2|Small General,False
+Bridgeport|NX3|General,False
+Bridgeport|NX3|Row,False
+Bridgeport|NX4|General,False
+Bridgeport|NX4|Row,False
+Bridgeport|RX1|Small General,False
+Bridgeport|RX2|Commercial House,False
+Bridgeport|RX2|General,False
+Bridgeport|RX2|Row,False
+Greenwich|RA-4|single_family_detached_RA4,True

@@ -1,0 +1,113 @@
+town,district_or_zone_code,building_form_or_type,variable_id,final_determination,raw_value,source_page,section_or_node_path,source_type,source_confidence
+Bridgeport,DX1,Storefront,V7,confirmed_allowed_by_right,No limits,24.0,3.20.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,DX1,Storefront,V12,confirmed_entitlement_present,No limits,24.0,3.20.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,MX1,Storefront,V7,confirmed_allowed_by_right,No limits,24.0,3.20.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,MX1,Storefront,V12,confirmed_entitlement_present,No limits,24.0,3.20.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,MX2,Storefront,V7,confirmed_allowed_by_right,No limits,24.0,3.20.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,MX2,Storefront,V12,confirmed_entitlement_present,No limits,24.0,3.20.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,MXN,Storefront,V7,confirmed_allowed_by_right,8 max.,24.0,3.20.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,MXN,Storefront,V12,confirmed_entitlement_present,8 max.,24.0,3.20.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,MX2,Commercial Center,V7,confirmed_allowed_by_right,No limits,32.0,3.30.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,MX2,Commercial Center,V12,confirmed_entitlement_present,No limits,32.0,3.30.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,MX1,Commercial House,V7,confirmed_allowed_by_right,No limits,40.0,3.40.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,MX1,Commercial House,V12,confirmed_entitlement_present,No limits,40.0,3.40.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,MX2,Commercial House,V7,confirmed_allowed_by_right,No limits,40.0,3.40.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,MX2,Commercial House,V12,confirmed_entitlement_present,No limits,40.0,3.40.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,MXN,Commercial House,V7,confirmed_allowed_by_right,6 max.,40.0,3.40.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,MXN,Commercial House,V12,confirmed_entitlement_present,6 max.,40.0,3.40.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,RX1,Commercial House,V7,confirmed_allowed_by_right,6 max.,40.0,3.40.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,RX1,Commercial House,V12,confirmed_entitlement_present,6 max.,40.0,3.40.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,RX2,Commercial House,V7,confirmed_allowed_by_right,No limits,40.0,3.40.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,RX2,Commercial House,V12,confirmed_entitlement_present,No limits,40.0,3.40.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,DX2,General,V7,confirmed_allowed_by_right,3 min.,48.0,3.50.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,DX2,General,V12,confirmed_entitlement_present,3 min.,48.0,3.50.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,RX2,General,V7,confirmed_allowed_by_right,3 min.,48.0,3.50.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,RX2,General,V12,confirmed_entitlement_present,3 min.,48.0,3.50.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,P2,General,V7,confirmed_not_applicable,-,48.0,3.50.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,P2,General,V12,confirmed_entitlement_absent,-,48.0,3.50.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,CX,General,V7,confirmed_not_applicable,-,48.0,3.50.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,CX,General,V12,confirmed_entitlement_absent,-,48.0,3.50.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,IX,General,V7,confirmed_not_applicable,-,48.0,3.50.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,IX,General,V12,confirmed_entitlement_absent,-,48.0,3.50.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,I,General,V7,confirmed_not_applicable,-,48.0,3.50.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,I,General,V12,confirmed_entitlement_absent,-,48.0,3.50.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,NX3,General,V7,confirmed_allowed_by_right,3 min.,48.0,3.50.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,NX3,General,V12,confirmed_entitlement_present,3 min.,48.0,3.50.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,NX4,General,V7,confirmed_allowed_by_right,3 min.,48.0,3.50.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,NX4,General,V12,confirmed_entitlement_present,3 min.,48.0,3.50.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,NX2,Small General,V7,confirmed_allowed_by_right,"3 min., 6 max., up to 8 units with special permit",56.0,3.60.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,NX2,Small General,V12,confirmed_entitlement_present,"3 min., 6 max., up to 8 units with special permit",56.0,3.60.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,RX1,Small General,V7,confirmed_allowed_by_right,3 min.,56.0,3.60.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,RX1,Small General,V12,confirmed_entitlement_present,3 min.,56.0,3.60.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,NX1,Row,V7,confirmed_not_available_by_right,1 max. per Row House,64.0,3.70.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,NX1,Row,V12,confirmed_entitlement_absent,1 max. per Row House,64.0,3.70.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,NX2,Row,V7,confirmed_not_available_by_right,1 max. per Row House,64.0,3.70.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,NX2,Row,V12,confirmed_entitlement_absent,1 max. per Row House,64.0,3.70.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,NX3,Row,V7,confirmed_allowed_by_right,3 max. per Row House,64.0,3.70.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,NX3,Row,V12,confirmed_entitlement_present,3 max. per Row House,64.0,3.70.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,NX4,Row,V7,confirmed_allowed_by_right,3 max. per Row House,64.0,3.70.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,NX4,Row,V12,confirmed_entitlement_present,3 max. per Row House,64.0,3.70.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,RX1,Row,V7,confirmed_allowed_by_right,3 max. per Row House,64.0,3.70.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,RX1,Row,V12,confirmed_entitlement_present,3 max. per Row House,64.0,3.70.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,RX2,Row,V7,confirmed_allowed_by_right,3 max. per Row House,64.0,3.70.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,RX2,Row,V12,confirmed_entitlement_present,3 max. per Row House,64.0,3.70.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,NX1,Double House A,V7,confirmed_allowed_by_right,"up to 4, 6 with special permit in House; plus 1 unit in backyard cottage",72.0,3.80.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,NX1,Double House A,V12,confirmed_entitlement_present,"up to 4, 6 with special permit in House; plus 1 unit in backyard cottage",72.0,3.80.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,NX2,Double House A,V7,confirmed_allowed_by_right,"up to 6, 8 with special permit in House; plus 1 unit in backyard cottage",72.0,3.80.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,NX2,Double House A,V12,confirmed_entitlement_present,"up to 6, 8 with special permit in House; plus 1 unit in backyard cottage",72.0,3.80.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,N1,House A,V7,confirmed_not_available_by_right,1 in House,80.0,3.90.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,N1,House A,V12,confirmed_entitlement_present,1 in House,80.0,3.90.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,NX1,House A,V7,confirmed_allowed_by_right,up to 3 in House plus 1 in Backyard Cottage,80.0,3.90.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,NX1,House A,V12,confirmed_entitlement_present,up to 3 in House plus 1 in Backyard Cottage,80.0,3.90.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,NX2,House A,V7,confirmed_allowed_by_right,up to 4 in House plus 1 in Backyard Cottage,80.0,3.90.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,NX2,House A,V12,confirmed_entitlement_present,up to 4 in House plus 1 in Backyard Cottage,80.0,3.90.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,N2,House B,V7,confirmed_not_available_by_right,"1 in House, 2 with special permit",88.0,3.100.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,N2,House B,V12,confirmed_entitlement_absent,"1 in House, 2 with special permit",88.0,3.100.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,N3,House C,V7,confirmed_not_available_by_right,1 in House,96.0,3.110.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,N3,House C,V12,confirmed_entitlement_present,1 in House,96.0,3.110.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,N4,House D,V7,confirmed_not_available_by_right,1 in House,104.0,3.120.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,N4,House D,V12,confirmed_entitlement_present,1 in House,104.0,3.120.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,CX,Workshop,V7,confirmed_not_applicable,-,112.0,3.130.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,CX,Workshop,V12,confirmed_entitlement_absent,-,112.0,3.130.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,I,Workshop,V7,confirmed_not_applicable,-,112.0,3.130.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,I,Workshop,V12,confirmed_entitlement_absent,-,112.0,3.130.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,DX1,Civic,V7,confirmed_not_applicable,-,120.0,3.140.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,DX1,Civic,V12,confirmed_entitlement_absent,-,120.0,3.140.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,MX1,Civic,V7,confirmed_not_applicable,-,120.0,3.140.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,MX1,Civic,V12,confirmed_entitlement_absent,-,120.0,3.140.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,MX2,Civic,V7,confirmed_not_applicable,-,120.0,3.140.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,MX2,Civic,V12,confirmed_entitlement_absent,-,120.0,3.140.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,RX1,Civic,V7,confirmed_not_applicable,-,120.0,3.140.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,RX1,Civic,V12,confirmed_entitlement_absent,-,120.0,3.140.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,CX,Civic,V7,confirmed_not_applicable,-,120.0,3.140.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,CX,Civic,V12,confirmed_entitlement_absent,-,120.0,3.140.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,NX3,Civic,V7,confirmed_not_applicable,-,120.0,3.140.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,NX3,Civic,V12,confirmed_entitlement_absent,-,120.0,3.140.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,NX4,Civic,V7,confirmed_not_applicable,-,120.0,3.140.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,NX4,Civic,V12,confirmed_entitlement_absent,-,120.0,3.140.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,DX2,Civic,V7,confirmed_not_applicable,-,120.0,3.140.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,DX2,Civic,V12,confirmed_entitlement_absent,-,120.0,3.140.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,RX2,Civic,V7,confirmed_not_applicable,-,120.0,3.140.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,RX2,Civic,V12,confirmed_entitlement_absent,-,120.0,3.140.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,P1,Civic,V7,confirmed_not_applicable,-,120.0,3.140.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,P1,Civic,V12,confirmed_entitlement_absent,-,120.0,3.140.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,P2,Civic,V7,confirmed_not_applicable,-,120.0,3.140.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,P2,Civic,V12,confirmed_entitlement_absent,-,120.0,3.140.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,P4,Civic,V7,confirmed_not_applicable,-,120.0,3.140.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,P4,Civic,V12,confirmed_entitlement_absent,-,120.0,3.140.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,P5,Civic,V7,confirmed_not_applicable,-,120.0,3.140.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,P5,Civic,V12,confirmed_entitlement_absent,-,120.0,3.140.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,P3,Civic,V7,confirmed_not_applicable,-,120.0,3.140.9,manual_verified_visual_table,high_direct_human_verification
+Bridgeport,P3,Civic,V12,confirmed_entitlement_absent,-,120.0,3.140.9,manual_verified_visual_table,high_direct_human_verification
+Greenwich,RA-4,single_family_detached_RA4,V1,confirmed,174240.0,233.0,,original_source_text,high_direct_source_read
+Greenwich,RA-4,single_family_detached_RA4,V2,confirmed,200.0,233.0,,original_source_text,high_direct_source_read
+Greenwich,RA-4,single_family_detached_RA4,V3,genuine_absence_after_targeted_search,,233.0,,original_source_text,high_direct_source_read
+Greenwich,RA-4,single_family_detached_RA4,V4,not_applicable,,24.0,,original_source_text,high_direct_source_read
+Greenwich,RA-4,single_family_detached_RA4,V5,confirmed,250.0,233.0,,original_source_text,high_direct_source_read
+Greenwich,RA-4,single_family_detached_RA4,V6,confirmed_qualitative_rule,,193.0,,original_source_text,high_direct_source_read
+Greenwich,RA-4,single_family_detached_RA4,V7,confirmed,,77.0,,original_source_text,high_direct_source_read
+Greenwich,RA-4,single_family_detached_RA4,V8,confirmed,,86.0,,original_source_text,high_direct_source_read
+Greenwich,,single_family_detached_RA4,V9,confirmed_qualitative_rule,,77.0,§6-93,original_source_text,high_direct_source_read
+Greenwich,,single_family_detached_RA4,V10,genuine_absence_after_targeted_search,,233.0,§6-205 (RA-4 dimensional schedule),original_source_text,high_direct_source_read
+Greenwich,,single_family_detached_RA4,V11,confirmed_qualitative_rule,,77.0,§6-93,original_source_text,high_direct_source_read
+Greenwich,,single_family_detached_RA4,V12,confirmed,,77.0,§6-93,original_source_text,high_direct_source_read

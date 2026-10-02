@@ -1,0 +1,11 @@
+page_number,crop_type,expected_category,human_reference_label,human_reference_note
+22,dimensional_illustration,non_governing_control,not_governing,"'No bays or 10 ft' is a bay-projection dimension, not overall building height -- confirmed during Phase 2 extractor calibration"
+94,dimensional_illustration,non_governing_control,not_governing,"'Story heights are measured floor-to-floor... 9 ft' is a floor-to-floor dimension, not overall building height"
+12,verified_table,confirmed_positive,verified_governing_rule,Lot Width 18 ft / Site Coverage 95% -- confirmed via tight-regex prose extraction in Phase 2 for MXN
+19,verified_table,confirmed_positive,verified_governing_rule,Lot Width 18 ft / Site Coverage 95% -- confirmed for DX1
+27,verified_table,confirmed_positive,verified_governing_rule,Lot Width 60 ft / Site Coverage 80% -- confirmed for MX2
+35,verified_table,confirmed_positive,verified_governing_rule,Lot Width 50 ft / Site Coverage 80% -- confirmed for MX1
+37,diagram,diagram_legend,verified_context_only,"Diagram legend/key (Allowable Building Area, Build-to Zone, etc.) -- real structure, not a numeric rule itself, per Stage 2 manual inspection"
+289,complex_layout_text,context_repair,verified_context_only,"14.0 Measuring & Definitions -- explains HOW height/setbacks/coverage are measured, not WHAT the values are; useful context, not itself a governing value"
+117,complex_layout_text,complex_layout_repair,needs_additional_legal_review,Complex-layout page; reading order not trusted without targeted manual repair
+23,header_uncertain_table,header_reconstruction,needs_additional_legal_review,Header-uncertain retained table; column labels not confidently assigned by Stage 2

@@ -1,0 +1,10 @@
+component,description,bands_or_categories
+minimum_lot_area_sqft,Larger required lot area is scored as more restrictive.,"[(0, 0), (10000, 25), (21780, 50), (43560, 75), (87120, 100)]"
+minimum_lot_width_ft,Wider required lot is scored as more restrictive.,"[(0, 0), (75, 25), (125, 50), (175, 75), (250, 100)]"
+summed_setbacks_ft,Larger combined building-envelope setback is scored as more restrictive.,"[(0, 0), (80, 25), (140, 50), (200, 75), (300, 100)]"
+height_constraint_stories,"Lower permitted story count is scored as more restrictive. The 3.0-3.5 story band was added to fill a gap in the source example rubric, which only specified <=2.5, 3, and >=4 stories.","[(4.0, 0), (3.5, 25), (3.0, 50), (2.5, 100)]"
+green_area_pct,A higher required green/open-area percentage is scored as more restrictive.,"[(0, 0), (25, 25), (50, 50), (70, 75), (85, 100)]"
+parking_regime,A more burdensome parking regulation form is scored as more restrictive.,"[('no_stated_minimum', 0), ('qualitative_sufficiency', 25), ('numeric_low', 50), ('numeric_moderate', 75), ('numeric_high_or_formulaic', 100)]"
+multifamily_pathway,A more restrictive housing-type permission pathway scores higher.,"[('permitted_by_right', 0), ('administrative_review', 25), ('special_permit', 50), ('rezoning_required', 75), ('prohibited', 100)]"
+adu_pathway,A more restrictive ADU pathway scores higher.,"[('allowed_by_right', 0), ('allowed_subject_to_objective_conditions', 25), ('conditional_discretionary_approval', 50), ('effectively_unavailable', 75), ('prohibited', 100)]"
+residential_approval_process,A more discretionary principal-use approval process scores higher.,"[('by_right', 0), ('administrative_permit', 25), ('special_permit', 50), ('variance_or_rezoning', 75), ('prohibited', 100)]"

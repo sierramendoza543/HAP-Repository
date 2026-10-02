@@ -1,0 +1,139 @@
+district_code,building_form_or_type,target_variable,raw_value,raw_unit,literal_footnote_text
+DX1,Storefront,maximum_height_stories,10.0,stories,+15 additional stories in high-rise per 6.70
+DX1,Storefront,ground_story_height_ft,12-18.0,ft,up to 24 ft max with PZC approval
+DX1,Storefront,upper_story_height_ft,9-14.0,ft,
+MX1,Storefront,maximum_height_stories,3.0,stories,+2 additional stories along major corridors
+MX1,Storefront,ground_story_height_ft,12-14.0,ft,14 ft min for single-story bldg w/ max 6 ft parapet
+MX1,Storefront,upper_story_height_ft,9-14.0,ft,
+MX2,Storefront,maximum_height_stories,3.0,stories,+2 additional stories along major corridors
+MX2,Storefront,ground_story_height_ft,12-14.0,ft,14 ft min for single-story bldg w/ max 6 ft parapet
+MX2,Storefront,upper_story_height_ft,9-14.0,ft,
+MXN,Storefront,maximum_height_stories,3.0,stories,
+MXN,Storefront,ground_story_height_ft,12-14.0,ft,
+MXN,Storefront,upper_story_height_ft,9-14.0,ft,
+MX2,Commercial Center,maximum_height_stories,3.0,stories,additional height for taller spaces (large format)
+MX2,Commercial Center,ground_story_height_ft,12-14.0,ft,14 ft min/18 ft max for single-story bldg w/ max 6 ft parapet
+MX2,Commercial Center,upper_story_height_ft,9-14.0,ft,
+MX1,Commercial House,maximum_height_stories,2.5,stories,see supplemental regs on half stories in 3.40.10
+MX1,Commercial House,ground_story_height_ft,9-12.0,ft,story height measured floor-to-floor; height to eaves 20 ft max
+MX1,Commercial House,upper_story_height_ft,9-12.0,ft,
+MXN,Commercial House,maximum_height_stories,2.5,stories,
+MXN,Commercial House,ground_story_height_ft,9-12.0,ft,eaves 20 ft max
+MXN,Commercial House,upper_story_height_ft,9-12.0,ft,
+MX2,Commercial House,maximum_height_stories,2.5,stories,
+MX2,Commercial House,ground_story_height_ft,9-12.0,ft,eaves 20 ft max
+MX2,Commercial House,upper_story_height_ft,9-12.0,ft,
+RX1,Commercial House,maximum_height_stories,2.5,stories,
+RX1,Commercial House,ground_story_height_ft,9-12.0,ft,eaves 20 ft max
+RX1,Commercial House,upper_story_height_ft,9-12.0,ft,
+RX2,Commercial House,maximum_height_stories,2.5,stories,
+RX2,Commercial House,ground_story_height_ft,9-12.0,ft,eaves 20 ft max
+RX2,Commercial House,upper_story_height_ft,9-12.0,ft,
+DX2,General,maximum_height_stories,15.0,stories,+20 additional stories in high-rise per 6.70
+DX2,General,ground_story_height_ft,12-16.0,ft,
+DX2,General,upper_story_height_ft,10-14.0,ft,
+RX2,General,maximum_height_stories,5.5,stories,RX2: +3 additional stories w/ special permit
+RX2,General,ground_story_height_ft,10-18.0,ft,
+RX2,General,upper_story_height_ft,10-14.0,ft,
+P2,General,maximum_height_stories,5.5,stories,
+P2,General,ground_story_height_ft,10-18.0,ft,
+P2,General,upper_story_height_ft,10-14.0,ft,
+IX,General,maximum_height_stories,5.5,stories,
+IX,General,ground_story_height_ft,10-18.0,ft,
+IX,General,upper_story_height_ft,10-14.0,ft,
+NX4,General,maximum_height_stories,5.5,stories,NX4: +7 additional stories stepped back from lower 5.5 stories per 3.50.10.C
+NX4,General,ground_story_height_ft,10-18.0,ft,
+NX4,General,upper_story_height_ft,10-14.0,ft,
+NX3,General,maximum_height_stories,3.5,stories,
+NX3,General,ground_story_height_ft,9-12.0,ft,
+NX3,General,upper_story_height_ft,9-12.0,ft,
+CX,General,maximum_height_stories,3.0,stories,max only (no stated minimum)
+CX,General,ground_story_height_ft,9-36.0,ft,
+CX,General,upper_story_height_ft,9-12.0,ft,
+I,General,maximum_height_stories,3.0,stories,max only (no stated minimum)
+I,General,ground_story_height_ft,9-36.0,ft,
+I,General,upper_story_height_ft,9-12.0,ft,
+NX2,Small General,maximum_height_stories,3.0,stories,
+NX2,Small General,ground_story_height_ft,9-12.0,ft,
+NX2,Small General,upper_story_height_ft,9-12.0,ft,
+RX1,Small General,maximum_height_stories,3.0,stories,
+RX1,Small General,ground_story_height_ft,10-14.0,ft,14 ft min for single-story bldg w/ max 6 ft parapet
+RX1,Small General,upper_story_height_ft,10-14.0,ft,
+NX1,Row,maximum_height_stories,2.5,stories,
+NX1,Row,ground_story_height_ft,9-11.0,ft,floor-to-floor; height to eaves (pitched roof) 20 ft max
+NX1,Row,upper_story_height_ft,9-11.0,ft,
+NX2,Row,maximum_height_stories,2.5,stories,
+NX2,Row,ground_story_height_ft,9-11.0,ft,
+NX2,Row,upper_story_height_ft,9-11.0,ft,
+NX3,Row,maximum_height_stories,3.5,stories,
+NX3,Row,ground_story_height_ft,9-11.0,ft,
+NX3,Row,upper_story_height_ft,9-11.0,ft,
+NX4,Row,maximum_height_stories,3.5,stories,
+NX4,Row,ground_story_height_ft,9-11.0,ft,
+NX4,Row,upper_story_height_ft,9-11.0,ft,
+RX1,Row,maximum_height_stories,3.5,stories,
+RX1,Row,ground_story_height_ft,9-11.0,ft,
+RX1,Row,upper_story_height_ft,9-11.0,ft,
+RX2,Row,maximum_height_stories,3.5,stories,
+RX2,Row,ground_story_height_ft,9-11.0,ft,
+RX2,Row,upper_story_height_ft,9-11.0,ft,
+NX1,Double House A,maximum_height_stories,2.5,stories,
+NX1,Double House A,ground_story_height_ft,9-11.0,ft,height to eaves 20 ft max
+NX1,Double House A,upper_story_height_ft,9-11.0,ft,
+NX2,Double House A,maximum_height_stories,2.5,stories,
+NX2,Double House A,ground_story_height_ft,9-11.0,ft,
+NX2,Double House A,upper_story_height_ft,9-11.0,ft,
+N1,House A,maximum_height_stories,2.5,stories,
+N1,House A,ground_story_height_ft,9-11.0,ft,height to eaves 20 ft max
+N1,House A,upper_story_height_ft,9-11.0,ft,
+NX1,House A,maximum_height_stories,2.5,stories,
+NX1,House A,ground_story_height_ft,9-11.0,ft,
+NX1,House A,upper_story_height_ft,9-11.0,ft,
+NX2,House A,maximum_height_stories,2.5,stories,
+NX2,House A,ground_story_height_ft,9-11.0,ft,
+NX2,House A,upper_story_height_ft,9-11.0,ft,
+N2,House B,maximum_height_stories,2.0,stories,
+N2,House B,ground_story_height_ft,8-9.0,ft,height to eaves 20 ft max
+N2,House B,upper_story_height_ft,8-9.0,ft,
+N3,House C,maximum_height_stories,2.5,stories,
+N4,House D,maximum_height_stories,2.0,stories,
+N4,House D,ground_story_height_ft,9-12.0,ft,
+N4,House D,upper_story_height_ft,9-12.0,ft,
+CX,Workshop,maximum_height_stories,3.0,stories,max only
+CX,Workshop,ground_story_height_ft,10-36.0,ft,
+CX,Workshop,upper_story_height_ft,9-14.0,ft,
+I,Workshop,maximum_height_stories,3.0,stories,max only
+I,Workshop,ground_story_height_ft,10-36.0,ft,additional story height allowed with PZC approval
+I,Workshop,upper_story_height_ft,10-14.0,ft,
+DX1,Civic,maximum_height_stories,3.0,stories,additional height may be approved by PZC
+DX1,Civic,ground_story_height_ft,10-36.0,ft,additional height up to 250 ft may be approved by PZC
+DX1,Civic,upper_story_height_ft,9-14.0,ft,
+P3,Civic,maximum_height_stories,12.0,stories,
+P3,Civic,ground_story_height_ft,10-36.0,ft,additional story height up to 250 ft allowed with development plan
+P3,Civic,upper_story_height_ft,9-14.0,ft,
+P1,Civic,maximum_height_stories,3.0,stories,
+P1,Civic,ground_story_height_ft,10-36.0,ft,
+P1,Civic,upper_story_height_ft,9-14.0,ft,
+DX1,Storefront,attached_garage_setback_ft,30,ft,no closer to lot line than principal building
+MX1,Storefront,attached_garage_setback_ft,30,ft,no closer to lot line than principal building
+MX1,Storefront,accessory_structure_side_rear_setback_ft,3.0,ft,
+MX2,Storefront,attached_garage_setback_ft,30,ft,no closer to lot line than principal building
+MX2,Storefront,accessory_structure_side_rear_setback_ft,3.0,ft,
+MXN,Storefront,attached_garage_setback_ft,30,ft,no closer to lot line than principal building
+MXN,Storefront,accessory_structure_side_rear_setback_ft,3.0,ft,
+DX2,General,attached_garage_setback_ft,20,ft,no closer to lot line than principal building
+DX2,General,accessory_structure_side_rear_setback_ft,3.0,ft,
+RX2,General,attached_garage_setback_ft,20,ft,no closer to lot line than principal building
+RX2,General,accessory_structure_side_rear_setback_ft,3.0,ft,
+P2,General,attached_garage_setback_ft,20,ft,no closer to lot line than principal building
+P2,General,accessory_structure_side_rear_setback_ft,3.0,ft,
+IX,General,attached_garage_setback_ft,20,ft,no closer to lot line than principal building
+IX,General,accessory_structure_side_rear_setback_ft,3.0,ft,
+NX3,General,attached_garage_setback_ft,20,ft,no closer to lot line than principal building
+NX3,General,accessory_structure_side_rear_setback_ft,3.0,ft,
+NX4,General,attached_garage_setback_ft,20,ft,no closer to lot line than principal building
+NX4,General,accessory_structure_side_rear_setback_ft,3.0,ft,
+CX,General,attached_garage_setback_ft,20,ft,no closer to lot line than principal building
+CX,General,accessory_structure_side_rear_setback_ft,3.0,ft,
+I,General,attached_garage_setback_ft,20,ft,no closer to lot line than principal building
+I,General,accessory_structure_side_rear_setback_ft,3.0,ft,

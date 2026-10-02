@@ -1,0 +1,17 @@
+gis_code,ZONE_ID,ZONE_,SUMMARY_CAT,CHAR1
+I,I-L,Industrial Light Zone,INDUSTRIAL,I
+IX,OR,Office/Retail Zone,INDUSTRIAL,I
+MX1,OR,Office/Retail Zone,SUBURBAN COMMERCIAL,CC
+MXN,R-C,Residential - C Multi-Family Zone,MANOR MF,MF_MANOR
+N1,R-A,Residential - A Single Family Zone,MANORS,SF_MANOR
+N2,R-AA,Residential - AA Single Family Zone,COTTAGES,COTT_40S
+N3,R-AA,Residential - AA Single Family Zone,ESTATES,ESTATES
+NX1,R-A,Residential - A Single Family Zone,MANOR MF,MF_MANOR
+NX2,R-C,Residential - C Multi-Family Zone,MIXED RESIDENTIAL 2,MR
+NX3,R-B,Residential - B Two Family Zone,MIXED RESIDENTIAL 2,MR
+NX4,R-C,Residential - C Multi-Family Zone,MIXED RESIDENTIAL 2,MR
+P1,R-A,Residential - A Single Family Zone,PARK,PARK
+P2,R-B,Residential - B Two Family Zone,INSTITUTIONAL,INSTIT
+P4,OR,Office/Retail Zone,MIXED RESIDENTIAL 2,MR
+RX1,R-B,Residential - B Two Family Zone,MANOR OFFICE,CM
+RX2,OR,Office/Retail Zone,MIXED RESIDENTIAL 2,MR

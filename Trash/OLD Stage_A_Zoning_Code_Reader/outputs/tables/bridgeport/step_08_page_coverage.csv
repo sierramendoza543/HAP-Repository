@@ -1,0 +1,25 @@
+district_code,primary_text_present,source_pages,page_count
+CX,True,"[10, 11]",2
+DX1,True,[10],1
+DX2,True,[10],1
+I,True,[11],1
+IX,True,[11],1
+MX1,True,[10],1
+MX2,True,[10],1
+MXN,True,[10],1
+N1,True,[11],1
+N2,True,[11],1
+N3,True,[11],1
+N4,True,[11],1
+NX1,True,[11],1
+NX2,False,[],0
+NX3,True,[11],1
+NX4,True,[11],1
+OH,True,"[12, 13]",2
+P1,True,[11],1
+P2,True,[11],1
+P3,True,[11],1
+P4,True,[11],1
+P5,True,"[11, 12]",2
+RX1,False,[],0
+RX2,True,[10],1

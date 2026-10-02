@@ -1,0 +1,34 @@
+category,setting,value
+source,jurisdiction,"Greenwich, Connecticut"
+source,document_name,Town of Greenwich Building Zone Regulations
+source,pdf_path,data/raw/greenwich/greenwich_building_zone_regulations_full_2023-08.pdf
+source,page_count,313
+source,document_version_date,August 2023
+source,date_retrieved,2026-10-01
+source,source_url,https://www.greenwichct.gov/442/Building-Zone-Regulations
+source,sha256,18417c5e9074d765ab4483571b9ac3d6aeb162b37b1b302f7a8ce1f13e963dcb
+quality_weight,text_coverage,0.35
+quality_weight,character_quality,0.25
+quality_weight,reading_order,0.2
+quality_weight,table_integrity,0.2
+quality_threshold,high_quality_native_threshold,0.85
+quality_threshold,manual_review_threshold,0.5
+module,native_pdf_extraction,True
+module,page_quality_scoring,True
+module,targeted_ocr,False
+module,dual_stream_reconciliation,False
+module,hierarchy_tree_construction,False
+module,district_anchor_detection,False
+module,cross_reference_resolution,False
+module,townwide_rule_library,False
+module,structural_table_parsing,False
+module,overlay_zone_separation,False
+module,conflict_resolution,False
+module,gis_polygon_join,False
+environment,python,3.12.0
+environment,operating_system,macOS-26.5.1-arm64-arm-64bit
+environment,pandas,3.0.6
+environment,pymupdf,1.28.2
+environment,pdfplumber,0.11.10
+environment,matplotlib,3.11.2
+environment,numpy,2.5.3

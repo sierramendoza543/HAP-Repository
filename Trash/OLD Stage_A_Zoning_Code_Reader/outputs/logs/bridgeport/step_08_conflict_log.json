@@ -1,0 +1,10 @@
+{
+  "total_conflict_candidates": 250,
+  "severity_counts": {
+    "high": 206,
+    "medium": 32,
+    "low": 12
+  },
+  "districts_with_conflicts": 17,
+  "resolution_policy": "role-tagged (primary_evidence/modifier_evidence/interpretive_context); no candidate deleted; no rule value compared or extracted"
+}

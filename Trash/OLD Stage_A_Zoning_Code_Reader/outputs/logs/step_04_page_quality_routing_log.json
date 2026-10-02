@@ -1,0 +1,104 @@
+{
+  "document_id": "greenwich-connecticut-18417c5e9074d765",
+  "page_quality_scoring_config": {
+    "weights": {
+      "text_coverage": 0.35,
+      "character_quality": 0.25,
+      "reading_order": 0.2,
+      "table_integrity": 0.2
+    },
+    "thresholds": {
+      "high_quality_native_threshold": 0.85,
+      "manual_review_threshold": 0.5
+    },
+    "text_coverage": {
+      "word_count_weight": 0.45,
+      "character_count_weight": 0.35,
+      "bbox_area_weight": 0.2,
+      "low_word_count_absolute_threshold": 20,
+      "low_character_count_absolute_threshold": 100
+    },
+    "character_quality": {
+      "expected_punctuation": [
+        ":",
+        "]",
+        "+",
+        "&",
+        "_",
+        "{",
+        "$",
+        "-",
+        "?",
+        ",",
+        "<",
+        "¶",
+        "~",
+        "[",
+        "'",
+        "§",
+        ")",
+        "%",
+        "!",
+        "–",
+        "*",
+        "`",
+        "}",
+        "=",
+        "|",
+        "/",
+        ".",
+        "\\",
+        "\"",
+        ">",
+        "@",
+        "(",
+        "—",
+        ";",
+        "#"
+      ],
+      "replacement_characters": [
+        "�"
+      ],
+      "suspicious_symbol_pattern": "[^\\w\\s.,;:!?(){}\\[\\]<>§¶&/\\\\\\-–—_'\\\"%$#@+=*|`~]{3,}"
+    },
+    "reading_order": {
+      "same_line_y_tolerance_points": 4.0,
+      "large_horizontal_backtrack_points": 36.0,
+      "large_vertical_backtrack_points": 12.0,
+      "minimum_word_count_for_score": 8
+    },
+    "table_integrity": {
+      "row_y_tolerance_points": 3.0,
+      "minimum_words_in_candidate_row": 3,
+      "minimum_candidate_rows_for_table_page": 3,
+      "minimum_distinct_x_positions": 3,
+      "expected_alignment_ratio": 0.6
+    },
+    "routing_labels": {
+      "native": "native_extraction",
+      "ocr_reconcile": "ocr_and_dual_stream_reconciliation",
+      "manual_review": "manual_review_queue"
+    },
+    "output_filename": "step_04_page_quality_scores.csv"
+  },
+  "quality_score_summary": {
+    "minimum": 0.4795676790552837,
+    "median": 0.6737372267901299,
+    "mean": 0.6741165451823237,
+    "maximum": 0.8300488754735873
+  },
+  "route_counts": {
+    "native_extraction": 0,
+    "ocr_and_dual_stream_reconciliation": 307,
+    "manual_review_queue": 6
+  },
+  "quality_histogram_path": "outputs/figures/step_04_quality_score_distribution.png",
+  "routing_chart_path": "outputs/figures/step_04_page_quality_routing.png",
+  "risk_page_preview_paths": [
+    "outputs/figures/step_04_risk_page_preview_240.png",
+    "outputs/figures/step_04_risk_page_preview_249.png",
+    "outputs/figures/step_04_risk_page_preview_246.png",
+    "outputs/figures/step_04_risk_page_preview_244.png",
+    "outputs/figures/step_04_risk_page_preview_248.png"
+  ]
+}

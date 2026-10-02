@@ -1,0 +1,20 @@
+{
+  "document_id": "bridgeport-connecticut-afe7c678fa5dfc85",
+  "pipeline_run_timestamp": "2026-10-01T16:20:55.394243+00:00",
+  "pdf_page_count": 304,
+  "native_word_token_count": 112783,
+  "native_span_count": 30356,
+  "unified_token_count": 112783,
+  "pages_requiring_ocr": 0,
+  "heading_candidate_count": 1940,
+  "heading_counts_by_type": {
+    "Paragraph": 1639,
+    "Subsection": 168,
+    "Section": 118,
+    "Title": 15
+  },
+  "hierarchy_node_count": 1941,
+  "hierarchy_edge_count": 1940,
+  "hierarchy_validation_all_passed": true,
+  "high_heading_density_page_count": 116
+}

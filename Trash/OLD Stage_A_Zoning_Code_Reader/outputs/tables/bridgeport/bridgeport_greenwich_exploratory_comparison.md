@@ -1,0 +1,18 @@
+# Exploratory Greenwich-Bridgeport Evidence Comparison
+
+> **Important:** This is an exploratory, source-linked evidence comparison only. Greenwich and Bridgeport may regulate housing through non-identical legal forms, district taxonomies, building-form rules, and area-selection methods. This is not a statewide ranking, validated cross-town composite score, causal estimate, or legal conclusion.
+
+| Item | Greenwich (RA-4) | Bridgeport | Comparability | Reason |
+|---|---|---|---|---|
+| Zoning-code structure | Euclidean, district-by-district dimensional schedules (Greenwich) vs. form-based code organized around Site & Building Types (Bridgeport) | n/a | structurally_non_equivalent | different legal code forms by design |
+| District taxonomy | 15 Greenwich districts (RA-4 dominant residential) | 24 Bridgeport districts across 5 preliminary categories | structurally_non_equivalent | different legal code forms by design |
+| Lot-size format | 174240 square feet | 0 confirmed ({'missing': 28, 'review_required': 18}) | missing | no confirmed Bridgeport value to compare |
+| Lot-width/frontage format | 200 feet | 22 scenarios confirmed, e.g. 18 ft | directly_comparable | a conventional square-foot/linear-foot minimum, the same unit and concept Greenwich's RA-4 evidence uses |
+| Setback/build-to format | 250 feet | 0 confirmed ({'missing': 28, 'review_required': 18}) | missing | no confirmed Bridgeport value to compare |
+| Height format | missing/not_applicable | 0 confirmed ({'missing': 28, 'review_required': 18}) | missing | no confirmed Bridgeport value to compare |
+| FAR/coverage/open/pervious/green format | missing/not_applicable | 28 scenarios confirmed, e.g. 95 pct | comparable_with_documented_transform | Bridgeport calls this 'Site Coverage'; comparable to Greenwich lot coverage in spirit, but the measured-area definition has not been independently confirmed identical |
+| Parking format | missing/not_applicable | 46 scenarios confirmed, e.g. 0 spaces_per_unit_floor | directly_comparable | an explicit 'no minimum established' citywide statement is a well-defined floor of 0 spaces/unit, directly comparable to a numeric minimum |
+| Multifamily pathway | prohibited | 0 confirmed ({'missing': 22, 'review_required': 18, 'not_applicable': 6}) | missing | no confirmed Bridgeport value to compare |
+| ADU pathway | allowed_subject_to_objective_conditions | 46 scenarios confirmed, e.g. allowed_subject_to_objective_conditions | comparable_with_documented_transform | categorical ADU pathway; comparable to Greenwich's ADU pathway only at the categorical/ordinal level, not on every specific condition |
+| Approval-process format | principal-use table with by-right/prohibited designations | special-permit procedures (11.50) referenced for exceedances; no unified approval-process extraction performed | needs_manual_harmonization | approval-process categories not independently re-verified as aligned across towns |
+| Source completeness | single dominant district (RA-4), fully manually verified | 14 residential/mixed-use districts, 234 confirmed candidate records, no manual verification session yet | needs_manual_harmonization | coverage depth differs substantially between the two towns' current pipeline stages |

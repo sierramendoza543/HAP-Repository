@@ -1,0 +1,27 @@
+{
+  "document_id": "bridgeport-connecticut-afe7c678fa5dfc85",
+  "pipeline_run_timestamp": "2026-10-01T16:20:55.394243+00:00",
+  "raw_candidate_table_count": 392,
+  "retained_table_count": 107,
+  "weak_or_rejected_candidate_count": 285,
+  "table_count_by_page_layout_type": {
+    "single_column": 81,
+    "table_dominant": 9,
+    "multi_column_or_complex": 9,
+    "two_column": 8
+  },
+  "table_type_candidate_counts": {
+    "building_form_table_candidate": 36,
+    "other_or_unknown": 24,
+    "permitted_use_table_candidate": 19,
+    "parking_schedule_candidate": 18,
+    "dimensional_schedule_candidate": 7,
+    "overlay_or_historic_table_candidate": 1,
+    "definitions_table_candidate": 1,
+    "approval_process_table_candidate": 1
+  },
+  "header_uncertain_table_count": 24,
+  "complex_layout_context_table_count": 9,
+  "tables_routed_to_manual_review": 318,
+  "all_stage2_validation_checks_passed": true
+}

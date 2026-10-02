@@ -1,0 +1,9 @@
+category,table_id,page_number,inspection_outcome,inspection_note
+dimensional_or_building_form_1,bridgeport-connecticut-afe7c678fa5dfc85-table-084-00,84,pending_agent_review,Rendered for direct visual inspection; outcome to be finalized after review.
+dimensional_or_building_form_2,bridgeport-connecticut-afe7c678fa5dfc85-table-116-00,116,pending_agent_review,Rendered for direct visual inspection; outcome to be finalized after review.
+permitted_use_1,bridgeport-connecticut-afe7c678fa5dfc85-table-241-02,241,pending_agent_review,Rendered for direct visual inspection; outcome to be finalized after review.
+permitted_use_2,bridgeport-connecticut-afe7c678fa5dfc85-table-241-00,241,pending_agent_review,Rendered for direct visual inspection; outcome to be finalized after review.
+parking_or_mobility,bridgeport-connecticut-afe7c678fa5dfc85-table-030-00,30,pending_agent_review,Rendered for direct visual inspection; outcome to be finalized after review.
+complex_layout_page,bridgeport-connecticut-afe7c678fa5dfc85-table-123-00,123,pending_agent_review,Rendered for direct visual inspection; outcome to be finalized after review.
+table_dominant_page,bridgeport-connecticut-afe7c678fa5dfc85-table-031-00,31,pending_agent_review,Rendered for direct visual inspection; outcome to be finalized after review.
+weak_or_failed_detection,bridgeport-connecticut-afe7c678fa5dfc85-table-003-00,3,pending_agent_review,Rendered for direct visual inspection; outcome to be finalized after review.

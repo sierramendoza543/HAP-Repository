@@ -1,0 +1,25 @@
+document_id,table_id,header_column_count,blank_header_count,blank_header_rate,header_external,header_uncertain,page_number,table_type_candidate,title_candidate_text
+bridgeport-connecticut-afe7c678fa5dfc85,bridgeport-connecticut-afe7c678fa5dfc85-table-023-01,13,12,0.923,True,True,23,other_or_unknown,3.20.7. ROOFS. See Figure 3.20-D
+bridgeport-connecticut-afe7c678fa5dfc85,bridgeport-connecticut-afe7c678fa5dfc85-table-030-00,7,6,0.857,True,True,30,parking_schedule_candidate,3.30.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.20-C.
+bridgeport-connecticut-afe7c678fa5dfc85,bridgeport-connecticut-afe7c678fa5dfc85-table-030-01,3,2,0.667,True,True,30,parking_schedule_candidate,3.30.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.20-C.
+bridgeport-connecticut-afe7c678fa5dfc85,bridgeport-connecticut-afe7c678fa5dfc85-table-031-00,17,17,1.0,False,True,31,other_or_unknown,3.30.7. ROOFS. See Figure 3.20-D
+bridgeport-connecticut-afe7c678fa5dfc85,bridgeport-connecticut-afe7c678fa5dfc85-table-031-01,15,15,1.0,False,True,31,other_or_unknown,3.30.7. ROOFS. See Figure 3.20-D
+bridgeport-connecticut-afe7c678fa5dfc85,bridgeport-connecticut-afe7c678fa5dfc85-table-031-06,14,14,1.0,False,True,31,building_form_table_candidate,3.30.8. PRIMARY & NON-PRIMARY FACADES. See Figure 3.20-E
+bridgeport-connecticut-afe7c678fa5dfc85,bridgeport-connecticut-afe7c678fa5dfc85-table-034-00,10,9,0.9,True,True,34,other_or_unknown,C. Pitched Roof on Single-Story Building. A pitched roof
+bridgeport-connecticut-afe7c678fa5dfc85,bridgeport-connecticut-afe7c678fa5dfc85-table-046-00,5,4,0.8,True,True,46,parking_schedule_candidate,3.50.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.50-C .
+bridgeport-connecticut-afe7c678fa5dfc85,bridgeport-connecticut-afe7c678fa5dfc85-table-049-00,8,7,0.875,True,True,49,permitted_use_table_candidate,"3.50.9. ALLOWED USES. See Article 4.0 for use definitions, specific use limitations, and other use-related regulations."
+bridgeport-connecticut-afe7c678fa5dfc85,bridgeport-connecticut-afe7c678fa5dfc85-table-054-00,5,5,1.0,False,True,54,parking_schedule_candidate,3.60.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.60-C .
+bridgeport-connecticut-afe7c678fa5dfc85,bridgeport-connecticut-afe7c678fa5dfc85-table-084-03,9,7,0.778,True,True,84,building_form_table_candidate,3.100 House B Building Type
+bridgeport-connecticut-afe7c678fa5dfc85,bridgeport-connecticut-afe7c678fa5dfc85-table-087-01,19,19,1.0,False,True,87,other_or_unknown,3.100.7. ROOFS. See Figure 3.100-D
+bridgeport-connecticut-afe7c678fa5dfc85,bridgeport-connecticut-afe7c678fa5dfc85-table-089-01,13,12,0.923,True,True,89,dimensional_schedule_candidate,(2) For every House B fronting the street and meeting
+bridgeport-connecticut-afe7c678fa5dfc85,bridgeport-connecticut-afe7c678fa5dfc85-table-092-00,10,9,0.9,True,True,92,dimensional_schedule_candidate,3.110 House C Building Type
+bridgeport-connecticut-afe7c678fa5dfc85,bridgeport-connecticut-afe7c678fa5dfc85-table-094-02,6,5,0.833,True,True,94,other_or_unknown,3.110.6. HEIGHT. See Figure 3.110-D
+bridgeport-connecticut-afe7c678fa5dfc85,bridgeport-connecticut-afe7c678fa5dfc85-table-103-01,7,6,0.857,True,True,103,other_or_unknown,3.120.7. ROOFS. See Figure 3.120-D
+bridgeport-connecticut-afe7c678fa5dfc85,bridgeport-connecticut-afe7c678fa5dfc85-table-109-01,18,17,0.944,True,True,109,dimensional_schedule_candidate,3.130.4. BUILDING LOCATION. See Figure 3.50-B
+bridgeport-connecticut-afe7c678fa5dfc85,bridgeport-connecticut-afe7c678fa5dfc85-table-116-01,6,5,0.833,True,True,116,building_form_table_candidate,3.140 Civic Building Type
+bridgeport-connecticut-afe7c678fa5dfc85,bridgeport-connecticut-afe7c678fa5dfc85-table-118-00,11,10,0.909,True,True,118,parking_schedule_candidate,3.140.5. PARKING & ACCESSORY STRUCTURES. See Figure 3.50-C .
+bridgeport-connecticut-afe7c678fa5dfc85,bridgeport-connecticut-afe7c678fa5dfc85-table-229-02,2,1,0.5,True,True,229,parking_schedule_candidate,A. General. All required bicycle parking spaces are
+bridgeport-connecticut-afe7c678fa5dfc85,bridgeport-connecticut-afe7c678fa5dfc85-table-241-01,4,3,0.75,True,True,241,building_form_table_candidate,B. Electronic message displays are expressly prohibited in
+bridgeport-connecticut-afe7c678fa5dfc85,bridgeport-connecticut-afe7c678fa5dfc85-table-241-02,4,3,0.75,True,True,241,permitted_use_table_candidate,B. Electronic message displays are expressly prohibited in
+bridgeport-connecticut-afe7c678fa5dfc85,bridgeport-connecticut-afe7c678fa5dfc85-table-287-00,6,4,0.667,True,True,287,dimensional_schedule_candidate,"(4) On corner lots, the required primary or non-primary"
+bridgeport-connecticut-afe7c678fa5dfc85,bridgeport-connecticut-afe7c678fa5dfc85-table-291-01,8,8,1.0,False,True,291,other_or_unknown,(4) Mezzanines. Mezzanines may be included within

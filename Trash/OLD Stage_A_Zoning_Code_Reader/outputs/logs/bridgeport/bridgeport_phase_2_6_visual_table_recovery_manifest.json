@@ -1,0 +1,64 @@
+{
+  "document_id": "bridgeport-connecticut-afe7c678fa5dfc85",
+  "generated_at_utc": "2026-10-01T18:19:10.438238+00:00",
+  "notebook_05_manifest_linkage": "outputs/logs/bridgeport/bridgeport_phase_2_manifest.json",
+  "notebook_06_manifest_linkage": "outputs/logs/bridgeport/bridgeport_phase_2_5_vlm_manifest.json",
+  "table_family_candidate_pages": 26,
+  "height_pages_found": [
+    22,
+    30,
+    38,
+    46,
+    54,
+    62,
+    70,
+    78,
+    86,
+    94,
+    102,
+    110,
+    118
+  ],
+  "parking_pages_found": [
+    21,
+    29,
+    37,
+    45,
+    53,
+    61,
+    69,
+    77,
+    85,
+    93,
+    101,
+    109,
+    117
+  ],
+  "height_pages_recovered": 13,
+  "parking_pages_recovered": 2,
+  "parking_pages_pending": 11,
+  "manual_verification_records": 140,
+  "confirmed_governing_values": 138,
+  "ambiguous_count": 2,
+  "override_count": 138,
+  "status_changes": 138,
+  "comparability_changes": 138,
+  "cross_validated_phase2_pages": {
+    "diagram_table_overlap": [
+      37,
+      109
+    ],
+    "complex_layout_overlap": [
+      117
+    ]
+  },
+  "no_score_no_ranking_statement": "No Bridgeport composite score, dominant-district selection, statewide ranking, or validated Greenwich ranking was produced.",
+  "artifact_paths": {
+    "candidate_pages": "data/interim/bridgeport/step_02_6_visual_table_candidate_pages.csv",
+    "manual_verification": "data/processed/bridgeport/bridgeport_phase_2_6_visual_table_manual_verification.csv",
+    "overrides": "data/processed/bridgeport/bridgeport_phase_2_6_visual_table_overrides.csv",
+    "coverage_reassessment": "outputs/tables/bridgeport/step_02_6_variable_coverage_reassessment.csv",
+    "greenwich_addendum": "outputs/tables/bridgeport/step_02_6_greenwich_bridgeport_addendum.md",
+    "recovered_standards": "outputs/tables/bridgeport/step_02_6_recovered_dimensional_standards.csv"
+  }
+}

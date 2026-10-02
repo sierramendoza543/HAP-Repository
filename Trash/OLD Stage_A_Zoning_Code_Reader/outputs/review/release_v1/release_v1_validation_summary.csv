@@ -1,0 +1,12 @@
+check,passed,detail
+source_documents_hash_verified,True,
+scenario_ids_or_keys_well_formed,True,
+district_codes_valid,True,
+no_generic_missing_in_final_determination,True,
+every_eligible_row_has_source_page_or_section,True,
+every_excluded_row_has_exclusion_reason,True,
+v7_v12_counts_reconciled,True,
+structurally_different_placement_never_fabricated,True,
+v5_principal_placement_never_sourced_from_parking_pages,True,0 eligible V5 rows sourced from a PARKING-family page instead of BUILDING SITING
+greenwich_benchmark_scenario_present_and_fully_evaluated,True,
+scoring_blocked_flag_is_false,True,

@@ -1,0 +1,24 @@
+{
+  "document_id": "bridgeport-connecticut-afe7c678fa5dfc85",
+  "pipeline_run_timestamp": "2026-10-01T16:20:55.394243+00:00",
+  "rule_candidate_count": 83,
+  "topic_counts": {
+    "parking": 18,
+    "building_form": 17,
+    "permitted_uses": 17,
+    "definitions": 16,
+    "building_types": 15,
+    "nonconformity": 8,
+    "mobility": 2,
+    "overlays": 1,
+    "frontage": 1,
+    "site_plan_review": 1,
+    "special_permits": 1,
+    "approval_procedures": 1,
+    "build_to": 1
+  },
+  "explicit_scope_count": 70,
+  "ambiguous_scope_count": 13,
+  "applicability_matrix_rule_count": 60,
+  "applicability_matrix_district_count": 24
+}

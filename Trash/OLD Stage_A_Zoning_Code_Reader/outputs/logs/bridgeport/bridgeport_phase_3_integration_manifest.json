@@ -1,0 +1,26 @@
+{
+  "notebook": "11_bridgeport_score_readiness_integration",
+  "run_timestamp": "2026-10-01T20:37:44.729194+00:00",
+  "user_instruction": "Patch Small General, merge Notebook 10 V7/V12/parking evidence, recompute score-readiness, build eligibility universe, freeze scoring input -- no scores computed.",
+  "small_general_registry_addendum_rows": 2,
+  "scenario_universe_size": 44,
+  "v7_v12_addendum_rows_total": 100,
+  "v7_v12_rows_matched_in_scope": 70,
+  "v7_v12_rows_out_of_scope_this_pass": 30,
+  "v5_parking_rows_total": 49,
+  "v5_parking_rows_matched_in_scope": 34,
+  "v5_parking_rows_out_of_scope_this_pass": 15,
+  "v5_pending_placeholder_rows_addressed": 11,
+  "score_eligible_scenario_count": 28,
+  "score_eligible_scenario_total_universe": 44,
+  "no_scores_computed": true,
+  "outputs": {
+    "bridgeport_scenario_registry_addendum": "data/processed/bridgeport_scenario_registry_addendum.csv",
+    "bridgeport_v7_v12_scenario_matched_for_scoring": "data/processed/bridgeport_v7_v12_scenario_matched_for_scoring.csv",
+    "bridgeport_v5_scenario_resolved_addendum": "data/processed/bridgeport_v5_scenario_resolved_addendum.csv",
+    "bridgeport_scenario_score_readiness_addendum": "data/processed/bridgeport_scenario_score_readiness_addendum.csv",
+    "bridgeport_scenario_score_eligibility_universe": "data/processed/bridgeport_scenario_score_eligibility_universe.csv",
+    "pilot_scoring_input_v1_bundle": "data/processed/pilot_scoring_input_v1/",
+    "figure": "outputs/figures/bridgeport/step_03_scenario_evidence_resolution_coverage.png"
+  }
+}

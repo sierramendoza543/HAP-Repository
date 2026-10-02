@@ -1,0 +1,21 @@
+claim,reported,independently_verified,match
+Bridgeport source PDF is 304 pages,304,304,True
+24 canonical districts,24,24,True
+"1,941 hierarchy nodes",1941,1941,True
+392 raw table candidates,392,392,True
+32 verified structured tables,32,32,True
+75 diagram/unverified candidates,75,75,True
+"2,000 GIS parcel-level features",2000,2000,True
+16/24 exact GIS/ordinance crosswalk,16/24,16/24,True
+"85 deduplicated apparent-conflict groups, 0 true direct conflicts",85 / 0,85 / 0,True
+73 building-form/frontage-site variants + 12 table/diagram-priority issues (of 85),73 / 12,73 / 12,True
+46 original source-supported scenarios (Phase 2 baseline),46,46,True
+13 building-type HEIGHT schedules recovered,13,13,True
+39 maximum-height-in-stories records,39,39,True
+78 ground-/upper-story-height records,78,78,True
+13 BUILDING SITING schedules recovered,13,13,True
+15 flattened-column/regex corrections recorded,15,15,True
+13/13 PARKING & ACCESSORY STRUCTURES schedules recovered,13,13,True
+13 building-type Allowed Uses/master-use-table pages recovered,13,13,True
+V7: 24 allowed-by-right / 6 not-available-by-right / 20 not-applicable,24 / 6 / 20,24 / 6 / 20,True
+V12: 27 entitlement-present / 23 entitlement-absent,27 / 23,27 / 23,True

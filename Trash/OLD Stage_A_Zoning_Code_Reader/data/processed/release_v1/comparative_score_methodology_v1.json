@@ -1,0 +1,42 @@
+{
+  "release_version": "v1.0.0-pilot",
+  "timestamp": "2026-10-01T21:48:09.634144+00:00",
+  "frozen_input_hash": "97969cdc26e6344841fea9fb9b2d80bc322b8c1daadb06c599ce91037daa042e",
+  "unit_of_analysis": "scenario = <town, district, building_form/use, site/frontage condition>",
+  "score_direction": "0=least restrictive, 100=most restrictive",
+  "domain_formula": {
+    "L_s": "0.30*V1 + 0.25*V2 + 0.45*V9 (renormalized over available components)",
+    "B_s": "V5 (conventional_setback or build_to_flexibility sub-rubric)",
+    "P_s": "V6",
+    "H_s": "0.45*V7 + 0.25*V8 + 0.30*V12 (gated off entirely where V7=not_applicable)",
+    "D_s": "V11 (halved when shared_underlying_rule=true with V7)",
+    "R_s": "0.25*L + 0.15*B + 0.10*P + 0.35*H + 0.15*D (renormalized over available domains)"
+  },
+  "weights_are_theory_driven_not_empirical": true,
+  "dependency_policy": "V7/V11 shared-citation check computed per scenario from actual source_page/section match; V9 caveat carried through and tested in sensitivity variant 6",
+  "sensitivity_variants_run": [
+    "1_baseline",
+    "2_equal_weight",
+    "3_land_density_heavy",
+    "4_housing_entitlement_heavy",
+    "5_process_heavy_dependency_adjusted",
+    "6_conservative_exclude_caveated_v9_buildto"
+  ],
+  "greenwich_benchmark_R_s_baseline": 76.52777777777779,
+  "bridgeport_scenario_count": 28,
+  "bridgeport_baseline_distribution": {
+    "min": 19.05357142857143,
+    "median": 27.410714285714285,
+    "max": 56.66071428571428
+  },
+  "pct_bridgeport_below_benchmark_range_across_variants": [
+    100.0,
+    100.0
+  ],
+  "excluded_context_variables": [
+    "V3",
+    "V4",
+    "V10"
+  ],
+  "no_townwide_ranking_statement": "No single Bridgeport townwide score was computed. No ranking, dominant district, statewide percentile, or causal claim is made anywhere in this notebook."
+}

@@ -1,0 +1,5 @@
+file,found,confirmed_or_total_rows,provenance_columns_checked,rows_with_full_provenance,completeness_pct
+fixed_variable_recovery_matrix_bridgeport_greenwich.csv,True,244,"source_page, source_document, source_excerpt",8,3.3
+expanded_variable_recovery_matrix_bridgeport_greenwich.csv,True,295,"source_page, section_or_node_path",265,89.8
+bridgeport_v7_v12_master_use_table_addendum.csv,True,100,"source_page, section_or_node_path, source_excerpt",100,100.0
+bridgeport_parking_full_13_building_type_recovery.csv,True,49,page,49,100.0

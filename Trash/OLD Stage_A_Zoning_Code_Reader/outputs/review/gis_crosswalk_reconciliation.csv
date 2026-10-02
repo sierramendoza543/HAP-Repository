@@ -1,0 +1,25 @@
+district_code,district_name,gis_presence,crosswalk_status,gross_mapped_area_acres
+CX,Heavy Commercial,False,ordinance_only,
+DX1,Downtown Core,False,ordinance_only,
+DX2,Downtown Support,False,ordinance_only,
+I,Industrial,True,both,79.54498461084181
+IX,Office-Industrial Centers,True,both,1.969957254356532
+MX1,Mixed-Use Corridor,True,both,14.215418631627582
+MX2,Mixed-Use Centers,False,ordinance_only,
+MXN,Mixed-Use Neighborhood Corners,True,both,0.8580348921019916
+N1,Neighborhood: Traditional,True,both,15.569467349538575
+N2,Neighborhood: Mid-Century,True,both,36.30998505655719
+N3,Neighborhood: Large Lot,True,both,93.2565723106742
+N4,Neighborhood: Suburban,False,ordinance_only,
+NX1,Neighborhood Mix,True,both,122.481434773798
+NX2,,True,both,45.485523027457134
+NX3,Mixed Residential,True,both,25.073623696058633
+NX4,Mixed Residential,True,both,3.479393532397834
+OH,Historic Overlay,False,ordinance_only,
+P1,Parks and Open Space,True,both,131.50643571481197
+P2,Civic and Institutional Buildings,True,both,25.04270740531514
+P3,Institutional Campuses,False,ordinance_only,
+P4,Utility and Energy Infrastructure,True,both,21.7861687899829
+P5,Detention and Correction Facilities,False,ordinance_only,
+RX1,,True,both,20.877791085217723
+RX2,Residential-Office Centers,True,both,18.11333199571032

@@ -1,0 +1,6 @@
+metric,value
+nodes,2047
+edges,319
+edges_skipped_cycle,0
+max_reference_depth,6
+sources_beyond_max_depth,0

@@ -1,0 +1,19 @@
+{
+  "town": "Greenwich",
+  "dominant_district_status": "verified",
+  "dominant_district_code": "RA-4",
+  "dominant_district_area_acres": 11636.113810059456,
+  "dominant_district_residential_area_share": 0.3897480200085528,
+  "diagnostic_target_district_code": "RA-4",
+  "candidate_districts": [
+    "R-12",
+    "R-20",
+    "R-6",
+    "R-7",
+    "RA-1",
+    "RA-2",
+    "RA-4"
+  ],
+  "lookup_path": "data/processed/greenwich_residential_district_area_lookup.csv",
+  "selection_timestamp": "2026-10-01T09:09:02.964715+00:00"
+}

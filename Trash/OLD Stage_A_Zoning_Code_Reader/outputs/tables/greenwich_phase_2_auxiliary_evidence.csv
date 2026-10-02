@@ -1,0 +1,13 @@
+field_name,value,raw_text,source_page,note
+minimum_green_area_pct,84.0,84%,233,Auxiliary evidence only. Not used as a substitute for maximum_lot_coverage_pct without an explicit ordinance rule establishing a legal complement relationship.
+maximum_building_height_stories,3.5,3-1/2,233,Auxiliary evidence only. Not converted to maximum_building_height_ft without an explicit ordinance stories-to-feet conversion rule.
+minimum_frontage_ft_unconfirmed,125.0,125 ft. Lot width 200 ft. to be measured at house location,233,The leading figure in the same compound lot-width cell. Not confirmed as frontage; kept only as an unconfirmed auxiliary candidate pending manual review.
+adu_eligible_in_ra4,True,"See §6-99(2)-(4), page 86-88.",86,"ADU supplemental condition, not part of the scored adu_permission_pathway variable itself."
+adu_default_pathway,objective_conditions_staff_review,"See §6-99(2)-(4), page 86-88.",86,"ADU supplemental condition, not part of the scored adu_permission_pathway variable itself."
+adu_external_max_size_sqft_ra4_ra2,1200,"See §6-99(2)-(4), page 86-88.",86,"ADU supplemental condition, not part of the scored adu_permission_pathway variable itself."
+adu_owner_occupancy_required,True,"See §6-99(2)-(4), page 86-88.",86,"ADU supplemental condition, not part of the scored adu_permission_pathway variable itself."
+adu_dedicated_off_street_parking_spaces,1,"See §6-99(2)-(4), page 86-88.",86,"ADU supplemental condition, not part of the scored adu_permission_pathway variable itself."
+adu_special_permit_exception_available,True,"See §6-99(2)-(4), page 86-88.",86,"ADU supplemental condition, not part of the scored adu_permission_pathway variable itself."
+adu_special_permit_trigger,oversized_adu_or_nonconforming_lot,"See §6-99(2)-(4), page 86-88.",86,"ADU supplemental condition, not part of the scored adu_permission_pathway variable itself."
+adu_requires_lawful_setbacks,True,"See §6-99(2)-(4), page 86-88.",86,"ADU supplemental condition, not part of the scored adu_permission_pathway variable itself."
+adu_requires_lot_size_conformance,True,"See §6-99(2)-(4), page 86-88.",86,"ADU supplemental condition, not part of the scored adu_permission_pathway variable itself."

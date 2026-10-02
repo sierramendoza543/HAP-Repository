@@ -1,0 +1,265 @@
+district_code,building_form_or_type,scenario_id,variable_id,final_determination
+CX,general,bridgeport-scenario-0001,V1,no_evidence_recorded_for_this_scenario
+DX1,general,bridgeport-scenario-0002,V1,no_evidence_recorded_for_this_scenario
+DX2,general,bridgeport-scenario-0003,V1,no_evidence_recorded_for_this_scenario
+MX1,general,bridgeport-scenario-0004,V1,no_evidence_recorded_for_this_scenario
+MX2,general,bridgeport-scenario-0005,V1,no_evidence_recorded_for_this_scenario
+MXN,general,bridgeport-scenario-0006,V1,no_evidence_recorded_for_this_scenario
+RX2,general,bridgeport-scenario-0007,V1,no_evidence_recorded_for_this_scenario
+DX1,Storefront,bridgeport-scenario-0008,V1,no_evidence_recorded_for_this_scenario
+MX1,Storefront,bridgeport-scenario-0009,V1,no_evidence_recorded_for_this_scenario
+MX2,Storefront,bridgeport-scenario-0010,V1,no_evidence_recorded_for_this_scenario
+MXN,Storefront,bridgeport-scenario-0011,V1,no_evidence_recorded_for_this_scenario
+DX2,Storefront,bridgeport-scenario-0012,V1,no_evidence_recorded_for_this_scenario
+MX2,Commercial Center,bridgeport-scenario-0013,V1,no_evidence_recorded_for_this_scenario
+MX1,Commercial House,bridgeport-scenario-0014,V1,no_evidence_recorded_for_this_scenario
+MX2,Commercial House,bridgeport-scenario-0015,V1,no_evidence_recorded_for_this_scenario
+MXN,Commercial House,bridgeport-scenario-0016,V1,no_evidence_recorded_for_this_scenario
+RX2,Commercial House,bridgeport-scenario-0017,V1,no_evidence_recorded_for_this_scenario
+CX,General,bridgeport-scenario-0018,V1,no_evidence_recorded_for_this_scenario
+DX2,General,bridgeport-scenario-0019,V1,no_evidence_recorded_for_this_scenario
+NX3,General,bridgeport-scenario-0020,V1,no_evidence_recorded_for_this_scenario
+NX4,General,bridgeport-scenario-0021,V1,no_evidence_recorded_for_this_scenario
+RX2,General,bridgeport-scenario-0022,V1,no_evidence_recorded_for_this_scenario
+NX1,Row,bridgeport-scenario-0023,V1,no_evidence_recorded_for_this_scenario
+NX3,Row,bridgeport-scenario-0024,V1,no_evidence_recorded_for_this_scenario
+NX4,Row,bridgeport-scenario-0025,V1,no_evidence_recorded_for_this_scenario
+RX2,Row,bridgeport-scenario-0026,V1,no_evidence_recorded_for_this_scenario
+NX1,Double House A,bridgeport-scenario-0027,V1,no_evidence_recorded_for_this_scenario
+N1,House A,bridgeport-scenario-0028,V1,no_evidence_recorded_for_this_scenario
+NX1,House A,bridgeport-scenario-0029,V1,no_evidence_recorded_for_this_scenario
+N2,House B,bridgeport-scenario-0030,V1,no_evidence_recorded_for_this_scenario
+N3,House C,bridgeport-scenario-0031,V1,confirmed
+N4,House D,bridgeport-scenario-0032,V1,confirmed
+CX,Workshop,bridgeport-scenario-0033,V1,no_evidence_recorded_for_this_scenario
+CX,Civic,bridgeport-scenario-0034,V1,no_evidence_recorded_for_this_scenario
+DX1,Civic,bridgeport-scenario-0035,V1,no_evidence_recorded_for_this_scenario
+DX2,Civic,bridgeport-scenario-0036,V1,no_evidence_recorded_for_this_scenario
+MX1,Civic,bridgeport-scenario-0037,V1,no_evidence_recorded_for_this_scenario
+MX2,Civic,bridgeport-scenario-0038,V1,no_evidence_recorded_for_this_scenario
+NX3,Civic,bridgeport-scenario-0039,V1,no_evidence_recorded_for_this_scenario
+NX4,Civic,bridgeport-scenario-0040,V1,no_evidence_recorded_for_this_scenario
+RX2,Civic,bridgeport-scenario-0041,V1,no_evidence_recorded_for_this_scenario
+N4,general,bridgeport-scenario-0046,V1,no_evidence_recorded_for_this_scenario
+NX2,Small General,bridgeport-scenario-0047,V1,no_evidence_recorded_for_this_scenario
+RX1,Small General,bridgeport-scenario-0048,V1,no_evidence_recorded_for_this_scenario
+CX,general,bridgeport-scenario-0001,V2,no_evidence_recorded_for_this_scenario
+DX1,general,bridgeport-scenario-0002,V2,no_evidence_recorded_for_this_scenario
+DX2,general,bridgeport-scenario-0003,V2,no_evidence_recorded_for_this_scenario
+MX1,general,bridgeport-scenario-0004,V2,no_evidence_recorded_for_this_scenario
+MX2,general,bridgeport-scenario-0005,V2,no_evidence_recorded_for_this_scenario
+MXN,general,bridgeport-scenario-0006,V2,no_evidence_recorded_for_this_scenario
+RX2,general,bridgeport-scenario-0007,V2,no_evidence_recorded_for_this_scenario
+DX1,Storefront,bridgeport-scenario-0008,V2,confirmed
+MX1,Storefront,bridgeport-scenario-0009,V2,not_applicable
+MX2,Storefront,bridgeport-scenario-0010,V2,not_applicable
+MXN,Storefront,bridgeport-scenario-0011,V2,confirmed
+DX2,Storefront,bridgeport-scenario-0012,V2,no_evidence_recorded_for_this_scenario
+MX2,Commercial Center,bridgeport-scenario-0013,V2,confirmed
+MX1,Commercial House,bridgeport-scenario-0014,V2,confirmed
+MX2,Commercial House,bridgeport-scenario-0015,V2,confirmed
+MXN,Commercial House,bridgeport-scenario-0016,V2,confirmed
+RX2,Commercial House,bridgeport-scenario-0017,V2,confirmed
+CX,General,bridgeport-scenario-0018,V2,not_applicable
+DX2,General,bridgeport-scenario-0019,V2,not_applicable
+NX3,General,bridgeport-scenario-0020,V2,not_applicable
+NX4,General,bridgeport-scenario-0021,V2,not_applicable
+RX2,General,bridgeport-scenario-0022,V2,not_applicable
+NX1,Row,bridgeport-scenario-0023,V2,confirmed
+NX3,Row,bridgeport-scenario-0024,V2,confirmed
+NX4,Row,bridgeport-scenario-0025,V2,confirmed
+RX2,Row,bridgeport-scenario-0026,V2,confirmed
+NX1,Double House A,bridgeport-scenario-0027,V2,confirmed
+N1,House A,bridgeport-scenario-0028,V2,confirmed
+NX1,House A,bridgeport-scenario-0029,V2,confirmed
+N2,House B,bridgeport-scenario-0030,V2,confirmed
+N3,House C,bridgeport-scenario-0031,V2,confirmed
+N4,House D,bridgeport-scenario-0032,V2,confirmed
+CX,Workshop,bridgeport-scenario-0033,V2,confirmed
+CX,Civic,bridgeport-scenario-0034,V2,no_evidence_recorded_for_this_scenario
+DX1,Civic,bridgeport-scenario-0035,V2,confirmed
+DX2,Civic,bridgeport-scenario-0036,V2,no_evidence_recorded_for_this_scenario
+MX1,Civic,bridgeport-scenario-0037,V2,no_evidence_recorded_for_this_scenario
+MX2,Civic,bridgeport-scenario-0038,V2,no_evidence_recorded_for_this_scenario
+NX3,Civic,bridgeport-scenario-0039,V2,no_evidence_recorded_for_this_scenario
+NX4,Civic,bridgeport-scenario-0040,V2,no_evidence_recorded_for_this_scenario
+RX2,Civic,bridgeport-scenario-0041,V2,no_evidence_recorded_for_this_scenario
+N4,general,bridgeport-scenario-0046,V2,no_evidence_recorded_for_this_scenario
+NX2,Small General,bridgeport-scenario-0047,V2,confirmed
+RX1,Small General,bridgeport-scenario-0048,V2,not_applicable
+CX,general,bridgeport-scenario-0001,V6,confirmed_qualitative_rule
+DX1,general,bridgeport-scenario-0002,V6,confirmed_qualitative_rule
+DX2,general,bridgeport-scenario-0003,V6,confirmed_qualitative_rule
+MX1,general,bridgeport-scenario-0004,V6,confirmed_qualitative_rule
+MX2,general,bridgeport-scenario-0005,V6,confirmed_qualitative_rule
+MXN,general,bridgeport-scenario-0006,V6,confirmed_qualitative_rule
+RX2,general,bridgeport-scenario-0007,V6,confirmed_qualitative_rule
+DX1,Storefront,bridgeport-scenario-0008,V6,confirmed_qualitative_rule
+MX1,Storefront,bridgeport-scenario-0009,V6,confirmed_qualitative_rule
+MX2,Storefront,bridgeport-scenario-0010,V6,confirmed_qualitative_rule
+MXN,Storefront,bridgeport-scenario-0011,V6,confirmed_qualitative_rule
+DX2,Storefront,bridgeport-scenario-0012,V6,confirmed_qualitative_rule
+MX2,Commercial Center,bridgeport-scenario-0013,V6,confirmed_qualitative_rule
+MX1,Commercial House,bridgeport-scenario-0014,V6,confirmed_qualitative_rule
+MX2,Commercial House,bridgeport-scenario-0015,V6,confirmed_qualitative_rule
+MXN,Commercial House,bridgeport-scenario-0016,V6,confirmed_qualitative_rule
+RX2,Commercial House,bridgeport-scenario-0017,V6,confirmed_qualitative_rule
+CX,General,bridgeport-scenario-0018,V6,confirmed_qualitative_rule
+DX2,General,bridgeport-scenario-0019,V6,confirmed_qualitative_rule
+NX3,General,bridgeport-scenario-0020,V6,confirmed_qualitative_rule
+NX4,General,bridgeport-scenario-0021,V6,confirmed_qualitative_rule
+RX2,General,bridgeport-scenario-0022,V6,confirmed_qualitative_rule
+NX1,Row,bridgeport-scenario-0023,V6,confirmed_qualitative_rule
+NX3,Row,bridgeport-scenario-0024,V6,confirmed_qualitative_rule
+NX4,Row,bridgeport-scenario-0025,V6,confirmed_qualitative_rule
+RX2,Row,bridgeport-scenario-0026,V6,confirmed_qualitative_rule
+NX1,Double House A,bridgeport-scenario-0027,V6,confirmed_qualitative_rule
+N1,House A,bridgeport-scenario-0028,V6,confirmed_qualitative_rule
+NX1,House A,bridgeport-scenario-0029,V6,confirmed_qualitative_rule
+N2,House B,bridgeport-scenario-0030,V6,confirmed_qualitative_rule
+N3,House C,bridgeport-scenario-0031,V6,confirmed_qualitative_rule
+N4,House D,bridgeport-scenario-0032,V6,confirmed_qualitative_rule
+CX,Workshop,bridgeport-scenario-0033,V6,confirmed_qualitative_rule
+CX,Civic,bridgeport-scenario-0034,V6,confirmed_qualitative_rule
+DX1,Civic,bridgeport-scenario-0035,V6,confirmed_qualitative_rule
+DX2,Civic,bridgeport-scenario-0036,V6,confirmed_qualitative_rule
+MX1,Civic,bridgeport-scenario-0037,V6,confirmed_qualitative_rule
+MX2,Civic,bridgeport-scenario-0038,V6,confirmed_qualitative_rule
+NX3,Civic,bridgeport-scenario-0039,V6,confirmed_qualitative_rule
+NX4,Civic,bridgeport-scenario-0040,V6,confirmed_qualitative_rule
+RX2,Civic,bridgeport-scenario-0041,V6,confirmed_qualitative_rule
+N4,general,bridgeport-scenario-0046,V6,confirmed_qualitative_rule
+NX2,Small General,bridgeport-scenario-0047,V6,confirmed_qualitative_rule
+RX1,Small General,bridgeport-scenario-0048,V6,confirmed_qualitative_rule
+CX,general,bridgeport-scenario-0001,V8,confirmed
+DX1,general,bridgeport-scenario-0002,V8,confirmed
+DX2,general,bridgeport-scenario-0003,V8,confirmed
+MX1,general,bridgeport-scenario-0004,V8,confirmed
+MX2,general,bridgeport-scenario-0005,V8,confirmed
+MXN,general,bridgeport-scenario-0006,V8,confirmed
+RX2,general,bridgeport-scenario-0007,V8,confirmed
+DX1,Storefront,bridgeport-scenario-0008,V8,confirmed
+MX1,Storefront,bridgeport-scenario-0009,V8,confirmed
+MX2,Storefront,bridgeport-scenario-0010,V8,confirmed
+MXN,Storefront,bridgeport-scenario-0011,V8,confirmed
+DX2,Storefront,bridgeport-scenario-0012,V8,confirmed
+MX2,Commercial Center,bridgeport-scenario-0013,V8,confirmed
+MX1,Commercial House,bridgeport-scenario-0014,V8,confirmed
+MX2,Commercial House,bridgeport-scenario-0015,V8,confirmed
+MXN,Commercial House,bridgeport-scenario-0016,V8,confirmed
+RX2,Commercial House,bridgeport-scenario-0017,V8,confirmed
+CX,General,bridgeport-scenario-0018,V8,confirmed
+DX2,General,bridgeport-scenario-0019,V8,confirmed
+NX3,General,bridgeport-scenario-0020,V8,confirmed
+NX4,General,bridgeport-scenario-0021,V8,confirmed
+RX2,General,bridgeport-scenario-0022,V8,confirmed
+NX1,Row,bridgeport-scenario-0023,V8,confirmed
+NX3,Row,bridgeport-scenario-0024,V8,confirmed
+NX4,Row,bridgeport-scenario-0025,V8,confirmed
+RX2,Row,bridgeport-scenario-0026,V8,confirmed
+NX1,Double House A,bridgeport-scenario-0027,V8,confirmed
+N1,House A,bridgeport-scenario-0028,V8,confirmed
+NX1,House A,bridgeport-scenario-0029,V8,confirmed
+N2,House B,bridgeport-scenario-0030,V8,confirmed
+N3,House C,bridgeport-scenario-0031,V8,confirmed
+N4,House D,bridgeport-scenario-0032,V8,confirmed
+CX,Workshop,bridgeport-scenario-0033,V8,confirmed
+CX,Civic,bridgeport-scenario-0034,V8,confirmed
+DX1,Civic,bridgeport-scenario-0035,V8,confirmed
+DX2,Civic,bridgeport-scenario-0036,V8,confirmed
+MX1,Civic,bridgeport-scenario-0037,V8,confirmed
+MX2,Civic,bridgeport-scenario-0038,V8,confirmed
+NX3,Civic,bridgeport-scenario-0039,V8,confirmed
+NX4,Civic,bridgeport-scenario-0040,V8,confirmed
+RX2,Civic,bridgeport-scenario-0041,V8,confirmed
+N4,general,bridgeport-scenario-0046,V8,confirmed
+NX2,Small General,bridgeport-scenario-0047,V8,confirmed
+RX1,Small General,bridgeport-scenario-0048,V8,confirmed
+CX,general,bridgeport-scenario-0001,V9,confirmed_qualitative_rule
+DX1,general,bridgeport-scenario-0002,V9,confirmed_qualitative_rule
+DX2,general,bridgeport-scenario-0003,V9,confirmed_qualitative_rule
+MX1,general,bridgeport-scenario-0004,V9,confirmed_qualitative_rule
+MX2,general,bridgeport-scenario-0005,V9,confirmed_qualitative_rule
+MXN,general,bridgeport-scenario-0006,V9,confirmed_qualitative_rule
+RX2,general,bridgeport-scenario-0007,V9,confirmed_qualitative_rule
+DX1,Storefront,bridgeport-scenario-0008,V9,confirmed_qualitative_rule
+MX1,Storefront,bridgeport-scenario-0009,V9,confirmed_qualitative_rule
+MX2,Storefront,bridgeport-scenario-0010,V9,confirmed_qualitative_rule
+MXN,Storefront,bridgeport-scenario-0011,V9,confirmed_qualitative_rule
+DX2,Storefront,bridgeport-scenario-0012,V9,confirmed_qualitative_rule
+MX2,Commercial Center,bridgeport-scenario-0013,V9,confirmed_qualitative_rule
+MX1,Commercial House,bridgeport-scenario-0014,V9,confirmed_qualitative_rule
+MX2,Commercial House,bridgeport-scenario-0015,V9,confirmed_qualitative_rule
+MXN,Commercial House,bridgeport-scenario-0016,V9,confirmed_qualitative_rule
+RX2,Commercial House,bridgeport-scenario-0017,V9,confirmed_qualitative_rule
+CX,General,bridgeport-scenario-0018,V9,confirmed_qualitative_rule
+DX2,General,bridgeport-scenario-0019,V9,confirmed_qualitative_rule
+NX3,General,bridgeport-scenario-0020,V9,confirmed_qualitative_rule
+NX4,General,bridgeport-scenario-0021,V9,confirmed_qualitative_rule
+RX2,General,bridgeport-scenario-0022,V9,confirmed_qualitative_rule
+NX1,Row,bridgeport-scenario-0023,V9,confirmed_qualitative_rule
+NX3,Row,bridgeport-scenario-0024,V9,confirmed_qualitative_rule
+NX4,Row,bridgeport-scenario-0025,V9,confirmed_qualitative_rule
+RX2,Row,bridgeport-scenario-0026,V9,confirmed_qualitative_rule
+NX1,Double House A,bridgeport-scenario-0027,V9,confirmed_qualitative_rule
+N1,House A,bridgeport-scenario-0028,V9,confirmed_qualitative_rule
+NX1,House A,bridgeport-scenario-0029,V9,confirmed_qualitative_rule
+N2,House B,bridgeport-scenario-0030,V9,confirmed_qualitative_rule
+N3,House C,bridgeport-scenario-0031,V9,confirmed_qualitative_rule
+N4,House D,bridgeport-scenario-0032,V9,confirmed_qualitative_rule
+CX,Workshop,bridgeport-scenario-0033,V9,confirmed_qualitative_rule
+CX,Civic,bridgeport-scenario-0034,V9,confirmed_qualitative_rule
+DX1,Civic,bridgeport-scenario-0035,V9,confirmed_qualitative_rule
+DX2,Civic,bridgeport-scenario-0036,V9,confirmed_qualitative_rule
+MX1,Civic,bridgeport-scenario-0037,V9,confirmed_qualitative_rule
+MX2,Civic,bridgeport-scenario-0038,V9,confirmed_qualitative_rule
+NX3,Civic,bridgeport-scenario-0039,V9,confirmed_qualitative_rule
+NX4,Civic,bridgeport-scenario-0040,V9,confirmed_qualitative_rule
+RX2,Civic,bridgeport-scenario-0041,V9,confirmed_qualitative_rule
+N4,general,bridgeport-scenario-0046,V9,confirmed_qualitative_rule
+NX2,Small General,bridgeport-scenario-0047,V9,confirmed_qualitative_rule
+RX1,Small General,bridgeport-scenario-0048,V9,confirmed_qualitative_rule
+CX,general,bridgeport-scenario-0001,V11,confirmed_qualitative_rule
+DX1,general,bridgeport-scenario-0002,V11,confirmed_qualitative_rule
+DX2,general,bridgeport-scenario-0003,V11,confirmed_qualitative_rule
+MX1,general,bridgeport-scenario-0004,V11,confirmed_qualitative_rule
+MX2,general,bridgeport-scenario-0005,V11,confirmed_qualitative_rule
+MXN,general,bridgeport-scenario-0006,V11,confirmed_qualitative_rule
+RX2,general,bridgeport-scenario-0007,V11,confirmed_qualitative_rule
+DX1,Storefront,bridgeport-scenario-0008,V11,confirmed_qualitative_rule
+MX1,Storefront,bridgeport-scenario-0009,V11,confirmed_qualitative_rule
+MX2,Storefront,bridgeport-scenario-0010,V11,confirmed_qualitative_rule
+MXN,Storefront,bridgeport-scenario-0011,V11,confirmed_qualitative_rule
+DX2,Storefront,bridgeport-scenario-0012,V11,confirmed_qualitative_rule
+MX2,Commercial Center,bridgeport-scenario-0013,V11,confirmed_qualitative_rule
+MX1,Commercial House,bridgeport-scenario-0014,V11,confirmed_qualitative_rule
+MX2,Commercial House,bridgeport-scenario-0015,V11,confirmed_qualitative_rule
+MXN,Commercial House,bridgeport-scenario-0016,V11,confirmed_qualitative_rule
+RX2,Commercial House,bridgeport-scenario-0017,V11,confirmed_qualitative_rule
+CX,General,bridgeport-scenario-0018,V11,confirmed_qualitative_rule
+DX2,General,bridgeport-scenario-0019,V11,confirmed_qualitative_rule
+NX3,General,bridgeport-scenario-0020,V11,confirmed_qualitative_rule
+NX4,General,bridgeport-scenario-0021,V11,confirmed_qualitative_rule
+RX2,General,bridgeport-scenario-0022,V11,confirmed_qualitative_rule
+NX1,Row,bridgeport-scenario-0023,V11,confirmed_qualitative_rule
+NX3,Row,bridgeport-scenario-0024,V11,confirmed_qualitative_rule
+NX4,Row,bridgeport-scenario-0025,V11,confirmed_qualitative_rule
+RX2,Row,bridgeport-scenario-0026,V11,confirmed_qualitative_rule
+NX1,Double House A,bridgeport-scenario-0027,V11,confirmed_qualitative_rule
+N1,House A,bridgeport-scenario-0028,V11,confirmed_qualitative_rule
+NX1,House A,bridgeport-scenario-0029,V11,confirmed_qualitative_rule
+N2,House B,bridgeport-scenario-0030,V11,confirmed_qualitative_rule
+N3,House C,bridgeport-scenario-0031,V11,confirmed_qualitative_rule
+N4,House D,bridgeport-scenario-0032,V11,confirmed_qualitative_rule
+CX,Workshop,bridgeport-scenario-0033,V11,confirmed_qualitative_rule
+CX,Civic,bridgeport-scenario-0034,V11,confirmed_qualitative_rule
+DX1,Civic,bridgeport-scenario-0035,V11,confirmed_qualitative_rule
+DX2,Civic,bridgeport-scenario-0036,V11,confirmed_qualitative_rule
+MX1,Civic,bridgeport-scenario-0037,V11,confirmed_qualitative_rule
+MX2,Civic,bridgeport-scenario-0038,V11,confirmed_qualitative_rule
+NX3,Civic,bridgeport-scenario-0039,V11,confirmed_qualitative_rule
+NX4,Civic,bridgeport-scenario-0040,V11,confirmed_qualitative_rule
+RX2,Civic,bridgeport-scenario-0041,V11,confirmed_qualitative_rule
+N4,general,bridgeport-scenario-0046,V11,confirmed_qualitative_rule
+NX2,Small General,bridgeport-scenario-0047,V11,confirmed_qualitative_rule
+RX1,Small General,bridgeport-scenario-0048,V11,confirmed_qualitative_rule

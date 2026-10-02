@@ -1,0 +1,13 @@
+variable_id,score_readiness
+V1,score_ready
+V10,not_score_ready_genuine_absence
+V11,score_ready
+V12,not_score_ready_manual_review
+V2,score_ready
+V3,not_score_ready_genuine_absence
+V4,not_score_ready_manual_review
+V5,score_ready
+V6,score_ready
+V7,not_score_ready_pending_recovery
+V8,score_ready
+V9,score_ready_with_caveat

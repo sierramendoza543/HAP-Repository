@@ -1,0 +1,2 @@
+pair,relationship,treatment,note
+V7 3+-unit entitlement <-> V11 general discretionary review,shared_underlying_rule,binding_constraint_treatment,"when the SAME special-permit citation is the only evidence for both, V11 should not add a full second penalty -- flag shared_underlying_rule=true"

@@ -1,0 +1,70 @@
+{
+  "notebook": "10_bridgeport_master_use_table_and_parking_completion",
+  "run_timestamp": "2026-10-01T20:28:15.079390+00:00",
+  "user_instruction": "Not yet -- keep doing evidence recovery first: close V7/V12 via the master use-permission table and complete the 11 pending PARKING pages, before any Phase 3 scoring.",
+  "master_use_table_rows": 50,
+  "master_use_table_building_types_covered": [
+    "Civic",
+    "Commercial Center",
+    "Commercial House",
+    "Double House A",
+    "General",
+    "House A",
+    "House B",
+    "House C",
+    "House D",
+    "Row",
+    "Small General",
+    "Storefront",
+    "Workshop"
+  ],
+  "small_general_registry_gap_documented": true,
+  "v7_v12_addendum_rows": 100,
+  "v7_scenarios_confirmed_allowed_by_right": 24,
+  "v7_scenarios_fully_resolved_no_manual_review": true,
+  "v12_scenarios_confirmed_entitlement_present": 27,
+  "v12_scenarios_fully_resolved_no_manual_review": true,
+  "parking_pages_completed_this_notebook": [
+    29,
+    37,
+    53,
+    61,
+    69,
+    77,
+    85,
+    93,
+    101,
+    109,
+    117
+  ],
+  "parking_pages_from_notebook_07": [
+    21,
+    45
+  ],
+  "parking_full_13_building_type_coverage": true,
+  "parking_structurally_non_equivalent_rows_not_fabricated": 3,
+  "outputs": {
+    "step_02_8_master_use_table_raw_cells": [
+      "outputs/review/bridgeport/step_02_8_master_use_table_raw_cells.csv",
+      "data/interim/bridgeport/step_02_8_master_use_table_raw_cells.parquet"
+    ],
+    "step_02_8_small_general_registry_gap_finding": [
+      "outputs/review/bridgeport/step_02_8_small_general_registry_gap_finding.csv"
+    ],
+    "bridgeport_v7_v12_master_use_table_addendum": [
+      "data/processed/bridgeport_v7_v12_master_use_table_addendum.csv",
+      "data/processed/bridgeport_v7_v12_master_use_table_addendum.parquet"
+    ],
+    "step_02_8_parking_completion_raw_cells": [
+      "outputs/review/bridgeport/step_02_8_parking_completion_raw_cells.csv",
+      "data/interim/bridgeport/step_02_8_parking_completion_raw_cells.parquet"
+    ],
+    "bridgeport_parking_full_13_building_type_recovery": [
+      "data/processed/bridgeport_parking_full_13_building_type_recovery.csv",
+      "data/processed/bridgeport_parking_full_13_building_type_recovery.parquet"
+    ],
+    "figure": [
+      "outputs/figures/bridgeport/step_02_8_v7_v12_scenario_determinations.png"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+metric,value
+feature_count,2000
+crs,EPSG:4326
+geometry_types,['Polygon']
+zone_2021_unique_values,16
+local_histdist_nonnull_count,111

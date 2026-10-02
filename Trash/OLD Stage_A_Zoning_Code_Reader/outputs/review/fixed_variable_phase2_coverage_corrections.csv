@@ -1,0 +1,16 @@
+district_code,building_type,phase2_regex_value_pct,building_siting_table_value_pct,discrepancy
+MXN,Storefront,95,85,True
+MX2,Commercial Center,95,80,True
+MX1,Commercial House,95,80,True
+MXN,Commercial House,95,80,True
+MX2,Commercial House,95,80,True
+RX2,General,80,85,True
+NX4,General,95,85,True
+NX3,General,95,80,True
+CX,General,95,85,True
+NX3,Row,95,80,True
+NX4,Row,95,80,True
+NX1,Double House A,75,80,True
+NX1,House A,75,80,True
+CX,Workshop,95,90,True
+DX1,Civic,95,90,True

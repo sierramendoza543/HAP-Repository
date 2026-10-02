@@ -1,0 +1,9 @@
+district_code,district_name,preliminary_district_category,gis_presence,gross_mapped_area_acres,in_ordinance_text,crosswalk_status
+CX,Heavy Commercial,UNCERTAIN,False,,True,ordinance_only
+DX1,Downtown Core,UNCERTAIN,False,,True,ordinance_only
+DX2,Downtown Support,UNCERTAIN,False,,True,ordinance_only
+MX2,Mixed-Use Centers,UNCERTAIN,False,,True,ordinance_only
+N4,Neighborhood: Suburban,BASE_CANDIDATE,False,,True,ordinance_only
+OH,Historic Overlay,OVERLAY_OR_HISTORIC_CANDIDATE,False,,True,ordinance_only
+P3,Institutional Campuses,PUBLIC_OR_INSTITUTIONAL_CANDIDATE,False,,True,ordinance_only
+P5,Detention and Correction Facilities,PUBLIC_OR_INSTITUTIONAL_CANDIDATE,False,,True,ordinance_only

@@ -1,0 +1,89 @@
+{
+  "generated_at_utc": "2026-10-01T19:46:56.200558+00:00",
+  "source_document_hashes": {
+    "bridgeport_pdf_sha256_prefix": "afe7c678fa5dfc85",
+    "greenwich_document_id": "greenwich-connecticut-18417c5e9074d765"
+  },
+  "registry_file_hash": "b4c51b561ed938dea9958b0a6b93b1df4b5cc8719a672cc6de48c88dbef3b0c0",
+  "bridgeport_analysis_unit_count": 150,
+  "greenwich_analysis_unit_count": 1,
+  "total_matrix_rows": 460,
+  "counts_by_variable": {
+    "V1": 6,
+    "V10": 25,
+    "V11": 25,
+    "V12": 25,
+    "V2": 43,
+    "V3": 82,
+    "V4": 43,
+    "V5": 171,
+    "V6": 5,
+    "V7": 5,
+    "V8": 5,
+    "V9": 25
+  },
+  "counts_by_availability_diagnosis": {
+    "confirmed_governing_rule": 243,
+    "genuine_absence_after_targeted_search": 65,
+    "confirmed_qualitative_rule": 52,
+    "pending_visual_recovery": 35,
+    "structurally_non_equivalent_rule_present": 28,
+    "candidate_found_needs_manual_review": 24,
+    "not_applicable_to_analysis_unit": 12,
+    "unresolved_scope_or_cross_reference": 1
+  },
+  "counts_by_score_readiness_row_level": {
+    "score_ready": 203,
+    "score_ready_with_caveat": 120,
+    "not_score_ready_genuine_absence": 65,
+    "not_score_ready_manual_review": 37,
+    "not_score_ready_pending_recovery": 35
+  },
+  "cross_town_variable_readiness": {
+    "V1": "score_ready",
+    "V10": "not_score_ready_genuine_absence",
+    "V11": "score_ready",
+    "V12": "not_score_ready_manual_review",
+    "V2": "score_ready",
+    "V3": "not_score_ready_genuine_absence",
+    "V4": "not_score_ready_manual_review",
+    "V5": "score_ready",
+    "V6": "score_ready",
+    "V7": "not_score_ready_pending_recovery",
+    "V8": "score_ready",
+    "V9": "score_ready_with_caveat"
+  },
+  "counts_by_comparability_status": {
+    "directly_comparable": 135,
+    "structurally_non_equivalent": 120,
+    "needs_manual_harmonization": 86,
+    "missing": 65,
+    "comparable_with_documented_transform": 41,
+    "not_applicable": 12,
+    "qualitative_only": 1
+  },
+  "manual_review_row_count": 165,
+  "unresolved_row_count": 1,
+  "score_ready_count_of_12": 7,
+  "score_ready_target_met": false,
+  "dependency_map_summary": {
+    "partially_overlapping": 3,
+    "needs_manual_harmonization": 2,
+    "independent": 1,
+    "shared_underlying_rule": 1,
+    "mutually_exclusive_by_scenario": 1
+  },
+  "raw_artifact_integrity": {
+    "bridgeport_phase2_unchanged": true,
+    "greenwich_unchanged": true
+  },
+  "no_score_no_ranking_statement": "No final town score, dominant-district selection, statewide ranking, causal conclusion, or Greenwich-Bridgeport winner was produced.",
+  "artifact_paths": {
+    "registry": "data/processed/expanded_variable_registry_v1.csv",
+    "matrix_csv": "data/processed/expanded_variable_recovery_matrix_bridgeport_greenwich.csv",
+    "score_readiness": "data/processed/expanded_variable_score_readiness.csv",
+    "rubrics": "data/processed/expanded_variable_scoring_rubrics_draft.csv",
+    "dependency_map": "data/processed/expanded_variable_dependency_map.csv",
+    "comparison": "outputs/tables/expanded_variable_bridgeport_greenwich_evidence_comparison.md"
+  }
+}

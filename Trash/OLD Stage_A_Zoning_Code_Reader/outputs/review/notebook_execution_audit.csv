@@ -1,0 +1,12 @@
+notebook,exists,total_cells,code_cells,executed_cells,fully_executed,embedded_errors,hardcoded_absolute_path_occurrences,external_api_reference_occurrences
+01_collection_phase.ipynb,True,214,153,153,True,0,17,0
+02_phase_2_extraction_and_phase_3_scoring.ipynb,True,80,61,61,True,0,34,0
+04_bridgeport_collection_phase.ipynb,True,191,119,119,True,0,3,0
+05_bridgeport_all_district_extraction_and_comparability.ipynb,True,66,39,39,True,0,1,0
+06_bridgeport_visual_diagram_recovery_and_validation.ipynb,True,34,19,19,True,0,1,12
+07_bridgeport_targeted_visual_table_recovery.ipynb,True,35,20,20,True,0,1,0
+08_fixed_variable_targeted_recovery_bridgeport_greenwich.ipynb,True,32,17,17,True,0,1,0
+09_expanded_variable_recovery_and_score_readiness.ipynb,True,35,18,18,True,0,1,0
+10_bridgeport_master_use_table_and_parking_completion.ipynb,True,23,12,12,True,0,4,0
+11_bridgeport_score_readiness_integration.ipynb,True,24,12,12,True,0,3,0
+12_bridgeport_phase3_pilot_scenario_scoring.ipynb,True,24,12,12,True,0,2,0

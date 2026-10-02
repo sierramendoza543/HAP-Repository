@@ -1,0 +1,32 @@
+{
+  "document_id": "greenwich-connecticut-18417c5e9074d765",
+  "document_hash_sha256": "18417c5e9074d765ab4483571b9ac3d6aeb162b37b1b302f7a8ce1f13e963dcb",
+  "pipeline_run_timestamp": "2026-10-01T09:09:02.964715+00:00",
+  "dominant_district_status": "verified",
+  "phase_2_status": "PHASE 2 DIAGNOSTIC ONLY \u2014 SCORING BLOCKED",
+  "phase_3_scoring_status": "blocked",
+  "confirmed_variable_count": 5,
+  "review_required_variable_count": 0,
+  "missing_variable_count": 1,
+  "not_applicable_variable_count": 2,
+  "unresolved_conflict_count": 0,
+  "legal_bert_available": false,
+  "legal_bert_used": false,
+  "known_blockers": [
+    "only_5_of_8_variables_confirmed",
+    "reference_dataset_missing_or_invalid"
+  ],
+  "export_paths": {
+    "town_rule_extractions_csv": "outputs/tables/greenwich_town_rule_extractions.csv",
+    "town_rule_extractions_parquet": "outputs/tables/greenwich_town_rule_extractions.parquet",
+    "rule_candidate_evidence": "outputs/tables/greenwich_rule_candidate_evidence.csv",
+    "phase_2_conflict_audit": "outputs/tables/greenwich_phase_2_conflict_audit.csv",
+    "phase_2_review_queue": "outputs/review/greenwich_phase_2_review_queue.csv",
+    "phase_2_validation_summary": "outputs/tables/greenwich_phase_2_validation_summary.csv",
+    "dominant_district_decision": "outputs/tables/greenwich_dominant_district_decision.csv",
+    "manual_override_audit": "outputs/tables/greenwich_phase_2_manual_override_audit.csv",
+    "auxiliary_evidence": "outputs/tables/greenwich_phase_2_auxiliary_evidence.csv",
+    "sensitivity_analysis": "outputs/tables/greenwich_sensitivity_analysis.csv",
+    "scoring_blockers": "outputs/tables/greenwich_scoring_blockers.csv"
+  }
+}

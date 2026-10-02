@@ -1,0 +1,110 @@
+[
+  {
+    "variable_id": "V1",
+    "framework_label": "Minimum lot-size threshold",
+    "direction": "larger_increases_restrictiveness",
+    "accepted_legal_forms": "minimum_lot_size_sqft; minimum_lot_size_acres; minimum_site_area_sqft; minimum_site_area_per_dwelling_unit; no_minimum_lot_area; existing_lot_of_record_exception",
+    "prohibited_conflations": "open space; floor area; building footprint; amenity area; site area per unit",
+    "search_terms": "lot area; site area; minimum lot; minimum site; parcel area; acres; sq ft; lot size",
+    "score_gate": "numeric or explicit no-minimum status with source"
+  },
+  {
+    "variable_id": "V2",
+    "framework_label": "Minimum lot-width threshold",
+    "direction": "larger_increases_restrictiveness",
+    "accepted_legal_forms": "minimum_lot_width_ft; width_at_building_line_ft; width_at_setback_line_ft; frontage_requirement_ft; no_minimum_width",
+    "prohibited_conflations": "frontage treated as width without explicit code equivalence",
+    "search_terms": "lot width; minimum width; frontage; street frontage; buildable width",
+    "score_gate": "numeric or explicit no-minimum status with source"
+  },
+  {
+    "variable_id": "V3",
+    "framework_label": "Vertical development capacity",
+    "direction": "higher_capacity_lowers_restrictiveness",
+    "accepted_legal_forms": "maximum_building_height_ft; maximum_height_stories; dual stories+feet cap; confirmed absence of cap",
+    "prohibited_conflations": "stories as feet; ground-story height as total height; roof/parapet/stepback as total height",
+    "search_terms": "height; maximum stories; stories maximum; building height; story height; envelope; stepback",
+    "score_gate": "feet cap directly comparable; stories-only cap score-ready-with-caveat via ordinal rubric"
+  },
+  {
+    "variable_id": "V4",
+    "framework_label": "Site-intensity / ground-plane control",
+    "direction": "legal-form-specific (see rubric)",
+    "accepted_legal_forms": "maximum_lot_coverage_pct; maximum_site_coverage_pct; maximum_impervious_coverage_pct; maximum_far; minimum_open_space_pct; minimum_pervious_area_pct; minimum_green_area_pct",
+    "prohibited_conflations": "FAR as coverage; open/pervious/green area as coverage",
+    "search_terms": "site coverage; lot coverage; impervious; pervious; green area; open space; FAR",
+    "score_gate": "legal-form-specific ordinal rubric only; no cross-form conversion"
+  },
+  {
+    "variable_id": "V5",
+    "framework_label": "Building-placement control",
+    "direction": "larger_setback_increases_restrictiveness",
+    "accepted_legal_forms": "front/side/rear_setback_ft; summed_minimum_setbacks_ft; build_to_minimum_ft; build_to_maximum_ft; frontage_buildout_requirement",
+    "prohibited_conflations": "parking/accessory setbacks as principal-building setbacks; build-to as setback; non-concurrent sum",
+    "search_terms": "setback; yard; front/side/rear yard; build-to; streetwall; buffer",
+    "score_gate": "numeric setback directly comparable; build-to separate placement-flexibility rubric"
+  },
+  {
+    "variable_id": "V6",
+    "framework_label": "Vehicle-parking burden",
+    "direction": "higher_burden_increases_restrictiveness",
+    "accepted_legal_forms": "spaces_per_dwelling_unit; spaces_per_bedroom; spaces_per_gfa; no_minimum_parking_requirement; qualitative/discretionary rule",
+    "prohibited_conflations": "bedroom/GFA formulas forced into spaces/unit; ADU no-additional-parking generalized citywide; bicycle parking as vehicle parking",
+    "search_terms": "parking; off-street; spaces per; dwelling unit; no minimum; reduction; exemption",
+    "score_gate": "numeric or explicit no-minimum status; qualitative rules get categorical rubric"
+  },
+  {
+    "variable_id": "V7",
+    "framework_label": "3+-unit housing entitlement pathway",
+    "direction": "more_certain_less_discretionary_lowers_restrictiveness",
+    "accepted_legal_forms": "permitted_by_right; administrative_or_site_plan_review; special_permit_or_special_exception; discretionary_commission_review; rezoning_or_legislative_pathway; prohibited; unavailable_in_analysis_unit; unresolved_pending_master_use_table",
+    "prohibited_conflations": "two-family permission as multifamily; mixed-use label as proof; density allowance as proof",
+    "search_terms": "multifamily; 3+ dwelling units; apartments; group living; permitted; special permit",
+    "score_gate": "requires confirmed approval-pathway symbol, not just use-category text"
+  },
+  {
+    "variable_id": "V8",
+    "framework_label": "ADU entitlement pathway",
+    "direction": "more_certain_objective_entitlement_lowers_restrictiveness",
+    "accepted_legal_forms": "allowed_by_right; allowed_subject_to_objective_conditions; conditional_discretionary_approval; effectively_unavailable; prohibited",
+    "prohibited_conflations": "state default law assumed without local applicability evidence",
+    "search_terms": "accessory dwelling; accessory apartment; ADU; in-law; owner occupancy; deed restriction",
+    "score_gate": "pathway + condition fields source-backed"
+  },
+  {
+    "variable_id": "V9",
+    "framework_label": "Residential density / unit-cap control",
+    "direction": "higher_capacity_lowers_restrictiveness",
+    "accepted_legal_forms": "maximum_units_per_acre; maximum_units_per_lot; maximum_units_per_building; minimum_land_area_per_dwelling_unit; density_cap; building_type_only_density_control; no_explicit_density_or_unit_cap",
+    "prohibited_conflations": "unit count inferred from stories, height, FAR, lot size, or GIS observation",
+    "search_terms": "density; dwelling units per acre; units per acre; du/ac; units per lot; units per building; density cap; household living; building type",
+    "score_gate": "numeric cap = ordinal rubric; building-type-only control = categorical rubric only if type explicitly constrains unit count"
+  },
+  {
+    "variable_id": "V10",
+    "framework_label": "Floor-area capacity",
+    "direction": "higher_capacity_lowers_restrictiveness",
+    "accepted_legal_forms": "maximum_far; maximum_floor_area_ratio; maximum_gross_floor_area; maximum_floorplate; no_explicit_floor_area_cap; form_envelope_only",
+    "prohibited_conflations": "FAR calculated from GIS/height/coverage/stories/plan images",
+    "search_terms": "FAR; floor area ratio; gross floor area; GFA; maximum floor area; floorplate; buildable area",
+    "score_gate": "direct FAR/GFA cap only; envelope-only controls not converted to FAR"
+  },
+  {
+    "variable_id": "V11",
+    "framework_label": "General discretionary-review burden",
+    "direction": "more_discretionary_increases_restrictiveness",
+    "accepted_legal_forms": "ministerial_or_zoning_permit_only; administrative_review_with_objective_standards; site_plan_review_objective; site_plan_review_with_discretion; special_permit_or_special_exception; design_review_or_multiple_discretionary_bodies; rezoning_or_legislative_action; prohibited",
+    "prohibited_conflations": "double-counting the same special permit already scored under V7",
+    "search_terms": "zoning permit; administrative approval; site plan; special permit; special exception; public hearing; design review; variance",
+    "score_gate": "representative compliant-project pathway identified; shared_underlying_rule flagged against V7 where applicable"
+  },
+  {
+    "variable_id": "V12",
+    "framework_label": "Missing-middle housing entitlement (2-4 units)",
+    "direction": "broader_more_certain_entitlement_lowers_restrictiveness",
+    "accepted_legal_forms": "broadly_permitted_by_right; permitted_by_right_for_some_missing_middle_forms; administrative_or_site_plan_review; special_permit_or_special_exception; limited_to_specific_form_or_overlay; prohibited; unavailable_in_analysis_unit",
+    "prohibited_conflations": "townhouse-capable building type assumed missing-middle without unit-count verification",
+    "search_terms": "duplex; two-family; triplex; three-family; four-family; townhouse; rowhouse; stacked dwelling; cottage court; building type",
+    "score_gate": "explicit form-to-unit-count mapping source-backed"
+  }
+]

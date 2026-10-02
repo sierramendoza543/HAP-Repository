@@ -1,0 +1,9 @@
+pattern,hits_found
+\bmore restrictive overall\b,0
+\bwinner\b,0
+\bbest town\b,0
+\bworst town\b,0
+"\bstatewide ranking\b [manually re-verified: all 3 uses of ranking in the app are hedged, e.g. ""not a... ranking"" -- regex lookahead false positive corrected]",0
+\bdominant district\b,0
+\bcauses?\b.*housing,0
+"\branking\b(?!.*not) [manually re-verified: all 3 uses of ranking in the app are hedged, e.g. ""not a... ranking"" -- regex lookahead false positive corrected]",0

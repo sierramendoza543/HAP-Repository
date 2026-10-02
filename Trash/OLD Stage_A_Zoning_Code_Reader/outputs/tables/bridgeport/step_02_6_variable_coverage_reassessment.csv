@@ -1,0 +1,6 @@
+rule_variable,phase2_baseline_count,phase2_5_count,phase2_6_recovered_count,confirmed_count,review_required_count,still_missing_count,qualitative_only_count,not_applicable_count,source_type,rule_format
+maximum_height_stories,46,0,39,39,0,0,0,0,manual_verified_visual_table,stories
+ground_story_height_ft,0,0,39,38,1,0,0,0,manual_verified_visual_table,feet
+upper_story_height_ft,0,0,39,38,1,0,0,0,manual_verified_visual_table,feet
+attached_garage_setback_ft,0,0,12,12,0,0,0,0,manual_verified_visual_table,feet
+accessory_structure_side_rear_setback_ft,0,0,11,11,0,0,0,0,manual_verified_visual_table,feet

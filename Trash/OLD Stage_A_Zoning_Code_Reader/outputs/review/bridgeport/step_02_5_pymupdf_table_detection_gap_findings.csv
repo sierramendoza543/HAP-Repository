@@ -1,0 +1,4 @@
+page_number,building_type,section,zones_covered,example_values_visible,gap_type,recommended_action
+46,General,3.50.6,"DX2; RX2,P2,IX,NX4; NX3; CX,I","3-15 stories (DX2); 2-5.5 stories (RX2/P2/IX/NX4); 2-3.5 stories (NX3); max 3 stories (CX,I); ground/upper story ft ranges",table_never_detected_by_pymupdf_in_any_of_3_strategies,"re-run Stage 2 table detection with a 4th strategy tuned for shaded-header-band tables, or VLM-assisted transcription"
+94,House C,3.110.6,N3,1.5-2.5 stories; 9-14 ft story height,table_never_detected_by_pymupdf_in_any_of_3_strategies,"re-run Stage 2 table detection with a 4th strategy tuned for shaded-header-band tables, or VLM-assisted transcription"
+118,Civic,3.140.6,"DX1,DX2,MX1,MX2,RX1,RX2,CX,NX3,NX4,P2; P1,P4,P5; P3",max 3-12 stories; 10-36 ft ground-story height,table_never_detected_by_pymupdf_in_any_of_3_strategies,"re-run Stage 2 table detection with a 4th strategy tuned for shaded-header-band tables, or VLM-assisted transcription"

@@ -1,0 +1,29 @@
+scenario_key,town,land,placement,parking,housing_entitlement,process,R_s_baseline,coverage_fraction_baseline,district_code,building_form,above_greenwich_benchmark
+Bridgeport|CX|General,Bridgeport,50.0,50.0,0.0,68.18181818181817,20.0,46.86363636363636,1.0,CX,General,False
+Bridgeport|CX|Workshop,Bridgeport,42.85714285714286,30.0,0.0,68.18181818181817,20.0,42.077922077922075,1.0,CX,Workshop,False
+Bridgeport|DX1|Civic,Bridgeport,57.142857142857146,30.0,0.0,68.18181818181817,20.0,45.649350649350644,1.0,DX1,Civic,False
+Bridgeport|DX1|Storefront,Bridgeport,35.714285714285715,30.0,0.0,7.5,20.0,19.05357142857143,1.0,DX1,Storefront,False
+Bridgeport|DX2|General,Bridgeport,50.0,50.0,0.0,7.5,20.0,25.625,1.0,DX2,General,False
+Bridgeport|MX1|Commercial House,Bridgeport,57.142857142857146,50.0,0.0,7.5,20.0,27.410714285714285,1.0,MX1,Commercial House,False
+Bridgeport|MX1|Storefront,Bridgeport,50.0,30.0,0.0,7.5,20.0,22.625,1.0,MX1,Storefront,False
+Bridgeport|MX2|Commercial Center,Bridgeport,57.142857142857146,10.0,0.0,7.5,20.0,21.410714285714285,1.0,MX2,Commercial Center,False
+Bridgeport|MX2|Commercial House,Bridgeport,57.142857142857146,50.0,0.0,7.5,20.0,27.410714285714285,1.0,MX2,Commercial House,False
+Bridgeport|MX2|Storefront,Bridgeport,50.0,30.0,0.0,7.5,20.0,22.625,1.0,MX2,Storefront,False
+Bridgeport|MXN|Commercial House,Bridgeport,57.142857142857146,50.0,0.0,7.5,20.0,27.410714285714285,1.0,MXN,Commercial House,False
+Bridgeport|MXN|Storefront,Bridgeport,57.142857142857146,30.0,0.0,7.5,20.0,24.410714285714285,1.0,MXN,Storefront,False
+Bridgeport|N1|House A,Bridgeport,50.0,70.0,0.0,52.5,20.0,44.375,1.0,N1,House A,False
+Bridgeport|N2|House B,Bridgeport,50.0,50.0,0.0,82.5,20.0,51.875,1.0,N2,House B,False
+Bridgeport|N3|House C,Bridgeport,55.0,70.0,0.0,52.5,20.0,45.625,1.0,N3,House C,False
+Bridgeport|N4|House D,Bridgeport,55.0,50.0,0.0,52.5,20.0,42.625,1.0,N4,House D,False
+Bridgeport|NX1|Double House A,Bridgeport,57.142857142857146,50.0,0.0,7.5,20.0,27.410714285714285,1.0,NX1,Double House A,False
+Bridgeport|NX1|House A,Bridgeport,50.0,50.0,0.0,7.5,20.0,25.625,1.0,NX1,House A,False
+Bridgeport|NX1|Row,Bridgeport,57.142857142857146,70.0,0.0,82.5,20.0,56.66071428571428,1.0,NX1,Row,False
+Bridgeport|NX2|Small General,Bridgeport,57.142857142857146,50.0,0.0,7.5,20.0,27.410714285714285,1.0,NX2,Small General,False
+Bridgeport|NX3|General,Bridgeport,50.0,50.0,0.0,7.5,20.0,25.625,1.0,NX3,General,False
+Bridgeport|NX3|Row,Bridgeport,57.142857142857146,50.0,0.0,7.5,20.0,27.410714285714285,1.0,NX3,Row,False
+Bridgeport|NX4|General,Bridgeport,50.0,50.0,0.0,7.5,20.0,25.625,1.0,NX4,General,False
+Bridgeport|NX4|Row,Bridgeport,57.142857142857146,50.0,0.0,7.5,20.0,27.410714285714285,1.0,NX4,Row,False
+Bridgeport|RX1|Small General,Bridgeport,50.0,30.0,0.0,7.5,20.0,22.625,1.0,RX1,Small General,False
+Bridgeport|RX2|Commercial House,Bridgeport,50.0,30.0,0.0,7.5,20.0,22.625,1.0,RX2,Commercial House,False
+Bridgeport|RX2|General,Bridgeport,50.0,50.0,0.0,7.5,20.0,25.625,1.0,RX2,General,False
+Bridgeport|RX2|Row,Bridgeport,57.142857142857146,50.0,0.0,7.5,20.0,27.410714285714285,1.0,RX2,Row,False

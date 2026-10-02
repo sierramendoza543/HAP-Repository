@@ -1,0 +1,13 @@
+variable_id,in_v1_0_score_core,greenwich_status,greenwich_ready,bridgeport_v7_v12_scenario_ready_count,bridgeport_v7_v12_scenario_total
+V1,True,confirmed,True,,
+V2,True,confirmed,True,,
+V5,True,confirmed,True,,
+V6,True,confirmed_qualitative_rule,True,,
+V7,True,confirmed,True,50.0,50.0
+V8,True,confirmed,True,,
+V9,True,confirmed_qualitative_rule,True,,
+V11,True,confirmed_qualitative_rule,True,,
+V12,True,confirmed,True,50.0,50.0
+V3,False,genuine_absence_after_targeted_search,False,,
+V4,False,not_applicable,False,,
+V10,False,genuine_absence_after_targeted_search,False,,

@@ -1,0 +1,89 @@
+town,analysis_unit_id,variable_id,cross_reference_trail
+Bridgeport,DX1__Storefront,V4,see 14.20.7 for measuring site coverage
+Bridgeport,MX1__Storefront,V4,see 14.20.7 for measuring site coverage
+Bridgeport,MX2__Storefront,V4,see 14.20.7 for measuring site coverage
+Bridgeport,MXN__Storefront,V4,see 14.20.7 for measuring site coverage
+Bridgeport,MX2__Commercial Center,V4,see 14.20.7 for measuring site coverage
+Bridgeport,MX1__Commercial House,V4,see 14.20.7 for measuring site coverage
+Bridgeport,MXN__Commercial House,V4,see 14.20.7 for measuring site coverage
+Bridgeport,MX2__Commercial House,V4,see 14.20.7 for measuring site coverage
+Bridgeport,RX1__Commercial House,V4,see 14.20.7 for measuring site coverage
+Bridgeport,RX2__Commercial House,V4,see 14.20.7 for measuring site coverage
+Bridgeport,DX2__General,V4,see 14.20.7 for measuring site coverage
+Bridgeport,RX2__General,V4,see 14.20.7 for measuring site coverage
+Bridgeport,P2__General,V4,see 14.20.7 for measuring site coverage
+Bridgeport,IX__General,V4,see 14.20.7 for measuring site coverage
+Bridgeport,NX4__General,V4,see 14.20.7 for measuring site coverage
+Bridgeport,NX3__General,V4,see 14.20.7 for measuring site coverage
+Bridgeport,CX__General,V4,see 14.20.7 for measuring site coverage
+Bridgeport,I__General,V4,see 14.20.7 for measuring site coverage
+Bridgeport,NX2__Small General,V4,see 14.20.7 for measuring site coverage
+Bridgeport,RX1__Small General,V4,see 14.20.7 for measuring site coverage
+Bridgeport,NX1__Row,V4,see 14.20.7 for measuring site coverage
+Bridgeport,NX2__Row,V4,see 14.20.7 for measuring site coverage
+Bridgeport,NX3__Row,V4,see 14.20.7 for measuring site coverage
+Bridgeport,NX4__Row,V4,see 14.20.7 for measuring site coverage
+Bridgeport,RX1__Row,V4,see 14.20.7 for measuring site coverage
+Bridgeport,RX2__Row,V4,see 14.20.7 for measuring site coverage
+Bridgeport,NX1__Double House A,V4,see 14.20.7 for measuring site coverage
+Bridgeport,NX2__Double House A,V4,see 14.20.7 for measuring site coverage
+Bridgeport,N1__House A,V4,see 14.20.7 for measuring site coverage
+Bridgeport,NX1__House A,V4,see 14.20.7 for measuring site coverage
+Bridgeport,NX2__House A,V4,see 14.20.7 for measuring site coverage
+Bridgeport,N2__House B,V4,see 14.20.7 for measuring site coverage
+Bridgeport,N3__House C,V4,see 14.20.7 for measuring site coverage
+Bridgeport,N4__House D,V4,see 14.20.7 for measuring site coverage
+Bridgeport,CX__Workshop,V4,see 14.20.7 for measuring site coverage
+Bridgeport,I__Workshop,V4,see 14.20.7 for measuring site coverage
+Bridgeport,DX1__Civic,V4,see 14.20.7 for measuring site coverage
+Bridgeport,P1__Civic,V4,see 14.20.7 for measuring site coverage
+Bridgeport,P3__Civic,V4,see 14.20.7 for measuring site coverage
+Bridgeport,DX1__Storefront,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,MX1__Storefront,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,MX2__Storefront,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,MXN__Storefront,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,MX2__Commercial Center,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,MX1__Commercial House,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,MXN__Commercial House,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,MX2__Commercial House,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,RX1__Commercial House,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,RX2__Commercial House,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,DX2__General,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,RX2__General,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,P2__General,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,IX__General,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,NX4__General,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,NX3__General,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,CX__General,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,I__General,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,NX2__Small General,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,RX1__Small General,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,NX1__Row,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,NX2__Row,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,NX3__Row,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,NX4__Row,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,RX1__Row,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,RX2__Row,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,NX1__Double House A,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,NX2__Double House A,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,N1__House A,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,NX1__House A,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,NX2__House A,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,N2__House B,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,N3__House C,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,N4__House D,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,CX__Workshop,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,I__Workshop,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,DX1__Civic,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,P3__Civic,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,P1__Civic,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,CITYWIDE,V6,exceptions checked: 8.20.2 (maximums only); no district-specific supersession found
+Bridgeport,CITYWIDE,V7,"searched: 4.0 Uses TOC (p.141), 4.10 Use Tables instructions (p.142), 4.30 Residential Use Group definitions (p.143); master table not found"
+Greenwich,RA-4,V1,prior Greenwich Phase 2 extraction
+Greenwich,RA-4,V2,prior Greenwich Phase 2 manual review
+Greenwich,RA-4,V3,prior Greenwich Phase 2 manual review
+Greenwich,RA-4,V4,prior Greenwich Phase 2 manual review
+Greenwich,RA-4,V5,prior Greenwich Phase 2 extraction
+Greenwich,RA-4,V6,prior Greenwich Phase 2 manual review
+Greenwich,RA-4,V7,prior Greenwich Phase 2 manual review
+Greenwich,RA-4,V8,prior Greenwich Phase 2 manual review

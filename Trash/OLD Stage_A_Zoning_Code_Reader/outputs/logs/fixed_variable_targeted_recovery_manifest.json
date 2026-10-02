@@ -1,0 +1,65 @@
+{
+  "generated_at_utc": "2026-10-01T19:28:09.064283+00:00",
+  "towns": [
+    "Bridgeport",
+    "Greenwich"
+  ],
+  "analysis_unit_count": 55,
+  "variable_count": 8,
+  "total_matrix_rows": 360,
+  "missingness_diagnosis_counts": {
+    "confirmed_governing_rule": 242,
+    "genuine_absence_after_targeted_search": 40,
+    "pending_visual_recovery": 35,
+    "structurally_non_equivalent_rule_present": 28,
+    "not_applicable_to_analysis_unit": 12,
+    "confirmed_qualitative_rule": 2,
+    "unresolved_scope_or_cross_reference": 1
+  },
+  "comparability_status_counts": {
+    "directly_comparable": 134,
+    "structurally_non_equivalent": 95,
+    "comparable_with_documented_transform": 41,
+    "missing": 40,
+    "needs_manual_harmonization": 37,
+    "not_applicable": 12,
+    "qualitative_only": 1
+  },
+  "score_eligible_variables": [
+    "V1",
+    "V2",
+    "V5",
+    "V6",
+    "V8"
+  ],
+  "not_score_eligible_variables": [
+    "V3",
+    "V4",
+    "V7"
+  ],
+  "bridgeport_new_table_families_this_pass": [
+    "BUILDING SITING (13/13 pages)"
+  ],
+  "bridgeport_coverage_corrections_found": 15,
+  "bridgeport_parking_pages_still_pending": [
+    29,
+    37,
+    53,
+    61,
+    69,
+    77,
+    85,
+    93,
+    101,
+    109,
+    117
+  ],
+  "bridgeport_v7_master_use_table_not_located": true,
+  "no_score_no_ranking_statement": "No Bridgeport composite score, dominant-district selection, statewide percentile, or causal claim was produced.",
+  "artifact_paths": {
+    "matrix_csv": "data/processed/fixed_variable_recovery_matrix_bridgeport_greenwich.csv",
+    "matrix_parquet": "data/processed/fixed_variable_recovery_matrix_bridgeport_greenwich.parquet",
+    "evidence_profile": "data/processed/fixed_variable_final_evidence_profile_bridgeport_greenwich.csv",
+    "comparison_addendum": "outputs/tables/fixed_variable_bridgeport_greenwich_evidence_comparison.md"
+  }
+}

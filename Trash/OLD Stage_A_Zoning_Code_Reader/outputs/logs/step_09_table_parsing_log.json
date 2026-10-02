@@ -1,0 +1,14 @@
+{
+  "document_id": "greenwich-connecticut-18417c5e9074d765",
+  "table_count": 56,
+  "table_cell_count": 2683,
+  "tables_requiring_manual_review": 12,
+  "table_overlay_paths": [
+    "outputs/figures/step_09_table_overlay_page_119.png",
+    "outputs/figures/step_09_table_overlay_page_120.png",
+    "outputs/figures/step_09_table_overlay_page_233.png",
+    "outputs/figures/step_09_table_overlay_page_234.png",
+    "outputs/figures/step_09_table_overlay_page_241.png",
+    "outputs/figures/step_09_table_overlay_page_242.png"
+  ]
+}

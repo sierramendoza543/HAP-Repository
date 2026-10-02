@@ -1,0 +1,16 @@
+# Local environment and secrets
+.venv/
+.env
+__pycache__/
+*.pyc
+
+# Raw municipal source documents: keep locally unless reviewed for repository storage
+zoning_pdf_pilot/data/raw_pdfs/*
+!zoning_pdf_pilot/data/raw_pdfs/**/.gitkeep
+
+# Generated extraction artifacts and review outputs
+zoning_pdf_pilot/data/processed/*
+!zoning_pdf_pilot/data/processed/**/.gitkeep
+
+zoning_pdf_pilot/outputs/*
+!zoning_pdf_pilot/outputs/**/.gitkeep

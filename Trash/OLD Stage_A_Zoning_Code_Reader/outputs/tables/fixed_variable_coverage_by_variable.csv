@@ -1,0 +1,9 @@
+variable_id,confirmed_governing_rule,confirmed_qualitative_rule,genuine_absence_after_targeted_search,not_applicable_to_analysis_unit,pending_visual_recovery,structurally_non_equivalent_rule_present,unresolved_scope_or_cross_reference
+V1,3,0,0,0,3,0,0
+V2,29,0,0,11,3,0,0
+V3,39,0,40,0,3,0,0
+V4,39,0,0,1,3,0,0
+V5,129,0,0,0,14,28,0
+V6,0,2,0,0,3,0,0
+V7,1,0,0,0,3,0,1
+V8,2,0,0,0,3,0,0

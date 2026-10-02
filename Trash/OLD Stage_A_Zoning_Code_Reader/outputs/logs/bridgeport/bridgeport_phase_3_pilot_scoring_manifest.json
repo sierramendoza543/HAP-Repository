@@ -1,0 +1,55 @@
+{
+  "notebook": "12_bridgeport_phase3_pilot_scenario_scoring",
+  "run_timestamp": "2026-10-01T20:44:28.374445+00:00",
+  "pilot_variables": [
+    "V1",
+    "V2",
+    "V5",
+    "V6",
+    "V7",
+    "V8",
+    "V9",
+    "V11",
+    "V12"
+  ],
+  "excluded_variables": [
+    "V3",
+    "V4",
+    "V10"
+  ],
+  "domain_weights_baseline": {
+    "land": 0.2,
+    "placement": 0.2,
+    "parking": 0.1,
+    "housing_entitlement": 0.3,
+    "density": 0.1,
+    "procedural": 0.1
+  },
+  "housing_entitlement_subweights": {
+    "V7": 0.45,
+    "V12": 0.35,
+    "V8": 0.2
+  },
+  "scenarios_scored": 28,
+  "scenarios_with_housing_entitlement_domain_applicable": 25,
+  "scenarios_with_full_domain_coverage": 2,
+  "sensitivity_variants": [
+    "baseline_equal_ish",
+    "housing_entitlement_emphasized",
+    "land_emphasized",
+    "procedural_emphasized",
+    "v7_v12_equal_split",
+    "strict_full_coverage_only"
+  ],
+  "greenwich_ra4_reference_index_baseline_weighting": 0.6328124999999999,
+  "no_town_ranking_or_winner_declared": true,
+  "outputs": {
+    "bridgeport_pilot_scenario_variable_scores": "data/processed/bridgeport_pilot_scenario_variable_scores.csv",
+    "bridgeport_pilot_scenario_domain_scores": "data/processed/bridgeport_pilot_scenario_domain_scores.csv",
+    "bridgeport_pilot_scenario_index_all_variants": "data/processed/bridgeport_pilot_scenario_index_all_variants.csv",
+    "sensitivity_correlation": "outputs/tables/bridgeport_pilot_sensitivity_correlation.csv",
+    "excluded_variables_panel": "outputs/tables/bridgeport_pilot_excluded_variables_panel.csv",
+    "coverage_disclosure": "outputs/tables/bridgeport_pilot_scenario_coverage_disclosure.csv",
+    "figure": "outputs/figures/bridgeport/step_04_pilot_scenario_distribution_vs_greenwich_reference.png"
+  }
+}

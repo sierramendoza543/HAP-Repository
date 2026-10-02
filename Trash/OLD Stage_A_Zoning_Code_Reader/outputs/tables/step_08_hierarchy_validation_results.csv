@@ -1,0 +1,7 @@
+validation_rule,passed,detail
+exactly_one_root_with_in_degree_zero,True,Root node: greenwich-connecticut-18417c5e9074d765-root
+every_non_root_node_has_exactly_one_parent,True,Nodes failing parent-count rule: 0
+directed_graph_is_acyclic,True,Directed acyclic graph result: True
+graph_is_weakly_connected,True,Weakly connected result: True
+parent_depth_strictly_less_than_child_depth,True,Misordered edges: 0
+all_detected_heading_candidates_added_to_tree,True,Missing heading nodes: 0

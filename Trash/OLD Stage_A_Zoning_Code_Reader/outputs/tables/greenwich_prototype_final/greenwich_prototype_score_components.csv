@@ -1,0 +1,11 @@
+component,raw_value,score,scored,source
+minimum_lot_area_sqft,174240.0,100.0,True,minimum_lot_size_sqft (confirmed)
+minimum_lot_width_ft,200.0,75.0,True,minimum_lot_width_ft (confirmed)
+summed_setbacks_ft,250.0,75.0,True,summed_minimum_setbacks_ft (confirmed)
+height_constraint_stories,3.5,25.0,True,maximum_building_height_stories (auxiliary evidence)
+green_area_pct,84.0,75.0,True,minimum_green_area_pct (auxiliary evidence)
+lot_coverage_applicability,not_applicable,,False,"maximum_lot_coverage_pct (informational only, not scored)"
+parking_regime,qualitative_sufficiency,25.0,True,minimum_off_street_parking_spaces_per_dwelling_unit review note (confirmed not_applicable; qualitative standard identified)
+multifamily_pathway,prohibited,100.0,True,multifamily_approval_pathway (confirmed)
+adu_pathway,allowed_subject_to_objective_conditions,25.0,True,adu_permission_pathway (confirmed)
+residential_approval_process,by_right,0.0,True,"Derived from §6-93(a)(1): detached single-family dwellings are a permitted (by-right) principal use, not listed under §6-94's special-permit uses."

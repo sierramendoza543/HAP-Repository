@@ -1,0 +1,47 @@
+scenario_id,total_candidates,confirmed,district_code,building_form_or_type
+bridgeport-scenario-0001,17,4,CX,general
+bridgeport-scenario-0002,17,4,DX1,general
+bridgeport-scenario-0003,17,4,DX2,general
+bridgeport-scenario-0004,17,4,MX1,general
+bridgeport-scenario-0005,17,4,MX2,general
+bridgeport-scenario-0006,17,6,MXN,general
+bridgeport-scenario-0007,17,4,RX2,general
+bridgeport-scenario-0008,17,6,DX1,Storefront
+bridgeport-scenario-0009,17,6,MX1,Storefront
+bridgeport-scenario-0010,17,6,MX2,Storefront
+bridgeport-scenario-0011,17,6,MXN,Storefront
+bridgeport-scenario-0012,17,6,DX2,Storefront
+bridgeport-scenario-0013,17,6,MX2,Commercial Center
+bridgeport-scenario-0014,17,6,MX1,Commercial House
+bridgeport-scenario-0015,17,6,MX2,Commercial House
+bridgeport-scenario-0016,17,6,MXN,Commercial House
+bridgeport-scenario-0017,17,6,RX2,Commercial House
+bridgeport-scenario-0018,17,5,CX,General
+bridgeport-scenario-0019,17,5,DX2,General
+bridgeport-scenario-0020,17,5,NX3,General
+bridgeport-scenario-0021,17,5,NX4,General
+bridgeport-scenario-0022,17,5,RX2,General
+bridgeport-scenario-0023,17,6,NX1,Row
+bridgeport-scenario-0024,17,6,NX3,Row
+bridgeport-scenario-0025,17,6,NX4,Row
+bridgeport-scenario-0026,17,6,RX2,Row
+bridgeport-scenario-0027,17,6,NX1,Double House A
+bridgeport-scenario-0028,17,6,N1,House A
+bridgeport-scenario-0029,17,6,NX1,House A
+bridgeport-scenario-0030,17,5,N2,House B
+bridgeport-scenario-0031,17,6,N3,House C
+bridgeport-scenario-0032,17,6,N4,House D
+bridgeport-scenario-0033,17,6,CX,Workshop
+bridgeport-scenario-0034,17,4,CX,Civic
+bridgeport-scenario-0035,17,4,DX1,Civic
+bridgeport-scenario-0036,17,4,DX2,Civic
+bridgeport-scenario-0037,17,4,MX1,Civic
+bridgeport-scenario-0038,17,4,MX2,Civic
+bridgeport-scenario-0039,17,4,NX3,Civic
+bridgeport-scenario-0040,17,4,NX4,Civic
+bridgeport-scenario-0041,17,4,RX2,Civic
+bridgeport-scenario-0042,17,4,DX1,general
+bridgeport-scenario-0043,17,4,MX1,general
+bridgeport-scenario-0044,17,4,MX2,general
+bridgeport-scenario-0045,17,4,CX,general
+bridgeport-scenario-0046,17,6,N4,general

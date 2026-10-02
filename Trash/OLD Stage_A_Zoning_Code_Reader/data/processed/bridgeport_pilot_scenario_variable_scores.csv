@@ -1,0 +1,29 @@
+district_code,building_form_or_type,scenario_id,V1_score,V1_raw_sqft,V2_score,V2_raw_ft,V5_score,V5_form,V5_raw_ft,V6_score,V7_score,V7_determination,V8_score,V9_score,V11_score,V12_score,V12_determination,housing_entitlement_gate_open
+DX1,Storefront,bridgeport-scenario-0008,,,0.0,18.0,0.19230769230769232,build_to_flexibility,15.0,0.0,0.0,confirmed_allowed_by_right,0.25,0.5,0.14285714285714285,0.0,confirmed_entitlement_present,True
+MX1,Storefront,bridgeport-scenario-0009,,,,,0.19230769230769232,build_to_flexibility,15.0,0.0,0.0,confirmed_allowed_by_right,0.25,0.5,0.14285714285714285,0.0,confirmed_entitlement_present,True
+MX2,Storefront,bridgeport-scenario-0010,,,,,0.19230769230769232,build_to_flexibility,15.0,0.0,0.0,confirmed_allowed_by_right,0.25,0.5,0.14285714285714285,0.0,confirmed_entitlement_present,True
+MXN,Storefront,bridgeport-scenario-0011,,,0.3137254901960784,50.0,0.38461538461538464,build_to_flexibility,20.0,0.0,0.0,confirmed_allowed_by_right,0.25,0.5,0.14285714285714285,0.0,confirmed_entitlement_present,True
+MX2,Commercial Center,bridgeport-scenario-0013,,,0.4117647058823529,60.0,0.0,build_to_flexibility,10.0,0.0,0.0,confirmed_allowed_by_right,0.25,0.5,0.14285714285714285,0.0,confirmed_entitlement_present,True
+MX1,Commercial House,bridgeport-scenario-0014,,,0.3137254901960784,50.0,0.2,conventional_setback,37.0,0.0,0.0,confirmed_allowed_by_right,0.25,0.5,0.14285714285714285,0.0,confirmed_entitlement_present,True
+MX2,Commercial House,bridgeport-scenario-0015,,,0.3137254901960784,50.0,0.2,conventional_setback,37.0,0.0,0.0,confirmed_allowed_by_right,0.25,0.5,0.14285714285714285,0.0,confirmed_entitlement_present,True
+MXN,Commercial House,bridgeport-scenario-0016,,,0.3137254901960784,50.0,0.2,conventional_setback,37.0,0.0,0.0,confirmed_allowed_by_right,0.25,0.5,0.14285714285714285,0.0,confirmed_entitlement_present,True
+RX2,Commercial House,bridgeport-scenario-0017,,,0.2647058823529412,45.0,0.03333333333333333,conventional_setback,27.0,0.0,0.0,confirmed_allowed_by_right,0.25,0.5,0.14285714285714285,0.0,confirmed_entitlement_present,True
+CX,General,bridgeport-scenario-0018,,,,,0.5,build_to_flexibility,23.0,0.0,,not_applicable_household_living_not_allowed,,0.5,0.14285714285714285,,excluded_v7_gate_closed,False
+DX2,General,bridgeport-scenario-0019,,,,,0.5,build_to_flexibility,23.0,0.0,0.0,confirmed_allowed_by_right,0.25,0.5,0.14285714285714285,0.0,confirmed_entitlement_present,True
+NX3,General,bridgeport-scenario-0020,,,,,0.46153846153846156,build_to_flexibility,22.0,0.0,0.0,confirmed_allowed_by_right,0.25,0.5,0.14285714285714285,0.0,confirmed_entitlement_present,True
+NX4,General,bridgeport-scenario-0021,,,,,0.5,build_to_flexibility,23.0,0.0,0.0,confirmed_allowed_by_right,0.25,0.5,0.14285714285714285,0.0,confirmed_entitlement_present,True
+RX2,General,bridgeport-scenario-0022,,,,,0.5,build_to_flexibility,23.0,0.0,0.0,confirmed_allowed_by_right,0.25,0.5,0.14285714285714285,0.0,confirmed_entitlement_present,True
+NX1,Row,bridgeport-scenario-0023,,,0.4117647058823529,60.0,1.0,build_to_flexibility,36.0,0.0,1.0,confirmed_not_available_by_right,0.25,0.5,0.14285714285714285,1.0,confirmed_entitlement_absent,True
+NX3,Row,bridgeport-scenario-0024,,,0.4117647058823529,60.0,0.46153846153846156,build_to_flexibility,22.0,0.0,0.0,confirmed_allowed_by_right,0.25,0.5,0.14285714285714285,0.0,confirmed_entitlement_present,True
+NX4,Row,bridgeport-scenario-0025,,,0.4117647058823529,60.0,0.46153846153846156,build_to_flexibility,22.0,0.0,0.0,confirmed_allowed_by_right,0.25,0.5,0.14285714285714285,0.0,confirmed_entitlement_present,True
+RX2,Row,bridgeport-scenario-0026,,,0.4117647058823529,60.0,0.46153846153846156,build_to_flexibility,22.0,0.0,0.0,confirmed_allowed_by_right,0.25,0.5,0.14285714285714285,0.0,confirmed_entitlement_present,True
+NX1,Double House A,bridgeport-scenario-0027,,,0.3137254901960784,50.0,0.46153846153846156,build_to_flexibility,22.0,0.0,0.0,confirmed_allowed_by_right,0.25,0.5,0.14285714285714285,0.0,confirmed_entitlement_present,True
+N1,House A,bridgeport-scenario-0028,,,0.2647058823529412,45.0,1.0,build_to_flexibility,36.0,0.0,1.0,confirmed_not_available_by_right,0.25,0.5,0.14285714285714285,0.0,confirmed_entitlement_present,True
+NX1,House A,bridgeport-scenario-0029,,,0.2647058823529412,45.0,0.46153846153846156,build_to_flexibility,22.0,0.0,0.0,confirmed_allowed_by_right,0.25,0.5,0.14285714285714285,0.0,confirmed_entitlement_present,True
+N2,House B,bridgeport-scenario-0030,,,0.2647058823529412,45.0,0.35,conventional_setback,46.0,0.0,1.0,confirmed_not_available_by_right,0.25,0.5,0.14285714285714285,1.0,confirmed_entitlement_absent,True
+N3,House C,bridgeport-scenario-0031,1.0,9000.0,0.5588235294117647,75.0,1.0,conventional_setback,85.0,0.0,1.0,confirmed_not_available_by_right,0.25,0.5,0.14285714285714285,0.0,confirmed_entitlement_present,True
+N4,House D,bridgeport-scenario-0032,0.0,7500.0,0.4117647058823529,60.0,0.35,conventional_setback,46.0,0.0,1.0,confirmed_not_available_by_right,0.25,0.5,0.14285714285714285,0.0,confirmed_entitlement_present,True
+CX,Workshop,bridgeport-scenario-0033,,,0.06862745098039216,25.0,0.19230769230769232,build_to_flexibility,15.0,0.0,,not_applicable_household_living_not_allowed,,0.5,0.14285714285714285,,excluded_v7_gate_closed,False
+DX1,Civic,bridgeport-scenario-0035,,,0.3137254901960784,50.0,0.0,conventional_setback,25.0,0.0,,not_applicable_household_living_not_allowed,,0.5,0.14285714285714285,,excluded_v7_gate_closed,False
+NX2,Small General,bridgeport-scenario-0047,,,0.3137254901960784,50.0,0.46153846153846156,build_to_flexibility,22.0,0.0,0.0,confirmed_allowed_by_right,0.25,0.5,0.14285714285714285,0.0,confirmed_entitlement_present,True
+RX1,Small General,bridgeport-scenario-0048,,,,,0.2692307692307692,build_to_flexibility,17.0,0.0,0.0,confirmed_allowed_by_right,0.25,0.5,0.14285714285714285,0.0,confirmed_entitlement_present,True

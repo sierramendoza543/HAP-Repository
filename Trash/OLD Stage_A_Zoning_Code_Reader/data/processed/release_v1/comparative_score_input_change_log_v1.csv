@@ -1,0 +1,2 @@
+release_version,timestamp,change,rows_in_freeze,eligible_rows,freeze_file_hash
+v1.0.0-pilot,2026-10-01T21:30:19.223838+00:00,initial v1.0 freeze,261,224,97969cdc26e6344841fea9fb9b2d80bc322b8c1daadb06c599ce91037daa042e

@@ -1,0 +1,14 @@
+test,passed,detail
+all_baseline_scenario_district_codes_are_valid,True,0 invalid codes found
+small_general_addendum_district_codes_valid,True,
+all_scenario_ids_match_expected_format,True,
+fixed_matrix_no_duplicate_analysis_unit_variable_subvariable_rows,True,composite key checked where columns exist
+every_v7_v12_matched_row_has_a_scenario_id,True,
+eligibility_universe_scenario_count_is_44,True,actual count: 44
+eligible_scenario_count_matches_notebook_11_manifest,True,actual: 28
+raw_source_unchanged__data/raw/bridgeport/bridgeport_zoning_code_full_2022-01.pdf.pdf,True,
+raw_source_unchanged__data/raw/greenwich/greenwich_building_zone_regulations_full_2023-08.pdf,True,
+raw_source_unchanged__data/raw/bridgeport/source_metadata.json,True,
+raw_source_unchanged__data/raw/greenwich/source_metadata.json,True,
+raw_source_unchanged__data/raw/bridgeport/gis/bridgeport_zoning_districts_2021.geojson,True,
+raw_source_unchanged__data/raw/greenwich_gis/greenwich_zone_boundaries.geojson,True,

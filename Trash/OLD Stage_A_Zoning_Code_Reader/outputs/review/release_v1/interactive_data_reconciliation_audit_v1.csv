@@ -1,0 +1,30 @@
+scenario_key,app_value,canonical_csv_value,match
+Greenwich|RA-4|single_family_detached_RA4,76.5,76.5,True
+Bridgeport|CX|General,46.9,46.9,True
+Bridgeport|CX|Workshop,42.1,42.1,True
+Bridgeport|DX1|Civic,45.6,45.6,True
+Bridgeport|DX1|Storefront,19.1,19.1,True
+Bridgeport|DX2|General,25.6,25.6,True
+Bridgeport|MX1|Commercial House,27.4,27.4,True
+Bridgeport|MX1|Storefront,22.6,22.6,True
+Bridgeport|MX2|Commercial Center,21.4,21.4,True
+Bridgeport|MX2|Commercial House,27.4,27.4,True
+Bridgeport|MX2|Storefront,22.6,22.6,True
+Bridgeport|MXN|Commercial House,27.4,27.4,True
+Bridgeport|MXN|Storefront,24.4,24.4,True
+Bridgeport|N1|House A,44.4,44.4,True
+Bridgeport|N2|House B,51.9,51.9,True
+Bridgeport|N3|House C,45.6,45.6,True
+Bridgeport|N4|House D,42.6,42.6,True
+Bridgeport|NX1|Double House A,27.4,27.4,True
+Bridgeport|NX1|House A,25.6,25.6,True
+Bridgeport|NX1|Row,56.7,56.7,True
+Bridgeport|NX2|Small General,27.4,27.4,True
+Bridgeport|NX3|General,25.6,25.6,True
+Bridgeport|NX3|Row,27.4,27.4,True
+Bridgeport|NX4|General,25.6,25.6,True
+Bridgeport|NX4|Row,27.4,27.4,True
+Bridgeport|RX1|Small General,22.6,22.6,True
+Bridgeport|RX2|Commercial House,22.6,22.6,True
+Bridgeport|RX2|General,25.6,25.6,True
+Bridgeport|RX2|Row,27.4,27.4,True

@@ -1,0 +1,13 @@
+district_id,district_code,conflict_count,unresolved_conflict_count,highest_severity_rank
+greenwich-connecticut-18417c5e9074d765-district-cgb,CGB,2,0,2
+greenwich-connecticut-18417c5e9074d765-district-cgbr,CGBR,1,0,2
+greenwich-connecticut-18417c5e9074d765-district-gb,GB,5,0,2
+greenwich-connecticut-18417c5e9074d765-district-gbo,GBO,5,0,2
+greenwich-connecticut-18417c5e9074d765-district-lb,LB,4,0,2
+greenwich-connecticut-18417c5e9074d765-district-r_12,R-12,3,0,2
+greenwich-connecticut-18417c5e9074d765-district-r_20,R-20,3,0,2
+greenwich-connecticut-18417c5e9074d765-district-r_6,R-6,4,0,2
+greenwich-connecticut-18417c5e9074d765-district-r_7,R-7,3,0,2
+greenwich-connecticut-18417c5e9074d765-district-ra_1,RA-1,3,0,2
+greenwich-connecticut-18417c5e9074d765-district-ra_2,RA-2,4,0,2
+greenwich-connecticut-18417c5e9074d765-district-ra_4,RA-4,4,0,2

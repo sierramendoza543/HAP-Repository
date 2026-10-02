@@ -1,0 +1,2 @@
+document_id,pdf_page_count,pages_processed,total_native_word_tokens,total_native_text_spans,median_words_per_page,mean_words_per_page,minimum_words_on_a_page,maximum_words_on_a_page,pages_with_zero_native_words,pages_with_under_20_native_words,unique_font_names,font_size_min,font_size_median,font_size_max,extraction_engine,next_step
+greenwich-connecticut-18417c5e9074d765,313,313,125276,17550,444.0,400.24,2,740,0,21,15,4.5,11.04,39.96,pymupdf_native,page_quality_scoring_and_routing

@@ -1,0 +1,5 @@
+variant,spearman_rho_vs_baseline,n_paired_scenarios
+housing_entitlement_emphasized,0.955382041271612,28
+land_emphasized,1.0,28
+procedural_emphasized,0.9988845510317903,28
+v7_v12_equal_split,0.9654210819854995,28

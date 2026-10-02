@@ -1,0 +1,30 @@
+scenario_key,town,coverage_fraction_baseline
+Bridgeport|CX|General,Bridgeport,1.0
+Bridgeport|CX|Workshop,Bridgeport,1.0
+Bridgeport|DX1|Civic,Bridgeport,1.0
+Bridgeport|DX1|Storefront,Bridgeport,1.0
+Bridgeport|DX2|General,Bridgeport,1.0
+Bridgeport|MX1|Commercial House,Bridgeport,1.0
+Bridgeport|MX1|Storefront,Bridgeport,1.0
+Bridgeport|MX2|Commercial Center,Bridgeport,1.0
+Bridgeport|MX2|Commercial House,Bridgeport,1.0
+Bridgeport|MX2|Storefront,Bridgeport,1.0
+Bridgeport|MXN|Commercial House,Bridgeport,1.0
+Bridgeport|MXN|Storefront,Bridgeport,1.0
+Bridgeport|N1|House A,Bridgeport,1.0
+Bridgeport|N2|House B,Bridgeport,1.0
+Bridgeport|N3|House C,Bridgeport,1.0
+Bridgeport|N4|House D,Bridgeport,1.0
+Bridgeport|NX1|Double House A,Bridgeport,1.0
+Bridgeport|NX1|House A,Bridgeport,1.0
+Bridgeport|NX1|Row,Bridgeport,1.0
+Bridgeport|NX2|Small General,Bridgeport,1.0
+Bridgeport|NX3|General,Bridgeport,1.0
+Bridgeport|NX3|Row,Bridgeport,1.0
+Bridgeport|NX4|General,Bridgeport,1.0
+Bridgeport|NX4|Row,Bridgeport,1.0
+Bridgeport|RX1|Small General,Bridgeport,1.0
+Bridgeport|RX2|Commercial House,Bridgeport,1.0
+Bridgeport|RX2|General,Bridgeport,1.0
+Bridgeport|RX2|Row,Bridgeport,1.0
+Greenwich|RA-4|single_family_detached_RA4,Greenwich,0.8999999999999999

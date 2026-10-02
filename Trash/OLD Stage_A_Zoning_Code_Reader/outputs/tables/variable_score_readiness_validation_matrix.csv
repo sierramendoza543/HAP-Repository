@@ -1,0 +1,13 @@
+variable_id,notebook_09_status,post_notebook_10_11_status
+V1,score_ready,score_ready
+V2,score_ready,score_ready
+V3,not_score_ready_genuine_absence,not_score_ready_genuine_absence
+V4,not_score_ready_manual_review,not_score_ready_manual_review
+V5,score_ready,score_ready
+V6,score_ready,score_ready
+V7,not_score_ready_pending_recovery,score_ready_at_scenario_grain (Notebook 10/11 -- not re-run through Notebook 09's original cross-town aggregation logic)
+V8,score_ready,score_ready
+V9,score_ready_with_caveat,score_ready_with_caveat
+V10,not_score_ready_genuine_absence,not_score_ready_genuine_absence
+V11,score_ready,score_ready
+V12,not_score_ready_manual_review,score_ready_at_scenario_grain (Notebook 10/11 -- not re-run through Notebook 09's original cross-town aggregation logic)

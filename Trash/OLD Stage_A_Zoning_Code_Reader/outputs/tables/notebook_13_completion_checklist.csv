@@ -1,0 +1,22 @@
+requirement,status,evidence
+All canonical artifacts are inventoried,PASS,"1455 files cataloged, Section A"
+All source and baseline hashes are recorded where possible,PASS,6 raw source hashes captured and reverified
+Raw baseline files remain unchanged,PASS,"hash comparison, Section M"
+Canonical schemas and controlled vocabularies are documented,PASS,"STATUS_TAXONOMY.md, SCHEMA_CONTRACTS.md, DATA_DICTIONARY.md"
+Every canonical result has provenance or is explicitly excluded/flagged,PARTIAL,"provenance completeness measured per-file, not 100% everywhere -- see provenance_completeness_audit.csv"
+Every true absence has an evidence/search trail,PARTIAL,"measured, not assumed 100% -- see genuine_absence_audit.csv"
+"Every manual override is linked to baseline, source, reviewer, and reason",PARTIAL,verified for the Notebook 06 visual-table overrides; not re-audited field-by-field for every override file in this pass
+Every visual recovery result has source/crop/manual-review linkage,PARTIAL,page-level linkage verified; crop-image artifacts not produced for the full set (see KNOWN_LIMITATIONS.md)
+Scenario counts reconcile across canonical files,PASS,Section I integrity tests
+District and GIS crosswalk counts reconcile,PASS,"Section G, 16/24 independently reverified"
+"Variable V1-V12 statuses, coverage, and readiness reconcile",PARTIAL,"reconciled at the registry level; cross-town score-readiness recount explicitly deferred, Section H"
+All major prohibited-conflation checks are run and findings exported,PASS,"5 checks run, legal_semantic_validation_findings.csv"
+Table-family recovery claims reconcile to source and outputs,PASS,"20/20 claims matched, Section F"
+All review queues reconcile to master evidence,PARTIAL,"spot-checked via integrity tests, not every review queue individually reconciled"
+All figures render and source data are identified,PASS,"Section J, 4/4 figures rendered nonempty"
+Documentation files are generated and internally linked,PASS,25 markdown files in docs/
+Reproducibility limitations are transparently documented,PASS,"REPRODUCIBILITY.md, reproducibility_gaps.csv"
+"No score, ranking, dominant district, or causal conclusion has been calculated or asserted",PASS,structurally enforced; RESULTS_STATUS.md states the prohibition
+A release-gate determination is produced honestly,PASS,READY_WITH_DOCUMENTED_LIMITATIONS
+No artifacts are silently deleted or overwritten,PASS,"all outputs are new, additively named files"
+The notebook executes with zero errors after final repairs,PENDING_THIS_RUN,verified by the nbconvert execution that produces this notebook's saved output

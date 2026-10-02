@@ -1,0 +1,8 @@
+check,passed
+no_external_cdn_script_tags,True
+no_fetch_to_external_host,True
+no_hardcoded_api_keys,True
+data_json_is_valid_json,True
+readme_exists,True
+downloads_dir_nonempty,True
+app_reads_only_bundled_data_json,True

@@ -1,0 +1,15 @@
+{
+  "document_id": "bridgeport-connecticut-afe7c678fa5dfc85",
+  "pipeline_run_timestamp": "2026-10-01T16:20:55.394243+00:00",
+  "gis_validation_all_passed": true,
+  "gis_feature_count": 2000,
+  "dissolved_zone_count": 16,
+  "exact_match_crosswalk_rate": 0.6667,
+  "crosswalk_status_counts": {
+    "both": 16,
+    "ordinance_only": 8
+  },
+  "local_historic_district_count": 2,
+  "gross_area_field_used": "gross_mapped_area_acres",
+  "dominant_district_selected": false
+}

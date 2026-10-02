@@ -1,0 +1,25 @@
+{
+  "document_id": "bridgeport-connecticut-afe7c678fa5dfc85",
+  "pipeline_run_timestamp": "2026-10-01T16:20:55.394243+00:00",
+  "raw_district_candidate_count": 203,
+  "raw_candidates_by_source_type": {
+    "general_rule_mention": 96,
+    "table_cell": 66,
+    "narrative_definition": 25,
+    "gis_zone_2021": 16
+  },
+  "canonical_district_count": 24,
+  "preliminary_category_counts": {
+    "BASE_CANDIDATE": 9,
+    "UNCERTAIN": 7,
+    "PUBLIC_OR_INSTITUTIONAL_CANDIDATE": 5,
+    "NONRESIDENTIAL_CANDIDATE": 2,
+    "OVERLAY_OR_HISTORIC_CANDIDATE": 1
+  },
+  "gis_only_code_count": 0,
+  "ordinance_only_code_count": 8,
+  "ambiguous_code_count": 3,
+  "uncertain_taxonomy_count": 7,
+  "gis_renderer_confirmed_labels_available": false,
+  "gis_legacy_label_note": "ZONE_/ZONE_ID/SUMMARY_CAT/CHAR1 are pre-2021 legacy parcel labels; audited separately, not used as category evidence."
+}

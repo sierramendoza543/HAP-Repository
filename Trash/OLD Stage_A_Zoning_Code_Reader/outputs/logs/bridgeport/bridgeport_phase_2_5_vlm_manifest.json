@@ -1,0 +1,32 @@
+{
+  "document_id": "bridgeport-connecticut-afe7c678fa5dfc85",
+  "generated_at_utc": "2026-10-01T17:24:39.914162+00:00",
+  "notebook_05_manifest_linkage": "outputs/logs/bridgeport/bridgeport_phase_2_manifest.json",
+  "vlm_available": false,
+  "model_name": null,
+  "model_version": null,
+  "prompt_template_version": "v1_schema_only_not_invoked",
+  "calibration_sample_size": 10,
+  "calibration_metrics": "not_computed -- no VLM predictions exist to score",
+  "visual_packet_count": 24,
+  "crop_count": 48,
+  "raw_vlm_response_count": 0,
+  "vlm_candidate_count": 0,
+  "verified_candidate_count": 0,
+  "rejected_candidate_count": 0,
+  "unresolved_candidate_count": 10,
+  "override_count": 0,
+  "final_status_changes": 0,
+  "comparability_changes": 0,
+  "confirmed_detection_gap_pages": 3,
+  "no_score_no_ranking_statement": "No VLM-only legal conclusions, Bridgeport composite score, dominant-district selection, statewide percentile, or validated Greenwich ranking was produced.",
+  "artifact_paths": {
+    "crop_inventory": "data/interim/bridgeport/step_02_5_vlm_crop_inventory.csv",
+    "raw_vlm_responses": "data/interim/bridgeport/step_02_5_vlm_raw_responses.jsonl",
+    "calibration_reference_labels": "data/interim/bridgeport/step_02_5_vlm_calibration_reference_labels.csv",
+    "manual_verification": "data/processed/bridgeport/bridgeport_vlm_manual_verification.csv",
+    "verified_overrides": "data/processed/bridgeport/bridgeport_phase_2_5_verified_overrides.csv",
+    "detection_gap_findings": "outputs/review/bridgeport/step_02_5_pymupdf_table_detection_gap_findings.csv",
+    "targeting_dashboard": "outputs/figures/bridgeport/step_02_5_targeting_dashboard.png"
+  }
+}

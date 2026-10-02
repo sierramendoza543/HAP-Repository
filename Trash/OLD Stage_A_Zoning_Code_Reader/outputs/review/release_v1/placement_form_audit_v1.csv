@@ -1,0 +1,50 @@
+page,building_type,zone_code,rule_form,attached_garage_setback_ft,side_rear_setback_ft,is_principal_building_setback,fabricated_value_check
+21,Storefront,DX1,fixed_distance,30.0,,False,False
+21,Storefront,MX1,fixed_distance,30.0,3.0,False,False
+21,Storefront,MX2,fixed_distance,30.0,3.0,False,False
+21,Storefront,MXN,fixed_distance,30.0,3.0,False,False
+45,General,DX2,fixed_distance,20.0,3.0,False,False
+45,General,RX2,fixed_distance,20.0,3.0,False,False
+45,General,P2,fixed_distance,20.0,3.0,False,False
+45,General,IX,fixed_distance,20.0,3.0,False,False
+45,General,NX3,fixed_distance,20.0,3.0,False,False
+45,General,NX4,fixed_distance,20.0,3.0,False,False
+45,General,CX,fixed_distance,20.0,3.0,False,False
+45,General,I,fixed_distance,20.0,3.0,False,False
+29,Commercial Center,MX2,fixed_distance,30.0,5.0,False,False
+37,Commercial House,MX1,fixed_distance,20.0,3.0,False,False
+37,Commercial House,MXN,fixed_distance,20.0,3.0,False,False
+37,Commercial House,MX2,fixed_distance,20.0,3.0,False,False
+37,Commercial House,RX1,fixed_distance,20.0,3.0,False,False
+37,Commercial House,RX2,fixed_distance,20.0,3.0,False,False
+53,Small General,NX2,fixed_distance,20.0,3.0,False,False
+53,Small General,RX1,fixed_distance,20.0,3.0,False,False
+61,Row,NX1,fixed_distance,15.0,3.0,False,False
+61,Row,NX2,fixed_distance,15.0,3.0,False,False
+61,Row,NX3,fixed_distance,15.0,3.0,False,False
+61,Row,RX1,fixed_distance,15.0,3.0,False,False
+61,Row,RX2,fixed_distance,15.0,3.0,False,False
+69,Double House A,NX1,fixed_distance,50.0,3.0,False,False
+69,Double House A,NX2,fixed_distance,50.0,3.0,False,False
+77,House A,N1,fixed_distance,20.0,3.0,False,False
+77,House A,NX1,fixed_distance,20.0,3.0,False,False
+77,House A,NX2,fixed_distance,20.0,3.0,False,False
+85,House B,N2,fixed_distance,20.0,3.0,False,False
+93,House C,N3,door_location_limit_no_setback_distance,,3.0,False,False
+101,House D,N4,relative_to_lot_line_no_fixed_distance,,3.0,False,False
+109,Workshop,CX,cross_reference_to_building_setback_table,,,False,False
+109,Workshop,I,cross_reference_to_building_setback_table,,,False,False
+117,Civic,DX1,fixed_distance,20.0,3.0,False,False
+117,Civic,DX2,fixed_distance,20.0,3.0,False,False
+117,Civic,MX1,fixed_distance,20.0,3.0,False,False
+117,Civic,MX2,fixed_distance,20.0,3.0,False,False
+117,Civic,RX1,fixed_distance,20.0,3.0,False,False
+117,Civic,RX2,fixed_distance,20.0,3.0,False,False
+117,Civic,CX,fixed_distance,20.0,3.0,False,False
+117,Civic,NX3,fixed_distance,20.0,3.0,False,False
+117,Civic,NX4,fixed_distance,20.0,3.0,False,False
+117,Civic,P2,fixed_distance,20.0,3.0,False,False
+117,Civic,P1,fixed_distance,20.0,3.0,False,False
+117,Civic,P4,fixed_distance,20.0,3.0,False,False
+117,Civic,P5,fixed_distance,20.0,3.0,False,False
+117,Civic,P3,fixed_distance,20.0,3.0,False,False

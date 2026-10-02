@@ -1,0 +1,461 @@
+town,analysis_unit_id,variable_id,cross_reference_trail
+Bridgeport,DX1__Storefront,V2,
+Bridgeport,DX1__Storefront,V4,see 14.20.7 for measuring site coverage
+Bridgeport,DX1__Storefront,V5,
+Bridgeport,DX1__Storefront,V5,
+Bridgeport,DX1__Storefront,V5,
+Bridgeport,DX1__Storefront,V5,
+Bridgeport,MX1__Storefront,V2,
+Bridgeport,MX1__Storefront,V4,see 14.20.7 for measuring site coverage
+Bridgeport,MX1__Storefront,V5,
+Bridgeport,MX1__Storefront,V5,
+Bridgeport,MX1__Storefront,V5,
+Bridgeport,MX1__Storefront,V5,
+Bridgeport,MX2__Storefront,V2,
+Bridgeport,MX2__Storefront,V4,see 14.20.7 for measuring site coverage
+Bridgeport,MX2__Storefront,V5,
+Bridgeport,MX2__Storefront,V5,
+Bridgeport,MX2__Storefront,V5,
+Bridgeport,MX2__Storefront,V5,
+Bridgeport,MXN__Storefront,V2,
+Bridgeport,MXN__Storefront,V4,see 14.20.7 for measuring site coverage
+Bridgeport,MXN__Storefront,V5,
+Bridgeport,MXN__Storefront,V5,
+Bridgeport,MXN__Storefront,V5,
+Bridgeport,MXN__Storefront,V5,
+Bridgeport,MX2__Commercial Center,V2,
+Bridgeport,MX2__Commercial Center,V4,see 14.20.7 for measuring site coverage
+Bridgeport,MX2__Commercial Center,V5,
+Bridgeport,MX2__Commercial Center,V5,
+Bridgeport,MX2__Commercial Center,V5,
+Bridgeport,MX2__Commercial Center,V5,
+Bridgeport,MX1__Commercial House,V2,
+Bridgeport,MX1__Commercial House,V4,see 14.20.7 for measuring site coverage
+Bridgeport,MX1__Commercial House,V5,
+Bridgeport,MX1__Commercial House,V5,
+Bridgeport,MX1__Commercial House,V5,
+Bridgeport,MX1__Commercial House,V5,
+Bridgeport,MXN__Commercial House,V2,
+Bridgeport,MXN__Commercial House,V4,see 14.20.7 for measuring site coverage
+Bridgeport,MXN__Commercial House,V5,
+Bridgeport,MXN__Commercial House,V5,
+Bridgeport,MXN__Commercial House,V5,
+Bridgeport,MXN__Commercial House,V5,
+Bridgeport,MX2__Commercial House,V2,
+Bridgeport,MX2__Commercial House,V4,see 14.20.7 for measuring site coverage
+Bridgeport,MX2__Commercial House,V5,
+Bridgeport,MX2__Commercial House,V5,
+Bridgeport,MX2__Commercial House,V5,
+Bridgeport,MX2__Commercial House,V5,
+Bridgeport,RX1__Commercial House,V2,
+Bridgeport,RX1__Commercial House,V4,see 14.20.7 for measuring site coverage
+Bridgeport,RX1__Commercial House,V5,
+Bridgeport,RX1__Commercial House,V5,
+Bridgeport,RX1__Commercial House,V5,
+Bridgeport,RX1__Commercial House,V5,
+Bridgeport,RX2__Commercial House,V2,
+Bridgeport,RX2__Commercial House,V4,see 14.20.7 for measuring site coverage
+Bridgeport,RX2__Commercial House,V5,
+Bridgeport,RX2__Commercial House,V5,
+Bridgeport,RX2__Commercial House,V5,
+Bridgeport,RX2__Commercial House,V5,
+Bridgeport,DX2__General,V2,
+Bridgeport,DX2__General,V4,see 14.20.7 for measuring site coverage
+Bridgeport,DX2__General,V5,
+Bridgeport,DX2__General,V5,
+Bridgeport,DX2__General,V5,
+Bridgeport,DX2__General,V5,
+Bridgeport,RX2__General,V2,
+Bridgeport,RX2__General,V4,see 14.20.7 for measuring site coverage
+Bridgeport,RX2__General,V5,
+Bridgeport,RX2__General,V5,
+Bridgeport,RX2__General,V5,
+Bridgeport,RX2__General,V5,
+Bridgeport,P2__General,V2,
+Bridgeport,P2__General,V4,see 14.20.7 for measuring site coverage
+Bridgeport,P2__General,V5,
+Bridgeport,P2__General,V5,
+Bridgeport,P2__General,V5,
+Bridgeport,P2__General,V5,
+Bridgeport,IX__General,V2,
+Bridgeport,IX__General,V4,see 14.20.7 for measuring site coverage
+Bridgeport,IX__General,V5,
+Bridgeport,IX__General,V5,
+Bridgeport,IX__General,V5,
+Bridgeport,IX__General,V5,
+Bridgeport,NX4__General,V2,
+Bridgeport,NX4__General,V4,see 14.20.7 for measuring site coverage
+Bridgeport,NX4__General,V5,
+Bridgeport,NX4__General,V5,
+Bridgeport,NX4__General,V5,
+Bridgeport,NX4__General,V5,
+Bridgeport,NX3__General,V2,
+Bridgeport,NX3__General,V4,see 14.20.7 for measuring site coverage
+Bridgeport,NX3__General,V5,
+Bridgeport,NX3__General,V5,
+Bridgeport,NX3__General,V5,
+Bridgeport,NX3__General,V5,
+Bridgeport,CX__General,V2,
+Bridgeport,CX__General,V4,see 14.20.7 for measuring site coverage
+Bridgeport,CX__General,V5,
+Bridgeport,CX__General,V5,
+Bridgeport,CX__General,V5,
+Bridgeport,CX__General,V5,
+Bridgeport,I__General,V2,
+Bridgeport,I__General,V4,see 14.20.7 for measuring site coverage
+Bridgeport,I__General,V5,
+Bridgeport,I__General,V5,
+Bridgeport,I__General,V5,
+Bridgeport,I__General,V5,
+Bridgeport,NX2__Small General,V2,
+Bridgeport,NX2__Small General,V4,see 14.20.7 for measuring site coverage
+Bridgeport,NX2__Small General,V5,
+Bridgeport,NX2__Small General,V5,
+Bridgeport,NX2__Small General,V5,
+Bridgeport,NX2__Small General,V5,
+Bridgeport,RX1__Small General,V2,
+Bridgeport,RX1__Small General,V4,see 14.20.7 for measuring site coverage
+Bridgeport,RX1__Small General,V5,
+Bridgeport,RX1__Small General,V5,
+Bridgeport,RX1__Small General,V5,
+Bridgeport,RX1__Small General,V5,
+Bridgeport,NX1__Row,V2,
+Bridgeport,NX1__Row,V4,see 14.20.7 for measuring site coverage
+Bridgeport,NX1__Row,V5,
+Bridgeport,NX1__Row,V5,
+Bridgeport,NX1__Row,V5,
+Bridgeport,NX1__Row,V5,
+Bridgeport,NX2__Row,V2,
+Bridgeport,NX2__Row,V4,see 14.20.7 for measuring site coverage
+Bridgeport,NX2__Row,V5,
+Bridgeport,NX2__Row,V5,
+Bridgeport,NX2__Row,V5,
+Bridgeport,NX2__Row,V5,
+Bridgeport,NX3__Row,V2,
+Bridgeport,NX3__Row,V4,see 14.20.7 for measuring site coverage
+Bridgeport,NX3__Row,V5,
+Bridgeport,NX3__Row,V5,
+Bridgeport,NX3__Row,V5,
+Bridgeport,NX3__Row,V5,
+Bridgeport,NX4__Row,V2,
+Bridgeport,NX4__Row,V4,see 14.20.7 for measuring site coverage
+Bridgeport,NX4__Row,V5,
+Bridgeport,NX4__Row,V5,
+Bridgeport,NX4__Row,V5,
+Bridgeport,NX4__Row,V5,
+Bridgeport,RX1__Row,V2,
+Bridgeport,RX1__Row,V4,see 14.20.7 for measuring site coverage
+Bridgeport,RX1__Row,V5,
+Bridgeport,RX1__Row,V5,
+Bridgeport,RX1__Row,V5,
+Bridgeport,RX1__Row,V5,
+Bridgeport,RX2__Row,V2,
+Bridgeport,RX2__Row,V4,see 14.20.7 for measuring site coverage
+Bridgeport,RX2__Row,V5,
+Bridgeport,RX2__Row,V5,
+Bridgeport,RX2__Row,V5,
+Bridgeport,RX2__Row,V5,
+Bridgeport,NX1__Double House A,V2,
+Bridgeport,NX1__Double House A,V4,see 14.20.7 for measuring site coverage
+Bridgeport,NX1__Double House A,V5,
+Bridgeport,NX1__Double House A,V5,
+Bridgeport,NX1__Double House A,V5,
+Bridgeport,NX1__Double House A,V5,
+Bridgeport,NX2__Double House A,V2,
+Bridgeport,NX2__Double House A,V4,see 14.20.7 for measuring site coverage
+Bridgeport,NX2__Double House A,V5,
+Bridgeport,NX2__Double House A,V5,
+Bridgeport,NX2__Double House A,V5,
+Bridgeport,NX2__Double House A,V5,
+Bridgeport,N1__House A,V2,
+Bridgeport,N1__House A,V4,see 14.20.7 for measuring site coverage
+Bridgeport,N1__House A,V5,
+Bridgeport,N1__House A,V5,
+Bridgeport,N1__House A,V5,
+Bridgeport,N1__House A,V5,
+Bridgeport,NX1__House A,V2,
+Bridgeport,NX1__House A,V4,see 14.20.7 for measuring site coverage
+Bridgeport,NX1__House A,V5,
+Bridgeport,NX1__House A,V5,
+Bridgeport,NX1__House A,V5,
+Bridgeport,NX1__House A,V5,
+Bridgeport,NX2__House A,V2,
+Bridgeport,NX2__House A,V4,see 14.20.7 for measuring site coverage
+Bridgeport,NX2__House A,V5,
+Bridgeport,NX2__House A,V5,
+Bridgeport,NX2__House A,V5,
+Bridgeport,NX2__House A,V5,
+Bridgeport,N2__House B,V2,
+Bridgeport,N2__House B,V4,see 14.20.7 for measuring site coverage
+Bridgeport,N2__House B,V5,
+Bridgeport,N2__House B,V5,
+Bridgeport,N2__House B,V5,
+Bridgeport,N2__House B,V5,
+Bridgeport,N3__House C,V2,
+Bridgeport,N3__House C,V1,
+Bridgeport,N3__House C,V4,see 14.20.7 for measuring site coverage
+Bridgeport,N3__House C,V5,
+Bridgeport,N3__House C,V5,
+Bridgeport,N3__House C,V5,
+Bridgeport,N3__House C,V5,
+Bridgeport,N4__House D,V2,
+Bridgeport,N4__House D,V1,
+Bridgeport,N4__House D,V4,see 14.20.7 for measuring site coverage
+Bridgeport,N4__House D,V5,
+Bridgeport,N4__House D,V5,
+Bridgeport,N4__House D,V5,
+Bridgeport,N4__House D,V5,
+Bridgeport,CX__Workshop,V2,
+Bridgeport,CX__Workshop,V4,see 14.20.7 for measuring site coverage
+Bridgeport,CX__Workshop,V5,
+Bridgeport,CX__Workshop,V5,
+Bridgeport,CX__Workshop,V5,
+Bridgeport,CX__Workshop,V5,
+Bridgeport,I__Workshop,V2,
+Bridgeport,I__Workshop,V4,see 14.20.7 for measuring site coverage
+Bridgeport,I__Workshop,V5,
+Bridgeport,I__Workshop,V5,
+Bridgeport,I__Workshop,V5,
+Bridgeport,I__Workshop,V5,
+Bridgeport,DX1__Civic,V2,
+Bridgeport,DX1__Civic,V4,see 14.20.7 for measuring site coverage
+Bridgeport,DX1__Civic,V5,
+Bridgeport,DX1__Civic,V5,
+Bridgeport,DX1__Civic,V5,
+Bridgeport,DX1__Civic,V5,
+Bridgeport,P1__Civic,V2,
+Bridgeport,P1__Civic,V4,see 14.20.7 for measuring site coverage
+Bridgeport,P1__Civic,V5,
+Bridgeport,P1__Civic,V5,
+Bridgeport,P1__Civic,V5,
+Bridgeport,P1__Civic,V5,
+Bridgeport,P3__Civic,V2,
+Bridgeport,P3__Civic,V4,see 14.20.7 for measuring site coverage
+Bridgeport,P3__Civic,V5,
+Bridgeport,P3__Civic,V5,
+Bridgeport,P3__Civic,V5,
+Bridgeport,P3__Civic,V5,
+Bridgeport,DX1__Storefront,V3,
+Bridgeport,DX1__Storefront,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,MX1__Storefront,V3,
+Bridgeport,MX1__Storefront,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,MX2__Storefront,V3,
+Bridgeport,MX2__Storefront,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,MXN__Storefront,V3,
+Bridgeport,MXN__Storefront,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,MX2__Commercial Center,V3,
+Bridgeport,MX2__Commercial Center,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,MX1__Commercial House,V3,
+Bridgeport,MX1__Commercial House,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,MXN__Commercial House,V3,
+Bridgeport,MXN__Commercial House,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,MX2__Commercial House,V3,
+Bridgeport,MX2__Commercial House,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,RX1__Commercial House,V3,
+Bridgeport,RX1__Commercial House,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,RX2__Commercial House,V3,
+Bridgeport,RX2__Commercial House,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,DX2__General,V3,
+Bridgeport,DX2__General,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,RX2__General,V3,
+Bridgeport,RX2__General,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,P2__General,V3,
+Bridgeport,P2__General,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,IX__General,V3,
+Bridgeport,IX__General,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,NX4__General,V3,
+Bridgeport,NX4__General,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,NX3__General,V3,
+Bridgeport,NX3__General,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,CX__General,V3,
+Bridgeport,CX__General,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,I__General,V3,
+Bridgeport,I__General,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,NX2__Small General,V3,
+Bridgeport,NX2__Small General,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,RX1__Small General,V3,
+Bridgeport,RX1__Small General,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,NX1__Row,V3,
+Bridgeport,NX1__Row,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,NX2__Row,V3,
+Bridgeport,NX2__Row,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,NX3__Row,V3,
+Bridgeport,NX3__Row,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,NX4__Row,V3,
+Bridgeport,NX4__Row,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,RX1__Row,V3,
+Bridgeport,RX1__Row,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,RX2__Row,V3,
+Bridgeport,RX2__Row,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,NX1__Double House A,V3,
+Bridgeport,NX1__Double House A,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,NX2__Double House A,V3,
+Bridgeport,NX2__Double House A,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,N1__House A,V3,
+Bridgeport,N1__House A,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,NX1__House A,V3,
+Bridgeport,NX1__House A,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,NX2__House A,V3,
+Bridgeport,NX2__House A,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,N2__House B,V3,
+Bridgeport,N2__House B,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,N3__House C,V3,
+Bridgeport,N3__House C,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,N4__House D,V3,
+Bridgeport,N4__House D,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,CX__Workshop,V3,
+Bridgeport,CX__Workshop,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,I__Workshop,V3,
+Bridgeport,I__Workshop,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,DX1__Civic,V3,
+Bridgeport,DX1__Civic,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,P3__Civic,V3,
+Bridgeport,P3__Civic,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,P1__Civic,V3,
+Bridgeport,P1__Civic,V3,searched: X.X0.6 HEIGHT tables (13/13); 14.20.10 BUILDING HEIGHT methodology section
+Bridgeport,CITYWIDE,V6,exceptions checked: 8.20.2 (maximums only); no district-specific supersession found
+Bridgeport,CITYWIDE,V8,
+Bridgeport,CITYWIDE,V7,"searched: 4.0 Uses TOC (p.141), 4.10 Use Tables instructions (p.142), 4.30 Residential Use Group definitions (p.143); master table not found"
+Bridgeport,page_29__PARKING,V5,
+Bridgeport,page_37__PARKING,V5,
+Bridgeport,page_53__PARKING,V5,
+Bridgeport,page_61__PARKING,V5,
+Bridgeport,page_69__PARKING,V5,
+Bridgeport,page_77__PARKING,V5,
+Bridgeport,page_85__PARKING,V5,
+Bridgeport,page_93__PARKING,V5,
+Bridgeport,page_101__PARKING,V5,
+Bridgeport,page_109__PARKING,V5,
+Bridgeport,page_117__PARKING,V5,
+Bridgeport,OH__HELD,V1,
+Bridgeport,OH__HELD,V2,
+Bridgeport,OH__HELD,V3,
+Bridgeport,OH__HELD,V4,
+Bridgeport,OH__HELD,V5,
+Bridgeport,OH__HELD,V6,
+Bridgeport,OH__HELD,V7,
+Bridgeport,OH__HELD,V8,
+Bridgeport,P4__HELD,V1,
+Bridgeport,P4__HELD,V2,
+Bridgeport,P4__HELD,V3,
+Bridgeport,P4__HELD,V4,
+Bridgeport,P4__HELD,V5,
+Bridgeport,P4__HELD,V6,
+Bridgeport,P4__HELD,V7,
+Bridgeport,P4__HELD,V8,
+Bridgeport,P5__HELD,V1,
+Bridgeport,P5__HELD,V2,
+Bridgeport,P5__HELD,V3,
+Bridgeport,P5__HELD,V4,
+Bridgeport,P5__HELD,V5,
+Bridgeport,P5__HELD,V6,
+Bridgeport,P5__HELD,V7,
+Bridgeport,P5__HELD,V8,
+Greenwich,RA-4,V1,prior Greenwich Phase 2 extraction
+Greenwich,RA-4,V2,prior Greenwich Phase 2 manual review
+Greenwich,RA-4,V3,prior Greenwich Phase 2 manual review
+Greenwich,RA-4,V4,prior Greenwich Phase 2 manual review
+Greenwich,RA-4,V5,prior Greenwich Phase 2 extraction
+Greenwich,RA-4,V6,prior Greenwich Phase 2 manual review
+Greenwich,RA-4,V7,prior Greenwich Phase 2 manual review
+Greenwich,RA-4,V8,prior Greenwich Phase 2 manual review
+Bridgeport,CX__V9,V9,"searched: 'density','units per acre','dwelling units per','maximum units' (0 hits document-wide)"
+Bridgeport,DX1__V9,V9,"searched: 'density','units per acre','dwelling units per','maximum units' (0 hits document-wide)"
+Bridgeport,DX2__V9,V9,"searched: 'density','units per acre','dwelling units per','maximum units' (0 hits document-wide)"
+Bridgeport,I__V9,V9,"searched: 'density','units per acre','dwelling units per','maximum units' (0 hits document-wide)"
+Bridgeport,IX__V9,V9,"searched: 'density','units per acre','dwelling units per','maximum units' (0 hits document-wide)"
+Bridgeport,MX1__V9,V9,"searched: 'density','units per acre','dwelling units per','maximum units' (0 hits document-wide)"
+Bridgeport,MX2__V9,V9,"searched: 'density','units per acre','dwelling units per','maximum units' (0 hits document-wide)"
+Bridgeport,MXN__V9,V9,"searched: 'density','units per acre','dwelling units per','maximum units' (0 hits document-wide)"
+Bridgeport,N1__V9,V9,"searched: 'density','units per acre','dwelling units per','maximum units' (0 hits document-wide)"
+Bridgeport,N2__V9,V9,"searched: 'density','units per acre','dwelling units per','maximum units' (0 hits document-wide)"
+Bridgeport,N3__V9,V9,"searched: 'density','units per acre','dwelling units per','maximum units' (0 hits document-wide)"
+Bridgeport,N4__V9,V9,"searched: 'density','units per acre','dwelling units per','maximum units' (0 hits document-wide)"
+Bridgeport,NX1__V9,V9,"searched: 'density','units per acre','dwelling units per','maximum units' (0 hits document-wide)"
+Bridgeport,NX2__V9,V9,"searched: 'density','units per acre','dwelling units per','maximum units' (0 hits document-wide)"
+Bridgeport,NX3__V9,V9,"searched: 'density','units per acre','dwelling units per','maximum units' (0 hits document-wide)"
+Bridgeport,NX4__V9,V9,"searched: 'density','units per acre','dwelling units per','maximum units' (0 hits document-wide)"
+Bridgeport,OH__V9,V9,"searched: 'density','units per acre','dwelling units per','maximum units' (0 hits document-wide)"
+Bridgeport,P1__V9,V9,"searched: 'density','units per acre','dwelling units per','maximum units' (0 hits document-wide)"
+Bridgeport,P2__V9,V9,"searched: 'density','units per acre','dwelling units per','maximum units' (0 hits document-wide)"
+Bridgeport,P3__V9,V9,"searched: 'density','units per acre','dwelling units per','maximum units' (0 hits document-wide)"
+Bridgeport,P4__V9,V9,"searched: 'density','units per acre','dwelling units per','maximum units' (0 hits document-wide)"
+Bridgeport,P5__V9,V9,"searched: 'density','units per acre','dwelling units per','maximum units' (0 hits document-wide)"
+Bridgeport,RX1__V9,V9,"searched: 'density','units per acre','dwelling units per','maximum units' (0 hits document-wide)"
+Bridgeport,RX2__V9,V9,"searched: 'density','units per acre','dwelling units per','maximum units' (0 hits document-wide)"
+Bridgeport,CX__V10,V10,"searched: 'floor area ratio','FAR','gross floor area','floorplate' (0 hits in 112,783 native word tokens)"
+Bridgeport,DX1__V10,V10,"searched: 'floor area ratio','FAR','gross floor area','floorplate' (0 hits in 112,783 native word tokens)"
+Bridgeport,DX2__V10,V10,"searched: 'floor area ratio','FAR','gross floor area','floorplate' (0 hits in 112,783 native word tokens)"
+Bridgeport,I__V10,V10,"searched: 'floor area ratio','FAR','gross floor area','floorplate' (0 hits in 112,783 native word tokens)"
+Bridgeport,IX__V10,V10,"searched: 'floor area ratio','FAR','gross floor area','floorplate' (0 hits in 112,783 native word tokens)"
+Bridgeport,MX1__V10,V10,"searched: 'floor area ratio','FAR','gross floor area','floorplate' (0 hits in 112,783 native word tokens)"
+Bridgeport,MX2__V10,V10,"searched: 'floor area ratio','FAR','gross floor area','floorplate' (0 hits in 112,783 native word tokens)"
+Bridgeport,MXN__V10,V10,"searched: 'floor area ratio','FAR','gross floor area','floorplate' (0 hits in 112,783 native word tokens)"
+Bridgeport,N1__V10,V10,"searched: 'floor area ratio','FAR','gross floor area','floorplate' (0 hits in 112,783 native word tokens)"
+Bridgeport,N2__V10,V10,"searched: 'floor area ratio','FAR','gross floor area','floorplate' (0 hits in 112,783 native word tokens)"
+Bridgeport,N3__V10,V10,"searched: 'floor area ratio','FAR','gross floor area','floorplate' (0 hits in 112,783 native word tokens)"
+Bridgeport,N4__V10,V10,"searched: 'floor area ratio','FAR','gross floor area','floorplate' (0 hits in 112,783 native word tokens)"
+Bridgeport,NX1__V10,V10,"searched: 'floor area ratio','FAR','gross floor area','floorplate' (0 hits in 112,783 native word tokens)"
+Bridgeport,NX2__V10,V10,"searched: 'floor area ratio','FAR','gross floor area','floorplate' (0 hits in 112,783 native word tokens)"
+Bridgeport,NX3__V10,V10,"searched: 'floor area ratio','FAR','gross floor area','floorplate' (0 hits in 112,783 native word tokens)"
+Bridgeport,NX4__V10,V10,"searched: 'floor area ratio','FAR','gross floor area','floorplate' (0 hits in 112,783 native word tokens)"
+Bridgeport,OH__V10,V10,"searched: 'floor area ratio','FAR','gross floor area','floorplate' (0 hits in 112,783 native word tokens)"
+Bridgeport,P1__V10,V10,"searched: 'floor area ratio','FAR','gross floor area','floorplate' (0 hits in 112,783 native word tokens)"
+Bridgeport,P2__V10,V10,"searched: 'floor area ratio','FAR','gross floor area','floorplate' (0 hits in 112,783 native word tokens)"
+Bridgeport,P3__V10,V10,"searched: 'floor area ratio','FAR','gross floor area','floorplate' (0 hits in 112,783 native word tokens)"
+Bridgeport,P4__V10,V10,"searched: 'floor area ratio','FAR','gross floor area','floorplate' (0 hits in 112,783 native word tokens)"
+Bridgeport,P5__V10,V10,"searched: 'floor area ratio','FAR','gross floor area','floorplate' (0 hits in 112,783 native word tokens)"
+Bridgeport,RX1__V10,V10,"searched: 'floor area ratio','FAR','gross floor area','floorplate' (0 hits in 112,783 native word tokens)"
+Bridgeport,RX2__V10,V10,"searched: 'floor area ratio','FAR','gross floor area','floorplate' (0 hits in 112,783 native word tokens)"
+Bridgeport,CX__V11,V11,4.10.3-4.10.7 use-table legend definitions (permitted/upper-stories-only/limited-area/special-permit/certificate-of-location/prohibited)
+Bridgeport,DX1__V11,V11,4.10.3-4.10.7 use-table legend definitions (permitted/upper-stories-only/limited-area/special-permit/certificate-of-location/prohibited)
+Bridgeport,DX2__V11,V11,4.10.3-4.10.7 use-table legend definitions (permitted/upper-stories-only/limited-area/special-permit/certificate-of-location/prohibited)
+Bridgeport,I__V11,V11,4.10.3-4.10.7 use-table legend definitions (permitted/upper-stories-only/limited-area/special-permit/certificate-of-location/prohibited)
+Bridgeport,IX__V11,V11,4.10.3-4.10.7 use-table legend definitions (permitted/upper-stories-only/limited-area/special-permit/certificate-of-location/prohibited)
+Bridgeport,MX1__V11,V11,4.10.3-4.10.7 use-table legend definitions (permitted/upper-stories-only/limited-area/special-permit/certificate-of-location/prohibited)
+Bridgeport,MX2__V11,V11,4.10.3-4.10.7 use-table legend definitions (permitted/upper-stories-only/limited-area/special-permit/certificate-of-location/prohibited)
+Bridgeport,MXN__V11,V11,4.10.3-4.10.7 use-table legend definitions (permitted/upper-stories-only/limited-area/special-permit/certificate-of-location/prohibited)
+Bridgeport,N1__V11,V11,4.10.3-4.10.7 use-table legend definitions (permitted/upper-stories-only/limited-area/special-permit/certificate-of-location/prohibited)
+Bridgeport,N2__V11,V11,4.10.3-4.10.7 use-table legend definitions (permitted/upper-stories-only/limited-area/special-permit/certificate-of-location/prohibited)
+Bridgeport,N3__V11,V11,4.10.3-4.10.7 use-table legend definitions (permitted/upper-stories-only/limited-area/special-permit/certificate-of-location/prohibited)
+Bridgeport,N4__V11,V11,4.10.3-4.10.7 use-table legend definitions (permitted/upper-stories-only/limited-area/special-permit/certificate-of-location/prohibited)
+Bridgeport,NX1__V11,V11,4.10.3-4.10.7 use-table legend definitions (permitted/upper-stories-only/limited-area/special-permit/certificate-of-location/prohibited)
+Bridgeport,NX2__V11,V11,4.10.3-4.10.7 use-table legend definitions (permitted/upper-stories-only/limited-area/special-permit/certificate-of-location/prohibited)
+Bridgeport,NX3__V11,V11,4.10.3-4.10.7 use-table legend definitions (permitted/upper-stories-only/limited-area/special-permit/certificate-of-location/prohibited)
+Bridgeport,NX4__V11,V11,4.10.3-4.10.7 use-table legend definitions (permitted/upper-stories-only/limited-area/special-permit/certificate-of-location/prohibited)
+Bridgeport,OH__V11,V11,4.10.3-4.10.7 use-table legend definitions (permitted/upper-stories-only/limited-area/special-permit/certificate-of-location/prohibited)
+Bridgeport,P1__V11,V11,4.10.3-4.10.7 use-table legend definitions (permitted/upper-stories-only/limited-area/special-permit/certificate-of-location/prohibited)
+Bridgeport,P2__V11,V11,4.10.3-4.10.7 use-table legend definitions (permitted/upper-stories-only/limited-area/special-permit/certificate-of-location/prohibited)
+Bridgeport,P3__V11,V11,4.10.3-4.10.7 use-table legend definitions (permitted/upper-stories-only/limited-area/special-permit/certificate-of-location/prohibited)
+Bridgeport,P4__V11,V11,4.10.3-4.10.7 use-table legend definitions (permitted/upper-stories-only/limited-area/special-permit/certificate-of-location/prohibited)
+Bridgeport,P5__V11,V11,4.10.3-4.10.7 use-table legend definitions (permitted/upper-stories-only/limited-area/special-permit/certificate-of-location/prohibited)
+Bridgeport,RX1__V11,V11,4.10.3-4.10.7 use-table legend definitions (permitted/upper-stories-only/limited-area/special-permit/certificate-of-location/prohibited)
+Bridgeport,RX2__V11,V11,4.10.3-4.10.7 use-table legend definitions (permitted/upper-stories-only/limited-area/special-permit/certificate-of-location/prohibited)
+Bridgeport,CX__V12,V12,"searched: 'duplex','two-family','three-family','four-family','townhouse','row house' document-wide; building-type applicability already confirmed in Stage 6 rule_library"
+Bridgeport,DX1__V12,V12,"searched: 'duplex','two-family','three-family','four-family','townhouse','row house' document-wide; building-type applicability already confirmed in Stage 6 rule_library"
+Bridgeport,DX2__V12,V12,"searched: 'duplex','two-family','three-family','four-family','townhouse','row house' document-wide; building-type applicability already confirmed in Stage 6 rule_library"
+Bridgeport,I__V12,V12,"searched: 'duplex','two-family','three-family','four-family','townhouse','row house' document-wide; building-type applicability already confirmed in Stage 6 rule_library"
+Bridgeport,IX__V12,V12,"searched: 'duplex','two-family','three-family','four-family','townhouse','row house' document-wide; building-type applicability already confirmed in Stage 6 rule_library"
+Bridgeport,MX1__V12,V12,"searched: 'duplex','two-family','three-family','four-family','townhouse','row house' document-wide; building-type applicability already confirmed in Stage 6 rule_library"
+Bridgeport,MX2__V12,V12,"searched: 'duplex','two-family','three-family','four-family','townhouse','row house' document-wide; building-type applicability already confirmed in Stage 6 rule_library"
+Bridgeport,MXN__V12,V12,"searched: 'duplex','two-family','three-family','four-family','townhouse','row house' document-wide; building-type applicability already confirmed in Stage 6 rule_library"
+Bridgeport,N1__V12,V12,"searched: 'duplex','two-family','three-family','four-family','townhouse','row house' document-wide; building-type applicability already confirmed in Stage 6 rule_library"
+Bridgeport,N2__V12,V12,"searched: 'duplex','two-family','three-family','four-family','townhouse','row house' document-wide; building-type applicability already confirmed in Stage 6 rule_library"
+Bridgeport,N3__V12,V12,"searched: 'duplex','two-family','three-family','four-family','townhouse','row house' document-wide; building-type applicability already confirmed in Stage 6 rule_library"
+Bridgeport,N4__V12,V12,"searched: 'duplex','two-family','three-family','four-family','townhouse','row house' document-wide; building-type applicability already confirmed in Stage 6 rule_library"
+Bridgeport,NX1__V12,V12,"searched: 'duplex','two-family','three-family','four-family','townhouse','row house' document-wide; building-type applicability already confirmed in Stage 6 rule_library"
+Bridgeport,NX2__V12,V12,"searched: 'duplex','two-family','three-family','four-family','townhouse','row house' document-wide; building-type applicability already confirmed in Stage 6 rule_library"
+Bridgeport,NX3__V12,V12,"searched: 'duplex','two-family','three-family','four-family','townhouse','row house' document-wide; building-type applicability already confirmed in Stage 6 rule_library"
+Bridgeport,NX4__V12,V12,"searched: 'duplex','two-family','three-family','four-family','townhouse','row house' document-wide; building-type applicability already confirmed in Stage 6 rule_library"
+Bridgeport,OH__V12,V12,"searched: 'duplex','two-family','three-family','four-family','townhouse','row house' document-wide; building-type applicability already confirmed in Stage 6 rule_library"
+Bridgeport,P1__V12,V12,"searched: 'duplex','two-family','three-family','four-family','townhouse','row house' document-wide; building-type applicability already confirmed in Stage 6 rule_library"
+Bridgeport,P2__V12,V12,"searched: 'duplex','two-family','three-family','four-family','townhouse','row house' document-wide; building-type applicability already confirmed in Stage 6 rule_library"
+Bridgeport,P3__V12,V12,"searched: 'duplex','two-family','three-family','four-family','townhouse','row house' document-wide; building-type applicability already confirmed in Stage 6 rule_library"
+Bridgeport,P4__V12,V12,"searched: 'duplex','two-family','three-family','four-family','townhouse','row house' document-wide; building-type applicability already confirmed in Stage 6 rule_library"
+Bridgeport,P5__V12,V12,"searched: 'duplex','two-family','three-family','four-family','townhouse','row house' document-wide; building-type applicability already confirmed in Stage 6 rule_library"
+Bridgeport,RX1__V12,V12,"searched: 'duplex','two-family','three-family','four-family','townhouse','row house' document-wide; building-type applicability already confirmed in Stage 6 rule_library"
+Bridgeport,RX2__V12,V12,"searched: 'duplex','two-family','three-family','four-family','townhouse','row house' document-wide; building-type applicability already confirmed in Stage 6 rule_library"
+Greenwich,RA-4,V9,§6-93 (already cited for V7); RA-4 §6-205 table checked directly for FAR/density/unit tokens (0 found)
+Greenwich,RA-4,V10,"RA-4's own table-0003 searched directly for FAR/Floor/Area/Ratio/Density/Units/Acre tokens (0 found); document-wide FAR mentions traced to §6-29/6-40/6-67/6-103, none of which govern RA-4"
+Greenwich,RA-4,V11,same §6-93 citation already used for V7; distinguishes 'permitted' (ministerial) from 'special permit' uses
+Greenwich,RA-4,V12,same §6-93 citation already used for V7 multifamily_approval_pathway

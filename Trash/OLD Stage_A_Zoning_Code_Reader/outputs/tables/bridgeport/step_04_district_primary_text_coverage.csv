@@ -1,0 +1,25 @@
+district_code,district_name,preliminary_district_category,word_count,line_count,start_page,end_page,layout_warning,confidence,review_status,has_primary_block
+CX,Heavy Commercial,UNCERTAIN,184.0,78.0,10.0,11.0,False,0.9,auto_extracted,True
+DX1,Downtown Core,UNCERTAIN,33.0,5.0,10.0,10.0,False,0.9,auto_extracted,True
+DX2,Downtown Support,UNCERTAIN,31.0,4.0,10.0,10.0,False,0.9,auto_extracted,True
+I,Industrial,NONRESIDENTIAL_CANDIDATE,53.0,11.0,11.0,11.0,False,0.9,auto_extracted,True
+IX,Office-Industrial Centers,NONRESIDENTIAL_CANDIDATE,26.0,4.0,11.0,11.0,False,0.9,auto_extracted,True
+MX1,Mixed-Use Corridor,UNCERTAIN,26.0,4.0,10.0,10.0,False,0.9,auto_extracted,True
+MX2,Mixed-Use Centers,UNCERTAIN,28.0,4.0,10.0,10.0,False,0.9,auto_extracted,True
+MXN,Mixed-Use Neighborhood Corners,BASE_CANDIDATE,58.0,9.0,10.0,10.0,False,0.9,auto_extracted,True
+N1,Neighborhood: Traditional,BASE_CANDIDATE,27.0,4.0,11.0,11.0,False,0.9,auto_extracted,True
+N2,Neighborhood: Mid-Century,BASE_CANDIDATE,30.0,4.0,11.0,11.0,False,0.9,auto_extracted,True
+N3,Neighborhood: Large Lot,BASE_CANDIDATE,24.0,3.0,11.0,11.0,False,0.9,auto_extracted,True
+N4,Neighborhood: Suburban,BASE_CANDIDATE,30.0,4.0,11.0,11.0,False,0.9,auto_extracted,True
+NX1,Neighborhood Mix,BASE_CANDIDATE,64.0,10.0,11.0,11.0,False,0.9,auto_extracted,True
+NX2,,UNCERTAIN,,,,,,,,False
+NX3,Mixed Residential,BASE_CANDIDATE,37.0,5.0,11.0,11.0,False,0.9,auto_extracted,True
+NX4,Mixed Residential,BASE_CANDIDATE,28.0,5.0,11.0,11.0,False,0.9,auto_extracted,True
+OH,Historic Overlay,OVERLAY_OR_HISTORIC_CANDIDATE,267.0,206.0,12.0,13.0,False,0.9,auto_extracted,True
+P1,Parks and Open Space,PUBLIC_OR_INSTITUTIONAL_CANDIDATE,23.0,3.0,11.0,11.0,False,0.9,auto_extracted,True
+P2,Civic and Institutional Buildings,PUBLIC_OR_INSTITUTIONAL_CANDIDATE,31.0,4.0,11.0,11.0,False,0.9,auto_extracted,True
+P3,Institutional Campuses,PUBLIC_OR_INSTITUTIONAL_CANDIDATE,49.0,7.0,11.0,11.0,False,0.9,auto_extracted,True
+P4,Utility and Energy Infrastructure,PUBLIC_OR_INSTITUTIONAL_CANDIDATE,25.0,4.0,11.0,11.0,False,0.9,auto_extracted,True
+P5,Detention and Correction Facilities,PUBLIC_OR_INSTITUTIONAL_CANDIDATE,24.0,6.0,11.0,12.0,False,0.9,auto_extracted,True
+RX1,,UNCERTAIN,,,,,,,,False
+RX2,Residential-Office Centers,BASE_CANDIDATE,25.0,4.0,10.0,10.0,False,0.9,auto_extracted,True

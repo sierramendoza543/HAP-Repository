@@ -1,0 +1,2 @@
+town,dominant_district_status,dominant_district_code,dominant_district_area_acres,dominant_district_residential_area_share,diagnostic_target_district_code,candidate_districts,lookup_path,selection_timestamp
+Greenwich,verified,RA-4,11636.113810059456,0.3897480200085528,RA-4,"['R-12', 'R-20', 'R-6', 'R-7', 'RA-1', 'RA-2', 'RA-4']",data/processed/greenwich_residential_district_area_lookup.csv,2026-10-01T09:09:02.964715+00:00

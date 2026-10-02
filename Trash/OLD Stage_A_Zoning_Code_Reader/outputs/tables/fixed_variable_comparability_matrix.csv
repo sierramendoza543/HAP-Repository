@@ -1,0 +1,9 @@
+variable_id,comparable_with_documented_transform,directly_comparable,missing,needs_manual_harmonization,not_applicable,qualitative_only,structurally_non_equivalent
+V1,0,3,0,3,0,0,0
+V2,0,29,0,3,11,0,0
+V3,0,0,40,3,0,0,39
+V4,39,0,0,3,1,0,0
+V5,0,101,0,14,0,0,56
+V6,0,1,0,3,0,1,0
+V7,0,0,0,5,0,0,0
+V8,2,0,0,3,0,0,0

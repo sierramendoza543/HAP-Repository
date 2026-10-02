@@ -1,0 +1,31 @@
+{
+  "document_id": "greenwich-connecticut-18417c5e9074d765",
+  "pdf_path_relative_to_stage_a": "data/raw/greenwich/greenwich_building_zone_regulations_full_2023-08.pdf",
+  "native_extraction_config": {
+    "engine": "PyMuPDF",
+    "word_extraction_mode": "words",
+    "span_extraction_mode": "dict",
+    "sort_reading_order": true,
+    "include_word_tokens": true,
+    "include_text_spans": true,
+    "exclude_empty_text": true,
+    "minimum_word_length": 1,
+    "page_number_base": 1,
+    "initial_section_number": null,
+    "initial_heading_depth": null,
+    "initial_table_id": null,
+    "initial_normalized_text_span": null,
+    "output_word_tokens_filename": "step_03_native_word_tokens.parquet",
+    "output_text_spans_filename": "step_03_native_text_spans.parquet",
+    "output_page_summary_filename": "step_03_native_page_summary.csv"
+  },
+  "word_token_count": 125276,
+  "text_span_count": 17550,
+  "page_count": 313,
+  "words_per_page_figure": "outputs/figures/step_03_native_words_per_page.png",
+  "bbox_overlay_figures": [
+    "outputs/figures/step_03_native_word_bbox_overlay_page_001.png",
+    "outputs/figures/step_03_native_word_bbox_overlay_page_156.png",
+    "outputs/figures/step_03_native_word_bbox_overlay_page_313.png"
+  ]
+}

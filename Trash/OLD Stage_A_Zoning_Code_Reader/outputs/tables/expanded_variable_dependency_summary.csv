@@ -1,0 +1,6 @@
+relationship,count
+partially_overlapping,3
+needs_manual_harmonization,2
+independent,1
+shared_underlying_rule,1
+mutually_exclusive_by_scenario,1

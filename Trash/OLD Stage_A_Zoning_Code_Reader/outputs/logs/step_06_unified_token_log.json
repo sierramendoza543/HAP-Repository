@@ -1,0 +1,21 @@
+{
+  "document_id": "greenwich-connecticut-18417c5e9074d765",
+  "unified_token_count": 125290,
+  "normalized_document_character_count": 810972,
+  "selected_stream_counts": {
+    "native": 125228,
+    "ocr": 62
+  },
+  "extraction_engine_counts": {
+    "pymupdf_native": 125228,
+    "tesseract": 62
+  },
+  "review_status_counts": {
+    "reconciled_high_agreement": 113057,
+    "manual_review_required": 7264,
+    "reconciliation_review_required": 4907,
+    "ocr_selected_requires_spot_check": 62
+  },
+  "unified_tokens_path": "data/interim/step_06_unified_normalized_tokens.parquet",
+  "normalized_text_path": "data/interim/step_06_normalized_document_text.txt"
+}

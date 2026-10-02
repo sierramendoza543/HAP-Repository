@@ -1,0 +1,305 @@
+page_number,page_layout_type,reading_order_strategy,column_detection_confidence,left_cluster_center,right_cluster_center,vertical_gap_points,left_line_count,right_line_count,full_width_line_count,table_overlap_flag,table_area_fraction,reading_order_review_status,reason
+1,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,"too few non-table, non-full-width lines (2) to assess columns"
+2,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,"too few non-table, non-full-width lines (4) to assess columns"
+3,single_column,pymupdf_native_order,0.6,,,,32,2,0,False,0.0,auto_classified,"x-gap found (348pt) but failed line-count/span thresholds (left_n=32, right_n=2, left_span=656, right_span=16); treated as single_column (e.g. a small sidebar box, not a real column)"
+4,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,"too few non-table, non-full-width lines (4) to assess columns"
+5,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,"too few non-table, non-full-width lines (11) to assess columns"
+6,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=145)"
+7,two_column,two_column_left_then_right,0.85,63.0,337.95001220703125,231.75001525878906,53,10,0,False,0.0,auto_classified,"two stable x-clusters, gap=232pt, left_n=53, right_n=10, left_span=684, right_span=739"
+8,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,"too few non-table, non-full-width lines (4) to assess columns"
+9,single_column,pymupdf_native_order,0.6,,,,21,2,0,False,0.0,auto_classified,"x-gap found (300pt) but failed line-count/span thresholds (left_n=21, right_n=2, left_span=686, right_span=16); treated as single_column (e.g. a small sidebar box, not a real column)"
+10,two_column,two_column_left_then_right,0.85,58.5,338.23260498046875,234.87998962402344,48,60,0,True,0.007,auto_classified,"two stable x-clusters, gap=235pt, left_n=48, right_n=60, left_span=739, right_span=632"
+11,two_column,two_column_left_then_right,0.85,63.36000061035156,338.1119079589844,231.55178833007812,43,49,0,False,0.0,auto_classified,"two stable x-clusters, gap=232pt, left_n=43, right_n=49, left_span=685, right_span=739"
+12,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.034,auto_classified,no x-gap large enough to indicate two columns
+13,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.016,auto_classified,no x-gap large enough to indicate two columns
+14,single_column,pymupdf_native_order,0.6,,,,32,1,0,False,0.0,auto_classified,"x-gap found (420pt) but failed line-count/span thresholds (left_n=32, right_n=1, left_span=739, right_span=16); treated as single_column (e.g. a small sidebar box, not a real column)"
+15,single_column,pymupdf_native_order,0.6,,,,37,2,0,False,0.0,auto_classified,"x-gap found (300pt) but failed line-count/span thresholds (left_n=37, right_n=2, left_span=685, right_span=16); treated as single_column (e.g. a small sidebar box, not a real column)"
+16,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=231, second=145)"
+17,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=210, second=121)"
+18,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=203, second=145)"
+19,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+20,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.188,auto_classified,no x-gap large enough to indicate two columns
+21,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.062,auto_classified,no x-gap large enough to indicate two columns
+22,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.052,auto_classified,no x-gap large enough to indicate two columns
+23,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.058,auto_classified,no x-gap large enough to indicate two columns
+24,single_column,pymupdf_native_order,0.6,,,,0,0,2,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+25,single_column,pymupdf_native_order,0.6,,,,0,0,1,True,0.065,auto_classified,no x-gap large enough to indicate two columns
+26,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,"too few non-table, non-full-width lines (6) to assess columns"
+27,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.007,auto_classified,no x-gap large enough to indicate two columns
+28,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.183,auto_classified,no x-gap large enough to indicate two columns
+29,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.037,auto_classified,no x-gap large enough to indicate two columns
+30,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.153,auto_classified,no x-gap large enough to indicate two columns
+31,table_dominant,pymupdf_native_order,0.7,,,,0,0,0,True,0.464,auto_classified,table_area_fraction=0.46 >= 0.4
+32,single_column,pymupdf_native_order,0.6,,,,0,0,2,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+33,single_column,pymupdf_native_order,0.6,,,,0,0,1,True,0.013,auto_classified,no x-gap large enough to indicate two columns
+34,single_column,pymupdf_native_order,0.6,,,,17,1,0,True,0.026,auto_classified,"x-gap found (392pt) but failed line-count/span thresholds (left_n=17, right_n=1, left_span=739, right_span=16); treated as single_column (e.g. a small sidebar box, not a real column)"
+35,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.007,auto_classified,no x-gap large enough to indicate two columns
+36,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.294,auto_classified,no x-gap large enough to indicate two columns
+37,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.185,auto_classified,no x-gap large enough to indicate two columns
+38,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.077,auto_classified,no x-gap large enough to indicate two columns
+39,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.031,auto_classified,no x-gap large enough to indicate two columns
+40,single_column,pymupdf_native_order,0.6,,,,0,0,2,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+41,single_column,pymupdf_native_order,0.6,,,,0,0,1,True,0.108,auto_classified,no x-gap large enough to indicate two columns
+42,single_column,pymupdf_native_order,0.6,,,,36,1,0,False,0.0,auto_classified,"x-gap found (427pt) but failed line-count/span thresholds (left_n=36, right_n=1, left_span=739, right_span=16); treated as single_column (e.g. a small sidebar box, not a real column)"
+43,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.007,auto_classified,no x-gap large enough to indicate two columns
+44,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.228,auto_classified,no x-gap large enough to indicate two columns
+45,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.078,auto_classified,no x-gap large enough to indicate two columns
+46,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.124,auto_classified,no x-gap large enough to indicate two columns
+47,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+48,single_column,pymupdf_native_order,0.6,,,,0,0,2,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+49,single_column,pymupdf_native_order,0.6,,,,0,0,1,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+50,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,"too few non-table, non-full-width lines (4) to assess columns"
+51,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+52,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.16,auto_classified,no x-gap large enough to indicate two columns
+53,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+54,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.135,auto_classified,no x-gap large enough to indicate two columns
+55,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.092,auto_classified,no x-gap large enough to indicate two columns
+56,single_column,pymupdf_native_order,0.6,,,,0,0,2,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+57,single_column,pymupdf_native_order,0.6,,,,0,0,1,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+58,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,"too few non-table, non-full-width lines (4) to assess columns"
+59,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.007,auto_classified,no x-gap large enough to indicate two columns
+60,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.134,auto_classified,no x-gap large enough to indicate two columns
+61,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.012,auto_classified,no x-gap large enough to indicate two columns
+62,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.157,auto_classified,no x-gap large enough to indicate two columns
+63,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.086,auto_classified,no x-gap large enough to indicate two columns
+64,single_column,pymupdf_native_order,0.6,,,,0,0,2,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+65,table_dominant,pymupdf_native_order,0.7,,,,0,0,0,True,0.451,auto_classified,table_area_fraction=0.45 >= 0.4
+66,single_column,pymupdf_native_order,0.6,,,,20,1,0,False,0.0,auto_classified,"x-gap found (409pt) but failed line-count/span thresholds (left_n=20, right_n=1, left_span=739, right_span=16); treated as single_column (e.g. a small sidebar box, not a real column)"
+67,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.007,auto_classified,no x-gap large enough to indicate two columns
+68,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.333,auto_classified,no x-gap large enough to indicate two columns
+69,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+70,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.154,auto_classified,no x-gap large enough to indicate two columns
+71,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.036,auto_classified,no x-gap large enough to indicate two columns
+72,single_column,pymupdf_native_order,0.6,,,,0,0,2,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+73,table_dominant,pymupdf_native_order,0.7,,,,0,0,0,True,0.418,auto_classified,table_area_fraction=0.42 >= 0.4
+74,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,"too few non-table, non-full-width lines (4) to assess columns"
+75,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+76,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.251,auto_classified,no x-gap large enough to indicate two columns
+77,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+78,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.07,auto_classified,no x-gap large enough to indicate two columns
+79,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.034,auto_classified,no x-gap large enough to indicate two columns
+80,single_column,pymupdf_native_order,0.6,,,,0,0,2,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+81,single_column,pymupdf_native_order,0.6,,,,0,0,1,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+82,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,"too few non-table, non-full-width lines (4) to assess columns"
+83,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+84,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.237,auto_classified,no x-gap large enough to indicate two columns
+85,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.167,auto_classified,no x-gap large enough to indicate two columns
+86,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.128,auto_classified,no x-gap large enough to indicate two columns
+87,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.074,auto_classified,no x-gap large enough to indicate two columns
+88,single_column,pymupdf_native_order,0.6,,,,0,0,2,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+89,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.372,auto_classified,no x-gap large enough to indicate two columns
+90,single_column,pymupdf_native_order,0.6,,,,21,1,0,False,0.0,auto_classified,"x-gap found (409pt) but failed line-count/span thresholds (left_n=21, right_n=1, left_span=739, right_span=16); treated as single_column (e.g. a small sidebar box, not a real column)"
+91,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.007,auto_classified,no x-gap large enough to indicate two columns
+92,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.319,auto_classified,no x-gap large enough to indicate two columns
+93,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.073,auto_classified,no x-gap large enough to indicate two columns
+94,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.326,auto_classified,no x-gap large enough to indicate two columns
+95,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.045,auto_classified,no x-gap large enough to indicate two columns
+96,single_column,pymupdf_native_order,0.6,,,,0,0,2,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+97,single_column,pymupdf_native_order,0.6,,,,0,0,1,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+98,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,"too few non-table, non-full-width lines (4) to assess columns"
+99,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+100,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.185,auto_classified,no x-gap large enough to indicate two columns
+101,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.045,auto_classified,no x-gap large enough to indicate two columns
+102,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.185,auto_classified,no x-gap large enough to indicate two columns
+103,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.123,auto_classified,no x-gap large enough to indicate two columns
+104,two_column,two_column_left_then_right,0.85,147.6710968017578,501.29998779296875,154.91497802734375,73,34,2,False,0.0,auto_classified,"two stable x-clusters, gap=155pt, left_n=73, right_n=34, left_span=739, right_span=666"
+105,single_column,pymupdf_native_order,0.6,,,,0,0,1,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+106,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,"too few non-table, non-full-width lines (4) to assess columns"
+107,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+108,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.18,auto_classified,no x-gap large enough to indicate two columns
+109,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.056,auto_classified,no x-gap large enough to indicate two columns
+110,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.066,auto_classified,no x-gap large enough to indicate two columns
+111,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.077,auto_classified,no x-gap large enough to indicate two columns
+112,single_column,pymupdf_native_order,0.6,,,,0,0,2,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+113,single_column,pymupdf_native_order,0.6,,,,0,0,1,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+114,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,"too few non-table, non-full-width lines (4) to assess columns"
+115,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.007,auto_classified,no x-gap large enough to indicate two columns
+116,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.161,auto_classified,no x-gap large enough to indicate two columns
+117,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.063,auto_classified,no x-gap large enough to indicate two columns
+118,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.28,auto_classified,no x-gap large enough to indicate two columns
+119,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.003,auto_classified,no x-gap large enough to indicate two columns
+120,single_column,pymupdf_native_order,0.6,,,,0,0,2,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+121,single_column,pymupdf_native_order,0.6,,,,0,0,1,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+122,single_column,pymupdf_native_order,0.6,,,,32,1,0,False,0.0,auto_classified,"x-gap found (409pt) but failed line-count/span thresholds (left_n=32, right_n=1, left_span=739, right_span=16); treated as single_column (e.g. a small sidebar box, not a real column)"
+123,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=151, second=112)"
+124,single_column,pymupdf_native_order,0.6,,,,0,0,1,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+125,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+126,single_column,pymupdf_native_order,0.6,,,,0,0,2,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+127,single_column,pymupdf_native_order,0.6,,,,0,0,1,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+128,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,"too few non-table, non-full-width lines (4) to assess columns"
+129,single_column,pymupdf_native_order,0.6,,,,30,4,0,False,0.0,auto_classified,"x-gap found (242pt) but failed line-count/span thresholds (left_n=30, right_n=4, left_span=685, right_span=739); treated as single_column (e.g. a small sidebar box, not a real column)"
+130,single_column,pymupdf_native_order,0.6,,,,0,0,1,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+131,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+132,single_column,pymupdf_native_order,0.6,,,,0,0,2,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+133,single_column,pymupdf_native_order,0.6,,,,0,0,1,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+134,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=145)"
+135,two_column,two_column_left_then_right,0.85,63.0,348.3455352783203,231.75001525878906,45,42,0,False,0.0,auto_classified,"two stable x-clusters, gap=232pt, left_n=45, right_n=42, left_span=684, right_span=739"
+136,two_column,two_column_left_then_right,0.85,58.5,516.06591796875,241.66981506347656,45,26,0,False,0.0,auto_classified,"two stable x-clusters, gap=242pt, left_n=45, right_n=26, left_span=739, right_span=470"
+137,two_column,two_column_left_then_right,0.85,63.36000061035156,337.67999267578125,231.1199951171875,46,45,0,False,0.0,auto_classified,"two stable x-clusters, gap=231pt, left_n=46, right_n=45, left_span=683, right_span=739"
+138,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=220, second=135)"
+139,two_column,two_column_left_then_right,0.85,82.08000183105469,355.95001220703125,237.87001037597656,45,14,0,False,0.0,auto_classified,"two stable x-clusters, gap=238pt, left_n=45, right_n=14, left_span=685, right_span=739"
+140,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,"too few non-table, non-full-width lines (4) to assess columns"
+141,single_column,pymupdf_native_order,0.6,,,,17,2,0,False,0.0,auto_classified,"x-gap found (300pt) but failed line-count/span thresholds (left_n=17, right_n=2, left_span=686, right_span=16); treated as single_column (e.g. a small sidebar box, not a real column)"
+142,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=145)"
+143,two_column,two_column_left_then_right,0.85,45.0,373.95001220703125,220.95001220703125,51,51,0,False,0.0,auto_classified,"two stable x-clusters, gap=221pt, left_n=51, right_n=51, left_span=684, right_span=739"
+144,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=145)"
+145,two_column,two_column_left_then_right,0.85,63.0,337.95001220703125,231.75001525878906,50,55,0,False,0.0,auto_classified,"two stable x-clusters, gap=232pt, left_n=50, right_n=55, left_span=683, right_span=739"
+146,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=240, second=152)"
+147,two_column,two_column_left_then_right,0.85,80.8281021118164,338.1499938964844,221.32189178466797,52,55,0,False,0.0,auto_classified,"two stable x-clusters, gap=221pt, left_n=52, right_n=55, left_span=684, right_span=739"
+148,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=145)"
+149,two_column,two_column_left_then_right,0.85,63.0,337.95001220703125,231.75001525878906,51,52,0,False,0.0,auto_classified,"two stable x-clusters, gap=232pt, left_n=51, right_n=52, left_span=684, right_span=739"
+150,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=145)"
+151,two_column,two_column_left_then_right,0.85,63.0,337.95001220703125,256.95001220703125,52,52,0,False,0.0,auto_classified,"two stable x-clusters, gap=257pt, left_n=52, right_n=52, left_span=684, right_span=739"
+152,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=145)"
+153,two_column,two_column_left_then_right,0.85,44.82809829711914,320.3500061035156,232.12189483642578,51,55,0,False,0.0,auto_classified,"two stable x-clusters, gap=232pt, left_n=51, right_n=55, left_span=684, right_span=739"
+154,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=145)"
+155,two_column,two_column_left_then_right,0.85,81.0,373.95001220703125,220.95001220703125,46,52,0,False,0.0,auto_classified,"two stable x-clusters, gap=221pt, left_n=46, right_n=52, left_span=684, right_span=739"
+156,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=152)"
+157,two_column,two_column_left_then_right,0.85,81.0,355.95001220703125,256.95001220703125,47,51,0,False,0.0,auto_classified,"two stable x-clusters, gap=257pt, left_n=47, right_n=51, left_span=684, right_span=739"
+158,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=134)"
+159,two_column,two_column_left_then_right,0.85,81.0,355.95001220703125,238.95001220703125,45,51,0,False,0.0,auto_classified,"two stable x-clusters, gap=239pt, left_n=45, right_n=51, left_span=684, right_span=739"
+160,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=221, second=145)"
+161,single_column,pymupdf_native_order,0.6,,,,23,4,0,False,0.0,auto_classified,"x-gap found (348pt) but failed line-count/span thresholds (left_n=23, right_n=4, left_span=684, right_span=739); treated as single_column (e.g. a small sidebar box, not a real column)"
+162,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,"too few non-table, non-full-width lines (4) to assess columns"
+163,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,"too few non-table, non-full-width lines (15) to assess columns"
+164,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=145)"
+165,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=130)"
+166,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+167,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=180, second=129)"
+168,table_dominant,pymupdf_native_order,0.7,,,,0,0,0,True,1.126,auto_classified,table_area_fraction=1.13 >= 0.4
+169,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=220, second=130)"
+170,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=249, second=152)"
+171,two_column,two_column_left_then_right,0.85,63.0,329.7236633300781,231.75001525878906,48,18,0,False,0.0,auto_classified,"two stable x-clusters, gap=232pt, left_n=48, right_n=18, left_span=685, right_span=739"
+172,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,1,True,0.223,manual_review_required,"3+ unstable x-clusters detected (largest_gap=175, second=170)"
+173,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=129)"
+174,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=145)"
+175,single_column,pymupdf_native_order,0.6,,,,43,4,0,False,0.0,auto_classified,"x-gap found (279pt) but failed line-count/span thresholds (left_n=43, right_n=4, left_span=682, right_span=739); treated as single_column (e.g. a small sidebar box, not a real column)"
+176,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+177,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=180, second=126)"
+178,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,"too few non-table, non-full-width lines (4) to assess columns"
+179,single_column,pymupdf_native_order,0.6,,,,17,2,0,False,0.0,auto_classified,"x-gap found (300pt) but failed line-count/span thresholds (left_n=17, right_n=2, left_span=686, right_span=16); treated as single_column (e.g. a small sidebar box, not a real column)"
+180,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=145)"
+181,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+182,two_column,two_column_left_then_right,0.85,76.5,473.6400146484375,222.85958862304688,51,39,0,True,0.062,auto_classified,"two stable x-clusters, gap=223pt, left_n=51, right_n=39, left_span=739, right_span=676"
+183,two_column,two_column_left_then_right,0.85,63.36000061035156,337.95001220703125,238.5900115966797,50,11,0,False,0.0,auto_classified,"two stable x-clusters, gap=239pt, left_n=50, right_n=11, left_span=684, right_span=739"
+184,two_column,two_column_left_then_right,0.85,58.5,498.7099914550781,233.65000915527344,52,45,0,True,0.007,auto_classified,"two stable x-clusters, gap=234pt, left_n=52, right_n=45, left_span=739, right_span=604"
+185,two_column,two_column_left_then_right,0.85,45.0,356.5617980957031,275.20179748535156,9,51,0,False,0.0,auto_classified,"two stable x-clusters, gap=275pt, left_n=9, right_n=51, left_span=543, right_span=739"
+186,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=222, second=127)"
+187,two_column,two_column_left_then_right,0.85,62.82809829711914,355.95001220703125,231.92191314697266,47,30,0,False,0.0,auto_classified,"two stable x-clusters, gap=232pt, left_n=47, right_n=30, left_span=684, right_span=739"
+188,two_column,two_column_left_then_right,0.85,58.5,333.45001220703125,231.75001525878906,45,45,0,True,0.028,auto_classified,"two stable x-clusters, gap=232pt, left_n=45, right_n=45, left_span=739, right_span=684"
+189,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+190,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+191,single_column,pymupdf_native_order,0.6,,,,0,0,1,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+192,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+193,two_column,two_column_left_then_right,0.85,63.36000061035156,337.95001220703125,231.3900146484375,48,35,0,False,0.0,auto_classified,"two stable x-clusters, gap=231pt, left_n=48, right_n=35, left_span=685, right_span=739"
+194,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=231, second=145)"
+195,single_column,pymupdf_native_order,0.6,,,,4,15,0,False,0.0,auto_classified,"x-gap found (271pt) but failed line-count/span thresholds (left_n=4, right_n=15, left_span=506, right_span=739); treated as single_column (e.g. a small sidebar box, not a real column)"
+196,two_column,two_column_left_then_right,0.85,40.70000076293945,467.5458984375,231.75001525878906,50,19,0,False,0.0,auto_classified,"two stable x-clusters, gap=232pt, left_n=50, right_n=19, left_span=739, right_span=308"
+197,single_column,pymupdf_native_order,0.6,,,,50,6,0,False,0.0,auto_classified,"x-gap found (235pt) but failed line-count/span thresholds (left_n=50, right_n=6, left_span=684, right_span=739); treated as single_column (e.g. a small sidebar box, not a real column)"
+198,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=240, second=152)"
+199,two_column,two_column_left_then_right,0.85,63.0,337.95001220703125,231.75001525878906,49,38,0,False,0.0,auto_classified,"two stable x-clusters, gap=232pt, left_n=49, right_n=38, left_span=684, right_span=739"
+200,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,True,0.025,manual_review_required,"3+ unstable x-clusters detected (largest_gap=235, second=133)"
+201,two_column,two_column_left_then_right,0.85,45.0,355.95001220703125,231.75001525878906,48,53,0,False,0.0,auto_classified,"two stable x-clusters, gap=232pt, left_n=48, right_n=53, left_span=685, right_span=739"
+202,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,1,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=206, second=164)"
+203,two_column,two_column_left_then_right,0.85,81.36000061035156,355.95001220703125,238.5900115966797,47,12,0,False,0.0,auto_classified,"two stable x-clusters, gap=239pt, left_n=47, right_n=12, left_span=684, right_span=739"
+204,two_column,two_column_left_then_right,0.85,40.70000076293945,333.45001220703125,231.75001525878906,25,56,0,True,0.17,auto_classified,"two stable x-clusters, gap=232pt, left_n=25, right_n=56, left_span=739, right_span=684"
+205,two_column,two_column_left_then_right,0.85,63.0,371.7900085449219,231.75001525878906,47,23,0,False,0.0,auto_classified,"two stable x-clusters, gap=232pt, left_n=47, right_n=23, left_span=684, right_span=739"
+206,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,"too few non-table, non-full-width lines (4) to assess columns"
+207,single_column,pymupdf_native_order,0.6,,,,31,2,0,False,0.0,auto_classified,"x-gap found (300pt) but failed line-count/span thresholds (left_n=31, right_n=2, left_span=686, right_span=16); treated as single_column (e.g. a small sidebar box, not a real column)"
+208,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=231, second=145)"
+209,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.039,auto_classified,no x-gap large enough to indicate two columns
+210,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=145)"
+211,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=217, second=130)"
+212,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=145)"
+213,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=239, second=131)"
+214,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=231, second=153)"
+215,two_column,two_column_left_then_right,0.85,63.0,355.95001220703125,231.75001525878906,49,34,0,False,0.0,auto_classified,"two stable x-clusters, gap=232pt, left_n=49, right_n=34, left_span=685, right_span=739"
+216,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+217,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=126)"
+218,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.362,auto_classified,no x-gap large enough to indicate two columns
+219,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.064,auto_classified,no x-gap large enough to indicate two columns
+220,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.249,auto_classified,no x-gap large enough to indicate two columns
+221,two_column,two_column_left_then_right,0.85,63.0,373.95001220703125,256.95001220703125,47,19,0,False,0.0,auto_classified,"two stable x-clusters, gap=257pt, left_n=47, right_n=19, left_span=684, right_span=739"
+222,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+223,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=224, second=128)"
+224,two_column,two_column_left_then_right,0.85,58.5,351.45001220703125,231.75001525878906,52,25,0,True,0.033,auto_classified,"two stable x-clusters, gap=232pt, left_n=52, right_n=25, left_span=739, right_span=684"
+225,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=233, second=127)"
+226,two_column,two_column_left_then_right,0.85,58.5,321.6600036621094,232.75001525878906,25,12,0,False,0.0,auto_classified,"two stable x-clusters, gap=233pt, left_n=25, right_n=12, left_span=739, right_span=449"
+227,single_column,pymupdf_native_order,0.6,,,,15,2,0,False,0.0,auto_classified,"x-gap found (300pt) but failed line-count/span thresholds (left_n=15, right_n=2, left_span=686, right_span=16); treated as single_column (e.g. a small sidebar box, not a real column)"
+228,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,True,0.076,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=145)"
+229,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,True,0.089,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=120)"
+230,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=221, second=145)"
+231,two_column,two_column_left_then_right,0.85,45.10000038146973,355.95001220703125,233.1081085205078,22,31,0,True,0.259,auto_classified,"two stable x-clusters, gap=233pt, left_n=22, right_n=31, left_span=686, right_span=739"
+232,single_column,pymupdf_native_order,0.6,,,,38,1,0,False,0.0,auto_classified,"x-gap found (409pt) but failed line-count/span thresholds (left_n=38, right_n=1, left_span=739, right_span=16); treated as single_column (e.g. a small sidebar box, not a real column)"
+233,single_column,pymupdf_native_order,0.6,,,,25,2,0,False,0.0,auto_classified,"x-gap found (300pt) but failed line-count/span thresholds (left_n=25, right_n=2, left_span=686, right_span=16); treated as single_column (e.g. a small sidebar box, not a real column)"
+234,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=233, second=144)"
+235,two_column,two_column_left_then_right,0.85,63.0,355.95001220703125,249.75001525878906,51,44,0,False,0.0,auto_classified,"two stable x-clusters, gap=250pt, left_n=51, right_n=44, left_span=684, right_span=739"
+236,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=239, second=134)"
+237,two_column,two_column_left_then_right,0.85,81.0,355.95001220703125,238.95001220703125,43,29,0,False,0.0,auto_classified,"two stable x-clusters, gap=239pt, left_n=43, right_n=29, left_span=683, right_span=739"
+238,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=170)"
+239,two_column,two_column_left_then_right,0.85,62.82809829711914,319.95001220703125,214.3797836303711,49,21,0,False,0.0,auto_classified,"two stable x-clusters, gap=214pt, left_n=49, right_n=21, left_span=684, right_span=739"
+240,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=145)"
+241,two_column,two_column_left_then_right,0.85,63.0,322.8299865722656,231.75001525878906,37,35,0,True,0.096,auto_classified,"two stable x-clusters, gap=232pt, left_n=37, right_n=35, left_span=684, right_span=739"
+242,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,no x-gap large enough to indicate two columns
+243,two_column,two_column_left_then_right,0.85,80.8281021118164,337.95001220703125,185.63719940185547,49,52,0,False,0.0,auto_classified,"two stable x-clusters, gap=186pt, left_n=49, right_n=52, left_span=684, right_span=739"
+244,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=152)"
+245,two_column,two_column_left_then_right,0.85,81.0,355.67999267578125,231.47999572753906,50,53,0,False,0.0,auto_classified,"two stable x-clusters, gap=231pt, left_n=50, right_n=53, left_span=684, right_span=739"
+246,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=145)"
+247,two_column,two_column_left_then_right,0.85,63.36000061035156,337.95001220703125,231.3900146484375,31,26,0,False,0.0,auto_classified,"two stable x-clusters, gap=231pt, left_n=31, right_n=26, left_span=684, right_span=739"
+248,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,True,0.088,manual_review_required,"3+ unstable x-clusters detected (largest_gap=156, second=145)"
+249,single_column,pymupdf_native_order,0.6,,,,15,2,1,False,0.0,auto_classified,"x-gap found (300pt) but failed line-count/span thresholds (left_n=15, right_n=2, left_span=653, right_span=16); treated as single_column (e.g. a small sidebar box, not a real column)"
+250,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=231, second=146)"
+251,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=218, second=127)"
+252,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=221, second=134)"
+253,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=210, second=126)"
+254,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,1,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=145)"
+255,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=206, second=127)"
+256,single_column,pymupdf_native_order,0.6,,,,48,1,0,False,0.0,auto_classified,"x-gap found (420pt) but failed line-count/span thresholds (left_n=48, right_n=1, left_span=739, right_span=16); treated as single_column (e.g. a small sidebar box, not a real column)"
+257,single_column,pymupdf_native_order,0.6,,,,30,2,0,False,0.0,auto_classified,"x-gap found (300pt) but failed line-count/span thresholds (left_n=30, right_n=2, left_span=673, right_span=16); treated as single_column (e.g. a small sidebar box, not a real column)"
+258,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=151, second=115)"
+259,two_column,two_column_left_then_right,0.85,81.0,337.95001220703125,220.95001220703125,49,52,0,False,0.0,auto_classified,"two stable x-clusters, gap=221pt, left_n=49, right_n=52, left_span=684, right_span=739"
+260,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=239, second=145)"
+261,two_column,two_column_left_then_right,0.85,63.0,337.95001220703125,231.75001525878906,50,54,0,False,0.0,auto_classified,"two stable x-clusters, gap=232pt, left_n=50, right_n=54, left_span=683, right_span=739"
+262,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=145)"
+263,two_column,two_column_left_then_right,0.85,63.0,337.95001220703125,162.97140502929688,40,51,0,False,0.0,auto_classified,"two stable x-clusters, gap=163pt, left_n=40, right_n=51, left_span=680, right_span=739"
+264,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=145)"
+265,two_column,two_column_left_then_right,0.85,80.8281021118164,337.95001220703125,163.97140502929688,37,52,0,False,0.0,auto_classified,"two stable x-clusters, gap=164pt, left_n=37, right_n=52, left_span=684, right_span=739"
+266,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=145)"
+267,two_column,two_column_left_then_right,0.85,63.0,337.95001220703125,231.75001525878906,46,55,0,False,0.0,auto_classified,"two stable x-clusters, gap=232pt, left_n=46, right_n=55, left_span=684, right_span=739"
+268,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=145)"
+269,two_column,two_column_left_then_right,0.85,63.0,337.95001220703125,231.75001525878906,51,52,0,False,0.0,auto_classified,"two stable x-clusters, gap=232pt, left_n=51, right_n=52, left_span=684, right_span=739"
+270,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=145)"
+271,two_column,two_column_left_then_right,0.85,45.20000076293945,337.95001220703125,231.75001525878906,50,54,0,False,0.0,auto_classified,"two stable x-clusters, gap=232pt, left_n=50, right_n=54, left_span=684, right_span=739"
+272,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=145)"
+273,two_column,two_column_left_then_right,0.85,45.20000076293945,355.95001220703125,231.75001525878906,45,51,0,False,0.0,auto_classified,"two stable x-clusters, gap=232pt, left_n=45, right_n=51, left_span=684, right_span=739"
+274,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=170)"
+275,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=237, second=129)"
+276,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,"too few non-table, non-full-width lines (4) to assess columns"
+277,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,"too few non-table, non-full-width lines (10) to assess columns"
+278,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=231, second=146)"
+279,two_column,two_column_left_then_right,0.85,46.0,337.95001220703125,197.10569763183594,49,50,0,False,0.0,auto_classified,"two stable x-clusters, gap=197pt, left_n=49, right_n=50, left_span=684, right_span=739"
+280,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=170)"
+281,single_column,pymupdf_native_order,0.6,,,,14,2,0,False,0.0,auto_classified,"x-gap found (300pt) but failed line-count/span thresholds (left_n=14, right_n=2, left_span=686, right_span=16); treated as single_column (e.g. a small sidebar box, not a real column)"
+282,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=232, second=145)"
+283,two_column,two_column_left_then_right,0.85,45.0,319.95001220703125,231.75001525878906,47,50,0,False,0.0,auto_classified,"two stable x-clusters, gap=232pt, left_n=47, right_n=50, left_span=684, right_span=739"
+284,single_column,pymupdf_native_order,0.6,,,,23,1,0,False,0.0,auto_classified,"x-gap found (420pt) but failed line-count/span thresholds (left_n=23, right_n=1, left_span=739, right_span=16); treated as single_column (e.g. a small sidebar box, not a real column)"
+285,single_column,pymupdf_native_order,0.6,,,,58,2,0,False,0.0,auto_classified,"x-gap found (300pt) but failed line-count/span thresholds (left_n=58, right_n=2, left_span=686, right_span=16); treated as single_column (e.g. a small sidebar box, not a real column)"
+286,two_column,two_column_left_then_right,0.85,58.5,316.0500030517578,231.75001525878906,53,60,0,True,0.007,auto_classified,"two stable x-clusters, gap=232pt, left_n=53, right_n=60, left_span=739, right_span=684"
+287,two_column,two_column_left_then_right,0.85,44.75,355.95001220703125,235.80999755859375,47,43,0,True,0.109,auto_classified,"two stable x-clusters, gap=236pt, left_n=47, right_n=43, left_span=684, right_span=739"
+288,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.053,auto_classified,no x-gap large enough to indicate two columns
+289,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=221, second=120)"
+290,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=239, second=134)"
+291,single_column,pymupdf_native_order,0.6,,,,0,0,0,True,0.288,auto_classified,no x-gap large enough to indicate two columns
+292,single_column,pymupdf_native_order,0.6,,,,52,1,0,False,0.0,auto_classified,"x-gap found (427pt) but failed line-count/span thresholds (left_n=52, right_n=1, left_span=739, right_span=16); treated as single_column (e.g. a small sidebar box, not a real column)"
+293,table_dominant,pymupdf_native_order,0.7,,,,0,0,0,True,0.796,auto_classified,table_area_fraction=0.80 >= 0.4
+294,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=240, second=187)"
+295,two_column,two_column_left_then_right,0.85,45.0,319.95001220703125,274.95001220703125,44,47,0,False,0.0,auto_classified,"two stable x-clusters, gap=275pt, left_n=44, right_n=47, left_span=684, right_span=739"
+296,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=240, second=187)"
+297,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=239, second=124)"
+298,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=240, second=187)"
+299,two_column,two_column_left_then_right,0.85,45.0,319.95001220703125,273.94001388549805,37,49,0,False,0.0,auto_classified,"two stable x-clusters, gap=274pt, left_n=37, right_n=49, left_span=684, right_span=739"
+300,multi_column_or_complex,complex_layout_native_order_retained,0.4,,,,0,0,0,False,0.0,manual_review_required,"3+ unstable x-clusters detected (largest_gap=240, second=170)"
+301,two_column,two_column_left_then_right,0.85,45.0,319.95001220703125,256.95001220703125,45,21,0,False,0.0,auto_classified,"two stable x-clusters, gap=257pt, left_n=45, right_n=21, left_span=684, right_span=739"
+302,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,"too few non-table, non-full-width lines (4) to assess columns"
+303,table_dominant,pymupdf_native_order,0.7,,,,0,0,0,True,0.628,auto_classified,table_area_fraction=0.63 >= 0.4
+304,single_column,pymupdf_native_order,0.6,,,,0,0,0,False,0.0,auto_classified,"too few non-table, non-full-width lines (4) to assess columns"

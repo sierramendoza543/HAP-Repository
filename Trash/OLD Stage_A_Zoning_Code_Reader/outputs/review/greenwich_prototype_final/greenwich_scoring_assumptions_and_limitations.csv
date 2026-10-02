@@ -1,0 +1,9 @@
+assumption_or_limitation
+"This is a single-town (N=1) prototype score, not a statewide percentile. It cannot be compared across towns or published as a Connecticut ranking."
+The 10-component rubric and its band thresholds are prototype engineering choices documented in greenwich_prototype_scoring_rubric.csv -- not empirically derived or statewide-validated cut points.
+"The height-constraint rubric's 3.0-3.5 story band was added to fill a gap in the source example rubric (which only specified <=2.5, 3, and >=4 stories); Greenwich's real RA-4 value (3.5 stories) required this explicit extension."
+"maximum_lot_coverage_pct is not_applicable for RA-4 and is reported as an informational field only -- it is never scored as 0, 100, or any other value. Minimum green area is scored in its place as the real, numeric physical-site constraint Greenwich actually imposes."
+"minimum_off_street_parking_spaces_per_dwelling_unit is not_applicable to the numeric Version 1 schema field; the scored parking_regime component instead categorizes the qualitative 'sufficient space' standard found in §6-154, rather than treating the missing numeric value as zero."
+"maximum_building_height_ft remains missing under the Version 1 schema (no feet-based value exists in the ordinance); the scored height_constraint_stories component uses the stories value instead, as an explicitly different unit."
+"residential_approval_process is a newly derived component, not part of the original eight-variable schema. It reuses the already-confirmed §6-93(a)(1) permitted-use evidence rather than new source material."
+"This notebook does not claim legal validity, legal interpretation, or a final legal conclusion for any extracted provision."
