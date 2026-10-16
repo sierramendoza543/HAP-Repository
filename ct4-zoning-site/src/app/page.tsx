@@ -33,6 +33,10 @@ export default function Home() {
         <Kpi label="Most restrictive" value={mostRestrictive.name} sub={mostRestrictive.composite_score.toFixed(1)} />
         <Kpi label="Least restrictive" value={leastRestrictive.name} sub={leastRestrictive.composite_score.toFixed(1)} />
       </section>
+      <p className="text-xs text-(--ink-dim) pt-2">
+        These five figures are computed directly from the per-town data below &mdash; not
+        independent facts, so no separate citation applies to them.
+      </p>
 
       <section className="py-6 border-b border-(--rule)">
         <h2 className="text-base font-semibold mb-1">All Towns</h2>
@@ -41,6 +45,11 @@ export default function Home() {
           source citations.
         </p>
         <OverviewTable towns={towns} />
+        <p className="text-xs text-(--ink-dim) mt-2">
+          Population and the five metric columns: National Zoning Atlas Jurisdiction Snapshots
+          (cited per-number on each town&rsquo;s page). Score: our own formula over those cited
+          metrics &mdash; see a town&rsquo;s page for the exact weights.
+        </p>
       </section>
 
       <section className="py-6 border-b border-(--rule) grid lg:grid-cols-2 gap-6">
@@ -50,6 +59,9 @@ export default function Home() {
             Hover a point for the town; click to open it. Color follows the score band.
           </p>
           <ScoreScatter towns={towns} />
+          <p className="text-xs text-(--ink-dim) mt-2">
+            Population &amp; score source: see table above.
+          </p>
         </div>
         <div>
           <h2 className="text-base font-semibold mb-1">Metric Heatmap</h2>
@@ -57,6 +69,10 @@ export default function Home() {
             Every input to the composite score, town by town. Darker red = more exclusionary.
           </p>
           <MetricHeatmap towns={towns} />
+          <p className="text-xs text-(--ink-dim) mt-2">
+            Source: National Zoning Atlas Jurisdiction Snapshots &mdash; click a town name for the
+            per-number citation.
+          </p>
         </div>
       </section>
 

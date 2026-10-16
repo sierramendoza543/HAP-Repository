@@ -16,6 +16,7 @@ export default async function TownPage({ params }: { params: Promise<{ slug: str
 
   const breakdown = compositeBreakdown(town);
   const verifiedCount = town.variables.filter((v) => v.quote).length;
+  const nzaSource = town.nza_metrics[0].source;
 
   return (
     <div className="px-4 max-w-5xl mx-auto w-full pb-16">
@@ -28,12 +29,19 @@ export default async function TownPage({ params }: { params: Promise<{ slug: str
       <header className="pt-4 pb-5 border-b border-(--rule) flex flex-wrap items-end justify-between gap-4">
         <div>
           <h1 className="text-2xl font-bold mb-1">{town.name}, CT</h1>
-          <p className="text-sm text-(--ink-dim)">
-            Population {town.population.toLocaleString()}
-            {town.land_area_acres ? ` · ${town.land_area_acres.toLocaleString()} acres` : ""}
-            {" · "}
-            {town.variables.length} variables tracked ({verifiedCount} with verified quotes)
-          </p>
+          <div className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-sm text-(--ink-dim)">
+            <span>
+              Population {town.population.toLocaleString()}
+              {town.land_area_acres ? ` · ${town.land_area_acres.toLocaleString()} acres` : ""}
+              {" · "}
+              {town.districts_analyzed} districts analyzed
+            </span>
+            <CitationBadge source={nzaSource} cite="Jurisdiction Snapshot" compact />
+            <span>·</span>
+            <span>
+              {town.variables.length} variables tracked ({verifiedCount} with verified quotes)
+            </span>
+          </div>
         </div>
         <UpdateChecker slug={town.slug} />
       </header>
