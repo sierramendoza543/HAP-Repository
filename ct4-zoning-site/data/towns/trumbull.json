@@ -6,7 +6,232 @@
   "land_area_acres": 14786,
   "districts_analyzed": 25,
   "composite_score": 63.6,
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
+  "restrictive_district": "Residence A/AA/AAA",
+  "permissive_district": "MFO",
+  "variables": [
+    {
+      "category": "Use Permissions",
+      "district": "Residence A/AA/AAA",
+      "label": "Single-family only",
+      "value": "Only use permitted: \"One-Family Dwelling\"",
+      "source": {
+        "kind": "pdf",
+        "id": "trumbull-pdf",
+        "file": "/sources/trumbull-zoning.pdf",
+        "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+        "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+        "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
+        "mirrored_size_bytes": 2219912
+      },
+      "cite": "Art. II §1.1.1",
+      "quote": "Within the Residence AAA, AA or A Zone no Building or Structure shall be erected, altered, occupied or used, arranged or designed to be used for other than one or more of the following specified purposes: 1. One-Family Dwelling;"
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "Residence A",
+      "label": "Min. lot size",
+      "value": "21,780 sq ft (½ acre)",
+      "source": {
+        "kind": "pdf",
+        "id": "trumbull-pdf",
+        "file": "/sources/trumbull-zoning.pdf",
+        "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+        "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+        "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
+        "mirrored_size_bytes": 2219912
+      },
+      "cite": "Art. I §2",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "Residence AA/AAA",
+      "label": "Min. lot size",
+      "value": "43,560 sq ft (1 acre)",
+      "source": {
+        "kind": "pdf",
+        "id": "trumbull-pdf",
+        "file": "/sources/trumbull-zoning.pdf",
+        "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+        "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+        "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
+        "mirrored_size_bytes": 2219912
+      },
+      "cite": "Art. I §2",
+      "quote": null
+    },
+    {
+      "category": "Use Permissions",
+      "district": "Town-wide",
+      "label": "Multifamily rental moratorium",
+      "value": "No new applications above 50 units (except 55+ housing) until Feb. 28, 2027",
+      "source": {
+        "kind": "pdf",
+        "id": "trumbull-pdf",
+        "file": "/sources/trumbull-zoning.pdf",
+        "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+        "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+        "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
+        "mirrored_size_bytes": 2219912
+      },
+      "cite": "Art. XVII",
+      "quote": "the Planning and Zoning Commission hereby declares an immediate moratorium on all applications for, and approvals of, any multi-family residential rental housing to determine the additional need of this type of housing in the Town."
+    },
+    {
+      "category": "Use Permissions",
+      "district": "MFO",
+      "label": "Multifamily",
+      "value": "Special Permit only, existing I-L/I-L2 industrial land ≥10 acres",
+      "source": {
+        "kind": "pdf",
+        "id": "trumbull-pdf",
+        "file": "/sources/trumbull-zoning.pdf",
+        "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+        "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+        "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
+        "mirrored_size_bytes": 2219912
+      },
+      "cite": "§7.6.2",
+      "quote": null
+    },
+    {
+      "category": "Use Permissions",
+      "district": "MFO",
+      "label": "Density / town-wide cap",
+      "value": "20 units/acre, capped at 600 units town-wide",
+      "source": {
+        "kind": "pdf",
+        "id": "trumbull-pdf",
+        "file": "/sources/trumbull-zoning.pdf",
+        "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+        "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+        "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
+        "mirrored_size_bytes": 2219912
+      },
+      "cite": "§7.6.4(1)",
+      "quote": "The maximum number of dwelling units shall be 20 units per acre. The maximum number of dwelling units that may be developed pursuant to this MFO shall be 600, provided that no more than 220 units may be approved by the Commission within any 12 month period."
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "MFO",
+      "label": "Unit types",
+      "value": "1BR (min 700 sf) and 2BR (min 950 sf) only — no studios, no 3BR+",
+      "source": {
+        "kind": "pdf",
+        "id": "trumbull-pdf",
+        "file": "/sources/trumbull-zoning.pdf",
+        "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+        "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+        "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
+        "mirrored_size_bytes": 2219912
+      },
+      "cite": "§7.6.4(9)",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "MFO",
+      "label": "Height cap",
+      "value": "65 ft / 5 stories",
+      "source": {
+        "kind": "pdf",
+        "id": "trumbull-pdf",
+        "file": "/sources/trumbull-zoning.pdf",
+        "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+        "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+        "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
+        "mirrored_size_bytes": 2219912
+      },
+      "cite": "§7.6.4(2)",
+      "quote": null
+    },
+    {
+      "category": "ADU Policy",
+      "district": "Residence A/AA/AAA",
+      "label": "ADU approval pathway",
+      "value": "Administrative (ZEO) if within existing footprint; Special Permit otherwise",
+      "source": {
+        "kind": "pdf",
+        "id": "trumbull-pdf",
+        "file": "/sources/trumbull-zoning.pdf",
+        "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+        "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+        "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
+        "mirrored_size_bytes": 2219912
+      },
+      "cite": "§1.1.2(7)(D)",
+      "quote": null
+    },
+    {
+      "category": "ADU Policy",
+      "district": "Residence A/AA/AAA",
+      "label": "ADU owner-occupancy",
+      "value": "Required for at least one unit",
+      "source": {
+        "kind": "pdf",
+        "id": "trumbull-pdf",
+        "file": "/sources/trumbull-zoning.pdf",
+        "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+        "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+        "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
+        "mirrored_size_bytes": 2219912
+      },
+      "cite": "§1.1.2(7)(C)(b)",
+      "quote": "At least one (1) Dwelling Unit in the converted single-family home shall be owner-occupied"
+    },
+    {
+      "category": "ADU Policy",
+      "district": "Residence A/AA/AAA",
+      "label": "ADU size",
+      "value": "≥300 sq ft, max 30% of principal dwelling's livable floor area",
+      "source": {
+        "kind": "pdf",
+        "id": "trumbull-pdf",
+        "file": "/sources/trumbull-zoning.pdf",
+        "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+        "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+        "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
+        "mirrored_size_bytes": 2219912
+      },
+      "cite": "§1.1.2(7)(C)(a)",
+      "quote": "An accessory apartment must have at least three hundred (300) square feet of Livable Floor Area. Maximum size shall not exceed thirty (30%) per cent of the Livable Floor Area of the Principal Dwelling"
+    },
+    {
+      "category": "ADU Policy",
+      "district": "Residence A/AA/AAA",
+      "label": "ADU deed restriction",
+      "value": "40-year affordable-housing deed restriction under CGS §8-30g(k)",
+      "source": {
+        "kind": "pdf",
+        "id": "trumbull-pdf",
+        "file": "/sources/trumbull-zoning.pdf",
+        "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+        "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+        "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
+        "mirrored_size_bytes": 2219912
+      },
+      "cite": "§1.1.2(7)(D)",
+      "quote": null
+    },
+    {
+      "category": "Parking",
+      "district": "MFO",
+      "label": "Parking",
+      "value": "1.8 spaces/1BR unit, 2.0 spaces/2BR unit, + 1.0 guest space/20 units",
+      "source": {
+        "kind": "pdf",
+        "id": "trumbull-pdf",
+        "file": "/sources/trumbull-zoning.pdf",
+        "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+        "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+        "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
+        "mirrored_size_bytes": 2219912
+      },
+      "cite": "§7.6.4(5)",
+      "quote": null
+    }
+  ],
   "nza_metrics": [
     {
       "label": "2-family housing prohibited",
@@ -72,61 +297,6 @@
     "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
     "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
     "mirrored_size_bytes": 2219912
-  },
-  "restrictive": {
-    "district": "Residence Zone A / AA / AAA",
-    "facts": [
-      {
-        "label": "Single-family only",
-        "value": "Only use permitted: \"One-Family Dwelling\"",
-        "source": {
-          "kind": "pdf",
-          "id": "trumbull-pdf",
-          "file": "/sources/trumbull-zoning.pdf",
-          "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
-          "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
-          "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
-          "mirrored_size_bytes": 2219912
-        },
-        "cite": "Art. II §1.1.1",
-        "quote": "Within the Residence AAA, AA or A Zone no Building or Structure shall be erected, altered, occupied or used, arranged or designed to be used for other than one or more of the following specified purposes: 1. One-Family Dwelling;"
-      },
-      {
-        "label": "Multifamily moratorium (town-wide)",
-        "value": "No new multi-family rental applications above 50 units, except 55+ housing, until Feb. 28, 2027",
-        "source": {
-          "kind": "pdf",
-          "id": "trumbull-pdf",
-          "file": "/sources/trumbull-zoning.pdf",
-          "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
-          "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
-          "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
-          "mirrored_size_bytes": 2219912
-        },
-        "cite": "Art. XVII",
-        "quote": "the Planning and Zoning Commission hereby declares an immediate moratorium on all applications for, and approvals of, any multi-family residential rental housing to determine the additional need of this type of housing in the Town."
-      }
-    ]
-  },
-  "permissive": {
-    "district": "MFO (Multi-Family Overlay)",
-    "facts": [
-      {
-        "label": "Density / town-wide cap",
-        "value": "20 units/acre, capped at 600 units town-wide",
-        "source": {
-          "kind": "pdf",
-          "id": "trumbull-pdf",
-          "file": "/sources/trumbull-zoning.pdf",
-          "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
-          "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
-          "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
-          "mirrored_size_bytes": 2219912
-        },
-        "cite": "§7.6.4(1)",
-        "quote": "The maximum number of dwelling units shall be 20 units per acre. The maximum number of dwelling units that may be developed pursuant to this MFO shall be 600, provided that no more than 220 units may be approved by the Commission within any 12 month period."
-      }
-    ]
   },
   "caveat": "Trumbull currently has a town-wide moratorium on new multifamily rental applications above 50 units (except 55+ housing), expiring Feb. 28, 2027 — a procedural block layered on top of the underlying district-level rules."
 }

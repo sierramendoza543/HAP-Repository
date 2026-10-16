@@ -6,7 +6,147 @@
   "land_area_acres": null,
   "districts_analyzed": 23,
   "composite_score": 55.9,
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
+  "restrictive_district": "CD-1S",
+  "permissive_district": "CD-2",
+  "variables": [
+    {
+      "category": "Use Permissions",
+      "district": "CD-1S",
+      "label": "Two-family & multifamily",
+      "value": "Both \"NP\" (Not Permitted)",
+      "source": {
+        "kind": "pdf",
+        "id": "norwalk-pdf",
+        "file": "/sources/norwalk-art3.pdf",
+        "url": "https://www.norwalkct.gov/DocumentCenter/View/32245",
+        "title": "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)",
+        "content_hash": "37348683dd9cdb60569c4e2b9b30be0f72298f2e366aabc0d0558e221c39fa2c",
+        "mirrored_size_bytes": 119337
+      },
+      "cite": "Table 4.3.9.A",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "CD-1S",
+      "label": "Min. lot size",
+      "value": "6,250 sq ft",
+      "source": {
+        "kind": "pdf",
+        "id": "norwalkbulk-pdf",
+        "file": "/sources/norwalk-bulk.pdf",
+        "url": "https://www.norwalkct.gov/DocumentCenter/View/36646",
+        "title": "Norwalk Bulk & Height Schedule (7/9/2025)",
+        "content_hash": "d61033fcdba50d0a9925bfe88724019f6d316ca07e059f371fdc0a1dc6f08baf",
+        "mirrored_size_bytes": 100451
+      },
+      "cite": "Bulk & Height Schedule (7/9/2025)",
+      "quote": "CD-1S        6,250"
+    },
+    {
+      "category": "ADU Policy",
+      "district": "CD-1S",
+      "label": "ADU",
+      "value": "Permitted by-right with limitations",
+      "source": {
+        "kind": "pdf",
+        "id": "norwalk-pdf",
+        "file": "/sources/norwalk-art3.pdf",
+        "url": "https://www.norwalkct.gov/DocumentCenter/View/32245",
+        "title": "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)",
+        "content_hash": "37348683dd9cdb60569c4e2b9b30be0f72298f2e366aabc0d0558e221c39fa2c",
+        "mirrored_size_bytes": 119337
+      },
+      "cite": "Table 4.3.9.A, §4.3.4.C.3.a",
+      "quote": null
+    },
+    {
+      "category": "Use Permissions",
+      "district": "CD-2",
+      "label": "Two-family",
+      "value": "\"P\" — permitted by right; multifamily still \"NP\"",
+      "source": {
+        "kind": "pdf",
+        "id": "norwalk-pdf",
+        "file": "/sources/norwalk-art3.pdf",
+        "url": "https://www.norwalkct.gov/DocumentCenter/View/32245",
+        "title": "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)",
+        "content_hash": "37348683dd9cdb60569c4e2b9b30be0f72298f2e366aabc0d0558e221c39fa2c",
+        "mirrored_size_bytes": 119337
+      },
+      "cite": "Table 4.3.9.A",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "CD-2",
+      "label": "Min. lot size",
+      "value": "5,000 sq ft",
+      "source": {
+        "kind": "pdf",
+        "id": "norwalkbulk-pdf",
+        "file": "/sources/norwalk-bulk.pdf",
+        "url": "https://www.norwalkct.gov/DocumentCenter/View/36646",
+        "title": "Norwalk Bulk & Height Schedule (7/9/2025)",
+        "content_hash": "d61033fcdba50d0a9925bfe88724019f6d316ca07e059f371fdc0a1dc6f08baf",
+        "mirrored_size_bytes": 100451
+      },
+      "cite": "Bulk & Height Schedule (7/9/2025)",
+      "quote": "CD-2         5,000"
+    },
+    {
+      "category": "ADU Policy",
+      "district": "CD-1S/CD-2",
+      "label": "ADU max size",
+      "value": "1,000 sq ft",
+      "source": {
+        "kind": "pdf",
+        "id": "norwalk-pdf",
+        "file": "/sources/norwalk-art3.pdf",
+        "url": "https://www.norwalkct.gov/DocumentCenter/View/32245",
+        "title": "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)",
+        "content_hash": "37348683dd9cdb60569c4e2b9b30be0f72298f2e366aabc0d0558e221c39fa2c",
+        "mirrored_size_bytes": 119337
+      },
+      "cite": "§4.3.4.C.3.a",
+      "quote": null
+    },
+    {
+      "category": "ADU Policy",
+      "district": "CD-1S/CD-2",
+      "label": "ADU eligibility",
+      "value": "Must be on a lot with a Single-Family Detached Dwelling; 1 per lot, owner must reside on lot",
+      "source": {
+        "kind": "pdf",
+        "id": "norwalk-pdf",
+        "file": "/sources/norwalk-art3.pdf",
+        "url": "https://www.norwalkct.gov/DocumentCenter/View/32245",
+        "title": "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)",
+        "content_hash": "37348683dd9cdb60569c4e2b9b30be0f72298f2e366aabc0d0558e221c39fa2c",
+        "mirrored_size_bytes": 119337
+      },
+      "cite": "§4.3.4.C.3.a",
+      "quote": null
+    },
+    {
+      "category": "Parking",
+      "district": "CD-1S/CD-2",
+      "label": "Parking minimum",
+      "value": "Not regulated for buildings of ≤16 units, except in Traffic Mitigation Districts",
+      "source": {
+        "kind": "pdf",
+        "id": "norwalk-pdf",
+        "file": "/sources/norwalk-art3.pdf",
+        "url": "https://www.norwalkct.gov/DocumentCenter/View/32245",
+        "title": "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)",
+        "content_hash": "37348683dd9cdb60569c4e2b9b30be0f72298f2e366aabc0d0558e221c39fa2c",
+        "mirrored_size_bytes": 119337
+      },
+      "cite": "Table 4.3.12.B-1",
+      "quote": null
+    }
+  ],
   "nza_metrics": [
     {
       "label": "2-family housing prohibited",
@@ -73,75 +213,5 @@
     "content_hash": "37348683dd9cdb60569c4e2b9b30be0f72298f2e366aabc0d0558e221c39fa2c",
     "mirrored_size_bytes": 119337
   },
-  "restrictive": {
-    "district": "CD-1S (Sub-Urban Single-Family)",
-    "facts": [
-      {
-        "label": "Two-family & multifamily",
-        "value": "Both \"NP\" (Not Permitted)",
-        "source": {
-          "kind": "pdf",
-          "id": "norwalk-pdf",
-          "file": "/sources/norwalk-art3.pdf",
-          "url": "https://www.norwalkct.gov/DocumentCenter/View/32245",
-          "title": "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)",
-          "content_hash": "37348683dd9cdb60569c4e2b9b30be0f72298f2e366aabc0d0558e221c39fa2c",
-          "mirrored_size_bytes": 119337
-        },
-        "cite": "Table 4.3.9.A",
-        "quote": null
-      },
-      {
-        "label": "Min. lot size",
-        "value": "6,250 sq ft",
-        "source": {
-          "kind": "pdf",
-          "id": "norwalkbulk-pdf",
-          "file": "/sources/norwalk-bulk.pdf",
-          "url": "https://www.norwalkct.gov/DocumentCenter/View/36646",
-          "title": "Norwalk Bulk & Height Schedule (7/9/2025)",
-          "content_hash": "d61033fcdba50d0a9925bfe88724019f6d316ca07e059f371fdc0a1dc6f08baf",
-          "mirrored_size_bytes": 100451
-        },
-        "cite": "Bulk & Height Schedule (7/9/2025)",
-        "quote": "CD-1S        6,250"
-      }
-    ]
-  },
-  "permissive": {
-    "district": "CD-2 (Sub-Urban Single- & Two-Family)",
-    "facts": [
-      {
-        "label": "Two-family",
-        "value": "\"P\" — permitted by right; multifamily still \"NP\"",
-        "source": {
-          "kind": "pdf",
-          "id": "norwalk-pdf",
-          "file": "/sources/norwalk-art3.pdf",
-          "url": "https://www.norwalkct.gov/DocumentCenter/View/32245",
-          "title": "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)",
-          "content_hash": "37348683dd9cdb60569c4e2b9b30be0f72298f2e366aabc0d0558e221c39fa2c",
-          "mirrored_size_bytes": 119337
-        },
-        "cite": "Table 4.3.9.A",
-        "quote": null
-      },
-      {
-        "label": "Min. lot size",
-        "value": "5,000 sq ft",
-        "source": {
-          "kind": "pdf",
-          "id": "norwalkbulk-pdf",
-          "file": "/sources/norwalk-bulk.pdf",
-          "url": "https://www.norwalkct.gov/DocumentCenter/View/36646",
-          "title": "Norwalk Bulk & Height Schedule (7/9/2025)",
-          "content_hash": "d61033fcdba50d0a9925bfe88724019f6d316ca07e059f371fdc0a1dc6f08baf",
-          "mirrored_size_bytes": 100451
-        },
-        "cite": "Bulk & Height Schedule (7/9/2025)",
-        "quote": "CD-2         5,000"
-      }
-    ]
-  },
-  "caveat": "CD-3/CD-4 allow multifamily by-right-with-limitations, but column alignment for CD-3W/CD-4W sub-variants was ambiguous in the extracted PDF text — not reported to avoid miscitation. The use-permission table itself (Table 4.3.9.A) wasn't in the PDFs mirrored locally, so its two facts above show a citation but not an independently re-verified quote."
+  "caveat": "CD-3/CD-4 allow multifamily by-right-with-limitations, but column alignment for CD-3W/CD-4W sub-variants was ambiguous in the extracted PDF text — not reported to avoid miscitation. The use-permission table (Table 4.3.9.A) and ADU standards (§4.3.4) weren't in the PDFs mirrored locally, so those rows above carry a citation but not an independently re-verified quote."
 }

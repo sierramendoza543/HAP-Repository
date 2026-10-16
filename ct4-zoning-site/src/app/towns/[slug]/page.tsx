@@ -3,45 +3,10 @@ import { notFound } from "next/navigation";
 import { getAllSlugs, getTown, compositeBreakdown } from "@/lib/towns";
 import { CitationBadge } from "@/components/CitationFact";
 import UpdateChecker from "@/components/UpdateChecker";
-import type { DistrictBlock } from "@/lib/types";
+import VariableTable from "@/components/VariableTable";
 
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
-}
-
-function DistrictCard({ block, role }: { block: DistrictBlock; role: "restrictive" | "permissive" }) {
-  return (
-    <div className="border border-(--rule) rounded-xl p-5 bg-(--surface)">
-      <p className="text-xs uppercase tracking-wide font-semibold text-(--ink-dim) mb-1">
-        {role === "restrictive" ? "Most restrictive district" : "Most permissive district"}
-      </p>
-      <h3 className="font-bold text-lg mb-4">{block.district}</h3>
-      <dl className="flex flex-col gap-4">
-        {block.facts.map((f, i) => (
-          <div key={i} className="border-t border-(--rule) pt-3 first:border-t-0 first:pt-0">
-            <div className="flex items-start justify-between gap-3">
-              <div className="min-w-0">
-                <dt className="text-xs uppercase tracking-wide text-(--ink-dim) font-semibold">
-                  {f.label}
-                </dt>
-                <dd className="font-semibold text-sm mt-0.5">{f.value}</dd>
-              </div>
-              <CitationBadge source={f.source} cite={f.cite} quote={f.quote} />
-            </div>
-            {f.quote ? (
-              <blockquote className="mt-2 text-xs italic text-(--ink-dim) border-l-2 border-(--rule) pl-2.5 leading-relaxed">
-                &ldquo;{f.quote}&rdquo;
-              </blockquote>
-            ) : (
-              <p className="mt-2 text-xs text-(--ink-dim)">
-                No verbatim quote independently re-verified yet &mdash; citation only.
-              </p>
-            )}
-          </div>
-        ))}
-      </dl>
-    </div>
-  );
 }
 
 export default async function TownPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -50,40 +15,49 @@ export default async function TownPage({ params }: { params: Promise<{ slug: str
   if (!town) notFound();
 
   const breakdown = compositeBreakdown(town);
+  const verifiedCount = town.variables.filter((v) => v.quote).length;
 
   return (
-    <div className="px-4 max-w-4xl mx-auto w-full pb-16">
+    <div className="px-4 max-w-5xl mx-auto w-full pb-16">
       <div className="pt-6">
         <Link href="/" className="text-sm text-(--ink-dim) hover:text-(--accent)">
           &larr; All 17 towns
         </Link>
       </div>
 
-      <header className="pt-4 pb-6 border-b border-(--rule)">
-        <h1 className="text-3xl font-bold mb-1">{town.name}, CT</h1>
-        <p className="text-sm text-(--ink-dim)">
-          Population {town.population.toLocaleString()}
-          {town.land_area_acres ? ` · ${town.land_area_acres.toLocaleString()} acres` : ""}
-        </p>
+      <header className="pt-4 pb-5 border-b border-(--rule) flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <h1 className="text-2xl font-bold mb-1">{town.name}, CT</h1>
+          <p className="text-sm text-(--ink-dim)">
+            Population {town.population.toLocaleString()}
+            {town.land_area_acres ? ` · ${town.land_area_acres.toLocaleString()} acres` : ""}
+            {" · "}
+            {town.variables.length} variables tracked ({verifiedCount} with verified quotes)
+          </p>
+        </div>
+        <UpdateChecker slug={town.slug} />
       </header>
 
-      <section className="py-6 border-b border-(--rule)">
-        <UpdateChecker slug={town.slug} />
-        <p className="text-xs text-(--ink-dim) mt-2">Last research pass: {town.last_checked}</p>
+      <section className="py-5 border-b border-(--rule) flex flex-wrap gap-4 text-xs text-(--ink-dim)">
+        <span>
+          Restrictive district: <b className="text-(--ink)">{town.restrictive_district}</b>
+        </span>
+        <span>
+          Permissive district: <b className="text-(--ink)">{town.permissive_district}</b>
+        </span>
+        <span>Last research pass: {town.last_checked}</span>
       </section>
 
       <section className="py-6 border-b border-(--rule)">
-        <h2 className="text-xl font-bold mb-1">Evidence We Found</h2>
-        <p className="text-sm text-(--ink-dim) mb-5">
-          Pulled directly from {town.name}&rsquo;s own current zoning regulations. Every value
-          below carries the exact section cited and, where independently re-verified against the
-          source document, the verbatim quote &mdash; click a citation to see it highlighted in
-          the original PDF.
+        <h2 className="text-base font-semibold mb-1">Variables We Found</h2>
+        <p className="text-xs text-(--ink-dim) mb-5 max-w-3xl">
+          Pulled directly from {town.name}&rsquo;s own current zoning regulations, grouped by
+          category. The <span className="text-(--allow) font-semibold">✓</span> icon means
+          the citation includes a verbatim quote independently re-verified against the source
+          document &mdash; click the icon on any row to see it, highlighted in the original PDF
+          where one is mirrored.
         </p>
-        <div className="grid md:grid-cols-2 gap-4">
-          <DistrictCard block={town.restrictive} role="restrictive" />
-          <DistrictCard block={town.permissive} role="permissive" />
-        </div>
+        <VariableTable variables={town.variables} />
         <p className="text-xs text-(--ink-dim) mt-4 bg-(--surface-2) rounded-lg p-3">
           <span className="font-semibold">Caveat:</span> {town.caveat}
         </p>
@@ -92,21 +66,21 @@ export default async function TownPage({ params }: { params: Promise<{ slug: str
       <details className="py-6 group">
         <summary className="cursor-pointer select-none list-none flex items-center justify-between">
           <div>
-            <h2 className="text-xl font-bold inline">Check the NZA&rsquo;s Own Score &amp; Data</h2>
-            <p className="text-sm text-(--ink-dim) mt-1">
+            <h2 className="text-base font-semibold inline">Check the NZA&rsquo;s Own Score &amp; Data</h2>
+            <p className="text-xs text-(--ink-dim) mt-1 max-w-2xl">
               Optional: a second, independent read on {town.name}, from the National Zoning
               Atlas&rsquo;s public town-wide dataset. Different methodology, town-wide rather than
-              district-specific &mdash; see the overview page for how the two relate.
+              district-specific.
             </p>
           </div>
-          <span className="text-2xl text-(--ink-dim) shrink-0 ml-4 group-open:rotate-45 transition-transform">
+          <span className="text-xl text-(--ink-dim) shrink-0 ml-4 group-open:rotate-45 transition-transform">
             +
           </span>
         </summary>
 
         <div className="mt-5 flex items-baseline justify-between border-b border-(--rule) pb-4 mb-5">
           <span className="text-sm text-(--ink-dim)">NZA-derived composite score</span>
-          <span className="font-serif text-3xl font-bold tabular">{town.composite_score.toFixed(1)}</span>
+          <span className="font-bold text-2xl tabular">{town.composite_score.toFixed(1)}</span>
         </div>
 
         <div className="flex flex-col gap-3 mb-6">
@@ -144,7 +118,7 @@ export default async function TownPage({ params }: { params: Promise<{ slug: str
           Composite = weighted average of the three indices above, renormalized by the weight
           actually used (0.70). NZA percentages are town-wide averages across{" "}
           {town.districts_analyzed} districts, not specific to the single restrictive/permissive
-          districts in the Evidence section above.
+          districts in the Variables section above.
         </p>
       </details>
 

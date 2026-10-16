@@ -6,7 +6,151 @@
   "land_area_acres": null,
   "districts_analyzed": 21,
   "composite_score": 61.8,
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
+  "restrictive_district": "RAAA",
+  "permissive_district": "MFDD",
+  "variables": [
+    {
+      "category": "Use Permissions",
+      "district": "RAAA",
+      "label": "Single-family",
+      "value": "Allowed, requires Zoning Permit (ZEO)",
+      "source": {
+        "kind": "link",
+        "id": "ridgefield-link",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+      },
+      "cite": "§3.2.B.1",
+      "quote": null
+    },
+    {
+      "category": "Use Permissions",
+      "district": "RAAA",
+      "label": "2-/3-family",
+      "value": "Bundled & prohibited except by Special Permit in the separate SD R-20 overlay",
+      "source": {
+        "kind": "link",
+        "id": "ridgefield-link",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+      },
+      "cite": "§3.2.C.10.d",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "RAAA",
+      "label": "Min. lot size",
+      "value": "130,680 sq ft (3 acres)",
+      "source": {
+        "kind": "link",
+        "id": "ridgefield-link",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+      },
+      "cite": "§3.5.A table",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "R-7.5",
+      "label": "Min. lot size (least restrictive base district)",
+      "value": "7,500 sq ft",
+      "source": {
+        "kind": "link",
+        "id": "ridgefield-link",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+      },
+      "cite": "§3.5.A table",
+      "quote": null
+    },
+    {
+      "category": "Use Permissions",
+      "district": "MFDD",
+      "label": "Multifamily",
+      "value": "Special Permit only — town's only multifamily pathway",
+      "source": {
+        "kind": "link",
+        "id": "ridgefield-link",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+      },
+      "cite": "§4.2.B",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "MFDD",
+      "label": "Density",
+      "value": "6 units/acre (8 with 15% affordable)",
+      "source": {
+        "kind": "link",
+        "id": "ridgefield-link",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+      },
+      "cite": "§4.2.C",
+      "quote": null
+    },
+    {
+      "category": "ADU Policy",
+      "district": "RAAA",
+      "label": "ADU max size",
+      "value": "900 sq ft (main dwelling <3,000 sf) or 1,200 sq ft (≥3,000 sf)",
+      "source": {
+        "kind": "link",
+        "id": "ridgefield-link",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+      },
+      "cite": "§3.3.B.2",
+      "quote": null
+    },
+    {
+      "category": "ADU Policy",
+      "district": "RAAA",
+      "label": "ADU approval pathway",
+      "value": "Zoning Permit (ZEO), not Special Permit",
+      "source": {
+        "kind": "link",
+        "id": "ridgefield-link",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+      },
+      "cite": "§3.3.B.2",
+      "quote": null
+    },
+    {
+      "category": "Parking",
+      "district": "RAAA",
+      "label": "Parking, one-/two-family",
+      "value": "2 spaces/unit",
+      "source": {
+        "kind": "link",
+        "id": "ridgefield-link",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+      },
+      "cite": "§7.3.B table",
+      "quote": null
+    },
+    {
+      "category": "Parking",
+      "district": "RAAA",
+      "label": "Parking, ADU + principal",
+      "value": "3 spaces combined",
+      "source": {
+        "kind": "link",
+        "id": "ridgefield-link",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+      },
+      "cite": "§3.3.B.2.h",
+      "quote": null
+    }
+  ],
   "nza_metrics": [
     {
       "label": "2-family housing prohibited",
@@ -69,76 +213,6 @@
     "id": "ridgefield-link",
     "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
     "title": "Ridgefield Zoning Regulations (revised through July 2026)"
-  },
-  "restrictive": {
-    "district": "RAAA",
-    "facts": [
-      {
-        "label": "Single-family",
-        "value": "Allowed, requires Zoning Permit (ZEO)",
-        "source": {
-          "kind": "link",
-          "id": "ridgefield-link",
-          "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
-          "title": "Ridgefield Zoning Regulations (revised through July 2026)"
-        },
-        "cite": "§3.2.B.1",
-        "quote": null
-      },
-      {
-        "label": "2-/3-family",
-        "value": "Bundled & prohibited except by Special Permit in the separate SD R-20 overlay",
-        "source": {
-          "kind": "link",
-          "id": "ridgefield-link",
-          "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
-          "title": "Ridgefield Zoning Regulations (revised through July 2026)"
-        },
-        "cite": "§3.2.C.10.d",
-        "quote": null
-      },
-      {
-        "label": "Min. lot size",
-        "value": "130,680 sq ft (3 acres)",
-        "source": {
-          "kind": "link",
-          "id": "ridgefield-link",
-          "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
-          "title": "Ridgefield Zoning Regulations (revised through July 2026)"
-        },
-        "cite": "§3.5.A table",
-        "quote": null
-      }
-    ]
-  },
-  "permissive": {
-    "district": "MFDD (Multi-Family Development District)",
-    "facts": [
-      {
-        "label": "Multifamily",
-        "value": "Special Permit only — town's only multifamily pathway",
-        "source": {
-          "kind": "link",
-          "id": "ridgefield-link",
-          "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
-          "title": "Ridgefield Zoning Regulations (revised through July 2026)"
-        },
-        "cite": "§4.2.B",
-        "quote": null
-      },
-      {
-        "label": "Density",
-        "value": "6 units/acre (8 with 15% affordable)",
-        "source": {
-          "kind": "link",
-          "id": "ridgefield-link",
-          "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
-          "title": "Ridgefield Zoning Regulations (revised through July 2026)"
-        },
-        "cite": "§4.2.C",
-        "quote": null
-      }
-    ]
   },
   "caveat": "Ridgefield has no as-of-right multifamily district of any kind — every multi-unit path requires a discretionary Special Permit hearing. No local PDF mirror exists for Ridgefield, so these facts carry citations but not independently re-verified quotes."
 }

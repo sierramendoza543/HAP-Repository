@@ -6,7 +6,151 @@
   "land_area_acres": null,
   "districts_analyzed": 40,
   "composite_score": 35.2,
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
+  "restrictive_district": "Residence AAA",
+  "permissive_district": "Residence C",
+  "variables": [
+    {
+      "category": "Use Permissions",
+      "district": "Residence AAA",
+      "label": "Two-family / multifamily",
+      "value": "Prohibited as normal use (only via §32-12 Special Permit)",
+      "source": {
+        "kind": "link",
+        "id": "westport-link",
+        "url": "https://online.encodeplus.com/regs/westport-ct/",
+        "title": "Westport Zoning Regulations (eff. April 12, 2024)"
+      },
+      "cite": "§11-2.1.1 / §11-2.3.16",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "Residence AAA",
+      "label": "Min. lot size",
+      "value": "2 acres",
+      "source": {
+        "kind": "link",
+        "id": "westport-link",
+        "url": "https://online.encodeplus.com/regs/westport-ct/",
+        "title": "Westport Zoning Regulations (eff. April 12, 2024)"
+      },
+      "cite": "§11-3",
+      "quote": null
+    },
+    {
+      "category": "Use Permissions",
+      "district": "Residence C",
+      "label": "Two-family",
+      "value": "Allowed BY RIGHT as a principal use",
+      "source": {
+        "kind": "link",
+        "id": "westport-link",
+        "url": "https://online.encodeplus.com/regs/westport-ct/",
+        "title": "Westport Zoning Regulations (eff. April 12, 2024)"
+      },
+      "cite": "§18-2.1.2",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "Residence C",
+      "label": "Max density",
+      "value": "10 units/gross acre",
+      "source": {
+        "kind": "link",
+        "id": "westport-link",
+        "url": "https://online.encodeplus.com/regs/westport-ct/",
+        "title": "Westport Zoning Regulations (eff. April 12, 2024)"
+      },
+      "cite": "§18-4.1",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "Residence C",
+      "label": "Town-wide aggregate cap",
+      "value": "120 total dwelling units under this zone",
+      "source": {
+        "kind": "link",
+        "id": "westport-link",
+        "url": "https://online.encodeplus.com/regs/westport-ct/",
+        "title": "Westport Zoning Regulations (eff. April 12, 2024)"
+      },
+      "cite": "§18-4.2",
+      "quote": null
+    },
+    {
+      "category": "Use Permissions",
+      "district": "Residence C",
+      "label": "Affordability requirement",
+      "value": "≥15% of market-rate units workforce/affordable (or 17.5% fee-in-lieu)",
+      "source": {
+        "kind": "link",
+        "id": "westport-link",
+        "url": "https://online.encodeplus.com/regs/westport-ct/",
+        "title": "Westport Zoning Regulations (eff. April 12, 2024)"
+      },
+      "cite": "§18-17.1-2",
+      "quote": null
+    },
+    {
+      "category": "ADU Policy",
+      "district": "Residence AAA",
+      "label": "ADU max size (structural, no owner-occ.)",
+      "value": "850 sq ft (≤1.5 ac) / 1,000 sq ft (>1.5 ac)",
+      "source": {
+        "kind": "link",
+        "id": "westport-link",
+        "url": "https://online.encodeplus.com/regs/westport-ct/",
+        "title": "Westport Zoning Regulations (eff. April 12, 2024)"
+      },
+      "cite": "§11-2.4.8A",
+      "quote": null
+    },
+    {
+      "category": "ADU Policy",
+      "district": "Residence AAA",
+      "label": "ADU max size (internal apartment, owner-occ. req.)",
+      "value": "1,500 sq ft or 25% of total floor area, whichever smaller",
+      "source": {
+        "kind": "link",
+        "id": "westport-link",
+        "url": "https://online.encodeplus.com/regs/westport-ct/",
+        "title": "Westport Zoning Regulations (eff. April 12, 2024)"
+      },
+      "cite": "§11-2.4.12A",
+      "quote": null
+    },
+    {
+      "category": "ADU Policy",
+      "district": "Residence C",
+      "label": "ADU availability",
+      "value": "Excluded — §11-2.4.12 accessory apartment provision not carried over",
+      "source": {
+        "kind": "link",
+        "id": "westport-link",
+        "url": "https://online.encodeplus.com/regs/westport-ct/",
+        "title": "Westport Zoning Regulations (eff. April 12, 2024)"
+      },
+      "cite": "§18-2.2.1",
+      "quote": null
+    },
+    {
+      "category": "Parking",
+      "district": "Town-wide",
+      "label": "Parking, developments ≤16 units",
+      "value": "No minimum (2026 amendment, §34-14.1), except in a Conservation & Traffic Mitigation District",
+      "source": {
+        "kind": "link",
+        "id": "westport-link",
+        "url": "https://online.encodeplus.com/regs/westport-ct/",
+        "title": "Westport Zoning Regulations (eff. April 12, 2024)"
+      },
+      "cite": "§34-14.1",
+      "quote": null
+    }
+  ],
   "nza_metrics": [
     {
       "label": "2-family housing prohibited",
@@ -69,64 +213,6 @@
     "id": "westport-link",
     "url": "https://online.encodeplus.com/regs/westport-ct/",
     "title": "Westport Zoning Regulations (eff. April 12, 2024)"
-  },
-  "restrictive": {
-    "district": "Residence AAA",
-    "facts": [
-      {
-        "label": "Two-family / multifamily",
-        "value": "Prohibited as normal use (only via §32-12 \"Inclusionary Two-Family and Multifamily Dwellings\" Special Permit)",
-        "source": {
-          "kind": "link",
-          "id": "westport-link",
-          "url": "https://online.encodeplus.com/regs/westport-ct/",
-          "title": "Westport Zoning Regulations (eff. April 12, 2024)"
-        },
-        "cite": "§11-2.1.1 / §11-2.3.16",
-        "quote": null
-      },
-      {
-        "label": "Min. lot size",
-        "value": "2 acres",
-        "source": {
-          "kind": "link",
-          "id": "westport-link",
-          "url": "https://online.encodeplus.com/regs/westport-ct/",
-          "title": "Westport Zoning Regulations (eff. April 12, 2024)"
-        },
-        "cite": "§11-3",
-        "quote": null
-      }
-    ]
-  },
-  "permissive": {
-    "district": "Residence C",
-    "facts": [
-      {
-        "label": "Two-family",
-        "value": "Allowed BY RIGHT as a principal use",
-        "source": {
-          "kind": "link",
-          "id": "westport-link",
-          "url": "https://online.encodeplus.com/regs/westport-ct/",
-          "title": "Westport Zoning Regulations (eff. April 12, 2024)"
-        },
-        "cite": "§18-2.1.2",
-        "quote": null
-      },
-      {
-        "label": "Max density",
-        "value": "Up to 10 units/gross acre",
-        "source": {
-          "kind": "link",
-          "id": "westport-link",
-          "url": "https://online.encodeplus.com/regs/westport-ct/",
-          "title": "Westport Zoning Regulations (eff. April 12, 2024)"
-        },
-        "cite": "§18-4.1",
-        "quote": null
-      }
-    ]
   },
   "caveat": "A 2026 amendment (§34-14.1) eliminated minimum parking entirely for residential developments of 16 units or fewer townwide. No local PDF mirror exists for Westport (browsable encodeplus code site, not a single PDF), so these facts carry citations but not independently re-verified quotes."
 }

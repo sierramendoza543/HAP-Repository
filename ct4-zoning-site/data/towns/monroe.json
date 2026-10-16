@@ -6,7 +6,181 @@
   "land_area_acres": 16323,
   "districts_analyzed": 16,
   "composite_score": 72.8,
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
+  "restrictive_district": "RF-1",
+  "permissive_district": "MFR",
+  "variables": [
+    {
+      "category": "Use Permissions",
+      "district": "RF-1",
+      "label": "Multifamily (incl. 2-unit, by Monroe's own definition)",
+      "value": "Prohibited (\"x\")",
+      "source": {
+        "kind": "pdf",
+        "id": "monroe-pdf",
+        "file": "/sources/monroe-zoning.pdf",
+        "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+        "title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+        "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
+        "mirrored_size_bytes": 2417109
+      },
+      "cite": "§10.1 Use Schedule",
+      "quote": "Multi-Family Dwelling                     x      x       x      x     SEP     x    SEP     X       x          x     X       x        x        x"
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "RF-1",
+      "label": "Min. lot size",
+      "value": "43,560 sq ft (1 acre)",
+      "source": {
+        "kind": "pdf",
+        "id": "monroe-pdf",
+        "file": "/sources/monroe-zoning.pdf",
+        "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+        "title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+        "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
+        "mirrored_size_bytes": 2417109
+      },
+      "cite": "Art. 3 §3.1.4(A)",
+      "quote": "RF-1:43560 sq. ft."
+    },
+    {
+      "category": "Use Permissions",
+      "district": "MFR",
+      "label": "Multifamily density",
+      "value": "2.5 units/gross acre (attached)",
+      "source": {
+        "kind": "pdf",
+        "id": "monroe-pdf",
+        "file": "/sources/monroe-zoning.pdf",
+        "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+        "title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+        "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
+        "mirrored_size_bytes": 2417109
+      },
+      "cite": "§3.4.5(A)(1)",
+      "quote": "Attached single-family units: two-and-half (2.5) units per gross acre of the parcel"
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "MFR",
+      "label": "Min. parcel to create district",
+      "value": "70 contiguous acres",
+      "source": {
+        "kind": "pdf",
+        "id": "monroe-pdf",
+        "file": "/sources/monroe-zoning.pdf",
+        "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+        "title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+        "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
+        "mirrored_size_bytes": 2417109
+      },
+      "cite": "§3.4.5(B)",
+      "quote": "Minimum parcel size shall be seventy (70) acres under same ownership in a single continuous"
+    },
+    {
+      "category": "ADU Policy",
+      "district": "RF-1/RF-2/RF-3",
+      "label": "ADU approval pathway",
+      "value": "By-right (\"ACC\" — Certificate of Use, no special-permit hearing)",
+      "source": {
+        "kind": "pdf",
+        "id": "monroe-pdf",
+        "file": "/sources/monroe-zoning.pdf",
+        "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+        "title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+        "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
+        "mirrored_size_bytes": 2417109
+      },
+      "cite": "§6.9.2(H)",
+      "quote": null
+    },
+    {
+      "category": "ADU Policy",
+      "district": "RF-1/RF-2",
+      "label": "ADU attachment requirement",
+      "value": "Attached only (RF-3 also permits detached)",
+      "source": {
+        "kind": "pdf",
+        "id": "monroe-pdf",
+        "file": "/sources/monroe-zoning.pdf",
+        "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+        "title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+        "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
+        "mirrored_size_bytes": 2417109
+      },
+      "cite": "§6.9.1(B)",
+      "quote": null
+    },
+    {
+      "category": "ADU Policy",
+      "district": "Town-wide",
+      "label": "ADU owner-occupancy",
+      "value": "Required at all times",
+      "source": {
+        "kind": "pdf",
+        "id": "monroe-pdf",
+        "file": "/sources/monroe-zoning.pdf",
+        "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+        "title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+        "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
+        "mirrored_size_bytes": 2417109
+      },
+      "cite": "§6.9.2(A)",
+      "quote": "Either the principal dwelling or accessory apartment shall be occupied by the owner of the premises at all times."
+    },
+    {
+      "category": "ADU Policy",
+      "district": "Town-wide",
+      "label": "ADU size range",
+      "value": "400–1,000 sq ft, max 1 bedroom, ≤30% of gross livable floor area",
+      "source": {
+        "kind": "pdf",
+        "id": "monroe-pdf",
+        "file": "/sources/monroe-zoning.pdf",
+        "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+        "title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+        "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
+        "mirrored_size_bytes": 2417109
+      },
+      "cite": "§6.9.1(C)",
+      "quote": "Living area of an accessory apartment shall contain a minimum of four-hundred (400) square feet and shall not exceed a maximum of one-thousand (1,000) square feet; there shall be no more than one (1) bedroom in such apartment."
+    },
+    {
+      "category": "Parking",
+      "district": "Town-wide",
+      "label": "Parking, studio/1BR",
+      "value": "1.0 space/unit",
+      "source": {
+        "kind": "pdf",
+        "id": "monroe-pdf",
+        "file": "/sources/monroe-zoning.pdf",
+        "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+        "title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+        "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
+        "mirrored_size_bytes": 2417109
+      },
+      "cite": "§10.2 Schedule",
+      "quote": null
+    },
+    {
+      "category": "Parking",
+      "district": "Town-wide",
+      "label": "Parking, 2BR+",
+      "value": "2.0 spaces/unit",
+      "source": {
+        "kind": "pdf",
+        "id": "monroe-pdf",
+        "file": "/sources/monroe-zoning.pdf",
+        "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+        "title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+        "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
+        "mirrored_size_bytes": 2417109
+      },
+      "cite": "§10.2 Schedule",
+      "quote": null
+    }
+  ],
   "nza_metrics": [
     {
       "label": "2-family housing prohibited",
@@ -72,76 +246,6 @@
     "title": "Monroe Zoning Regulations (amended through July 2, 2026)",
     "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
     "mirrored_size_bytes": 2417109
-  },
-  "restrictive": {
-    "district": "RF-1 (Residential and Farming District 1)",
-    "facts": [
-      {
-        "label": "Multifamily (incl. 2-unit, by Monroe's own definition)",
-        "value": "Prohibited (\"x\") in RF-1",
-        "source": {
-          "kind": "pdf",
-          "id": "monroe-pdf",
-          "file": "/sources/monroe-zoning.pdf",
-          "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
-          "title": "Monroe Zoning Regulations (amended through July 2, 2026)",
-          "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
-          "mirrored_size_bytes": 2417109
-        },
-        "cite": "§10.1 Use Schedule",
-        "quote": "Multi-Family Dwelling                     x      x       x      x     SEP     x    SEP     X       x          x     X       x        x        x"
-      },
-      {
-        "label": "Min. lot size",
-        "value": "43,560 sq ft (1 acre)",
-        "source": {
-          "kind": "pdf",
-          "id": "monroe-pdf",
-          "file": "/sources/monroe-zoning.pdf",
-          "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
-          "title": "Monroe Zoning Regulations (amended through July 2, 2026)",
-          "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
-          "mirrored_size_bytes": 2417109
-        },
-        "cite": "Art. 3 §3.1.4(A)",
-        "quote": "RF-1:43560 sq. ft."
-      }
-    ]
-  },
-  "permissive": {
-    "district": "MFR (Multifamily Residence District)",
-    "facts": [
-      {
-        "label": "Multifamily density",
-        "value": "2.5 units/gross acre (attached)",
-        "source": {
-          "kind": "pdf",
-          "id": "monroe-pdf",
-          "file": "/sources/monroe-zoning.pdf",
-          "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
-          "title": "Monroe Zoning Regulations (amended through July 2, 2026)",
-          "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
-          "mirrored_size_bytes": 2417109
-        },
-        "cite": "§3.4.5(A)(1)",
-        "quote": "Attached single-family units: two-and-half (2.5) units per gross acre of the parcel"
-      },
-      {
-        "label": "Min. parcel to create district",
-        "value": "70 contiguous acres",
-        "source": {
-          "kind": "pdf",
-          "id": "monroe-pdf",
-          "file": "/sources/monroe-zoning.pdf",
-          "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
-          "title": "Monroe Zoning Regulations (amended through July 2, 2026)",
-          "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
-          "mirrored_size_bytes": 2417109
-        },
-        "cite": "§3.4.5(B)",
-        "quote": "Minimum parcel size shall be seventy (70) acres under same ownership in a single continuous"
-      }
-    ]
   },
   "caveat": "Monroe's code does not distinguish a 3-unit tier from larger multifamily — its own definition of \"multi-family\" legally includes buildings with as few as 2 units."
 }

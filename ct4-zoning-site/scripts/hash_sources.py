@@ -28,9 +28,8 @@ for fp in glob.glob(os.path.join(TOWNS_DIR, "*.json")):
     with open(fp) as f:
         town = json.load(f)
     town["primary_source"] = stamp_source(town["primary_source"])
-    for block_name in ("restrictive", "permissive"):
-        for fact in town[block_name]["facts"]:
-            fact["source"] = stamp_source(fact["source"])
+    for var in town["variables"]:
+        var["source"] = stamp_source(var["source"])
     for m in town["nza_metrics"]:
         m["source"] = stamp_source(m["source"])
     with open(fp, "w") as f:

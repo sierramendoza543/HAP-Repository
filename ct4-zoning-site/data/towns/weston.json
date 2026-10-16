@@ -6,7 +6,137 @@
   "land_area_acres": 12157,
   "districts_analyzed": 3,
   "composite_score": 100.0,
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
+  "restrictive_district": "R-2A",
+  "permissive_district": "Village District / VD-R",
+  "variables": [
+    {
+      "category": "Use Permissions",
+      "district": "R-2A",
+      "label": "Entire town's base zone",
+      "value": "2-/3-/4+-family prohibited, not addressed anywhere in the code",
+      "source": {
+        "kind": "link",
+        "id": "weston-link",
+        "url": "https://www.westonct.gov/home/showpublisheddocument/15463/638937003479630000",
+        "title": "Weston Zoning Regulations (amended through July 7, 2025)"
+      },
+      "cite": "Sec. 321",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "R-2A",
+      "label": "Min. lot size",
+      "value": "2 acres",
+      "source": {
+        "kind": "link",
+        "id": "weston-link",
+        "url": "https://www.westonct.gov/home/showpublisheddocument/15463/638937003479630000",
+        "title": "Weston Zoning Regulations (amended through July 7, 2025)"
+      },
+      "cite": "Sec. 321",
+      "quote": null
+    },
+    {
+      "category": "Use Permissions",
+      "district": "Village District / VD-R",
+      "label": "All uses, incl. multifamily",
+      "value": "Require Special Permit",
+      "source": {
+        "kind": "link",
+        "id": "weston-link",
+        "url": "https://www.westonct.gov/home/showpublisheddocument/15463/638937003479630000",
+        "title": "Weston Zoning Regulations (amended through July 7, 2025)"
+      },
+      "cite": "Sec. 322",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "Village District / VD-R",
+      "label": "Min. lot size (zone)",
+      "value": "1 acre, 200 ft min. width and depth",
+      "source": {
+        "kind": "link",
+        "id": "weston-link",
+        "url": "https://www.westonct.gov/home/showpublisheddocument/15463/638937003479630000",
+        "title": "Weston Zoning Regulations (amended through July 7, 2025)"
+      },
+      "cite": "Sec. 322",
+      "quote": null
+    },
+    {
+      "category": "Use Permissions",
+      "district": "Village District / VD-R",
+      "label": "Affordability",
+      "value": "5+ unit projects must set aside ≥15% affordable",
+      "source": {
+        "kind": "link",
+        "id": "weston-link",
+        "url": "https://www.westonct.gov/home/showpublisheddocument/15463/638937003479630000",
+        "title": "Weston Zoning Regulations (amended through July 7, 2025)"
+      },
+      "cite": "Sec. 322",
+      "quote": null
+    },
+    {
+      "category": "Use Permissions",
+      "district": "VD-R",
+      "label": "Unit size cap (2025 amendment, unverified)",
+      "value": "2 bedrooms / 1,200 sq ft max",
+      "source": {
+        "kind": "link",
+        "id": "weston-link",
+        "url": "https://www.westonct.gov/home/showpublisheddocument/15463/638937003479630000",
+        "title": "Weston Zoning Regulations (amended through July 7, 2025)"
+      },
+      "cite": "§322.3(c)(ii)",
+      "quote": null
+    },
+    {
+      "category": "ADU Policy",
+      "district": "R-2A",
+      "label": "ADU max size",
+      "value": "Lesser of 25% of dwelling floor area or 800 sq ft",
+      "source": {
+        "kind": "link",
+        "id": "weston-link",
+        "url": "https://www.westonct.gov/home/showpublisheddocument/15463/638937003479630000",
+        "title": "Weston Zoning Regulations (amended through July 7, 2025)"
+      },
+      "cite": "Sec. 345.4",
+      "quote": null
+    },
+    {
+      "category": "ADU Policy",
+      "district": "R-2A",
+      "label": "ADU owner-occupancy",
+      "value": "Required",
+      "source": {
+        "kind": "link",
+        "id": "weston-link",
+        "url": "https://www.westonct.gov/home/showpublisheddocument/15463/638937003479630000",
+        "title": "Weston Zoning Regulations (amended through July 7, 2025)"
+      },
+      "cite": "Sec. 345.5",
+      "quote": null
+    },
+    {
+      "category": "Parking",
+      "district": "Village District / VD-R",
+      "label": "Parking",
+      "value": "1 space (1BR unit); 2 spaces (2+BR unit)",
+      "source": {
+        "kind": "link",
+        "id": "weston-link",
+        "url": "https://www.westonct.gov/home/showpublisheddocument/15463/638937003479630000",
+        "title": "Weston Zoning Regulations (amended through July 7, 2025)"
+      },
+      "cite": "Sec. 363(b)-(d)",
+      "quote": null
+    }
+  ],
   "nza_metrics": [
     {
       "label": "2-family housing prohibited",
@@ -70,63 +200,5 @@
     "url": "https://www.westonct.gov/home/showpublisheddocument/15463/638937003479630000",
     "title": "Weston Zoning Regulations (amended through July 7, 2025)"
   },
-  "restrictive": {
-    "district": "R-2A (Two Acre Residential and Farming District)",
-    "facts": [
-      {
-        "label": "Entire town's base zone",
-        "value": "2-/3-/4+-family prohibited, not addressed anywhere in the code",
-        "source": {
-          "kind": "link",
-          "id": "weston-link",
-          "url": "https://www.westonct.gov/home/showpublisheddocument/15463/638937003479630000",
-          "title": "Weston Zoning Regulations (amended through July 7, 2025)"
-        },
-        "cite": "Sec. 321",
-        "quote": null
-      },
-      {
-        "label": "Min. lot size",
-        "value": "2 acres",
-        "source": {
-          "kind": "link",
-          "id": "weston-link",
-          "url": "https://www.westonct.gov/home/showpublisheddocument/15463/638937003479630000",
-          "title": "Weston Zoning Regulations (amended through July 7, 2025)"
-        },
-        "cite": "Sec. 321",
-        "quote": null
-      }
-    ]
-  },
-  "permissive": {
-    "district": "Village District / VD-R",
-    "facts": [
-      {
-        "label": "All uses, incl. multifamily",
-        "value": "Require Special Permit",
-        "source": {
-          "kind": "link",
-          "id": "weston-link",
-          "url": "https://www.westonct.gov/home/showpublisheddocument/15463/638937003479630000",
-          "title": "Weston Zoning Regulations (amended through July 7, 2025)"
-        },
-        "cite": "Sec. 322",
-        "quote": null
-      },
-      {
-        "label": "Affordability",
-        "value": "5+ unit projects must set aside ≥15% affordable",
-        "source": {
-          "kind": "link",
-          "id": "weston-link",
-          "url": "https://www.westonct.gov/home/showpublisheddocument/15463/638937003479630000",
-          "title": "Weston Zoning Regulations (amended through July 7, 2025)"
-        },
-        "cite": "Sec. 322",
-        "quote": null
-      }
-    ]
-  },
-  "caveat": "Town's own PDF was blocked by a bot-detection wall during research; base-district figures came from a 2021-dated third-party copy (no local mirror exists, so no quotes could be independently re-verified), and the R-2A parking minimum could not be located at all — flagged for direct verification with Weston Land Use."
+  "caveat": "Town's own PDF was blocked by a bot-detection wall during research; base-district figures came from a 2021-dated third-party copy (no local mirror exists, so no quotes could be independently re-verified), and the R-2A single-family parking minimum could not be located at all — flagged for direct verification with Weston Land Use."
 }

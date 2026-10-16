@@ -6,7 +6,232 @@
   "land_area_acres": 23707,
   "districts_analyzed": 46,
   "composite_score": 64.7,
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
+  "restrictive_district": "R-20",
+  "permissive_district": "R-6",
+  "variables": [
+    {
+      "category": "Use Permissions",
+      "district": "R-20",
+      "label": "District definition",
+      "value": "One-Family Residence District",
+      "source": {
+        "kind": "pdf",
+        "id": "stamford-pdf",
+        "file": "/sources/stamford-zoning.pdf",
+        "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+        "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+        "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
+        "mirrored_size_bytes": 3727499
+      },
+      "cite": "Table I; §1-2",
+      "quote": "R-20              One-Family Residence District"
+    },
+    {
+      "category": "Use Permissions",
+      "district": "R-20",
+      "label": "Two-family / multifamily",
+      "value": "Both prohibited",
+      "source": {
+        "kind": "pdf",
+        "id": "stamford-pdf",
+        "file": "/sources/stamford-zoning.pdf",
+        "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+        "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+        "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
+        "mirrored_size_bytes": 3727499
+      },
+      "cite": "Table I",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "R-20",
+      "label": "Min. lot size",
+      "value": "20,000 sq ft",
+      "source": {
+        "kind": "pdf",
+        "id": "stamford-pdf",
+        "file": "/sources/stamford-zoning.pdf",
+        "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+        "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+        "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
+        "mirrored_size_bytes": 3727499
+      },
+      "cite": "Table II, Appendix B",
+      "quote": "R-20          20000   100   100   20000     1    2½    30    15"
+    },
+    {
+      "category": "Use Permissions",
+      "district": "R-6",
+      "label": "District definition",
+      "value": "One-Family, Two-Family Residence District",
+      "source": {
+        "kind": "pdf",
+        "id": "stamford-pdf",
+        "file": "/sources/stamford-zoning.pdf",
+        "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+        "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+        "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
+        "mirrored_size_bytes": 3727499
+      },
+      "cite": "Table I; §1-2",
+      "quote": "R-6               One-Family, Two-Family Residence District"
+    },
+    {
+      "category": "Use Permissions",
+      "district": "R-6",
+      "label": "Two-family",
+      "value": "Allowed by-right",
+      "source": {
+        "kind": "pdf",
+        "id": "stamford-pdf",
+        "file": "/sources/stamford-zoning.pdf",
+        "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+        "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+        "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
+        "mirrored_size_bytes": 3727499
+      },
+      "cite": "Table I",
+      "quote": null
+    },
+    {
+      "category": "Use Permissions",
+      "district": "R-6",
+      "label": "Multifamily (3+)",
+      "value": "Still prohibited",
+      "source": {
+        "kind": "pdf",
+        "id": "stamford-pdf",
+        "file": "/sources/stamford-zoning.pdf",
+        "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+        "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+        "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
+        "mirrored_size_bytes": 3727499
+      },
+      "cite": "Table I",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "R-6",
+      "label": "Min. lot size",
+      "value": "5,000 sq ft (1F) / 6,000 sq ft (2F)",
+      "source": {
+        "kind": "pdf",
+        "id": "stamford-pdf",
+        "file": "/sources/stamford-zoning.pdf",
+        "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+        "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+        "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
+        "mirrored_size_bytes": 3727499
+      },
+      "cite": "Table II, Appendix B",
+      "quote": "R-6           5000     50      -              -      1(19)      2½        30"
+    },
+    {
+      "category": "ADU Policy",
+      "district": "Town-wide",
+      "label": "ADU eligibility",
+      "value": "Only lots with ≤1 single-family dwelling and ≥10,000 sq ft lot area",
+      "source": {
+        "kind": "pdf",
+        "id": "stamford-pdf",
+        "file": "/sources/stamford-zoning.pdf",
+        "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+        "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+        "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
+        "mirrored_size_bytes": 3727499
+      },
+      "cite": "ADU definition, §222-28",
+      "quote": "ADUs shall only be permitted on Lots containing no more than one (1) Single-Family Dwelling and which have a Lot Area of at least 10,000sf"
+    },
+    {
+      "category": "ADU Policy",
+      "district": "Town-wide",
+      "label": "ADU owner-occupancy",
+      "value": "Required",
+      "source": {
+        "kind": "pdf",
+        "id": "stamford-pdf",
+        "file": "/sources/stamford-zoning.pdf",
+        "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+        "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+        "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
+        "mirrored_size_bytes": 3727499
+      },
+      "cite": "ADU definition, §222-28",
+      "quote": "The property owner must reside on the premises."
+    },
+    {
+      "category": "ADU Policy",
+      "district": "Town-wide",
+      "label": "ADU max size",
+      "value": "800 sq ft gross floor area",
+      "source": {
+        "kind": "pdf",
+        "id": "stamford-pdf",
+        "file": "/sources/stamford-zoning.pdf",
+        "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+        "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+        "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
+        "mirrored_size_bytes": 3727499
+      },
+      "cite": "ADU definition, §222-28",
+      "quote": "The size of the ADU shall not exceed eight hundred (800) sf in Gross Floor Area"
+    },
+    {
+      "category": "ADU Policy",
+      "district": "Town-wide",
+      "label": "ADU eligibility exclusion",
+      "value": "Multifamily (incl. legally nonconforming 2-/3-family) ineligible",
+      "source": {
+        "kind": "pdf",
+        "id": "stamford-pdf",
+        "file": "/sources/stamford-zoning.pdf",
+        "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+        "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+        "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
+        "mirrored_size_bytes": 3727499
+      },
+      "cite": "ADU definition, §222-28",
+      "quote": "No Multiple-Family Dwelling, including but not limited to legally non-conforming two- and three-family Dwellings, shall be eligible for Accessory Dwelling Units"
+    },
+    {
+      "category": "Parking",
+      "district": "R-20/R-6",
+      "label": "Parking, single-family house",
+      "value": "2 spaces",
+      "source": {
+        "kind": "pdf",
+        "id": "stamford-pdf",
+        "file": "/sources/stamford-zoning.pdf",
+        "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+        "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+        "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
+        "mirrored_size_bytes": 3727499
+      },
+      "cite": "§12.D.2, Table 12.7",
+      "quote": null
+    },
+    {
+      "category": "Parking",
+      "district": "R-6",
+      "label": "Parking, two-family house (per unit)",
+      "value": "2 spaces/unit",
+      "source": {
+        "kind": "pdf",
+        "id": "stamford-pdf",
+        "file": "/sources/stamford-zoning.pdf",
+        "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+        "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+        "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
+        "mirrored_size_bytes": 3727499
+      },
+      "cite": "§12.D.2, Table 12.7",
+      "quote": null
+    }
+  ],
   "nza_metrics": [
     {
       "label": "2-family housing prohibited",
@@ -72,76 +297,6 @@
     "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
     "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
     "mirrored_size_bytes": 3727499
-  },
-  "restrictive": {
-    "district": "R-20 (One-Family Residence)",
-    "facts": [
-      {
-        "label": "District definition",
-        "value": "One-Family Residence District — two-family and multifamily both prohibited",
-        "source": {
-          "kind": "pdf",
-          "id": "stamford-pdf",
-          "file": "/sources/stamford-zoning.pdf",
-          "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
-          "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
-          "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
-          "mirrored_size_bytes": 3727499
-        },
-        "cite": "Table I; §1-2",
-        "quote": "R-20              One-Family Residence District"
-      },
-      {
-        "label": "Min. lot size",
-        "value": "20,000 sq ft",
-        "source": {
-          "kind": "pdf",
-          "id": "stamford-pdf",
-          "file": "/sources/stamford-zoning.pdf",
-          "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
-          "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
-          "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
-          "mirrored_size_bytes": 3727499
-        },
-        "cite": "Table II, Appendix B",
-        "quote": "R-20          20000   100   100   20000     1    2½    30    15"
-      }
-    ]
-  },
-  "permissive": {
-    "district": "R-6 (One-Family, Two-Family Residence)",
-    "facts": [
-      {
-        "label": "District definition",
-        "value": "One-Family, Two-Family Residence District",
-        "source": {
-          "kind": "pdf",
-          "id": "stamford-pdf",
-          "file": "/sources/stamford-zoning.pdf",
-          "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
-          "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
-          "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
-          "mirrored_size_bytes": 3727499
-        },
-        "cite": "Table I; §1-2",
-        "quote": "R-6               One-Family, Two-Family Residence District"
-      },
-      {
-        "label": "Min. lot size",
-        "value": "5,000 sq ft (1F) / 6,000 sq ft (2F)",
-        "source": {
-          "kind": "pdf",
-          "id": "stamford-pdf",
-          "file": "/sources/stamford-zoning.pdf",
-          "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
-          "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
-          "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
-          "mirrored_size_bytes": 3727499
-        },
-        "cite": "Table II, Appendix B",
-        "quote": "R-6           5000     50      -              -      1(19)      2½        30"
-      }
-    ]
   },
   "caveat": "Live stamfordct.gov PDF was blocked by bot-protection during research; a Wayback Machine snapshot of the identical text was used — recommend re-verifying the live link."
 }

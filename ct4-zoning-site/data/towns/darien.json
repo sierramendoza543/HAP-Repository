@@ -6,7 +6,165 @@
   "land_area_acres": null,
   "districts_analyzed": 26,
   "composite_score": 74.5,
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
+  "restrictive_district": "R-1",
+  "permissive_district": "DMR",
+  "variables": [
+    {
+      "category": "Use Permissions",
+      "district": "R-1/R-2/R-1½/R-1⅓/R-1⅕",
+      "label": "Only single-family permitted",
+      "value": "2-/3-/4+-family prohibited town-wide",
+      "source": {
+        "kind": "link",
+        "id": "darien-link",
+        "url": "https://www.darienct.gov/DocumentCenter/View/6613",
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+      },
+      "cite": "§402.a",
+      "quote": "a single, detached one-family dwelling on its own lot"
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "R-1",
+      "label": "Min. lot size",
+      "value": "43,560 sq ft (1 acre)",
+      "source": {
+        "kind": "link",
+        "id": "darien-link",
+        "url": "https://www.darienct.gov/DocumentCenter/View/6613",
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+      },
+      "cite": "§406",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "R-2",
+      "label": "Min. lot size",
+      "value": "87,120 sq ft (2 acres)",
+      "source": {
+        "kind": "link",
+        "id": "darien-link",
+        "url": "https://www.darienct.gov/DocumentCenter/View/6613",
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+      },
+      "cite": "§406",
+      "quote": null
+    },
+    {
+      "category": "Use Permissions",
+      "district": "DMR",
+      "label": "Multifamily",
+      "value": "Special Permit only",
+      "source": {
+        "kind": "link",
+        "id": "darien-link",
+        "url": "https://www.darienct.gov/DocumentCenter/View/6613",
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+      },
+      "cite": "§524.a",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "DMR",
+      "label": "Min. lot size (zone)",
+      "value": "3 acres (130,680 sq ft)",
+      "source": {
+        "kind": "link",
+        "id": "darien-link",
+        "url": "https://www.darienct.gov/DocumentCenter/View/6613",
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+      },
+      "cite": "§525",
+      "quote": null
+    },
+    {
+      "category": "Use Permissions",
+      "district": "DMR",
+      "label": "Density",
+      "value": "4 DU/net acre by-right (6 with 20% affordable)",
+      "source": {
+        "kind": "link",
+        "id": "darien-link",
+        "url": "https://www.darienct.gov/DocumentCenter/View/6613",
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+      },
+      "cite": "§526.1",
+      "quote": null
+    },
+    {
+      "category": "Use Permissions",
+      "district": "DMR",
+      "label": "Bedroom mix requirement",
+      "value": "≥15% of units must be 1BR; no unit may exceed 3BR",
+      "source": {
+        "kind": "link",
+        "id": "darien-link",
+        "url": "https://www.darienct.gov/DocumentCenter/View/6613",
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+      },
+      "cite": "§526.3",
+      "quote": null
+    },
+    {
+      "category": "ADU Policy",
+      "district": "Town-wide",
+      "label": "ADU max size",
+      "value": "700 sq ft attached / 1,000 sq ft detached, and <30% of combined floor area",
+      "source": {
+        "kind": "link",
+        "id": "darien-link",
+        "url": "https://www.darienct.gov/DocumentCenter/View/6613",
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+      },
+      "cite": "§407.c",
+      "quote": null
+    },
+    {
+      "category": "ADU Policy",
+      "district": "Town-wide",
+      "label": "ADU owner-occupancy",
+      "value": "Required (annual affidavit)",
+      "source": {
+        "kind": "link",
+        "id": "darien-link",
+        "url": "https://www.darienct.gov/DocumentCenter/View/6613",
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+      },
+      "cite": "§407.c",
+      "quote": null
+    },
+    {
+      "category": "ADU Policy",
+      "district": "Town-wide",
+      "label": "ADU program sunset",
+      "value": "Expires for new applications after June 30, 2029 unless readopted",
+      "source": {
+        "kind": "link",
+        "id": "darien-link",
+        "url": "https://www.darienct.gov/DocumentCenter/View/6613",
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+      },
+      "cite": "§407.c",
+      "quote": null
+    },
+    {
+      "category": "Parking",
+      "district": "R-1/R-2",
+      "label": "Parking, one-/two-family residences",
+      "value": "2 spaces/unit",
+      "source": {
+        "kind": "link",
+        "id": "darien-link",
+        "url": "https://www.darienct.gov/DocumentCenter/View/6613",
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+      },
+      "cite": "§904.a",
+      "quote": null
+    }
+  ],
   "nza_metrics": [
     {
       "label": "2-family housing prohibited",
@@ -70,63 +228,5 @@
     "url": "https://www.darienct.gov/DocumentCenter/View/6613",
     "title": "Darien Zoning Regulations (last revised May 10, 2026)"
   },
-  "restrictive": {
-    "district": "R-1 (and R-2 / R-1/2 / R-1/3 / R-1/5)",
-    "facts": [
-      {
-        "label": "Only single-family permitted",
-        "value": "2-/3-/4+-family prohibited town-wide",
-        "source": {
-          "kind": "link",
-          "id": "darien-link",
-          "url": "https://www.darienct.gov/DocumentCenter/View/6613",
-          "title": "Darien Zoning Regulations (last revised May 10, 2026)"
-        },
-        "cite": "§402.a",
-        "quote": "a single, detached one-family dwelling on its own lot"
-      },
-      {
-        "label": "Min. lot size (R-1)",
-        "value": "43,560 sq ft (1 acre)",
-        "source": {
-          "kind": "link",
-          "id": "darien-link",
-          "url": "https://www.darienct.gov/DocumentCenter/View/6613",
-          "title": "Darien Zoning Regulations (last revised May 10, 2026)"
-        },
-        "cite": "§406",
-        "quote": null
-      }
-    ]
-  },
-  "permissive": {
-    "district": "DMR (Designed Multi-Family Residential)",
-    "facts": [
-      {
-        "label": "Multifamily",
-        "value": "Special Permit only",
-        "source": {
-          "kind": "link",
-          "id": "darien-link",
-          "url": "https://www.darienct.gov/DocumentCenter/View/6613",
-          "title": "Darien Zoning Regulations (last revised May 10, 2026)"
-        },
-        "cite": "§524.a",
-        "quote": null
-      },
-      {
-        "label": "Density",
-        "value": "4 DU/net acre by-right (6 with 20% affordable)",
-        "source": {
-          "kind": "link",
-          "id": "darien-link",
-          "url": "https://www.darienct.gov/DocumentCenter/View/6613",
-          "title": "Darien Zoning Regulations (last revised May 10, 2026)"
-        },
-        "cite": "§526.1",
-        "quote": null
-      }
-    ]
-  },
-  "caveat": "Darien formally opted OUT of CT's statewide ADU law (PA 21-29) via local vote in 2022; its own local ADU rules sunset for new applications after June 30, 2029 unless readopted. No local PDF mirror exists for Darien (blocked at ingest time), so quotes above are limited to what the research pass directly transcribed."
+  "caveat": "Darien formally opted OUT of CT's statewide ADU law (PA 21-29) via local vote in 2022 — its ADU rules exist under independent local authority. No local PDF mirror exists for Darien (blocked at ingest time), so quotes above are limited to what the research pass directly transcribed."
 }

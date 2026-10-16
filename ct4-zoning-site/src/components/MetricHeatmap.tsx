@@ -9,15 +9,14 @@ const METRICS = [
   "Residential land with a parking mandate",
 ];
 
-const SHORT = ["2F exclusion", "3F exclusion", "4F+ exclusion", "Large-lot %", "Parking mandate"];
+const SHORT = ["2F excl.", "3F excl.", "4F+ excl.", "Large-lot", "Parking mand."];
 
 function cellColor(v: number) {
-  // 0 -> --allow (green), 100 -> --prohibit (red), via a muted amber midpoint
   const t = Math.max(0, Math.min(100, v)) / 100;
   const stops: [number, [number, number, number]][] = [
-    [0, [47, 111, 78]],
-    [0.5, [184, 134, 58]],
-    [1, [138, 47, 39]],
+    [0, [15, 138, 79]],
+    [0.5, [180, 114, 10]],
+    [1, [185, 28, 28]],
   ];
   let lo = stops[0], hi = stops[stops.length - 1];
   for (let i = 0; i < stops.length - 1; i++) {
@@ -35,15 +34,15 @@ function cellColor(v: number) {
 
 export default function MetricHeatmap({ towns }: { towns: Town[] }) {
   return (
-    <div className="overflow-x-auto">
+    <div className="overflow-x-auto border border-(--rule) rounded-lg">
       <table className="w-full border-collapse text-sm min-w-[640px]">
         <thead>
-          <tr>
-            <th className="text-left font-semibold text-xs uppercase tracking-wide text-(--ink-dim) pb-2 pr-2 sticky left-0 bg-(--bg)">
+          <tr className="bg-(--surface-2)">
+            <th className="text-left font-semibold text-xs uppercase tracking-wide text-(--ink-dim) px-3 py-2 sticky left-0 bg-(--surface-2)">
               Town
             </th>
             {SHORT.map((s) => (
-              <th key={s} className="text-center font-semibold text-xs uppercase tracking-wide text-(--ink-dim) pb-2 px-1">
+              <th key={s} className="text-center font-semibold text-xs uppercase tracking-wide text-(--ink-dim) px-2 py-2">
                 {s}
               </th>
             ))}
@@ -52,7 +51,7 @@ export default function MetricHeatmap({ towns }: { towns: Town[] }) {
         <tbody>
           {towns.map((t) => (
             <tr key={t.slug} className="border-t border-(--rule)">
-              <td className="py-1.5 pr-2 font-medium whitespace-nowrap sticky left-0 bg-(--bg)">
+              <td className="py-1.5 px-3 font-medium whitespace-nowrap sticky left-0 bg-(--surface)">
                 <Link href={`/towns/${t.slug}`} className="hover:text-(--accent)">
                   {t.name}
                 </Link>

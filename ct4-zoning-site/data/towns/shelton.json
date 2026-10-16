@@ -6,7 +6,164 @@
   "land_area_acres": 19384,
   "districts_analyzed": 26,
   "composite_score": 60.4,
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
+  "restrictive_district": "R-1",
+  "permissive_district": "R-4",
+  "variables": [
+    {
+      "category": "Use Permissions",
+      "district": "R-1",
+      "label": "2-/3-family & 4+-family",
+      "value": "Both prohibited (\"X\")",
+      "source": {
+        "kind": "pdf",
+        "id": "shelton-pdf",
+        "file": "/sources/shelton-zoning.pdf",
+        "url": "https://shelton.qscendcms.com/ckfinder/connector?command=Proxy&lang=en&type=Files&currentFolder=%2F&hash=c245c263ce0eced480effe66bbede6b4d46c15ae&fileName=2024%20Regulation%20scanned.pdf",
+        "title": "City of Shelton Zoning Regulations (recodified April 16, 2024)",
+        "content_hash": "6a2f46e424705ca6db22642792280a957675968d213feca7029493bfcf018945",
+        "mirrored_size_bytes": 13478741
+      },
+      "cite": "Schedule A, Row 2/2A/3",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "R-1",
+      "label": "Min. lot size",
+      "value": "40,000 sq ft",
+      "source": {
+        "kind": "pdf",
+        "id": "shelton-pdf",
+        "file": "/sources/shelton-zoning.pdf",
+        "url": "https://shelton.qscendcms.com/ckfinder/connector?command=Proxy&lang=en&type=Files&currentFolder=%2F&hash=c245c263ce0eced480effe66bbede6b4d46c15ae&fileName=2024%20Regulation%20scanned.pdf",
+        "title": "City of Shelton Zoning Regulations (recodified April 16, 2024)",
+        "content_hash": "6a2f46e424705ca6db22642792280a957675968d213feca7029493bfcf018945",
+        "mirrored_size_bytes": 13478741
+      },
+      "cite": "Schedule B, Row 1",
+      "quote": null
+    },
+    {
+      "category": "Use Permissions",
+      "district": "R-4",
+      "label": "2-/3-family & multifamily (4-12 units)",
+      "value": "Allowed by Special Exception, subject to added lot-area requirements",
+      "source": {
+        "kind": "pdf",
+        "id": "shelton-pdf",
+        "file": "/sources/shelton-zoning.pdf",
+        "url": "https://shelton.qscendcms.com/ckfinder/connector?command=Proxy&lang=en&type=Files&currentFolder=%2F&hash=c245c263ce0eced480effe66bbede6b4d46c15ae&fileName=2024%20Regulation%20scanned.pdf",
+        "title": "City of Shelton Zoning Regulations (recodified April 16, 2024)",
+        "content_hash": "6a2f46e424705ca6db22642792280a957675968d213feca7029493bfcf018945",
+        "mirrored_size_bytes": 13478741
+      },
+      "cite": "Schedule A, Row 2/2A/3",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "R-4",
+      "label": "Min. lot area per unit (2F)",
+      "value": "7,500 sq ft",
+      "source": {
+        "kind": "pdf",
+        "id": "shelton-pdf",
+        "file": "/sources/shelton-zoning.pdf",
+        "url": "https://shelton.qscendcms.com/ckfinder/connector?command=Proxy&lang=en&type=Files&currentFolder=%2F&hash=c245c263ce0eced480effe66bbede6b4d46c15ae&fileName=2024%20Regulation%20scanned.pdf",
+        "title": "City of Shelton Zoning Regulations (recodified April 16, 2024)",
+        "content_hash": "6a2f46e424705ca6db22642792280a957675968d213feca7029493bfcf018945",
+        "mirrored_size_bytes": 13478741
+      },
+      "cite": "Schedule B, Row 2",
+      "quote": null
+    },
+    {
+      "category": "ADU Policy",
+      "district": "R-1/R-4 (town-wide)",
+      "label": "ADU approval pathway",
+      "value": "By-right on use table, subject to detailed standards",
+      "source": {
+        "kind": "pdf",
+        "id": "shelton-pdf",
+        "file": "/sources/shelton-zoning.pdf",
+        "url": "https://shelton.qscendcms.com/ckfinder/connector?command=Proxy&lang=en&type=Files&currentFolder=%2F&hash=c245c263ce0eced480effe66bbede6b4d46c15ae&fileName=2024%20Regulation%20scanned.pdf",
+        "title": "City of Shelton Zoning Regulations (recodified April 16, 2024)",
+        "content_hash": "6a2f46e424705ca6db22642792280a957675968d213feca7029493bfcf018945",
+        "mirrored_size_bytes": 13478741
+      },
+      "cite": "§45.6",
+      "quote": null
+    },
+    {
+      "category": "ADU Policy",
+      "district": "R-1/R-4 (town-wide)",
+      "label": "ADU owner-occupancy",
+      "value": "Required, and both units must be occupied by the same family group",
+      "source": {
+        "kind": "pdf",
+        "id": "shelton-pdf",
+        "file": "/sources/shelton-zoning.pdf",
+        "url": "https://shelton.qscendcms.com/ckfinder/connector?command=Proxy&lang=en&type=Files&currentFolder=%2F&hash=c245c263ce0eced480effe66bbede6b4d46c15ae&fileName=2024%20Regulation%20scanned.pdf",
+        "title": "City of Shelton Zoning Regulations (recodified April 16, 2024)",
+        "content_hash": "6a2f46e424705ca6db22642792280a957675968d213feca7029493bfcf018945",
+        "mirrored_size_bytes": 13478741
+      },
+      "cite": "§45.6.4, §45.6.7",
+      "quote": null
+    },
+    {
+      "category": "ADU Policy",
+      "district": "R-1/R-4 (town-wide)",
+      "label": "ADU size",
+      "value": "400–900 sq ft (lesser of ⅓ habitable area or 900 sf, min 500 sf)",
+      "source": {
+        "kind": "pdf",
+        "id": "shelton-pdf",
+        "file": "/sources/shelton-zoning.pdf",
+        "url": "https://shelton.qscendcms.com/ckfinder/connector?command=Proxy&lang=en&type=Files&currentFolder=%2F&hash=c245c263ce0eced480effe66bbede6b4d46c15ae&fileName=2024%20Regulation%20scanned.pdf",
+        "title": "City of Shelton Zoning Regulations (recodified April 16, 2024)",
+        "content_hash": "6a2f46e424705ca6db22642792280a957675968d213feca7029493bfcf018945",
+        "mirrored_size_bytes": 13478741
+      },
+      "cite": "§45.6.6",
+      "quote": null
+    },
+    {
+      "category": "Parking",
+      "district": "R-1/R-4",
+      "label": "Parking, 1–2 unit dwellings",
+      "value": "2 spaces/unit",
+      "source": {
+        "kind": "pdf",
+        "id": "shelton-pdf",
+        "file": "/sources/shelton-zoning.pdf",
+        "url": "https://shelton.qscendcms.com/ckfinder/connector?command=Proxy&lang=en&type=Files&currentFolder=%2F&hash=c245c263ce0eced480effe66bbede6b4d46c15ae&fileName=2024%20Regulation%20scanned.pdf",
+        "title": "City of Shelton Zoning Regulations (recodified April 16, 2024)",
+        "content_hash": "6a2f46e424705ca6db22642792280a957675968d213feca7029493bfcf018945",
+        "mirrored_size_bytes": 13478741
+      },
+      "cite": "§42.2 table",
+      "quote": null
+    },
+    {
+      "category": "Parking",
+      "district": "R-1/R-4 (town-wide)",
+      "label": "Parking, ADU",
+      "value": "+2 additional spaces",
+      "source": {
+        "kind": "pdf",
+        "id": "shelton-pdf",
+        "file": "/sources/shelton-zoning.pdf",
+        "url": "https://shelton.qscendcms.com/ckfinder/connector?command=Proxy&lang=en&type=Files&currentFolder=%2F&hash=c245c263ce0eced480effe66bbede6b4d46c15ae&fileName=2024%20Regulation%20scanned.pdf",
+        "title": "City of Shelton Zoning Regulations (recodified April 16, 2024)",
+        "content_hash": "6a2f46e424705ca6db22642792280a957675968d213feca7029493bfcf018945",
+        "mirrored_size_bytes": 13478741
+      },
+      "cite": "§45.6.2",
+      "quote": null
+    }
+  ],
   "nza_metrics": [
     {
       "label": "2-family housing prohibited",
@@ -72,76 +229,6 @@
     "title": "City of Shelton Zoning Regulations (recodified April 16, 2024)",
     "content_hash": "6a2f46e424705ca6db22642792280a957675968d213feca7029493bfcf018945",
     "mirrored_size_bytes": 13478741
-  },
-  "restrictive": {
-    "district": "R-1",
-    "facts": [
-      {
-        "label": "2-/3-family & 4+-family",
-        "value": "Both prohibited (\"X\")",
-        "source": {
-          "kind": "pdf",
-          "id": "shelton-pdf",
-          "file": "/sources/shelton-zoning.pdf",
-          "url": "https://shelton.qscendcms.com/ckfinder/connector?command=Proxy&lang=en&type=Files&currentFolder=%2F&hash=c245c263ce0eced480effe66bbede6b4d46c15ae&fileName=2024%20Regulation%20scanned.pdf",
-          "title": "City of Shelton Zoning Regulations (recodified April 16, 2024)",
-          "content_hash": "6a2f46e424705ca6db22642792280a957675968d213feca7029493bfcf018945",
-          "mirrored_size_bytes": 13478741
-        },
-        "cite": "Schedule A, Row 2/2A/3",
-        "quote": null
-      },
-      {
-        "label": "Min. lot size",
-        "value": "40,000 sq ft",
-        "source": {
-          "kind": "pdf",
-          "id": "shelton-pdf",
-          "file": "/sources/shelton-zoning.pdf",
-          "url": "https://shelton.qscendcms.com/ckfinder/connector?command=Proxy&lang=en&type=Files&currentFolder=%2F&hash=c245c263ce0eced480effe66bbede6b4d46c15ae&fileName=2024%20Regulation%20scanned.pdf",
-          "title": "City of Shelton Zoning Regulations (recodified April 16, 2024)",
-          "content_hash": "6a2f46e424705ca6db22642792280a957675968d213feca7029493bfcf018945",
-          "mirrored_size_bytes": 13478741
-        },
-        "cite": "Schedule B, Row 1",
-        "quote": null
-      }
-    ]
-  },
-  "permissive": {
-    "district": "R-4",
-    "facts": [
-      {
-        "label": "2-/3-family & multifamily (4-12 units)",
-        "value": "Allowed by Special Exception, subject to added lot-area requirements",
-        "source": {
-          "kind": "pdf",
-          "id": "shelton-pdf",
-          "file": "/sources/shelton-zoning.pdf",
-          "url": "https://shelton.qscendcms.com/ckfinder/connector?command=Proxy&lang=en&type=Files&currentFolder=%2F&hash=c245c263ce0eced480effe66bbede6b4d46c15ae&fileName=2024%20Regulation%20scanned.pdf",
-          "title": "City of Shelton Zoning Regulations (recodified April 16, 2024)",
-          "content_hash": "6a2f46e424705ca6db22642792280a957675968d213feca7029493bfcf018945",
-          "mirrored_size_bytes": 13478741
-        },
-        "cite": "Schedule A, Row 2/2A/3",
-        "quote": null
-      },
-      {
-        "label": "Min. lot area per unit (2F)",
-        "value": "7,500 sq ft",
-        "source": {
-          "kind": "pdf",
-          "id": "shelton-pdf",
-          "file": "/sources/shelton-zoning.pdf",
-          "url": "https://shelton.qscendcms.com/ckfinder/connector?command=Proxy&lang=en&type=Files&currentFolder=%2F&hash=c245c263ce0eced480effe66bbede6b4d46c15ae&fileName=2024%20Regulation%20scanned.pdf",
-          "title": "City of Shelton Zoning Regulations (recodified April 16, 2024)",
-          "content_hash": "6a2f46e424705ca6db22642792280a957675968d213feca7029493bfcf018945",
-          "mirrored_size_bytes": 13478741
-        },
-        "cite": "Schedule B, Row 2",
-        "quote": null
-      }
-    ]
   },
   "caveat": "Shelton's own code is a scanned, image-only PDF with NO embedded text layer — it cannot be text-searched or highlighted in the in-app viewer at all. Every figure above was OCR'd and visually verified against the table images directly during research; open the original source to see the actual scanned tables."
 }

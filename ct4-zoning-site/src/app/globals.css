@@ -1,62 +1,94 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #f6f4ef;
+  --bg: #f6f7f9;
   --surface: #ffffff;
-  --surface-2: #eeebe2;
-  --ink: #1c2630;
-  --ink-dim: #5b6675;
-  --rule: #d8d3c6;
-  --accent: #8a2f27;
+  --surface-2: #eef0f3;
+  --ink: #0f172a;
+  --ink-dim: #5b6472;
+  --ink-faint: #8a93a3;
+  --rule: #e2e5eb;
+  --rule-strong: #c7cdd7;
+  --accent: #1d4ed8;
   --accent-ink: #ffffff;
-  --allow: #2f6f4e;
-  --maybe: #b8863a;
-  --prohibit: #8a2f27;
+  --allow: #0f8a4f;
+  --allow-bg: #e7f6ee;
+  --maybe: #b4720a;
+  --maybe-bg: #fbf1de;
+  --prohibit: #b91c1c;
+  --prohibit-bg: #fcebeb;
   color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #15191d;
-    --surface: #1d2227;
-    --surface-2: #262b31;
-    --ink: #eceae4;
-    --ink-dim: #9aa3ad;
-    --rule: #343a40;
-    --accent: #e07a68;
-    --accent-ink: #1c1210;
-    --allow: #5fae84;
-    --maybe: #d9a85c;
-    --prohibit: #e07a68;
+    --bg: #0b0f16;
+    --surface: #10151e;
+    --surface-2: #161d29;
+    --ink: #e6e9ef;
+    --ink-dim: #99a3b3;
+    --ink-faint: #6b7686;
+    --rule: #232b38;
+    --rule-strong: #323d4d;
+    --accent: #5b8def;
+    --accent-ink: #0b0f16;
+    --allow: #3ec37f;
+    --allow-bg: #0f2a1d;
+    --maybe: #e0a63f;
+    --maybe-bg: #2c2410;
+    --prohibit: #f17171;
+    --prohibit-bg: #2c1414;
     color-scheme: dark;
   }
 }
 
 :root[data-theme="dark"] {
-  --bg: #15191d;
-  --surface: #1d2227;
-  --surface-2: #262b31;
-  --ink: #eceae4;
-  --ink-dim: #9aa3ad;
-  --rule: #343a40;
-  --accent: #e07a68;
-  --accent-ink: #1c1210;
-  --allow: #5fae84;
-  --maybe: #d9a85c;
-  --prohibit: #e07a68;
+  --bg: #0b0f16;
+  --surface: #10151e;
+  --surface-2: #161d29;
+  --ink: #e6e9ef;
+  --ink-dim: #99a3b3;
+  --ink-faint: #6b7686;
+  --rule: #232b38;
+  --rule-strong: #323d4d;
+  --accent: #5b8def;
+  --accent-ink: #0b0f16;
+  --allow: #3ec37f;
+  --allow-bg: #0f2a1d;
+  --maybe: #e0a63f;
+  --maybe-bg: #2c2410;
+  --prohibit: #f17171;
+  --prohibit-bg: #2c1414;
   color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   background: var(--bg);
   color: var(--ink);
   font-family: var(--font-sans), -apple-system, "Segoe UI", sans-serif;
+  font-size: 14px;
 }
 
-h1, h2, h3, .disp {
-  font-family: var(--font-serif), Georgia, serif;
+h1, h2, h3, h4 {
+  font-weight: 650;
+  letter-spacing: -0.01em;
 }
 
-.tabular {
+.tabular,
+.mono {
+  font-family: var(--font-mono), ui-monospace, monospace;
   font-variant-numeric: tabular-nums;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-ink);
 }

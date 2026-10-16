@@ -6,7 +6,181 @@
   "land_area_acres": null,
   "districts_analyzed": 24,
   "composite_score": 92.4,
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
+  "restrictive_district": "Four Acre Residence Zone",
+  "permissive_district": "B Residence Zone / Apartment Zone",
+  "variables": [
+    {
+      "category": "Use Permissions",
+      "district": "Four Acre Residence Zone",
+      "label": "2-/3-/4+-family",
+      "value": "Prohibited — only 1 family/building (except age-restricted via special permit)",
+      "source": {
+        "kind": "pdf",
+        "id": "newcanaan-pdf",
+        "file": "/sources/newcanaan-zoning.pdf",
+        "url": "https://cms3.revize.com/revize/newcanaanct/Departments/Land%20Use/Zoning%20Regulations.pdf",
+        "title": "New Canaan Zoning Regulations (amended through May 1, 2023)",
+        "content_hash": "17c2e7dde920961c46fa93287815e5aaad7f7e25934acc95b824573bee40c2b9",
+        "mirrored_size_bytes": 6207095
+      },
+      "cite": "§3.3.C table, note 1",
+      "quote": "a two-family dwelling in the B Residence Zone per Section 3.2.C.1."
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "Four Acre Residence Zone",
+      "label": "Min. lot size",
+      "value": "174,240 sq ft (4 acres)",
+      "source": {
+        "kind": "pdf",
+        "id": "newcanaan-pdf",
+        "file": "/sources/newcanaan-zoning.pdf",
+        "url": "https://cms3.revize.com/revize/newcanaanct/Departments/Land%20Use/Zoning%20Regulations.pdf",
+        "title": "New Canaan Zoning Regulations (amended through May 1, 2023)",
+        "content_hash": "17c2e7dde920961c46fa93287815e5aaad7f7e25934acc95b824573bee40c2b9",
+        "mirrored_size_bytes": 6207095
+      },
+      "cite": "§3.5.A.1 table",
+      "quote": "Four Acre Residence Zone                                          174,240"
+    },
+    {
+      "category": "Use Permissions",
+      "district": "B Residence Zone",
+      "label": "Two-family",
+      "value": "Special Permit only",
+      "source": {
+        "kind": "pdf",
+        "id": "newcanaan-pdf",
+        "file": "/sources/newcanaan-zoning.pdf",
+        "url": "https://cms3.revize.com/revize/newcanaanct/Departments/Land%20Use/Zoning%20Regulations.pdf",
+        "title": "New Canaan Zoning Regulations (amended through May 1, 2023)",
+        "content_hash": "17c2e7dde920961c46fa93287815e5aaad7f7e25934acc95b824573bee40c2b9",
+        "mirrored_size_bytes": 6207095
+      },
+      "cite": "§3.2.C.1",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "B Residence Zone",
+      "label": "Min. lot size",
+      "value": "7,500 sq ft",
+      "source": {
+        "kind": "pdf",
+        "id": "newcanaan-pdf",
+        "file": "/sources/newcanaan-zoning.pdf",
+        "url": "https://cms3.revize.com/revize/newcanaanct/Departments/Land%20Use/Zoning%20Regulations.pdf",
+        "title": "New Canaan Zoning Regulations (amended through May 1, 2023)",
+        "content_hash": "17c2e7dde920961c46fa93287815e5aaad7f7e25934acc95b824573bee40c2b9",
+        "mirrored_size_bytes": 6207095
+      },
+      "cite": "§3.5.A.1 table",
+      "quote": "B Residence Zone                                                     7,500"
+    },
+    {
+      "category": "Use Permissions",
+      "district": "Apartment Zone",
+      "label": "Two-family & multifamily",
+      "value": "Both Special Permit only",
+      "source": {
+        "kind": "pdf",
+        "id": "newcanaan-pdf",
+        "file": "/sources/newcanaan-zoning.pdf",
+        "url": "https://cms3.revize.com/revize/newcanaanct/Departments/Land%20Use/Zoning%20Regulations.pdf",
+        "title": "New Canaan Zoning Regulations (amended through May 1, 2023)",
+        "content_hash": "17c2e7dde920961c46fa93287815e5aaad7f7e25934acc95b824573bee40c2b9",
+        "mirrored_size_bytes": 6207095
+      },
+      "cite": "§5.4.C.1-2",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "Apartment Zone",
+      "label": "Max density",
+      "value": "1 unit / 5,000 sq ft",
+      "source": {
+        "kind": "pdf",
+        "id": "newcanaan-pdf",
+        "file": "/sources/newcanaan-zoning.pdf",
+        "url": "https://cms3.revize.com/revize/newcanaanct/Departments/Land%20Use/Zoning%20Regulations.pdf",
+        "title": "New Canaan Zoning Regulations (amended through May 1, 2023)",
+        "content_hash": "17c2e7dde920961c46fa93287815e5aaad7f7e25934acc95b824573bee40c2b9",
+        "mirrored_size_bytes": 6207095
+      },
+      "cite": "§5.4.D.1",
+      "quote": null
+    },
+    {
+      "category": "ADU Policy",
+      "district": "Town-wide",
+      "label": "ADU max size",
+      "value": "1,000 sq ft or 40% of combined floor area, whichever less",
+      "source": {
+        "kind": "pdf",
+        "id": "newcanaan-pdf",
+        "file": "/sources/newcanaan-zoning.pdf",
+        "url": "https://cms3.revize.com/revize/newcanaanct/Departments/Land%20Use/Zoning%20Regulations.pdf",
+        "title": "New Canaan Zoning Regulations (amended through May 1, 2023)",
+        "content_hash": "17c2e7dde920961c46fa93287815e5aaad7f7e25934acc95b824573bee40c2b9",
+        "mirrored_size_bytes": 6207095
+      },
+      "cite": "§3.3.B.6",
+      "quote": "not exceed 1,000 square feet or 40% of the combined floor areas of the single-family dwelling and the accessory dwelling unit"
+    },
+    {
+      "category": "ADU Policy",
+      "district": "Town-wide",
+      "label": "ADU owner-occupancy",
+      "value": "Required",
+      "source": {
+        "kind": "pdf",
+        "id": "newcanaan-pdf",
+        "file": "/sources/newcanaan-zoning.pdf",
+        "url": "https://cms3.revize.com/revize/newcanaanct/Departments/Land%20Use/Zoning%20Regulations.pdf",
+        "title": "New Canaan Zoning Regulations (amended through May 1, 2023)",
+        "content_hash": "17c2e7dde920961c46fa93287815e5aaad7f7e25934acc95b824573bee40c2b9",
+        "mirrored_size_bytes": 6207095
+      },
+      "cite": "§3.3.B.6",
+      "quote": "the owner of the property shall occupy either the principal dwelling unit or the accessory dwelling unit"
+    },
+    {
+      "category": "Parking",
+      "district": "Town-wide",
+      "label": "Parking, single-family",
+      "value": "2 spaces",
+      "source": {
+        "kind": "pdf",
+        "id": "newcanaan-pdf",
+        "file": "/sources/newcanaan-zoning.pdf",
+        "url": "https://cms3.revize.com/revize/newcanaanct/Departments/Land%20Use/Zoning%20Regulations.pdf",
+        "title": "New Canaan Zoning Regulations (amended through May 1, 2023)",
+        "content_hash": "17c2e7dde920961c46fa93287815e5aaad7f7e25934acc95b824573bee40c2b9",
+        "mirrored_size_bytes": 6207095
+      },
+      "cite": "§6.2.C table",
+      "quote": null
+    },
+    {
+      "category": "Parking",
+      "district": "B Residence Zone",
+      "label": "Parking, two-family",
+      "value": "2 spaces/unit (4 total)",
+      "source": {
+        "kind": "pdf",
+        "id": "newcanaan-pdf",
+        "file": "/sources/newcanaan-zoning.pdf",
+        "url": "https://cms3.revize.com/revize/newcanaanct/Departments/Land%20Use/Zoning%20Regulations.pdf",
+        "title": "New Canaan Zoning Regulations (amended through May 1, 2023)",
+        "content_hash": "17c2e7dde920961c46fa93287815e5aaad7f7e25934acc95b824573bee40c2b9",
+        "mirrored_size_bytes": 6207095
+      },
+      "cite": "§6.2.C table",
+      "quote": null
+    }
+  ],
   "nza_metrics": [
     {
       "label": "2-family housing prohibited",
@@ -72,76 +246,6 @@
     "title": "New Canaan Zoning Regulations (amended through May 1, 2023)",
     "content_hash": "17c2e7dde920961c46fa93287815e5aaad7f7e25934acc95b824573bee40c2b9",
     "mirrored_size_bytes": 6207095
-  },
-  "restrictive": {
-    "district": "Four Acre Residence Zone",
-    "facts": [
-      {
-        "label": "2-/3-/4+-family",
-        "value": "Prohibited — only 1 family/building permitted; 2-family only reachable via the B Residence Zone",
-        "source": {
-          "kind": "pdf",
-          "id": "newcanaan-pdf",
-          "file": "/sources/newcanaan-zoning.pdf",
-          "url": "https://cms3.revize.com/revize/newcanaanct/Departments/Land%20Use/Zoning%20Regulations.pdf",
-          "title": "New Canaan Zoning Regulations (amended through May 1, 2023)",
-          "content_hash": "17c2e7dde920961c46fa93287815e5aaad7f7e25934acc95b824573bee40c2b9",
-          "mirrored_size_bytes": 6207095
-        },
-        "cite": "§3.3.C table, note 1",
-        "quote": "a two-family dwelling in the B Residence Zone per Section 3.2.C.1."
-      },
-      {
-        "label": "Min. lot size",
-        "value": "174,240 sq ft (4 acres)",
-        "source": {
-          "kind": "pdf",
-          "id": "newcanaan-pdf",
-          "file": "/sources/newcanaan-zoning.pdf",
-          "url": "https://cms3.revize.com/revize/newcanaanct/Departments/Land%20Use/Zoning%20Regulations.pdf",
-          "title": "New Canaan Zoning Regulations (amended through May 1, 2023)",
-          "content_hash": "17c2e7dde920961c46fa93287815e5aaad7f7e25934acc95b824573bee40c2b9",
-          "mirrored_size_bytes": 6207095
-        },
-        "cite": "§3.5.A.1 table",
-        "quote": "Four Acre Residence Zone                                          174,240"
-      }
-    ]
-  },
-  "permissive": {
-    "district": "B Residence Zone / Apartment Zone",
-    "facts": [
-      {
-        "label": "Two-family & multifamily",
-        "value": "Both Special Permit only",
-        "source": {
-          "kind": "pdf",
-          "id": "newcanaan-pdf",
-          "file": "/sources/newcanaan-zoning.pdf",
-          "url": "https://cms3.revize.com/revize/newcanaanct/Departments/Land%20Use/Zoning%20Regulations.pdf",
-          "title": "New Canaan Zoning Regulations (amended through May 1, 2023)",
-          "content_hash": "17c2e7dde920961c46fa93287815e5aaad7f7e25934acc95b824573bee40c2b9",
-          "mirrored_size_bytes": 6207095
-        },
-        "cite": "§5.4.C.1-2",
-        "quote": null
-      },
-      {
-        "label": "Min. lot size (B Residence Zone)",
-        "value": "7,500 sq ft",
-        "source": {
-          "kind": "pdf",
-          "id": "newcanaan-pdf",
-          "file": "/sources/newcanaan-zoning.pdf",
-          "url": "https://cms3.revize.com/revize/newcanaanct/Departments/Land%20Use/Zoning%20Regulations.pdf",
-          "title": "New Canaan Zoning Regulations (amended through May 1, 2023)",
-          "content_hash": "17c2e7dde920961c46fa93287815e5aaad7f7e25934acc95b824573bee40c2b9",
-          "mirrored_size_bytes": 6207095
-        },
-        "cite": "§3.5.A.1 table",
-        "quote": "B Residence Zone                                                     7,500"
-      }
-    ]
   },
   "caveat": "No as-of-right multifamily district exists anywhere in New Canaan — every multi-unit pathway requires a discretionary Special Permit hearing."
 }

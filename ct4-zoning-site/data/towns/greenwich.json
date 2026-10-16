@@ -6,7 +6,266 @@
   "land_area_acres": 30322,
   "districts_analyzed": 49,
   "composite_score": 82.7,
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
+  "restrictive_district": "R-20 / RA-2",
+  "permissive_district": "R-MF",
+  "variables": [
+    {
+      "category": "Use Permissions",
+      "district": "R-20/RA-2/RA-4/RA-1/R-12",
+      "label": "Single-family",
+      "value": "Allowed by-right — only permitted use",
+      "source": {
+        "kind": "pdf",
+        "id": "greenwich-pdf",
+        "file": "/sources/greenwich-div9.pdf",
+        "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+        "title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+        "content_hash": "a61cab47f9bcc67eadc6fbbe530649329c643d5f092549912f58c2cde5b88600",
+        "mirrored_size_bytes": 508124
+      },
+      "cite": "§6-93(a)(1)",
+      "quote": "The following principal uses are permitted in RA-4, RA-2, RA-1, R-20 and R-12 Zones and all other principal uses are expressly excluded: (1) Detached single family dwellings, one (1) per lot."
+    },
+    {
+      "category": "Use Permissions",
+      "district": "R-20/RA-2/RA-4/RA-1/R-12",
+      "label": "Two-family",
+      "value": "Prohibited",
+      "source": {
+        "kind": "pdf",
+        "id": "greenwich-pdf",
+        "file": "/sources/greenwich-div9.pdf",
+        "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+        "title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+        "content_hash": "a61cab47f9bcc67eadc6fbbe530649329c643d5f092549912f58c2cde5b88600",
+        "mirrored_size_bytes": 508124
+      },
+      "cite": "§6-93 / 6-94",
+      "quote": null
+    },
+    {
+      "category": "Use Permissions",
+      "district": "R-20/RA-2/RA-4/RA-1/R-12",
+      "label": "Three-family",
+      "value": "Prohibited",
+      "source": {
+        "kind": "pdf",
+        "id": "greenwich-pdf",
+        "file": "/sources/greenwich-div9.pdf",
+        "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+        "title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+        "content_hash": "a61cab47f9bcc67eadc6fbbe530649329c643d5f092549912f58c2cde5b88600",
+        "mirrored_size_bytes": 508124
+      },
+      "cite": "§6-93 / 6-94",
+      "quote": null
+    },
+    {
+      "category": "Use Permissions",
+      "district": "R-20/RA-2/RA-4/RA-1/R-12",
+      "label": "4+-family",
+      "value": "Prohibited",
+      "source": {
+        "kind": "pdf",
+        "id": "greenwich-pdf",
+        "file": "/sources/greenwich-div9.pdf",
+        "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+        "title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+        "content_hash": "a61cab47f9bcc67eadc6fbbe530649329c643d5f092549912f58c2cde5b88600",
+        "mirrored_size_bytes": 508124
+      },
+      "cite": "§6-93 / 6-94",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "R-20",
+      "label": "Min. lot size",
+      "value": "20,000 sq ft",
+      "source": {
+        "kind": "pdf",
+        "id": "greenwich21-pdf",
+        "file": "/sources/greenwich-div21.pdf",
+        "url": "https://www.greenwichct.gov/DocumentCenter/View/37841",
+        "title": "Building Zone Regulations, Div. 21 (Bulk Schedule)",
+        "content_hash": "25c7ff10da0aeefcc9eefc5651d756c8c9799b9e0884ee3d2e24b3605bb4bb47",
+        "mirrored_size_bytes": 40410
+      },
+      "cite": "§6-205(a) table",
+      "quote": "20,000"
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "RA-2",
+      "label": "Min. lot size",
+      "value": "2 acres (87,120 sq ft)",
+      "source": {
+        "kind": "pdf",
+        "id": "greenwich21-pdf",
+        "file": "/sources/greenwich-div21.pdf",
+        "url": "https://www.greenwichct.gov/DocumentCenter/View/37841",
+        "title": "Building Zone Regulations, Div. 21 (Bulk Schedule)",
+        "content_hash": "25c7ff10da0aeefcc9eefc5651d756c8c9799b9e0884ee3d2e24b3605bb4bb47",
+        "mirrored_size_bytes": 40410
+      },
+      "cite": "§6-205(a) table",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "RA-4",
+      "label": "Min. lot size",
+      "value": "4 acres (174,200 sq ft)",
+      "source": {
+        "kind": "pdf",
+        "id": "greenwich21-pdf",
+        "file": "/sources/greenwich-div21.pdf",
+        "url": "https://www.greenwichct.gov/DocumentCenter/View/37841",
+        "title": "Building Zone Regulations, Div. 21 (Bulk Schedule)",
+        "content_hash": "25c7ff10da0aeefcc9eefc5651d756c8c9799b9e0884ee3d2e24b3605bb4bb47",
+        "mirrored_size_bytes": 40410
+      },
+      "cite": "§6-205(a) table",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "R-12",
+      "label": "Min. lot size",
+      "value": "12,000 sq ft",
+      "source": {
+        "kind": "pdf",
+        "id": "greenwich21-pdf",
+        "file": "/sources/greenwich-div21.pdf",
+        "url": "https://www.greenwichct.gov/DocumentCenter/View/37841",
+        "title": "Building Zone Regulations, Div. 21 (Bulk Schedule)",
+        "content_hash": "25c7ff10da0aeefcc9eefc5651d756c8c9799b9e0884ee3d2e24b3605bb4bb47",
+        "mirrored_size_bytes": 40410
+      },
+      "cite": "§6-205(a) table",
+      "quote": null
+    },
+    {
+      "category": "Use Permissions",
+      "district": "R-MF",
+      "label": "Two-family / multifamily",
+      "value": "Special Permit only, no distinct 3-unit tier",
+      "source": {
+        "kind": "pdf",
+        "id": "greenwich-pdf",
+        "file": "/sources/greenwich-div9.pdf",
+        "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+        "title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+        "content_hash": "a61cab47f9bcc67eadc6fbbe530649329c643d5f092549912f58c2cde5b88600",
+        "mirrored_size_bytes": 508124
+      },
+      "cite": "§6-98.1(a)(2)(A)",
+      "quote": "The building of a two family dwelling, conversion from a single family to a two-family dwelling, addition or alteration to a single family dwelling to create a two-family dwelling, additions to an existing (2) two-family residence, addition or alteration to one or more multi-family dwellings or a combination of single family, two-family and/or multi-family dwellings on a lot."
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "R-MF",
+      "label": "Min. lot area, multifamily tier",
+      "value": "2,400 sq ft/family",
+      "source": {
+        "kind": "pdf",
+        "id": "greenwich21-pdf",
+        "file": "/sources/greenwich-div21.pdf",
+        "url": "https://www.greenwichct.gov/DocumentCenter/View/37841",
+        "title": "Building Zone Regulations, Div. 21 (Bulk Schedule)",
+        "content_hash": "25c7ff10da0aeefcc9eefc5651d756c8c9799b9e0884ee3d2e24b3605bb4bb47",
+        "mirrored_size_bytes": 40410
+      },
+      "cite": "§6-205(a)",
+      "quote": "2,400"
+    },
+    {
+      "category": "ADU Policy",
+      "district": "Town-wide",
+      "label": "ADU max size (External, R-20/RA-1)",
+      "value": "1,000 sq ft",
+      "source": {
+        "kind": "pdf",
+        "id": "greenwich-pdf",
+        "file": "/sources/greenwich-div9.pdf",
+        "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+        "title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+        "content_hash": "a61cab47f9bcc67eadc6fbbe530649329c643d5f092549912f58c2cde5b88600",
+        "mirrored_size_bytes": 508124
+      },
+      "cite": "§6-99(a)(3)(D)(i)",
+      "quote": "External ADUs shall be limited to 800 square feet in R-12, R-7 and R-6 zones; 1,000 square feet in RA-1 and R-20 zones; and 1,200 square feet in RA-2 and RA-4 zones."
+    },
+    {
+      "category": "ADU Policy",
+      "district": "Town-wide",
+      "label": "ADU owner-occupancy",
+      "value": "Required — owner must reside in either unit",
+      "source": {
+        "kind": "pdf",
+        "id": "greenwich-pdf",
+        "file": "/sources/greenwich-div9.pdf",
+        "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+        "title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+        "content_hash": "a61cab47f9bcc67eadc6fbbe530649329c643d5f092549912f58c2cde5b88600",
+        "mirrored_size_bytes": 508124
+      },
+      "cite": "§6-99(a)(3)(A)",
+      "quote": "The owner of record (the “Owner”) must reside in either the ADU or the Primary Unit."
+    },
+    {
+      "category": "ADU Policy",
+      "district": "Town-wide",
+      "label": "ADU approval pathway",
+      "value": "By Zoning Permit (not Special Permit, unless oversized/nonconforming)",
+      "source": {
+        "kind": "pdf",
+        "id": "greenwich-pdf",
+        "file": "/sources/greenwich-div9.pdf",
+        "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+        "title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+        "content_hash": "a61cab47f9bcc67eadc6fbbe530649329c643d5f092549912f58c2cde5b88600",
+        "mirrored_size_bytes": 508124
+      },
+      "cite": "§6-99(a)(2)-(4)",
+      "quote": null
+    },
+    {
+      "category": "Approval Process",
+      "district": "R-MF",
+      "label": "Multifamily approval pathway",
+      "value": "Special Permit (Planning & Zoning Commission)",
+      "source": {
+        "kind": "pdf",
+        "id": "greenwich-pdf",
+        "file": "/sources/greenwich-div9.pdf",
+        "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+        "title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+        "content_hash": "a61cab47f9bcc67eadc6fbbe530649329c643d5f092549912f58c2cde5b88600",
+        "mirrored_size_bytes": 508124
+      },
+      "cite": "§6-98.1(a)(2)",
+      "quote": null
+    },
+    {
+      "category": "Parking",
+      "district": "R-MF",
+      "label": "Parking, 1–2BR unit",
+      "value": "1 garage space + 1 outdoor space",
+      "source": {
+        "kind": "pdf",
+        "id": "greenwich-pdf",
+        "file": "/sources/greenwich-div9.pdf",
+        "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+        "title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+        "content_hash": "a61cab47f9bcc67eadc6fbbe530649329c643d5f092549912f58c2cde5b88600",
+        "mirrored_size_bytes": 508124
+      },
+      "cite": "§6-155 (Div. 15, not locally mirrored)",
+      "quote": null
+    }
+  ],
   "nza_metrics": [
     {
       "label": "2-family housing prohibited",
@@ -73,90 +332,5 @@
     "content_hash": "a61cab47f9bcc67eadc6fbbe530649329c643d5f092549912f58c2cde5b88600",
     "mirrored_size_bytes": 508124
   },
-  "restrictive": {
-    "district": "R-20 / RA-2 (and RA-4, RA-1, R-12)",
-    "facts": [
-      {
-        "label": "Single-family",
-        "value": "Allowed by-right — only permitted use",
-        "source": {
-          "kind": "pdf",
-          "id": "greenwich-pdf",
-          "file": "/sources/greenwich-div9.pdf",
-          "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
-          "title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
-          "content_hash": "a61cab47f9bcc67eadc6fbbe530649329c643d5f092549912f58c2cde5b88600",
-          "mirrored_size_bytes": 508124
-        },
-        "cite": "Sec. 6-93(a)(1)",
-        "quote": "The following principal uses are permitted in RA-4, RA-2, RA-1, R-20 and R-12 Zones and all other principal uses are expressly excluded: (1) Detached single family dwellings, one (1) per lot."
-      },
-      {
-        "label": "Two-family / 3-/4+-family",
-        "value": "Prohibited — no provision anywhere in the permitted- or special-permit-use lists",
-        "source": {
-          "kind": "pdf",
-          "id": "greenwich-pdf",
-          "file": "/sources/greenwich-div9.pdf",
-          "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
-          "title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
-          "content_hash": "a61cab47f9bcc67eadc6fbbe530649329c643d5f092549912f58c2cde5b88600",
-          "mirrored_size_bytes": 508124
-        },
-        "cite": "Sec. 6-93 / 6-94",
-        "quote": null
-      },
-      {
-        "label": "Min. lot size (R-20)",
-        "value": "20,000 sq ft",
-        "source": {
-          "kind": "pdf",
-          "id": "greenwich21-pdf",
-          "file": "/sources/greenwich-div21.pdf",
-          "url": "https://www.greenwichct.gov/DocumentCenter/View/37841",
-          "title": "Building Zone Regulations, Div. 21 (Bulk Schedule)",
-          "content_hash": "25c7ff10da0aeefcc9eefc5651d756c8c9799b9e0884ee3d2e24b3605bb4bb47",
-          "mirrored_size_bytes": 40410
-        },
-        "cite": "Sec. 6-205(a) table",
-        "quote": "20,000"
-      }
-    ]
-  },
-  "permissive": {
-    "district": "R-MF",
-    "facts": [
-      {
-        "label": "Two-family / multifamily",
-        "value": "Special Permit only, no distinct 3-unit tier",
-        "source": {
-          "kind": "pdf",
-          "id": "greenwich-pdf",
-          "file": "/sources/greenwich-div9.pdf",
-          "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
-          "title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
-          "content_hash": "a61cab47f9bcc67eadc6fbbe530649329c643d5f092549912f58c2cde5b88600",
-          "mirrored_size_bytes": 508124
-        },
-        "cite": "Sec. 6-98.1(a)(2)(A)",
-        "quote": "The building of a two family dwelling, conversion from a single family to a two-family dwelling, addition or alteration to a single family dwelling to create a two-family dwelling, additions to an existing (2) two-family residence, addition or alteration to one or more multi-family dwellings or a combination of single family, two-family and/or multi-family dwellings on a lot."
-      },
-      {
-        "label": "Min. lot area, multifamily tier",
-        "value": "2,400 sq ft/family",
-        "source": {
-          "kind": "pdf",
-          "id": "greenwich21-pdf",
-          "file": "/sources/greenwich-div21.pdf",
-          "url": "https://www.greenwichct.gov/DocumentCenter/View/37841",
-          "title": "Building Zone Regulations, Div. 21 (Bulk Schedule)",
-          "content_hash": "25c7ff10da0aeefcc9eefc5651d756c8c9799b9e0884ee3d2e24b3605bb4bb47",
-          "mirrored_size_bytes": 40410
-        },
-        "cite": "Sec. 6-205(a)",
-        "quote": "2,400"
-      }
-    ]
-  },
-  "caveat": "Town adopted 2025–2026 amendments (nursing-home conversions, multifamily parking per PA 25-1) not fully reflected in the Aug. 2023 PDF — verify against the amendment list before external use."
+  "caveat": "Town adopted 2025–2026 amendments (nursing-home conversions, multifamily parking per PA 25-1) not fully reflected in the Aug. 2023 PDF — verify against the amendment list before external use. The parking table (Div. 15, §6-155) was cited from the original research pass but is not locally mirrored for quote verification."
 }

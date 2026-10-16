@@ -19,8 +19,10 @@ Everything lives in `/data` as plain JSON, versioned in git — no database. Thi
 research pass diffable and makes adding a town as simple as adding one file.
 
 - `data/towns/<slug>.json` — one file per town: composite score, the five NZA-sourced metrics
-  that feed it, and two `DistrictBlock`s (most restrictive / most permissive district) with
-  individual facts, each carrying its own `source` + `cite`.
+  that feed it, and a flat `variables` array (currently ~180 rows across 17 towns, ~10/town) —
+  each one categorized (`Use Permissions`, `Dimensional Standards`, `ADU Policy`, `Parking`,
+  `Approval Process`), tagged with the district it applies to, and carrying its own
+  `source` + `cite` + `quote`.
 - `public/sources/<file>.pdf` — mirrored copies of the source regulations, used by the in-app
   PDF citation viewer. Not every town has one: some sources blocked automated downloads or are
   browsable code sites (eCode360, encodeplus) rather than a single PDF. Those towns fall back
@@ -43,14 +45,16 @@ research pass diffable and makes adding a town as simple as adding one file.
 
 ## Citation traceability
 
-Every metric on a town page is a clickable/hoverable citation. Clicking one opens
-`SourceViewer`, which:
+Every variable row on a town page has a source button (green check = verified quote, gray "?"
+= citation only). Clicking it opens `SourceViewer`, which:
 
-- For a mirrored PDF: loads it with `pdfjs-dist`, searches all pages for the citation's most
-  distinctive token (e.g. "6-93" out of "Sec. 6-93(a)(1)"), jumps to the first matching page,
-  and highlights the match.
-- For a source with no local mirror (blocked download, or a browsable code site, or an NZA
-  snapshot page): shows a clear note and a link to the live source instead of guessing.
+- For a mirrored PDF with a verified `quote`: loads it with `pdfjs-dist`, searches every page's
+  text layer for that exact verbatim string (via a whitespace-stripped substring match that
+  tolerates PDF line-wrap noise), jumps to the matching page, and highlights the real
+  supporting text — not just the section number.
+- For a variable with no verified quote, or a source with no local mirror (blocked download,
+  image-only scan, or a browsable code site): shows a clear note and a link to the live source
+  instead of guessing or mis-highlighting.
 
 ## "Check for zoning changes"
 

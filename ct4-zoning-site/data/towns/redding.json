@@ -6,7 +6,164 @@
   "land_area_acres": 19732,
   "districts_analyzed": 12,
   "composite_score": 99.1,
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
+  "restrictive_district": "R-1",
+  "permissive_district": "RV",
+  "variables": [
+    {
+      "category": "Use Permissions",
+      "district": "R-1/R-4/R-2/R-½",
+      "label": "Only single-family permitted",
+      "value": "All uses must fall under §4.2.1, 4.2.2 or 4.2.3",
+      "source": {
+        "kind": "pdf",
+        "id": "redding-pdf",
+        "file": "/sources/redding-zoning.pdf",
+        "url": "https://reddingct.gov/wp-content/uploads/2025/10/Redding-Zoning-Regulations-1.24.24.pdf",
+        "title": "Redding Zoning Regulations (amendments through Feb. 15, 2024)",
+        "content_hash": "5eceaeb3836482e8ed59cff3f85dcc8eb6267b485b1d299a4f9d521b28d2d7be",
+        "mirrored_size_bytes": 4088907
+      },
+      "cite": "§4.2, §4.2.1(a)",
+      "quote": "Within Residential Zones (R-4, R-2, R-1, R-½, RV), buildings, structures and land shall be used only as permitted in Sections 4.2.1, 4.2.2 and 4.2.3."
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "R-1",
+      "label": "Min. lot size",
+      "value": "43,560 sq ft (1 acre)",
+      "source": {
+        "kind": "pdf",
+        "id": "redding-pdf",
+        "file": "/sources/redding-zoning.pdf",
+        "url": "https://reddingct.gov/wp-content/uploads/2025/10/Redding-Zoning-Regulations-1.24.24.pdf",
+        "title": "Redding Zoning Regulations (amendments through Feb. 15, 2024)",
+        "content_hash": "5eceaeb3836482e8ed59cff3f85dcc8eb6267b485b1d299a4f9d521b28d2d7be",
+        "mirrored_size_bytes": 4088907
+      },
+      "cite": "§4.6 table",
+      "quote": "43,560"
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "R-4",
+      "label": "Min. lot size (most restrictive tier)",
+      "value": "174,200 sq ft (4 acres)",
+      "source": {
+        "kind": "pdf",
+        "id": "redding-pdf",
+        "file": "/sources/redding-zoning.pdf",
+        "url": "https://reddingct.gov/wp-content/uploads/2025/10/Redding-Zoning-Regulations-1.24.24.pdf",
+        "title": "Redding Zoning Regulations (amendments through Feb. 15, 2024)",
+        "content_hash": "5eceaeb3836482e8ed59cff3f85dcc8eb6267b485b1d299a4f9d521b28d2d7be",
+        "mirrored_size_bytes": 4088907
+      },
+      "cite": "§4.6 table",
+      "quote": null
+    },
+    {
+      "category": "Use Permissions",
+      "district": "RV",
+      "label": "Multifamily",
+      "value": "Special Permit only, capped at 1 unit/8,000 sq ft of site area",
+      "source": {
+        "kind": "pdf",
+        "id": "redding-pdf",
+        "file": "/sources/redding-zoning.pdf",
+        "url": "https://reddingct.gov/wp-content/uploads/2025/10/Redding-Zoning-Regulations-1.24.24.pdf",
+        "title": "Redding Zoning Regulations (amendments through Feb. 15, 2024)",
+        "content_hash": "5eceaeb3836482e8ed59cff3f85dcc8eb6267b485b1d299a4f9d521b28d2d7be",
+        "mirrored_size_bytes": 4088907
+      },
+      "cite": "§4.2.3(o)",
+      "quote": "Within RV Residential Zone only, residential apartments, townhouses or condominiums not exceeding a density of one (1) residential unit per 8,000 square feet of site area"
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "RV",
+      "label": "Min. lot size (zone)",
+      "value": "No acreage minimum (NR)",
+      "source": {
+        "kind": "pdf",
+        "id": "redding-pdf",
+        "file": "/sources/redding-zoning.pdf",
+        "url": "https://reddingct.gov/wp-content/uploads/2025/10/Redding-Zoning-Regulations-1.24.24.pdf",
+        "title": "Redding Zoning Regulations (amendments through Feb. 15, 2024)",
+        "content_hash": "5eceaeb3836482e8ed59cff3f85dcc8eb6267b485b1d299a4f9d521b28d2d7be",
+        "mirrored_size_bytes": 4088907
+      },
+      "cite": "§4.6 table",
+      "quote": null
+    },
+    {
+      "category": "ADU Policy",
+      "district": "Town-wide",
+      "label": "ADU approval pathway",
+      "value": "Special Permit required (not by-right)",
+      "source": {
+        "kind": "pdf",
+        "id": "redding-pdf",
+        "file": "/sources/redding-zoning.pdf",
+        "url": "https://reddingct.gov/wp-content/uploads/2025/10/Redding-Zoning-Regulations-1.24.24.pdf",
+        "title": "Redding Zoning Regulations (amendments through Feb. 15, 2024)",
+        "content_hash": "5eceaeb3836482e8ed59cff3f85dcc8eb6267b485b1d299a4f9d521b28d2d7be",
+        "mirrored_size_bytes": 4088907
+      },
+      "cite": "§5.12.1",
+      "quote": "One (1) accessory residential apartment (see Definitions, Section 8.1.11) may be permitted on a lot, subject to a Special Permit granted by the Commission."
+    },
+    {
+      "category": "ADU Policy",
+      "district": "Town-wide",
+      "label": "ADU owner-occupancy",
+      "value": "Required throughout the duration of the apartment use",
+      "source": {
+        "kind": "pdf",
+        "id": "redding-pdf",
+        "file": "/sources/redding-zoning.pdf",
+        "url": "https://reddingct.gov/wp-content/uploads/2025/10/Redding-Zoning-Regulations-1.24.24.pdf",
+        "title": "Redding Zoning Regulations (amendments through Feb. 15, 2024)",
+        "content_hash": "5eceaeb3836482e8ed59cff3f85dcc8eb6267b485b1d299a4f9d521b28d2d7be",
+        "mirrored_size_bytes": 4088907
+      },
+      "cite": "§5.12.3(a)",
+      "quote": "The owner of the premises shall be resident in either the accessory or principal dwelling throughout the duration of the apartment use."
+    },
+    {
+      "category": "ADU Policy",
+      "district": "Town-wide",
+      "label": "ADU max size (attached)",
+      "value": "Lesser of 30% of dwelling floor area or 1,000 sq ft",
+      "source": {
+        "kind": "pdf",
+        "id": "redding-pdf",
+        "file": "/sources/redding-zoning.pdf",
+        "url": "https://reddingct.gov/wp-content/uploads/2025/10/Redding-Zoning-Regulations-1.24.24.pdf",
+        "title": "Redding Zoning Regulations (amendments through Feb. 15, 2024)",
+        "content_hash": "5eceaeb3836482e8ed59cff3f85dcc8eb6267b485b1d299a4f9d521b28d2d7be",
+        "mirrored_size_bytes": 4088907
+      },
+      "cite": "§5.12.4(c)",
+      "quote": "comprising no more than 30% of the total finished floor area of the dwelling, or 1000 square feet of gross (total) floor area, whichever is less."
+    },
+    {
+      "category": "Parking",
+      "district": "Town-wide",
+      "label": "Parking, single-family dwelling",
+      "value": "2 spaces/dwelling",
+      "source": {
+        "kind": "pdf",
+        "id": "redding-pdf",
+        "file": "/sources/redding-zoning.pdf",
+        "url": "https://reddingct.gov/wp-content/uploads/2025/10/Redding-Zoning-Regulations-1.24.24.pdf",
+        "title": "Redding Zoning Regulations (amendments through Feb. 15, 2024)",
+        "content_hash": "5eceaeb3836482e8ed59cff3f85dcc8eb6267b485b1d299a4f9d521b28d2d7be",
+        "mirrored_size_bytes": 4088907
+      },
+      "cite": "§5.6.2 table",
+      "quote": null
+    }
+  ],
   "nza_metrics": [
     {
       "label": "2-family housing prohibited",
@@ -72,61 +229,6 @@
     "title": "Redding Zoning Regulations (amendments through Feb. 15, 2024)",
     "content_hash": "5eceaeb3836482e8ed59cff3f85dcc8eb6267b485b1d299a4f9d521b28d2d7be",
     "mirrored_size_bytes": 4088907
-  },
-  "restrictive": {
-    "district": "R-1 (and R-4 / R-2 / R-½)",
-    "facts": [
-      {
-        "label": "Only single-family permitted",
-        "value": "All uses must fall under §4.2.1, 4.2.2 or 4.2.3; the only principal use is single-family",
-        "source": {
-          "kind": "pdf",
-          "id": "redding-pdf",
-          "file": "/sources/redding-zoning.pdf",
-          "url": "https://reddingct.gov/wp-content/uploads/2025/10/Redding-Zoning-Regulations-1.24.24.pdf",
-          "title": "Redding Zoning Regulations (amendments through Feb. 15, 2024)",
-          "content_hash": "5eceaeb3836482e8ed59cff3f85dcc8eb6267b485b1d299a4f9d521b28d2d7be",
-          "mirrored_size_bytes": 4088907
-        },
-        "cite": "§4.2, §4.2.1(a)",
-        "quote": "Within Residential Zones (R-4, R-2, R-1, R-½, RV), buildings, structures and land shall be used only as permitted in Sections 4.2.1, 4.2.2 and 4.2.3."
-      },
-      {
-        "label": "Min. lot size (R-1)",
-        "value": "43,560 sq ft (1 acre)",
-        "source": {
-          "kind": "pdf",
-          "id": "redding-pdf",
-          "file": "/sources/redding-zoning.pdf",
-          "url": "https://reddingct.gov/wp-content/uploads/2025/10/Redding-Zoning-Regulations-1.24.24.pdf",
-          "title": "Redding Zoning Regulations (amendments through Feb. 15, 2024)",
-          "content_hash": "5eceaeb3836482e8ed59cff3f85dcc8eb6267b485b1d299a4f9d521b28d2d7be",
-          "mirrored_size_bytes": 4088907
-        },
-        "cite": "§4.6 table",
-        "quote": "43,560"
-      }
-    ]
-  },
-  "permissive": {
-    "district": "RV (Village Residential)",
-    "facts": [
-      {
-        "label": "Multifamily",
-        "value": "Special Permit only, capped at 1 unit/8,000 sq ft of site area",
-        "source": {
-          "kind": "pdf",
-          "id": "redding-pdf",
-          "file": "/sources/redding-zoning.pdf",
-          "url": "https://reddingct.gov/wp-content/uploads/2025/10/Redding-Zoning-Regulations-1.24.24.pdf",
-          "title": "Redding Zoning Regulations (amendments through Feb. 15, 2024)",
-          "content_hash": "5eceaeb3836482e8ed59cff3f85dcc8eb6267b485b1d299a4f9d521b28d2d7be",
-          "mirrored_size_bytes": 4088907
-        },
-        "cite": "§4.2.3(o)",
-        "quote": "Within RV Residential Zone only, residential apartments, townhouses or condominiums not exceeding a density of one (1) residential unit per 8,000 square feet of site area"
-      }
-    ]
   },
   "caveat": "Redding's ADU rules give no size figure for detached ADUs in R-4 — a likely drafting gap rather than a deliberate restriction."
 }

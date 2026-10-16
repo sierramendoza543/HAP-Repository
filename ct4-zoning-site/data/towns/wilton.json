@@ -6,7 +6,151 @@
   "land_area_acres": null,
   "districts_analyzed": 19,
   "composite_score": 95.4,
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
+  "restrictive_district": "R-2A",
+  "permissive_district": "HODD",
+  "variables": [
+    {
+      "category": "Use Permissions",
+      "district": "R-2A",
+      "label": "\"Two-family\" / \"three-family\"",
+      "value": "Do not exist anywhere in the 337-page code",
+      "source": {
+        "kind": "link",
+        "id": "wilton-link",
+        "url": "https://www.wiltonct.gov/planning-zoning-department/files/regulations-document-october-7",
+        "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
+      },
+      "cite": "full-text search",
+      "quote": null
+    },
+    {
+      "category": "Use Permissions",
+      "district": "R-2A",
+      "label": "Multifamily",
+      "value": "Prohibited",
+      "source": {
+        "kind": "link",
+        "id": "wilton-link",
+        "url": "https://www.wiltonct.gov/planning-zoning-department/files/regulations-document-october-7",
+        "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
+      },
+      "cite": "§29-5.A.2.a",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "R-2A",
+      "label": "Min. lot size",
+      "value": "2 acres (87,120 sq ft)",
+      "source": {
+        "kind": "link",
+        "id": "wilton-link",
+        "url": "https://www.wiltonct.gov/planning-zoning-department/files/regulations-document-october-7",
+        "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
+      },
+      "cite": "§29-5.D table",
+      "quote": null
+    },
+    {
+      "category": "Use Permissions",
+      "district": "HODD",
+      "label": "Multi-family attached dwellings",
+      "value": "Permitted as a matter of right",
+      "source": {
+        "kind": "link",
+        "id": "wilton-link",
+        "url": "https://www.wiltonct.gov/planning-zoning-department/files/regulations-document-october-7",
+        "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
+      },
+      "cite": "§29-5.E.8",
+      "quote": "Permitted Uses. The following principal uses shall be permitted in the HODD as a matter of right: a. Multi-family attached dwellings. b. Open space. c. Single-family detached dwellings."
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "HODD",
+      "label": "Lot area",
+      "value": "9–11 acres",
+      "source": {
+        "kind": "link",
+        "id": "wilton-link",
+        "url": "https://www.wiltonct.gov/planning-zoning-department/files/regulations-document-october-7",
+        "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
+      },
+      "cite": "§29-5.E.9.a-b",
+      "quote": null
+    },
+    {
+      "category": "Use Permissions",
+      "district": "HODD",
+      "label": "Density / affordability",
+      "value": "10 units/gross acre, 30% affordable required",
+      "source": {
+        "kind": "link",
+        "id": "wilton-link",
+        "url": "https://www.wiltonct.gov/planning-zoning-department/files/regulations-document-october-7",
+        "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
+      },
+      "cite": "§29-5.E.9.c-d",
+      "quote": null
+    },
+    {
+      "category": "ADU Policy",
+      "district": "Town-wide",
+      "label": "ADU max size",
+      "value": "¼ of gross floor area or 750 sq ft, whichever greater; max 2 bedrooms",
+      "source": {
+        "kind": "link",
+        "id": "wilton-link",
+        "url": "https://www.wiltonct.gov/planning-zoning-department/files/regulations-document-october-7",
+        "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
+      },
+      "cite": "§29-4.D.1",
+      "quote": null
+    },
+    {
+      "category": "ADU Policy",
+      "district": "Town-wide",
+      "label": "ADU owner-occupancy",
+      "value": "Required (one unit, annual certification)",
+      "source": {
+        "kind": "link",
+        "id": "wilton-link",
+        "url": "https://www.wiltonct.gov/planning-zoning-department/files/regulations-document-october-7",
+        "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
+      },
+      "cite": "§29-4.D.1",
+      "quote": null
+    },
+    {
+      "category": "Parking",
+      "district": "DRD/multifamily <17 units",
+      "label": "Parking minimum",
+      "value": "None, unless in a Conservation & Traffic Mitigation District",
+      "source": {
+        "kind": "link",
+        "id": "wilton-link",
+        "url": "https://www.wiltonct.gov/planning-zoning-department/files/regulations-document-october-7",
+        "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
+      },
+      "cite": "§29-8.B.5",
+      "quote": null
+    },
+    {
+      "category": "Parking",
+      "district": "R-2A",
+      "label": "Parking, single-family",
+      "value": "2/unit + 1 per guest sleeping room for roomers/boarders",
+      "source": {
+        "kind": "link",
+        "id": "wilton-link",
+        "url": "https://www.wiltonct.gov/planning-zoning-department/files/regulations-document-october-7",
+        "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
+      },
+      "cite": "§29-8.B.5.a(1)",
+      "quote": null
+    }
+  ],
   "nza_metrics": [
     {
       "label": "2-family housing prohibited",
@@ -69,76 +213,6 @@
     "id": "wilton-link",
     "url": "https://www.wiltonct.gov/planning-zoning-department/files/regulations-document-october-7",
     "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
-  },
-  "restrictive": {
-    "district": "R-2A",
-    "facts": [
-      {
-        "label": "\"Two-family\" / \"three-family\"",
-        "value": "Do not exist anywhere in the 337-page code — only single-family and undifferentiated multifamily are defined terms",
-        "source": {
-          "kind": "link",
-          "id": "wilton-link",
-          "url": "https://www.wiltonct.gov/planning-zoning-department/files/regulations-document-october-7",
-          "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
-        },
-        "cite": "full-text search of the regulations",
-        "quote": null
-      },
-      {
-        "label": "Multifamily",
-        "value": "Prohibited in R-2A",
-        "source": {
-          "kind": "link",
-          "id": "wilton-link",
-          "url": "https://www.wiltonct.gov/planning-zoning-department/files/regulations-document-october-7",
-          "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
-        },
-        "cite": "§29-5.A.2.a",
-        "quote": null
-      },
-      {
-        "label": "Min. lot size",
-        "value": "2 acres (87,120 sq ft)",
-        "source": {
-          "kind": "link",
-          "id": "wilton-link",
-          "url": "https://www.wiltonct.gov/planning-zoning-department/files/regulations-document-october-7",
-          "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
-        },
-        "cite": "§29-5.D table",
-        "quote": null
-      }
-    ]
-  },
-  "permissive": {
-    "district": "HODD (Housing Opportunity Development District)",
-    "facts": [
-      {
-        "label": "Multi-family attached dwellings",
-        "value": "Permitted as a matter of right",
-        "source": {
-          "kind": "link",
-          "id": "wilton-link",
-          "url": "https://www.wiltonct.gov/planning-zoning-department/files/regulations-document-october-7",
-          "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
-        },
-        "cite": "§29-5.E.8",
-        "quote": "Permitted Uses. The following principal uses shall be permitted in the HODD as a matter of right: a. Multi-family attached dwellings. b. Open space. c. Single-family detached dwellings."
-      },
-      {
-        "label": "Density / affordability",
-        "value": "10 units/gross acre, 30% affordable required",
-        "source": {
-          "kind": "link",
-          "id": "wilton-link",
-          "url": "https://www.wiltonct.gov/planning-zoning-department/files/regulations-document-october-7",
-          "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
-        },
-        "cite": "§29-5.E.9",
-        "quote": null
-      }
-    ]
   },
   "caveat": "HODD sites are capped between 9 and 11 acres — a narrow, purpose-built carve-out, not a general-purpose multifamily zone. No local PDF mirror exists for Wilton, so only the HODD permitted-uses fact above has an independently re-verified quote."
 }

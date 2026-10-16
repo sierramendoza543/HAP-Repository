@@ -6,7 +6,164 @@
   "land_area_acres": 10246,
   "districts_analyzed": 25,
   "composite_score": 15.5,
-  "last_checked": "2026-10-15",
+  "last_checked": "2026-10-16",
+  "restrictive_district": "N1",
+  "permissive_district": "NX2",
+  "variables": [
+    {
+      "category": "Use Permissions",
+      "district": "N1",
+      "label": "Single-family (House A)",
+      "value": "1 in House — no 2-unit option exists",
+      "source": {
+        "kind": "pdf",
+        "id": "bridgeport-pdf",
+        "file": "/sources/bridgeport-zoning.pdf",
+        "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+        "title": "\"Zone Bridgeport\" form-based code (amended July 2022)",
+        "content_hash": "7607b979812edb9e8fea2c3e6ba6dee542f00ee5aeadecfec32d6293c3a10917",
+        "mirrored_size_bytes": 10607765
+      },
+      "cite": "§3.90.9",
+      "quote": "Number of Principal Units: 1 in House"
+    },
+    {
+      "category": "Use Permissions",
+      "district": "N1",
+      "label": "ADU",
+      "value": "1 in House or Backyard Cottage — allowed by-right",
+      "source": {
+        "kind": "pdf",
+        "id": "bridgeport-pdf",
+        "file": "/sources/bridgeport-zoning.pdf",
+        "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+        "title": "\"Zone Bridgeport\" form-based code (amended July 2022)",
+        "content_hash": "7607b979812edb9e8fea2c3e6ba6dee542f00ee5aeadecfec32d6293c3a10917",
+        "mirrored_size_bytes": 10607765
+      },
+      "cite": "§3.90.9",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "N1",
+      "label": "Min. lot width",
+      "value": "45 ft (no lot area minimum)",
+      "source": {
+        "kind": "pdf",
+        "id": "bridgeport-pdf",
+        "file": "/sources/bridgeport-zoning.pdf",
+        "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+        "title": "\"Zone Bridgeport\" form-based code (amended July 2022)",
+        "content_hash": "7607b979812edb9e8fea2c3e6ba6dee542f00ee5aeadecfec32d6293c3a10917",
+        "mirrored_size_bytes": 10607765
+      },
+      "cite": "§3.90.4",
+      "quote": "Lot Width: 45 ft. min."
+    },
+    {
+      "category": "Use Permissions",
+      "district": "NX2",
+      "label": "Up to 4 units (House A)",
+      "value": "By-right, no special permit, + 1 backyard cottage",
+      "source": {
+        "kind": "pdf",
+        "id": "bridgeport-pdf",
+        "file": "/sources/bridgeport-zoning.pdf",
+        "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+        "title": "\"Zone Bridgeport\" form-based code (amended July 2022)",
+        "content_hash": "7607b979812edb9e8fea2c3e6ba6dee542f00ee5aeadecfec32d6293c3a10917",
+        "mirrored_size_bytes": 10607765
+      },
+      "cite": "§3.90.9",
+      "quote": "up to 4 in House plus 1 in Backyard Cottage"
+    },
+    {
+      "category": "Use Permissions",
+      "district": "NX2",
+      "label": "Double House A",
+      "value": "Up to 4 by-right / 6 with special permit",
+      "source": {
+        "kind": "pdf",
+        "id": "bridgeport-pdf",
+        "file": "/sources/bridgeport-zoning.pdf",
+        "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+        "title": "\"Zone Bridgeport\" form-based code (amended July 2022)",
+        "content_hash": "7607b979812edb9e8fea2c3e6ba6dee542f00ee5aeadecfec32d6293c3a10917",
+        "mirrored_size_bytes": 10607765
+      },
+      "cite": "§3.80.9",
+      "quote": null
+    },
+    {
+      "category": "Use Permissions",
+      "district": "NX2",
+      "label": "Small General building type",
+      "value": "3 min., 6 max., up to 8 with special permit",
+      "source": {
+        "kind": "pdf",
+        "id": "bridgeport-pdf",
+        "file": "/sources/bridgeport-zoning.pdf",
+        "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+        "title": "\"Zone Bridgeport\" form-based code (amended July 2022)",
+        "content_hash": "7607b979812edb9e8fea2c3e6ba6dee542f00ee5aeadecfec32d6293c3a10917",
+        "mirrored_size_bytes": 10607765
+      },
+      "cite": "§3.60.9",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "NX2",
+      "label": "Min. lot width (House A)",
+      "value": "35 ft",
+      "source": {
+        "kind": "pdf",
+        "id": "bridgeport-pdf",
+        "file": "/sources/bridgeport-zoning.pdf",
+        "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+        "title": "\"Zone Bridgeport\" form-based code (amended July 2022)",
+        "content_hash": "7607b979812edb9e8fea2c3e6ba6dee542f00ee5aeadecfec32d6293c3a10917",
+        "mirrored_size_bytes": 10607765
+      },
+      "cite": "§3.90.4",
+      "quote": null
+    },
+    {
+      "category": "Approval Process",
+      "district": "NX2",
+      "label": "4+-unit approval pathway",
+      "value": "By-right up to 4 units; Special Permit above that",
+      "source": {
+        "kind": "pdf",
+        "id": "bridgeport-pdf",
+        "file": "/sources/bridgeport-zoning.pdf",
+        "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+        "title": "\"Zone Bridgeport\" form-based code (amended July 2022)",
+        "content_hash": "7607b979812edb9e8fea2c3e6ba6dee542f00ee5aeadecfec32d6293c3a10917",
+        "mirrored_size_bytes": 10607765
+      },
+      "cite": "§3.90.9 / §3.80.9",
+      "quote": null
+    },
+    {
+      "category": "Parking",
+      "district": "Town-wide",
+      "label": "Parking minimum",
+      "value": "None — citywide",
+      "source": {
+        "kind": "pdf",
+        "id": "bridgeport-pdf",
+        "file": "/sources/bridgeport-zoning.pdf",
+        "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+        "title": "\"Zone Bridgeport\" form-based code (amended July 2022)",
+        "content_hash": "7607b979812edb9e8fea2c3e6ba6dee542f00ee5aeadecfec32d6293c3a10917",
+        "mirrored_size_bytes": 10607765
+      },
+      "cite": "§8.20.1",
+      "quote": "This zoning code does not establish minimum off-street parking requirements"
+    }
+  ],
   "nza_metrics": [
     {
       "label": "2-family housing prohibited",
@@ -72,76 +229,6 @@
     "title": "\"Zone Bridgeport\" form-based code (amended July 2022)",
     "content_hash": "7607b979812edb9e8fea2c3e6ba6dee542f00ee5aeadecfec32d6293c3a10917",
     "mirrored_size_bytes": 10607765
-  },
-  "restrictive": {
-    "district": "N1 (Neighborhood: Traditional)",
-    "facts": [
-      {
-        "label": "Single-family (House A, N1 column)",
-        "value": "1 in House — no 2-unit option exists in N1",
-        "source": {
-          "kind": "pdf",
-          "id": "bridgeport-pdf",
-          "file": "/sources/bridgeport-zoning.pdf",
-          "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
-          "title": "\"Zone Bridgeport\" form-based code (amended July 2022)",
-          "content_hash": "7607b979812edb9e8fea2c3e6ba6dee542f00ee5aeadecfec32d6293c3a10917",
-          "mirrored_size_bytes": 10607765
-        },
-        "cite": "Sec. 3.90.9",
-        "quote": "Number of Principal Units: 1 in House"
-      },
-      {
-        "label": "Min. lot width",
-        "value": "45 ft (no lot area minimum)",
-        "source": {
-          "kind": "pdf",
-          "id": "bridgeport-pdf",
-          "file": "/sources/bridgeport-zoning.pdf",
-          "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
-          "title": "\"Zone Bridgeport\" form-based code (amended July 2022)",
-          "content_hash": "7607b979812edb9e8fea2c3e6ba6dee542f00ee5aeadecfec32d6293c3a10917",
-          "mirrored_size_bytes": 10607765
-        },
-        "cite": "Sec. 3.90.4",
-        "quote": "Lot Width: 45 ft. min."
-      }
-    ]
-  },
-  "permissive": {
-    "district": "NX2 (Neighborhood Mix)",
-    "facts": [
-      {
-        "label": "Up to 4 units (House A, NX2 column)",
-        "value": "By-right, no special permit, + 1 backyard cottage",
-        "source": {
-          "kind": "pdf",
-          "id": "bridgeport-pdf",
-          "file": "/sources/bridgeport-zoning.pdf",
-          "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
-          "title": "\"Zone Bridgeport\" form-based code (amended July 2022)",
-          "content_hash": "7607b979812edb9e8fea2c3e6ba6dee542f00ee5aeadecfec32d6293c3a10917",
-          "mirrored_size_bytes": 10607765
-        },
-        "cite": "Sec. 3.90.9",
-        "quote": "up to 4 in House plus 1 in Backyard Cottage"
-      },
-      {
-        "label": "Parking minimum (citywide)",
-        "value": "None",
-        "source": {
-          "kind": "pdf",
-          "id": "bridgeport-pdf",
-          "file": "/sources/bridgeport-zoning.pdf",
-          "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
-          "title": "\"Zone Bridgeport\" form-based code (amended July 2022)",
-          "content_hash": "7607b979812edb9e8fea2c3e6ba6dee542f00ee5aeadecfec32d6293c3a10917",
-          "mirrored_size_bytes": 10607765
-        },
-        "cite": "Sec. 8.20.1",
-        "quote": "This zoning code does not establish minimum off-street parking requirements"
-      }
-    ]
   },
   "caveat": "A 2025 proposal (25-23) to add residential parking minimums citywide was found but its adoption status is unconfirmed."
 }
