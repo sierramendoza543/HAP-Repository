@@ -16,10 +16,13 @@
       "label": "\"Two-family\", \"duplex\", \"multi-family\", \"three-family\"",
       "value": "Zero matches in a full-text search of the 6,576-line regulations",
       "source": {
-        "kind": "link",
-        "id": "easton-link",
+        "kind": "pdf",
+        "id": "easton-pdf",
+        "file": "/sources/easton-zoning.pdf",
         "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
-        "title": "Easton Zoning Regulations (last revised July 7, 2024)"
+        "title": "Easton Zoning Regulations (last revised July 7, 2024)",
+        "content_hash": "9dd3c13bca1d0c145e8e23e39a6b572db46cf47a91c444df0e8538e15cda934c",
+        "mirrored_size_bytes": 4178229
       },
       "cite": "exhaustive keyword search",
       "quote": null
@@ -30,13 +33,16 @@
       "label": "Min. lot size",
       "value": "40,000 sq ft",
       "source": {
-        "kind": "link",
-        "id": "easton-link",
+        "kind": "pdf",
+        "id": "easton-pdf",
+        "file": "/sources/easton-zoning.pdf",
         "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
-        "title": "Easton Zoning Regulations (last revised July 7, 2024)"
+        "title": "Easton Zoning Regulations (last revised July 7, 2024)",
+        "content_hash": "9dd3c13bca1d0c145e8e23e39a6b572db46cf47a91c444df0e8538e15cda934c",
+        "mirrored_size_bytes": 4178229
       },
       "cite": "§3510 table",
-      "quote": null
+      "quote": "Minimum Lot Area                                 40,000 square feet"
     },
     {
       "category": "Dimensional Standards",
@@ -44,13 +50,16 @@
       "label": "Min. lot size",
       "value": "3 acres (130,680 sq ft)",
       "source": {
-        "kind": "link",
-        "id": "easton-link",
+        "kind": "pdf",
+        "id": "easton-pdf",
+        "file": "/sources/easton-zoning.pdf",
         "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
-        "title": "Easton Zoning Regulations (last revised July 7, 2024)"
+        "title": "Easton Zoning Regulations (last revised July 7, 2024)",
+        "content_hash": "9dd3c13bca1d0c145e8e23e39a6b572db46cf47a91c444df0e8538e15cda934c",
+        "mirrored_size_bytes": 4178229
       },
       "cite": "§3510 table",
-      "quote": null
+      "quote": "130,680 square feet"
     },
     {
       "category": "Use Permissions",
@@ -58,10 +67,13 @@
       "label": "Multifamily pathway",
       "value": "None — not even by special permit",
       "source": {
-        "kind": "link",
-        "id": "easton-link",
+        "kind": "pdf",
+        "id": "easton-pdf",
+        "file": "/sources/easton-zoning.pdf",
         "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
-        "title": "Easton Zoning Regulations (last revised July 7, 2024)"
+        "title": "Easton Zoning Regulations (last revised July 7, 2024)",
+        "content_hash": "9dd3c13bca1d0c145e8e23e39a6b572db46cf47a91c444df0e8538e15cda934c",
+        "mirrored_size_bytes": 4178229
       },
       "cite": "full code review",
       "quote": null
@@ -72,13 +84,16 @@
       "label": "ADU max size (attached)",
       "value": "Lesser of 40% of dwelling area or 1,500 sq ft",
       "source": {
-        "kind": "link",
-        "id": "easton-link",
+        "kind": "pdf",
+        "id": "easton-pdf",
+        "file": "/sources/easton-zoning.pdf",
         "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
-        "title": "Easton Zoning Regulations (last revised July 7, 2024)"
+        "title": "Easton Zoning Regulations (last revised July 7, 2024)",
+        "content_hash": "9dd3c13bca1d0c145e8e23e39a6b572db46cf47a91c444df0e8538e15cda934c",
+        "mirrored_size_bytes": 4178229
       },
       "cite": "§5220.2.a",
-      "quote": null
+      "quote": "Forty percent (40%) of the area of the principal dwelling (exclusive of garage, attic, and cellar) or 1,500 square feet, whichever is the more restrictive requirement"
     },
     {
       "category": "ADU Policy",
@@ -86,13 +101,16 @@
       "label": "ADU max size (detached)",
       "value": "Lesser of 30%/1,000 sq ft (≥87,120 sf lot) or 20%/800 sq ft (≥34,000 sf lot)",
       "source": {
-        "kind": "link",
-        "id": "easton-link",
+        "kind": "pdf",
+        "id": "easton-pdf",
+        "file": "/sources/easton-zoning.pdf",
         "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
-        "title": "Easton Zoning Regulations (last revised July 7, 2024)"
+        "title": "Easton Zoning Regulations (last revised July 7, 2024)",
+        "content_hash": "9dd3c13bca1d0c145e8e23e39a6b572db46cf47a91c444df0e8538e15cda934c",
+        "mirrored_size_bytes": 4178229
       },
       "cite": "§5220.2.b",
-      "quote": null
+      "quote": "Twenty percent (20%) of the area of the principal dwelling (exclusive of garage, attic, and cellar) or 800 square feet, whichever is the more restrictive requirement"
     },
     {
       "category": "ADU Policy",
@@ -100,13 +118,16 @@
       "label": "ADU owner-occupancy",
       "value": "Required (annual affidavit)",
       "source": {
-        "kind": "link",
-        "id": "easton-link",
+        "kind": "pdf",
+        "id": "easton-pdf",
+        "file": "/sources/easton-zoning.pdf",
         "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
-        "title": "Easton Zoning Regulations (last revised July 7, 2024)"
+        "title": "Easton Zoning Regulations (last revised July 7, 2024)",
+        "content_hash": "9dd3c13bca1d0c145e8e23e39a6b572db46cf47a91c444df0e8538e15cda934c",
+        "mirrored_size_bytes": 4178229
       },
       "cite": "§5220.1",
-      "quote": null
+      "quote": "The owner of the property shall occupy either the principal dwelling or the ADU and an annual affidavit shall be filed by January 31 of each year attesting to such occupancy."
     },
     {
       "category": "ADU Policy",
@@ -114,13 +135,16 @@
       "label": "ADU bedroom cap",
       "value": "2 bedrooms (attached) / 1 bedroom (detached)",
       "source": {
-        "kind": "link",
-        "id": "easton-link",
+        "kind": "pdf",
+        "id": "easton-pdf",
+        "file": "/sources/easton-zoning.pdf",
         "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
-        "title": "Easton Zoning Regulations (last revised July 7, 2024)"
+        "title": "Easton Zoning Regulations (last revised July 7, 2024)",
+        "content_hash": "9dd3c13bca1d0c145e8e23e39a6b572db46cf47a91c444df0e8538e15cda934c",
+        "mirrored_size_bytes": 4178229
       },
       "cite": "§5220.3",
-      "quote": null
+      "quote": "An ADU within/attached to the principal dwelling shall not contain more than two bedrooms"
     },
     {
       "category": "Parking",
@@ -128,13 +152,16 @@
       "label": "Parking, single-family dwelling",
       "value": "2.0 spaces",
       "source": {
-        "kind": "link",
-        "id": "easton-link",
+        "kind": "pdf",
+        "id": "easton-pdf",
+        "file": "/sources/easton-zoning.pdf",
         "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
-        "title": "Easton Zoning Regulations (last revised July 7, 2024)"
+        "title": "Easton Zoning Regulations (last revised July 7, 2024)",
+        "content_hash": "9dd3c13bca1d0c145e8e23e39a6b572db46cf47a91c444df0e8538e15cda934c",
+        "mirrored_size_bytes": 4178229
       },
       "cite": "§6221 table",
-      "quote": null
+      "quote": "Single‐family dwelling                         2.0 spaces"
     },
     {
       "category": "Parking",
@@ -142,13 +169,16 @@
       "label": "Parking, ADU",
       "value": "+2.0 spaces (4 total with ADU)",
       "source": {
-        "kind": "link",
-        "id": "easton-link",
+        "kind": "pdf",
+        "id": "easton-pdf",
+        "file": "/sources/easton-zoning.pdf",
         "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
-        "title": "Easton Zoning Regulations (last revised July 7, 2024)"
+        "title": "Easton Zoning Regulations (last revised July 7, 2024)",
+        "content_hash": "9dd3c13bca1d0c145e8e23e39a6b572db46cf47a91c444df0e8538e15cda934c",
+        "mirrored_size_bytes": 4178229
       },
       "cite": "§6221 table",
-      "quote": null
+      "quote": "Accessory dwelling unit                        2.0 spaces in addition to residence requirement"
     },
     {
       "category": "Overlays & Affordability",
@@ -156,10 +186,13 @@
       "label": "Min. unit size",
       "value": "Not found as a general minimum beyond ADU caps already captured above",
       "source": {
-        "kind": "link",
-        "id": "easton-link",
+        "kind": "pdf",
+        "id": "easton-pdf",
+        "file": "/sources/easton-zoning.pdf",
         "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
-        "title": "Easton Zoning Regulations (last revised July 7, 2024)"
+        "title": "Easton Zoning Regulations (last revised July 7, 2024)",
+        "content_hash": "9dd3c13bca1d0c145e8e23e39a6b572db46cf47a91c444df0e8538e15cda934c",
+        "mirrored_size_bytes": 4178229
       },
       "cite": "zoning regs — not located",
       "quote": null
@@ -170,10 +203,13 @@
       "label": "Inclusionary zoning",
       "value": "None found — no local ordinance. A 2022 developer proposal with 30% affordable (105 units) was DENIED by P&Z under state CGS §8-30g process, not a town mandate",
       "source": {
-        "kind": "link",
-        "id": "easton-link",
+        "kind": "pdf",
+        "id": "easton-pdf",
+        "file": "/sources/easton-zoning.pdf",
         "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
-        "title": "Easton Zoning Regulations (last revised July 7, 2024)"
+        "title": "Easton Zoning Regulations (last revised July 7, 2024)",
+        "content_hash": "9dd3c13bca1d0c145e8e23e39a6b572db46cf47a91c444df0e8538e15cda934c",
+        "mirrored_size_bytes": 4178229
       },
       "cite": "full-text search; P&Z denial Feb. 2022",
       "quote": null
@@ -184,10 +220,13 @@
       "label": "Historic overlay",
       "value": "None found — no local CGS §7-147a historic district commission/ordinance; only an honorary National Register listing (Aspetuck Historic District, spans Easton/Weston)",
       "source": {
-        "kind": "link",
-        "id": "easton-link",
+        "kind": "pdf",
+        "id": "easton-pdf",
+        "file": "/sources/easton-zoning.pdf",
         "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
-        "title": "Easton Zoning Regulations (last revised July 7, 2024)"
+        "title": "Easton Zoning Regulations (last revised July 7, 2024)",
+        "content_hash": "9dd3c13bca1d0c145e8e23e39a6b572db46cf47a91c444df0e8538e15cda934c",
+        "mirrored_size_bytes": 4178229
       },
       "cite": "full-text search",
       "quote": null
@@ -198,10 +237,13 @@
       "label": "Demolition delay",
       "value": "Up to 90 days for structures on the town's \"Index to Historic Homes\" (≥50 years old, significant)",
       "source": {
-        "kind": "link",
-        "id": "easton-link",
+        "kind": "pdf",
+        "id": "easton-pdf",
+        "file": "/sources/easton-zoning.pdf",
         "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
-        "title": "Easton Zoning Regulations (last revised July 7, 2024)"
+        "title": "Easton Zoning Regulations (last revised July 7, 2024)",
+        "content_hash": "9dd3c13bca1d0c145e8e23e39a6b572db46cf47a91c444df0e8538e15cda934c",
+        "mirrored_size_bytes": 4178229
       },
       "cite": "Ch. 254, adopted 2022, amended 2024",
       "quote": "To encourage the preservation, documentation, and protection of historically sensitive buildings."
@@ -212,10 +254,13 @@
       "label": "Coastal/flood overlay",
       "value": "Overlay confirmed to exist in the zoning table of contents; full text not independently verified (current PDF link dead on eastonct.gov)",
       "source": {
-        "kind": "link",
-        "id": "easton-link",
+        "kind": "pdf",
+        "id": "easton-pdf",
+        "file": "/sources/easton-zoning.pdf",
         "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
-        "title": "Easton Zoning Regulations (last revised July 7, 2024)"
+        "title": "Easton Zoning Regulations (last revised July 7, 2024)",
+        "content_hash": "9dd3c13bca1d0c145e8e23e39a6b572db46cf47a91c444df0e8538e15cda934c",
+        "mirrored_size_bytes": 4178229
       },
       "cite": "zoning regs Table of Contents, p.35 (2019 ed.)",
       "quote": null
@@ -279,10 +324,13 @@
     }
   ],
   "primary_source": {
-    "kind": "link",
-    "id": "easton-link",
+    "kind": "pdf",
+    "id": "easton-pdf",
+    "file": "/sources/easton-zoning.pdf",
     "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
-    "title": "Easton Zoning Regulations (last revised July 7, 2024)"
+    "title": "Easton Zoning Regulations (last revised July 7, 2024)",
+    "content_hash": "9dd3c13bca1d0c145e8e23e39a6b572db46cf47a91c444df0e8538e15cda934c",
+    "mirrored_size_bytes": 4178229
   },
   "caveat": "Of all 17 towns researched, Easton is the single clearest case of total legal exclusion of 2+-family housing — confirmed by exhaustive keyword search, not an oversight. No local PDF mirror exists for Easton, so these facts rest on the search method itself rather than a re-verifiable quote."
 }

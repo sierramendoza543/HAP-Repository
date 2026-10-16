@@ -36,7 +36,7 @@
         "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
       },
       "cite": "§29-5.A.2.a",
-      "quote": null
+      "quote": "Permitted Uses: The following principal uses shall be permitted in all single-family residential districts as a matter of right: a. Single-family detached dwellings."
     },
     {
       "category": "Dimensional Standards",
@@ -78,7 +78,7 @@
         "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
       },
       "cite": "§29-5.E.9.a-b",
-      "quote": null
+      "quote": "a. Minimum Lot Area  9 acres  b. Maximum Lot Area  11 acres"
     },
     {
       "category": "Use Permissions",
@@ -92,7 +92,7 @@
         "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
       },
       "cite": "§29-5.E.9.c-d",
-      "quote": null
+      "quote": "c. Maximum Density  10 units per gross acre  d. Percentage of Units Required to be Affordable  30 percent"
     },
     {
       "category": "ADU Policy",
@@ -106,7 +106,7 @@
         "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
       },
       "cite": "§29-4.D.1",
-      "quote": null
+      "quote": "Maximum Size: The floor area of the accessory dwelling unit may not exceed one-fourth of the gross floor area of the building or 750 square feet, whichever is greater. No more than two bedrooms are permitted in the accessory dwelling unit."
     },
     {
       "category": "ADU Policy",
@@ -120,7 +120,7 @@
         "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
       },
       "cite": "§29-4.D.1",
-      "quote": null
+      "quote": "Occupancy: One of the dwelling units shall be owner-occupied at all times."
     },
     {
       "category": "Parking",
@@ -134,7 +134,7 @@
         "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
       },
       "cite": "§29-8.B.5",
-      "quote": null
+      "quote": "Off-street parking shall not be required for multifamily developments of less than seventeen (17) dwelling units unless that development is located in a Conservation and Traffic Mitigation District."
     },
     {
       "category": "Parking",
@@ -148,7 +148,7 @@
         "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
       },
       "cite": "§29-8.B.5.a(1)",
-      "quote": null
+      "quote": "Single-family dwellings   2 per dwelling unit, plus 1 per guest sleeping room for roomers and boarders"
     },
     {
       "category": "Overlays & Affordability",
@@ -284,5 +284,5 @@
     "url": "https://www.wiltonct.gov/planning-zoning-department/files/regulations-document-october-7",
     "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
   },
-  "caveat": "HODD sites are capped between 9 and 11 acres — a narrow, purpose-built carve-out, not a general-purpose multifamily zone. No local PDF mirror exists for Wilton, so only the HODD permitted-uses fact above has an independently re-verified quote."
+  "caveat": "HODD sites are capped between 9 and 11 acres — a narrow, purpose-built carve-out, not a general-purpose multifamily zone. No downloadable PDF mirror exists for Wilton (the live file is bot-blocked), but its full text was extracted directly from the live document and most figures above now carry an independently re-verified quote; a few (min. lot size table, min. unit size, inclusionary %, historic overlay) remain citation-only where the table or section wasn't cleanly extractable as text."
 }

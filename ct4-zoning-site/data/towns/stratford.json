@@ -36,7 +36,7 @@
         "title": "Stratford Zoning Code Ch. A220 (eff. Jan. 1, 2025)"
       },
       "cite": "§3.2.1 table",
-      "quote": null
+      "quote": "RS-1\n\t\n40,000"
     },
     {
       "category": "Use Permissions",
@@ -50,7 +50,7 @@
         "title": "Stratford Zoning Code Ch. A220 (eff. Jan. 1, 2025)"
       },
       "cite": "§5.1.2-3",
-      "quote": null
+      "quote": "Multifamily Dwellings (4 or more)"
     },
     {
       "category": "Use Permissions",
@@ -64,7 +64,7 @@
         "title": "Stratford Zoning Code Ch. A220 (eff. Jan. 1, 2025)"
       },
       "cite": "§4.2.4 Use Table",
-      "quote": null
+      "quote": "Two and Three Family Dwellings"
     },
     {
       "category": "Dimensional Standards",
@@ -78,7 +78,7 @@
         "title": "Stratford Zoning Code Ch. A220 (eff. Jan. 1, 2025)"
       },
       "cite": "§3.2.2, footnote 1",
-      "quote": null
+      "quote": "The minimum lot area per family dwelling unit shall be 2,500 square feet, or as specified in Section 5.1."
     },
     {
       "category": "ADU Policy",
@@ -92,7 +92,7 @@
         "title": "Stratford Zoning Code Ch. A220 (eff. Jan. 1, 2025)"
       },
       "cite": "§4.4.2",
-      "quote": null
+      "quote": "Applications for accessory residential apartments must be submitted to the Zoning Commission for an administrative site plan review."
     },
     {
       "category": "ADU Policy",
@@ -106,7 +106,7 @@
         "title": "Stratford Zoning Code Ch. A220 (eff. Jan. 1, 2025)"
       },
       "cite": "§4.4.2.E",
-      "quote": null
+      "quote": "The principal owner of the residence must reside in either the primary dwelling or the accessory residential apartment throughout the duration of the permit."
     },
     {
       "category": "ADU Policy",
@@ -120,7 +120,7 @@
         "title": "Stratford Zoning Code Ch. A220 (eff. Jan. 1, 2025)"
       },
       "cite": "§4.4.2.E",
-      "quote": null
+      "quote": "The accessory residential apartment shall contain no more than 1,000 square feet."
     },
     {
       "category": "Parking",
@@ -134,7 +134,7 @@
         "title": "Stratford Zoning Code Ch. A220 (eff. Jan. 1, 2025)"
       },
       "cite": "§6.8.4.A table",
-      "quote": null
+      "quote": "Single-family dwelling\n\t\n1 per unit"
     },
     {
       "category": "Parking",
@@ -148,7 +148,7 @@
         "title": "Stratford Zoning Code Ch. A220 (eff. Jan. 1, 2025)"
       },
       "cite": "§6.8.4.A table",
-      "quote": null
+      "quote": "Efficiency or 1-bedroom: 1 per unit\n2-bedroom: 1.5 per unit\n3+ bedroom: 2 per unit\nGuest parking: additional 10% of total required spaces"
     },
     {
       "category": "Overlays & Affordability",
@@ -284,5 +284,5 @@
     "url": "https://ecode360.com/9207545",
     "title": "Stratford Zoning Code Ch. A220 (eff. Jan. 1, 2025)"
   },
-  "caveat": "An apparent inconsistency exists between the Use Table's \"4 or more units\" threshold and §5.1's \"(3+)\" heading for Special Permit review — flagged for follow-up. No local PDF mirror exists for Stratford (eCode360 is a browsable HTML code site), so most facts above carry a citation but not an independently re-verified quote."
+  "caveat": "An apparent inconsistency exists between the Use Table's \"4 or more units\" threshold and §5.1's \"(3+)\" heading for Special Permit review — flagged for follow-up. Stratford's code is hosted as a browsable eCode360 site rather than a single PDF, so there's no local mirror — but every figure below has now been independently re-verified against the live eCode360 text and carries a verbatim quote."
 }

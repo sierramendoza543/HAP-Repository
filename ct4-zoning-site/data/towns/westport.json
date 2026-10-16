@@ -14,15 +14,15 @@
       "category": "Use Permissions",
       "district": "Residence AAA",
       "label": "Two-family / multifamily",
-      "value": "Prohibited as normal use (only via §32-12 Special Permit)",
+      "value": "Prohibited as normal use",
       "source": {
         "kind": "link",
         "id": "westport-link",
         "url": "https://online.encodeplus.com/regs/westport-ct/",
         "title": "Westport Zoning Regulations (eff. April 12, 2024)"
       },
-      "cite": "§11-2.1.1 / §11-2.3.16",
-      "quote": null
+      "cite": "§11-2",
+      "quote": "In an AAA Residence District, no land, building, or structure shall be used, and no building shall be hereafter erected, altered, or added to, unless otherwise provided in these regulations except for one (1) or more of the following uses: 11-2.1 Principal Uses 11-2.1.1One (1) single-family dwelling per lot."
     },
     {
       "category": "Dimensional Standards",
@@ -36,7 +36,7 @@
         "title": "Westport Zoning Regulations (eff. April 12, 2024)"
       },
       "cite": "§11-3",
-      "quote": null
+      "quote": "Each lot shall have a minimum area of two (2) acres (87,120 square feet) and shall be of such shape that a square with two hundred (200) feet on each side will fit on the lot."
     },
     {
       "category": "Use Permissions",
@@ -50,7 +50,7 @@
         "title": "Westport Zoning Regulations (eff. April 12, 2024)"
       },
       "cite": "§18-2.1.2",
-      "quote": null
+      "quote": "18-2.1.1 Any use permitted in a Residence AAA District, as specified in §11-2.1, herein. 18-2.1.2Two-family dwellings."
     },
     {
       "category": "Dimensional Standards",
@@ -64,7 +64,7 @@
         "title": "Westport Zoning Regulations (eff. April 12, 2024)"
       },
       "cite": "§18-4.1",
-      "quote": null
+      "quote": "The maximum unit density shall not exceed one dwelling unit for each 4,350 square feet of gross lot area. The total number of dwelling units shall not exceed a density of 10.0 units per gross acre."
     },
     {
       "category": "Dimensional Standards",
@@ -78,7 +78,7 @@
         "title": "Westport Zoning Regulations (eff. April 12, 2024)"
       },
       "cite": "§18-4.2",
-      "quote": null
+      "quote": "The total aggregate number of dwelling units permitted on all Res. C lots within the Town of Westport shall not exceed 120 cumulative dwelling units under these Res. C regulations."
     },
     {
       "category": "Use Permissions",
@@ -91,8 +91,8 @@
         "url": "https://online.encodeplus.com/regs/westport-ct/",
         "title": "Westport Zoning Regulations (eff. April 12, 2024)"
       },
-      "cite": "§18-17.1-2",
-      "quote": null
+      "cite": "§18-17.1",
+      "quote": "A minimum of fifteen percent (15%) of the total number of market rate dwelling units shall be designated as workforce or affordable housing"
     },
     {
       "category": "ADU Policy",
@@ -106,7 +106,7 @@
         "title": "Westport Zoning Regulations (eff. April 12, 2024)"
       },
       "cite": "§11-2.4.8A",
-      "quote": null
+      "quote": "Lots up to and including 1½ acres (0-65,340 sq. ft.) 850 sq. ft. Lots over 1½ acres (65,340 sq. ft. or greater) 1,000 sq. ft."
     },
     {
       "category": "ADU Policy",
@@ -120,7 +120,7 @@
         "title": "Westport Zoning Regulations (eff. April 12, 2024)"
       },
       "cite": "§11-2.4.12A",
-      "quote": null
+      "quote": "The additional dwelling unit shall not exceed 1500 square feet of floor area or 25% of the total floor area in the dwelling, whichever is smaller."
     },
     {
       "category": "ADU Policy",
@@ -134,7 +134,7 @@
         "title": "Westport Zoning Regulations (eff. April 12, 2024)"
       },
       "cite": "§18-2.2.1",
-      "quote": null
+      "quote": "Any Special Permit use allowed in a Residence AAA District, as specified in §11-2.2 & 11-2.3 herein, except §11-2.4.12 (Accessory Apartment) and §11-2.4.5 (Leasing of Rooms) is not allowed."
     },
     {
       "category": "Parking",
@@ -148,7 +148,7 @@
         "title": "Westport Zoning Regulations (eff. April 12, 2024)"
       },
       "cite": "§34-14.1",
-      "quote": null
+      "quote": "A development with sixteen (16) or fewer dwelling units does not need to provide a minimum number of off-street parking spaces unless such development is located in a Conservation and Traffic Mitigation District (CTMD)."
     },
     {
       "category": "Overlays & Affordability",

@@ -16,10 +16,13 @@
       "label": "Only single-family permitted",
       "value": "2-/3-/4+-family prohibited town-wide",
       "source": {
-        "kind": "link",
-        "id": "darien-link",
+        "kind": "pdf",
+        "id": "darien-pdf",
+        "file": "/sources/darien-zoning.pdf",
         "url": "https://www.darienct.gov/DocumentCenter/View/6613",
-        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)",
+        "content_hash": "a6e2a1b543286a8376c1e74eb9e17b69ef56a79f28c519505e312159d056990e",
+        "mirrored_size_bytes": 7311923
       },
       "cite": "§402.a",
       "quote": "a single, detached one-family dwelling on its own lot"
@@ -30,13 +33,16 @@
       "label": "Min. lot size",
       "value": "43,560 sq ft (1 acre)",
       "source": {
-        "kind": "link",
-        "id": "darien-link",
+        "kind": "pdf",
+        "id": "darien-pdf",
+        "file": "/sources/darien-zoning.pdf",
         "url": "https://www.darienct.gov/DocumentCenter/View/6613",
-        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)",
+        "content_hash": "a6e2a1b543286a8376c1e74eb9e17b69ef56a79f28c519505e312159d056990e",
+        "mirrored_size_bytes": 7311923
       },
       "cite": "§406",
-      "quote": null
+      "quote": "Minimum Lot Area                                  1 acre (43,560 sq. ft.)"
     },
     {
       "category": "Dimensional Standards",
@@ -44,13 +50,16 @@
       "label": "Min. lot size",
       "value": "87,120 sq ft (2 acres)",
       "source": {
-        "kind": "link",
-        "id": "darien-link",
+        "kind": "pdf",
+        "id": "darien-pdf",
+        "file": "/sources/darien-zoning.pdf",
         "url": "https://www.darienct.gov/DocumentCenter/View/6613",
-        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)",
+        "content_hash": "a6e2a1b543286a8376c1e74eb9e17b69ef56a79f28c519505e312159d056990e",
+        "mirrored_size_bytes": 7311923
       },
       "cite": "§406",
-      "quote": null
+      "quote": "Minimum Lot Area                              2 acres (87,120 sq. ft.)"
     },
     {
       "category": "Use Permissions",
@@ -58,13 +67,16 @@
       "label": "Multifamily",
       "value": "Special Permit only",
       "source": {
-        "kind": "link",
-        "id": "darien-link",
+        "kind": "pdf",
+        "id": "darien-pdf",
+        "file": "/sources/darien-zoning.pdf",
         "url": "https://www.darienct.gov/DocumentCenter/View/6613",
-        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)",
+        "content_hash": "a6e2a1b543286a8376c1e74eb9e17b69ef56a79f28c519505e312159d056990e",
+        "mirrored_size_bytes": 7311923
       },
       "cite": "§524.a",
-      "quote": null
+      "quote": "524.   Principal Uses Requiring Special Permits"
     },
     {
       "category": "Dimensional Standards",
@@ -72,13 +84,16 @@
       "label": "Min. lot size (zone)",
       "value": "3 acres (130,680 sq ft)",
       "source": {
-        "kind": "link",
-        "id": "darien-link",
+        "kind": "pdf",
+        "id": "darien-pdf",
+        "file": "/sources/darien-zoning.pdf",
         "url": "https://www.darienct.gov/DocumentCenter/View/6613",
-        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)",
+        "content_hash": "a6e2a1b543286a8376c1e74eb9e17b69ef56a79f28c519505e312159d056990e",
+        "mirrored_size_bytes": 7311923
       },
       "cite": "§525",
-      "quote": null
+      "quote": "Minimum Lot Area                                 3 acres (130,680 sq. ft.)"
     },
     {
       "category": "Use Permissions",
@@ -86,13 +101,16 @@
       "label": "Density",
       "value": "4 DU/net acre by-right (6 with 20% affordable)",
       "source": {
-        "kind": "link",
-        "id": "darien-link",
+        "kind": "pdf",
+        "id": "darien-pdf",
+        "file": "/sources/darien-zoning.pdf",
         "url": "https://www.darienct.gov/DocumentCenter/View/6613",
-        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)",
+        "content_hash": "a6e2a1b543286a8376c1e74eb9e17b69ef56a79f28c519505e312159d056990e",
+        "mirrored_size_bytes": 7311923
       },
-      "cite": "§526.1",
-      "quote": null
+      "cite": "§526.1a-b",
+      "quote": "Four (4) Dwelling Units/Net Acre"
     },
     {
       "category": "Use Permissions",
@@ -100,13 +118,16 @@
       "label": "Bedroom mix requirement",
       "value": "≥15% of units must be 1BR; no unit may exceed 3BR",
       "source": {
-        "kind": "link",
-        "id": "darien-link",
+        "kind": "pdf",
+        "id": "darien-pdf",
+        "file": "/sources/darien-zoning.pdf",
         "url": "https://www.darienct.gov/DocumentCenter/View/6613",
-        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)",
+        "content_hash": "a6e2a1b543286a8376c1e74eb9e17b69ef56a79f28c519505e312159d056990e",
+        "mirrored_size_bytes": 7311923
       },
-      "cite": "§526.3",
-      "quote": null
+      "cite": "§526.3a",
+      "quote": "At least 15 percent of the total number of units shall be limited to one bedroom. No unit shall contain more than three bedrooms."
     },
     {
       "category": "ADU Policy",
@@ -114,13 +135,16 @@
       "label": "ADU max size",
       "value": "700 sq ft attached / 1,000 sq ft detached, and <30% of combined floor area",
       "source": {
-        "kind": "link",
-        "id": "darien-link",
+        "kind": "pdf",
+        "id": "darien-pdf",
+        "file": "/sources/darien-zoning.pdf",
         "url": "https://www.darienct.gov/DocumentCenter/View/6613",
-        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)",
+        "content_hash": "a6e2a1b543286a8376c1e74eb9e17b69ef56a79f28c519505e312159d056990e",
+        "mirrored_size_bytes": 7311923
       },
-      "cite": "§407.c",
-      "quote": null
+      "cite": "§407.c.1",
+      "quote": "700 square feet if it is part of or attached to the principal dwelling unit"
     },
     {
       "category": "ADU Policy",
@@ -128,13 +152,16 @@
       "label": "ADU owner-occupancy",
       "value": "Required (annual affidavit)",
       "source": {
-        "kind": "link",
-        "id": "darien-link",
+        "kind": "pdf",
+        "id": "darien-pdf",
+        "file": "/sources/darien-zoning.pdf",
         "url": "https://www.darienct.gov/DocumentCenter/View/6613",
-        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)",
+        "content_hash": "a6e2a1b543286a8376c1e74eb9e17b69ef56a79f28c519505e312159d056990e",
+        "mirrored_size_bytes": 7311923
       },
-      "cite": "§407.c",
-      "quote": null
+      "cite": "§407.c.9",
+      "quote": "The property is to be owner occupied, meaning that the record owner of the property must reside in either the principal dwelling or the accessory dwelling unit."
     },
     {
       "category": "ADU Policy",
@@ -142,13 +169,16 @@
       "label": "ADU program sunset",
       "value": "Expires for new applications after June 30, 2029 unless readopted",
       "source": {
-        "kind": "link",
-        "id": "darien-link",
+        "kind": "pdf",
+        "id": "darien-pdf",
+        "file": "/sources/darien-zoning.pdf",
         "url": "https://www.darienct.gov/DocumentCenter/View/6613",
-        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)",
+        "content_hash": "a6e2a1b543286a8376c1e74eb9e17b69ef56a79f28c519505e312159d056990e",
+        "mirrored_size_bytes": 7311923
       },
-      "cite": "§407.c",
-      "quote": null
+      "cite": "§407.c.16",
+      "quote": "The provisions of Subsections 403n. and 407c shall remain valid for five (5) years"
     },
     {
       "category": "Parking",
@@ -156,13 +186,16 @@
       "label": "Parking, one-/two-family residences",
       "value": "2 spaces/unit",
       "source": {
-        "kind": "link",
-        "id": "darien-link",
+        "kind": "pdf",
+        "id": "darien-pdf",
+        "file": "/sources/darien-zoning.pdf",
         "url": "https://www.darienct.gov/DocumentCenter/View/6613",
-        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)",
+        "content_hash": "a6e2a1b543286a8376c1e74eb9e17b69ef56a79f28c519505e312159d056990e",
+        "mirrored_size_bytes": 7311923
       },
       "cite": "§904.a",
-      "quote": null
+      "quote": "One and two-family residences            2 spaces for each family unit."
     },
     {
       "category": "Overlays & Affordability",
@@ -170,10 +203,13 @@
       "label": "Min. unit size",
       "value": "≥800 sq ft per elderly BMR unit; no general town-wide minimum found",
       "source": {
-        "kind": "link",
-        "id": "darien-link",
+        "kind": "pdf",
+        "id": "darien-pdf",
+        "file": "/sources/darien-zoning.pdf",
         "url": "https://www.darienct.gov/DocumentCenter/View/6613",
-        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)",
+        "content_hash": "a6e2a1b543286a8376c1e74eb9e17b69ef56a79f28c519505e312159d056990e",
+        "mirrored_size_bytes": 7311923
       },
       "cite": "§438",
       "quote": "Each elderly below market-rate housing unit required to be constructed or acquired shall be at least 800 square feet in size"
@@ -184,10 +220,13 @@
       "label": "Inclusionary zoning",
       "value": "14% of units must be affordable (≤80% SMI) in developments of ≥4 units; deed-restricted 40 years",
       "source": {
-        "kind": "link",
-        "id": "darien-link",
+        "kind": "pdf",
+        "id": "darien-pdf",
+        "file": "/sources/darien-zoning.pdf",
         "url": "https://www.darienct.gov/DocumentCenter/View/6613",
-        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)",
+        "content_hash": "a6e2a1b543286a8376c1e74eb9e17b69ef56a79f28c519505e312159d056990e",
+        "mirrored_size_bytes": 7311923
       },
       "cite": "§580, 583",
       "quote": "Developments resulting in the creation of four or more multi-family dwelling units shall designate a minimum of fourteen percent (14%) of the total number of dwelling units as affordable housing"
@@ -198,10 +237,13 @@
       "label": "Historic overlay",
       "value": "Voluntary, parcel-specific special-permit tool, similar structure to Greenwich's HO zone",
       "source": {
-        "kind": "link",
-        "id": "darien-link",
+        "kind": "pdf",
+        "id": "darien-pdf",
+        "file": "/sources/darien-zoning.pdf",
         "url": "https://www.darienct.gov/DocumentCenter/View/6613",
-        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)",
+        "content_hash": "a6e2a1b543286a8376c1e74eb9e17b69ef56a79f28c519505e312159d056990e",
+        "mirrored_size_bytes": 7311923
       },
       "cite": "§1051.1-2",
       "quote": "certain structures and land areas have value as Town Landmarks, which value transcends the ordinary standards incorporated in these Regulations"
@@ -212,10 +254,13 @@
       "label": "Demolition delay",
       "value": "Likely exists (observed 21–30-day objection windows in a tracked case) but codified text and exact delay period not located",
       "source": {
-        "kind": "link",
-        "id": "darien-link",
+        "kind": "pdf",
+        "id": "darien-pdf",
+        "file": "/sources/darien-zoning.pdf",
         "url": "https://www.darienct.gov/DocumentCenter/View/6613",
-        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)",
+        "content_hash": "a6e2a1b543286a8376c1e74eb9e17b69ef56a79f28c519505e312159d056990e",
+        "mirrored_size_bytes": 7311923
       },
       "cite": "Code of Ordinances — not independently retrieved",
       "quote": null
@@ -226,10 +271,13 @@
       "label": "Coastal/flood overlay",
       "value": "Applies — Long Island Sound frontage, CT Coastal Management Act review",
       "source": {
-        "kind": "link",
-        "id": "darien-link",
+        "kind": "pdf",
+        "id": "darien-pdf",
+        "file": "/sources/darien-zoning.pdf",
         "url": "https://www.darienct.gov/DocumentCenter/View/6613",
-        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)",
+        "content_hash": "a6e2a1b543286a8376c1e74eb9e17b69ef56a79f28c519505e312159d056990e",
+        "mirrored_size_bytes": 7311923
       },
       "cite": "§811, 813",
       "quote": "The purpose of this Section is to achieve the goals, objectives and policies of the State-wide Coastal Area Management Program as set forth in Chapter 444 Section 22a-90 through 22a-112 of the General Statutes"
@@ -293,10 +341,13 @@
     }
   ],
   "primary_source": {
-    "kind": "link",
-    "id": "darien-link",
+    "kind": "pdf",
+    "id": "darien-pdf",
+    "file": "/sources/darien-zoning.pdf",
     "url": "https://www.darienct.gov/DocumentCenter/View/6613",
-    "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+    "title": "Darien Zoning Regulations (last revised May 10, 2026)",
+    "content_hash": "a6e2a1b543286a8376c1e74eb9e17b69ef56a79f28c519505e312159d056990e",
+    "mirrored_size_bytes": 7311923
   },
   "caveat": "Darien formally opted OUT of CT's statewide ADU law (PA 21-29) via local vote in 2022 — its ADU rules exist under independent local authority. No local PDF mirror exists for Darien (blocked at ingest time), so quotes above are limited to what the research pass directly transcribed."
 }

@@ -16,13 +16,16 @@
       "label": "Single-family",
       "value": "Allowed, requires Zoning Permit (ZEO)",
       "source": {
-        "kind": "link",
-        "id": "ridgefield-link",
-        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
-        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+        "kind": "pdf",
+        "id": "ridgefield-pdf",
+        "file": "/sources/ridgefield-zoning.pdf",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20August%202026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through Aug. 2026)",
+        "content_hash": "05034e575ab9ea876bc2f2d7d9033e1dca366def3a9660ffdd8a7dd1bc4b9e5b",
+        "mirrored_size_bytes": 4647310
       },
       "cite": "§3.2.B.1",
-      "quote": null
+      "quote": "PERMITTED WITH ZONING PERMIT (ZEO) 1. Residential Uses - A single-family detached dwelling."
     },
     {
       "category": "Use Permissions",
@@ -30,10 +33,13 @@
       "label": "2-/3-family",
       "value": "Bundled & prohibited except by Special Permit in the separate SD R-20 overlay",
       "source": {
-        "kind": "link",
-        "id": "ridgefield-link",
-        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
-        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+        "kind": "pdf",
+        "id": "ridgefield-pdf",
+        "file": "/sources/ridgefield-zoning.pdf",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20August%202026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through Aug. 2026)",
+        "content_hash": "05034e575ab9ea876bc2f2d7d9033e1dca366def3a9660ffdd8a7dd1bc4b9e5b",
+        "mirrored_size_bytes": 4647310
       },
       "cite": "§3.2.C.10.d",
       "quote": null
@@ -44,13 +50,16 @@
       "label": "Min. lot size",
       "value": "130,680 sq ft (3 acres)",
       "source": {
-        "kind": "link",
-        "id": "ridgefield-link",
-        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
-        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+        "kind": "pdf",
+        "id": "ridgefield-pdf",
+        "file": "/sources/ridgefield-zoning.pdf",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20August%202026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through Aug. 2026)",
+        "content_hash": "05034e575ab9ea876bc2f2d7d9033e1dca366def3a9660ffdd8a7dd1bc4b9e5b",
+        "mirrored_size_bytes": 4647310
       },
       "cite": "§3.5.A table",
-      "quote": null
+      "quote": "RAAA Zone              3.0 acres                 130,680 sq. ft."
     },
     {
       "category": "Dimensional Standards",
@@ -58,13 +67,16 @@
       "label": "Min. lot size (least restrictive base district)",
       "value": "7,500 sq ft",
       "source": {
-        "kind": "link",
-        "id": "ridgefield-link",
-        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
-        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+        "kind": "pdf",
+        "id": "ridgefield-pdf",
+        "file": "/sources/ridgefield-zoning.pdf",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20August%202026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through Aug. 2026)",
+        "content_hash": "05034e575ab9ea876bc2f2d7d9033e1dca366def3a9660ffdd8a7dd1bc4b9e5b",
+        "mirrored_size_bytes": 4647310
       },
       "cite": "§3.5.A table",
-      "quote": null
+      "quote": "R-7.5 Zone             0.17 acres                 7,500 sq. ft."
     },
     {
       "category": "Use Permissions",
@@ -72,13 +84,16 @@
       "label": "Multifamily",
       "value": "Special Permit only — town's only multifamily pathway",
       "source": {
-        "kind": "link",
-        "id": "ridgefield-link",
-        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
-        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+        "kind": "pdf",
+        "id": "ridgefield-pdf",
+        "file": "/sources/ridgefield-zoning.pdf",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20August%202026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through Aug. 2026)",
+        "content_hash": "05034e575ab9ea876bc2f2d7d9033e1dca366def3a9660ffdd8a7dd1bc4b9e5b",
+        "mirrored_size_bytes": 4647310
       },
       "cite": "§4.2.B",
-      "quote": null
+      "quote": "PERMITTED BY SPECIAL PERMIT (COMMISSION) 1. Detached dwelling units. 2. Attached dwelling units with individual exterior entrances. 3. Multiple dwelling units in one building."
     },
     {
       "category": "Dimensional Standards",
@@ -86,13 +101,16 @@
       "label": "Density",
       "value": "6 units/acre (8 with 15% affordable)",
       "source": {
-        "kind": "link",
-        "id": "ridgefield-link",
-        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
-        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+        "kind": "pdf",
+        "id": "ridgefield-pdf",
+        "file": "/sources/ridgefield-zoning.pdf",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20August%202026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through Aug. 2026)",
+        "content_hash": "05034e575ab9ea876bc2f2d7d9033e1dca366def3a9660ffdd8a7dd1bc4b9e5b",
+        "mirrored_size_bytes": 4647310
       },
       "cite": "§4.2.C",
-      "quote": null
+      "quote": "a. Six (6) dwelling units per acre. b. Eight (8) dwelling units per acre provided: i. at least fifteen (15) percent of the total number of dwelling units are preserved in perpetuity as affordable housing"
     },
     {
       "category": "ADU Policy",
@@ -100,13 +118,16 @@
       "label": "ADU max size",
       "value": "900 sq ft (main dwelling <3,000 sf) or 1,200 sq ft (≥3,000 sf)",
       "source": {
-        "kind": "link",
-        "id": "ridgefield-link",
-        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
-        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+        "kind": "pdf",
+        "id": "ridgefield-pdf",
+        "file": "/sources/ridgefield-zoning.pdf",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20August%202026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through Aug. 2026)",
+        "content_hash": "05034e575ab9ea876bc2f2d7d9033e1dca366def3a9660ffdd8a7dd1bc4b9e5b",
+        "mirrored_size_bytes": 4647310
       },
       "cite": "§3.3.B.2",
-      "quote": null
+      "quote": "not exceed 900 square feet in total habitable floor area for properties with a main dwelling 2,999 square feet and under. For properties with a main dwelling that is 3,000 square feet or more, the accessory dwelling unit shall not exceed 1,200 square feet in total habitable area."
     },
     {
       "category": "ADU Policy",
@@ -114,13 +135,16 @@
       "label": "ADU approval pathway",
       "value": "Zoning Permit (ZEO), not Special Permit",
       "source": {
-        "kind": "link",
-        "id": "ridgefield-link",
-        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
-        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+        "kind": "pdf",
+        "id": "ridgefield-pdf",
+        "file": "/sources/ridgefield-zoning.pdf",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20August%202026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through Aug. 2026)",
+        "content_hash": "05034e575ab9ea876bc2f2d7d9033e1dca366def3a9660ffdd8a7dd1bc4b9e5b",
+        "mirrored_size_bytes": 4647310
       },
       "cite": "§3.3.B.2",
-      "quote": null
+      "quote": "Allows accessory dwelling units (and affordable ADUs) to be permitted via Zoning Permit instead of, and by deleting, Site Plan"
     },
     {
       "category": "Parking",
@@ -128,13 +152,16 @@
       "label": "Parking, one-/two-family",
       "value": "2 spaces/unit",
       "source": {
-        "kind": "link",
-        "id": "ridgefield-link",
-        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
-        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+        "kind": "pdf",
+        "id": "ridgefield-pdf",
+        "file": "/sources/ridgefield-zoning.pdf",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20August%202026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through Aug. 2026)",
+        "content_hash": "05034e575ab9ea876bc2f2d7d9033e1dca366def3a9660ffdd8a7dd1bc4b9e5b",
+        "mirrored_size_bytes": 4647310
       },
       "cite": "§7.3.B table",
-      "quote": null
+      "quote": "One-family and two-family structures  Two (2) parking spaces for each dwelling"
     },
     {
       "category": "Parking",
@@ -142,13 +169,16 @@
       "label": "Parking, ADU + principal",
       "value": "3 spaces combined",
       "source": {
-        "kind": "link",
-        "id": "ridgefield-link",
-        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
-        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+        "kind": "pdf",
+        "id": "ridgefield-pdf",
+        "file": "/sources/ridgefield-zoning.pdf",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20August%202026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through Aug. 2026)",
+        "content_hash": "05034e575ab9ea876bc2f2d7d9033e1dca366def3a9660ffdd8a7dd1bc4b9e5b",
+        "mirrored_size_bytes": 4647310
       },
       "cite": "§3.3.B.2.h",
-      "quote": null
+      "quote": "at least three (3) off-street parking spaces (which may include garage spaces) shall be provided to serve both the principal dwelling and the accessory dwelling unit and such parking shall not be located in the required front yard setback."
     },
     {
       "category": "Overlays & Affordability",
@@ -156,10 +186,13 @@
       "label": "Min. unit size",
       "value": "Not found as a general dwelling minimum; only ADU caps located",
       "source": {
-        "kind": "link",
-        "id": "ridgefield-link",
-        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
-        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+        "kind": "pdf",
+        "id": "ridgefield-pdf",
+        "file": "/sources/ridgefield-zoning.pdf",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20August%202026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through Aug. 2026)",
+        "content_hash": "05034e575ab9ea876bc2f2d7d9033e1dca366def3a9660ffdd8a7dd1bc4b9e5b",
+        "mirrored_size_bytes": 4647310
       },
       "cite": "zoning regs — not located in sections reviewed",
       "quote": null
@@ -170,10 +203,13 @@
       "label": "Inclusionary zoning",
       "value": "Tiered minimum affordable units (14% rounded up at scale); density bonus up to 30% for exceeding it by ≥5%",
       "source": {
-        "kind": "link",
-        "id": "ridgefield-link",
-        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
-        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+        "kind": "pdf",
+        "id": "ridgefield-pdf",
+        "file": "/sources/ridgefield-zoning.pdf",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20August%202026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through Aug. 2026)",
+        "content_hash": "05034e575ab9ea876bc2f2d7d9033e1dca366def3a9660ffdd8a7dd1bc4b9e5b",
+        "mirrored_size_bytes": 4647310
       },
       "cite": "§8.8, adopted 5/16/2023",
       "quote": "All applications for development resulting in the creation of five (5) or more dwelling units shall designate a minimum number of dwelling units as per the Minimum Affordable Housing Chart"
@@ -184,10 +220,13 @@
       "label": "Historic overlay",
       "value": "HDC review limited to exterior features visible from a public way; separate Village District design-compatibility overlay downtown",
       "source": {
-        "kind": "link",
-        "id": "ridgefield-link",
-        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
-        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+        "kind": "pdf",
+        "id": "ridgefield-pdf",
+        "file": "/sources/ridgefield-zoning.pdf",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20August%202026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through Aug. 2026)",
+        "content_hash": "05034e575ab9ea876bc2f2d7d9033e1dca366def3a9660ffdd8a7dd1bc4b9e5b",
+        "mirrored_size_bytes": 4647310
       },
       "cite": "Village District FAQ; CGS §7-147c",
       "quote": null
@@ -198,10 +237,13 @@
       "label": "Demolition delay",
       "value": "Up to 90 days for structures ≥50 years old, if written objection filed within 30 days of notice",
       "source": {
-        "kind": "link",
-        "id": "ridgefield-link",
-        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
-        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+        "kind": "pdf",
+        "id": "ridgefield-pdf",
+        "file": "/sources/ridgefield-zoning.pdf",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20August%202026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through Aug. 2026)",
+        "content_hash": "05034e575ab9ea876bc2f2d7d9033e1dca366def3a9660ffdd8a7dd1bc4b9e5b",
+        "mirrored_size_bytes": 4647310
       },
       "cite": "Ch. 136, §136-4.A",
       "quote": "to authorize the Town of Ridgefield, as allowed by C.G.S.§ 29-406(b), to impose a waiting period of not more than 90 days before granting a demolition permit for certain structures of architectural, historical, or cultural importance."
@@ -212,10 +254,13 @@
       "label": "Coastal/flood overlay",
       "value": "Applies to FEMA Zones A and AE; no coastal area management provision (inland town)",
       "source": {
-        "kind": "link",
-        "id": "ridgefield-link",
-        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
-        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+        "kind": "pdf",
+        "id": "ridgefield-pdf",
+        "file": "/sources/ridgefield-zoning.pdf",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20August%202026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through Aug. 2026)",
+        "content_hash": "05034e575ab9ea876bc2f2d7d9033e1dca366def3a9660ffdd8a7dd1bc4b9e5b",
+        "mirrored_size_bytes": 4647310
       },
       "cite": "§6.1",
       "quote": "The Floodplain Overlay Zone is hereby declared to be an overlay to any other zone, and the regulations, restrictions and requirements contained herein shall be in addition to those applicable in the underlying zone."
@@ -279,10 +324,13 @@
     }
   ],
   "primary_source": {
-    "kind": "link",
-    "id": "ridgefield-link",
-    "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
-    "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+    "kind": "pdf",
+    "id": "ridgefield-pdf",
+    "file": "/sources/ridgefield-zoning.pdf",
+    "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20August%202026.pdf",
+    "title": "Ridgefield Zoning Regulations (revised through Aug. 2026)",
+    "content_hash": "05034e575ab9ea876bc2f2d7d9033e1dca366def3a9660ffdd8a7dd1bc4b9e5b",
+    "mirrored_size_bytes": 4647310
   },
-  "caveat": "Ridgefield has no as-of-right multifamily district of any kind — every multi-unit path requires a discretionary Special Permit hearing. No local PDF mirror exists for Ridgefield, so these facts carry citations but not independently re-verified quotes."
+  "caveat": "Ridgefield has no as-of-right multifamily district of any kind — every multi-unit path requires a discretionary Special Permit hearing. A local PDF mirror now exists, and most figures below have been independently re-verified with a verbatim quote; a few (the 2-/3-family use-table row, min. unit size, and historic overlay) are still flagged as citation-only because the exact use-table row text couldn't be located in the mirrored document."
 }
