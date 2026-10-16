@@ -10,7 +10,7 @@ export function getAllTowns(): Town[] {
     const raw = fs.readFileSync(path.join(TOWNS_DIR, f), "utf-8");
     return JSON.parse(raw) as Town;
   });
-  return towns.sort((a, b) => b.composite_score - a.composite_score);
+  return towns.sort((a, b) => b.hap_score.composite - a.hap_score.composite);
 }
 
 export function getTown(slug: string): Town | null {

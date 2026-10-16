@@ -284,5 +284,65 @@
     "url": "https://www.wiltonct.gov/planning-zoning-department/files/regulations-document-october-7",
     "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
   },
-  "caveat": "HODD sites are capped between 9 and 11 acres — a narrow, purpose-built carve-out, not a general-purpose multifamily zone. No downloadable PDF mirror exists for Wilton (the live file is bot-blocked), but its full text was extracted directly from the live document and most figures above now carry an independently re-verified quote; a few (min. lot size table, min. unit size, inclusionary %, historic overlay) remain citation-only where the table or section wasn't cleanly extractable as text."
+  "caveat": "HODD sites are capped between 9 and 11 acres — a narrow, purpose-built carve-out, not a general-purpose multifamily zone. No downloadable PDF mirror exists for Wilton (the live file is bot-blocked), but its full text was extracted directly from the live document and most figures above now carry an independently re-verified quote; a few (min. lot size table, min. unit size, inclusionary %, historic overlay) remain citation-only where the table or section wasn't cleanly extractable as text.",
+  "hap_score": {
+    "composite": 51.2,
+    "factors": [
+      {
+        "category": "Use Permissions",
+        "label": "Multifamily Access",
+        "tier": "narrow_by_right",
+        "input_value": "narrow by right",
+        "note": "HODD allows multifamily by-right, but only on specially-zoned \"9–11 acres\" sites; the R-2A base zone bans multifamily entirely",
+        "points": 17,
+        "max_points": 30
+      },
+      {
+        "category": "Approval Process",
+        "label": "Approval Discretion",
+        "tier": "narrow_by_right",
+        "input_value": "narrow by right",
+        "note": "HODD allows multifamily by-right, but only on specially-zoned \"9–11 acres\" sites; the R-2A base zone bans multifamily entirely",
+        "points": 6,
+        "max_points": 10
+      },
+      {
+        "category": "Dimensional Standards",
+        "label": "Minimum Lot Size",
+        "tier": "scaled",
+        "input_value": "87,120 sq ft",
+        "note": "R-2A (base zone): \"Min. lot size = 2 acres (87,120 sq ft)\"",
+        "points": 16.7,
+        "max_points": 20
+      },
+      {
+        "category": "ADU Policy",
+        "label": "ADU Approval Pathway",
+        "tier": "administrative",
+        "input_value": "administrative",
+        "note": "Annual owner-occupancy certification required, no special-permit hearing noted",
+        "points": 4,
+        "max_points": 15
+      },
+      {
+        "category": "Parking",
+        "label": "Parking Mandate",
+        "tier": "scaled",
+        "input_value": "0 spaces/unit",
+        "note": "\"Parking minimum = None, unless in a Conservation & Traffic Mitigation District\" for DRD/multifamily <17 units",
+        "points": 0.0,
+        "max_points": 10
+      },
+      {
+        "category": "Overlays & Affordability",
+        "label": "Demolition Delay",
+        "tier": "scaled",
+        "input_value": "90 days",
+        "note": "\"Demolition delay = Up to 90 days for structures >50 years old and >500 sq ft\"",
+        "points": 7.5,
+        "max_points": 15
+      }
+    ],
+    "methodology_note": "Computed from the Variables table on this page, not from the NZA data below. Six weighted components (Multifamily Access 30pts, Approval Discretion 10pts, Minimum Lot Size 20pts, ADU Approval Pathway 15pts, Parking Mandate 10pts, Demolition Delay 15pts) are each scored against a fixed, published rubric from a specific cited fact above. Higher = more restrictive."
+  }
 }

@@ -315,5 +315,65 @@
     "content_hash": "20b459d714c7581a5ed06a9e3c4c2328330fa37ccd59cd0fb362a0b11403929b",
     "mirrored_size_bytes": 4181558
   },
-  "caveat": "Town's own PDF was blocked by a bot-detection wall during research; base-district figures came from a 2021-dated third-party copy (no local mirror exists, so no quotes could be independently re-verified), and the R-2A single-family parking minimum could not be located at all — flagged for direct verification with Weston Land Use."
+  "caveat": "Town's own PDF was blocked by a bot-detection wall during research; base-district figures came from a 2021-dated third-party copy (no local mirror exists, so no quotes could be independently re-verified), and the R-2A single-family parking minimum could not be located at all — flagged for direct verification with Weston Land Use.",
+  "hap_score": {
+    "composite": 64.4,
+    "factors": [
+      {
+        "category": "Use Permissions",
+        "label": "Multifamily Access",
+        "tier": "discretionary",
+        "input_value": "discretionary",
+        "note": "R-2A (entire base zone) bans 2-/3-/4+-family outright; VD-R: \"All uses, incl. multifamily = Require Special Permit\"",
+        "points": 25,
+        "max_points": 30
+      },
+      {
+        "category": "Approval Process",
+        "label": "Approval Discretion",
+        "tier": "discretionary",
+        "input_value": "discretionary",
+        "note": "R-2A (entire base zone) bans 2-/3-/4+-family outright; VD-R: \"All uses, incl. multifamily = Require Special Permit\"",
+        "points": 9,
+        "max_points": 10
+      },
+      {
+        "category": "Dimensional Standards",
+        "label": "Minimum Lot Size",
+        "tier": "scaled",
+        "input_value": "87,120 sq ft",
+        "note": "R-2A (base zone): \"Min. lot size = 2 acres\"",
+        "points": 16.7,
+        "max_points": 20
+      },
+      {
+        "category": "ADU Policy",
+        "label": "ADU Approval Pathway",
+        "tier": "administrative",
+        "input_value": "administrative",
+        "note": "Owner-occupancy affidavit required, no special-permit hearing noted",
+        "points": 4,
+        "max_points": 15
+      },
+      {
+        "category": "Parking",
+        "label": "Parking Mandate",
+        "tier": "scaled",
+        "input_value": "0 spaces/unit",
+        "note": "Village District: parking is \"stated as a cap, not a minimum\" — no off-street minimum actually required",
+        "points": 0.0,
+        "max_points": 10
+      },
+      {
+        "category": "Overlays & Affordability",
+        "label": "Demolition Delay",
+        "tier": "scaled",
+        "input_value": "not independently confirmed",
+        "note": "A delay ordinance is referenced on permit applications, but the exact waiting period could not be confirmed",
+        "points": null,
+        "max_points": 15
+      }
+    ],
+    "methodology_note": "Computed from the Variables table on this page, not from the NZA data below. Six weighted components (Multifamily Access 30pts, Approval Discretion 10pts, Minimum Lot Size 20pts, ADU Approval Pathway 15pts, Parking Mandate 10pts, Demolition Delay 15pts) are each scored against a fixed, published rubric from a specific cited fact above. Higher = more restrictive. 1 of 6 components had no independently-confirmed input for this town and were excluded; the composite is renormalized over the remaining 5."
+  }
 }

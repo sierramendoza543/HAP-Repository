@@ -349,5 +349,65 @@
     "content_hash": "a6e2a1b543286a8376c1e74eb9e17b69ef56a79f28c519505e312159d056990e",
     "mirrored_size_bytes": 7311923
   },
-  "caveat": "Darien formally opted OUT of CT's statewide ADU law (PA 21-29) via local vote in 2022 — its ADU rules exist under independent local authority. No local PDF mirror exists for Darien (blocked at ingest time), so quotes above are limited to what the research pass directly transcribed."
+  "caveat": "Darien formally opted OUT of CT's statewide ADU law (PA 21-29) via local vote in 2022 — its ADU rules exist under independent local authority. No local PDF mirror exists for Darien (blocked at ingest time), so quotes above are limited to what the research pass directly transcribed.",
+  "hap_score": {
+    "composite": 70.0,
+    "factors": [
+      {
+        "category": "Use Permissions",
+        "label": "Multifamily Access",
+        "tier": "discretionary",
+        "input_value": "discretionary",
+        "note": "DMR (town's only multifamily zone): \"Multifamily = Special Permit only\"",
+        "points": 25,
+        "max_points": 30
+      },
+      {
+        "category": "Approval Process",
+        "label": "Approval Discretion",
+        "tier": "discretionary",
+        "input_value": "discretionary",
+        "note": "DMR (town's only multifamily zone): \"Multifamily = Special Permit only\"",
+        "points": 9,
+        "max_points": 10
+      },
+      {
+        "category": "Dimensional Standards",
+        "label": "Minimum Lot Size",
+        "tier": "scaled",
+        "input_value": "43,560 sq ft",
+        "note": "R-1 (smallest base district): \"Min. lot size = 43,560 sq ft (1 acre)\"",
+        "points": 13.5,
+        "max_points": 20
+      },
+      {
+        "category": "ADU Policy",
+        "label": "ADU Approval Pathway",
+        "tier": "administrative",
+        "input_value": "administrative",
+        "note": "No special-permit hearing required; owner-occupancy affidavit filed administratively",
+        "points": 4,
+        "max_points": 15
+      },
+      {
+        "category": "Parking",
+        "label": "Parking Mandate",
+        "tier": "scaled",
+        "input_value": "2 spaces/unit",
+        "note": "R-1/R-2: \"Parking, one-/two-family residences = 2 spaces/unit\"",
+        "points": 8.0,
+        "max_points": 10
+      },
+      {
+        "category": "Overlays & Affordability",
+        "label": "Demolition Delay",
+        "tier": "scaled",
+        "input_value": "not independently confirmed",
+        "note": "Delay likely exists but exact codified period not independently located",
+        "points": null,
+        "max_points": 15
+      }
+    ],
+    "methodology_note": "Computed from the Variables table on this page, not from the NZA data below. Six weighted components (Multifamily Access 30pts, Approval Discretion 10pts, Minimum Lot Size 20pts, ADU Approval Pathway 15pts, Parking Mandate 10pts, Demolition Delay 15pts) are each scored against a fixed, published rubric from a specific cited fact above. Higher = more restrictive. 1 of 6 components had no independently-confirmed input for this town and were excluded; the composite is renormalized over the remaining 5."
+  }
 }

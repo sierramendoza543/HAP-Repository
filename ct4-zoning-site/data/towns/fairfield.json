@@ -448,5 +448,65 @@
     "content_hash": "9eb8d7a997a030a1822552ca681d21ec4f435eae8f99ef5a01c7c91940da1eb7",
     "mirrored_size_bytes": 3638390
   },
-  "caveat": "Fairfield is the clearest \"permissive\" comparison case among the 17 towns — a genuine, explicitly tiered by-right multifamily district."
+  "caveat": "Fairfield is the clearest \"permissive\" comparison case among the 17 towns — a genuine, explicitly tiered by-right multifamily district.",
+  "hap_score": {
+    "composite": 26.0,
+    "factors": [
+      {
+        "category": "Use Permissions",
+        "label": "Multifamily Access",
+        "tier": "by_right",
+        "input_value": "by right",
+        "note": "District B/C: \"Two-Family Dwellings = P\" and three-/four-family \"P\" in C",
+        "points": 6,
+        "max_points": 30
+      },
+      {
+        "category": "Approval Process",
+        "label": "Approval Discretion",
+        "tier": "by_right",
+        "input_value": "by right",
+        "note": "District B/C: \"Two-Family Dwellings = P\" and three-/four-family \"P\" in C",
+        "points": 1,
+        "max_points": 10
+      },
+      {
+        "category": "Dimensional Standards",
+        "label": "Minimum Lot Size",
+        "tier": "scaled",
+        "input_value": "9,375 sq ft",
+        "note": "District A (smallest single-family tier): \"Min. lot size = 9,375 sq ft\"",
+        "points": 6.2,
+        "max_points": 20
+      },
+      {
+        "category": "ADU Policy",
+        "label": "ADU Approval Pathway",
+        "tier": "administrative",
+        "input_value": "administrative",
+        "note": "AAA/AA/R-3: \"ADU (detached) availability = Permitted\", no hearing required",
+        "points": 4,
+        "max_points": 15
+      },
+      {
+        "category": "Parking",
+        "label": "Parking Mandate",
+        "tier": "scaled",
+        "input_value": "2 spaces/unit",
+        "note": "District B/C: \"Parking, multifamily (≤16 units)\" = 2 spaces for 2BR+ unit",
+        "points": 8.0,
+        "max_points": 10
+      },
+      {
+        "category": "Overlays & Affordability",
+        "label": "Demolition Delay",
+        "tier": "scaled",
+        "input_value": "10 days",
+        "note": "\"Demolition delay = 10 days for structures <100 years old\" (the common case)",
+        "points": 0.8,
+        "max_points": 15
+      }
+    ],
+    "methodology_note": "Computed from the Variables table on this page, not from the NZA data below. Six weighted components (Multifamily Access 30pts, Approval Discretion 10pts, Minimum Lot Size 20pts, ADU Approval Pathway 15pts, Parking Mandate 10pts, Demolition Delay 15pts) are each scored against a fixed, published rubric from a specific cited fact above. Higher = more restrictive."
+  }
 }

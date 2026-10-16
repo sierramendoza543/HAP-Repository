@@ -719,6 +719,229 @@ add("stratford", "Stratford", 326, 53610, 11017, 28, 33.8,
     ],
     "An apparent inconsistency exists between the Use Table's \"4 or more units\" threshold and §5.1's \"(3+)\" heading for Special Permit review — flagged for follow-up. Stratford's code is hosted as a browsable eCode360 site rather than a single PDF, so there's no local mirror — but every figure below has now been independently re-verified against the live eCode360 text and carries a verbatim quote.")
 
+# ================= HAP RESTRICTIVENESS SCORE =================
+# Our own composite index, built entirely from the Variables tables above (not NZA's
+# data). 0 = least restrictive, 100 = most restrictive. Six weighted components, each
+# scored against a fixed, published rubric from one or two concrete facts already shown
+# on the town's own page -- so every point is traceable back to a quoted, cited fact
+# rather than a black box. If a component's underlying fact wasn't independently
+# confirmed for a town (e.g. an unconfirmed demolition-delay period), that component is
+# left out and the composite is renormalized over the components that *were* available.
+import math
+
+USE_PERMISSIONS_RUBRIC = {
+    "none": 30,            # no multifamily pathway exists anywhere, not even by special permit
+    "discretionary": 25,   # multifamily only via Special Permit/discretionary hearing, town-wide
+    "narrow_by_right": 17, # by-right but confined to a tiny or high-barrier-to-create district
+    "capped_by_right": 12, # by-right in a real district, but a hard unit/density cap limits it
+    "by_right": 6,         # by-right multifamily in at least one meaningful, uncapped district
+}
+APPROVAL_PROCESS_RUBRIC = {
+    "none": 10, "discretionary": 9, "narrow_by_right": 6, "capped_by_right": 4, "by_right": 1,
+}
+ADU_PATHWAY_RUBRIC = {
+    "prohibited": 15, "special_permit": 12, "zoning_permit": 7, "administrative": 4, "by_right": 1,
+}
+
+def lot_size_points(sqft, floor=2500, ceiling=174240, max_pts=20):
+    if sqft is None:
+        return None
+    if sqft <= floor:
+        return 0.0
+    frac = (math.log10(sqft) - math.log10(floor)) / (math.log10(ceiling) - math.log10(floor))
+    return round(max(0.0, min(max_pts, frac * max_pts)), 1)
+
+def parking_points(spaces, max_pts=10, ceiling=2.5):
+    if spaces is None:
+        return None
+    return round(max(0.0, min(max_pts, (spaces / ceiling) * max_pts)), 1)
+
+def demolition_points(days, max_pts=15, ceiling=180):
+    if days is None:
+        return None
+    return round(max(0.0, min(max_pts, (days / ceiling) * max_pts)), 1)
+
+# Raw inputs, hand-scored per town against the rubric above using the Variable rows
+# already shown on that town's page. (use_tier, note), (min_lot_sqft, note),
+# (adu_tier, note), (parking_spaces, note), (demolition_days or None, note)
+SCORE_INPUTS = {
+    "bridgeport": {
+        "use": ("by_right", 'NX2 zone: "Up to 4 units (House A) = By-right, no special permit"'),
+        "lot": (0, 'N1 base district: "Min. lot width = 45 ft (no lot area minimum)"'),
+        "adu": ("by_right", 'N1: "ADU = allowed by-right"'),
+        "parking": (0, '"Parking minimum = None — citywide"'),
+        "demo": (90, '"Demolition delay = Up to 90 days for qualifying structures"'),
+    },
+    "darien": {
+        "use": ("discretionary", 'DMR (town\'s only multifamily zone): "Multifamily = Special Permit only"'),
+        "lot": (43560, 'R-1 (smallest base district): "Min. lot size = 43,560 sq ft (1 acre)"'),
+        "adu": ("administrative", 'No special-permit hearing required; owner-occupancy affidavit filed administratively'),
+        "parking": (2, 'R-1/R-2: "Parking, one-/two-family residences = 2 spaces/unit"'),
+        "demo": (None, 'Delay likely exists but exact codified period not independently located'),
+    },
+    "easton": {
+        "use": ("none", '"Multifamily pathway = None — not even by special permit"'),
+        "lot": (40000, 'Residence A: "Min. lot size = 40,000 sq ft"'),
+        "adu": ("administrative", 'Annual owner-occupancy affidavit, no special-permit hearing required'),
+        "parking": (2, 'Residence A/B: "Parking, single-family dwelling = 2.0 spaces"'),
+        "demo": (90, '"Demolition delay = Up to 90 days for structures on the town\'s Index to Historic Homes"'),
+    },
+    "fairfield": {
+        "use": ("by_right", 'District B/C: "Two-Family Dwellings = P" and three-/four-family "P" in C'),
+        "lot": (9375, 'District A (smallest single-family tier): "Min. lot size = 9,375 sq ft"'),
+        "adu": ("administrative", 'AAA/AA/R-3: "ADU (detached) availability = Permitted", no hearing required'),
+        "parking": (2, 'District B/C: "Parking, multifamily (≤16 units)" = 2 spaces for 2BR+ unit'),
+        "demo": (10, '"Demolition delay = 10 days for structures <100 years old" (the common case)'),
+    },
+    "greenwich": {
+        "use": ("discretionary", 'R-MF: "Two-family / multifamily = Special Permit only, no distinct 3-unit tier"'),
+        "lot": (12000, 'R-12 (smallest base district): "Min. lot size = 12,000 sq ft"'),
+        "adu": ("zoning_permit", '"ADU approval pathway = By Zoning Permit (not Special Permit, unless oversized)"'),
+        "parking": (2, 'R-MF: "Parking, 1–2BR unit = 1 garage space + 1 outdoor space"'),
+        "demo": (90, '"Demolition delay = Up to 90 days (45 + 45 if an objection is filed)"'),
+    },
+    "monroe": {
+        "use": ("narrow_by_right", 'MFR district requires "Min. parcel to create district = 70 contiguous acres" before any multifamily can exist'),
+        "lot": (43560, 'RF-1 (only base district tracked): "Min. lot size = 43,560 sq ft (1 acre)"'),
+        "adu": ("by_right", '"ADU approval pathway = By-right (ACC — Certificate of Use, no special-permit hearing)"'),
+        "parking": (2, '"Parking, 2BR+ = 2.0 spaces/unit"'),
+        "demo": (180, '"Demolition delay = 180 days for structures ≥60 years old (or pre-1950) and ≥500 sq ft"'),
+    },
+    "new-canaan": {
+        "use": ("discretionary", 'Apartment Zone: "Two-family & multifamily = Both Special Permit only"'),
+        "lot": (7500, 'B Residence Zone (smallest base district): "Min. lot size = 7,500 sq ft"'),
+        "adu": ("administrative", '"ADU owner-occupancy = Required", no special-permit hearing noted'),
+        "parking": (2, 'B Residence Zone: "Parking, two-family = 2 spaces/unit (4 total)"'),
+        "demo": (90, '"Demolition delay = Up to 90 days for structures >50 years old and ≥500 sq ft"'),
+    },
+    "norwalk": {
+        "use": ("capped_by_right", 'CD-2: "Two-family = P — permitted by right; multifamily still NP"'),
+        "lot": (5000, 'CD-2 (smallest base district): "Min. lot size = 5,000 sq ft"'),
+        "adu": ("by_right", 'CD-1S: "ADU = Permitted by-right with limitations"'),
+        "parking": (0, '"Parking minimum = Not regulated for buildings of ≤16 units"'),
+        "demo": (120, '"Demolition delay = Up to 120 days (2023 rewrite raised the ceiling from the 90-day state default)"'),
+    },
+    "redding": {
+        "use": ("discretionary", 'RV (town\'s only multifamily zone): "Multifamily = Special Permit only, capped at 1 unit/8,000 sq ft"'),
+        "lot": (43560, 'R-1 (general base district): "Min. lot size = 43,560 sq ft (1 acre)"'),
+        "adu": ("special_permit", '"ADU approval pathway = Special Permit required (not by-right)"'),
+        "parking": (2, '"Parking, single-family dwelling = 2 spaces/dwelling"'),
+        "demo": (180, '"Demolition delay = 180 days (longer than most CT-4 towns\' 90-day default), enacted 2013"'),
+    },
+    "ridgefield": {
+        "use": ("discretionary", 'MFDD: "Multifamily = Special Permit only — town\'s only multifamily pathway"'),
+        "lot": (7500, 'R-7.5 (least restrictive base district): "Min. lot size = 7,500 sq ft"'),
+        "adu": ("zoning_permit", '"ADU approval pathway = Zoning Permit (ZEO), not Special Permit"'),
+        "parking": (2, 'RAAA: "Parking, one-/two-family = 2 spaces/unit"'),
+        "demo": (90, '"Demolition delay = Up to 90 days for structures ≥50 years old"'),
+    },
+    "shelton": {
+        "use": ("discretionary", 'R-4: "2-/3-family & multifamily (4-12 units) = Allowed by Special Exception" (functionally a special permit)'),
+        "lot": (40000, 'R-1 (base district): "Min. lot size = 40,000 sq ft"'),
+        "adu": ("by_right", '"ADU approval pathway = By-right on use table, subject to detailed standards"'),
+        "parking": (2, '"Parking, 1–2 unit dwellings = 2 spaces/unit"'),
+        "demo": (0, 'No Shelton-specific demolition-delay ordinance was located in available sources'),
+    },
+    "stamford": {
+        "use": ("capped_by_right", 'R-6: "Two-family = Allowed by-right", but "Multifamily (3+) = Still prohibited"'),
+        "lot": (5000, 'R-6 (smallest base district): "Min. lot size = 5,000 sq ft (1F)"'),
+        "adu": ("administrative", 'Eligibility-restricted but no special-permit hearing noted; owner-occupancy required'),
+        "parking": (2, 'R-20/R-6: "Parking, single-family house = 2 spaces"'),
+        "demo": (20, 'Notice-to-deadline gaps of roughly 20–21 days observed in published legal notices (exact statutory period unconfirmed)'),
+    },
+    "stratford": {
+        "use": ("by_right", 'RM-1: "2- and 3-family = Allowed BY RIGHT (P¹)"'),
+        "lot": (40000, 'RS-1 (base district tracked): "Min. lot size = 40,000 sq ft"'),
+        "adu": ("administrative", '"ADU approval pathway = Administrative review (A)"'),
+        "parking": (1.5, 'RM-1: "Parking, multifamily (3+)" = 1.5 spaces/unit for a 2BR unit'),
+        "demo": (90, 'Academy Hill Historic District: "Demolition delay = 90 days from permit issuance"'),
+    },
+    "trumbull": {
+        "use": ("discretionary", 'MFO: "Multifamily = Special Permit only, existing I-L/I-L2 industrial land ≥10 acres", plus an active >50-unit application moratorium through Feb. 2027'),
+        "lot": (21780, 'Residence A (smallest base district): "Min. lot size = 21,780 sq ft (½ acre)"'),
+        "adu": ("zoning_permit", '"ADU approval pathway = Administrative (ZEO) if within existing footprint; Special Permit otherwise"'),
+        "parking": (2.0, 'MFO: "Parking = 1.8 spaces/1BR unit, 2.0 spaces/2BR unit"'),
+        "demo": (None, 'A Demolition Review Committee exists and is active, but no specific waiting-period length could be confirmed'),
+    },
+    "weston": {
+        "use": ("discretionary", 'R-2A (entire base zone) bans 2-/3-/4+-family outright; VD-R: "All uses, incl. multifamily = Require Special Permit"'),
+        "lot": (87120, 'R-2A (base zone): "Min. lot size = 2 acres"'),
+        "adu": ("administrative", 'Owner-occupancy affidavit required, no special-permit hearing noted'),
+        "parking": (0, 'Village District: parking is "stated as a cap, not a minimum" — no off-street minimum actually required'),
+        "demo": (None, 'A delay ordinance is referenced on permit applications, but the exact waiting period could not be confirmed'),
+    },
+    "westport": {
+        "use": ("capped_by_right", 'Residence C: "Two-family = Allowed BY RIGHT", but capped at "120 total dwelling units under this zone" town-wide'),
+        "lot": (87120, 'Residence AAA (base zone): "Min. lot size = 2 acres"'),
+        "adu": ("administrative", 'Residence AAA: structural ADU permitted without owner-occupancy, no special-permit hearing noted'),
+        "parking": (0, '"Parking, developments ≤16 units = No minimum (2026 amendment, §34-14.1)"'),
+        "demo": (180, '"Demolition delay = 180 days for structures ≥50 years old (raised from 90 days in 2008)"'),
+    },
+    "wilton": {
+        "use": ("narrow_by_right", 'HODD allows multifamily by-right, but only on specially-zoned "9–11 acres" sites; the R-2A base zone bans multifamily entirely'),
+        "lot": (87120, 'R-2A (base zone): "Min. lot size = 2 acres (87,120 sq ft)"'),
+        "adu": ("administrative", 'Annual owner-occupancy certification required, no special-permit hearing noted'),
+        "parking": (0, '"Parking minimum = None, unless in a Conservation & Traffic Mitigation District" for DRD/multifamily <17 units'),
+        "demo": (90, '"Demolition delay = Up to 90 days for structures >50 years old and >500 sq ft"'),
+    },
+}
+
+def compute_hap_score(slug):
+    inputs = SCORE_INPUTS[slug]
+    use_tier, use_note = inputs["use"]
+    lot_sqft, lot_note = inputs["lot"]
+    adu_tier, adu_note = inputs["adu"]
+    parking_spaces, parking_note = inputs["parking"]
+    demo_days, demo_note = inputs["demo"]
+
+    factors = [
+        {"category": U, "label": "Multifamily Access", "tier": use_tier,
+         "input_value": use_tier.replace("_", " "), "note": use_note,
+         "points": USE_PERMISSIONS_RUBRIC[use_tier], "max_points": 30},
+        {"category": AP, "label": "Approval Discretion", "tier": use_tier,
+         "input_value": use_tier.replace("_", " "), "note": use_note,
+         "points": APPROVAL_PROCESS_RUBRIC[use_tier], "max_points": 10},
+        {"category": D, "label": "Minimum Lot Size", "tier": "scaled",
+         "input_value": (f"{lot_sqft:,} sq ft" if lot_sqft else "no minimum"), "note": lot_note,
+         "points": lot_size_points(lot_sqft), "max_points": 20},
+        {"category": A, "label": "ADU Approval Pathway", "tier": adu_tier,
+         "input_value": adu_tier.replace("_", " "), "note": adu_note,
+         "points": ADU_PATHWAY_RUBRIC[adu_tier], "max_points": 15},
+        {"category": P, "label": "Parking Mandate", "tier": "scaled",
+         "input_value": f"{parking_spaces} spaces/unit", "note": parking_note,
+         "points": parking_points(parking_spaces), "max_points": 10},
+        {"category": OA, "label": "Demolition Delay", "tier": "scaled",
+         "input_value": (f"{demo_days} days" if demo_days is not None else "not independently confirmed"),
+         "note": demo_note, "points": demolition_points(demo_days), "max_points": 15},
+    ]
+
+    scored = [f for f in factors if f["points"] is not None]
+    achieved = sum(f["points"] for f in scored)
+    max_total = sum(f["max_points"] for f in scored)
+    composite = round(achieved / max_total * 100, 1) if max_total else 0.0
+
+    unscored_n = len(factors) - len(scored)
+    renorm_note = (
+        f" {unscored_n} of 6 components had no independently-confirmed input for this town "
+        f"and were excluded; the composite is renormalized over the remaining {len(scored)}."
+        if unscored_n else ""
+    )
+
+    return {
+        "composite": composite,
+        "factors": factors,
+        "methodology_note": (
+            "Computed from the Variables table on this page, not from the NZA data below. "
+            "Six weighted components (Multifamily Access 30pts, Approval Discretion 10pts, "
+            "Minimum Lot Size 20pts, ADU Approval Pathway 15pts, Parking Mandate 10pts, "
+            "Demolition Delay 15pts) are each scored against a fixed, published rubric from "
+            "a specific cited fact above. Higher = more restrictive." + renorm_note
+        ),
+    }
+
+for slug in TOWNS:
+    TOWNS[slug]["hap_score"] = compute_hap_score(slug)
+
 os.makedirs(TOWNS_DIR, exist_ok=True)
 for slug, t in TOWNS.items():
     with open(os.path.join(TOWNS_DIR, f"{slug}.json"), "w") as f:

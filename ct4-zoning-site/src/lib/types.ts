@@ -35,6 +35,22 @@ export interface Variable {
   quote: string | null;
 }
 
+export interface HapScoreFactor {
+  category: VariableCategory;
+  label: string;
+  points: number | null;
+  max_points: number;
+  tier: string;
+  input_value: string;
+  note: string;
+}
+
+export interface HapScore {
+  composite: number;
+  factors: HapScoreFactor[];
+  methodology_note: string;
+}
+
 export interface Town {
   slug: string;
   name: string;
@@ -43,6 +59,7 @@ export interface Town {
   land_area_acres: number | null;
   districts_analyzed: number;
   composite_score: number;
+  hap_score: HapScore;
   last_checked: string;
   restrictive_district: string;
   permissive_district: string;

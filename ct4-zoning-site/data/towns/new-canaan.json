@@ -377,5 +377,65 @@
     "content_hash": "17c2e7dde920961c46fa93287815e5aaad7f7e25934acc95b824573bee40c2b9",
     "mirrored_size_bytes": 6207095
   },
-  "caveat": "No as-of-right multifamily district exists anywhere in New Canaan — every multi-unit pathway requires a discretionary Special Permit hearing."
+  "caveat": "No as-of-right multifamily district exists anywhere in New Canaan — every multi-unit pathway requires a discretionary Special Permit hearing.",
+  "hap_score": {
+    "composite": 58.7,
+    "factors": [
+      {
+        "category": "Use Permissions",
+        "label": "Multifamily Access",
+        "tier": "discretionary",
+        "input_value": "discretionary",
+        "note": "Apartment Zone: \"Two-family & multifamily = Both Special Permit only\"",
+        "points": 25,
+        "max_points": 30
+      },
+      {
+        "category": "Approval Process",
+        "label": "Approval Discretion",
+        "tier": "discretionary",
+        "input_value": "discretionary",
+        "note": "Apartment Zone: \"Two-family & multifamily = Both Special Permit only\"",
+        "points": 9,
+        "max_points": 10
+      },
+      {
+        "category": "Dimensional Standards",
+        "label": "Minimum Lot Size",
+        "tier": "scaled",
+        "input_value": "7,500 sq ft",
+        "note": "B Residence Zone (smallest base district): \"Min. lot size = 7,500 sq ft\"",
+        "points": 5.2,
+        "max_points": 20
+      },
+      {
+        "category": "ADU Policy",
+        "label": "ADU Approval Pathway",
+        "tier": "administrative",
+        "input_value": "administrative",
+        "note": "\"ADU owner-occupancy = Required\", no special-permit hearing noted",
+        "points": 4,
+        "max_points": 15
+      },
+      {
+        "category": "Parking",
+        "label": "Parking Mandate",
+        "tier": "scaled",
+        "input_value": "2 spaces/unit",
+        "note": "B Residence Zone: \"Parking, two-family = 2 spaces/unit (4 total)\"",
+        "points": 8.0,
+        "max_points": 10
+      },
+      {
+        "category": "Overlays & Affordability",
+        "label": "Demolition Delay",
+        "tier": "scaled",
+        "input_value": "90 days",
+        "note": "\"Demolition delay = Up to 90 days for structures >50 years old and ≥500 sq ft\"",
+        "points": 7.5,
+        "max_points": 15
+      }
+    ],
+    "methodology_note": "Computed from the Variables table on this page, not from the NZA data below. Six weighted components (Multifamily Access 30pts, Approval Discretion 10pts, Minimum Lot Size 20pts, ADU Approval Pathway 15pts, Parking Mandate 10pts, Demolition Delay 15pts) are each scored against a fixed, published rubric from a specific cited fact above. Higher = more restrictive."
+  }
 }

@@ -332,5 +332,65 @@
     "content_hash": "9dd3c13bca1d0c145e8e23e39a6b572db46cf47a91c444df0e8538e15cda934c",
     "mirrored_size_bytes": 4178229
   },
-  "caveat": "Of all 17 towns researched, Easton is the single clearest case of total legal exclusion of 2+-family housing — confirmed by exhaustive keyword search, not an oversight. No local PDF mirror exists for Easton, so these facts rest on the search method itself rather than a re-verifiable quote."
+  "caveat": "Of all 17 towns researched, Easton is the single clearest case of total legal exclusion of 2+-family housing — confirmed by exhaustive keyword search, not an oversight. No local PDF mirror exists for Easton, so these facts rest on the search method itself rather than a re-verifiable quote.",
+  "hap_score": {
+    "composite": 72.6,
+    "factors": [
+      {
+        "category": "Use Permissions",
+        "label": "Multifamily Access",
+        "tier": "none",
+        "input_value": "none",
+        "note": "\"Multifamily pathway = None — not even by special permit\"",
+        "points": 30,
+        "max_points": 30
+      },
+      {
+        "category": "Approval Process",
+        "label": "Approval Discretion",
+        "tier": "none",
+        "input_value": "none",
+        "note": "\"Multifamily pathway = None — not even by special permit\"",
+        "points": 10,
+        "max_points": 10
+      },
+      {
+        "category": "Dimensional Standards",
+        "label": "Minimum Lot Size",
+        "tier": "scaled",
+        "input_value": "40,000 sq ft",
+        "note": "Residence A: \"Min. lot size = 40,000 sq ft\"",
+        "points": 13.1,
+        "max_points": 20
+      },
+      {
+        "category": "ADU Policy",
+        "label": "ADU Approval Pathway",
+        "tier": "administrative",
+        "input_value": "administrative",
+        "note": "Annual owner-occupancy affidavit, no special-permit hearing required",
+        "points": 4,
+        "max_points": 15
+      },
+      {
+        "category": "Parking",
+        "label": "Parking Mandate",
+        "tier": "scaled",
+        "input_value": "2 spaces/unit",
+        "note": "Residence A/B: \"Parking, single-family dwelling = 2.0 spaces\"",
+        "points": 8.0,
+        "max_points": 10
+      },
+      {
+        "category": "Overlays & Affordability",
+        "label": "Demolition Delay",
+        "tier": "scaled",
+        "input_value": "90 days",
+        "note": "\"Demolition delay = Up to 90 days for structures on the town's Index to Historic Homes\"",
+        "points": 7.5,
+        "max_points": 15
+      }
+    ],
+    "methodology_note": "Computed from the Variables table on this page, not from the NZA data below. Six weighted components (Multifamily Access 30pts, Approval Discretion 10pts, Minimum Lot Size 20pts, ADU Approval Pathway 15pts, Parking Mandate 10pts, Demolition Delay 15pts) are each scored against a fixed, published rubric from a specific cited fact above. Higher = more restrictive."
+  }
 }

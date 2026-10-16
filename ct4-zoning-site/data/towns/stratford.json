@@ -284,5 +284,65 @@
     "url": "https://ecode360.com/9207545",
     "title": "Stratford Zoning Code Ch. A220 (eff. Jan. 1, 2025)"
   },
-  "caveat": "An apparent inconsistency exists between the Use Table's \"4 or more units\" threshold and §5.1's \"(3+)\" heading for Special Permit review — flagged for follow-up. Stratford's code is hosted as a browsable eCode360 site rather than a single PDF, so there's no local mirror — but every figure below has now been independently re-verified against the live eCode360 text and carries a verbatim quote."
+  "caveat": "An apparent inconsistency exists between the Use Table's \"4 or more units\" threshold and §5.1's \"(3+)\" heading for Special Permit review — flagged for follow-up. Stratford's code is hosted as a browsable eCode360 site rather than a single PDF, so there's no local mirror — but every figure below has now been independently re-verified against the live eCode360 text and carries a verbatim quote.",
+  "hap_score": {
+    "composite": 37.6,
+    "factors": [
+      {
+        "category": "Use Permissions",
+        "label": "Multifamily Access",
+        "tier": "by_right",
+        "input_value": "by right",
+        "note": "RM-1: \"2- and 3-family = Allowed BY RIGHT (P¹)\"",
+        "points": 6,
+        "max_points": 30
+      },
+      {
+        "category": "Approval Process",
+        "label": "Approval Discretion",
+        "tier": "by_right",
+        "input_value": "by right",
+        "note": "RM-1: \"2- and 3-family = Allowed BY RIGHT (P¹)\"",
+        "points": 1,
+        "max_points": 10
+      },
+      {
+        "category": "Dimensional Standards",
+        "label": "Minimum Lot Size",
+        "tier": "scaled",
+        "input_value": "40,000 sq ft",
+        "note": "RS-1 (base district tracked): \"Min. lot size = 40,000 sq ft\"",
+        "points": 13.1,
+        "max_points": 20
+      },
+      {
+        "category": "ADU Policy",
+        "label": "ADU Approval Pathway",
+        "tier": "administrative",
+        "input_value": "administrative",
+        "note": "\"ADU approval pathway = Administrative review (A)\"",
+        "points": 4,
+        "max_points": 15
+      },
+      {
+        "category": "Parking",
+        "label": "Parking Mandate",
+        "tier": "scaled",
+        "input_value": "1.5 spaces/unit",
+        "note": "RM-1: \"Parking, multifamily (3+)\" = 1.5 spaces/unit for a 2BR unit",
+        "points": 6.0,
+        "max_points": 10
+      },
+      {
+        "category": "Overlays & Affordability",
+        "label": "Demolition Delay",
+        "tier": "scaled",
+        "input_value": "90 days",
+        "note": "Academy Hill Historic District: \"Demolition delay = 90 days from permit issuance\"",
+        "points": 7.5,
+        "max_points": 15
+      }
+    ],
+    "methodology_note": "Computed from the Variables table on this page, not from the NZA data below. Six weighted components (Multifamily Access 30pts, Approval Discretion 10pts, Minimum Lot Size 20pts, ADU Approval Pathway 15pts, Parking Mandate 10pts, Demolition Delay 15pts) are each scored against a fixed, published rubric from a specific cited fact above. Higher = more restrictive."
+  }
 }

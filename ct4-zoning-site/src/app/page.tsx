@@ -6,7 +6,7 @@ import ScoreScatter from "@/components/ScoreScatter";
 export default function Home() {
   const towns = getAllTowns();
   const totalVariables = towns.reduce((s, t) => s + t.variables.length, 0);
-  const avgScore = towns.reduce((s, t) => s + t.composite_score, 0) / towns.length;
+  const avgScore = towns.reduce((s, t) => s + t.hap_score.composite, 0) / towns.length;
   const mostRestrictive = towns[0];
   const leastRestrictive = towns[towns.length - 1];
 
@@ -29,9 +29,9 @@ export default function Home() {
       <section className="py-5 border-b border-(--rule) grid grid-cols-2 md:grid-cols-5 gap-4">
         <Kpi label="Towns tracked" value={String(towns.length)} />
         <Kpi label="Variables tracked" value={String(totalVariables)} />
-        <Kpi label="Avg. composite score" value={avgScore.toFixed(1)} />
-        <Kpi label="Most restrictive" value={mostRestrictive.name} sub={mostRestrictive.composite_score.toFixed(1)} />
-        <Kpi label="Least restrictive" value={leastRestrictive.name} sub={leastRestrictive.composite_score.toFixed(1)} />
+        <Kpi label="Avg. HAP score" value={avgScore.toFixed(1)} />
+        <Kpi label="Most restrictive" value={mostRestrictive.name} sub={mostRestrictive.hap_score.composite.toFixed(1)} />
+        <Kpi label="Least restrictive" value={leastRestrictive.name} sub={leastRestrictive.hap_score.composite.toFixed(1)} />
       </section>
       <p className="text-xs text-(--ink-dim) pt-2">
         These five figures are computed directly from the per-town data below &mdash; not
@@ -46,15 +46,19 @@ export default function Home() {
         </p>
         <OverviewTable towns={towns} />
         <p className="text-xs text-(--ink-dim) mt-2">
-          Population and the five metric columns: National Zoning Atlas Jurisdiction Snapshots
-          (cited per-number on each town&rsquo;s page). Score: our own formula over those cited
-          metrics &mdash; see a town&rsquo;s page for the exact weights.
+          <span className="font-semibold text-(--ink)">HAP Score</span>: our own 0&ndash;100
+          restrictiveness index, computed from the cited Variables table on each town&rsquo;s page
+          &mdash; open a town for the full point-by-point breakdown.{" "}
+          <span className="font-semibold text-(--ink)">NZA 2026</span>: the National Zoning
+          Atlas&rsquo;s own independent composite, shown for comparison. Population and the five
+          metric columns are NZA Jurisdiction Snapshot data (cited per-number on each town&rsquo;s
+          page).
         </p>
       </section>
 
       <section className="py-6 border-b border-(--rule) grid lg:grid-cols-2 gap-6">
         <div>
-          <h2 className="text-base font-semibold mb-1">Population vs. Composite Score</h2>
+          <h2 className="text-base font-semibold mb-1">Population vs. HAP Score</h2>
           <p className="text-xs text-(--ink-dim) mb-3">
             Hover a point for the town; click to open it. Color follows the score band.
           </p>

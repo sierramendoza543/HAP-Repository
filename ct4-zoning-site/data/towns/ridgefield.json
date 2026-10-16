@@ -332,5 +332,65 @@
     "content_hash": "05034e575ab9ea876bc2f2d7d9033e1dca366def3a9660ffdd8a7dd1bc4b9e5b",
     "mirrored_size_bytes": 4647310
   },
-  "caveat": "Ridgefield has no as-of-right multifamily district of any kind — every multi-unit path requires a discretionary Special Permit hearing. A local PDF mirror now exists, and most figures below have been independently re-verified with a verbatim quote; a few (the 2-/3-family use-table row, min. unit size, and historic overlay) are still flagged as citation-only because the exact use-table row text couldn't be located in the mirrored document."
+  "caveat": "Ridgefield has no as-of-right multifamily district of any kind — every multi-unit path requires a discretionary Special Permit hearing. A local PDF mirror now exists, and most figures below have been independently re-verified with a verbatim quote; a few (the 2-/3-family use-table row, min. unit size, and historic overlay) are still flagged as citation-only because the exact use-table row text couldn't be located in the mirrored document.",
+  "hap_score": {
+    "composite": 61.7,
+    "factors": [
+      {
+        "category": "Use Permissions",
+        "label": "Multifamily Access",
+        "tier": "discretionary",
+        "input_value": "discretionary",
+        "note": "MFDD: \"Multifamily = Special Permit only — town's only multifamily pathway\"",
+        "points": 25,
+        "max_points": 30
+      },
+      {
+        "category": "Approval Process",
+        "label": "Approval Discretion",
+        "tier": "discretionary",
+        "input_value": "discretionary",
+        "note": "MFDD: \"Multifamily = Special Permit only — town's only multifamily pathway\"",
+        "points": 9,
+        "max_points": 10
+      },
+      {
+        "category": "Dimensional Standards",
+        "label": "Minimum Lot Size",
+        "tier": "scaled",
+        "input_value": "7,500 sq ft",
+        "note": "R-7.5 (least restrictive base district): \"Min. lot size = 7,500 sq ft\"",
+        "points": 5.2,
+        "max_points": 20
+      },
+      {
+        "category": "ADU Policy",
+        "label": "ADU Approval Pathway",
+        "tier": "zoning_permit",
+        "input_value": "zoning permit",
+        "note": "\"ADU approval pathway = Zoning Permit (ZEO), not Special Permit\"",
+        "points": 7,
+        "max_points": 15
+      },
+      {
+        "category": "Parking",
+        "label": "Parking Mandate",
+        "tier": "scaled",
+        "input_value": "2 spaces/unit",
+        "note": "RAAA: \"Parking, one-/two-family = 2 spaces/unit\"",
+        "points": 8.0,
+        "max_points": 10
+      },
+      {
+        "category": "Overlays & Affordability",
+        "label": "Demolition Delay",
+        "tier": "scaled",
+        "input_value": "90 days",
+        "note": "\"Demolition delay = Up to 90 days for structures ≥50 years old\"",
+        "points": 7.5,
+        "max_points": 15
+      }
+    ],
+    "methodology_note": "Computed from the Variables table on this page, not from the NZA data below. Six weighted components (Multifamily Access 30pts, Approval Discretion 10pts, Minimum Lot Size 20pts, ADU Approval Pathway 15pts, Parking Mandate 10pts, Demolition Delay 15pts) are each scored against a fixed, published rubric from a specific cited fact above. Higher = more restrictive."
+  }
 }

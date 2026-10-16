@@ -315,5 +315,65 @@
     "content_hash": "6a2f46e424705ca6db22642792280a957675968d213feca7029493bfcf018945",
     "mirrored_size_bytes": 13478741
   },
-  "caveat": "Shelton's own code is a scanned, image-only PDF with NO embedded text layer — it cannot be text-searched or highlighted in the in-app viewer at all. Every figure above was OCR'd and visually verified against the table images directly during research; open the original source to see the actual scanned tables."
+  "caveat": "Shelton's own code is a scanned, image-only PDF with NO embedded text layer — it cannot be text-searched or highlighted in the in-app viewer at all. Every figure above was OCR'd and visually verified against the table images directly during research; open the original source to see the actual scanned tables.",
+  "hap_score": {
+    "composite": 56.1,
+    "factors": [
+      {
+        "category": "Use Permissions",
+        "label": "Multifamily Access",
+        "tier": "discretionary",
+        "input_value": "discretionary",
+        "note": "R-4: \"2-/3-family & multifamily (4-12 units) = Allowed by Special Exception\" (functionally a special permit)",
+        "points": 25,
+        "max_points": 30
+      },
+      {
+        "category": "Approval Process",
+        "label": "Approval Discretion",
+        "tier": "discretionary",
+        "input_value": "discretionary",
+        "note": "R-4: \"2-/3-family & multifamily (4-12 units) = Allowed by Special Exception\" (functionally a special permit)",
+        "points": 9,
+        "max_points": 10
+      },
+      {
+        "category": "Dimensional Standards",
+        "label": "Minimum Lot Size",
+        "tier": "scaled",
+        "input_value": "40,000 sq ft",
+        "note": "R-1 (base district): \"Min. lot size = 40,000 sq ft\"",
+        "points": 13.1,
+        "max_points": 20
+      },
+      {
+        "category": "ADU Policy",
+        "label": "ADU Approval Pathway",
+        "tier": "by_right",
+        "input_value": "by right",
+        "note": "\"ADU approval pathway = By-right on use table, subject to detailed standards\"",
+        "points": 1,
+        "max_points": 15
+      },
+      {
+        "category": "Parking",
+        "label": "Parking Mandate",
+        "tier": "scaled",
+        "input_value": "2 spaces/unit",
+        "note": "\"Parking, 1–2 unit dwellings = 2 spaces/unit\"",
+        "points": 8.0,
+        "max_points": 10
+      },
+      {
+        "category": "Overlays & Affordability",
+        "label": "Demolition Delay",
+        "tier": "scaled",
+        "input_value": "0 days",
+        "note": "No Shelton-specific demolition-delay ordinance was located in available sources",
+        "points": 0.0,
+        "max_points": 15
+      }
+    ],
+    "methodology_note": "Computed from the Variables table on this page, not from the NZA data below. Six weighted components (Multifamily Access 30pts, Approval Discretion 10pts, Minimum Lot Size 20pts, ADU Approval Pathway 15pts, Parking Mandate 10pts, Demolition Delay 15pts) are each scored against a fixed, published rubric from a specific cited fact above. Higher = more restrictive."
+  }
 }

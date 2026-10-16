@@ -468,5 +468,65 @@
     "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
     "mirrored_size_bytes": 3727499
   },
-  "caveat": "Live stamfordct.gov PDF was blocked by bot-protection during research; a Wayback Machine snapshot of the identical text was used — recommend re-verifying the live link."
+  "caveat": "Live stamfordct.gov PDF was blocked by bot-protection during research; a Wayback Machine snapshot of the identical text was used — recommend re-verifying the live link.",
+  "hap_score": {
+    "composite": 33.0,
+    "factors": [
+      {
+        "category": "Use Permissions",
+        "label": "Multifamily Access",
+        "tier": "capped_by_right",
+        "input_value": "capped by right",
+        "note": "R-6: \"Two-family = Allowed by-right\", but \"Multifamily (3+) = Still prohibited\"",
+        "points": 12,
+        "max_points": 30
+      },
+      {
+        "category": "Approval Process",
+        "label": "Approval Discretion",
+        "tier": "capped_by_right",
+        "input_value": "capped by right",
+        "note": "R-6: \"Two-family = Allowed by-right\", but \"Multifamily (3+) = Still prohibited\"",
+        "points": 4,
+        "max_points": 10
+      },
+      {
+        "category": "Dimensional Standards",
+        "label": "Minimum Lot Size",
+        "tier": "scaled",
+        "input_value": "5,000 sq ft",
+        "note": "R-6 (smallest base district): \"Min. lot size = 5,000 sq ft (1F)\"",
+        "points": 3.3,
+        "max_points": 20
+      },
+      {
+        "category": "ADU Policy",
+        "label": "ADU Approval Pathway",
+        "tier": "administrative",
+        "input_value": "administrative",
+        "note": "Eligibility-restricted but no special-permit hearing noted; owner-occupancy required",
+        "points": 4,
+        "max_points": 15
+      },
+      {
+        "category": "Parking",
+        "label": "Parking Mandate",
+        "tier": "scaled",
+        "input_value": "2 spaces/unit",
+        "note": "R-20/R-6: \"Parking, single-family house = 2 spaces\"",
+        "points": 8.0,
+        "max_points": 10
+      },
+      {
+        "category": "Overlays & Affordability",
+        "label": "Demolition Delay",
+        "tier": "scaled",
+        "input_value": "20 days",
+        "note": "Notice-to-deadline gaps of roughly 20–21 days observed in published legal notices (exact statutory period unconfirmed)",
+        "points": 1.7,
+        "max_points": 15
+      }
+    ],
+    "methodology_note": "Computed from the Variables table on this page, not from the NZA data below. Six weighted components (Multifamily Access 30pts, Approval Discretion 10pts, Minimum Lot Size 20pts, ADU Approval Pathway 15pts, Parking Mandate 10pts, Demolition Delay 15pts) are each scored against a fixed, published rubric from a specific cited fact above. Higher = more restrictive."
+  }
 }

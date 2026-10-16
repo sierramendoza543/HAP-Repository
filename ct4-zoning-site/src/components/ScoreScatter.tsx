@@ -40,7 +40,7 @@ export default function ScoreScatter({ towns }: { towns: Town[] }) {
 
   return (
     <div className="border border-(--rule) rounded-lg bg-(--surface) p-4 overflow-x-auto">
-      <svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{ minWidth: 560 }} role="img" aria-label="Population vs. composite score scatter plot">
+      <svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{ minWidth: 560 }} role="img" aria-label="Population vs. HAP score scatter plot">
         {/* gridlines */}
         {[0, 25, 50, 75, 100].map((y) => (
           <g key={y}>
@@ -69,12 +69,12 @@ export default function ScoreScatter({ towns }: { towns: Town[] }) {
           Population (log scale)
         </text>
         <text x={14} y={H / 2} textAnchor="middle" fontSize={11} fill="var(--ink-dim)" transform={`rotate(-90 14 ${H / 2})`}>
-          Composite score
+          HAP score
         </text>
 
         {towns.map((t) => {
           const cx = scaleLog(t.population, popDomain, xRange);
-          const cy = scaleLinear(t.composite_score, [0, 100], yRange);
+          const cy = scaleLinear(t.hap_score.composite, [0, 100], yRange);
           const isHover = hover === t.slug;
           return (
             <g
@@ -84,7 +84,7 @@ export default function ScoreScatter({ towns }: { towns: Town[] }) {
               onClick={() => router.push(`/towns/${t.slug}`)}
               style={{ cursor: "pointer" }}
             >
-              <circle cx={cx} cy={cy} r={isHover ? 7 : 5} fill={scoreColor(t.composite_score)} fillOpacity={0.85} stroke="var(--surface)" strokeWidth={1.5} />
+              <circle cx={cx} cy={cy} r={isHover ? 7 : 5} fill={scoreColor(t.hap_score.composite)} fillOpacity={0.85} stroke="var(--surface)" strokeWidth={1.5} />
               {isHover && (
                 <g>
                   <rect x={cx + 8} y={cy - 22} width={t.name.length * 6.5 + 50} height={32} rx={4} fill="var(--ink)" opacity={0.95} />
@@ -92,7 +92,7 @@ export default function ScoreScatter({ towns }: { towns: Town[] }) {
                     {t.name}
                   </text>
                   <text x={cx + 14} y={cy + 4} fontSize={10} fill="var(--bg)" opacity={0.8}>
-                    score {t.composite_score.toFixed(1)} · pop {t.population.toLocaleString()}
+                    score {t.hap_score.composite.toFixed(1)} · pop {t.population.toLocaleString()}
                   </text>
                 </g>
               )}

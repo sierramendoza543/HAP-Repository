@@ -4,6 +4,8 @@ import { getAllSlugs, getTown, compositeBreakdown } from "@/lib/towns";
 import { CitationBadge } from "@/components/CitationFact";
 import UpdateChecker from "@/components/UpdateChecker";
 import VariableTable from "@/components/VariableTable";
+import ScoreGauge from "@/components/ScoreGauge";
+import ScoreBreakdown from "@/components/ScoreBreakdown";
 
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -26,7 +28,7 @@ export default async function TownPage({ params }: { params: Promise<{ slug: str
         </Link>
       </div>
 
-      <header className="pt-4 pb-5 border-b border-(--rule) flex flex-wrap items-end justify-between gap-4">
+      <header className="pt-4 pb-3 flex flex-wrap items-start justify-between gap-4">
         <div>
           <h1 className="text-2xl font-bold mb-1">{town.name}, CT</h1>
           <div className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-sm text-(--ink-dim)">
@@ -46,14 +48,23 @@ export default async function TownPage({ params }: { params: Promise<{ slug: str
         <UpdateChecker slug={town.slug} />
       </header>
 
-      <section className="py-5 border-b border-(--rule) flex flex-wrap gap-4 text-xs text-(--ink-dim)">
-        <span>
-          Restrictive district: <b className="text-(--ink)">{town.restrictive_district}</b>
-        </span>
-        <span>
-          Permissive district: <b className="text-(--ink)">{town.permissive_district}</b>
-        </span>
-        <span>Last research pass: {town.last_checked}</span>
+      <section className="pb-6 border-b border-(--rule) grid md:grid-cols-[auto_1fr] gap-6 items-center">
+        <div className="flex justify-center md:justify-start">
+          <ScoreGauge score={town.hap_score.composite} nzaScore={town.composite_score} />
+        </div>
+        <div>
+          <div className="flex flex-wrap gap-4 text-xs text-(--ink-dim) mb-3">
+            <span>
+              Most restrictive district: <b className="text-(--ink)">{town.restrictive_district}</b>
+            </span>
+            <span>
+              Most permissive district: <b className="text-(--ink)">{town.permissive_district}</b>
+            </span>
+            <span>Last research pass: {town.last_checked}</span>
+          </div>
+          <p className="text-xs text-(--ink-dim) leading-relaxed mb-4 max-w-xl">{town.hap_score.methodology_note}</p>
+          <ScoreBreakdown factors={town.hap_score.factors} />
+        </div>
       </section>
 
       <section className="py-6 border-b border-(--rule)">

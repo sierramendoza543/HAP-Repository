@@ -349,5 +349,65 @@
     "content_hash": "5eceaeb3836482e8ed59cff3f85dcc8eb6267b485b1d299a4f9d521b28d2d7be",
     "mirrored_size_bytes": 4088907
   },
-  "caveat": "Redding's ADU rules give no size figure for detached ADUs in R-4 — a likely drafting gap rather than a deliberate restriction."
+  "caveat": "Redding's ADU rules give no size figure for detached ADUs in R-4 — a likely drafting gap rather than a deliberate restriction.",
+  "hap_score": {
+    "composite": 82.5,
+    "factors": [
+      {
+        "category": "Use Permissions",
+        "label": "Multifamily Access",
+        "tier": "discretionary",
+        "input_value": "discretionary",
+        "note": "RV (town's only multifamily zone): \"Multifamily = Special Permit only, capped at 1 unit/8,000 sq ft\"",
+        "points": 25,
+        "max_points": 30
+      },
+      {
+        "category": "Approval Process",
+        "label": "Approval Discretion",
+        "tier": "discretionary",
+        "input_value": "discretionary",
+        "note": "RV (town's only multifamily zone): \"Multifamily = Special Permit only, capped at 1 unit/8,000 sq ft\"",
+        "points": 9,
+        "max_points": 10
+      },
+      {
+        "category": "Dimensional Standards",
+        "label": "Minimum Lot Size",
+        "tier": "scaled",
+        "input_value": "43,560 sq ft",
+        "note": "R-1 (general base district): \"Min. lot size = 43,560 sq ft (1 acre)\"",
+        "points": 13.5,
+        "max_points": 20
+      },
+      {
+        "category": "ADU Policy",
+        "label": "ADU Approval Pathway",
+        "tier": "special_permit",
+        "input_value": "special permit",
+        "note": "\"ADU approval pathway = Special Permit required (not by-right)\"",
+        "points": 12,
+        "max_points": 15
+      },
+      {
+        "category": "Parking",
+        "label": "Parking Mandate",
+        "tier": "scaled",
+        "input_value": "2 spaces/unit",
+        "note": "\"Parking, single-family dwelling = 2 spaces/dwelling\"",
+        "points": 8.0,
+        "max_points": 10
+      },
+      {
+        "category": "Overlays & Affordability",
+        "label": "Demolition Delay",
+        "tier": "scaled",
+        "input_value": "180 days",
+        "note": "\"Demolition delay = 180 days (longer than most CT-4 towns' 90-day default), enacted 2013\"",
+        "points": 15,
+        "max_points": 15
+      }
+    ],
+    "methodology_note": "Computed from the Variables table on this page, not from the NZA data below. Six weighted components (Multifamily Access 30pts, Approval Discretion 10pts, Minimum Lot Size 20pts, ADU Approval Pathway 15pts, Parking Mandate 10pts, Demolition Delay 15pts) are each scored against a fixed, published rubric from a specific cited fact above. Higher = more restrictive."
+  }
 }

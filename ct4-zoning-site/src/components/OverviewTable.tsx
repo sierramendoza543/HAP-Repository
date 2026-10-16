@@ -8,6 +8,7 @@ interface Row {
   slug: string;
   name: string;
   score: number;
+  nzaScore: number;
   population: number;
   pct2: number;
   pct3: number;
@@ -24,7 +25,8 @@ function toRow(t: Town): Row {
   return {
     slug: t.slug,
     name: t.name,
-    score: t.composite_score,
+    score: t.hap_score.composite,
+    nzaScore: t.composite_score,
     population: t.population,
     pct2: byLabel("2-family"),
     pct3: byLabel("3-family"),
@@ -43,7 +45,8 @@ function cellShade(v: number) {
 }
 
 const COLUMNS: { key: SortKey; label: string; suffix?: string }[] = [
-  { key: "score", label: "Score" },
+  { key: "score", label: "HAP Score" },
+  { key: "nzaScore", label: "NZA 2026" },
   { key: "population", label: "Population" },
   { key: "pct2", label: "2F Excl.", suffix: "%" },
   { key: "pct3", label: "3F Excl.", suffix: "%" },
@@ -120,7 +123,8 @@ export default function OverviewTable({ towns }: { towns: Town[] }) {
                 className="border-t border-(--rule) hover:bg-(--surface-2) cursor-pointer"
               >
                 <td className="sticky left-0 bg-(--surface) px-3 py-2 font-medium whitespace-nowrap">{r.name}</td>
-                <td className="px-3 py-2 tabular font-semibold">{r.score.toFixed(1)}</td>
+                <td className="px-3 py-2 tabular font-semibold text-(--accent)">{r.score.toFixed(1)}</td>
+                <td className="px-3 py-2 tabular text-(--ink-dim)">{r.nzaScore.toFixed(1)}</td>
                 <td className="px-3 py-2 tabular">{r.population.toLocaleString()}</td>
                 {(["pct2", "pct3", "pct4", "lot80", "parking"] as const).map((k) => (
                   <td key={k} className="px-3 py-2 tabular">
