@@ -1,0 +1,143 @@
+{
+  "slug": "new-canaan",
+  "name": "New Canaan",
+  "jurisdiction_id": 319,
+  "population": 21160,
+  "land_area_acres": null,
+  "districts_analyzed": 24,
+  "composite_score": 92.4,
+  "last_checked": "2026-10-15",
+  "nza_metrics": [
+    {
+      "label": "2-family housing prohibited",
+      "value": 97.4,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-319",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/319/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "3-family housing prohibited",
+      "value": 98.3,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-319",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/319/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "4+-family housing prohibited",
+      "value": 98.3,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-319",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/319/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "1-family lots requiring ≥80,000 sq ft",
+      "value": 81.3,
+      "unit": "% of 1-family land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-319",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/319/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "Residential land with a parking mandate",
+      "value": 100,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-319",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/319/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    }
+  ],
+  "primary_source": {
+    "kind": "pdf",
+    "id": "newcanaan-pdf",
+    "file": "/sources/newcanaan-zoning.pdf",
+    "url": "https://cms3.revize.com/revize/newcanaanct/Departments/Land%20Use/Zoning%20Regulations.pdf",
+    "title": "New Canaan Zoning Regulations (amended through May 1, 2023)",
+    "content_hash": "17c2e7dde920961c46fa93287815e5aaad7f7e25934acc95b824573bee40c2b9",
+    "mirrored_size_bytes": 6207095
+  },
+  "restrictive": {
+    "district": "Four Acre Residence Zone",
+    "facts": [
+      {
+        "label": "2-/3-/4+-family",
+        "value": "Prohibited outright (except age-restricted via special permit)",
+        "source": {
+          "kind": "pdf",
+          "id": "newcanaan-pdf",
+          "file": "/sources/newcanaan-zoning.pdf",
+          "url": "https://cms3.revize.com/revize/newcanaanct/Departments/Land%20Use/Zoning%20Regulations.pdf",
+          "title": "New Canaan Zoning Regulations (amended through May 1, 2023)",
+          "content_hash": "17c2e7dde920961c46fa93287815e5aaad7f7e25934acc95b824573bee40c2b9",
+          "mirrored_size_bytes": 6207095
+        },
+        "cite": "Sec. 3.2.C.2-3"
+      },
+      {
+        "label": "Min. lot size",
+        "value": "174,240 sq ft (4 acres)",
+        "source": {
+          "kind": "pdf",
+          "id": "newcanaan-pdf",
+          "file": "/sources/newcanaan-zoning.pdf",
+          "url": "https://cms3.revize.com/revize/newcanaanct/Departments/Land%20Use/Zoning%20Regulations.pdf",
+          "title": "New Canaan Zoning Regulations (amended through May 1, 2023)",
+          "content_hash": "17c2e7dde920961c46fa93287815e5aaad7f7e25934acc95b824573bee40c2b9",
+          "mirrored_size_bytes": 6207095
+        },
+        "cite": "Sec. 3.5.A.1"
+      }
+    ]
+  },
+  "permissive": {
+    "district": "Apartment Zone",
+    "facts": [
+      {
+        "label": "Two-family & multifamily",
+        "value": "Both Special Permit only",
+        "source": {
+          "kind": "pdf",
+          "id": "newcanaan-pdf",
+          "file": "/sources/newcanaan-zoning.pdf",
+          "url": "https://cms3.revize.com/revize/newcanaanct/Departments/Land%20Use/Zoning%20Regulations.pdf",
+          "title": "New Canaan Zoning Regulations (amended through May 1, 2023)",
+          "content_hash": "17c2e7dde920961c46fa93287815e5aaad7f7e25934acc95b824573bee40c2b9",
+          "mirrored_size_bytes": 6207095
+        },
+        "cite": "Sec. 5.4.C.1-2"
+      },
+      {
+        "label": "Max density",
+        "value": "1 unit / 5,000 sq ft",
+        "source": {
+          "kind": "pdf",
+          "id": "newcanaan-pdf",
+          "file": "/sources/newcanaan-zoning.pdf",
+          "url": "https://cms3.revize.com/revize/newcanaanct/Departments/Land%20Use/Zoning%20Regulations.pdf",
+          "title": "New Canaan Zoning Regulations (amended through May 1, 2023)",
+          "content_hash": "17c2e7dde920961c46fa93287815e5aaad7f7e25934acc95b824573bee40c2b9",
+          "mirrored_size_bytes": 6207095
+        },
+        "cite": "Sec. 5.4.D.1"
+      }
+    ]
+  },
+  "caveat": "No as-of-right multifamily district exists anywhere in New Canaan — every multi-unit pathway requires a discretionary Special Permit hearing."
+}

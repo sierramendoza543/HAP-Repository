@@ -1,0 +1,128 @@
+{
+  "slug": "darien",
+  "name": "Darien",
+  "jurisdiction_id": 302,
+  "population": 22528,
+  "land_area_acres": null,
+  "districts_analyzed": 26,
+  "composite_score": 74.5,
+  "last_checked": "2026-10-15",
+  "nza_metrics": [
+    {
+      "label": "2-family housing prohibited",
+      "value": 97.0,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-302",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/302/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "3-family housing prohibited",
+      "value": 97.0,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-302",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/302/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "4+-family housing prohibited",
+      "value": 97.0,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-302",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/302/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "1-family lots requiring ≥80,000 sq ft",
+      "value": 32.4,
+      "unit": "% of 1-family land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-302",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/302/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "Residential land with a parking mandate",
+      "value": 100,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-302",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/302/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    }
+  ],
+  "primary_source": {
+    "kind": "link",
+    "id": "darien-link",
+    "url": "https://www.darienct.gov/DocumentCenter/View/6613",
+    "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+  },
+  "restrictive": {
+    "district": "R-1 (and R-2 / R-1/2 / R-1/3 / R-1/5)",
+    "facts": [
+      {
+        "label": "Only single-family permitted",
+        "value": "2-/3-/4+-family prohibited town-wide",
+        "source": {
+          "kind": "link",
+          "id": "darien-link",
+          "url": "https://www.darienct.gov/DocumentCenter/View/6613",
+          "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+        },
+        "cite": "§402.a"
+      },
+      {
+        "label": "Min. lot size (R-1)",
+        "value": "43,560 sq ft (1 acre)",
+        "source": {
+          "kind": "link",
+          "id": "darien-link",
+          "url": "https://www.darienct.gov/DocumentCenter/View/6613",
+          "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+        },
+        "cite": "§406"
+      }
+    ]
+  },
+  "permissive": {
+    "district": "DMR (Designed Multi-Family Residential)",
+    "facts": [
+      {
+        "label": "Multifamily",
+        "value": "Special Permit only",
+        "source": {
+          "kind": "link",
+          "id": "darien-link",
+          "url": "https://www.darienct.gov/DocumentCenter/View/6613",
+          "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+        },
+        "cite": "§524.a"
+      },
+      {
+        "label": "Density",
+        "value": "4 DU/net acre by-right (6 with 20% affordable)",
+        "source": {
+          "kind": "link",
+          "id": "darien-link",
+          "url": "https://www.darienct.gov/DocumentCenter/View/6613",
+          "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+        },
+        "cite": "§526.1"
+      }
+    ]
+  },
+  "caveat": "Darien formally opted OUT of CT's statewide ADU law (PA 21-29) via local vote in 2022; its own local ADU rules sunset for new applications after June 30, 2029 unless readopted."
+}

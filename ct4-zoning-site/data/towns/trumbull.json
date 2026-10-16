@@ -1,0 +1,143 @@
+{
+  "slug": "trumbull",
+  "name": "Trumbull",
+  "jurisdiction_id": 327,
+  "population": 38073,
+  "land_area_acres": 14786,
+  "districts_analyzed": 25,
+  "composite_score": 63.6,
+  "last_checked": "2026-10-15",
+  "nza_metrics": [
+    {
+      "label": "2-family housing prohibited",
+      "value": 99.6,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-327",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/327/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "3-family housing prohibited",
+      "value": 98.8,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-327",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/327/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "4+-family housing prohibited",
+      "value": 98.0,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-327",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/327/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "1-family lots requiring ≥80,000 sq ft",
+      "value": 0.0,
+      "unit": "% of 1-family land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-327",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/327/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "Residential land with a parking mandate",
+      "value": 99,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-327",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/327/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    }
+  ],
+  "primary_source": {
+    "kind": "pdf",
+    "id": "trumbull-pdf",
+    "file": "/sources/trumbull-zoning.pdf",
+    "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+    "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+    "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
+    "mirrored_size_bytes": 2219912
+  },
+  "restrictive": {
+    "district": "Residence Zone A / AA / AAA",
+    "facts": [
+      {
+        "label": "2-/3-/4+-family",
+        "value": "Prohibited as a base use",
+        "source": {
+          "kind": "pdf",
+          "id": "trumbull-pdf",
+          "file": "/sources/trumbull-zoning.pdf",
+          "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+          "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+          "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
+          "mirrored_size_bytes": 2219912
+        },
+        "cite": "Art. II §1.1.1(1)"
+      },
+      {
+        "label": "Min. lot size",
+        "value": "½ to 1 acre",
+        "source": {
+          "kind": "pdf",
+          "id": "trumbull-pdf",
+          "file": "/sources/trumbull-zoning.pdf",
+          "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+          "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+          "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
+          "mirrored_size_bytes": 2219912
+        },
+        "cite": "Art. I §2"
+      }
+    ]
+  },
+  "permissive": {
+    "district": "MFO (Multi-Family Overlay)",
+    "facts": [
+      {
+        "label": "Multifamily",
+        "value": "Special Permit only, existing industrial land ≥10 acres",
+        "source": {
+          "kind": "pdf",
+          "id": "trumbull-pdf",
+          "file": "/sources/trumbull-zoning.pdf",
+          "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+          "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+          "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
+          "mirrored_size_bytes": 2219912
+        },
+        "cite": "Art. II §7.6.2"
+      },
+      {
+        "label": "Town-wide cap",
+        "value": "600 units total",
+        "source": {
+          "kind": "pdf",
+          "id": "trumbull-pdf",
+          "file": "/sources/trumbull-zoning.pdf",
+          "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+          "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+          "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
+          "mirrored_size_bytes": 2219912
+        },
+        "cite": "Art. II §7.6.4"
+      }
+    ]
+  },
+  "caveat": "Trumbull currently has a town-wide moratorium on new multifamily rental applications above 50 units (except 55+ housing), expiring Feb. 28, 2027."
+}

@@ -1,0 +1,143 @@
+{
+  "slug": "fairfield",
+  "name": "Fairfield",
+  "jurisdiction_id": 315,
+  "population": 65300,
+  "land_area_acres": 18618,
+  "districts_analyzed": 17,
+  "composite_score": 61.7,
+  "last_checked": "2026-10-15",
+  "nza_metrics": [
+    {
+      "label": "2-family housing prohibited",
+      "value": 91.2,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-315",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/315/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "3-family housing prohibited",
+      "value": 95.8,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-315",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/315/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "4+-family housing prohibited",
+      "value": 95.1,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-315",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/315/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "1-family lots requiring ≥80,000 sq ft",
+      "value": 0.0,
+      "unit": "% of 1-family land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-315",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/315/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "Residential land with a parking mandate",
+      "value": 100,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-315",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/315/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    }
+  ],
+  "primary_source": {
+    "kind": "pdf",
+    "id": "fairfield-pdf",
+    "file": "/sources/fairfield-zoning.pdf",
+    "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+    "title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+    "content_hash": "9eb8d7a997a030a1822552ca681d21ec4f435eae8f99ef5a01c7c91940da1eb7",
+    "mirrored_size_bytes": 3638390
+  },
+  "restrictive": {
+    "district": "AAA / AA / R-3 / R-2 / A (Single-Family Residence Districts)",
+    "facts": [
+      {
+        "label": "No multi-unit housing category",
+        "value": "Exists at all in these five districts",
+        "source": {
+          "kind": "pdf",
+          "id": "fairfield-pdf",
+          "file": "/sources/fairfield-zoning.pdf",
+          "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+          "title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+          "content_hash": "9eb8d7a997a030a1822552ca681d21ec4f435eae8f99ef5a01c7c91940da1eb7",
+          "mirrored_size_bytes": 3638390
+        },
+        "cite": "Sec. 3.2"
+      },
+      {
+        "label": "Min. lot size",
+        "value": "2 acres (AAA) down to 9,375 sq ft (A)",
+        "source": {
+          "kind": "pdf",
+          "id": "fairfield-pdf",
+          "file": "/sources/fairfield-zoning.pdf",
+          "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+          "title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+          "content_hash": "9eb8d7a997a030a1822552ca681d21ec4f435eae8f99ef5a01c7c91940da1eb7",
+          "mirrored_size_bytes": 3638390
+        },
+        "cite": "Sec. 3.3.1"
+      }
+    ]
+  },
+  "permissive": {
+    "district": "District C (Multi-Family Residence)",
+    "facts": [
+      {
+        "label": "2-, 3-, AND 4-family",
+        "value": "All permitted BY RIGHT, each with its own lot-area minimum",
+        "source": {
+          "kind": "pdf",
+          "id": "fairfield-pdf",
+          "file": "/sources/fairfield-zoning.pdf",
+          "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+          "title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+          "content_hash": "9eb8d7a997a030a1822552ca681d21ec4f435eae8f99ef5a01c7c91940da1eb7",
+          "mirrored_size_bytes": 3638390
+        },
+        "cite": "Sec. 5.2"
+      },
+      {
+        "label": "Lot minimums",
+        "value": "7,500 / 10,000 / 12,500 sq ft",
+        "source": {
+          "kind": "pdf",
+          "id": "fairfield-pdf",
+          "file": "/sources/fairfield-zoning.pdf",
+          "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+          "title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+          "content_hash": "9eb8d7a997a030a1822552ca681d21ec4f435eae8f99ef5a01c7c91940da1eb7",
+          "mirrored_size_bytes": 3638390
+        },
+        "cite": "Sec. 5.3.1"
+      }
+    ]
+  },
+  "caveat": "Fairfield is the clearest \"permissive\" comparison case among the 17 towns — a genuine, explicitly tiered by-right multifamily district."
+}

@@ -1,0 +1,129 @@
+{
+  "slug": "redding",
+  "name": "Redding",
+  "jurisdiction_id": 322,
+  "population": 8830,
+  "land_area_acres": 19732,
+  "districts_analyzed": 12,
+  "composite_score": 99.1,
+  "last_checked": "2026-10-15",
+  "nza_metrics": [
+    {
+      "label": "2-family housing prohibited",
+      "value": 99.2,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-322",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/322/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "3-family housing prohibited",
+      "value": 98.9,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-322",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/322/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "4+-family housing prohibited",
+      "value": 98.9,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-322",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/322/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "1-family lots requiring ≥80,000 sq ft",
+      "value": 98.7,
+      "unit": "% of 1-family land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-322",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/322/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "Residential land with a parking mandate",
+      "value": 100,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-322",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/322/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    }
+  ],
+  "primary_source": {
+    "kind": "pdf",
+    "id": "redding-pdf",
+    "file": "/sources/redding-zoning.pdf",
+    "url": "https://reddingct.gov/wp-content/uploads/2025/10/Redding-Zoning-Regulations-1.24.24.pdf",
+    "title": "Redding Zoning Regulations (amendments through Feb. 15, 2024)",
+    "content_hash": "5eceaeb3836482e8ed59cff3f85dcc8eb6267b485b1d299a4f9d521b28d2d7be",
+    "mirrored_size_bytes": 4088907
+  },
+  "restrictive": {
+    "district": "R-1 (and R-4 / R-2 / R-½)",
+    "facts": [
+      {
+        "label": "2-/3-/4+-family",
+        "value": "All prohibited; no 3-unit tier at all",
+        "source": {
+          "kind": "pdf",
+          "id": "redding-pdf",
+          "file": "/sources/redding-zoning.pdf",
+          "url": "https://reddingct.gov/wp-content/uploads/2025/10/Redding-Zoning-Regulations-1.24.24.pdf",
+          "title": "Redding Zoning Regulations (amendments through Feb. 15, 2024)",
+          "content_hash": "5eceaeb3836482e8ed59cff3f85dcc8eb6267b485b1d299a4f9d521b28d2d7be",
+          "mirrored_size_bytes": 4088907
+        },
+        "cite": "§4.2"
+      },
+      {
+        "label": "Min. lot size (R-1)",
+        "value": "1 acre",
+        "source": {
+          "kind": "pdf",
+          "id": "redding-pdf",
+          "file": "/sources/redding-zoning.pdf",
+          "url": "https://reddingct.gov/wp-content/uploads/2025/10/Redding-Zoning-Regulations-1.24.24.pdf",
+          "title": "Redding Zoning Regulations (amendments through Feb. 15, 2024)",
+          "content_hash": "5eceaeb3836482e8ed59cff3f85dcc8eb6267b485b1d299a4f9d521b28d2d7be",
+          "mirrored_size_bytes": 4088907
+        },
+        "cite": "§4.6"
+      }
+    ]
+  },
+  "permissive": {
+    "district": "RV (Village Residential)",
+    "facts": [
+      {
+        "label": "Multifamily",
+        "value": "Special Permit only, capped at 1 unit/8,000 sq ft",
+        "source": {
+          "kind": "pdf",
+          "id": "redding-pdf",
+          "file": "/sources/redding-zoning.pdf",
+          "url": "https://reddingct.gov/wp-content/uploads/2025/10/Redding-Zoning-Regulations-1.24.24.pdf",
+          "title": "Redding Zoning Regulations (amendments through Feb. 15, 2024)",
+          "content_hash": "5eceaeb3836482e8ed59cff3f85dcc8eb6267b485b1d299a4f9d521b28d2d7be",
+          "mirrored_size_bytes": 4088907
+        },
+        "cite": "§4.2.3(o)"
+      }
+    ]
+  },
+  "caveat": "Redding's ADU rules give no size figure for detached ADUs in R-4 — a likely drafting gap rather than a deliberate restriction."
+}

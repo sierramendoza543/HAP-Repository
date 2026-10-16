@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #f6f4ef;
+  --surface: #ffffff;
+  --surface-2: #eeebe2;
+  --ink: #1c2630;
+  --ink-dim: #5b6675;
+  --rule: #d8d3c6;
+  --accent: #8a2f27;
+  --accent-ink: #ffffff;
+  --allow: #2f6f4e;
+  --maybe: #b8863a;
+  --prohibit: #8a2f27;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15191d;
+    --surface: #1d2227;
+    --surface-2: #262b31;
+    --ink: #eceae4;
+    --ink-dim: #9aa3ad;
+    --rule: #343a40;
+    --accent: #e07a68;
+    --accent-ink: #1c1210;
+    --allow: #5fae84;
+    --maybe: #d9a85c;
+    --prohibit: #e07a68;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #15191d;
+  --surface: #1d2227;
+  --surface-2: #262b31;
+  --ink: #eceae4;
+  --ink-dim: #9aa3ad;
+  --rule: #343a40;
+  --accent: #e07a68;
+  --accent-ink: #1c1210;
+  --allow: #5fae84;
+  --maybe: #d9a85c;
+  --prohibit: #e07a68;
+  color-scheme: dark;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans), -apple-system, "Segoe UI", sans-serif;
+}
+
+h1, h2, h3, .disp {
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}

@@ -1,0 +1,143 @@
+{
+  "slug": "monroe",
+  "name": "Monroe",
+  "jurisdiction_id": 318,
+  "population": 19269,
+  "land_area_acres": 16323,
+  "districts_analyzed": 16,
+  "composite_score": 72.8,
+  "last_checked": "2026-10-15",
+  "nza_metrics": [
+    {
+      "label": "2-family housing prohibited",
+      "value": 95.2,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-318",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/318/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "3-family housing prohibited",
+      "value": 80.0,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-318",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/318/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "4+-family housing prohibited",
+      "value": 80.0,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-318",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/318/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "1-family lots requiring ≥80,000 sq ft",
+      "value": 48.4,
+      "unit": "% of 1-family land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-318",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/318/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "Residential land with a parking mandate",
+      "value": 89,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-318",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/318/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    }
+  ],
+  "primary_source": {
+    "kind": "pdf",
+    "id": "monroe-pdf",
+    "file": "/sources/monroe-zoning.pdf",
+    "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+    "title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+    "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
+    "mirrored_size_bytes": 2417109
+  },
+  "restrictive": {
+    "district": "RF-1 (Residential and Farming District 1)",
+    "facts": [
+      {
+        "label": "Multifamily (incl. 2-unit, by Monroe's own definition)",
+        "value": "Prohibited (\"x\")",
+        "source": {
+          "kind": "pdf",
+          "id": "monroe-pdf",
+          "file": "/sources/monroe-zoning.pdf",
+          "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+          "title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+          "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
+          "mirrored_size_bytes": 2417109
+        },
+        "cite": "§10.1 Use Schedule"
+      },
+      {
+        "label": "Min. lot size",
+        "value": "1 acre",
+        "source": {
+          "kind": "pdf",
+          "id": "monroe-pdf",
+          "file": "/sources/monroe-zoning.pdf",
+          "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+          "title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+          "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
+          "mirrored_size_bytes": 2417109
+        },
+        "cite": "Art. 3 §3.1.4(A)"
+      }
+    ]
+  },
+  "permissive": {
+    "district": "MFR (Multifamily Residence District)",
+    "facts": [
+      {
+        "label": "Multifamily",
+        "value": "Special Exception Permit, 2.5 units/gross acre (attached)",
+        "source": {
+          "kind": "pdf",
+          "id": "monroe-pdf",
+          "file": "/sources/monroe-zoning.pdf",
+          "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+          "title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+          "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
+          "mirrored_size_bytes": 2417109
+        },
+        "cite": "§3.4.5(A)"
+      },
+      {
+        "label": "Min. parcel to create district",
+        "value": "70 contiguous acres",
+        "source": {
+          "kind": "pdf",
+          "id": "monroe-pdf",
+          "file": "/sources/monroe-zoning.pdf",
+          "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+          "title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+          "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
+          "mirrored_size_bytes": 2417109
+        },
+        "cite": "§3.4.5(B)"
+      }
+    ]
+  },
+  "caveat": "Monroe's code does not distinguish a 3-unit tier from larger multifamily — its own definition of \"multi-family\" legally includes buildings with as few as 2 units."
+}

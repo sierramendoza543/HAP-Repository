@@ -1,0 +1,157 @@
+{
+  "slug": "stamford",
+  "name": "Stamford",
+  "jurisdiction_id": 304,
+  "population": 139134,
+  "land_area_acres": 23707,
+  "districts_analyzed": 46,
+  "composite_score": 64.7,
+  "last_checked": "2026-10-15",
+  "nza_metrics": [
+    {
+      "label": "2-family housing prohibited",
+      "value": 86.5,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-304",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/304/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "3-family housing prohibited",
+      "value": 87.9,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-304",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/304/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "4+-family housing prohibited",
+      "value": 73.9,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-304",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/304/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "1-family lots requiring ≥80,000 sq ft",
+      "value": 21.9,
+      "unit": "% of 1-family land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-304",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/304/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "Residential land with a parking mandate",
+      "value": 100,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-304",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/304/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    }
+  ],
+  "primary_source": {
+    "kind": "pdf",
+    "id": "stamford-pdf",
+    "file": "/sources/stamford-zoning.pdf",
+    "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+    "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+    "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
+    "mirrored_size_bytes": 3727499
+  },
+  "restrictive": {
+    "district": "R-20 (One-Family Residence)",
+    "facts": [
+      {
+        "label": "Two-family / multifamily",
+        "value": "Both prohibited",
+        "source": {
+          "kind": "pdf",
+          "id": "stamford-pdf",
+          "file": "/sources/stamford-zoning.pdf",
+          "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+          "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+          "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
+          "mirrored_size_bytes": 3727499
+        },
+        "cite": "Table I"
+      },
+      {
+        "label": "Min. lot size",
+        "value": "20,000 sq ft",
+        "source": {
+          "kind": "pdf",
+          "id": "stamford-pdf",
+          "file": "/sources/stamford-zoning.pdf",
+          "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+          "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+          "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
+          "mirrored_size_bytes": 3727499
+        },
+        "cite": "Table II"
+      }
+    ]
+  },
+  "permissive": {
+    "district": "R-6 (One-Family, Two-Family Residence)",
+    "facts": [
+      {
+        "label": "Two-family",
+        "value": "Allowed by-right",
+        "source": {
+          "kind": "pdf",
+          "id": "stamford-pdf",
+          "file": "/sources/stamford-zoning.pdf",
+          "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+          "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+          "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
+          "mirrored_size_bytes": 3727499
+        },
+        "cite": "Table I"
+      },
+      {
+        "label": "Multifamily (3+)",
+        "value": "Still prohibited",
+        "source": {
+          "kind": "pdf",
+          "id": "stamford-pdf",
+          "file": "/sources/stamford-zoning.pdf",
+          "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+          "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+          "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
+          "mirrored_size_bytes": 3727499
+        },
+        "cite": "Table I"
+      },
+      {
+        "label": "Min. lot size",
+        "value": "5,000 sq ft (1F) / 6,000 sq ft (2F)",
+        "source": {
+          "kind": "pdf",
+          "id": "stamford-pdf",
+          "file": "/sources/stamford-zoning.pdf",
+          "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+          "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+          "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
+          "mirrored_size_bytes": 3727499
+        },
+        "cite": "Table II"
+      }
+    ]
+  },
+  "caveat": "Live stamfordct.gov PDF was blocked by bot-protection during research; a Wayback Machine snapshot of the identical text was used — recommend re-verifying the live link."
+}

@@ -6,6 +6,12 @@
       "runtimeExecutable": "python3",
       "runtimeArgs": ["-m", "http.server", "8787", "--directory", "Stage_A_Zoning_Code_Reader/outputs/interactive/comparative_residential_regulation_index_v1"],
       "port": 8787
+    },
+    {
+      "name": "ct4-zoning-site",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "ct4-zoning-site", "--", "-p", "3311"],
+      "port": 3311
     }
   ]
 }

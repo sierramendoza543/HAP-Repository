@@ -1,0 +1,128 @@
+{
+  "slug": "weston",
+  "name": "Weston",
+  "jurisdiction_id": 328,
+  "population": 10490,
+  "land_area_acres": 12157,
+  "districts_analyzed": 3,
+  "composite_score": 100.0,
+  "last_checked": "2026-10-15",
+  "nza_metrics": [
+    {
+      "label": "2-family housing prohibited",
+      "value": 99.9,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-328",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/328/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "3-family housing prohibited",
+      "value": 99.9,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-328",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/328/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "4+-family housing prohibited",
+      "value": 99.9,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-328",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/328/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "1-family lots requiring ≥80,000 sq ft",
+      "value": 100.0,
+      "unit": "% of 1-family land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-328",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/328/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "Residential land with a parking mandate",
+      "value": 100,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-328",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/328/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    }
+  ],
+  "primary_source": {
+    "kind": "link",
+    "id": "weston-link",
+    "url": "https://www.westonct.gov/home/showpublisheddocument/15463/638937003479630000",
+    "title": "Weston Zoning Regulations (amended through July 7, 2025)"
+  },
+  "restrictive": {
+    "district": "R-2A (Two Acre Residential and Farming District)",
+    "facts": [
+      {
+        "label": "Entire town's base zone",
+        "value": "2-/3-/4+-family prohibited, not addressed anywhere",
+        "source": {
+          "kind": "link",
+          "id": "weston-link",
+          "url": "https://www.westonct.gov/home/showpublisheddocument/15463/638937003479630000",
+          "title": "Weston Zoning Regulations (amended through July 7, 2025)"
+        },
+        "cite": "Sec. 321"
+      },
+      {
+        "label": "Min. lot size",
+        "value": "2 acres",
+        "source": {
+          "kind": "link",
+          "id": "weston-link",
+          "url": "https://www.westonct.gov/home/showpublisheddocument/15463/638937003479630000",
+          "title": "Weston Zoning Regulations (amended through July 7, 2025)"
+        },
+        "cite": "Sec. 321"
+      }
+    ]
+  },
+  "permissive": {
+    "district": "Village District / VD-R",
+    "facts": [
+      {
+        "label": "All uses, incl. multifamily",
+        "value": "Require Special Permit",
+        "source": {
+          "kind": "link",
+          "id": "weston-link",
+          "url": "https://www.westonct.gov/home/showpublisheddocument/15463/638937003479630000",
+          "title": "Weston Zoning Regulations (amended through July 7, 2025)"
+        },
+        "cite": "Sec. 322"
+      },
+      {
+        "label": "Affordability",
+        "value": "5+ unit projects must set aside ≥15% affordable",
+        "source": {
+          "kind": "link",
+          "id": "weston-link",
+          "url": "https://www.westonct.gov/home/showpublisheddocument/15463/638937003479630000",
+          "title": "Weston Zoning Regulations (amended through July 7, 2025)"
+        },
+        "cite": "Sec. 322"
+      }
+    ]
+  },
+  "caveat": "Town's own PDF was blocked by a bot-detection wall during research; base-district figures came from a 2021-dated third-party copy, and the R-2A parking minimum could not be located — flagged for direct verification with Weston Land Use."
+}

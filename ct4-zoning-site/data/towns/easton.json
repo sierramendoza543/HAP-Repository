@@ -1,0 +1,117 @@
+{
+  "slug": "easton",
+  "name": "Easton",
+  "jurisdiction_id": 316,
+  "population": 7815,
+  "land_area_acres": 17110,
+  "districts_analyzed": 3,
+  "composite_score": 96.9,
+  "last_checked": "2026-10-15",
+  "nza_metrics": [
+    {
+      "label": "2-family housing prohibited",
+      "value": 100,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-316",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/316/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "3-family housing prohibited",
+      "value": 100,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-316",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/316/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "4+-family housing prohibited",
+      "value": 100,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-316",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/316/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "1-family lots requiring ≥80,000 sq ft",
+      "value": 91.4,
+      "unit": "% of 1-family land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-316",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/316/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "Residential land with a parking mandate",
+      "value": 100,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-316",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/316/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    }
+  ],
+  "primary_source": {
+    "kind": "link",
+    "id": "easton-link",
+    "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
+    "title": "Easton Zoning Regulations (last revised July 7, 2024)"
+  },
+  "restrictive": {
+    "district": "Residence A / Residence B",
+    "facts": [
+      {
+        "label": "\"Two-family\", \"duplex\", \"multi-family\", \"three-family\"",
+        "value": "Zero mentions anywhere in the 6,576-line regulations",
+        "source": {
+          "kind": "link",
+          "id": "easton-link",
+          "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
+          "title": "Easton Zoning Regulations (last revised July 7, 2024)"
+        },
+        "cite": "exhaustive keyword search"
+      },
+      {
+        "label": "Min. lot size",
+        "value": "40,000 sq ft (Res. A) / 3 acres (Res. B)",
+        "source": {
+          "kind": "link",
+          "id": "easton-link",
+          "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
+          "title": "Easton Zoning Regulations (last revised July 7, 2024)"
+        },
+        "cite": "Sec. 3510"
+      }
+    ]
+  },
+  "permissive": {
+    "district": "None exists",
+    "facts": [
+      {
+        "label": "Multifamily pathway",
+        "value": "None — not even by special permit, in any district",
+        "source": {
+          "kind": "link",
+          "id": "easton-link",
+          "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
+          "title": "Easton Zoning Regulations (last revised July 7, 2024)"
+        },
+        "cite": "full code review"
+      }
+    ]
+  },
+  "caveat": "Of all 17 towns researched, Easton is the single clearest case of total legal exclusion of 2+-family housing — confirmed by exhaustive keyword search, not an oversight."
+}

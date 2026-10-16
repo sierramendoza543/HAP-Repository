@@ -1,0 +1,139 @@
+{
+  "slug": "wilton",
+  "name": "Wilton",
+  "jurisdiction_id": 330,
+  "population": 19255,
+  "land_area_acres": null,
+  "districts_analyzed": 19,
+  "composite_score": 95.4,
+  "last_checked": "2026-10-15",
+  "nza_metrics": [
+    {
+      "label": "2-family housing prohibited",
+      "value": 98.5,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-330",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/330/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "3-family housing prohibited",
+      "value": 98.7,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-330",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/330/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "4+-family housing prohibited",
+      "value": 98.7,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-330",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/330/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "1-family lots requiring ≥80,000 sq ft",
+      "value": 88.8,
+      "unit": "% of 1-family land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-330",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/330/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    },
+    {
+      "label": "Residential land with a parking mandate",
+      "value": 100,
+      "unit": "% of residential land",
+      "source": {
+        "kind": "nza",
+        "id": "nza-330",
+        "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/330/",
+        "title": "NZA Jurisdiction Snapshot"
+      }
+    }
+  ],
+  "primary_source": {
+    "kind": "link",
+    "id": "wilton-link",
+    "url": "https://www.wiltonct.gov/planning-zoning-department/files/regulations-document-october-7",
+    "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
+  },
+  "restrictive": {
+    "district": "R-2A",
+    "facts": [
+      {
+        "label": "\"Two-family\"/\"three-family\"",
+        "value": "Do not exist anywhere in the 337-page code",
+        "source": {
+          "kind": "link",
+          "id": "wilton-link",
+          "url": "https://www.wiltonct.gov/planning-zoning-department/files/regulations-document-october-7",
+          "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
+        },
+        "cite": "full-text search"
+      },
+      {
+        "label": "Multifamily",
+        "value": "Prohibited in R-2A",
+        "source": {
+          "kind": "link",
+          "id": "wilton-link",
+          "url": "https://www.wiltonct.gov/planning-zoning-department/files/regulations-document-october-7",
+          "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
+        },
+        "cite": "§29-5.A.2.a"
+      },
+      {
+        "label": "Min. lot size",
+        "value": "2 acres",
+        "source": {
+          "kind": "link",
+          "id": "wilton-link",
+          "url": "https://www.wiltonct.gov/planning-zoning-department/files/regulations-document-october-7",
+          "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
+        },
+        "cite": "§29-5.D"
+      }
+    ]
+  },
+  "permissive": {
+    "district": "HODD (Housing Opportunity Development District)",
+    "facts": [
+      {
+        "label": "Multi-family attached dwellings",
+        "value": "Permitted \"as a matter of right\"",
+        "source": {
+          "kind": "link",
+          "id": "wilton-link",
+          "url": "https://www.wiltonct.gov/planning-zoning-department/files/regulations-document-october-7",
+          "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
+        },
+        "cite": "§29-5.E.8"
+      },
+      {
+        "label": "Density / affordability",
+        "value": "10 units/gross acre, 30% affordable required",
+        "source": {
+          "kind": "link",
+          "id": "wilton-link",
+          "url": "https://www.wiltonct.gov/planning-zoning-department/files/regulations-document-october-7",
+          "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
+        },
+        "cite": "§29-5.E.9"
+      }
+    ]
+  },
+  "caveat": "HODD sites are capped between 9 and 11 acres — a narrow, purpose-built carve-out, not a general-purpose multifamily zone."
+}
