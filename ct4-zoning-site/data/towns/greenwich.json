@@ -31,7 +31,7 @@
       "category": "Use Permissions",
       "district": "R-20/RA-2/RA-4/RA-1/R-12",
       "label": "Two-family",
-      "value": "Prohibited",
+      "value": "Prohibited — same exhaustive-use-list basis",
       "source": {
         "kind": "pdf",
         "id": "greenwich-pdf",
@@ -42,13 +42,13 @@
         "mirrored_size_bytes": 508124
       },
       "cite": "§6-93 / 6-94",
-      "quote": null
+      "quote": "all other principal uses are expressly excluded"
     },
     {
       "category": "Use Permissions",
       "district": "R-20/RA-2/RA-4/RA-1/R-12",
       "label": "Three-family",
-      "value": "Prohibited",
+      "value": "Prohibited — same exhaustive-use-list basis",
       "source": {
         "kind": "pdf",
         "id": "greenwich-pdf",
@@ -59,13 +59,13 @@
         "mirrored_size_bytes": 508124
       },
       "cite": "§6-93 / 6-94",
-      "quote": null
+      "quote": "all other principal uses are expressly excluded"
     },
     {
       "category": "Use Permissions",
       "district": "R-20/RA-2/RA-4/RA-1/R-12",
       "label": "4+-family",
-      "value": "Prohibited",
+      "value": "Prohibited — same exhaustive-use-list basis",
       "source": {
         "kind": "pdf",
         "id": "greenwich-pdf",
@@ -76,7 +76,7 @@
         "mirrored_size_bytes": 508124
       },
       "cite": "§6-93 / 6-94",
-      "quote": null
+      "quote": "all other principal uses are expressly excluded"
     },
     {
       "category": "Dimensional Standards",
@@ -110,7 +110,7 @@
         "mirrored_size_bytes": 40410
       },
       "cite": "§6-205(a) table",
-      "quote": null
+      "quote": "2 Acres"
     },
     {
       "category": "Dimensional Standards",
@@ -127,7 +127,7 @@
         "mirrored_size_bytes": 40410
       },
       "cite": "§6-205(a) table",
-      "quote": null
+      "quote": "4 Acres"
     },
     {
       "category": "Dimensional Standards",
@@ -144,7 +144,7 @@
         "mirrored_size_bytes": 40410
       },
       "cite": "§6-205(a) table",
-      "quote": null
+      "quote": "12,000"
     },
     {
       "category": "Dimensional Standards",
@@ -161,7 +161,7 @@
         "mirrored_size_bytes": 40410
       },
       "cite": "§6-205(a) table",
-      "quote": "R-20                        2-1/2            37½ ft."
+      "quote": null
     },
     {
       "category": "Dimensional Standards",
@@ -178,7 +178,7 @@
         "mirrored_size_bytes": 40410
       },
       "cite": "§6-205(a) table",
-      "quote": null
+      "quote": ".225"
     },
     {
       "category": "Dimensional Standards",
@@ -212,7 +212,7 @@
         "mirrored_size_bytes": 40410
       },
       "cite": "§6-205(a) table",
-      "quote": null
+      "quote": "4             40 ft.              2,400"
     },
     {
       "category": "Dimensional Standards",
@@ -229,7 +229,7 @@
         "mirrored_size_bytes": 40410
       },
       "cite": "§6-205(a) table",
-      "quote": null
+      "quote": "50 ft.                  50 ft.               50 ft."
     },
     {
       "category": "Use Permissions",

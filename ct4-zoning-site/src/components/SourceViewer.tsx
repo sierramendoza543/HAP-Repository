@@ -10,9 +10,9 @@ interface Props {
   onClose: () => void;
 }
 
-interface Span {
-  start: number;
-  end: number; // exclusive, in concatText
+interface Item {
+  str: string;
+  transform: number[];
 }
 
 /** Strips whitespace and lowercases, keeping a map back to the original
@@ -30,10 +30,75 @@ function compact(s: string): { text: string; map: number[] } {
   return { text, map };
 }
 
+/** Builds a concatenated string + per-item [start,end) spans for a given
+ * item ordering, so a match found in the concatenation can be mapped back
+ * to which item indices it touches. */
+function buildConcat(items: Item[], order: number[]) {
+  let text = "";
+  const spans = new Array(items.length);
+  for (const i of order) {
+    const start = text.length;
+    text += items[i].str + " ";
+    spans[i] = { start, end: start + items[i].str.length };
+  }
+  return { text, spans };
+}
+
+function readingOrder(items: Item[]): number[] {
+  const rows = items.map((it, i) => ({ i, x: it.transform[4], y: it.transform[5] }));
+  rows.sort((a, b) => {
+    const dy = b.y - a.y; // PDF y grows upward; reading order is top-to-bottom
+    if (Math.abs(dy) > 3) return dy;
+    return a.x - b.x;
+  });
+  return rows.map((r) => r.i);
+}
+
+function searchToken(cite: string): string | null {
+  const m = cite.match(/[0-9]+(?:[.\-][0-9]+)+/) ?? cite.match(/[0-9]{2,}/);
+  return m ? m[0] : null;
+}
+
+/** Tries to find `needle` (already compacted) inside `items`, trying both
+ * natural content-stream order and visual reading order, and both the full
+ * needle and a shortened prefix. Returns the matched item index range, or
+ * null. */
+function findMatch(items: Item[], needleCompact: { text: string }): [number, number] | null {
+  if (!needleCompact.text) return null;
+  const orders: number[][] = [
+    items.map((_, i) => i),
+    readingOrder(items),
+  ];
+  for (const order of orders) {
+    const { text, spans } = buildConcat(items, order);
+    const pageCompact = compact(text);
+    for (const needle of [needleCompact.text, needleCompact.text.slice(0, 40)]) {
+      if (needle.length < 6) continue;
+      const idx = pageCompact.text.indexOf(needle);
+      if (idx === -1) continue;
+      const startOrig = pageCompact.map[idx];
+      const endOrig = pageCompact.map[idx + needle.length - 1] + 1;
+      // find which items' spans overlap [startOrig, endOrig) in this order's concat string
+      let first = -1;
+      let last = -1;
+      for (let k = 0; k < items.length; k++) {
+        const s = spans[k];
+        if (!s) continue;
+        if (s.start < endOrig && s.end > startOrig) {
+          if (first === -1) first = k;
+          last = k;
+        }
+      }
+      if (first !== -1) return [first, last];
+    }
+  }
+  return null;
+}
+
 export default function SourceViewer({ source, cite, quote, onClose }: Props) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const textLayerRef = useRef<HTMLDivElement>(null);
-  const [status, setStatus] = useState<"loading" | "found" | "not-found" | "error">("loading");
+  const [status, setStatus] = useState<"loading" | "found" | "weak" | "not-found" | "error">("loading");
   const [pageInfo, setPageInfo] = useState<{ page: number; count: number } | null>(null);
 
   useEffect(() => {
@@ -58,33 +123,41 @@ export default function SourceViewer({ source, cite, quote, onClose }: Props) {
         const doc = await pdfjsLib.getDocument(source.file).promise;
         if (cancelled) return;
 
-        let targetPage = 1;
-        let matchRange: [number, number] | null = null;
-        const compactQuote = quote ? compact(quote) : null;
+        const quoteCompact = quote ? compact(quote) : null;
+        const token = searchToken(cite);
 
-        if (compactQuote && compactQuote.text.length > 0) {
+        let targetPage = 1;
+        let matchIdxRange: [number, number] | null = null;
+        let matchQuality: "found" | "weak" = "found";
+
+        // Pass 1: exact (or near-exact) quote match, page by page.
+        if (quoteCompact && quoteCompact.text.length > 0) {
           for (let i = 1; i <= doc.numPages; i++) {
             const page = await doc.getPage(i);
             const content = await page.getTextContent();
-            let concatText = "";
-            for (const raw of content.items) {
-              const item = raw as { str: string };
-              concatText += item.str + " ";
-            }
-            const compactPage = compact(concatText);
-            let idx = compactPage.text.indexOf(compactQuote.text);
-            let matchLen = compactQuote.text.length;
-            if (idx === -1 && compactQuote.text.length > 40) {
-              // tolerate OCR/typography drift by matching a shorter leading chunk
-              const shortQuote = compactQuote.text.slice(0, 40);
-              idx = compactPage.text.indexOf(shortQuote);
-              matchLen = shortQuote.length;
-            }
-            if (idx !== -1) {
-              const startOrig = compactPage.map[idx];
-              const endOrig = compactPage.map[idx + matchLen - 1] + 1;
-              matchRange = [startOrig, endOrig];
+            const items = content.items as unknown as Item[];
+            const m = findMatch(items, quoteCompact);
+            if (m) {
+              matchIdxRange = m;
               targetPage = i;
+              break;
+            }
+          }
+        }
+
+        // Pass 2: fall back to the section/number token from the citation,
+        // so the viewer still lands on a relevant page instead of page 1.
+        if (!matchIdxRange && token) {
+          const tokenCompact = compact(token);
+          for (let i = 1; i <= doc.numPages; i++) {
+            const page = await doc.getPage(i);
+            const content = await page.getTextContent();
+            const items = content.items as unknown as Item[];
+            const m = findMatch(items, tokenCompact);
+            if (m) {
+              matchIdxRange = m;
+              targetPage = i;
+              matchQuality = "weak";
               break;
             }
           }
@@ -104,18 +177,6 @@ export default function SourceViewer({ source, cite, quote, onClose }: Props) {
         textLayerDiv.style.height = `${viewport.height}px`;
         const content = await page.getTextContent();
 
-        // Rebuild spans with offsets matching the same concatenation scheme used above.
-        let cursor = 0;
-        const spans: Span[] = [];
-        for (const raw of content.items) {
-          const item = raw as { str: string };
-          const start = cursor;
-          cursor += item.str.length;
-          const end = cursor;
-          cursor += 1; // the " " separator
-          spans.push({ start, end });
-        }
-
         content.items.forEach((raw: unknown, i: number) => {
           const item = raw as { str: string; transform: number[]; width: number; height: number };
           if (!item.str.trim()) return;
@@ -129,23 +190,20 @@ export default function SourceViewer({ source, cite, quote, onClose }: Props) {
           span.style.fontSize = `${fontHeight}px`;
           span.style.whiteSpace = "pre";
           span.style.color = "transparent";
-          if (matchRange) {
-            const s = spans[i];
-            const overlaps = s.start < matchRange[1] && s.end > matchRange[0];
-            if (overlaps) {
-              span.style.background = "rgba(255, 210, 60, 0.6)";
-              span.style.color = "rgba(0,0,0,0.01)";
-              span.style.borderRadius = "2px";
-              span.dataset.hit = "1";
-            }
+          if (matchIdxRange && i >= matchIdxRange[0] && i <= matchIdxRange[1]) {
+            span.style.background =
+              matchQuality === "found" ? "rgba(255, 210, 60, 0.6)" : "rgba(255, 210, 60, 0.35)";
+            span.style.color = "rgba(0,0,0,0.01)";
+            span.style.borderRadius = "2px";
+            span.dataset.hit = "1";
           }
           textLayerDiv.appendChild(span);
         });
 
         if (!cancelled) {
           setPageInfo({ page: targetPage, count: doc.numPages });
-          setStatus(matchRange ? "found" : "not-found");
-          if (matchRange) {
+          setStatus(matchIdxRange ? matchQuality : "not-found");
+          if (matchIdxRange) {
             requestAnimationFrame(() => {
               const firstHighlight = textLayerDiv.querySelector("span[data-hit='1']");
               firstHighlight?.scrollIntoView({ block: "center", behavior: "smooth" });
@@ -161,9 +219,14 @@ export default function SourceViewer({ source, cite, quote, onClose }: Props) {
     return () => {
       cancelled = true;
     };
-  }, [source, quote]);
+  }, [source, quote, cite]);
 
   const isPdf = source.kind === "pdf" && source.file;
+  const token = searchToken(cite);
+  const openUrl =
+    source.kind === "link" && token
+      ? `${source.url}${source.url.includes("#") ? "" : `#:~:text=${encodeURIComponent(token)}`}`
+      : source.url;
 
   return (
     <div
@@ -178,7 +241,9 @@ export default function SourceViewer({ source, cite, quote, onClose }: Props) {
           <div className="min-w-0">
             <p className="text-xs uppercase tracking-wide text-(--ink-dim) font-semibold">Source</p>
             <p className="font-semibold truncate">{source.title}</p>
-            <p className="text-sm text-(--ink-dim)">Citation: {cite}</p>
+            <p className="text-sm text-(--ink-dim)">
+              Citation: <span className="font-mono">{cite}</span>
+            </p>
           </div>
           <button
             onClick={onClose}
@@ -201,11 +266,43 @@ export default function SourceViewer({ source, cite, quote, onClose }: Props) {
         )}
 
         <div className="flex-1 overflow-auto bg-(--surface-2) p-4">
-          {!quote && (
-            <p className="text-sm text-(--ink-dim) p-4 text-center">
-              No verbatim quote has been independently re-verified for this fact yet &mdash; only
-              the section citation above. Open the original source to confirm it yourself.
-            </p>
+          {!quote && !isPdf && (
+            <div className="p-6 text-center space-y-3">
+              <p className="text-sm text-(--ink-dim)">
+                No verbatim quote has been independently re-verified for this fact yet.
+              </p>
+              <p className="text-sm text-(--ink-dim)">
+                The button below jumps straight to <span className="font-mono">{cite}</span> on
+                the live source where possible (most browsers auto-scroll and highlight it).
+              </p>
+            </div>
+          )}
+          {!quote && isPdf && (
+            <>
+              {status === "loading" && (
+                <p className="text-sm text-(--ink-dim) p-6 text-center">
+                  Opening document and searching for {cite}&hellip;
+                </p>
+              )}
+              {status === "error" && (
+                <p className="text-sm text-(--ink-dim) p-6 text-center">
+                  Could not render the mirrored PDF in-browser. Use the link below to open it
+                  directly.
+                </p>
+              )}
+              {(status === "weak" || status === "not-found") && pageInfo && (
+                <p className="text-xs text-(--ink-dim) mb-2">
+                  Page {pageInfo.page} of {pageInfo.count}
+                  {status === "weak"
+                    ? ` — no verified quote yet, but found "${cite}" on this page (highlighted below)`
+                    : " — couldn't auto-locate this section in the mirrored PDF; shown at page 1"}
+                </p>
+              )}
+              <div className="relative inline-block bg-white shadow">
+                <canvas ref={canvasRef} className="block" />
+                <div ref={textLayerRef} className="absolute inset-0" style={{ transformOrigin: "0 0" }} />
+              </div>
+            </>
           )}
           {quote && isPdf && (
             <>
@@ -220,12 +317,12 @@ export default function SourceViewer({ source, cite, quote, onClose }: Props) {
                   directly.
                 </p>
               )}
-              {(status === "found" || status === "not-found") && pageInfo && (
+              {(status === "found" || status === "weak" || status === "not-found") && pageInfo && (
                 <p className="text-xs text-(--ink-dim) mb-2">
                   Page {pageInfo.page} of {pageInfo.count}
-                  {status === "found"
-                    ? " — highlighted below"
-                    : " — could not auto-locate this exact text in the mirrored PDF (it may be on a page the extractor couldn't match); shown at page 1"}
+                  {status === "found" && " — highlighted below"}
+                  {status === "weak" && ` — couldn't match the exact quote text, but found "${cite}" on this page (highlighted below)`}
+                  {status === "not-found" && " — couldn't auto-locate this text in the mirrored PDF; shown at page 1"}
                 </p>
               )}
               <div className="relative inline-block bg-white shadow">
@@ -239,7 +336,7 @@ export default function SourceViewer({ source, cite, quote, onClose }: Props) {
               <p className="text-sm text-(--ink-dim)">
                 {source.kind === "nza"
                   ? "This figure comes from the National Zoning Atlas's live Jurisdiction Snapshot page, not a static document — open it directly to verify."
-                  : "A local mirror of this document isn't available (the source blocked automated downloads, is image-only with no text layer, or is a browsable code site rather than a single PDF) — open the live source to verify the quote above."}
+                  : "A local mirror of this document isn't available (the source blocked automated downloads, is image-only with no text layer, or is a browsable code site rather than a single PDF). The button below jumps to this section on the live site where possible."}
               </p>
             </div>
           )}
@@ -247,7 +344,7 @@ export default function SourceViewer({ source, cite, quote, onClose }: Props) {
 
         <div className="p-4 border-t border-(--rule) flex justify-end">
           <a
-            href={source.url}
+            href={openUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm font-medium text-(--accent-ink) bg-(--accent) px-4 py-2 rounded-lg hover:opacity-90"

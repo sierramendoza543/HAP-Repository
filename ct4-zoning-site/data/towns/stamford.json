@@ -59,7 +59,7 @@
         "mirrored_size_bytes": 3727499
       },
       "cite": "Table II, Appendix B",
-      "quote": "R-20          20000   100   100   20000     1    2½    30    15"
+      "quote": "R-20          20000   100   100   20000     1"
     },
     {
       "category": "Dimensional Standards",
@@ -76,7 +76,7 @@
         "mirrored_size_bytes": 3727499
       },
       "cite": "Table II, Appendix B",
-      "quote": null
+      "quote": "30           15         40     65      15      35         50"
     },
     {
       "category": "Dimensional Standards",
@@ -93,7 +93,7 @@
         "mirrored_size_bytes": 3727499
       },
       "cite": "Table II, Appendix B",
-      "quote": null
+      "quote": "30           15         40     65      15      35         50"
     },
     {
       "category": "Dimensional Standards",
@@ -110,7 +110,7 @@
         "mirrored_size_bytes": 3727499
       },
       "cite": "Table II, Appendix B",
-      "quote": null
+      "quote": "30           15         40     65      15      35         50"
     },
     {
       "category": "Use Permissions",
@@ -178,7 +178,7 @@
         "mirrored_size_bytes": 3727499
       },
       "cite": "Table II, Appendix B",
-      "quote": "R-6           5000     50      -              -      1(19)      2½        30"
+      "quote": "R-6           5000     50      -              -      1(19)"
     },
     {
       "category": "Dimensional Standards",
@@ -195,7 +195,7 @@
         "mirrored_size_bytes": 3727499
       },
       "cite": "Table II, Appendix B",
-      "quote": null
+      "quote": "30           25         25     50       6      12         30"
     },
     {
       "category": "Dimensional Standards",
@@ -212,7 +212,7 @@
         "mirrored_size_bytes": 3727499
       },
       "cite": "Table II, Appendix B",
-      "quote": null
+      "quote": "30           25         25     50       6      12         30"
     },
     {
       "category": "ADU Policy",

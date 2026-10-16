@@ -59,7 +59,7 @@
         "mirrored_size_bytes": 3638390
       },
       "cite": "§3.3.1 table",
-      "quote": null
+      "quote": "A. Minimum Lot Area (sf or acres if noted)                2 ac"
     },
     {
       "category": "Dimensional Standards",
@@ -76,7 +76,7 @@
         "mirrored_size_bytes": 3638390
       },
       "cite": "§3.3.1 table",
-      "quote": null
+      "quote": "20,000           14,000          9,375"
     },
     {
       "category": "Dimensional Standards",
@@ -110,7 +110,7 @@
         "mirrored_size_bytes": 3638390
       },
       "cite": "§3.3.1 table",
-      "quote": null
+      "quote": "40               32"
     },
     {
       "category": "Dimensional Standards",
@@ -144,7 +144,7 @@
         "mirrored_size_bytes": 3638390
       },
       "cite": "§3.4.1 table",
-      "quote": null
+      "quote": "B.     Side Line Setback (ft)                     30             25              15           10             7"
     },
     {
       "category": "Use Permissions",
@@ -229,7 +229,7 @@
         "mirrored_size_bytes": 3638390
       },
       "cite": "§3.2 table, item T",
-      "quote": null
+      "quote": "T.    Accessory Dwelling Units (Detached)                  A       A       A"
     },
     {
       "category": "ADU Policy",
@@ -279,8 +279,8 @@
         "content_hash": "9eb8d7a997a030a1822552ca681d21ec4f435eae8f99ef5a01c7c91940da1eb7",
         "mirrored_size_bytes": 3638390
       },
-      "cite": "§25.4.1 table",
-      "quote": null
+      "cite": "§25.4.1 table, item K",
+      "quote": "Single-family residential - 2 spaces"
     },
     {
       "category": "Parking",
@@ -296,8 +296,8 @@
         "content_hash": "9eb8d7a997a030a1822552ca681d21ec4f435eae8f99ef5a01c7c91940da1eb7",
         "mirrored_size_bytes": 3638390
       },
-      "cite": "§25.4.1 table",
-      "quote": null
+      "cite": "§25.4.1 table, item K",
+      "quote": "Multi-family: 1 space for up to each 1-bedroom and 2 spaces for each 2-bedroom unit or larger."
     },
     {
       "category": "Overlays & Affordability",

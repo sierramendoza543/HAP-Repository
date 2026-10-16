@@ -42,7 +42,7 @@
         "mirrored_size_bytes": 10607765
       },
       "cite": "§3.90.9",
-      "quote": null
+      "quote": "1 in House or Backyard Cottage"
     },
     {
       "category": "Dimensional Standards",
@@ -99,7 +99,7 @@
       "category": "Use Permissions",
       "district": "NX2",
       "label": "Double House A",
-      "value": "Up to 4 by-right / 6 with special permit",
+      "value": "Up to 6 by-right, 8 with special permit, + 1 backyard cottage",
       "source": {
         "kind": "pdf",
         "id": "bridgeport-pdf",
@@ -110,13 +110,13 @@
         "mirrored_size_bytes": 10607765
       },
       "cite": "§3.80.9",
-      "quote": null
+      "quote": "up to 6, 8 with special permit in House;"
     },
     {
       "category": "Use Permissions",
       "district": "NX2",
       "label": "Small General building type",
-      "value": "3 min., 6 max., up to 8 with special permit",
+      "value": "3 min., 6 max., up to 8 units with special permit",
       "source": {
         "kind": "pdf",
         "id": "bridgeport-pdf",
@@ -127,7 +127,7 @@
         "mirrored_size_bytes": 10607765
       },
       "cite": "§3.60.9",
-      "quote": null
+      "quote": "3 min., 6 max.,"
     },
     {
       "category": "Dimensional Standards",
@@ -144,13 +144,13 @@
         "mirrored_size_bytes": 10607765
       },
       "cite": "§3.90.4",
-      "quote": null
+      "quote": "35 ft. min."
     },
     {
       "category": "Approval Process",
       "district": "NX2",
       "label": "4+-unit approval pathway",
-      "value": "By-right up to 4 units; Special Permit above that",
+      "value": "By-right up to 4 units (House A) or 6 units (Double House A/Small General); Special Permit above that",
       "source": {
         "kind": "pdf",
         "id": "bridgeport-pdf",
@@ -160,7 +160,7 @@
         "content_hash": "7607b979812edb9e8fea2c3e6ba6dee542f00ee5aeadecfec32d6293c3a10917",
         "mirrored_size_bytes": 10607765
       },
-      "cite": "§3.90.9 / §3.80.9",
+      "cite": "§3.90.9 / §3.80.9 / §3.60.9",
       "quote": null
     },
     {
