@@ -298,6 +298,88 @@
       },
       "cite": "§25.4.1 table",
       "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Min. unit size",
+      "value": "Not independently confirmed in the current (Sept. 2025) zoning text; an earlier (2021) version reportedly had a detailed per-district minimum floor-area schedule that may have been superseded in the 2025 recodification",
+      "source": {
+        "kind": "pdf",
+        "id": "fairfield-pdf",
+        "file": "/sources/fairfield-zoning.pdf",
+        "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+        "title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+        "content_hash": "9eb8d7a997a030a1822552ca681d21ec4f435eae8f99ef5a01c7c91940da1eb7",
+        "mirrored_size_bytes": 3638390
+      },
+      "cite": "current zoning regs — not located; flagged version discrepancy",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide (≥5 net new units) / 15% in TOD areas & DRD overlay",
+      "label": "Inclusionary zoning",
+      "value": "12% of units must be set aside as Below Market Rate (BMR); 15% in Commerce Drive/TOD/DRD/Transit-Oriented Downtown",
+      "source": {
+        "kind": "pdf",
+        "id": "fairfield-pdf",
+        "file": "/sources/fairfield-zoning.pdf",
+        "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+        "title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+        "content_hash": "9eb8d7a997a030a1822552ca681d21ec4f435eae8f99ef5a01c7c91940da1eb7",
+        "mirrored_size_bytes": 3638390
+      },
+      "cite": "§15.3",
+      "quote": "Any project that results in a net increase of 5 or more dwelling units, whether by new construction or by the alteration, expansion, reconstruction, or change of existing residential or nonresidential space shall include provision to set aside not less than 12% of said units as below market rate (BMR) units."
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Southport Historic District (est. 1966/67, ~225 acres)",
+      "label": "Historic overlay",
+      "value": "Reviewed by Fairfield HDC; case law confirms review scope limited to changes visible from a public way",
+      "source": {
+        "kind": "pdf",
+        "id": "fairfield-pdf",
+        "file": "/sources/fairfield-zoning.pdf",
+        "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+        "title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+        "content_hash": "9eb8d7a997a030a1822552ca681d21ec4f435eae8f99ef5a01c7c91940da1eb7",
+        "mirrored_size_bytes": 3638390
+      },
+      "cite": "CGS §7-147a et seq.; Gibbons v. Fairfield HDC, 285 Conn. 755 (2008)",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Demolition delay",
+      "value": "10 days for structures <100 years old; 60 days for structures ≥100 years old",
+      "source": {
+        "kind": "link",
+        "id": "fairfield-ch57-link",
+        "url": "https://fairfieldct.gov",
+        "title": "Fairfield Code of Ordinances, Ch. 57 (Demolition, adopted 2007) — exact URL not captured during research"
+      },
+      "cite": "§57-2C/D (not independently re-verified — lives in the Code of Ordinances, not the zoning regulations PDF)",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Coastal Site Plan Review, Section 34 (true coastal town)",
+      "label": "Coastal/flood overlay",
+      "value": "Applies — Long Island Sound frontage; FEMA Zones A/AE/VE, Zone VE also a Coastal High Hazard Area",
+      "source": {
+        "kind": "pdf",
+        "id": "fairfield-pdf",
+        "file": "/sources/fairfield-zoning.pdf",
+        "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+        "title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+        "content_hash": "9eb8d7a997a030a1822552ca681d21ec4f435eae8f99ef5a01c7c91940da1eb7",
+        "mirrored_size_bytes": 3638390
+      },
+      "cite": "§34.1",
+      "quote": "All buildings, uses and structures fully or partially within the coastal boundary as defined by Section 22a-94 of the Connecticut General Statutes and as delineated on the Coastal Boundary Map for the Town of Fairfield, shall be subject to the coastal site plan review requirements and procedures in Sections 22a-105 through 22a-109 of the Connecticut General Statutes."
     }
   ],
   "nza_metrics": [

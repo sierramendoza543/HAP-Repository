@@ -196,6 +196,91 @@
       },
       "cite": "§5.6.2 table",
       "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide (accessory apartments)",
+      "label": "Min. unit size",
+      "value": "Accessory apartments must be ≥300 sq ft — notable as an actual floor (not just a cap); no general minimum found for principal dwellings",
+      "source": {
+        "kind": "pdf",
+        "id": "redding-pdf",
+        "file": "/sources/redding-zoning.pdf",
+        "url": "https://reddingct.gov/wp-content/uploads/2025/10/Redding-Zoning-Regulations-1.24.24.pdf",
+        "title": "Redding Zoning Regulations (amendments through Feb. 15, 2024)",
+        "content_hash": "5eceaeb3836482e8ed59cff3f85dcc8eb6267b485b1d299a4f9d521b28d2d7be",
+        "mirrored_size_bytes": 4088907
+      },
+      "cite": "§5.12.3(b)",
+      "quote": "Gross (total) floor area of the apartment shall be not less than 300 square feet."
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Historic Mill Center (HMC) Zone only (incentive, not mandate)",
+      "label": "Inclusionary zoning",
+      "value": "Density bonus to 10 units/acre (from base 4) if ≥30% of units are deed-restricted affordable in restored historic buildings",
+      "source": {
+        "kind": "pdf",
+        "id": "redding-pdf",
+        "file": "/sources/redding-zoning.pdf",
+        "url": "https://reddingct.gov/wp-content/uploads/2025/10/Redding-Zoning-Regulations-1.24.24.pdf",
+        "title": "Redding Zoning Regulations (amendments through Feb. 15, 2024)",
+        "content_hash": "5eceaeb3836482e8ed59cff3f85dcc8eb6267b485b1d299a4f9d521b28d2d7be",
+        "mirrored_size_bytes": 4088907
+      },
+      "cite": "§4.5.3(a)",
+      "quote": "10 dwelling units per acre of developed site area if the units are wholly within restored historic buildings and at least 30% of the units are dedicated and deed restricted to meet Affordable Housing requirements."
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "None — deliberately chosen over regulation",
+      "label": "Historic overlay",
+      "value": "No local CGS §7-147a historic district; town uses a voluntary preservation-easement program instead, explicitly framed as more flexible than additional regulations",
+      "source": {
+        "kind": "pdf",
+        "id": "redding-pdf",
+        "file": "/sources/redding-zoning.pdf",
+        "url": "https://reddingct.gov/wp-content/uploads/2025/10/Redding-Zoning-Regulations-1.24.24.pdf",
+        "title": "Redding Zoning Regulations (amendments through Feb. 15, 2024)",
+        "content_hash": "5eceaeb3836482e8ed59cff3f85dcc8eb6267b485b1d299a4f9d521b28d2d7be",
+        "mirrored_size_bytes": 4088907
+      },
+      "cite": "Town \"Historic Homes\" page",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Demolition delay",
+      "value": "180 days (longer than most CT-4 towns' 90-day default), enacted 2013",
+      "source": {
+        "kind": "pdf",
+        "id": "redding-pdf",
+        "file": "/sources/redding-zoning.pdf",
+        "url": "https://reddingct.gov/wp-content/uploads/2025/10/Redding-Zoning-Regulations-1.24.24.pdf",
+        "title": "Redding Zoning Regulations (amendments through Feb. 15, 2024)",
+        "content_hash": "5eceaeb3836482e8ed59cff3f85dcc8eb6267b485b1d299a4f9d521b28d2d7be",
+        "mirrored_size_bytes": 4088907
+      },
+      "cite": "Demolition Delay Ordinance (town website, codified chapter not independently verified)",
+      "quote": "Encourage the preservation, documentation, and protection of historically sensitive buildings"
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Flood Safety, §5.4.5 (inland, no coastal boundary)",
+      "label": "Coastal/flood overlay",
+      "value": "Applies to flood-prone areas under CGS §8-2 delegation; no coastal area management provision (inland town)",
+      "source": {
+        "kind": "pdf",
+        "id": "redding-pdf",
+        "file": "/sources/redding-zoning.pdf",
+        "url": "https://reddingct.gov/wp-content/uploads/2025/10/Redding-Zoning-Regulations-1.24.24.pdf",
+        "title": "Redding Zoning Regulations (amendments through Feb. 15, 2024)",
+        "content_hash": "5eceaeb3836482e8ed59cff3f85dcc8eb6267b485b1d299a4f9d521b28d2d7be",
+        "mirrored_size_bytes": 4088907
+      },
+      "cite": "§5.4.5",
+      "quote": "to promote the public health, safety and general welfare and to minimize public and private losses due to flood conditions"
     }
   ],
   "nza_metrics": [

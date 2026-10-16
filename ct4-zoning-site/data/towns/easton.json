@@ -149,6 +149,76 @@
       },
       "cite": "§6221 table",
       "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Min. unit size",
+      "value": "Not found as a general minimum beyond ADU caps already captured above",
+      "source": {
+        "kind": "link",
+        "id": "easton-link",
+        "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
+        "title": "Easton Zoning Regulations (last revised July 7, 2024)"
+      },
+      "cite": "zoning regs — not located",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Inclusionary zoning",
+      "value": "None found — no local ordinance. A 2022 developer proposal with 30% affordable (105 units) was DENIED by P&Z under state CGS §8-30g process, not a town mandate",
+      "source": {
+        "kind": "link",
+        "id": "easton-link",
+        "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
+        "title": "Easton Zoning Regulations (last revised July 7, 2024)"
+      },
+      "cite": "full-text search; P&Z denial Feb. 2022",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Historic overlay",
+      "value": "None found — no local CGS §7-147a historic district commission/ordinance; only an honorary National Register listing (Aspetuck Historic District, spans Easton/Weston)",
+      "source": {
+        "kind": "link",
+        "id": "easton-link",
+        "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
+        "title": "Easton Zoning Regulations (last revised July 7, 2024)"
+      },
+      "cite": "full-text search",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Demolition delay",
+      "value": "Up to 90 days for structures on the town's \"Index to Historic Homes\" (≥50 years old, significant)",
+      "source": {
+        "kind": "link",
+        "id": "easton-link",
+        "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
+        "title": "Easton Zoning Regulations (last revised July 7, 2024)"
+      },
+      "cite": "Ch. 254, adopted 2022, amended 2024",
+      "quote": "To encourage the preservation, documentation, and protection of historically sensitive buildings."
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "\"4100 Floodplain Overlay District\" (inland, no coastal boundary)",
+      "label": "Coastal/flood overlay",
+      "value": "Overlay confirmed to exist in the zoning table of contents; full text not independently verified (current PDF link dead on eastonct.gov)",
+      "source": {
+        "kind": "link",
+        "id": "easton-link",
+        "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
+        "title": "Easton Zoning Regulations (last revised July 7, 2024)"
+      },
+      "cite": "zoning regs Table of Contents, p.35 (2019 ed.)",
+      "quote": null
     }
   ],
   "nza_metrics": [

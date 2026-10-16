@@ -213,6 +213,88 @@
       },
       "cite": "§10.2 Schedule",
       "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Min. unit size",
+      "value": "A 2018 Bulk Schedule reportedly showed a 1,100 sq ft figure, but the source document is now a dead link and the applicable district column could not be confirmed",
+      "source": {
+        "kind": "pdf",
+        "id": "monroe-pdf",
+        "file": "/sources/monroe-zoning.pdf",
+        "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+        "title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+        "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
+        "mirrored_size_bytes": 2417109
+      },
+      "cite": "2018 Bulk Schedule PDF — not independently verified",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Inclusionary zoning",
+      "value": "None found — no local §8-2i ordinance; town affordable-housing stock reported at ~1.33% of units",
+      "source": {
+        "kind": "pdf",
+        "id": "monroe-pdf",
+        "file": "/sources/monroe-zoning.pdf",
+        "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+        "title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+        "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
+        "mirrored_size_bytes": 2417109
+      },
+      "cite": "full-text search; town data",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Monroe Center Historic District (est. 1969)",
+      "label": "Historic overlay",
+      "value": "Overseen by a local Historic District Commission; full regulatory text (CGS §7-147a procedures) not independently retrieved",
+      "source": {
+        "kind": "pdf",
+        "id": "monroe-pdf",
+        "file": "/sources/monroe-zoning.pdf",
+        "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+        "title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+        "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
+        "mirrored_size_bytes": 2417109
+      },
+      "cite": "Local Historic Districts CT database — not independently verified",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Demolition delay",
+      "value": "180 days for structures ≥60 years old (or pre-1950) and ≥500 sq ft; HDC chair can waive, or it lapses automatically after 60 days of HDC inaction",
+      "source": {
+        "kind": "link",
+        "id": "monroe-demo-link",
+        "url": "https://www.monroect.gov",
+        "title": "Monroe Town Code, Demolition Delay (adopted 2003, amended 2009/2011) — exact URL not captured during research"
+      },
+      "cite": "Town Code (ecode360) — not in the zoning regulations PDF",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Not confirmed (inland, no coastal boundary expected)",
+      "label": "Coastal/flood overlay",
+      "value": "No Monroe-specific floodplain overlay text was retrievable; town is inland so no coastal area management provision would be expected regardless",
+      "source": {
+        "kind": "pdf",
+        "id": "monroe-pdf",
+        "file": "/sources/monroe-zoning.pdf",
+        "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+        "title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+        "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
+        "mirrored_size_bytes": 2417109
+      },
+      "cite": "not independently verified — all source links dead",
+      "quote": null
     }
   ],
   "nza_metrics": [

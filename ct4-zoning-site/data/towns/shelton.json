@@ -162,6 +162,91 @@
       },
       "cite": "§45.6.2",
       "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Room-and-board use",
+      "label": "Min. unit size",
+      "value": "200 sq ft per occupant (room-and-board); a general single-family minimum (\"Schedule B\") is referenced but was not legible via OCR",
+      "source": {
+        "kind": "pdf",
+        "id": "shelton-pdf",
+        "file": "/sources/shelton-zoning.pdf",
+        "url": "https://shelton.qscendcms.com/ckfinder/connector?command=Proxy&lang=en&type=Files&currentFolder=%2F&hash=c245c263ce0eced480effe66bbede6b4d46c15ae&fileName=2024%20Regulation%20scanned.pdf",
+        "title": "City of Shelton Zoning Regulations (recodified April 16, 2024)",
+        "content_hash": "6a2f46e424705ca6db22642792280a957675968d213feca7029493bfcf018945",
+        "mirrored_size_bytes": 13478741
+      },
+      "cite": "§44.4.2",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Inclusionary zoning",
+      "value": "Not found as a specific percentage requirement; only an incidental fee-waiver reference for deed-restricted affordable units",
+      "source": {
+        "kind": "pdf",
+        "id": "shelton-pdf",
+        "file": "/sources/shelton-zoning.pdf",
+        "url": "https://shelton.qscendcms.com/ckfinder/connector?command=Proxy&lang=en&type=Files&currentFolder=%2F&hash=c245c263ce0eced480effe66bbede6b4d46c15ae&fileName=2024%20Regulation%20scanned.pdf",
+        "title": "City of Shelton Zoning Regulations (recodified April 16, 2024)",
+        "content_hash": "6a2f46e424705ca6db22642792280a957675968d213feca7029493bfcf018945",
+        "mirrored_size_bytes": 13478741
+      },
+      "cite": "fee schedule — not located as a mandate",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Huntington Center Historic District (National Register, 2000)",
+      "label": "Historic overlay",
+      "value": "Federal/honorary listing only; no local CGS §7-147 regulatory commission confirmed",
+      "source": {
+        "kind": "pdf",
+        "id": "shelton-pdf",
+        "file": "/sources/shelton-zoning.pdf",
+        "url": "https://shelton.qscendcms.com/ckfinder/connector?command=Proxy&lang=en&type=Files&currentFolder=%2F&hash=c245c263ce0eced480effe66bbede6b4d46c15ae&fileName=2024%20Regulation%20scanned.pdf",
+        "title": "City of Shelton Zoning Regulations (recodified April 16, 2024)",
+        "content_hash": "6a2f46e424705ca6db22642792280a957675968d213feca7029493bfcf018945",
+        "mirrored_size_bytes": 13478741
+      },
+      "cite": "zoning regs reference the concept at §48.6, but no dedicated chapter located",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Demolition delay",
+      "value": "Not found — no Shelton-specific demolition delay ordinance located in available sources",
+      "source": {
+        "kind": "pdf",
+        "id": "shelton-pdf",
+        "file": "/sources/shelton-zoning.pdf",
+        "url": "https://shelton.qscendcms.com/ckfinder/connector?command=Proxy&lang=en&type=Files&currentFolder=%2F&hash=c245c263ce0eced480effe66bbede6b4d46c15ae&fileName=2024%20Regulation%20scanned.pdf",
+        "title": "City of Shelton Zoning Regulations (recodified April 16, 2024)",
+        "content_hash": "6a2f46e424705ca6db22642792280a957675968d213feca7029493bfcf018945",
+        "mirrored_size_bytes": 13478741
+      },
+      "cite": "not located",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Coastal Site Plan Review, §45.5 (Housatonic River, tidal)",
+      "label": "Coastal/flood overlay",
+      "value": "Applies — tidal river frontage, CT Coastal Management Act review; a separate floodplain/flood-hazard ordinance was not located (surprising for a river town, may be in the general Code of Ordinances)",
+      "source": {
+        "kind": "pdf",
+        "id": "shelton-pdf",
+        "file": "/sources/shelton-zoning.pdf",
+        "url": "https://shelton.qscendcms.com/ckfinder/connector?command=Proxy&lang=en&type=Files&currentFolder=%2F&hash=c245c263ce0eced480effe66bbede6b4d46c15ae&fileName=2024%20Regulation%20scanned.pdf",
+        "title": "City of Shelton Zoning Regulations (recodified April 16, 2024)",
+        "content_hash": "6a2f46e424705ca6db22642792280a957675968d213feca7029493bfcf018945",
+        "mirrored_size_bytes": 13478741
+      },
+      "cite": "§45.5",
+      "quote": null
     }
   ],
   "nza_metrics": [

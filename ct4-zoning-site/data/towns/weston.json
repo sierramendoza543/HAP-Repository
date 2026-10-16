@@ -135,6 +135,76 @@
       },
       "cite": "Sec. 363(b)-(d)",
       "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Min. unit size",
+      "value": "Not found as a general minimum; only ADU/VD-R unit-size caps located",
+      "source": {
+        "kind": "link",
+        "id": "weston-link",
+        "url": "https://www.westonct.gov/home/showpublisheddocument/15463/638937003479630000",
+        "title": "Weston Zoning Regulations (amended through July 7, 2025)"
+      },
+      "cite": "zoning regs — not located",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Village District only",
+      "label": "Inclusionary zoning",
+      "value": "≥15% of units affordable (CGS §8-30g eligibility) in VD projects of ≥5 units; no density bonus or fee-in-lieu provision",
+      "source": {
+        "kind": "link",
+        "id": "weston-link",
+        "url": "https://www.westonct.gov/home/showpublisheddocument/15463/638937003479630000",
+        "title": "Weston Zoning Regulations (amended through July 7, 2025)"
+      },
+      "cite": "§322.4",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "5–7 local districts, Town Code Ch. 93 (discrepancy in town's own sources on exact count)",
+      "label": "Historic overlay",
+      "value": "Separately administered local historic districts under CGS §7-147a; Village District zoning overlay geographically overlaps the Norfield Historic District",
+      "source": {
+        "kind": "link",
+        "id": "weston-link",
+        "url": "https://www.westonct.gov/home/showpublisheddocument/15463/638937003479630000",
+        "title": "Weston Zoning Regulations (amended through July 7, 2025)"
+      },
+      "cite": "Town Code §93-1 to §93-5",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Demolition delay",
+      "value": "Ordinance referenced on permit applications, but exact waiting period could not be confirmed in available sources",
+      "source": {
+        "kind": "link",
+        "id": "weston-link",
+        "url": "https://www.westonct.gov/home/showpublisheddocument/15463/638937003479630000",
+        "title": "Weston Zoning Regulations (amended through July 7, 2025)"
+      },
+      "cite": "\"the Demolition Ordinance, of the Town of Weston\" — full text not located",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Floodplain Management Regs, eff. 2010 (inland, no coastal boundary)",
+      "label": "Coastal/flood overlay",
+      "value": "New construction must be elevated ≥1 ft above Base Flood Elevation; no coastal area management provision (inland town)",
+      "source": {
+        "kind": "link",
+        "id": "weston-link",
+        "url": "https://www.westonct.gov/home/showpublisheddocument/15463/638937003479630000",
+        "title": "Weston Zoning Regulations (amended through July 7, 2025)"
+      },
+      "cite": "Floodplain Mgmt Regs §IV.A",
+      "quote": "shall have the lowest floor elevated one foot or more above the Base Flood Elevation"
     }
   ],
   "nza_metrics": [

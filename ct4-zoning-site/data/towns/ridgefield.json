@@ -149,6 +149,76 @@
       },
       "cite": "§3.3.B.2.h",
       "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Min. unit size",
+      "value": "Not found as a general dwelling minimum; only ADU caps located",
+      "source": {
+        "kind": "link",
+        "id": "ridgefield-link",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+      },
+      "cite": "zoning regs — not located in sections reviewed",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "All zones except RAAA/RAA (≥5 units)",
+      "label": "Inclusionary zoning",
+      "value": "Tiered minimum affordable units (14% rounded up at scale); density bonus up to 30% for exceeding it by ≥5%",
+      "source": {
+        "kind": "link",
+        "id": "ridgefield-link",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+      },
+      "cite": "§8.8, adopted 5/16/2023",
+      "quote": "All applications for development resulting in the creation of five (5) or more dwelling units shall designate a minimum number of dwelling units as per the Minimum Affordable Housing Chart"
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Historic District Commission + Village District (downtown, 1998)",
+      "label": "Historic overlay",
+      "value": "HDC review limited to exterior features visible from a public way; separate Village District design-compatibility overlay downtown",
+      "source": {
+        "kind": "link",
+        "id": "ridgefield-link",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+      },
+      "cite": "Village District FAQ; CGS §7-147c",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Demolition delay",
+      "value": "Up to 90 days for structures ≥50 years old, if written objection filed within 30 days of notice",
+      "source": {
+        "kind": "link",
+        "id": "ridgefield-link",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+      },
+      "cite": "Ch. 136, §136-4.A",
+      "quote": "to authorize the Town of Ridgefield, as allowed by C.G.S.§ 29-406(b), to impose a waiting period of not more than 90 days before granting a demolition permit for certain structures of architectural, historical, or cultural importance."
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Floodplain Overlay Zone, §6.1 (inland, no coastal boundary)",
+      "label": "Coastal/flood overlay",
+      "value": "Applies to FEMA Zones A and AE; no coastal area management provision (inland town)",
+      "source": {
+        "kind": "link",
+        "id": "ridgefield-link",
+        "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
+        "title": "Ridgefield Zoning Regulations (revised through July 2026)"
+      },
+      "cite": "§6.1",
+      "quote": "The Floodplain Overlay Zone is hereby declared to be an overlay to any other zone, and the regulations, restrictions and requirements contained herein shall be in addition to those applicable in the underlying zone."
     }
   ],
   "nza_metrics": [

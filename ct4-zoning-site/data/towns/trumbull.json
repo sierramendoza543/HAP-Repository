@@ -281,6 +281,91 @@
       },
       "cite": "§7.6.4(5)",
       "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Residence AAA (1-story)",
+      "label": "Min. unit size",
+      "value": "1,500 sq ft first-floor minimum for a 1-story home",
+      "source": {
+        "kind": "pdf",
+        "id": "trumbull-pdf",
+        "file": "/sources/trumbull-zoning.pdf",
+        "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+        "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+        "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
+        "mirrored_size_bytes": 2219912
+      },
+      "cite": "Art. III Exhibit",
+      "quote": "Residence AAA         1 acre                   1 story          1500"
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Reservoir Apartment District (RAD) overlay only",
+      "label": "Inclusionary zoning",
+      "value": "15% of units must be affordable (80% AMI); a broader townwide provision (Art. 7.4) was repealed in 2008",
+      "source": {
+        "kind": "pdf",
+        "id": "trumbull-pdf",
+        "file": "/sources/trumbull-zoning.pdf",
+        "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+        "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+        "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
+        "mirrored_size_bytes": 2219912
+      },
+      "cite": "§2.8(n)",
+      "quote": "At least 15% of the total units shall be designated as affordable units. Affordable units shall mean units restricted to individuals earning 80% of the area median income"
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "None — incentive-based Adaptive Reuse tool instead",
+      "label": "Historic overlay",
+      "value": "No local CGS §7-147a historic district; an Adaptive Reuse provision (§6.1-6.3) waives dimensional standards for qualifying historic-building reuse, reviewed by a Historical/Demolition Review Committee",
+      "source": {
+        "kind": "pdf",
+        "id": "trumbull-pdf",
+        "file": "/sources/trumbull-zoning.pdf",
+        "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+        "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+        "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
+        "mirrored_size_bytes": 2219912
+      },
+      "cite": "§6.1-6.3",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Demolition delay",
+      "value": "A Demolition Review Committee exists (Town Charter) and is active, but no specific waiting-period length (e.g. 90 or 180 days) could be confirmed",
+      "source": {
+        "kind": "pdf",
+        "id": "trumbull-pdf",
+        "file": "/sources/trumbull-zoning.pdf",
+        "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+        "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+        "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
+        "mirrored_size_bytes": 2219912
+      },
+      "cite": "Town Charter — exact waiting period not located",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Art. XI, Flood Damage Prevention Ordinance (inland, no coastal boundary)",
+      "label": "Coastal/flood overlay",
+      "value": "Variances available for reconstruction of National/State Register historic structures; no coastal area management provision (inland town)",
+      "source": {
+        "kind": "pdf",
+        "id": "trumbull-pdf",
+        "file": "/sources/trumbull-zoning.pdf",
+        "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+        "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+        "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
+        "mirrored_size_bytes": 2219912
+      },
+      "cite": "§4.4-1/4.4-2",
+      "quote": "Variances may be issued for the reconstruction, rehabilitation or restoration of structures listed on the National Register of Historic Places or the State Inventory of Historic Places, without regard to the procedures set forth in the remainder of this section."
     }
   ],
   "nza_metrics": [

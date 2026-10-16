@@ -149,6 +149,76 @@
       },
       "cite": "§6.8.4.A table",
       "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Min. unit size",
+      "value": "Confirmed absent — the RS-1–RS-4 and RM-1 dimensional tables have no \"Minimum Floor Area\" row; only a maximum (2,100 sq ft) for older-adult housing",
+      "source": {
+        "kind": "link",
+        "id": "stratford-link",
+        "url": "https://ecode360.com/9207545",
+        "title": "Stratford Zoning Code Ch. A220 (eff. Jan. 1, 2025)"
+      },
+      "cite": "§A220-3.2.1(C), §A220-3.2.2(C), §5.1.7",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Multifamily (3+ units), OP District or ≥8 net new units elsewhere",
+      "label": "Inclusionary zoning",
+      "value": "12% of units affordable (OP District) or 10% (≥8 net new units elsewhere), ≤80% AMI/SMI",
+      "source": {
+        "kind": "link",
+        "id": "stratford-link",
+        "url": "https://ecode360.com/9207545",
+        "title": "Stratford Zoning Code Ch. A220 (eff. Jan. 1, 2025)"
+      },
+      "cite": "§5.1.5(C)",
+      "quote": "shall designate a minimum of 12% of the development's units as affordable units"
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Academy Hill Historic District, Town Code Ch. 121",
+      "label": "Historic overlay",
+      "value": "Certificate of Appropriateness required for alteration/demolition; decision within 65 days or deemed approved",
+      "source": {
+        "kind": "link",
+        "id": "stratford-link",
+        "url": "https://ecode360.com/9207545",
+        "title": "Stratford Zoning Code Ch. A220 (eff. Jan. 1, 2025)"
+      },
+      "cite": "§121-6A, §121-7B",
+      "quote": "No building or structure shall be erected or altered within the historic district or on historic property"
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Academy Hill Historic District only (unclear if a broader townwide ordinance exists)",
+      "label": "Demolition delay",
+      "value": "90 days from permit issuance while the Commission or state seeks an alternative",
+      "source": {
+        "kind": "link",
+        "id": "stratford-link",
+        "url": "https://ecode360.com/9207545",
+        "title": "Stratford Zoning Code Ch. A220 (eff. Jan. 1, 2025)"
+      },
+      "cite": "§121-11B",
+      "quote": "Demolition of a building in the district is delayed 90 days from permit issuance while the Commission or the state seeks an alternative."
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Flood Damage Prevention, Town Code Ch. 102 (true coastal town)",
+      "label": "Coastal/flood overlay",
+      "value": "Applies — Long Island Sound frontage; FEMA Zones A/AE/VE, Zone VE also a Coastal High Hazard Area; dedicated waterfront zoning districts (WF, WR, RC) exist",
+      "source": {
+        "kind": "link",
+        "id": "stratford-link",
+        "url": "https://ecode360.com/9207545",
+        "title": "Stratford Zoning Code Ch. A220 (eff. Jan. 1, 2025)"
+      },
+      "cite": "§102-6/102-7",
+      "quote": "This chapter shall apply to all areas of special flood hazard within the jurisdiction of Stratford, Connecticut."
     }
   ],
   "nza_metrics": [
