@@ -75,14 +75,15 @@
     "facts": [
       {
         "label": "Entire town's base zone",
-        "value": "2-/3-/4+-family prohibited, not addressed anywhere",
+        "value": "2-/3-/4+-family prohibited, not addressed anywhere in the code",
         "source": {
           "kind": "link",
           "id": "weston-link",
           "url": "https://www.westonct.gov/home/showpublisheddocument/15463/638937003479630000",
           "title": "Weston Zoning Regulations (amended through July 7, 2025)"
         },
-        "cite": "Sec. 321"
+        "cite": "Sec. 321",
+        "quote": null
       },
       {
         "label": "Min. lot size",
@@ -93,7 +94,8 @@
           "url": "https://www.westonct.gov/home/showpublisheddocument/15463/638937003479630000",
           "title": "Weston Zoning Regulations (amended through July 7, 2025)"
         },
-        "cite": "Sec. 321"
+        "cite": "Sec. 321",
+        "quote": null
       }
     ]
   },
@@ -109,7 +111,8 @@
           "url": "https://www.westonct.gov/home/showpublisheddocument/15463/638937003479630000",
           "title": "Weston Zoning Regulations (amended through July 7, 2025)"
         },
-        "cite": "Sec. 322"
+        "cite": "Sec. 322",
+        "quote": null
       },
       {
         "label": "Affordability",
@@ -120,9 +123,10 @@
           "url": "https://www.westonct.gov/home/showpublisheddocument/15463/638937003479630000",
           "title": "Weston Zoning Regulations (amended through July 7, 2025)"
         },
-        "cite": "Sec. 322"
+        "cite": "Sec. 322",
+        "quote": null
       }
     ]
   },
-  "caveat": "Town's own PDF was blocked by a bot-detection wall during research; base-district figures came from a 2021-dated third-party copy, and the R-2A parking minimum could not be located — flagged for direct verification with Weston Land Use."
+  "caveat": "Town's own PDF was blocked by a bot-detection wall during research; base-district figures came from a 2021-dated third-party copy (no local mirror exists, so no quotes could be independently re-verified), and the R-2A parking minimum could not be located at all — flagged for direct verification with Weston Land Use."
 }

@@ -88,11 +88,12 @@
           "content_hash": "9eb8d7a997a030a1822552ca681d21ec4f435eae8f99ef5a01c7c91940da1eb7",
           "mirrored_size_bytes": 3638390
         },
-        "cite": "Sec. 3.2"
+        "cite": "§1.2, §3.1 preamble",
+        "quote": "No use shall be permitted in said Districts, except as these Single-Family Residence District regulations"
       },
       {
-        "label": "Min. lot size",
-        "value": "2 acres (AAA) down to 9,375 sq ft (A)",
+        "label": "How many districts",
+        "value": "There shall be five Single-Family Residence Districts",
         "source": {
           "kind": "pdf",
           "id": "fairfield-pdf",
@@ -102,7 +103,8 @@
           "content_hash": "9eb8d7a997a030a1822552ca681d21ec4f435eae8f99ef5a01c7c91940da1eb7",
           "mirrored_size_bytes": 3638390
         },
-        "cite": "Sec. 3.3.1"
+        "cite": "§1.1",
+        "quote": "There shall be five Single-Family Residence Districts, “AAA”, “AA”, “R-3”, “R-2”, and “A”."
       }
     ]
   },
@@ -110,8 +112,8 @@
     "district": "District C (Multi-Family Residence)",
     "facts": [
       {
-        "label": "2-, 3-, AND 4-family",
-        "value": "All permitted BY RIGHT, each with its own lot-area minimum",
+        "label": "Two-family",
+        "value": "Permitted (\"P\") in both B and C",
         "source": {
           "kind": "pdf",
           "id": "fairfield-pdf",
@@ -121,11 +123,12 @@
           "content_hash": "9eb8d7a997a030a1822552ca681d21ec4f435eae8f99ef5a01c7c91940da1eb7",
           "mirrored_size_bytes": 3638390
         },
-        "cite": "Sec. 5.2"
+        "cite": "§5.2 use table",
+        "quote": "A. Two-Family Dwellings                                                             P               P      Section 5.3"
       },
       {
-        "label": "Lot minimums",
-        "value": "7,500 / 10,000 / 12,500 sq ft",
+        "label": "Three-family",
+        "value": "Permitted (\"P\") in C only (— in B)",
         "source": {
           "kind": "pdf",
           "id": "fairfield-pdf",
@@ -135,7 +138,38 @@
           "content_hash": "9eb8d7a997a030a1822552ca681d21ec4f435eae8f99ef5a01c7c91940da1eb7",
           "mirrored_size_bytes": 3638390
         },
-        "cite": "Sec. 5.3.1"
+        "cite": "§5.2 use table",
+        "quote": "B.     Three-Family Dwellings                                                   —                   P"
+      },
+      {
+        "label": "Four-family",
+        "value": "Permitted (\"P\") in C only (— in B)",
+        "source": {
+          "kind": "pdf",
+          "id": "fairfield-pdf",
+          "file": "/sources/fairfield-zoning.pdf",
+          "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+          "title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+          "content_hash": "9eb8d7a997a030a1822552ca681d21ec4f435eae8f99ef5a01c7c91940da1eb7",
+          "mirrored_size_bytes": 3638390
+        },
+        "cite": "§5.2 use table",
+        "quote": "C. Four-Family Dwellings                                                        —                   P"
+      },
+      {
+        "label": "Lot minimums (2F / 3F / 4F)",
+        "value": "9,000 (B) / 7,500 (C) — 10,000 (C) — 12,500 (C) sq ft",
+        "source": {
+          "kind": "pdf",
+          "id": "fairfield-pdf",
+          "file": "/sources/fairfield-zoning.pdf",
+          "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+          "title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+          "content_hash": "9eb8d7a997a030a1822552ca681d21ec4f435eae8f99ef5a01c7c91940da1eb7",
+          "mirrored_size_bytes": 3638390
+        },
+        "cite": "§5.3.1 table",
+        "quote": "Minimum Lot Area for Two-Family (sf)                                                9,000              7,500"
       }
     ]
   },

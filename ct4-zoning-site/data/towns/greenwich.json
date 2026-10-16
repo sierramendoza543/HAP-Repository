@@ -88,11 +88,12 @@
           "content_hash": "a61cab47f9bcc67eadc6fbbe530649329c643d5f092549912f58c2cde5b88600",
           "mirrored_size_bytes": 508124
         },
-        "cite": "Sec. 6-93(a)(1)"
+        "cite": "Sec. 6-93(a)(1)",
+        "quote": "The following principal uses are permitted in RA-4, RA-2, RA-1, R-20 and R-12 Zones and all other principal uses are expressly excluded: (1) Detached single family dwellings, one (1) per lot."
       },
       {
-        "label": "Two-family",
-        "value": "Prohibited",
+        "label": "Two-family / 3-/4+-family",
+        "value": "Prohibited — no provision anywhere in the permitted- or special-permit-use lists",
         "source": {
           "kind": "pdf",
           "id": "greenwich-pdf",
@@ -102,25 +103,12 @@
           "content_hash": "a61cab47f9bcc67eadc6fbbe530649329c643d5f092549912f58c2cde5b88600",
           "mirrored_size_bytes": 508124
         },
-        "cite": "Sec. 6-93 / 6-94 (no provision)"
+        "cite": "Sec. 6-93 / 6-94",
+        "quote": null
       },
       {
-        "label": "3-/4+-family",
-        "value": "Prohibited",
-        "source": {
-          "kind": "pdf",
-          "id": "greenwich-pdf",
-          "file": "/sources/greenwich-div9.pdf",
-          "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
-          "title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
-          "content_hash": "a61cab47f9bcc67eadc6fbbe530649329c643d5f092549912f58c2cde5b88600",
-          "mirrored_size_bytes": 508124
-        },
-        "cite": "Sec. 6-93 / 6-94 (no provision)"
-      },
-      {
-        "label": "Min. lot size (RA-2)",
-        "value": "20,000 sq ft (2 acres)",
+        "label": "Min. lot size (R-20)",
+        "value": "20,000 sq ft",
         "source": {
           "kind": "pdf",
           "id": "greenwich21-pdf",
@@ -130,7 +118,8 @@
           "content_hash": "25c7ff10da0aeefcc9eefc5651d756c8c9799b9e0884ee3d2e24b3605bb4bb47",
           "mirrored_size_bytes": 40410
         },
-        "cite": "Sec. 6-205(a) table"
+        "cite": "Sec. 6-205(a) table",
+        "quote": "20,000"
       }
     ]
   },
@@ -149,7 +138,8 @@
           "content_hash": "a61cab47f9bcc67eadc6fbbe530649329c643d5f092549912f58c2cde5b88600",
           "mirrored_size_bytes": 508124
         },
-        "cite": "Sec. 6-98.1(a)(2)(A)"
+        "cite": "Sec. 6-98.1(a)(2)(A)",
+        "quote": "The building of a two family dwelling, conversion from a single family to a two-family dwelling, addition or alteration to a single family dwelling to create a two-family dwelling, additions to an existing (2) two-family residence, addition or alteration to one or more multi-family dwellings or a combination of single family, two-family and/or multi-family dwellings on a lot."
       },
       {
         "label": "Min. lot area, multifamily tier",
@@ -163,7 +153,8 @@
           "content_hash": "25c7ff10da0aeefcc9eefc5651d756c8c9799b9e0884ee3d2e24b3605bb4bb47",
           "mirrored_size_bytes": 40410
         },
-        "cite": "Sec. 6-205(a)"
+        "cite": "Sec. 6-205(a)",
+        "quote": "2,400"
       }
     ]
   },

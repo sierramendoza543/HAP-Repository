@@ -6,17 +6,31 @@ import type { SourceRef } from "@/lib/types";
 interface Props {
   source: SourceRef;
   cite: string;
+  quote: string | null;
   onClose: () => void;
 }
 
-/** Pulls the most distinctive searchable token out of a citation string,
- * e.g. "Sec. 6-93(a)(1)" -> "6-93", "Table 4.3.9.A" -> "4.3.9.A" */
-function searchToken(cite: string): string | null {
-  const m = cite.match(/[0-9]+(?:[.\-][0-9]+)+/) ?? cite.match(/[0-9]{2,}/);
-  return m ? m[0] : null;
+interface Span {
+  start: number;
+  end: number; // exclusive, in concatText
 }
 
-export default function SourceViewer({ source, cite, onClose }: Props) {
+/** Strips whitespace and lowercases, keeping a map back to the original
+ * string's indices so a match found in the compact string can be mapped
+ * back to real character offsets (robust to PDF line-wrap / spacing noise). */
+function compact(s: string): { text: string; map: number[] } {
+  const map: number[] = [];
+  let text = "";
+  for (let i = 0; i < s.length; i++) {
+    const c = s[i];
+    if (/\s/.test(c)) continue;
+    text += c.toLowerCase();
+    map.push(i);
+  }
+  return { text, map };
+}
+
+export default function SourceViewer({ source, cite, quote, onClose }: Props) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const textLayerRef = useRef<HTMLDivElement>(null);
   const [status, setStatus] = useState<"loading" | "found" | "not-found" | "error">("loading");
@@ -44,18 +58,33 @@ export default function SourceViewer({ source, cite, onClose }: Props) {
         const doc = await pdfjsLib.getDocument(source.file).promise;
         if (cancelled) return;
 
-        const token = searchToken(cite);
         let targetPage = 1;
-        let matchText: string | null = null;
+        let matchRange: [number, number] | null = null;
+        const compactQuote = quote ? compact(quote) : null;
 
-        if (token) {
+        if (compactQuote && compactQuote.text.length > 0) {
           for (let i = 1; i <= doc.numPages; i++) {
             const page = await doc.getPage(i);
             const content = await page.getTextContent();
-            const pageText = content.items.map((it: unknown) => (it as { str: string }).str).join(" ");
-            if (pageText.toLowerCase().includes(token.toLowerCase())) {
+            let concatText = "";
+            for (const raw of content.items) {
+              const item = raw as { str: string };
+              concatText += item.str + " ";
+            }
+            const compactPage = compact(concatText);
+            let idx = compactPage.text.indexOf(compactQuote.text);
+            let matchLen = compactQuote.text.length;
+            if (idx === -1 && compactQuote.text.length > 40) {
+              // tolerate OCR/typography drift by matching a shorter leading chunk
+              const shortQuote = compactQuote.text.slice(0, 40);
+              idx = compactPage.text.indexOf(shortQuote);
+              matchLen = shortQuote.length;
+            }
+            if (idx !== -1) {
+              const startOrig = compactPage.map[idx];
+              const endOrig = compactPage.map[idx + matchLen - 1] + 1;
+              matchRange = [startOrig, endOrig];
               targetPage = i;
-              matchText = token;
               break;
             }
           }
@@ -69,13 +98,25 @@ export default function SourceViewer({ source, cite, onClose }: Props) {
         canvas.height = viewport.height;
         await page.render({ canvasContext: ctx, viewport, canvas }).promise;
 
-        // text layer for highlight
         const textLayerDiv = textLayerRef.current!;
         textLayerDiv.innerHTML = "";
         textLayerDiv.style.width = `${viewport.width}px`;
         textLayerDiv.style.height = `${viewport.height}px`;
         const content = await page.getTextContent();
-        content.items.forEach((raw: unknown) => {
+
+        // Rebuild spans with offsets matching the same concatenation scheme used above.
+        let cursor = 0;
+        const spans: Span[] = [];
+        for (const raw of content.items) {
+          const item = raw as { str: string };
+          const start = cursor;
+          cursor += item.str.length;
+          const end = cursor;
+          cursor += 1; // the " " separator
+          spans.push({ start, end });
+        }
+
+        content.items.forEach((raw: unknown, i: number) => {
           const item = raw as { str: string; transform: number[]; width: number; height: number };
           if (!item.str.trim()) return;
           const tx = pdfjsLib.Util.transform(viewport.transform, item.transform);
@@ -88,20 +129,25 @@ export default function SourceViewer({ source, cite, onClose }: Props) {
           span.style.fontSize = `${fontHeight}px`;
           span.style.whiteSpace = "pre";
           span.style.color = "transparent";
-          if (matchText && item.str.toLowerCase().includes(matchText.toLowerCase())) {
-            span.style.background = "rgba(255, 210, 60, 0.55)";
-            span.style.color = "rgba(0,0,0,0.01)";
-            span.style.borderRadius = "2px";
+          if (matchRange) {
+            const s = spans[i];
+            const overlaps = s.start < matchRange[1] && s.end > matchRange[0];
+            if (overlaps) {
+              span.style.background = "rgba(255, 210, 60, 0.6)";
+              span.style.color = "rgba(0,0,0,0.01)";
+              span.style.borderRadius = "2px";
+              span.dataset.hit = "1";
+            }
           }
           textLayerDiv.appendChild(span);
         });
 
         if (!cancelled) {
           setPageInfo({ page: targetPage, count: doc.numPages });
-          setStatus(matchText ? "found" : "not-found");
-          if (matchText) {
+          setStatus(matchRange ? "found" : "not-found");
+          if (matchRange) {
             requestAnimationFrame(() => {
-              const firstHighlight = textLayerDiv.querySelector("span[style*='255, 210, 60']");
+              const firstHighlight = textLayerDiv.querySelector("span[data-hit='1']");
               firstHighlight?.scrollIntoView({ block: "center", behavior: "smooth" });
             });
           }
@@ -115,7 +161,7 @@ export default function SourceViewer({ source, cite, onClose }: Props) {
     return () => {
       cancelled = true;
     };
-  }, [source, cite]);
+  }, [source, quote]);
 
   const isPdf = source.kind === "pdf" && source.file;
 
@@ -143,19 +189,43 @@ export default function SourceViewer({ source, cite, onClose }: Props) {
           </button>
         </div>
 
+        {quote && (
+          <div className="px-4 pt-3 pb-2 bg-(--surface-2) border-b border-(--rule)">
+            <p className="text-xs uppercase tracking-wide text-(--ink-dim) font-semibold mb-1">
+              Exact quote
+            </p>
+            <blockquote className="text-sm italic leading-relaxed border-l-2 border-(--accent) pl-3">
+              &ldquo;{quote}&rdquo;
+            </blockquote>
+          </div>
+        )}
+
         <div className="flex-1 overflow-auto bg-(--surface-2) p-4">
-          {isPdf ? (
+          {!quote && (
+            <p className="text-sm text-(--ink-dim) p-4 text-center">
+              No verbatim quote has been independently re-verified for this fact yet &mdash; only
+              the section citation above. Open the original source to confirm it yourself.
+            </p>
+          )}
+          {quote && isPdf && (
             <>
               {status === "loading" && (
-                <p className="text-sm text-(--ink-dim) p-6 text-center">Opening document and searching for &ldquo;{cite}&rdquo;&hellip;</p>
+                <p className="text-sm text-(--ink-dim) p-6 text-center">
+                  Opening document and searching for the quote above&hellip;
+                </p>
               )}
               {status === "error" && (
-                <p className="text-sm text-(--ink-dim) p-6 text-center">Could not render the mirrored PDF in-browser. Use the link below to open it directly.</p>
+                <p className="text-sm text-(--ink-dim) p-6 text-center">
+                  Could not render the mirrored PDF in-browser. Use the link below to open it
+                  directly.
+                </p>
               )}
               {(status === "found" || status === "not-found") && pageInfo && (
                 <p className="text-xs text-(--ink-dim) mb-2">
                   Page {pageInfo.page} of {pageInfo.count}
-                  {status === "found" ? " — highlighted match below" : " — exact text match not found automatically; shown at page 1"}
+                  {status === "found"
+                    ? " — highlighted below"
+                    : " — could not auto-locate this exact text in the mirrored PDF (it may be on a page the extractor couldn't match); shown at page 1"}
                 </p>
               )}
               <div className="relative inline-block bg-white shadow">
@@ -163,12 +233,13 @@ export default function SourceViewer({ source, cite, onClose }: Props) {
                 <div ref={textLayerRef} className="absolute inset-0" style={{ transformOrigin: "0 0" }} />
               </div>
             </>
-          ) : (
+          )}
+          {quote && !isPdf && (
             <div className="p-8 text-center space-y-3">
               <p className="text-sm text-(--ink-dim)">
                 {source.kind === "nza"
                   ? "This figure comes from the National Zoning Atlas's live Jurisdiction Snapshot page, not a static document — open it directly to verify."
-                  : "A local mirror of this document isn't available (the source blocked automated downloads or is a browsable code site, not a PDF) — open the live source to verify this citation."}
+                  : "A local mirror of this document isn't available (the source blocked automated downloads, is image-only with no text layer, or is a browsable code site rather than a single PDF) — open the live source to verify the quote above."}
               </p>
             </div>
           )}

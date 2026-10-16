@@ -82,7 +82,8 @@
           "url": "https://www.darienct.gov/DocumentCenter/View/6613",
           "title": "Darien Zoning Regulations (last revised May 10, 2026)"
         },
-        "cite": "§402.a"
+        "cite": "§402.a",
+        "quote": "a single, detached one-family dwelling on its own lot"
       },
       {
         "label": "Min. lot size (R-1)",
@@ -93,7 +94,8 @@
           "url": "https://www.darienct.gov/DocumentCenter/View/6613",
           "title": "Darien Zoning Regulations (last revised May 10, 2026)"
         },
-        "cite": "§406"
+        "cite": "§406",
+        "quote": null
       }
     ]
   },
@@ -109,7 +111,8 @@
           "url": "https://www.darienct.gov/DocumentCenter/View/6613",
           "title": "Darien Zoning Regulations (last revised May 10, 2026)"
         },
-        "cite": "§524.a"
+        "cite": "§524.a",
+        "quote": null
       },
       {
         "label": "Density",
@@ -120,9 +123,10 @@
           "url": "https://www.darienct.gov/DocumentCenter/View/6613",
           "title": "Darien Zoning Regulations (last revised May 10, 2026)"
         },
-        "cite": "§526.1"
+        "cite": "§526.1",
+        "quote": null
       }
     ]
   },
-  "caveat": "Darien formally opted OUT of CT's statewide ADU law (PA 21-29) via local vote in 2022; its own local ADU rules sunset for new applications after June 30, 2029 unless readopted."
+  "caveat": "Darien formally opted OUT of CT's statewide ADU law (PA 21-29) via local vote in 2022; its own local ADU rules sunset for new applications after June 30, 2029 unless readopted. No local PDF mirror exists for Darien (blocked at ingest time), so quotes above are limited to what the research pass directly transcribed."
 }

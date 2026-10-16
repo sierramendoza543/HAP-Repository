@@ -75,25 +75,27 @@
     "facts": [
       {
         "label": "Single-family",
-        "value": "Allowed, requires Zoning Permit",
+        "value": "Allowed, requires Zoning Permit (ZEO)",
         "source": {
           "kind": "link",
           "id": "ridgefield-link",
           "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
           "title": "Ridgefield Zoning Regulations (revised through July 2026)"
         },
-        "cite": "Sec. 3.2.B.1"
+        "cite": "§3.2.B.1",
+        "quote": null
       },
       {
         "label": "2-/3-family",
-        "value": "Bundled & prohibited except by Special Permit in SD R-20 overlay",
+        "value": "Bundled & prohibited except by Special Permit in the separate SD R-20 overlay",
         "source": {
           "kind": "link",
           "id": "ridgefield-link",
           "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
           "title": "Ridgefield Zoning Regulations (revised through July 2026)"
         },
-        "cite": "Sec. 3.2.C.10.d"
+        "cite": "§3.2.C.10.d",
+        "quote": null
       },
       {
         "label": "Min. lot size",
@@ -104,7 +106,8 @@
           "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
           "title": "Ridgefield Zoning Regulations (revised through July 2026)"
         },
-        "cite": "Sec. 3.5.A"
+        "cite": "§3.5.A table",
+        "quote": null
       }
     ]
   },
@@ -113,14 +116,15 @@
     "facts": [
       {
         "label": "Multifamily",
-        "value": "Special Permit only, town's only multifamily pathway",
+        "value": "Special Permit only — town's only multifamily pathway",
         "source": {
           "kind": "link",
           "id": "ridgefield-link",
           "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
           "title": "Ridgefield Zoning Regulations (revised through July 2026)"
         },
-        "cite": "Sec. 4.2.B-C"
+        "cite": "§4.2.B",
+        "quote": null
       },
       {
         "label": "Density",
@@ -131,9 +135,10 @@
           "url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf",
           "title": "Ridgefield Zoning Regulations (revised through July 2026)"
         },
-        "cite": "Sec. 4.2.C"
+        "cite": "§4.2.C",
+        "quote": null
       }
     ]
   },
-  "caveat": "Ridgefield has no as-of-right multifamily district of any kind — every multi-unit path requires a discretionary Special Permit hearing."
+  "caveat": "Ridgefield has no as-of-right multifamily district of any kind — every multi-unit path requires a discretionary Special Permit hearing. No local PDF mirror exists for Ridgefield, so these facts carry citations but not independently re-verified quotes."
 }

@@ -77,7 +77,7 @@
     "district": "CD-1S (Sub-Urban Single-Family)",
     "facts": [
       {
-        "label": "Two-family / multifamily",
+        "label": "Two-family & multifamily",
         "value": "Both \"NP\" (Not Permitted)",
         "source": {
           "kind": "pdf",
@@ -88,7 +88,8 @@
           "content_hash": "37348683dd9cdb60569c4e2b9b30be0f72298f2e366aabc0d0558e221c39fa2c",
           "mirrored_size_bytes": 119337
         },
-        "cite": "Table 4.3.9.A"
+        "cite": "Table 4.3.9.A",
+        "quote": null
       },
       {
         "label": "Min. lot size",
@@ -102,7 +103,8 @@
           "content_hash": "d61033fcdba50d0a9925bfe88724019f6d316ca07e059f371fdc0a1dc6f08baf",
           "mirrored_size_bytes": 100451
         },
-        "cite": "Bulk & Height Schedule"
+        "cite": "Bulk & Height Schedule (7/9/2025)",
+        "quote": "CD-1S        6,250"
       }
     ]
   },
@@ -111,7 +113,7 @@
     "facts": [
       {
         "label": "Two-family",
-        "value": "\"P\" — permitted by right",
+        "value": "\"P\" — permitted by right; multifamily still \"NP\"",
         "source": {
           "kind": "pdf",
           "id": "norwalk-pdf",
@@ -121,21 +123,8 @@
           "content_hash": "37348683dd9cdb60569c4e2b9b30be0f72298f2e366aabc0d0558e221c39fa2c",
           "mirrored_size_bytes": 119337
         },
-        "cite": "Table 4.3.9.A"
-      },
-      {
-        "label": "Multifamily",
-        "value": "Still \"NP\"",
-        "source": {
-          "kind": "pdf",
-          "id": "norwalk-pdf",
-          "file": "/sources/norwalk-art3.pdf",
-          "url": "https://www.norwalkct.gov/DocumentCenter/View/32245",
-          "title": "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)",
-          "content_hash": "37348683dd9cdb60569c4e2b9b30be0f72298f2e366aabc0d0558e221c39fa2c",
-          "mirrored_size_bytes": 119337
-        },
-        "cite": "Table 4.3.9.A"
+        "cite": "Table 4.3.9.A",
+        "quote": null
       },
       {
         "label": "Min. lot size",
@@ -149,9 +138,10 @@
           "content_hash": "d61033fcdba50d0a9925bfe88724019f6d316ca07e059f371fdc0a1dc6f08baf",
           "mirrored_size_bytes": 100451
         },
-        "cite": "Bulk & Height Schedule"
+        "cite": "Bulk & Height Schedule (7/9/2025)",
+        "quote": "CD-2         5,000"
       }
     ]
   },
-  "caveat": "CD-3/CD-4 allow multifamily by-right-with-limitations, but column alignment for CD-3W/CD-4W sub-variants was ambiguous in the extracted PDF text — not reported to avoid miscitation."
+  "caveat": "CD-3/CD-4 allow multifamily by-right-with-limitations, but column alignment for CD-3W/CD-4W sub-variants was ambiguous in the extracted PDF text — not reported to avoid miscitation. The use-permission table itself (Table 4.3.9.A) wasn't in the PDFs mirrored locally, so its two facts above show a citation but not an independently re-verified quote."
 }

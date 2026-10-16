@@ -75,14 +75,15 @@
     "facts": [
       {
         "label": "Two-family / multifamily",
-        "value": "Prohibited as normal use (only via §32-12 Special Permit)",
+        "value": "Prohibited as normal use (only via §32-12 \"Inclusionary Two-Family and Multifamily Dwellings\" Special Permit)",
         "source": {
           "kind": "link",
           "id": "westport-link",
           "url": "https://online.encodeplus.com/regs/westport-ct/",
           "title": "Westport Zoning Regulations (eff. April 12, 2024)"
         },
-        "cite": "§11-2.1.1"
+        "cite": "§11-2.1.1 / §11-2.3.16",
+        "quote": null
       },
       {
         "label": "Min. lot size",
@@ -93,7 +94,8 @@
           "url": "https://online.encodeplus.com/regs/westport-ct/",
           "title": "Westport Zoning Regulations (eff. April 12, 2024)"
         },
-        "cite": "§11-3"
+        "cite": "§11-3",
+        "quote": null
       }
     ]
   },
@@ -109,7 +111,8 @@
           "url": "https://online.encodeplus.com/regs/westport-ct/",
           "title": "Westport Zoning Regulations (eff. April 12, 2024)"
         },
-        "cite": "§18-2.1.2"
+        "cite": "§18-2.1.2",
+        "quote": null
       },
       {
         "label": "Max density",
@@ -120,9 +123,10 @@
           "url": "https://online.encodeplus.com/regs/westport-ct/",
           "title": "Westport Zoning Regulations (eff. April 12, 2024)"
         },
-        "cite": "§18-4.1"
+        "cite": "§18-4.1",
+        "quote": null
       }
     ]
   },
-  "caveat": "A 2026 amendment (§34-14.1) eliminated minimum parking entirely for residential developments of 16 units or fewer townwide."
+  "caveat": "A 2026 amendment (§34-14.1) eliminated minimum parking entirely for residential developments of 16 units or fewer townwide. No local PDF mirror exists for Westport (browsable encodeplus code site, not a single PDF), so these facts carry citations but not independently re-verified quotes."
 }

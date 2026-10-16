@@ -74,26 +74,16 @@
     "district": "RS-1",
     "facts": [
       {
-        "label": "\"Two and Three Family Dwellings\"",
-        "value": "One combined row, not permitted",
+        "label": "Two- and three-family",
+        "value": "One combined use-table row, \"Two and Three Family Dwellings,\" not permitted in RS-1",
         "source": {
           "kind": "link",
           "id": "stratford-link",
           "url": "https://ecode360.com/9207545",
           "title": "Stratford Zoning Code Ch. A220 (eff. Jan. 1, 2025)"
         },
-        "cite": "§3.2.1"
-      },
-      {
-        "label": "4+-unit multifamily",
-        "value": "Only by Special Permit",
-        "source": {
-          "kind": "link",
-          "id": "stratford-link",
-          "url": "https://ecode360.com/9207545",
-          "title": "Stratford Zoning Code Ch. A220 (eff. Jan. 1, 2025)"
-        },
-        "cite": "§4.2.4 Use Table"
+        "cite": "§4.2.4 Use Table",
+        "quote": "Two and Three Family Dwellings"
       },
       {
         "label": "Min. lot size",
@@ -104,7 +94,8 @@
           "url": "https://ecode360.com/9207545",
           "title": "Stratford Zoning Code Ch. A220 (eff. Jan. 1, 2025)"
         },
-        "cite": "§3.2.1"
+        "cite": "§3.2.1 table",
+        "quote": null
       }
     ]
   },
@@ -113,14 +104,15 @@
     "facts": [
       {
         "label": "2- and 3-family",
-        "value": "Allowed BY RIGHT",
+        "value": "Allowed BY RIGHT (\"P¹\")",
         "source": {
           "kind": "link",
           "id": "stratford-link",
           "url": "https://ecode360.com/9207545",
           "title": "Stratford Zoning Code Ch. A220 (eff. Jan. 1, 2025)"
         },
-        "cite": "§3.2.2"
+        "cite": "§4.2.4 Use Table",
+        "quote": null
       },
       {
         "label": "Min. lot area per unit",
@@ -131,9 +123,10 @@
           "url": "https://ecode360.com/9207545",
           "title": "Stratford Zoning Code Ch. A220 (eff. Jan. 1, 2025)"
         },
-        "cite": "§3.2.2"
+        "cite": "§3.2.2, footnote 1",
+        "quote": null
       }
     ]
   },
-  "caveat": "An apparent inconsistency exists between the Use Table's \"4 or more units\" threshold and §5.1's \"(3+)\" heading for Special Permit review — flagged for follow-up."
+  "caveat": "An apparent inconsistency exists between the Use Table's \"4 or more units\" threshold and §5.1's \"(3+)\" heading for Special Permit review — flagged for follow-up. No local PDF mirror exists for Stratford (eCode360 is a browsable HTML code site), so most facts above carry a citation but not an independently re-verified quote."
 }

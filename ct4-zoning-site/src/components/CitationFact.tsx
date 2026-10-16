@@ -7,10 +7,12 @@ import SourceViewer from "./SourceViewer";
 export function CitationBadge({
   source,
   cite,
+  quote = null,
   compact = false,
 }: {
   source: SourceRef;
   cite: string;
+  quote?: string | null;
   compact?: boolean;
 }) {
   const [open, setOpen] = useState(false);
@@ -29,7 +31,9 @@ export function CitationBadge({
         {compact ? null : "¶ "}
         {cite}
       </button>
-      {open && <SourceViewer source={source} cite={cite} onClose={() => setOpen(false)} />}
+      {open && (
+        <SourceViewer source={source} cite={cite} quote={quote} onClose={() => setOpen(false)} />
+      )}
     </>
   );
 }

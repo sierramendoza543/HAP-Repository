@@ -75,14 +75,15 @@
     "facts": [
       {
         "label": "\"Two-family\", \"duplex\", \"multi-family\", \"three-family\"",
-        "value": "Zero mentions anywhere in the 6,576-line regulations",
+        "value": "Zero matches in a full-text search of the 6,576-line regulations",
         "source": {
           "kind": "link",
           "id": "easton-link",
           "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
           "title": "Easton Zoning Regulations (last revised July 7, 2024)"
         },
-        "cite": "exhaustive keyword search"
+        "cite": "exhaustive keyword search of the complete regulations document",
+        "quote": null
       },
       {
         "label": "Min. lot size",
@@ -93,7 +94,8 @@
           "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
           "title": "Easton Zoning Regulations (last revised July 7, 2024)"
         },
-        "cite": "Sec. 3510"
+        "cite": "§3510 table",
+        "quote": null
       }
     ]
   },
@@ -109,9 +111,10 @@
           "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
           "title": "Easton Zoning Regulations (last revised July 7, 2024)"
         },
-        "cite": "full code review"
+        "cite": "full code review",
+        "quote": null
       }
     ]
   },
-  "caveat": "Of all 17 towns researched, Easton is the single clearest case of total legal exclusion of 2+-family housing — confirmed by exhaustive keyword search, not an oversight."
+  "caveat": "Of all 17 towns researched, Easton is the single clearest case of total legal exclusion of 2+-family housing — confirmed by exhaustive keyword search, not an oversight. No local PDF mirror exists for Easton, so these facts rest on the search method itself rather than a re-verifiable quote."
 }

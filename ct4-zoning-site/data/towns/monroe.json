@@ -78,7 +78,7 @@
     "facts": [
       {
         "label": "Multifamily (incl. 2-unit, by Monroe's own definition)",
-        "value": "Prohibited (\"x\")",
+        "value": "Prohibited (\"x\") in RF-1",
         "source": {
           "kind": "pdf",
           "id": "monroe-pdf",
@@ -88,11 +88,12 @@
           "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
           "mirrored_size_bytes": 2417109
         },
-        "cite": "§10.1 Use Schedule"
+        "cite": "§10.1 Use Schedule",
+        "quote": "Multi-Family Dwelling                     x      x       x      x     SEP     x    SEP     X       x          x     X       x        x        x"
       },
       {
         "label": "Min. lot size",
-        "value": "1 acre",
+        "value": "43,560 sq ft (1 acre)",
         "source": {
           "kind": "pdf",
           "id": "monroe-pdf",
@@ -102,7 +103,8 @@
           "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
           "mirrored_size_bytes": 2417109
         },
-        "cite": "Art. 3 §3.1.4(A)"
+        "cite": "Art. 3 §3.1.4(A)",
+        "quote": "RF-1:43560 sq. ft."
       }
     ]
   },
@@ -110,8 +112,8 @@
     "district": "MFR (Multifamily Residence District)",
     "facts": [
       {
-        "label": "Multifamily",
-        "value": "Special Exception Permit, 2.5 units/gross acre (attached)",
+        "label": "Multifamily density",
+        "value": "2.5 units/gross acre (attached)",
         "source": {
           "kind": "pdf",
           "id": "monroe-pdf",
@@ -121,7 +123,8 @@
           "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
           "mirrored_size_bytes": 2417109
         },
-        "cite": "§3.4.5(A)"
+        "cite": "§3.4.5(A)(1)",
+        "quote": "Attached single-family units: two-and-half (2.5) units per gross acre of the parcel"
       },
       {
         "label": "Min. parcel to create district",
@@ -135,7 +138,8 @@
           "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
           "mirrored_size_bytes": 2417109
         },
-        "cite": "§3.4.5(B)"
+        "cite": "§3.4.5(B)",
+        "quote": "Minimum parcel size shall be seventy (70) acres under same ownership in a single continuous"
       }
     ]
   },

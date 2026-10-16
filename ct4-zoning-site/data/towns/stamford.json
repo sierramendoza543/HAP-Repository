@@ -77,8 +77,8 @@
     "district": "R-20 (One-Family Residence)",
     "facts": [
       {
-        "label": "Two-family / multifamily",
-        "value": "Both prohibited",
+        "label": "District definition",
+        "value": "One-Family Residence District — two-family and multifamily both prohibited",
         "source": {
           "kind": "pdf",
           "id": "stamford-pdf",
@@ -88,7 +88,8 @@
           "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
           "mirrored_size_bytes": 3727499
         },
-        "cite": "Table I"
+        "cite": "Table I; §1-2",
+        "quote": "R-20              One-Family Residence District"
       },
       {
         "label": "Min. lot size",
@@ -102,7 +103,8 @@
           "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
           "mirrored_size_bytes": 3727499
         },
-        "cite": "Table II"
+        "cite": "Table II, Appendix B",
+        "quote": "R-20          20000   100   100   20000     1    2½    30    15"
       }
     ]
   },
@@ -110,8 +112,8 @@
     "district": "R-6 (One-Family, Two-Family Residence)",
     "facts": [
       {
-        "label": "Two-family",
-        "value": "Allowed by-right",
+        "label": "District definition",
+        "value": "One-Family, Two-Family Residence District",
         "source": {
           "kind": "pdf",
           "id": "stamford-pdf",
@@ -121,21 +123,8 @@
           "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
           "mirrored_size_bytes": 3727499
         },
-        "cite": "Table I"
-      },
-      {
-        "label": "Multifamily (3+)",
-        "value": "Still prohibited",
-        "source": {
-          "kind": "pdf",
-          "id": "stamford-pdf",
-          "file": "/sources/stamford-zoning.pdf",
-          "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
-          "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
-          "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
-          "mirrored_size_bytes": 3727499
-        },
-        "cite": "Table I"
+        "cite": "Table I; §1-2",
+        "quote": "R-6               One-Family, Two-Family Residence District"
       },
       {
         "label": "Min. lot size",
@@ -149,7 +138,8 @@
           "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
           "mirrored_size_bytes": 3727499
         },
-        "cite": "Table II"
+        "cite": "Table II, Appendix B",
+        "quote": "R-6           5000     50      -              -      1(19)      2½        30"
       }
     ]
   },

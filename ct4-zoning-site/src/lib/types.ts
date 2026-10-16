@@ -24,6 +24,10 @@ export interface DistrictFact {
   value: string;
   source: SourceRef;
   cite: string;
+  /** Verbatim text pulled from the source document, when we have one we
+   * independently verified against the PDF's own text. Null means we only
+   * have a section/page citation, not a confirmed exact quote. */
+  quote: string | null;
 }
 
 export interface DistrictBlock {

@@ -77,8 +77,8 @@
     "district": "R-1 (and R-4 / R-2 / R-½)",
     "facts": [
       {
-        "label": "2-/3-/4+-family",
-        "value": "All prohibited; no 3-unit tier at all",
+        "label": "Only single-family permitted",
+        "value": "All uses must fall under §4.2.1, 4.2.2 or 4.2.3; the only principal use is single-family",
         "source": {
           "kind": "pdf",
           "id": "redding-pdf",
@@ -88,11 +88,12 @@
           "content_hash": "5eceaeb3836482e8ed59cff3f85dcc8eb6267b485b1d299a4f9d521b28d2d7be",
           "mirrored_size_bytes": 4088907
         },
-        "cite": "§4.2"
+        "cite": "§4.2, §4.2.1(a)",
+        "quote": "Within Residential Zones (R-4, R-2, R-1, R-½, RV), buildings, structures and land shall be used only as permitted in Sections 4.2.1, 4.2.2 and 4.2.3."
       },
       {
         "label": "Min. lot size (R-1)",
-        "value": "1 acre",
+        "value": "43,560 sq ft (1 acre)",
         "source": {
           "kind": "pdf",
           "id": "redding-pdf",
@@ -102,7 +103,8 @@
           "content_hash": "5eceaeb3836482e8ed59cff3f85dcc8eb6267b485b1d299a4f9d521b28d2d7be",
           "mirrored_size_bytes": 4088907
         },
-        "cite": "§4.6"
+        "cite": "§4.6 table",
+        "quote": "43,560"
       }
     ]
   },
@@ -111,7 +113,7 @@
     "facts": [
       {
         "label": "Multifamily",
-        "value": "Special Permit only, capped at 1 unit/8,000 sq ft",
+        "value": "Special Permit only, capped at 1 unit/8,000 sq ft of site area",
         "source": {
           "kind": "pdf",
           "id": "redding-pdf",
@@ -121,7 +123,8 @@
           "content_hash": "5eceaeb3836482e8ed59cff3f85dcc8eb6267b485b1d299a4f9d521b28d2d7be",
           "mirrored_size_bytes": 4088907
         },
-        "cite": "§4.2.3(o)"
+        "cite": "§4.2.3(o)",
+        "quote": "Within RV Residential Zone only, residential apartments, townhouses or condominiums not exceeding a density of one (1) residential unit per 8,000 square feet of site area"
       }
     ]
   },

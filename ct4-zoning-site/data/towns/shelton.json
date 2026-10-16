@@ -88,7 +88,8 @@
           "content_hash": "6a2f46e424705ca6db22642792280a957675968d213feca7029493bfcf018945",
           "mirrored_size_bytes": 13478741
         },
-        "cite": "Schedule A Row 2/2A/3"
+        "cite": "Schedule A, Row 2/2A/3",
+        "quote": null
       },
       {
         "label": "Min. lot size",
@@ -102,7 +103,8 @@
           "content_hash": "6a2f46e424705ca6db22642792280a957675968d213feca7029493bfcf018945",
           "mirrored_size_bytes": 13478741
         },
-        "cite": "Schedule B Row 1"
+        "cite": "Schedule B, Row 1",
+        "quote": null
       }
     ]
   },
@@ -111,7 +113,7 @@
     "facts": [
       {
         "label": "2-/3-family & multifamily (4-12 units)",
-        "value": "Allowed by Special Exception",
+        "value": "Allowed by Special Exception, subject to added lot-area requirements",
         "source": {
           "kind": "pdf",
           "id": "shelton-pdf",
@@ -121,7 +123,8 @@
           "content_hash": "6a2f46e424705ca6db22642792280a957675968d213feca7029493bfcf018945",
           "mirrored_size_bytes": 13478741
         },
-        "cite": "Schedule A Row 2/2A/3"
+        "cite": "Schedule A, Row 2/2A/3",
+        "quote": null
       },
       {
         "label": "Min. lot area per unit (2F)",
@@ -135,9 +138,10 @@
           "content_hash": "6a2f46e424705ca6db22642792280a957675968d213feca7029493bfcf018945",
           "mirrored_size_bytes": 13478741
         },
-        "cite": "Schedule B Row 2"
+        "cite": "Schedule B, Row 2",
+        "quote": null
       }
     ]
   },
-  "caveat": "Shelton's own code is a scanned, image-only PDF with no text layer — all figures were OCR'd and visually verified against the table images directly."
+  "caveat": "Shelton's own code is a scanned, image-only PDF with NO embedded text layer — it cannot be text-searched or highlighted in the in-app viewer at all. Every figure above was OCR'd and visually verified against the table images directly during research; open the original source to see the actual scanned tables."
 }

@@ -77,8 +77,8 @@
     "district": "Residence Zone A / AA / AAA",
     "facts": [
       {
-        "label": "2-/3-/4+-family",
-        "value": "Prohibited as a base use",
+        "label": "Single-family only",
+        "value": "Only use permitted: \"One-Family Dwelling\"",
         "source": {
           "kind": "pdf",
           "id": "trumbull-pdf",
@@ -88,11 +88,12 @@
           "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
           "mirrored_size_bytes": 2219912
         },
-        "cite": "Art. II §1.1.1(1)"
+        "cite": "Art. II §1.1.1",
+        "quote": "Within the Residence AAA, AA or A Zone no Building or Structure shall be erected, altered, occupied or used, arranged or designed to be used for other than one or more of the following specified purposes: 1. One-Family Dwelling;"
       },
       {
-        "label": "Min. lot size",
-        "value": "½ to 1 acre",
+        "label": "Multifamily moratorium (town-wide)",
+        "value": "No new multi-family rental applications above 50 units, except 55+ housing, until Feb. 28, 2027",
         "source": {
           "kind": "pdf",
           "id": "trumbull-pdf",
@@ -102,7 +103,8 @@
           "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
           "mirrored_size_bytes": 2219912
         },
-        "cite": "Art. I §2"
+        "cite": "Art. XVII",
+        "quote": "the Planning and Zoning Commission hereby declares an immediate moratorium on all applications for, and approvals of, any multi-family residential rental housing to determine the additional need of this type of housing in the Town."
       }
     ]
   },
@@ -110,8 +112,8 @@
     "district": "MFO (Multi-Family Overlay)",
     "facts": [
       {
-        "label": "Multifamily",
-        "value": "Special Permit only, existing industrial land ≥10 acres",
+        "label": "Density / town-wide cap",
+        "value": "20 units/acre, capped at 600 units town-wide",
         "source": {
           "kind": "pdf",
           "id": "trumbull-pdf",
@@ -121,23 +123,10 @@
           "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
           "mirrored_size_bytes": 2219912
         },
-        "cite": "Art. II §7.6.2"
-      },
-      {
-        "label": "Town-wide cap",
-        "value": "600 units total",
-        "source": {
-          "kind": "pdf",
-          "id": "trumbull-pdf",
-          "file": "/sources/trumbull-zoning.pdf",
-          "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
-          "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
-          "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
-          "mirrored_size_bytes": 2219912
-        },
-        "cite": "Art. II §7.6.4"
+        "cite": "§7.6.4(1)",
+        "quote": "The maximum number of dwelling units shall be 20 units per acre. The maximum number of dwelling units that may be developed pursuant to this MFO shall be 600, provided that no more than 220 units may be approved by the Commission within any 12 month period."
       }
     ]
   },
-  "caveat": "Trumbull currently has a town-wide moratorium on new multifamily rental applications above 50 units (except 55+ housing), expiring Feb. 28, 2027."
+  "caveat": "Trumbull currently has a town-wide moratorium on new multifamily rental applications above 50 units (except 55+ housing), expiring Feb. 28, 2027 — a procedural block layered on top of the underlying district-level rules."
 }
