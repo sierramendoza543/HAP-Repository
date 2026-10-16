@@ -62,6 +62,23 @@
       "quote": "Lot Width: 45 ft. min."
     },
     {
+      "category": "Dimensional Standards",
+      "district": "N1",
+      "label": "Height (House A)",
+      "value": "1.5 stories min. / 2.5 stories max.",
+      "source": {
+        "kind": "pdf",
+        "id": "bridgeport-pdf",
+        "file": "/sources/bridgeport-zoning.pdf",
+        "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+        "title": "\"Zone Bridgeport\" form-based code (amended July 2022)",
+        "content_hash": "7607b979812edb9e8fea2c3e6ba6dee542f00ee5aeadecfec32d6293c3a10917",
+        "mirrored_size_bytes": 10607765
+      },
+      "cite": "§3.90.6",
+      "quote": "1.5 stories min.    2 stories min.     2 stories min."
+    },
+    {
       "category": "Use Permissions",
       "district": "NX2",
       "label": "Up to 4 units (House A)",

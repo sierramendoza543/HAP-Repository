@@ -45,6 +45,40 @@
       "quote": "CD-1S        6,250"
     },
     {
+      "category": "Dimensional Standards",
+      "district": "CD-1S",
+      "label": "Max. height",
+      "value": "2.5 stories / 40 ft to peak",
+      "source": {
+        "kind": "pdf",
+        "id": "norwalkbulk-pdf",
+        "file": "/sources/norwalk-bulk.pdf",
+        "url": "https://www.norwalkct.gov/DocumentCenter/View/36646",
+        "title": "Norwalk Bulk & Height Schedule (7/9/2025)",
+        "content_hash": "d61033fcdba50d0a9925bfe88724019f6d316ca07e059f371fdc0a1dc6f08baf",
+        "mirrored_size_bytes": 100451
+      },
+      "cite": "Bulk & Height Schedule (7/9/2025)",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "CD-1S",
+      "label": "Min. front / side / rear yard",
+      "value": "30 ft / 6 ft / 15 ft",
+      "source": {
+        "kind": "pdf",
+        "id": "norwalkbulk-pdf",
+        "file": "/sources/norwalk-bulk.pdf",
+        "url": "https://www.norwalkct.gov/DocumentCenter/View/36646",
+        "title": "Norwalk Bulk & Height Schedule (7/9/2025)",
+        "content_hash": "d61033fcdba50d0a9925bfe88724019f6d316ca07e059f371fdc0a1dc6f08baf",
+        "mirrored_size_bytes": 100451
+      },
+      "cite": "Bulk & Height Schedule (7/9/2025)",
+      "quote": "CD-1S        6,250         N/R                         50 ft. min.                         32 ft. to midpoint max.               See Below1                                                                     6 ft. min.                       15 ft. min."
+    },
+    {
       "category": "ADU Policy",
       "district": "CD-1S",
       "label": "ADU",
@@ -94,6 +128,40 @@
       },
       "cite": "Bulk & Height Schedule (7/9/2025)",
       "quote": "CD-2         5,000"
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "CD-2",
+      "label": "Max. height",
+      "value": "2.5 stories / 40 ft to peak",
+      "source": {
+        "kind": "pdf",
+        "id": "norwalkbulk-pdf",
+        "file": "/sources/norwalk-bulk.pdf",
+        "url": "https://www.norwalkct.gov/DocumentCenter/View/36646",
+        "title": "Norwalk Bulk & Height Schedule (7/9/2025)",
+        "content_hash": "d61033fcdba50d0a9925bfe88724019f6d316ca07e059f371fdc0a1dc6f08baf",
+        "mirrored_size_bytes": 100451
+      },
+      "cite": "Bulk & Height Schedule (7/9/2025)",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "CD-2",
+      "label": "Min. front / side / rear yard",
+      "value": "30 ft / 5 ft / 15 ft",
+      "source": {
+        "kind": "pdf",
+        "id": "norwalkbulk-pdf",
+        "file": "/sources/norwalk-bulk.pdf",
+        "url": "https://www.norwalkct.gov/DocumentCenter/View/36646",
+        "title": "Norwalk Bulk & Height Schedule (7/9/2025)",
+        "content_hash": "d61033fcdba50d0a9925bfe88724019f6d316ca07e059f371fdc0a1dc6f08baf",
+        "mirrored_size_bytes": 100451
+      },
+      "cite": "Bulk & Height Schedule (7/9/2025)",
+      "quote": "CD-2         5,000         N/R                         50 ft. min.                         32 ft. to midpoint max.               See Below1                                                                     5 ft. min.                       15 ft. min."
     },
     {
       "category": "ADU Policy",

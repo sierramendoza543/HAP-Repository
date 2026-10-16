@@ -45,6 +45,40 @@
       "quote": "Four Acre Residence Zone                                          174,240"
     },
     {
+      "category": "Dimensional Standards",
+      "district": "Four Acre Residence Zone",
+      "label": "Max. principal building height",
+      "value": "40 ft",
+      "source": {
+        "kind": "pdf",
+        "id": "newcanaan-pdf",
+        "file": "/sources/newcanaan-zoning.pdf",
+        "url": "https://cms3.revize.com/revize/newcanaanct/Departments/Land%20Use/Zoning%20Regulations.pdf",
+        "title": "New Canaan Zoning Regulations (amended through May 1, 2023)",
+        "content_hash": "17c2e7dde920961c46fa93287815e5aaad7f7e25934acc95b824573bee40c2b9",
+        "mirrored_size_bytes": 6207095
+      },
+      "cite": "§3.5.F.1 table",
+      "quote": "Four Acre Residence Zone                    40           20             45           30"
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "Four Acre Residence Zone",
+      "label": "Min. front / side / rear yard",
+      "value": "50 ft / 50 ft / 50 ft",
+      "source": {
+        "kind": "pdf",
+        "id": "newcanaan-pdf",
+        "file": "/sources/newcanaan-zoning.pdf",
+        "url": "https://cms3.revize.com/revize/newcanaanct/Departments/Land%20Use/Zoning%20Regulations.pdf",
+        "title": "New Canaan Zoning Regulations (amended through May 1, 2023)",
+        "content_hash": "17c2e7dde920961c46fa93287815e5aaad7f7e25934acc95b824573bee40c2b9",
+        "mirrored_size_bytes": 6207095
+      },
+      "cite": "§3.4.D.2 table",
+      "quote": "Four Acre Residence Zone                50        50          50             50"
+    },
+    {
       "category": "Use Permissions",
       "district": "B Residence Zone",
       "label": "Two-family",
@@ -77,6 +111,23 @@
       },
       "cite": "§3.5.A.1 table",
       "quote": "B Residence Zone                                                     7,500"
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "B Residence Zone",
+      "label": "Max. principal building height",
+      "value": "30 ft",
+      "source": {
+        "kind": "pdf",
+        "id": "newcanaan-pdf",
+        "file": "/sources/newcanaan-zoning.pdf",
+        "url": "https://cms3.revize.com/revize/newcanaanct/Departments/Land%20Use/Zoning%20Regulations.pdf",
+        "title": "New Canaan Zoning Regulations (amended through May 1, 2023)",
+        "content_hash": "17c2e7dde920961c46fa93287815e5aaad7f7e25934acc95b824573bee40c2b9",
+        "mirrored_size_bytes": 6207095
+      },
+      "cite": "§3.5.F.1 table",
+      "quote": "B Residence Zone                            30           15             35           20"
     },
     {
       "category": "Use Permissions",

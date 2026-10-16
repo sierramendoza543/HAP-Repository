@@ -62,6 +62,57 @@
       "quote": "R-20          20000   100   100   20000     1    2½    30    15"
     },
     {
+      "category": "Dimensional Standards",
+      "district": "R-20",
+      "label": "Max. height",
+      "value": "2.5 stories / 30 ft",
+      "source": {
+        "kind": "pdf",
+        "id": "stamford-pdf",
+        "file": "/sources/stamford-zoning.pdf",
+        "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+        "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+        "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
+        "mirrored_size_bytes": 3727499
+      },
+      "cite": "Table II, Appendix B",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "R-20",
+      "label": "Min. front / side / rear yard",
+      "value": "40 ft / 15 ft / 50 ft",
+      "source": {
+        "kind": "pdf",
+        "id": "stamford-pdf",
+        "file": "/sources/stamford-zoning.pdf",
+        "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+        "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+        "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
+        "mirrored_size_bytes": 3727499
+      },
+      "cite": "Table II, Appendix B",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "R-20",
+      "label": "Max. building coverage",
+      "value": "15% of lot",
+      "source": {
+        "kind": "pdf",
+        "id": "stamford-pdf",
+        "file": "/sources/stamford-zoning.pdf",
+        "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+        "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+        "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
+        "mirrored_size_bytes": 3727499
+      },
+      "cite": "Table II, Appendix B",
+      "quote": null
+    },
+    {
       "category": "Use Permissions",
       "district": "R-6",
       "label": "District definition",
@@ -128,6 +179,40 @@
       },
       "cite": "Table II, Appendix B",
       "quote": "R-6           5000     50      -              -      1(19)      2½        30"
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "R-6",
+      "label": "Max. height",
+      "value": "2.5 stories / 30 ft",
+      "source": {
+        "kind": "pdf",
+        "id": "stamford-pdf",
+        "file": "/sources/stamford-zoning.pdf",
+        "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+        "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+        "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
+        "mirrored_size_bytes": 3727499
+      },
+      "cite": "Table II, Appendix B",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "R-6",
+      "label": "Min. front / side / rear yard",
+      "value": "25 ft / 6 ft (one) 12 ft (both) / 30 ft",
+      "source": {
+        "kind": "pdf",
+        "id": "stamford-pdf",
+        "file": "/sources/stamford-zoning.pdf",
+        "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+        "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+        "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
+        "mirrored_size_bytes": 3727499
+      },
+      "cite": "Table II, Appendix B",
+      "quote": null
     },
     {
       "category": "ADU Policy",

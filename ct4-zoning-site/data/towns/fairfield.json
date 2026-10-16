@@ -79,6 +79,74 @@
       "quote": null
     },
     {
+      "category": "Dimensional Standards",
+      "district": "AAA/AA/R-3/R-2",
+      "label": "Max. height",
+      "value": "40 ft / 3 stories",
+      "source": {
+        "kind": "pdf",
+        "id": "fairfield-pdf",
+        "file": "/sources/fairfield-zoning.pdf",
+        "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+        "title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+        "content_hash": "9eb8d7a997a030a1822552ca681d21ec4f435eae8f99ef5a01c7c91940da1eb7",
+        "mirrored_size_bytes": 3638390
+      },
+      "cite": "§3.3.1 table",
+      "quote": "D. Maximum Allowed Height of Buildings                     40          40                40              40               32"
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "A",
+      "label": "Max. height",
+      "value": "32 ft / 2.5 stories",
+      "source": {
+        "kind": "pdf",
+        "id": "fairfield-pdf",
+        "file": "/sources/fairfield-zoning.pdf",
+        "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+        "title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+        "content_hash": "9eb8d7a997a030a1822552ca681d21ec4f435eae8f99ef5a01c7c91940da1eb7",
+        "mirrored_size_bytes": 3638390
+      },
+      "cite": "§3.3.1 table",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "AAA",
+      "label": "Min. street-line / side / rear setback",
+      "value": "60 ft / 30 ft / 50 ft",
+      "source": {
+        "kind": "pdf",
+        "id": "fairfield-pdf",
+        "file": "/sources/fairfield-zoning.pdf",
+        "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+        "title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+        "content_hash": "9eb8d7a997a030a1822552ca681d21ec4f435eae8f99ef5a01c7c91940da1eb7",
+        "mirrored_size_bytes": 3638390
+      },
+      "cite": "§3.4.1 table",
+      "quote": "A. Street Line Setback (ft)                       60             50              40           30            30"
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "A",
+      "label": "Min. street-line / side / rear setback",
+      "value": "30 ft / 7 ft / 30 ft",
+      "source": {
+        "kind": "pdf",
+        "id": "fairfield-pdf",
+        "file": "/sources/fairfield-zoning.pdf",
+        "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+        "title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+        "content_hash": "9eb8d7a997a030a1822552ca681d21ec4f435eae8f99ef5a01c7c91940da1eb7",
+        "mirrored_size_bytes": 3638390
+      },
+      "cite": "§3.4.1 table",
+      "quote": null
+    },
+    {
       "category": "Use Permissions",
       "district": "District B/C",
       "label": "Two-family",

@@ -45,6 +45,40 @@
       "quote": "RF-1:43560 sq. ft."
     },
     {
+      "category": "Dimensional Standards",
+      "district": "RF-1",
+      "label": "Max. height",
+      "value": "2.5 stories / 35 ft",
+      "source": {
+        "kind": "pdf",
+        "id": "monroe-pdf",
+        "file": "/sources/monroe-zoning.pdf",
+        "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+        "title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+        "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
+        "mirrored_size_bytes": 2417109
+      },
+      "cite": "§3.1.6(A)",
+      "quote": "No building or other structure shall exceed a height of two-and-one-half (2½) stories or thirty-five (35) feet."
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "RF-1",
+      "label": "Min. front / side-rear yard",
+      "value": "50 ft / 25 ft",
+      "source": {
+        "kind": "pdf",
+        "id": "monroe-pdf",
+        "file": "/sources/monroe-zoning.pdf",
+        "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+        "title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+        "content_hash": "b78074b2cd8bdbc274d4f0cbd7991f0513d943f5d107f7cc570de677528b6061",
+        "mirrored_size_bytes": 2417109
+      },
+      "cite": "§3.1.5(A)",
+      "quote": "No building or other structure shall extend within less than fifty (50) feet of any front lot line, nor within twenty-five (25) feet of any side or rear lot line."
+    },
+    {
       "category": "Use Permissions",
       "district": "MFR",
       "label": "Multifamily density",

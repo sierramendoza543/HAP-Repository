@@ -62,6 +62,57 @@
       "quote": null
     },
     {
+      "category": "Dimensional Standards",
+      "district": "Residence AAA",
+      "label": "Max. height / F.A.R.",
+      "value": "40 ft, 0.29 F.A.R.",
+      "source": {
+        "kind": "pdf",
+        "id": "trumbull-pdf",
+        "file": "/sources/trumbull-zoning.pdf",
+        "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+        "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+        "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
+        "mirrored_size_bytes": 2219912
+      },
+      "cite": "Art. III Exhibit",
+      "quote": "Residence AAA         1 acre                   1 story          1500"
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "Residence AAA",
+      "label": "Min. front / side / rear yard",
+      "value": "50 ft / 20 ft / 50 ft",
+      "source": {
+        "kind": "pdf",
+        "id": "trumbull-pdf",
+        "file": "/sources/trumbull-zoning.pdf",
+        "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+        "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+        "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
+        "mirrored_size_bytes": 2219912
+      },
+      "cite": "Art. III Exhibit",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "Residence A",
+      "label": "Max. building coverage",
+      "value": "25%",
+      "source": {
+        "kind": "pdf",
+        "id": "trumbull-pdf",
+        "file": "/sources/trumbull-zoning.pdf",
+        "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+        "title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+        "content_hash": "ae7c4c68f9c695b3302f5d3869438a0a42cf0702f897b0a6b3a289f8bf95bb38",
+        "mirrored_size_bytes": 2219912
+      },
+      "cite": "Art. III Exhibit",
+      "quote": null
+    },
+    {
       "category": "Use Permissions",
       "district": "Town-wide",
       "label": "Multifamily rental moratorium",

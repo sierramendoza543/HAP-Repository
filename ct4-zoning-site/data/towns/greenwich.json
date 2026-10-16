@@ -147,6 +147,91 @@
       "quote": null
     },
     {
+      "category": "Dimensional Standards",
+      "district": "R-20",
+      "label": "Max. height",
+      "value": "2.5 stories / 37½ ft",
+      "source": {
+        "kind": "pdf",
+        "id": "greenwich21-pdf",
+        "file": "/sources/greenwich-div21.pdf",
+        "url": "https://www.greenwichct.gov/DocumentCenter/View/37841",
+        "title": "Building Zone Regulations, Div. 21 (Bulk Schedule)",
+        "content_hash": "25c7ff10da0aeefcc9eefc5651d756c8c9799b9e0884ee3d2e24b3605bb4bb47",
+        "mirrored_size_bytes": 40410
+      },
+      "cite": "§6-205(a) table",
+      "quote": "R-20                        2-1/2            37½ ft."
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "R-20",
+      "label": "Floor Area Ratio (F.A.R.)",
+      "value": "0.225",
+      "source": {
+        "kind": "pdf",
+        "id": "greenwich21-pdf",
+        "file": "/sources/greenwich-div21.pdf",
+        "url": "https://www.greenwichct.gov/DocumentCenter/View/37841",
+        "title": "Building Zone Regulations, Div. 21 (Bulk Schedule)",
+        "content_hash": "25c7ff10da0aeefcc9eefc5651d756c8c9799b9e0884ee3d2e24b3605bb4bb47",
+        "mirrored_size_bytes": 40410
+      },
+      "cite": "§6-205(a) table",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "R-20",
+      "label": "Min. front / side / rear yard",
+      "value": "40 ft / 10 ft / 40 ft",
+      "source": {
+        "kind": "pdf",
+        "id": "greenwich21-pdf",
+        "file": "/sources/greenwich-div21.pdf",
+        "url": "https://www.greenwichct.gov/DocumentCenter/View/37841",
+        "title": "Building Zone Regulations, Div. 21 (Bulk Schedule)",
+        "content_hash": "25c7ff10da0aeefcc9eefc5651d756c8c9799b9e0884ee3d2e24b3605bb4bb47",
+        "mirrored_size_bytes": 40410
+      },
+      "cite": "§6-205(a) table",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "R-MF",
+      "label": "Max. height (multifamily tier)",
+      "value": "4 stories / 40 ft",
+      "source": {
+        "kind": "pdf",
+        "id": "greenwich21-pdf",
+        "file": "/sources/greenwich-div21.pdf",
+        "url": "https://www.greenwichct.gov/DocumentCenter/View/37841",
+        "title": "Building Zone Regulations, Div. 21 (Bulk Schedule)",
+        "content_hash": "25c7ff10da0aeefcc9eefc5651d756c8c9799b9e0884ee3d2e24b3605bb4bb47",
+        "mirrored_size_bytes": 40410
+      },
+      "cite": "§6-205(a) table",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
+      "district": "R-MF",
+      "label": "Min. front / side / rear yard (multifamily tier)",
+      "value": "50 ft / 5 ft / 50 ft",
+      "source": {
+        "kind": "pdf",
+        "id": "greenwich21-pdf",
+        "file": "/sources/greenwich-div21.pdf",
+        "url": "https://www.greenwichct.gov/DocumentCenter/View/37841",
+        "title": "Building Zone Regulations, Div. 21 (Bulk Schedule)",
+        "content_hash": "25c7ff10da0aeefcc9eefc5651d756c8c9799b9e0884ee3d2e24b3605bb4bb47",
+        "mirrored_size_bytes": 40410
+      },
+      "cite": "§6-205(a) table",
+      "quote": null
+    },
+    {
       "category": "Use Permissions",
       "district": "R-MF",
       "label": "Two-family / multifamily",
