@@ -163,6 +163,76 @@
       },
       "cite": "§904.a",
       "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Elderly/BMR housing only",
+      "label": "Min. unit size",
+      "value": "≥800 sq ft per elderly BMR unit; no general town-wide minimum found",
+      "source": {
+        "kind": "link",
+        "id": "darien-link",
+        "url": "https://www.darienct.gov/DocumentCenter/View/6613",
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+      },
+      "cite": "§438",
+      "quote": "Each elderly below market-rate housing unit required to be constructed or acquired shall be at least 800 square feet in size"
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "All zones allowing dwelling units",
+      "label": "Inclusionary zoning",
+      "value": "14% of units must be affordable (≤80% SMI) in developments of ≥4 units; deed-restricted 40 years",
+      "source": {
+        "kind": "link",
+        "id": "darien-link",
+        "url": "https://www.darienct.gov/DocumentCenter/View/6613",
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+      },
+      "cite": "§580, 583",
+      "quote": "Developments resulting in the creation of four or more multi-family dwelling units shall designate a minimum of fourteen percent (14%) of the total number of dwelling units as affordable housing"
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Opt-in \"Protected Town Landmark\" (not a mapped district)",
+      "label": "Historic overlay",
+      "value": "Voluntary, parcel-specific special-permit tool, similar structure to Greenwich's HO zone",
+      "source": {
+        "kind": "link",
+        "id": "darien-link",
+        "url": "https://www.darienct.gov/DocumentCenter/View/6613",
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+      },
+      "cite": "§1051.1-2",
+      "quote": "certain structures and land areas have value as Town Landmarks, which value transcends the ordinary standards incorporated in these Regulations"
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Demolition delay",
+      "value": "Likely exists (observed 21–30-day objection windows in a tracked case) but codified text and exact delay period not located",
+      "source": {
+        "kind": "link",
+        "id": "darien-link",
+        "url": "https://www.darienct.gov/DocumentCenter/View/6613",
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+      },
+      "cite": "Code of Ordinances — not independently retrieved",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Coastal Area Management, §810",
+      "label": "Coastal/flood overlay",
+      "value": "Applies — Long Island Sound frontage, CT Coastal Management Act review",
+      "source": {
+        "kind": "link",
+        "id": "darien-link",
+        "url": "https://www.darienct.gov/DocumentCenter/View/6613",
+        "title": "Darien Zoning Regulations (last revised May 10, 2026)"
+      },
+      "cite": "§811, 813",
+      "quote": "The purpose of this Section is to achieve the goals, objectives and policies of the State-wide Coastal Area Management Program as set forth in Chapter 444 Section 22a-90 through 22a-112 of the General Statutes"
     }
   ],
   "nza_metrics": [

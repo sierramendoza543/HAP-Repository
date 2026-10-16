@@ -10,6 +10,7 @@ const CATEGORY_ORDER: VariableCategory[] = [
   "ADU Policy",
   "Parking",
   "Approval Process",
+  "Overlays & Affordability",
 ];
 
 export default function VariableTable({ variables }: { variables: Variable[] }) {

@@ -179,6 +179,88 @@
       },
       "cite": "§8.20.1",
       "quote": "This zoning code does not establish minimum off-street parking requirements"
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Min. unit size",
+      "value": "Not found — no town-wide minimum dwelling-unit floor area in the zoning code",
+      "source": {
+        "kind": "pdf",
+        "id": "bridgeport-pdf",
+        "file": "/sources/bridgeport-zoning.pdf",
+        "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+        "title": "\"Zone Bridgeport\" form-based code (amended July 2022)",
+        "content_hash": "7607b979812edb9e8fea2c3e6ba6dee542f00ee5aeadecfec32d6293c3a10917",
+        "mirrored_size_bytes": 10607765
+      },
+      "cite": "full-text search of definitions (§15865)",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Inclusionary zoning",
+      "value": "None found — no inclusionary set-aside ordinance in the zoning code (notable outlier among CT-4 towns)",
+      "source": {
+        "kind": "pdf",
+        "id": "bridgeport-pdf",
+        "file": "/sources/bridgeport-zoning.pdf",
+        "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+        "title": "\"Zone Bridgeport\" form-based code (amended July 2022)",
+        "content_hash": "7607b979812edb9e8fea2c3e6ba6dee542f00ee5aeadecfec32d6293c3a10917",
+        "mirrored_size_bytes": 10607765
+      },
+      "cite": "full-text search, §4.70 Accessory Uses reviewed",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "OH zone (tied to Ch. 12.32 local historic districts)",
+      "label": "Historic overlay",
+      "value": "Requires Certificate of Appropriateness for alteration/demolition within OH zone",
+      "source": {
+        "kind": "pdf",
+        "id": "bridgeport-pdf",
+        "file": "/sources/bridgeport-zoning.pdf",
+        "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+        "title": "\"Zone Bridgeport\" form-based code (amended July 2022)",
+        "content_hash": "7607b979812edb9e8fea2c3e6ba6dee542f00ee5aeadecfec32d6293c3a10917",
+        "mirrored_size_bytes": 10607765
+      },
+      "cite": "§2.50.3",
+      "quote": "a building or structure located within an OH zone may not be erected, altered, demolished, or removed and no area within an OH zone may be used for industrial, commercial, business, home industry or occupational parking until a certificate of appropriateness has been issued for such activity by the historic district commission."
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Demolition delay",
+      "value": "Up to 90 days for qualifying structures, referred to City Historian",
+      "source": {
+        "kind": "link",
+        "id": "bridgeport-demo-link",
+        "url": "https://bridgeportct.gov/sites/default/files/2023-03/Bldg_20230301_Demolition_Delay_Form.pdf",
+        "title": "City of Bridgeport, Demolition Delay Determination of Applicability form"
+      },
+      "cite": "Municipal Code Ch. 15-36 §15.26.020 (via city form)",
+      "quote": "This property is subject to Demolition Delay Ordinance and is referred to City Historian for further action."
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Coastal Site Plan review (§11.80)",
+      "label": "Coastal/flood overlay",
+      "value": "Applies — Long Island Sound frontage, CT Coastal Management Act review",
+      "source": {
+        "kind": "pdf",
+        "id": "bridgeport-pdf",
+        "file": "/sources/bridgeport-zoning.pdf",
+        "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+        "title": "\"Zone Bridgeport\" form-based code (amended July 2022)",
+        "content_hash": "7607b979812edb9e8fea2c3e6ba6dee542f00ee5aeadecfec32d6293c3a10917",
+        "mirrored_size_bytes": 10607765
+      },
+      "cite": "§11.80.1-2",
+      "quote": "Coastal site plan review and approval is required for all non-exempt activities and projects on sites located wholly or partially within the"
     }
   ],
   "nza_metrics": [

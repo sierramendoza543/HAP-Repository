@@ -22,7 +22,8 @@ export type VariableCategory =
   | "Dimensional Standards"
   | "ADU Policy"
   | "Parking"
-  | "Approval Process";
+  | "Approval Process"
+  | "Overlays & Affordability";
 
 export interface Variable {
   category: VariableCategory;

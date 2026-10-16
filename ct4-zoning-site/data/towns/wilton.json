@@ -149,6 +149,76 @@
       },
       "cite": "§29-8.B.5.a(1)",
       "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Min. unit size",
+      "value": "Not found — regulations PDF blocked by bot-detection during this research pass",
+      "source": {
+        "kind": "link",
+        "id": "wilton-link",
+        "url": "https://www.wiltonct.gov/planning-zoning-department/files/regulations-document-october-7",
+        "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
+      },
+      "cite": "wiltonct.gov regs PDF — not retrieved",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "4 overlay zones only (CRA-10, THRD, HODD, DE-5R)",
+      "label": "Inclusionary zoning",
+      "value": "10% (CRA-10, DE-5R) to 30% (HODD) affordable, confined to overlay zones — no town-wide mandate. A broader 30% proposal was circulating as of June 2026, adoption unconfirmed",
+      "source": {
+        "kind": "link",
+        "id": "wilton-link",
+        "url": "https://www.wiltonct.gov/planning-zoning-department/files/regulations-document-october-7",
+        "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
+      },
+      "cite": "zoning regs — secondary-sourced from P&Z meeting minutes",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Historic District & Historic Property Commission",
+      "label": "Historic overlay",
+      "value": "Commission's demolition-review authority applies town-wide, not limited to a mapped district; boundaries of any mapped district not independently confirmed",
+      "source": {
+        "kind": "link",
+        "id": "wilton-link",
+        "url": "https://www.wiltonct.gov/planning-zoning-department/files/regulations-document-october-7",
+        "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
+      },
+      "cite": "zoning code — not independently retrieved",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Demolition delay",
+      "value": "Up to 90 days for structures >50 years old and >500 sq ft, regardless of historic-district location",
+      "source": {
+        "kind": "link",
+        "id": "wilton-demo-link",
+        "url": "https://www.wiltonct.gov/historic-district-historic-property-commission/pages/demolition-delay",
+        "title": "Town of Wilton, Ordinance Concerning Stay of Demolition of Historic Buildings"
+      },
+      "cite": "demolition delay ordinance",
+      "quote": "The Historic District and Historic Properties Commission reviews requests for demolition of any structures or part thereof larger than 500 square feet and over 50 years of age, whether or not they are located in an Historic District."
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "None — inland town",
+      "label": "Coastal/flood overlay",
+      "value": "No coastal boundary; flood provisions exist as a general regulation (§29-9.F), not a distinct overlay zone",
+      "source": {
+        "kind": "link",
+        "id": "wilton-link",
+        "url": "https://www.wiltonct.gov/planning-zoning-department/files/regulations-document-october-7",
+        "title": "Wilton Zoning Regulations (last revised Sept. 2026)"
+      },
+      "cite": "§29-9.F — text not retrieved, PDF blocked",
+      "quote": null
     }
   ],
   "nza_metrics": [

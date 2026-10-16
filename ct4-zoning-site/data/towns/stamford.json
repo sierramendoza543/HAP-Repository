@@ -315,6 +315,91 @@
       },
       "cite": "§12.D.2, Table 12.7",
       "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "C-G/C-C mixed-use",
+      "label": "Min. unit size",
+      "value": "Min. 500 sq ft of lot area per unit (400 sq ft by Special Permit) — a lot-area, not floor-area, minimum",
+      "source": {
+        "kind": "pdf",
+        "id": "stamford-pdf",
+        "file": "/sources/stamford-zoning.pdf",
+        "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+        "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+        "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
+        "mirrored_size_bytes": 3727499
+      },
+      "cite": "Zoning Regs (section number unconfirmed — live site blocked automated access)",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide (varies by district)",
+      "label": "Inclusionary zoning",
+      "value": "Reported 3–12% set-aside depending on district; a 2024 proposal to raise this is unconfirmed as adopted",
+      "source": {
+        "kind": "pdf",
+        "id": "stamford-pdf",
+        "file": "/sources/stamford-zoning.pdf",
+        "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+        "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+        "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
+        "mirrored_size_bytes": 3727499
+      },
+      "cite": "§7 (formerly §7.4), BMR Regulations — live site blocked automated access, secondary-sourced",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Cultural Resources Inventory (CRI) model, not a mapped district",
+      "label": "Historic overlay",
+      "value": "Listed buildings get zoning relief in exchange for facade preservation, administered by HPAC",
+      "source": {
+        "kind": "pdf",
+        "id": "stamford-pdf",
+        "file": "/sources/stamford-zoning.pdf",
+        "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+        "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+        "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
+        "mirrored_size_bytes": 3727499
+      },
+      "cite": "§7.3 — secondary-sourced, live site blocked",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Demolition delay",
+      "value": "Chapter 88; notice-to-deadline gaps of roughly 20–21 days observed in published legal notices, exact statutory period unconfirmed",
+      "source": {
+        "kind": "pdf",
+        "id": "stamford-pdf",
+        "file": "/sources/stamford-zoning.pdf",
+        "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+        "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+        "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
+        "mirrored_size_bytes": 3727499
+      },
+      "cite": "Code of Ordinances Ch. 88 — not independently retrieved",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Coastal Area Management provisions",
+      "label": "Coastal/flood overlay",
+      "value": "Applies — Long Island Sound frontage; a proposed Coastal Resilience Overlay (CRO) Zone requiring +3 ft above base flood elevation is reported but adoption status unconfirmed",
+      "source": {
+        "kind": "pdf",
+        "id": "stamford-pdf",
+        "file": "/sources/stamford-zoning.pdf",
+        "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+        "title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+        "content_hash": "f94b07dfe1b9536a7a32923eca1d0ce88b09d120df048f12ac4e3efe9337c6fa",
+        "mirrored_size_bytes": 3727499
+      },
+      "cite": "Stamford Master Plan Coastal Addendum (1984) / CCMA — secondary-sourced",
+      "quote": null
     }
   ],
   "nza_metrics": [

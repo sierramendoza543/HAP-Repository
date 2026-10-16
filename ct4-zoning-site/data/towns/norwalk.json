@@ -213,6 +213,76 @@
       },
       "cite": "Table 4.3.12.B-1",
       "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Min. unit size",
+      "value": "No zoning-code minimum found; Housing Code (Ch. 59, not zoning) governs habitable room sizes separately",
+      "source": {
+        "kind": "link",
+        "id": "norwalk-ch59-link",
+        "url": "https://ecode360.com/27049991",
+        "title": "Norwalk Code of Ordinances, Chapter 59 (Housing Code)"
+      },
+      "cite": "§59-7 (not independently verified)",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "CBD, SSDD, and ~16 other named zones",
+      "label": "Inclusionary zoning (\"Workforce Housing\")",
+      "value": "10% of units in developments of ≥20 units (≥12 units in CBD/SSDD); up to 20–30% density bonus available",
+      "source": {
+        "kind": "link",
+        "id": "norwalk-workforce-link",
+        "url": "https://ecode360.com/26974593",
+        "title": "§118-1050, Workforce housing regulation (through 6/13/2019)"
+      },
+      "cite": "§118-1050(2)",
+      "quote": "Developments of twenty (20) or more dwelling units shall designate a minimum of ten percent (10%) of the total number of units, rounded up to the nearest whole number, as workforce housing units"
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Norwalk Green Historic District only (not a citywide overlay)",
+      "label": "Historic overlay",
+      "value": "One small mapped district; certificate of appropriateness required for alteration/demolition within it",
+      "source": {
+        "kind": "link",
+        "id": "norwalk-ch56-link",
+        "url": "https://ecode360.com/27049799",
+        "title": "Norwalk Code of Ordinances, Chapter 56 (Historic District)"
+      },
+      "cite": "§56-4.B",
+      "quote": "No building permit for erection of a building or structure or for alteration of an exterior architectural feature within an historic district and no demolition permit for demolition or removal of a building or structure within an historic district shall be issued"
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Demolition delay",
+      "value": "Up to 120 days (2023 rewrite raised the ceiling from the 90-day state default); 90 days specifically within the Norwalk Green Historic District",
+      "source": {
+        "kind": "link",
+        "id": "norwalk-ch55-link",
+        "url": "https://ecode360.com/27049778",
+        "title": "Norwalk Code of Ordinances, Chapter 55 (Demolition Delay, amended 3/28/2023)"
+      },
+      "cite": "§55-5.F",
+      "quote": "In no event shall the issuance of a Demolition permit be delayed for more than 120 days from the date the application is deemed filed."
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Flood Hazard Zone (§118-1100) + Coastal Zone (§118-1110)",
+      "label": "Coastal/flood overlay",
+      "value": "Applies — Long Island Sound frontage; detailed elevation and anchoring standards, public hearing required for larger multifamily near mean high water",
+      "source": {
+        "kind": "link",
+        "id": "norwalk-coastal-link",
+        "url": "https://ecode360.com/26974685",
+        "title": "§118-1110, Coastal Zone (added 2/29/1980)"
+      },
+      "cite": "§118-1110(2)",
+      "quote": "The purpose of this section is to implement the State Coastal Management Act, Chapter 444 of the Connecticut General Statutes."
     }
   ],
   "nza_metrics": [

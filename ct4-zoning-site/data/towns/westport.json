@@ -149,6 +149,76 @@
       },
       "cite": "§34-14.1",
       "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Min. unit size",
+      "value": "Not found as a minimum; only caps located (e.g. ADU ≤800 sq ft, GBD units averaging ≤2,100 sq ft)",
+      "source": {
+        "kind": "link",
+        "id": "westport-link",
+        "url": "https://online.encodeplus.com/regs/westport-ct/",
+        "title": "Westport Zoning Regulations (eff. April 12, 2024)"
+      },
+      "cite": "full-text search, not completed within research budget",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "IHZ (split-zoned lots ≥3 ac.) + R-AHZ/W district",
+      "label": "Inclusionary zoning",
+      "value": "IHZ: ≥20% of floor area deed-restricted affordable. R-AHZ/W: reported 30% affordable/workforce split",
+      "source": {
+        "kind": "link",
+        "id": "westport-link",
+        "url": "https://online.encodeplus.com/regs/westport-ct/",
+        "title": "Westport Zoning Regulations (eff. April 12, 2024)"
+      },
+      "cite": "§39A-18.1 (IHZ); R-AHZ/W section unconfirmed",
+      "quote": "In conjunction with residential units proposed as part of this regulation, at least twenty percent (20%) of the floor area of all residential units shall be deed restricted as affordable"
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "§39 (non-res.), §30 (Historic Design District), §36 (Village District, 2017)",
+      "label": "Historic overlay",
+      "value": "Multi-layered system — the most elaborate of the CT-4 towns researched; section text not independently re-verified",
+      "source": {
+        "kind": "link",
+        "id": "westport-link",
+        "url": "https://online.encodeplus.com/regs/westport-ct/",
+        "title": "Westport Zoning Regulations (eff. April 12, 2024)"
+      },
+      "cite": "§39, §30, §36 — secondary-sourced",
+      "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Demolition delay",
+      "value": "180 days for structures ≥50 years old and ≥500 sq ft (raised from 90 days in 2008)",
+      "source": {
+        "kind": "link",
+        "id": "westport-demo-link",
+        "url": "https://www.westportct.gov/government/appointed-boards-a-z/historic-district-commission/demolition-delay-ordinance",
+        "title": "Town of Westport, Demolition Delay Ordinance"
+      },
+      "cite": "§14-21",
+      "quote": "The Town of Westport has a demolition delay ordinance, §14-21, that provides a 180 day waiting period following the filing of a demolition permit application for buildings 500 sq. ft. or larger and 50 years or older."
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Coastal Area Management, §31-10",
+      "label": "Coastal/flood overlay",
+      "value": "Applies — Long Island Sound frontage; ~3,100 properties in the 100-year flood zone per town staff reports",
+      "source": {
+        "kind": "link",
+        "id": "westport-link",
+        "url": "https://online.encodeplus.com/regs/westport-ct/",
+        "title": "Westport Zoning Regulations (eff. April 12, 2024)"
+      },
+      "cite": "§31-10, §31-11 — secondary-sourced",
+      "quote": null
     }
   ],
   "nza_metrics": [

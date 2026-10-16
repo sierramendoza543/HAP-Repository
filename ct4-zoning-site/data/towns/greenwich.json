@@ -349,6 +349,76 @@
       },
       "cite": "§6-155 (Div. 15, not locally mirrored)",
       "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "R-PHD-SU zone only",
+      "label": "Min. unit size",
+      "value": "450 sq ft (efficiency) / 650 sq ft (1BR) / 850 sq ft (2BR)",
+      "source": {
+        "kind": "link",
+        "id": "greenwich-div6-link",
+        "url": "https://www.greenwichct.gov/DocumentCenter/View/37825/10-PZ-Regs-Division-6-amended-4-24-2013",
+        "title": "Div. 6, Residential-Planned Housing Design-Small Unit Zone"
+      },
+      "cite": "§6-64(c)",
+      "quote": "1 Room-Efficiency 450 sq. ft. ... 1 Bedroom Unit 650 sq. ft. ... 2 Bedroom Unit 850 sq. ft."
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Business zones only (incentive, not mandate)",
+      "label": "Inclusionary zoning",
+      "value": "≥20% of units must be BMR, opt-in density/FAR bonus",
+      "source": {
+        "kind": "link",
+        "id": "greenwich-6110-link",
+        "url": "https://www.greenwichct.gov/DocumentCenter/View/55728/Adopted-BZR-Amendment-Section-6-110-DUs-and-BMR-DUs-in-Business-Zones-5626",
+        "title": "§6-110, Dwelling Units and BMR Units in Business Zones (eff. 5/6/26)"
+      },
+      "cite": "§6-110(b)",
+      "quote": "At least 20% of the total number of units must be BMR Units, divided equally between MID Units and AH Units."
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide (opt-in, parcel-specific)",
+      "label": "Historic overlay",
+      "value": "Voluntary HO zone via zoning map amendment, not a mapped district",
+      "source": {
+        "kind": "link",
+        "id": "greenwich-6109-link",
+        "url": "https://www.greenwichct.gov/DocumentCenter/View/52849/Adopted-BZR-Amendment-Section-6-109-Historic-Overlay-Final-Version",
+        "title": "§6-109, Historic Overlay Zone (eff. 11/25/25)"
+      },
+      "cite": "§6-109",
+      "quote": "The designation of an HO zone requires approval of a zoning map amendment from the Planning and Zoning Commission."
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Demolition delay",
+      "value": "Up to 90 days (45 + 45 if an objection is filed)",
+      "source": {
+        "kind": "link",
+        "id": "greenwich-demo-link",
+        "url": "https://www.greenwichct.gov/2865/Historic-Demolition-Delay",
+        "title": "Town of Greenwich, Historic Demolition Delay"
+      },
+      "cite": "Town permitting page (codified ordinance section not located)",
+      "quote": "is subject to a 45 minimum day waiting period"
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Coastal Overlay Zone",
+      "label": "Coastal/flood overlay",
+      "value": "Applies — Long Island Sound frontage, CT Coastal Management Act review",
+      "source": {
+        "kind": "link",
+        "id": "greenwich-6111-link",
+        "url": "https://www.greenwichct.gov/DocumentCenter/View/57617/DRAFT-Proposed-Amendment-to-Section-6-111-Coastal-Overlay-Zone-and-related-amendments-to-Sections-6-13-6-22-and-6-181-62926",
+        "title": "§6-111, Coastal Overlay Zone (draft 6/29/26)"
+      },
+      "cite": "§6-111",
+      "quote": "A Coastal Overlay Zone is hereby established in accordance with the authorization of Sections 22a-90 to 22a-96 of the General Statutes"
     }
   ],
   "nza_metrics": [

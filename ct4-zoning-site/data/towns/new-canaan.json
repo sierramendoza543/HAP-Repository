@@ -230,6 +230,85 @@
       },
       "cite": "§6.2.C table",
       "quote": null
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Multi-family/elderly special-permit housing",
+      "label": "Min. unit size",
+      "value": "750 sq ft minimum gross floor area/unit (1.5-story type), excluding basement/attic/garage",
+      "source": {
+        "kind": "pdf",
+        "id": "newcanaan-pdf",
+        "file": "/sources/newcanaan-zoning.pdf",
+        "url": "https://cms3.revize.com/revize/newcanaanct/Departments/Land%20Use/Zoning%20Regulations.pdf",
+        "title": "New Canaan Zoning Regulations (amended through May 1, 2023)",
+        "content_hash": "17c2e7dde920961c46fa93287815e5aaad7f7e25934acc95b824573bee40c2b9",
+        "mirrored_size_bytes": 6207095
+      },
+      "cite": "zoning regs (specific housing type, not confirmed town-wide)",
+      "quote": "Minimum gross floor area per unit 750 square feet excluding basements, attic space and garage space"
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Multi-Family Zone, Apartment Zone, Business Zones (≥5 units, public water/sewer)",
+      "label": "Inclusionary zoning",
+      "value": "15% of units must be affordable (≤80% median income), deed-restricted 40 years",
+      "source": {
+        "kind": "pdf",
+        "id": "newcanaan-pdf",
+        "file": "/sources/newcanaan-zoning.pdf",
+        "url": "https://cms3.revize.com/revize/newcanaanct/Departments/Land%20Use/Zoning%20Regulations.pdf",
+        "title": "New Canaan Zoning Regulations (amended through May 1, 2023)",
+        "content_hash": "17c2e7dde920961c46fa93287815e5aaad7f7e25934acc95b824573bee40c2b9",
+        "mirrored_size_bytes": 6207095
+      },
+      "cite": "§7.6.C.3.a",
+      "quote": "Where a project results in the creation of at least five (5) dwelling units, fifteen percent (15%) of the units must be provided as affordable housing, at or below eighty percent (80%) median income, and deed restricted for a minimum of forty (40) years"
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "One mapped district (≈ 21 buildings around God's Acre)",
+      "label": "Historic overlay",
+      "value": "Historic District Commission controls exterior appearance only, not zoning/density/use",
+      "source": {
+        "kind": "link",
+        "id": "newcanaan-ch31-link",
+        "url": "https://ecode360.com/9044801",
+        "title": "New Canaan Code of Ordinances, Ch. 31 (Historic District, adopted 1963)"
+      },
+      "cite": "§31-5",
+      "quote": "No powers of the New Canaan Town Planning and Zoning Commission and the New Canaan Zoning Board of Appeals having to do with the use of land within the Historic District shall be impaired by this ordinance."
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "Town-wide",
+      "label": "Demolition delay",
+      "value": "Up to 90 days for structures >50 years old and ≥500 sq ft",
+      "source": {
+        "kind": "link",
+        "id": "newcanaan-ch12a-link",
+        "url": "https://ecode360.com/9044207",
+        "title": "New Canaan Code of Ordinances, Ch. 12A (Demolition, adopted 2006)"
+      },
+      "cite": "§12A-1",
+      "quote": "The purpose of this ordinance is to authorize the Town of New Canaan, as allowed by § 29-406(b) of the Connecticut General Statutes, to impose a waiting period of not more than 90 days before granting a demolition permit"
+    },
+    {
+      "category": "Overlays & Affordability",
+      "district": "None — inland town",
+      "label": "Coastal/flood overlay",
+      "value": "No coastal boundary; has only a thin, notice-only Floodplain Overlay Zone",
+      "source": {
+        "kind": "pdf",
+        "id": "newcanaan-pdf",
+        "file": "/sources/newcanaan-zoning.pdf",
+        "url": "https://cms3.revize.com/revize/newcanaanct/Departments/Land%20Use/Zoning%20Regulations.pdf",
+        "title": "New Canaan Zoning Regulations (amended through May 1, 2023)",
+        "content_hash": "17c2e7dde920961c46fa93287815e5aaad7f7e25934acc95b824573bee40c2b9",
+        "mirrored_size_bytes": 6207095
+      },
+      "cite": "§5.5",
+      "quote": "The Floodplain Overlay Zone is intended to provide reasonable notice regarding property that may be subject to the effects of flooding."
     }
   ],
   "nza_metrics": [
