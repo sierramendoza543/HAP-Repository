@@ -1,0 +1,23 @@
+{
+  "greenwich_new_packet_count": 6,
+  "bridgeport_new_packet_count": 6,
+  "total_new_packet_count": 12,
+  "greenwich_packet_ids": [
+    "greenwich_ct_U2_followup_001",
+    "greenwich_ct_U2_followup_002",
+    "greenwich_ct_U2_followup_003",
+    "greenwich_ct_U2_followup_004",
+    "greenwich_ct_U2_followup_005",
+    "greenwich_ct_U2_followup_006"
+  ],
+  "bridgeport_packet_ids": [
+    "bridgeport_ct_U2_followup_001",
+    "bridgeport_ct_U2_followup_002",
+    "bridgeport_ct_U2_followup_003",
+    "bridgeport_ct_U2_followup_004",
+    "bridgeport_ct_U2_followup_005",
+    "bridgeport_ct_U2_followup_006"
+  ],
+  "llm_calls_made": 0,
+  "created_at_utc": "20261002T184343Z"
+}

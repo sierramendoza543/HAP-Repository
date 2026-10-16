@@ -1,0 +1,136 @@
+[
+  {
+    "packet_id":"greenwich_ct_L1_007",
+    "municipality":"Greenwich",
+    "state":"CT",
+    "variable_id":"L1",
+    "source_document_filename":"greenwich_ct.pdf",
+    "page_range":"233-234",
+    "matched_search_term":"minimum lot size",
+    "model_provider":"groq",
+    "model_id":"openai\/gpt-oss-20b",
+    "prompt_version":"triage_v1.1",
+    "request_timestamp_utc":"2026-10-02T17:32:14.254317+00:00",
+    "raw_model_response":null,
+    "parsed_triage_response":null,
+    "validation_status":"invalid_structured_output",
+    "validation_issues":[
+      "BadRequestError: Error code: 400 - {'error': {'message': \"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': ''}}"
+    ],
+    "model_send_to_extraction":null,
+    "final_send_to_extraction":null,
+    "routing_override_reason":null,
+    "error_category":"invalid_structured_output"
+  },
+  {
+    "packet_id":"greenwich_ct_L1_010",
+    "municipality":"Greenwich",
+    "state":"CT",
+    "variable_id":"L1",
+    "source_document_filename":"greenwich_ct.pdf",
+    "page_range":"67",
+    "matched_search_term":"minimum lot area",
+    "model_provider":"groq",
+    "model_id":"openai\/gpt-oss-20b",
+    "prompt_version":"triage_v1.1",
+    "request_timestamp_utc":"2026-10-02T17:32:34.232075+00:00",
+    "raw_model_response":null,
+    "parsed_triage_response":null,
+    "validation_status":"invalid_structured_output",
+    "validation_issues":[
+      "BadRequestError: Error code: 400 - {'error': {'message': \"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': ''}}"
+    ],
+    "model_send_to_extraction":null,
+    "final_send_to_extraction":null,
+    "routing_override_reason":null,
+    "error_category":"invalid_structured_output"
+  },
+  {
+    "packet_id":"greenwich_ct_L1_021",
+    "municipality":"Greenwich",
+    "state":"CT",
+    "variable_id":"L1",
+    "source_document_filename":"greenwich_ct.pdf",
+    "page_range":"287",
+    "matched_search_term":"schedule of required open spaces",
+    "model_provider":"groq",
+    "model_id":"openai\/gpt-oss-20b",
+    "prompt_version":"triage_v1.1",
+    "request_timestamp_utc":"2026-10-02T17:32:57.413547+00:00",
+    "raw_model_response":"{\"packet_id\":\"greenwich_ct_L1_021\",\"triage_class\":\"IRRELEVANT\",\"target_variable_relevance\":\"none\",\"likely_governing_rule\":false,\"send_to_extraction\":false,\"districts_or_building_types_mentioned\":[\"R-6 Multi-Family\",\"RMF Zones\",\"Business Zones\",\"Hospital Zones\"],\"numeric_standard_present\":false,\"permission_pathway_present\":false,\"table_or_schedule_present\":false,\"footnote_or_exception_present\":false,\"cross_reference_present\":true,\"short_reason\":\"The text contains only definitions and frontage\/coverage references, without a numeric minimum lot area requirement.\",\"follow_up_needed\":false,\"follow_up_reason\":null,\"source_quote_for_triage\":\"6-5 (35) Definitions - Lot Coverage Revised to Require Minimum Lot 5\/17\/2000 Frontage Dimension to Continue on Diminished to Depth of Required Front Yard Setback\",\"triage_confidence\":0.9}",
+    "parsed_triage_response":{
+      "packet_id":"greenwich_ct_L1_021",
+      "triage_class":"IRRELEVANT",
+      "target_variable_relevance":"none",
+      "likely_governing_rule":false,
+      "send_to_extraction":false,
+      "districts_or_building_types_mentioned":[
+        "R-6 Multi-Family",
+        "RMF Zones",
+        "Business Zones",
+        "Hospital Zones"
+      ],
+      "numeric_standard_present":false,
+      "permission_pathway_present":false,
+      "table_or_schedule_present":false,
+      "footnote_or_exception_present":false,
+      "cross_reference_present":true,
+      "short_reason":"The text contains only definitions and frontage\/coverage references, without a numeric minimum lot area requirement.",
+      "follow_up_needed":false,
+      "follow_up_reason":null,
+      "source_quote_for_triage":"6-5 (35) Definitions - Lot Coverage Revised to Require Minimum Lot 5\/17\/2000 Frontage Dimension to Continue on Diminished to Depth of Required Front Yard Setback",
+      "triage_confidence":0.9
+    },
+    "validation_status":"completed",
+    "validation_issues":[
+
+    ],
+    "model_send_to_extraction":false,
+    "final_send_to_extraction":false,
+    "routing_override_reason":null,
+    "error_category":null
+  },
+  {
+    "packet_id":"greenwich_ct_U2_001",
+    "municipality":"Greenwich",
+    "state":"CT",
+    "variable_id":"U2",
+    "source_document_filename":"greenwich_ct.pdf",
+    "page_range":"13",
+    "matched_search_term":"two-family",
+    "model_provider":"groq",
+    "model_id":"openai\/gpt-oss-20b",
+    "prompt_version":"triage_v1.1",
+    "request_timestamp_utc":"2026-10-02T17:33:27.994931+00:00",
+    "raw_model_response":"{\"packet_id\":\"greenwich_ct_U2_001\",\"triage_class\":\"GOVERNING_PERMISSION_RULE\",\"target_variable_relevance\":\"direct\",\"likely_governing_rule\":true,\"send_to_extraction\":true,\"districts_or_building_types_mentioned\":[\"R-6\",\"Single and Two-family Residence\"],\"numeric_standard_present\":true,\"permission_pathway_present\":true,\"table_or_schedule_present\":false,\"footnote_or_exception_present\":false,\"cross_reference_present\":false,\"short_reason\":\"The zoning code lists R-6 as \\\"Single and Two-family Residence\\\", indicating two-family housing is permitted.\",\"follow_up_needed\":false,\"follow_up_reason\":null,\"source_quote_for_triage\":\"R-6. Single and Two-family Residence 7,500 square feet; Multi-family\",\"triage_confidence\":0.95}",
+    "parsed_triage_response":{
+      "packet_id":"greenwich_ct_U2_001",
+      "triage_class":"GOVERNING_PERMISSION_RULE",
+      "target_variable_relevance":"direct",
+      "likely_governing_rule":true,
+      "send_to_extraction":true,
+      "districts_or_building_types_mentioned":[
+        "R-6",
+        "Single and Two-family Residence"
+      ],
+      "numeric_standard_present":true,
+      "permission_pathway_present":true,
+      "table_or_schedule_present":false,
+      "footnote_or_exception_present":false,
+      "cross_reference_present":false,
+      "short_reason":"The zoning code lists R-6 as \"Single and Two-family Residence\", indicating two-family housing is permitted.",
+      "follow_up_needed":false,
+      "follow_up_reason":null,
+      "source_quote_for_triage":"R-6. Single and Two-family Residence 7,500 square feet; Multi-family",
+      "triage_confidence":0.95
+    },
+    "validation_status":"completed",
+    "validation_issues":[
+
+    ],
+    "model_send_to_extraction":true,
+    "final_send_to_extraction":true,
+    "routing_override_reason":null,
+    "error_category":null
+  }
+]

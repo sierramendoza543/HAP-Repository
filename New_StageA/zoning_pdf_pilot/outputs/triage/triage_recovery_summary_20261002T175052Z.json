@@ -1,0 +1,24 @@
+{
+  "diagnostic_packet": "greenwich_ct_L1_007",
+  "diagnostic_outcome": "DIAGNOSTIC_PASS",
+  "selected_packet_count": 8,
+  "attempted_packet_count": 8,
+  "completed_packet_count": 6,
+  "api_error_count": 0,
+  "empty_completion_count": 0,
+  "non_json_completion_count": 0,
+  "schema_validation_failure_count": 2,
+  "quote_containment_failure_count": 2,
+  "final_send_to_extraction_true_count": 3,
+  "counts_by_municipality_variable": {
+    "Greenwich L1": 2,
+    "Greenwich U2": 2,
+    "Bridgeport L1": 2,
+    "Bridgeport U2": 2
+  },
+  "model_id": "openai/gpt-oss-20b",
+  "prompt_version": "triage_recovery_v1",
+  "run_started_at_utc": "2026-10-02T17:50:52.253723+00:00",
+  "run_finished_at_utc": "2026-10-02T17:54:01.361457+00:00",
+  "stage_status": "PARTIAL"
+}

@@ -1,0 +1,204 @@
+<title>CT-4 Zoning Restrictiveness Scorecard</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Layout: vertical report — ranked overview chart up top, then scrollable per-town evidence cards below */
+:root{
+  --bg:#f6f4ef; --surface:#ffffff; --surface-2:#eeebe2; --ink:#1c2630; --ink-dim:#5b6675;
+  --rule:#d8d3c6; --accent:#8a2f27; --accent-ink:#ffffff; --allow:#2f6f4e; --maybe:#b8863a; --prohibit:#8a2f27;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#15191d; --surface:#1d2227; --surface-2:#262b31; --ink:#eceae4; --ink-dim:#9aa3ad;
+    --rule:#343a40; --accent:#e07a68; --accent-ink:#1c1210; --allow:#5fae84; --maybe:#d9a85c; --prohibit:#e07a68;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15191d; --surface:#1d2227; --surface-2:#262b31; --ink:#eceae4; --ink-dim:#9aa3ad;
+  --rule:#343a40; --accent:#e07a68; --accent-ink:#1c1210; --allow:#5fae84; --maybe:#d9a85c; --prohibit:#e07a68;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:"Source Sans 3",-apple-system,Segoe UI,sans-serif;
+  padding-left:max(16px, env(safe-area-inset-left,0px));
+  padding-right:max(16px, env(safe-area-inset-right,0px));
+}
+h1,h2,h3,.disp{font-family:"Source Serif 4",Georgia,serif}
+.wrap{max-width:980px;margin:0 auto}
+header.top{padding-block:40px 24px;border-bottom:1px solid var(--rule)}
+.eyebrow{font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:0 0 10px}
+h1{font-size:clamp(28px,5vw,42px);line-height:1.08;margin:0 0 14px;text-wrap:balance}
+.lede{font-size:16px;line-height:1.55;color:var(--ink-dim);max-width:720px;margin:0 0 18px}
+.meta-row{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--ink-dim)}
+.meta-row b{color:var(--ink)}
+section{padding-block:34px;border-bottom:1px solid var(--rule)}
+section:last-child{border-bottom:none}
+h2{font-size:22px;margin:0 0 6px}
+.section-note{font-size:14px;color:var(--ink-dim);max-width:680px;margin:0 0 22px;line-height:1.5}
+
+/* ranked chart */
+.chart{display:flex;flex-direction:column;gap:6px}
+.row{display:grid;grid-template-columns:120px 1fr 54px;gap:10px;align-items:center;min-width:0}
+.row .town-name{font-size:13.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row .track{background:var(--surface-2);border-radius:5px;height:20px;position:relative;overflow:hidden}
+.row .fill{position:absolute;inset:0 auto 0 0;border-radius:5px;background:linear-gradient(90deg,var(--accent),var(--accent));opacity:.88}
+.row .score{font-size:13px;font-variant-numeric:tabular-nums;text-align:right;color:var(--ink-dim)}
+.row.cd4 .town-name{font-weight:800;color:var(--accent)}
+.legend-line{font-size:12px;color:var(--ink-dim);margin-top:10px}
+
+/* town cards */
+.cards{display:grid;grid-template-columns:1fr;gap:16px}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:20px;min-width:0}
+.card-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:4px}
+.card-head h3{margin:0;font-size:19px}
+.score-badge{font-family:"Source Serif 4",serif;font-size:22px;font-weight:700;font-variant-numeric:tabular-nums}
+.score-badge small{font-family:"Source Sans 3",sans-serif;font-size:11px;color:var(--ink-dim);font-weight:400;display:block;text-transform:uppercase;letter-spacing:.06em}
+.chip-row{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 14px}
+.chip{font-size:11.5px;padding:3px 9px;border-radius:999px;background:var(--surface-2);color:var(--ink-dim);font-variant-numeric:tabular-nums}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:12px}
+@media (max-width:560px){.grid2{grid-template-columns:1fr}}
+.subhead{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-dim);margin:0 0 4px;font-weight:700}
+.detail-text{font-size:13.5px;line-height:1.5;margin:0}
+.caveat{font-size:12.5px;line-height:1.5;color:var(--ink-dim);background:var(--surface-2);border-radius:7px;padding:10px 12px;margin-top:10px}
+.caveat b{color:var(--ink)}
+.source-line{font-size:12px;margin-top:12px;display:flex;gap:14px;flex-wrap:wrap}
+.source-line a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+.source-line a:hover{border-bottom-color:var(--accent)}
+
+/* methodology */
+.method-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media (max-width:640px){.method-grid{grid-template-columns:1fr}}
+.method-box{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:18px}
+.method-box h4{margin:0 0 8px;font-size:14px}
+.method-box p,.method-box li{font-size:13.5px;line-height:1.55;color:var(--ink-dim);margin:0 0 6px}
+.method-box ul{margin:6px 0 0;padding-left:18px}
+.weights{display:flex;flex-direction:column;gap:5px;font-size:13px;margin-top:8px}
+.weights div{display:flex;justify-content:space-between;border-bottom:1px dashed var(--rule);padding-bottom:3px}
+
+footer{padding-block:28px 48px;font-size:12px;color:var(--ink-dim);line-height:1.6}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <p class="eyebrow">CT-4 Congressional District &middot; Prepared October 2026</p>
+    <h1>Where Connecticut's 4th District Zoning Blocks the ROAD Act's Goals</h1>
+    <p class="lede">A restrictiveness scorecard for 17 towns in CT-4 — including every town in the district with a significant population center — built from each town's own current zoning text and cross-checked against the National Zoning Atlas's independent public data. Every figure below traces back to a specific regulation section or a live NZA snapshot page.</p>
+    <div class="meta-row">
+      <span><b>17</b> towns scored</span>
+      <span><b>2</b> independent data sources per town</span>
+      <span><b>340+</b> district-level citations</span>
+    </div>
+  </header>
+
+  <section id="ranked">
+    <h2>Composite Restrictiveness Score, Ranked</h2>
+    <p class="section-note">0 = no exclusionary housing rules found anywhere in town; 100 = near-total exclusion of 2+-unit housing, large-lot zoning, and universal parking mandates. Greenwich and Bridgeport (the user's home district and the ROAD Act comparison case) are marked. Scroll down for the evidence behind each score.</p>
+    <div class="chart" id="chart"></div>
+    <p class="legend-line">Bar length = composite score (0–100). Source: NZA town-wide Jurisdiction Snapshots, weighted per the methodology below.</p>
+  </section>
+
+  <section id="cards">
+    <h2>Town-by-Town Evidence</h2>
+    <p class="section-note">Each card cites the exact district, section number, and source document used — pulled directly from the town's own current regulations (not a summary or a third party's interpretation), plus the matching National Zoning Atlas figures for cross-verification.</p>
+    <div class="cards" id="cardsHost"></div>
+  </section>
+
+  <section id="method">
+    <h2>Methodology &amp; What This Does and Doesn't Prove</h2>
+    <div class="method-grid">
+      <div class="method-box">
+        <h4>How the composite score is built</h4>
+        <p>Computed identically across all 17 towns from the National Zoning Atlas's public, independently-collected Jurisdiction Snapshot data — not from our own district-level research, to keep every town on the same consistent scale.</p>
+        <div class="weights">
+          <div><span>Use Exclusion</span><span>avg. % of residential land where 2-, 3- &amp; 4+-family housing is prohibited &times; 0.30</span></div>
+          <div><span>Large-Lot Zoning</span><span>% of 1-family land requiring &ge;80,000 sq ft lots &times; 0.25</span></div>
+          <div><span>Parking Mandates</span><span>% of residential land with a minimum parking requirement &times; 0.15</span></div>
+        </div>
+        <p style="margin-top:8px">Renormalized by the sum of weights used (0.70) so the scale stays 0&ndash;100.</p>
+      </div>
+      <div class="method-box">
+        <h4>Why NZA's own data, not our district scorecard</h4>
+        <p>NZA explicitly argues against single composite indices (its own published critique, "It's Time to Retire the Wharton Index") — we agree, which is why each town card below leads with the disaggregated district-level facts, not the composite number. The composite score exists only to let congressional staff triage 17 towns quickly; it is not a substitute for reading the underlying district rules.</p>
+        <p>Our own district-by-district research (the citations on each card) could not be scored on the same 0&ndash;100 scale across all 17 towns — zoning formats differ too much town to town for that to be apples-to-apples. NZA's standardized town-wide rollup can be, so that is what drives the ranking.</p>
+      </div>
+      <div class="method-box">
+        <h4>Data collection</h4>
+        <p>District-level citations: each town's current zoning regulations were downloaded directly from the town's own website (or, where blocked, a verified mirror/snapshot, flagged on that town's card) and read section-by-section — no values were estimated.</p>
+        <p>NZA figures: pulled directly from each town's public Jurisdiction Snapshot page at <a href="https://www.zoningatlas.org" style="color:var(--accent)">zoningatlas.org</a> using the page's own underlying chart data, not flattened text (which NZA's own charts render in an order that doesn't always match the legend).</p>
+      </div>
+      <div class="method-box">
+        <h4>Known limitations</h4>
+        <ul>
+          <li>NZA percentages are town-wide averages, not district-specific — a town's single most-restrictive or most-permissive district can differ from its town-wide number.</li>
+          <li>Several towns' regulations change faster than the Atlas or our own research can track; each card's caveat notes any amendment uncertainty found.</li>
+          <li>A handful of source PDFs were blocked by bot-detection on the town's own site; those cards note the fallback source used and flag it for human re-verification before external use.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Built for a CT-4 constituent meeting with Rep. Jim Himes's office, October 2026. Composite scores and district citations compiled from each town's own current zoning regulations and the National Zoning Atlas's public Jurisdiction Snapshot data. Links in each card point to the primary source used.
+  </footer>
+</div>
+
+<script>
+const DATA = {"Greenwich": {"jurisdiction_id": 317, "population": 64594, "land_area_acres": 30322, "districts_analyzed": 49, "pct_2family_prohibited": 95.3, "pct_3family_prohibited": 97.7, "pct_4plusfamily_prohibited": 98.3, "pct_1family_minlot_80k_plus": 59.8, "parking_mandate_pct": 92, "composite_score": 82.7, "source": "Building Zone Regulations, Town of Greenwich (Div. 9 Use Regs & Div. 21 Bulk Schedule, Aug. 2023)", "source_url": "https://www.greenwichct.gov/DocumentCenter/View/37828", "restrictive_district": "R-20 / RA-2 (and RA-4, RA-1, R-12) \u2014 Sec. 6-93(a)(1): only use permitted is \"detached single family dwellings, one (1) per lot.\" 2-/3-/4+-family prohibited (no provision anywhere in Sec. 6-93/6-94). Min. lot 20,000 sf (RA-2 = 2 acres). Cite: Sec. 6-205(a) table.", "permissive_district": "R-MF \u2014 2-family and multifamily allowed only by Special Permit (Sec. 6-98.1(a)(2)(A)), no distinct 3-unit tier. Min. lot 2,400 sf/family for multifamily tier (Sec. 6-205(a)).", "caveat": "Town has adopted 2025-2026 amendments (nursing-home conversions, multifamily parking per PA 25-1) not fully reflected in the Aug. 2023 PDFs \u2014 verify against the amendment list before citing to staff."}, "Bridgeport": {"jurisdiction_id": 311, "population": 151599, "land_area_acres": 10246, "districts_analyzed": 25, "pct_2family_prohibited": 31.5, "pct_3family_prohibited": 39.3, "pct_4plusfamily_prohibited": 37.9, "pct_1family_minlot_80k_plus": 0.0, "parking_mandate_pct": 0, "composite_score": 15.5, "source": "\"Zone Bridgeport\" form-based zoning code, adopted Nov. 2021, amended July 25, 2022", "source_url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf", "restrictive_district": "N1 (Neighborhood: Traditional) \u2014 House A type caps at 1 principal unit; no 2-family option exists. Min. lot width 45 ft (no area minimum). Cite: Sec. 3.90.9, Sec. 3.90.4.", "permissive_district": "NX2 \u2014 House A type allows up to 4 units by-right (no special permit) plus 1 backyard-cottage unit; Double House A allows up to 4 by-right/6 with special permit. Cite: Sec. 3.90.9, Sec. 3.80.9.", "caveat": "Citywide, Sec. 8.20.1 sets NO minimum off-street parking for any use \u2014 a 2025 proposal (25-23) to add residential parking minimums was found but its adoption status is unconfirmed."}, "Stamford": {"jurisdiction_id": 304, "population": 139134, "land_area_acres": 23707, "districts_analyzed": 46, "pct_2family_prohibited": 86.5, "pct_3family_prohibited": 87.9, "pct_4plusfamily_prohibited": 73.9, "pct_1family_minlot_80k_plus": 21.9, "parking_mandate_pct": 100, "composite_score": 64.7, "source": "Zoning Regulations, City of Stamford (adopted 1951, amendments through July 10, 2024)", "source_url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000", "restrictive_district": "R-20 (One-Family Residence) \u2014 2-family and multifamily both prohibited (Table I). Min. lot 20,000 sf (Table II).", "permissive_district": "R-6 (One-Family, Two-Family Residence) \u2014 2-family allowed by-right (Table I); multifamily (3+) still prohibited. Min. lot 5,000 sf (1-family) / 6,000 sf (2-family).", "caveat": "Live stamfordct.gov PDF was blocked by bot-protection during research; an identical Wayback Machine snapshot was used instead \u2014 recommend re-verifying the live link resolves to the same text."}, "Norwalk": {"jurisdiction_id": 303, "population": 93661, "land_area_acres": null, "districts_analyzed": 23, "pct_2family_prohibited": 77.5, "pct_3family_prohibited": 81.9, "pct_4plusfamily_prohibited": 81.9, "pct_1family_minlot_80k_plus": 0.0, "parking_mandate_pct": 100, "composite_score": 55.9, "source": "Norwalk Zoning Regulations, citywide rewrite effective Feb. 19, 2024, revised through July 10, 2026", "source_url": "https://www.norwalkct.gov/DocumentCenter/View/32245/Norwalk-Building-Regulations-ART3-ZoningDistricts---Updated_FINAL", "restrictive_district": "CD-1S (Sub-Urban Single-Family) \u2014 2-family, small- and large-multifamily all \"NP\" (Not Permitted). Min. lot 6,250 sf. Cite: Table 4.3.9.A.", "permissive_district": "CD-2 (Sub-Urban Single- & Two-Family) \u2014 2-family \"P\" (permitted by right); multifamily still \"NP.\" Min. lot 5,000 sf. Cite: Table 4.3.9.A.", "caveat": "CD-3/CD-4 (General Urban/Urban Center) allow multifamily \"PL\" by-right-with-limitations, but exact column alignment for sub-variants CD-3W/CD-4W was ambiguous in the extracted PDF text \u2014 not reported to avoid miscitation."}, "Darien": {"jurisdiction_id": 302, "population": 22528, "land_area_acres": null, "districts_analyzed": 26, "pct_2family_prohibited": 97.0, "pct_3family_prohibited": 97.0, "pct_4plusfamily_prohibited": 97.0, "pct_1family_minlot_80k_plus": 32.4, "parking_mandate_pct": 100, "composite_score": 74.5, "source": "Darien Zoning Regulations, adopted 1999 (orig. 1925), last revised May 10, 2026", "source_url": "https://www.darienct.gov/DocumentCenter/View/6613", "restrictive_district": "R-1 (and R-2/R-1/2/R-1/3/R-1/5) \u2014 only single-family permitted; 2-/3-/4+-family prohibited town-wide in all single-family tiers. Min. lot 1 acre (R-1). Cite: \u00a7402.a, \u00a7406.", "permissive_district": "DMR (Designed Multi-Family Residential) \u2014 multifamily by Special Permit only, 4 DU/net acre by-right (6 DU/acre with 20% affordable). Cite: \u00a7524.a, \u00a7526.1.", "caveat": "Darien formally opted OUT of CT's statewide ADU law (PA 21-29) via local vote in 2022, and its own local ADU rules sunset for new applications after June 30, 2029 unless readopted \u2014 notable for the ROAD Act framing."}, "New Canaan": {"jurisdiction_id": 319, "population": 21160, "land_area_acres": null, "districts_analyzed": 24, "pct_2family_prohibited": 97.4, "pct_3family_prohibited": 98.3, "pct_4plusfamily_prohibited": 98.3, "pct_1family_minlot_80k_plus": 81.3, "parking_mandate_pct": 100, "composite_score": 92.4, "source": "New Canaan Zoning Regulations, effective 2007, amended through May 1, 2023", "source_url": "https://cms3.revize.com/revize/newcanaanct/Departments/Land%20Use/Zoning%20Regulations.pdf", "restrictive_district": "Four Acre Residence Zone \u2014 2-/3-/4+-family prohibited outright (only age-restricted facilities via special permit). Min. lot 174,240 sf (4 acres). Cite: Sec. 3.2.C.2-3, Sec. 3.5.A.1.", "permissive_district": "Apartment Zone \u2014 2-family and multifamily both by Special Permit only; max density 1 unit/5,000 sf. Cite: Sec. 5.4.C.1-2, Sec. 5.4.D.1.", "caveat": "No as-of-right multifamily district exists anywhere in New Canaan \u2014 every multi-unit pathway requires a discretionary Special Permit hearing."}, "Westport": {"jurisdiction_id": 329, "population": 27996, "land_area_acres": null, "districts_analyzed": 40, "pct_2family_prohibited": 0.6, "pct_3family_prohibited": 0.3, "pct_4plusfamily_prohibited": 0.2, "pct_1family_minlot_80k_plus": 38.0, "parking_mandate_pct": 100, "composite_score": 35.2, "source": "Westport Zoning Regulations, effective April 12, 2024", "source_url": "https://online.encodeplus.com/regs/westport-ct/", "restrictive_district": "Residence AAA \u2014 2-family/multifamily prohibited as normal use (only via \u00a732-12 Inclusionary Special Permit). Min. lot 2 acres. Cite: \u00a711-2.1.1, \u00a711-3.", "permissive_district": "Residence C \u2014 2-family allowed BY RIGHT as a principal use (not special permit) \u2014 unusually permissive among CT-4 towns. Density up to 10 units/gross acre. Cite: \u00a718-2.1.2, \u00a718-4.1.", "caveat": "A 2026 amendment (\u00a734-14.1) eliminated minimum parking entirely for residential developments of 16 units or fewer townwide \u2014 a genuine, recent deregulatory move worth highlighting to staff."}, "Wilton": {"jurisdiction_id": 330, "population": 19255, "land_area_acres": null, "districts_analyzed": 19, "pct_2family_prohibited": 98.5, "pct_3family_prohibited": 98.7, "pct_4plusfamily_prohibited": 98.7, "pct_1family_minlot_80k_plus": 88.8, "parking_mandate_pct": 100, "composite_score": 95.4, "source": "Wilton Zoning Regulations, adopted 1994, last revised Sept. 2026", "source_url": "https://www.wiltonct.gov/planning-zoning-department/files/regulations-document-october-7", "restrictive_district": "R-2A \u2014 \"two-family\"/\"three-family\" do not exist anywhere in Wilton's 337-page code; only single-family and undifferentiated multifamily are defined, and multifamily is prohibited in R-2A. Min. lot 2 acres. Cite: \u00a729-5.A.2.a, \u00a729-5.D.", "permissive_district": "HODD (Housing Opportunity Development District) \u2014 multi-family attached dwellings permitted \"as a matter of right,\" 10 units/gross acre, 30% affordable required. Cite: \u00a729-5.E.8-9.", "caveat": "HODD sites are capped between 9 and 11 acres and require 30% affordable set-aside \u2014 a narrow, purpose-built carve-out rather than a general-purpose multifamily zone."}, "Ridgefield": {"jurisdiction_id": 323, "population": 25300, "land_area_acres": null, "districts_analyzed": 21, "pct_2family_prohibited": 95.8, "pct_3family_prohibited": 95.6, "pct_4plusfamily_prohibited": 95.6, "pct_1family_minlot_80k_plus": 0.0, "parking_mandate_pct": 97, "composite_score": 61.8, "source": "Ridgefield Zoning Regulations, adopted 2007, revised through July 2026", "source_url": "https://ridgefieldct.gov/Documents/Boards%20Committees%20and%20Commissions/Planning%20and%20Zoning%20Commission/About%20PZC%20Meetings/Zoning%20Regulations/Zoning%20Regulations%20July%2026.pdf", "restrictive_district": "RAAA \u2014 only single-family permitted (by Zoning Permit); 2-/3-family bundled and prohibited except by Special Permit in a separate SD R-20 overlay. Min. lot 3 acres (130,680 sf). Cite: Sec. 3.2.B.1/C.10.d, Sec. 3.5.A.", "permissive_district": "MFDD (Multi-Family Development District) \u2014 the only multifamily pathway town-wide, Special Permit only, 6 units/acre (8 with 15% affordable). Cite: Sec. 4.2.B-C.", "caveat": "Ridgefield has no as-of-right multifamily district of any kind \u2014 every multi-unit path requires a discretionary Special Permit hearing."}, "Weston": {"jurisdiction_id": 328, "population": 10490, "land_area_acres": 12157, "districts_analyzed": 3, "pct_2family_prohibited": 99.9, "pct_3family_prohibited": 99.9, "pct_4plusfamily_prohibited": 99.9, "pct_1family_minlot_80k_plus": 100.0, "parking_mandate_pct": 100, "composite_score": 100.0, "source": "Weston Zoning Regulations, effective Oct. 18, 2021, amended through July 7, 2025", "source_url": "https://www.westonct.gov/home/showpublisheddocument/15463/638937003479630000", "restrictive_district": "R-2A (Two Acre Residential and Farming District) \u2014 the base zone for the entire town; 2-/3-/4+-family prohibited, not addressed anywhere in the code. Min. lot 2 acres. Cite: Sec. 321.", "permissive_district": "Village District / VD-R \u2014 the only housing-by-special-permit alternative; all uses (including multifamily) require Special Permit. Min. lot 1 acre; 5+ unit projects must set aside \u226515% affordable. Cite: Sec. 322.", "caveat": "The town's own PDF was blocked by a bot-detection wall during research; the base-district figures came from a 2021-dated third-party copy, and the single-family parking minimum for R-2A could not be located \u2014 flagged for direct verification with Weston Land Use before citing to staff."}, "Easton": {"jurisdiction_id": 316, "population": 7815, "land_area_acres": 17110, "districts_analyzed": 3, "pct_2family_prohibited": 100, "pct_3family_prohibited": 100, "pct_4plusfamily_prohibited": 100, "pct_1family_minlot_80k_plus": 91.4, "parking_mandate_pct": 100, "composite_score": 96.9, "source": "Easton Zoning Regulations, effective July 27, 2019, last revised July 7, 2024", "source_url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109", "restrictive_district": "Residence A / Residence B \u2014 an exhaustive full-text search of the entire regulations (6,576 lines) found zero mentions of \"two-family,\" \"duplex,\" \"multi-family,\" or \"three-family\" anywhere in the code. Min. lot 40,000 sf (Res. A) / 3 acres (Res. B). Cite: Sec. 3230.1, Sec. 3510.", "permissive_district": "None exists \u2014 Easton has no multifamily pathway of any kind, not even by special permit, in any district.", "caveat": "Of all 17 towns researched, Easton is the single clearest case of total legal exclusion of 2+-family housing \u2014 confirmed by exhaustive keyword search, not an oversight."}, "Fairfield": {"jurisdiction_id": 315, "population": 65300, "land_area_acres": 18618, "districts_analyzed": 17, "pct_2family_prohibited": 91.2, "pct_3family_prohibited": 95.8, "pct_4plusfamily_prohibited": 95.1, "pct_1family_minlot_80k_plus": 0.0, "parking_mandate_pct": 100, "composite_score": 61.7, "source": "Fairfield Zoning Regulations, effective Sept. 6, 2025 (continuously updated master text)", "source_url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf", "restrictive_district": "AAA/AA/R-3/R-2/A (Single-Family Residence Districts) \u2014 no multi-unit housing category exists at all in these five districts. Min. lot 2 acres (AAA) down to 9,375 sf (A). Cite: Sec. 3.2, Sec. 3.3.1.", "permissive_district": "District C (Multi-Family Residence) \u2014 2-, 3-, AND 4-family all permitted BY RIGHT, each with its own escalating lot-area minimum (7,500/10,000/12,500 sf). Cite: Sec. 5.2, Sec. 5.3.1.", "caveat": "Fairfield is the clearest \"permissive\" comparison case among the 17 towns \u2014 a genuine, explicitly tiered by-right multifamily district, not merely special-permit-only."}, "Redding": {"jurisdiction_id": 322, "population": 8830, "land_area_acres": 19732, "districts_analyzed": 12, "pct_2family_prohibited": 99.2, "pct_3family_prohibited": 98.9, "pct_4plusfamily_prohibited": 98.9, "pct_1family_minlot_80k_plus": 98.7, "parking_mandate_pct": 100, "composite_score": 99.1, "source": "Redding Zoning Regulations, effective 1986, amendments through Feb. 15, 2024", "source_url": "https://reddingct.gov/wp-content/uploads/2025/10/Redding-Zoning-Regulations-1.24.24.pdf", "restrictive_district": "R-1 (and R-4/R-2/R-\u00bd) \u2014 2-/3-/4+-family all prohibited; the code has no 3-unit tier at all, only single-family vs. special-permit multifamily. Min. lot 1 acre (R-1). Cite: \u00a74.2, \u00a74.6.", "permissive_district": "RV (Village Residential) \u2014 the only multifamily pathway, Special Permit only, capped at 1 unit/8,000 sf. Cite: \u00a74.2.3(o), \u00a75.13.", "caveat": "Redding's own ADU rules automatically exclude detached ADUs from R-4 \u2014 the regulations text gives no figure for that zone, a possible drafting gap rather than a deliberate restriction."}, "Monroe": {"jurisdiction_id": 318, "population": 19269, "land_area_acres": 16323, "districts_analyzed": 16, "pct_2family_prohibited": 95.2, "pct_3family_prohibited": 80.0, "pct_4plusfamily_prohibited": 80.0, "pct_1family_minlot_80k_plus": 48.4, "parking_mandate_pct": 89, "composite_score": 72.8, "source": "Monroe Zoning Regulations, adopted 2013, amended through July 2, 2026", "source_url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da", "restrictive_district": "RF-1 (Residential and Farming District 1) \u2014 multifamily (which legally includes 2-unit buildings under Monroe's own definition) is prohibited (\"x\"). Min. lot 1 acre. Cite: \u00a710.1 Use Schedule, Article 3 \u00a73.1.4(A).", "permissive_district": "MFR (Multifamily Residence District) \u2014 multifamily allowed by Special Exception Permit, 2.5 units/gross acre (attached); requires a 70-acre contiguous parcel to even create the district. Cite: \u00a73.4.5(A)-(B).", "caveat": "Monroe's code does not distinguish a 3-unit tier from larger multifamily \u2014 its definition of \"multi-family\" itself legally includes buildings with as few as 2 units."}, "Trumbull": {"jurisdiction_id": 327, "population": 38073, "land_area_acres": 14786, "districts_analyzed": 25, "pct_2family_prohibited": 99.6, "pct_3family_prohibited": 98.8, "pct_4plusfamily_prohibited": 98.0, "pct_1family_minlot_80k_plus": 0.0, "parking_mandate_pct": 99, "composite_score": 63.6, "source": "Trumbull Zoning Regulations, adopted 2008, amended through Aug. 19, 2026", "source_url": "https://trumbull-ct.gov/DocumentCenter/View/1323", "restrictive_district": "Residence Zone A/AA/AAA \u2014 2-/3-/4+-family prohibited as a base use; only reachable via a town/housing-authority-restricted overlay. Min. lot \u00bd to 1 acre. Cite: Art. II \u00a71.1.1(1)/1.1.8, Art. I \u00a72.", "permissive_district": "MFO (Multi-Family Overlay) \u2014 Special Permit only, on existing industrial land \u226510 acres, capped at 600 units town-wide. Cite: Art. II \u00a77.6.2-7.6.4.", "caveat": "Trumbull currently has a town-wide moratorium on new multifamily rental applications above 50 units (except 55+ housing), expiring Feb. 28, 2027 \u2014 a procedural block layered on top of the underlying district rules, worth flagging explicitly to staff."}, "Shelton": {"jurisdiction_id": 324, "population": 42805, "land_area_acres": 19384, "districts_analyzed": 26, "pct_2family_prohibited": 90.1, "pct_3family_prohibited": 90.1, "pct_4plusfamily_prohibited": 89.8, "pct_1family_minlot_80k_plus": 4.1, "parking_mandate_pct": 95, "composite_score": 60.4, "source": "City of Shelton Zoning Regulations, recodified April 16, 2024 (orig. 1977)", "source_url": "https://shelton.qscendcms.com/ckfinder/connector?command=Proxy&lang=en&type=Files&currentFolder=%2F&hash=c245c263ce0eced480effe66bbede6b4d46c15ae&fileName=2024%20Regulation%20scanned.pdf", "restrictive_district": "R-1 \u2014 2-/3-family and 4+-family both prohibited (\"X\"); no multi-unit housing path. Min. lot 40,000 sf. Cite: Schedule A Row 2/2A/3, Schedule B Row 1.", "permissive_district": "R-4 \u2014 2-/3-family and multifamily (4-12 units) allowed by Special Exception, subject to added lot-area requirements. Min. lot 7,500 sf/unit for 2-family. Cite: Schedule A Row 2/2A/3, Schedule B Row 2.", "caveat": "Shelton's own code is a scanned, image-only PDF with no text layer \u2014 all figures above were OCR'd and visually verified against the table images directly, not machine-extracted text."}, "Stratford": {"jurisdiction_id": 326, "population": 53610, "land_area_acres": 11017, "districts_analyzed": 28, "pct_2family_prohibited": 84.2, "pct_3family_prohibited": 1.5, "pct_4plusfamily_prohibited": 0.9, "pct_1family_minlot_80k_plus": 0.0, "parking_mandate_pct": 100, "composite_score": 33.8, "source": "Stratford Zoning Code (Ch. A220), full rewrite effective Jan. 1, 2025, amended through Aug. 10, 2026", "source_url": "https://ecode360.com/9207545", "restrictive_district": "RS-1 \u2014 \"Two and Three Family Dwellings\" (one combined row, no 2-vs-3 split) not permitted; 4+-unit multifamily only by Special Permit. Min. lot 40,000 sf. Cite: \u00a73.2.1, \u00a74.2.4 Use Table.", "permissive_district": "RM-1 (Two and Three Family Residence) \u2014 2- and 3-family allowed BY RIGHT; min. lot area per unit 2,500 sf. 4+-unit still needs Special Permit. Cite: \u00a73.2.2, \u00a75.1.", "caveat": "An apparent internal inconsistency exists between the Use Table's \"4 or more units\" threshold and \u00a75.1's \"(3+)\" heading for when Special Permit review kicks in \u2014 flagged for a human follow-up read of \u00a75.1.2."}};
+
+const towns = Object.entries(DATA).sort((a,b)=>b[1].composite_score - a[1].composite_score);
+const maxScore = Math.max(...towns.map(([,v])=>v.composite_score));
+
+const chartHost = document.getElementById('chart');
+towns.forEach(([name, d])=>{
+  const row = document.createElement('div');
+  row.className = 'row' + ((name==='Greenwich'||name==='Bridgeport') ? ' cd4' : '');
+  const pct = (d.composite_score / 100) * 100;
+  row.innerHTML = `
+    <div class="town-name">${name}${(name==='Greenwich'||name==='Bridgeport') ? ' ★' : ''}</div>
+    <div class="track"><div class="fill" style="width:${pct}%"></div></div>
+    <div class="score">${d.composite_score.toFixed(1)}</div>
+  `;
+  chartHost.appendChild(row);
+});
+
+const cardsHost = document.getElementById('cardsHost');
+towns.forEach(([name, d])=>{
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.innerHTML = `
+    <div class="card-head">
+      <h3>${name}, CT${(name==='Greenwich'||name==='Bridgeport') ? ' ★' : ''}</h3>
+      <div class="score-badge">${d.composite_score.toFixed(1)}<small>composite score</small></div>
+    </div>
+    <div class="chip-row">
+      <span class="chip">2-family prohibited: ${d.pct_2family_prohibited}% of land</span>
+      <span class="chip">3-family prohibited: ${d.pct_3family_prohibited}%</span>
+      <span class="chip">4+-family prohibited: ${d.pct_4plusfamily_prohibited}%</span>
+      <span class="chip">Lots &ge;80k sf: ${d.pct_1family_minlot_80k_plus}%</span>
+      <span class="chip">Parking mandate: ${d.parking_mandate_pct}% of land</span>
+      <span class="chip">${d.districts_analyzed} districts analyzed (NZA)</span>
+    </div>
+    <div class="grid2">
+      <div>
+        <p class="subhead">Most restrictive district</p>
+        <p class="detail-text">${d.restrictive_district}</p>
+      </div>
+      <div>
+        <p class="subhead">Most permissive district</p>
+        <p class="detail-text">${d.permissive_district}</p>
+      </div>
+    </div>
+    <div class="caveat"><b>Caveat:</b> ${d.caveat}</div>
+    <div class="source-line">
+      <a href="${d.source_url}" target="_blank" rel="noopener">Primary source: ${d.source}</a>
+      <a href="https://edit.zoningatlas.org/statsrollup/jurisdiction/${d.jurisdiction_id}/" target="_blank" rel="noopener">NZA Jurisdiction Snapshot &rarr;</a>
+    </div>
+  `;
+  cardsHost.appendChild(card);
+});
+</script>

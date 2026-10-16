@@ -1,0 +1,28 @@
+{
+  "records_loaded": 8,
+  "records_corrected": 8,
+  "records_with_final_advancement_true": 3,
+  "records_with_final_advancement_false": 5,
+  "records_blocked_by_quote_containment": 2,
+  "records_blocked_by_floor_area_or_unit_size": 0,
+  "records_blocked_by_definition_only": 2,
+  "records_blocked_by_other_safeguards": 0,
+  "final_possible_extraction_packet_ids": [
+    "greenwich_ct_L1_010",
+    "greenwich_ct_U2_001",
+    "bridgeport_ct_U2_003"
+  ],
+  "completion_gate_passed": false,
+  "stage3a_final_result": "PARTIAL \u2014 NOT READY FOR STAGE 3B",
+  "llm_api_calls_made": 0,
+  "run_started_at_utc": "2026-10-02T18:01:53.945231+00:00",
+  "run_finished_at_utc": "2026-10-02T18:01:53.957635+00:00",
+  "scenario_check_results": {
+    "greenwich_ct_L1_010": false,
+    "bridgeport_ct_L1_032": true,
+    "bridgeport_ct_L1_033": true,
+    "greenwich_ct_L1_021": true,
+    "greenwich_ct_U2_001": true,
+    "bridgeport_ct_U2_003": true
+  }
+}

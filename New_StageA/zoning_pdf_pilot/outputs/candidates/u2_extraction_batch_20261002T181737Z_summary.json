@@ -1,0 +1,15 @@
+{
+  "selected_packet_count": 2,
+  "attempted_packet_count": 2,
+  "completed_extraction_count": 2,
+  "provider_error_count": 0,
+  "invalid_json_count": 0,
+  "validation_pass_count": 2,
+  "validation_fail_count": 0,
+  "candidate_ready_for_human_review_count": 2,
+  "model_id": "openai/gpt-oss-20b",
+  "prompt_version": "u2_extraction_v1",
+  "run_started_at_utc": "2026-10-02T18:17:16.540507+00:00",
+  "run_finished_at_utc": "2026-10-02T18:17:36.967014+00:00",
+  "stage_status": "PASS"
+}

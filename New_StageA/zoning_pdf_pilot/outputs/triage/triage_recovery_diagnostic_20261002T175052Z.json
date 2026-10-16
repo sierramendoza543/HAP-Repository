@@ -1,0 +1,32 @@
+{
+  "packet_id": "greenwich_ct_L1_007",
+  "model_id": "openai/gpt-oss-20b",
+  "prompt_version": "triage_recovery_v1",
+  "request_configuration_without_secrets": {
+    "model": "openai/gpt-oss-20b",
+    "temperature": 0.0,
+    "max_completion_tokens": 2048,
+    "response_format": "none (plain text + explicit formatting instruction)"
+  },
+  "request_timestamp_utc": "2026-10-02T17:50:19.525968+00:00",
+  "api_completed": true,
+  "finish_reason_if_available": "stop",
+  "usage_fields_if_available": {
+    "completion_tokens": 594,
+    "prompt_tokens": 4189,
+    "total_tokens": 4783
+  },
+  "reasoning_fields_if_available": {
+    "reasoning_tokens": 407
+  },
+  "content_length": 633,
+  "diagnostic_outcome": "DIAGNOSTIC_PASS",
+  "raw_response_preview_max_1500_characters": "{\"packet_id\":\"greenwich_ct_L1_007\",\"triage_class\":\"GOVERNING_NUMERIC_STANDARD\",\"target_variable_relevance\":\"direct\",\"likely_governing_rule\":true,\"send_to_extraction\":true,\"districts_or_building_types_mentioned\":[\"RA-4\",\"RA-2\",\"RA-1\",\"R-20\",\"R-12\",\"R-7\",\"R-6\",\"R-MF\"],\"numeric_standard_present\":true,\"permission_pathway_present\":false,\"table_or_schedule_present\":true,\"footnote_or_exception_present\":true,\"cross_reference_present\":true,\"short_reason\":\"Table lists minimum lot sizes for residential zones.\",\"follow_up_needed\":false,\"follow_up_reason\":null,\"source_quote_for_triage\":\"RA-4 3-1/2 50 ft. 4 Acres\",\"triage_confidence\":0.95}",
+  "json_parse_result": "success",
+  "schema_validation_result": "completed",
+  "quote_containment_result": "pass",
+  "routing_override_result": {
+    "final_send_to_extraction": true,
+    "routing_override_reason": null
+  }
+}

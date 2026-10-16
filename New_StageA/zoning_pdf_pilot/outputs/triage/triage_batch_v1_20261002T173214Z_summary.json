@@ -1,0 +1,26 @@
+{
+  "selected_packet_count": 20,
+  "attempted_packet_count": 10,
+  "completed_packet_count": 5,
+  "provider_error_count": 3,
+  "invalid_response_count": 2,
+  "send_to_extraction_count": 2,
+  "counts_by_municipality": {
+    "Greenwich": 10
+  },
+  "counts_by_variable": {
+    "L1": 5,
+    "U2": 5
+  },
+  "counts_by_triage_class": {
+    "GOVERNING_NUMERIC_STANDARD": 1,
+    "DIMENSIONAL_TABLE_OR_SCHEDULE": 1,
+    "IRRELEVANT": 2,
+    "GOVERNING_PERMISSION_RULE": 1
+  },
+  "chosen_model_id": "openai/gpt-oss-20b",
+  "prompt_version": "triage_v1",
+  "run_started_at_utc": "2026-10-02T17:29:46.492946+00:00",
+  "run_finished_at_utc": "2026-10-02T17:32:14.099394+00:00",
+  "stage_status": "PROVIDER_UNSTABLE"
+}

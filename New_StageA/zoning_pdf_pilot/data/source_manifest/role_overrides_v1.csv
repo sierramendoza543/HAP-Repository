@@ -1,0 +1,5 @@
+local_filename,raw_pdf_sha256,inferred_role,reviewed_role,reason,reviewed_by,reviewed_at_utc
+greenwich_ct.pdf,18417c5e9074d765ab4483571b9ac3d6aeb162b37b1b302f7a8ce1f13e963dcb,unknown,zoning_code,Human confirms it is the official Building Zone Regulations,Sierra Mendoza,2026-10-02T00:00:00Z
+bridgeport_ct.pdf,afe7c678fa5dfc8581cca968c59eac168aa3b69b0807d26272e274fe88a21d90,unknown,zoning_code,Human confirms it is the official Bridgeport Zoning Code,Sierra Mendoza,2026-10-02T00:00:00Z
+greenwich_zoning_map.pdf,b52d3042d0a15a8000cb90f564ac6901b2d97e37ea53621f6728803a31daebdf,zoning_map,zoning_map,Filename and review agree,Sierra Mendoza,2026-10-02T00:00:00Z
+bridgeport_zoning_map_2022.pdf,2db15f1c1a520d51903d6dac7a864cddda434ff93bcfec1a2388bc74c7b07281,zoning_map,zoning_map,Filename and review agree,Sierra Mendoza,2026-10-02T00:00:00Z

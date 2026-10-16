@@ -1,0 +1,68 @@
+source_id,municipality,state,municipality_slug,document_role,local_filename,relative_path,file_size_bytes,pdf_page_count,pdf_is_readable,raw_pdf_sha256,first_page_text_preview,first_page_text_sha256,pdf_metadata_title,pdf_metadata_author,pdf_metadata_creator,pdf_metadata_producer,pdf_metadata_creation_date,pdf_metadata_modification_date,source_url,official_document_title,adoption_date,effective_date,current_through_date,authority_status,source_notes,metadata_status,registered_at_utc,registration_status,registration_error
+greenwich_ct__unknown__18417c5e9074,Greenwich,CT,greenwich_ct,unknown,greenwich_ct.pdf,data/raw_pdfs/greenwich_ct/greenwich_ct.pdf,4314528,313,True,18417c5e9074d765ab4483571b9ac3d6aeb162b37b1b302f7a8ce1f13e963dcb,"TOWN OF GREENWICH
+BUILDING ZONE REGULATIONS
+August 2023
+Adopted February 1, 1926
+Revisions through July 14, 2023",d64155c60cbbe3b0178e3bdef192702f534aadc7608e7325585480173780759e,needs_manual_metadata_entry,Patrick LaRow,Adobe Acrobat Pro 2017 17.12.30205,Adobe Acrobat Pro 2017 17.12.30205,D:20230802110515-04'00',D:20230802110515-04'00',needs_manual_metadata_entry,needs_manual_metadata_entry,needs_manual_metadata_entry,needs_manual_metadata_entry,needs_manual_metadata_entry,needs_manual_metadata_entry,needs_manual_metadata_entry,registered_metadata_partially_available,2026-10-02T17:45:02.042038+00:00,success,
+greenwich_ct__zoning_map__b52d3042d0a1,Greenwich,CT,greenwich_ct,zoning_map,greenwich_zoning_map.pdf,data/raw_pdfs/greenwich_ct/greenwich_zoning_map.pdf,5590051,1,True,b52d3042d0a15a8000cb90f564ac6901b2d97e37ea53621f6728803a31daebdf,"Converse Lake
+STATE OF NEW YORK
+Wilshire
+Pond
+wood
+Lake
+Rock
+River
+Mianus
+R Is i l c a h n
+a
+m
+d H ar b
+or
+wic h
+H ar b or
+h
+C o
+v e
+I
+n dia
+n Har b or
+C
+os C o b Har
+b
+or
+B
+yr
+Gr e e
+n
+S
+mit
+Goose
+Island
+Shore
+Island
+Diving
+Tweed Island
+Island
+Calf
+Islands
+Bowers
+Island Bluff
+Island
+Greenwich
+Cove",f0f0fe58975333024629a9171e695cd2ef0a1dce836db15b4ac8a77afa2d31a0,Zoning,needs_manual_metadata_entry,AutoCAD 2025 - English 2025 (25.0s (LMS Tech)),pdfplot17.hdi 17.00.072.00000,D:20260722142707,D:20260722142707,needs_manual_metadata_entry,needs_manual_metadata_entry,needs_manual_metadata_entry,needs_manual_metadata_entry,needs_manual_metadata_entry,needs_manual_metadata_entry,needs_manual_metadata_entry,registered_metadata_partially_available,2026-10-02T17:45:02.212140+00:00,success,
+bridgeport_ct__unknown__afe7c678fa5d,Bridgeport,CT,bridgeport_ct,unknown,bridgeport_ct.pdf,data/raw_pdfs/bridgeport_ct/bridgeport_ct.pdf,8703558,304,True,afe7c678fa5dfc8581cca968c59eac168aa3b69b0807d26272e274fe88a21d90,"ADOPTED NOVEMBER 29, 2021
+EFFECTIVE JANUARY 1, 2022",fcaf77a6d5b2042f8e873632bc86d46773cd0137a5668a8b994735ff8e8dec59,needs_manual_metadata_entry,needs_manual_metadata_entry,Adobe InDesign 21.3 (Macintosh),Adobe PDF Library 18.0,D:20260501135001-05'00',D:20260506112958-04'00',needs_manual_metadata_entry,needs_manual_metadata_entry,needs_manual_metadata_entry,needs_manual_metadata_entry,needs_manual_metadata_entry,needs_manual_metadata_entry,needs_manual_metadata_entry,registered_metadata_partially_available,2026-10-02T17:45:49.681134+00:00,success,
+bridgeport_ct__zoning_map__2db15f1c1a52,Bridgeport,CT,bridgeport_ct,zoning_map,bridgeport_zoning_map_2022.pdf,data/raw_pdfs/bridgeport_ct/bridgeport_zoning_map_2022.pdf,8142188,1,True,2db15f1c1a520d51903d6dac7a864cddda434ff93bcfec1a2388bc74c7b07281,"Machalowski
+Rd
+WallerRd P lattsville R d Ra R le d igh Heppinstall Dr Kevin D
+Leigh
+a t R on n R d iel D r d Tarinelli C ir Jourmire R R u d ssellRd Royce Pl P W a rD l nocaM m et e m tt o o re R R d d
+Lealand Pl Sunnydale
+O dR notcA
+R
+ld
+d
+Town Rd
+LycettS
+t Miniturn Pl W O D h a i r t k e
+Linda Dr",b8a95fbfd3468f5060b66fd6c295168c5c6bdabacfa167e70f24bdfb316e40ec,needs_manual_metadata_entry,needs_manual_metadata_entry,Adobe InDesign 18.0 (Windows),Adobe PDF Library 17.0,D:20230317111614-04'00',D:20230317111614-04'00',needs_manual_metadata_entry,needs_manual_metadata_entry,needs_manual_metadata_entry,needs_manual_metadata_entry,needs_manual_metadata_entry,needs_manual_metadata_entry,needs_manual_metadata_entry,registered_metadata_partially_available,2026-10-02T17:46:05.623996+00:00,success,
