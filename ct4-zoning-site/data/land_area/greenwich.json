@@ -1,0 +1,369 @@
+{
+ "slug": "greenwich",
+ "source": {
+  "title": "Town of Greenwich ZoneBoundaries_ArcGIS (official interactive zoning map layer)",
+  "url": "https://services2.arcgis.com/cYiUUgMhu4YB7W9G/arcgis/rest/services/ZoneBoundaries_ArcGIS/FeatureServer/0",
+  "app": "https://www.arcgis.com/apps/instant/lookup/index.html?appid=dd08394df7544ef7862d946a2ad5d7a5",
+  "retrieved": "2026-10-19"
+ },
+ "method": "Sum of Shape__Area grouped by Layer (district code). Shape__Area is Web Mercator m2 at latitude 41.03; corrected by cos^2(lat)=0.5691 and converted to acres. Total 31051 acres (matches Greenwich's ~31,000 acre footprint). Overlay codes (-HO, -HRO) are kept separately, so underlying base district areas may be understated by the overlay share.",
+ "districts": {
+  "RA-4": {
+   "acres": 10704.3,
+   "parcels": 1,
+   "zone_type": [
+    "Residential"
+   ]
+  },
+  "RA-2": {
+   "acres": 7759.3,
+   "parcels": 1,
+   "zone_type": [
+    "Residential"
+   ]
+  },
+  "RA-1": {
+   "acres": 4753.3,
+   "parcels": 1,
+   "zone_type": [
+    "Residential"
+   ]
+  },
+  "R-12": {
+   "acres": 2277.5,
+   "parcels": 1,
+   "zone_type": [
+    "Residential"
+   ]
+  },
+  "R-20": {
+   "acres": 1189.6,
+   "parcels": 1,
+   "zone_type": [
+    "Residential"
+   ]
+  },
+  "R-7": {
+   "acres": 1159.2,
+   "parcels": 1,
+   "zone_type": [
+    "Residential"
+   ]
+  },
+  "R-6": {
+   "acres": 978.0,
+   "parcels": 1,
+   "zone_type": [
+    "Residential"
+   ]
+  },
+  "RA-C4": {
+   "acres": 563.9,
+   "parcels": 1,
+   "zone_type": [
+    "Residential"
+   ]
+  },
+  "RA-C2": {
+   "acres": 194.2,
+   "parcels": 1,
+   "zone_type": [
+    "Residential"
+   ]
+  },
+  "GB": {
+   "acres": 157.3,
+   "parcels": 1,
+   "zone_type": [
+    "Commercial"
+   ]
+  },
+  "BEX-50-R": {
+   "acres": 156.2,
+   "parcels": 1,
+   "zone_type": [
+    ""
+   ]
+  },
+  "R-PR": {
+   "acres": 119.2,
+   "parcels": 1,
+   "zone_type": [
+    "Residential"
+   ]
+  },
+  "RA-CC4-HO": {
+   "acres": 102.2,
+   "parcels": 1,
+   "zone_type": [
+    "Residential"
+   ]
+  },
+  "GBO": {
+   "acres": 98.7,
+   "parcels": 1,
+   "zone_type": [
+    "Commercial"
+   ]
+  },
+  "CGB": {
+   "acres": 98.3,
+   "parcels": 1,
+   "zone_type": [
+    "Commercial"
+   ]
+  },
+  "R-C7": {
+   "acres": 82.8,
+   "parcels": 1,
+   "zone_type": [
+    "Residential"
+   ]
+  },
+  "LB": {
+   "acres": 77.0,
+   "parcels": 1,
+   "zone_type": [
+    "Commercial"
+   ]
+  },
+  "LBR-2": {
+   "acres": 76.8,
+   "parcels": 1,
+   "zone_type": [
+    "Commercial"
+   ]
+  },
+  "BEX-50": {
+   "acres": 68.8,
+   "parcels": 1,
+   "zone_type": [
+    "Commercial"
+   ]
+  },
+  "R-MF": {
+   "acres": 60.9,
+   "parcels": 1,
+   "zone_type": [
+    "Residential"
+   ]
+  },
+  "WB": {
+   "acres": 58.8,
+   "parcels": 1,
+   "zone_type": [
+    "Waterfront"
+   ]
+  },
+  "R-C12": {
+   "acres": 56.0,
+   "parcels": 1,
+   "zone_type": [
+    "Residential"
+   ]
+  },
+  "CGBR": {
+   "acres": 51.7,
+   "parcels": 1,
+   "zone_type": [
+    "Commercial"
+   ]
+  },
+  "RA-C1": {
+   "acres": 22.9,
+   "parcels": 1,
+   "zone_type": [
+    "Residential"
+   ]
+  },
+  "R-PHD-SU": {
+   "acres": 22.3,
+   "parcels": 1,
+   "zone_type": [
+    "Residential"
+   ]
+  },
+  "RA-CC4": {
+   "acres": 19.4,
+   "parcels": 1,
+   "zone_type": [
+    "Residential"
+   ]
+  },
+  "R-C7-HO": {
+   "acres": 16.1,
+   "parcels": 1,
+   "zone_type": [
+    "Residential"
+   ]
+  },
+  "R-PHD-E": {
+   "acres": 15.6,
+   "parcels": 1,
+   "zone_type": [
+    "Residential"
+   ]
+  },
+  "LB-HO": {
+   "acres": 12.0,
+   "parcels": 1,
+   "zone_type": [
+    "Commercial"
+   ]
+  },
+  "LBR-1": {
+   "acres": 10.9,
+   "parcels": 1,
+   "zone_type": [
+    "Commercial"
+   ]
+  },
+  "R-20-HO": {
+   "acres": 10.7,
+   "parcels": 2,
+   "zone_type": [
+    "Residential"
+   ]
+  },
+  "H-1": {
+   "acres": 10.5,
+   "parcels": 1,
+   "zone_type": [
+    "Commercial"
+   ]
+  },
+  "GB-IND-RE": {
+   "acres": 10.0,
+   "parcels": 1,
+   "zone_type": [
+    "Commercial"
+   ]
+  },
+  "R-C20": {
+   "acres": 8.7,
+   "parcels": 1,
+   "zone_type": [
+    "Residential"
+   ]
+  },
+  "P": {
+   "acres": 6.9,
+   "parcels": 2,
+   "zone_type": [
+    "Commercial"
+   ]
+  },
+  "LB-R-C7-HO": {
+   "acres": 6.0,
+   "parcels": 1,
+   "zone_type": [
+    "Commercial"
+   ]
+  },
+  "RA-2-HO": {
+   "acres": 5.5,
+   "parcels": 1,
+   "zone_type": [
+    "Residential"
+   ]
+  },
+  "CGBR-HO": {
+   "acres": 5.4,
+   "parcels": 2,
+   "zone_type": [
+    "Commercial"
+   ]
+  },
+  "RA-1-HO": {
+   "acres": 4.8,
+   "parcels": 1,
+   "zone_type": [
+    "Residential"
+   ]
+  },
+  "RC-20-HO": {
+   "acres": 4.7,
+   "parcels": 1,
+   "zone_type": [
+    "Residential"
+   ]
+  },
+  "HRO": {
+   "acres": 4.1,
+   "parcels": 1,
+   "zone_type": [
+    "Commercial"
+   ]
+  },
+  "CGB-HO": {
+   "acres": 3.9,
+   "parcels": 1,
+   "zone_type": [
+    "Commercial"
+   ]
+  },
+  "GB-HO": {
+   "acres": 2.0,
+   "parcels": 1,
+   "zone_type": [
+    "Commercial"
+   ]
+  },
+  "H-2": {
+   "acres": 1.3,
+   "parcels": 1,
+   "zone_type": [
+    "Commercial"
+   ]
+  },
+  "RC-12-HO": {
+   "acres": 1.2,
+   "parcels": 1,
+   "zone_type": [
+    "Residential"
+   ]
+  },
+  "LBR-2-HO": {
+   "acres": 0.9,
+   "parcels": 1,
+   "zone_type": [
+    "Commercial"
+   ]
+  },
+  "R-12-HO": {
+   "acres": 0.6,
+   "parcels": 1,
+   "zone_type": [
+    "Residential"
+   ]
+  },
+  "R-7-HO": {
+   "acres": 0.6,
+   "parcels": 1,
+   "zone_type": [
+    "Residential"
+   ]
+  },
+  "R-6-HO": {
+   "acres": 0.2,
+   "parcels": 1,
+   "zone_type": [
+    "Residential"
+   ]
+  },
+  "R-6-HRO": {
+   "acres": 0.2,
+   "parcels": 1,
+   "zone_type": [
+    "Residential"
+   ]
+  },
+  "LBR-1-HO": {
+   "acres": 0.1,
+   "parcels": 1,
+   "zone_type": [
+    "Commercial"
+   ]
+  }
+ }
+}

@@ -528,5 +528,293 @@
       }
     ],
     "methodology_note": "Computed from the Variables table on this page, not from the NZA data below. Six weighted components (Multifamily Access 30pts, Approval Discretion 10pts, Minimum Lot Size 20pts, ADU Approval Pathway 15pts, Parking Mandate 10pts, Demolition Delay 15pts) are each scored against a fixed, published rubric from a specific cited fact above. Higher = more restrictive."
+  },
+  "v2": {
+    "land_weighted_score": 80.2,
+    "districts_included": 7,
+    "acres_included": 19782.1,
+    "districts": [
+      {
+        "district": "RA-3",
+        "acres": 3147.4,
+        "score": 86.6,
+        "components_scored": 5,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 30,
+            "max_points": 30
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 10,
+            "max_points": 10
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 18.6,
+            "max_points": 20
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 7,
+            "max_points": 15
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 8.0,
+            "max_points": 10
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15
+          }
+        ],
+        "note": "One Family Residence District (§5.X.3); single-family only; ADU by zoning permit (ADU def., 2024 text, §4): lot ≥10,000 sq ft, 800 sq ft cap, 1 ADU parking space; single-family base parking 2 applied (verified R-20/R-6 only)",
+        "land_share": 15.9
+      },
+      {
+        "district": "RA-2",
+        "acres": 2666.4,
+        "score": 84.4,
+        "components_scored": 5,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 30,
+            "max_points": 30
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 10,
+            "max_points": 10
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 16.7,
+            "max_points": 20
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 7,
+            "max_points": 15
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 8.0,
+            "max_points": 10
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15
+          }
+        ],
+        "note": "One Family Residence District (§5.X.3); single-family only; ADU by zoning permit, lot ≥10,000 sq ft; parking as RA-3",
+        "land_share": 13.5
+      },
+      {
+        "district": "RA-1",
+        "acres": 8798.7,
+        "score": 80.6,
+        "components_scored": 5,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 30,
+            "max_points": 30
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 10,
+            "max_points": 10
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 13.5,
+            "max_points": 20
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 7,
+            "max_points": 15
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 8.0,
+            "max_points": 10
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15
+          }
+        ],
+        "note": "One Family Residence District (§5.X.3); single-family only; ADU by zoning permit, lot ≥10,000 sq ft; parking as RA-3",
+        "land_share": 44.5
+      },
+      {
+        "district": "R-20",
+        "acres": 1489.3,
+        "score": 76.2,
+        "components_scored": 5,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 30,
+            "max_points": 30
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 10,
+            "max_points": 10
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 9.8,
+            "max_points": 20
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 7,
+            "max_points": 15
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 8.0,
+            "max_points": 10
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15
+          }
+        ],
+        "note": "One Family, verified single-family only (prior variables); ADU by zoning permit (lot ≥10,000 sq ft); 2 spaces verified",
+        "land_share": 7.5
+      },
+      {
+        "district": "R-10",
+        "acres": 1943.5,
+        "score": 72.4,
+        "components_scored": 5,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 30,
+            "max_points": 30
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 10,
+            "max_points": 10
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 6.5,
+            "max_points": 20
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 7,
+            "max_points": 15
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 8.0,
+            "max_points": 10
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15
+          }
+        ],
+        "note": "One Family Residence District, 10,000 sq ft minimum (§5.Y.3); ADU by zoning permit at exactly the 10,000 sq ft threshold; parking as R-20",
+        "land_share": 9.8
+      },
+      {
+        "district": "R-7 1/2",
+        "acres": 1313.5,
+        "score": 80.2,
+        "components_scored": 5,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 30,
+            "max_points": 30
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 10,
+            "max_points": 10
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 5.2,
+            "max_points": 20
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 15,
+            "max_points": 15
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 8.0,
+            "max_points": 10
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15
+          }
+        ],
+        "note": "One Family Residence District, 7,500 sq ft minimum (§5.Y.3); lot below the 10,000 sq ft ADU threshold, so ADUs are prohibited (ADU def., §4)",
+        "land_share": 6.6
+      },
+      {
+        "district": "R-6",
+        "acres": 423.3,
+        "score": 49.8,
+        "components_scored": 5,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 12,
+            "max_points": 30
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 4,
+            "max_points": 10
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 3.3,
+            "max_points": 20
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 15,
+            "max_points": 15
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 8.0,
+            "max_points": 10
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15
+          }
+        ],
+        "note": "One- and Two-Family (§5.Z); two-family by right with administrative site plan on lots ≥7,500 sq ft; 5,000 sq ft one-family minimum; ADUs prohibited (below 10,000 sq ft and multifamily-ineligible rule)",
+        "land_share": 2.1
+      }
+    ],
+    "method": "Each district is scored with the same six-component rubric using only its own rules. The town V2 score is the land-area-weighted mean of included district scores; acreage is from data/land_area/stamford.json. Components with no confirmed input are excluded per district."
   }
 }

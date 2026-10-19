@@ -1,0 +1,200 @@
+{
+ "slug": "norwalk",
+ "source": {
+  "title": "City of Norwalk CT Zoning (layer 'Zoning', CityOfNorwalkCT)",
+  "url": "https://services2.arcgis.com/HfsHDBmkGwb1UtID/arcgis/rest/services/Zoning/FeatureServer/0",
+  "retrieved": "2026-10-19"
+ },
+ "method": "Sum of Shape__Area (CT state plane feet squared, EPSG:2234) grouped by ZONING, /43560 to acres. Total 20897 acres includes WATER polygons. Status: codes (AAA, AA, A, B, C, D, B2) are NOT yet mapped to the CD-1S/CD-2 districts used in our Norwalk variables; the mapping must be confirmed against the current Norwalk code before use. Crosswalk (pasted from city nomenclature flyer, unverified): AAA->CD-1L, AA/A->CD-1M, B->CD-1S, C->CD-2, D->CD-3, NB->CD-3 (CD-3W for Rowayton not separable).",
+ "districts": {
+  "WATER": {
+   "acres": 6208.2,
+   "parcels": 6
+  },
+  "AAA": {
+   "acres": 4179.3,
+   "parcels": 18
+  },
+  "B": {
+   "acres": 2599.4,
+   "parcels": 33
+  },
+  "AA": {
+   "acres": 2183.9,
+   "parcels": 21
+  },
+  "A": {
+   "acres": 2071.2,
+   "parcels": 32
+  },
+  "C": {
+   "acres": 943.2,
+   "parcels": 22
+  },
+  "B2": {
+   "acres": 596.2,
+   "parcels": 10
+  },
+  "D": {
+   "acres": 395.8,
+   "parcels": 29
+  },
+  "I1": {
+   "acres": 313.5,
+   "parcels": 12
+  },
+  "IC": {
+   "acres": 232.3,
+   "parcels": 26
+  },
+  "RI": {
+   "acres": 204.6,
+   "parcels": 3
+  },
+  "NB": {
+   "acres": 148.3,
+   "parcels": 21
+  },
+  "B1": {
+   "acres": 139.5,
+   "parcels": 3
+  },
+  "CBD": {
+   "acres": 134.1,
+   "parcels": 3
+  },
+  "RD": {
+   "acres": 91.6,
+   "parcels": 3
+  },
+  "EVD": {
+   "acres": 86.4,
+   "parcels": 2
+  },
+  "EO": {
+   "acres": 74.6,
+   "parcels": 1
+  },
+  "SSDD": {
+   "acres": 65.7,
+   "parcels": 1
+  },
+  "MC": {
+   "acres": 51.1,
+   "parcels": 2
+  },
+  "RPDA": {
+   "acres": 35.5,
+   "parcels": 2
+  },
+  "HZ": {
+   "acres": 23.4,
+   "parcels": 1
+  },
+  "SNBD": {
+   "acres": 22.1,
+   "parcels": 1
+  },
+  "WSDD": {
+   "acres": 19.1,
+   "parcels": 1
+  },
+  "RPDE": {
+   "acres": 18.6,
+   "parcels": 1
+  },
+  "LI2": {
+   "acres": 12.7,
+   "parcels": 1
+  },
+  "RVD": {
+   "acres": 10.7,
+   "parcels": 1
+  },
+  "RPDD": {
+   "acres": 9.6,
+   "parcels": 1
+  },
+  "GHVD": {
+   "acres": 8.9,
+   "parcels": 1
+  },
+  "RPDC": {
+   "acres": 6.9,
+   "parcels": 1
+  },
+  "CBD W": {
+   "acres": 6.5,
+   "parcels": 1
+  },
+  "SVD": {
+   "acres": 3.8,
+   "parcels": 1
+  }
+ },
+ "status": "crosswalk confirmed by the user against the city nomenclature flyer (2026-10-19); layer is the pre-rewrite city map, so areas may be stale",
+ "crosswalk_applied": {
+  "AAA": "CD-1L",
+  "AA": "CD-1M",
+  "A": "CD-1M",
+  "B": "CD-1S",
+  "C": "CD-2",
+  "D": "CD-3",
+  "NB": "CD-3"
+ },
+ "districts_current_code": {
+  "CD-1M": {
+   "acres": 4255.1,
+   "sources": [
+    {
+     "old_code": "AA",
+     "acres": 2183.9
+    },
+    {
+     "old_code": "A",
+     "acres": 2071.2
+    }
+   ]
+  },
+  "CD-1L": {
+   "acres": 4179.3,
+   "sources": [
+    {
+     "old_code": "AAA",
+     "acres": 4179.3
+    }
+   ]
+  },
+  "CD-1S": {
+   "acres": 2599.4,
+   "sources": [
+    {
+     "old_code": "B",
+     "acres": 2599.4
+    }
+   ]
+  },
+  "CD-2": {
+   "acres": 943.2,
+   "sources": [
+    {
+     "old_code": "C",
+     "acres": 943.2
+    }
+   ]
+  },
+  "CD-3": {
+   "acres": 544.1,
+   "sources": [
+    {
+     "old_code": "D",
+     "acres": 395.8
+    },
+    {
+     "old_code": "NB",
+     "acres": 148.3
+    }
+   ]
+  }
+ }
+}

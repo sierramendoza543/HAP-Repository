@@ -86,7 +86,7 @@ export default function ScoreGauge({
       </svg>
       <p className="text-xs font-semibold uppercase tracking-wide text-(--ink-dim) -mt-2">HAP Restrictiveness Score</p>
       <p className="text-[11px] text-(--ink-faint) mt-1">
-        NZA 2026 Score: <span className="tabular font-medium">{nzaScore.toFixed(1)}</span>
+        NZA-derived proxy:<span className="tabular font-medium">{nzaScore.toFixed(1)}</span>
         <span className="inline-block w-2 h-0.5 bg-(--ink-faint) align-middle mx-1" /> tick on gauge
       </p>
     </div>

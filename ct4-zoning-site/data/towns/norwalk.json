@@ -411,5 +411,173 @@
       }
     ],
     "methodology_note": "Computed from the Variables table on this page, not from the NZA data below. Six weighted components (Multifamily Access 30pts, Approval Discretion 10pts, Minimum Lot Size 20pts, ADU Approval Pathway 15pts, Parking Mandate 10pts, Demolition Delay 15pts) are each scored against a fixed, published rubric from a specific cited fact above. Higher = more restrictive."
+  },
+  "v2": {
+    "land_weighted_score": 72.8,
+    "districts_included": 4,
+    "acres_included": 11977.0,
+    "districts": [
+      {
+        "district": "CD-1L",
+        "acres": 4179.3,
+        "score": 84.7,
+        "components_scored": 4,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 30,
+            "max_points": 30
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 10,
+            "max_points": 10
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 13.5,
+            "max_points": 20
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": null,
+            "max_points": 15
+          },
+          {
+            "label": "Parking Mandate",
+            "points": null,
+            "max_points": 10
+          },
+          {
+            "label": "Demolition Delay",
+            "points": 10.0,
+            "max_points": 15
+          }
+        ],
+        "note": "Sub-Urban Large Lot, single-family per district name (Art. 3); bulk schedule 43,560 sq ft; ADU rule not in extracted text, excluded; parking not extracted",
+        "land_share": 34.9
+      },
+      {
+        "district": "CD-1M",
+        "acres": 4255.1,
+        "score": 76.8,
+        "components_scored": 4,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 30,
+            "max_points": 30
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 10,
+            "max_points": 10
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 7.6,
+            "max_points": 20
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": null,
+            "max_points": 15
+          },
+          {
+            "label": "Parking Mandate",
+            "points": null,
+            "max_points": 10
+          },
+          {
+            "label": "Demolition Delay",
+            "points": 10.0,
+            "max_points": 15
+          }
+        ],
+        "note": "Sub-Urban Medium Lot, single-family per district name (Art. 3); bulk schedule 12,500 sq ft; ADU rule not in extracted text, excluded; parking not extracted",
+        "land_share": 35.5
+      },
+      {
+        "district": "CD-1S",
+        "acres": 2599.4,
+        "score": 61.4,
+        "components_scored": 5,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 30,
+            "max_points": 30
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 10,
+            "max_points": 10
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 4.3,
+            "max_points": 20
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 1,
+            "max_points": 15
+          },
+          {
+            "label": "Parking Mandate",
+            "points": null,
+            "max_points": 10
+          },
+          {
+            "label": "Demolition Delay",
+            "points": 10.0,
+            "max_points": 15
+          }
+        ],
+        "note": "Sub-Urban Single-Family; two- and multifamily NP (prior variables); bulk schedule 6,250 sq ft; ADU by right with limitations (prior variables); parking not extracted",
+        "land_share": 21.7
+      },
+      {
+        "district": "CD-2",
+        "acres": 943.2,
+        "score": 33.7,
+        "components_scored": 5,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 12,
+            "max_points": 30
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 4,
+            "max_points": 10
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 3.3,
+            "max_points": 20
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 1,
+            "max_points": 15
+          },
+          {
+            "label": "Parking Mandate",
+            "points": null,
+            "max_points": 10
+          },
+          {
+            "label": "Demolition Delay",
+            "points": 10.0,
+            "max_points": 15
+          }
+        ],
+        "note": "Sub-Urban Single- and Two-Family; two-family permitted by right, multifamily NP (prior variables); 5,000 sq ft bulk minimum",
+        "land_share": 7.9
+      }
+    ],
+    "method": "Each district is scored with the same six-component rubric using only its own rules. The town V2 score is the land-area-weighted mean of included district scores; acreage is from data/land_area/norwalk.json. Components with no confirmed input are excluded per district."
   }
 }

@@ -46,7 +46,7 @@ function cellShade(v: number) {
 
 const COLUMNS: { key: SortKey; label: string; suffix?: string }[] = [
   { key: "score", label: "HAP Score" },
-  { key: "nzaScore", label: "NZA 2026" },
+  { key: "nzaScore", label: "NZA Proxy" },
   { key: "population", label: "Population" },
   { key: "pct2", label: "2F Excl.", suffix: "%" },
   { key: "pct3", label: "3F Excl.", suffix: "%" },

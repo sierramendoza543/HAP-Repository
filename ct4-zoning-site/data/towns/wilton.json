@@ -286,7 +286,7 @@
   },
   "caveat": "HODD sites are capped between 9 and 11 acres — a narrow, purpose-built carve-out, not a general-purpose multifamily zone. No downloadable PDF mirror exists for Wilton (the live file is bot-blocked), but its full text was extracted directly from the live document and most figures above now carry an independently re-verified quote; a few (min. lot size table, min. unit size, inclusionary %, historic overlay) remain citation-only where the table or section wasn't cleanly extractable as text.",
   "hap_score": {
-    "composite": 51.2,
+    "composite": 59.2,
     "factors": [
       {
         "category": "Use Permissions",
@@ -328,9 +328,9 @@
         "category": "Parking",
         "label": "Parking Mandate",
         "tier": "scaled",
-        "input_value": "0 spaces/unit",
-        "note": "\"Parking minimum = None, unless in a Conservation & Traffic Mitigation District\" for DRD/multifamily <17 units",
-        "points": 0.0,
+        "input_value": "2 spaces/unit",
+        "note": "R-2A single-family (the dominant residential use): \"Single-family dwellings — 2 per dwelling unit, plus 1 per guest sleeping room\" (§29-8.B.5.a(1)); the multifamily <17-unit exemption is a narrower case",
+        "points": 8.0,
         "max_points": 10
       },
       {

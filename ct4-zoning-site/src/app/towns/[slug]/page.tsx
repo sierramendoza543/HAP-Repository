@@ -98,7 +98,7 @@ export default async function TownPage({ params }: { params: Promise<{ slug: str
         </summary>
 
         <div className="mt-5 flex items-baseline justify-between border-b border-(--rule) pb-4 mb-5">
-          <span className="text-sm text-(--ink-dim)">NZA-derived composite score</span>
+          <span className="text-sm text-(--ink-dim)">NZA-derived proxy (our formula, not an NZA score)</span>
           <span className="font-bold text-2xl tabular">{town.composite_score.toFixed(1)}</span>
         </div>
 

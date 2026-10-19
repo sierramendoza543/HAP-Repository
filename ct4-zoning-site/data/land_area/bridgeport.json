@@ -1,0 +1,107 @@
+{
+ "slug": "bridgeport",
+ "source": {
+  "title": "City of Bridgeport Zoning and Land Use, layer ZONE_2021_Parcels",
+  "url": "https://services6.arcgis.com/OW4xtrE9QlSWSIuq/arcgis/rest/services/Zoning_and_Land_Use/FeatureServer/3",
+  "retrieved": "2026-10-19"
+ },
+ "method": "Sum of parcel polygon area grouped by ZONE_2021. Shape__Area is in Web Mercator (EPSG:3857) meters squared; corrected to true area by multiplying by cos^2(41.18 deg) = 0.5647 before converting to acres. Corrected total = 8089 acres, consistent with the city's ~8,000 acre parcel footprint.",
+ "districts": {
+  "IX": {
+   "acres": 21.2,
+   "parcels": 5
+  },
+  "P2": {
+   "acres": 662.9,
+   "parcels": 361
+  },
+  "P4": {
+   "acres": 66.8,
+   "parcels": 18
+  },
+  "DX1": {
+   "acres": 25.5,
+   "parcels": 89
+  },
+  "CX": {
+   "acres": 92.1,
+   "parcels": 292
+  },
+  "RX2": {
+   "acres": 980.5,
+   "parcels": 788
+  },
+  "NX4": {
+   "acres": 37.6,
+   "parcels": 12
+  },
+  "P5": {
+   "acres": 15.4,
+   "parcels": 2
+  },
+  "RX1": {
+   "acres": 246.7,
+   "parcels": 1031
+  },
+  "NX3": {
+   "acres": 471.6,
+   "parcels": 376
+  },
+  "(blank)": {
+   "acres": 9.3,
+   "parcels": 19
+  },
+  "MX1": {
+   "acres": 113.2,
+   "parcels": 530
+  },
+  "N1": {
+   "acres": 201.3,
+   "parcels": 1341
+  },
+  "MXN": {
+   "acres": 7.0,
+   "parcels": 52
+  },
+  "PDD": {
+   "acres": 84.8,
+   "parcels": 95
+  },
+  "NX1": {
+   "acres": 697.3,
+   "parcels": 5341
+  },
+  "N2": {
+   "acres": 1099.8,
+   "parcels": 7105
+  },
+  "P1": {
+   "acres": 821.4,
+   "parcels": 187
+  },
+  "N4": {
+   "acres": 819.5,
+   "parcels": 3207
+  },
+  "NX2": {
+   "acres": 732.3,
+   "parcels": 6262
+  },
+  "N3": {
+   "acres": 123.1,
+   "parcels": 274
+  },
+  "I": {
+   "acres": 430.0,
+   "parcels": 389
+  },
+  "DX2": {
+   "acres": 139.4,
+   "parcels": 146
+  },
+  "MX2": {
+   "acres": 190.4,
+   "parcels": 232
+  }
+ }
+}

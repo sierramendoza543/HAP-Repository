@@ -1,0 +1,221 @@
+{
+ "slug": "stamford",
+ "source": {
+  "title": "City of Stamford Zoning (StamfordGIS.GISADMIN.Zoning)",
+  "url": "https://services3.arcgis.com/V28nrLFIbcYZbnPl/arcgis/rest/services/City_of_Stamford_Zoning/FeatureServer/0",
+  "retrieved": "2026-10-19"
+ },
+ "method": "Sum of Shape__Area (state-plane feet squared, EPSG:6434) grouped by ZoningDistrict; converted to acres via /43560. Total = 24588 acres.",
+ "districts": {
+  "CC": {
+   "acres": 144.2,
+   "parcels": 1,
+   "description": "Central City"
+  },
+  "CW-D": {
+   "acres": 56.9,
+   "parcels": 6,
+   "description": "Coastal Water Dependent"
+  },
+  "C-B": {
+   "acres": 38.3,
+   "parcels": 13,
+   "description": "Community Business"
+  },
+  "B-D": {
+   "acres": 10.7,
+   "parcels": 1,
+   "description": "Designed Business"
+  },
+  "C-D": {
+   "acres": 257.1,
+   "parcels": 5,
+   "description": "Designed Commercial"
+  },
+  "CSC-D": {
+   "acres": 15.4,
+   "parcels": 1,
+   "description": "Designed Community Shopping Center"
+  },
+  "M-D": {
+   "acres": 58.3,
+   "parcels": 2,
+   "description": "Designed Industrial"
+  },
+  "IP-D": {
+   "acres": 48.0,
+   "parcels": 1,
+   "description": "Designed Industrial Park"
+  },
+  "DW-D": {
+   "acres": 43.6,
+   "parcels": 2,
+   "description": "Designed Waterfront Dependent"
+  },
+  "C-G": {
+   "acres": 65.5,
+   "parcels": 7,
+   "description": "General Commercial"
+  },
+  "M-G": {
+   "acres": 479.2,
+   "parcels": 12,
+   "description": "General Industrial"
+  },
+  "HT-D": {
+   "acres": 38.1,
+   "parcels": 1,
+   "description": "High Technology District"
+  },
+  "HCDD": {
+   "acres": 31.5,
+   "parcels": 1,
+   "description": "Hospital Complex Design District"
+  },
+  "C-I": {
+   "acres": 37.5,
+   "parcels": 3,
+   "description": "Intermediate Commercial"
+  },
+  "M-L": {
+   "acres": 258.9,
+   "parcels": 9,
+   "description": "Light Industrial"
+  },
+  "C-L": {
+   "acres": 73.9,
+   "parcels": 14,
+   "description": "Limited Business"
+  },
+  "MR-D": {
+   "acres": 16.8,
+   "parcels": 5,
+   "description": "Mill River Design"
+  },
+  "MX-D": {
+   "acres": 31.8,
+   "parcels": 8,
+   "description": "Mixed Use Development"
+  },
+  "R-H": {
+   "acres": 115.8,
+   "parcels": 11,
+   "description": "Multiple Family High Density Design"
+  },
+  "RM-1": {
+   "acres": 271.2,
+   "parcels": 25,
+   "description": "Multiple Family Low Density Design"
+  },
+  "R-5": {
+   "acres": 737.6,
+   "parcels": 37,
+   "description": "Multiple Family Medium Density Design"
+  },
+  "R-MF": {
+   "acres": 332.5,
+   "parcels": 26,
+   "description": "Multiple Family Residence Design"
+  },
+  "C-N": {
+   "acres": 167.8,
+   "parcels": 31,
+   "description": "Neighborhood Business"
+  },
+  "NX-D": {
+   "acres": 16.2,
+   "parcels": 2,
+   "description": "Neighborhood Mixed District"
+  },
+  "R-10": {
+   "acres": 1943.5,
+   "parcels": 17,
+   "description": "One Family Residence"
+  },
+  "R-20": {
+   "acres": 1489.3,
+   "parcels": 18,
+   "description": "One Family Residence"
+  },
+  "R-7 1/2": {
+   "acres": 1313.5,
+   "parcels": 25,
+   "description": "One Family Residence"
+  },
+  "RA-1": {
+   "acres": 8798.7,
+   "parcels": 7,
+   "description": "One Family Residence"
+  },
+  "RA-2": {
+   "acres": 2666.4,
+   "parcels": 6,
+   "description": "One Family Residence"
+  },
+  "RA-3": {
+   "acres": 3147.4,
+   "parcels": 3,
+   "description": "One Family Residence"
+  },
+  "R-10/R-D": {
+   "acres": 55.2,
+   "parcels": 3,
+   "description": "One Family Residence with Design District Overlay"
+  },
+  "R-20/R-D": {
+   "acres": 92.5,
+   "parcels": 3,
+   "description": "One Family Residence with Design District Overlay"
+  },
+  "RA-1/R-D": {
+   "acres": 78.8,
+   "parcels": 2,
+   "description": "One Family Residence with Design District Overlay"
+  },
+  "RA-2/R-D": {
+   "acres": 75.3,
+   "parcels": 1,
+   "description": "One Family Residence with Design District Overlay"
+  },
+  "R-6": {
+   "acres": 423.3,
+   "parcels": 14,
+   "description": "One Family, Two Family Residence"
+  },
+  "P": {
+   "acres": 884.4,
+   "parcels": 37,
+   "description": "Park"
+  },
+  "P-D": {
+   "acres": 10.4,
+   "parcels": 2,
+   "description": "Planned Development"
+  },
+  "R-HD": {
+   "acres": 40.5,
+   "parcels": 5,
+   "description": "Residential High Density"
+  },
+  "SRD-N": {
+   "acres": 22.6,
+   "parcels": 1,
+   "description": "South End Redevelopment District North"
+  },
+  "SRD-S": {
+   "acres": 67.5,
+   "parcels": 1,
+   "description": "South End Redevelopment District South"
+  },
+  "TCDD": {
+   "acres": 56.7,
+   "parcels": 1,
+   "description": "Transportation Center Design District"
+  },
+  "V-C": {
+   "acres": 75.6,
+   "parcels": 5,
+   "description": "Village Commercial District"
+  }
+ }
+}

@@ -26,6 +26,20 @@
     },
     {
       "category": "Dimensional Standards",
+      "district": "RS-4",
+      "label": "Min. lot size",
+      "value": "7,500 sq ft",
+      "source": {
+        "kind": "link",
+        "id": "stratford-link",
+        "url": "https://ecode360.com/9207545",
+        "title": "Stratford Zoning Code Ch. A220 (eff. Jan. 1, 2025)"
+      },
+      "cite": "§3.2.1 table",
+      "quote": null
+    },
+    {
+      "category": "Dimensional Standards",
       "district": "RS-1",
       "label": "Min. lot size",
       "value": "40,000 sq ft",
@@ -286,7 +300,7 @@
   },
   "caveat": "An apparent inconsistency exists between the Use Table's \"4 or more units\" threshold and §5.1's \"(3+)\" heading for Special Permit review — flagged for follow-up. Stratford's code is hosted as a browsable eCode360 site rather than a single PDF, so there's no local mirror — but every figure below has now been independently re-verified against the live eCode360 text and carries a verbatim quote.",
   "hap_score": {
-    "composite": 37.6,
+    "composite": 29.7,
     "factors": [
       {
         "category": "Use Permissions",
@@ -310,9 +324,9 @@
         "category": "Dimensional Standards",
         "label": "Minimum Lot Size",
         "tier": "scaled",
-        "input_value": "40,000 sq ft",
-        "note": "RS-1 (base district tracked): \"Min. lot size = 40,000 sq ft\"",
-        "points": 13.1,
+        "input_value": "7,500 sq ft",
+        "note": "RS-4 (smallest single-family district, §3.2.1 table): \"7,500\" sq ft minimum area",
+        "points": 5.2,
         "max_points": 20
       },
       {

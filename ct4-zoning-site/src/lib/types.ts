@@ -51,6 +51,30 @@ export interface HapScore {
   methodology_note: string;
 }
 
+export interface V2Factor {
+  label: string;
+  points: number | null;
+  max_points: number;
+}
+
+export interface V2District {
+  district: string;
+  acres: number;
+  score: number | null;
+  components_scored: number;
+  land_share: number | null;
+  factors: V2Factor[];
+  note: string;
+}
+
+export interface V2Town {
+  land_weighted_score: number | null;
+  districts_included: number;
+  acres_included: number;
+  districts: V2District[];
+  method: string;
+}
+
 export interface Town {
   slug: string;
   name: string;
@@ -60,6 +84,7 @@ export interface Town {
   districts_analyzed: number;
   composite_score: number;
   hap_score: HapScore;
+  v2?: V2Town;
   last_checked: string;
   restrictive_district: string;
   permissive_district: string;

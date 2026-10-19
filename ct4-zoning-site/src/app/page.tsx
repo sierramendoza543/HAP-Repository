@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getAllTowns } from "@/lib/towns";
 import MetricHeatmap from "@/components/MetricHeatmap";
 import OverviewTable from "@/components/OverviewTable";
@@ -49,8 +50,9 @@ export default function Home() {
           <span className="font-semibold text-(--ink)">HAP Score</span>: our own 0&ndash;100
           restrictiveness index, computed from the cited Variables table on each town&rsquo;s page
           &mdash; open a town for the full point-by-point breakdown.{" "}
-          <span className="font-semibold text-(--ink)">NZA 2026</span>: the National Zoning
-          Atlas&rsquo;s own independent composite, shown for comparison. Population and the five
+          <span className="font-semibold text-(--ink)">NZA Proxy</span>: our own weighted
+          combination of three National Zoning Atlas snapshot percentages. NZA publishes no
+          composite score of its own, so this is a comparison figure, not an NZA result. Population and the five
           metric columns are NZA Jurisdiction Snapshot data (cited per-number on each town&rsquo;s
           page).
         </p>
@@ -78,6 +80,14 @@ export default function Home() {
             per-number citation.
           </p>
         </div>
+      </section>
+
+      <section className="py-6 border-b border-(--rule)">
+        <h2 className="text-base font-semibold mb-1">Version 2: District-Level Scores</h2>
+        <p className="text-xs text-(--ink-dim)">
+          Per-district scores for Bridgeport, Stamford, Greenwich, and Norwalk, weighted by
+          land area. <Link href="/v2" className="underline hover:text-(--accent)">Open the V2 page</Link>.
+        </p>
       </section>
 
       <footer className="py-8 text-xs text-(--ink-dim)">
