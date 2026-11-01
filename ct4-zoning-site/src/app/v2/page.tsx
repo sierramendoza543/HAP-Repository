@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getAllTowns } from "@/lib/towns";
 import type { V2District, Town } from "@/lib/types";
+import V2CitationButton from "@/components/V2CitationButton";
 
 export default function V2Page() {
   const towns = getAllTowns()
@@ -91,9 +92,33 @@ function DistrictRow({ d, maxAcres }: { d: V2District; maxAcres: number }) {
         <p className="text-xs text-(--ink-dim) mb-2">
           {d.note}
           <span className="block mt-1 text-(--ink-faint)">
-            Scored on {d.components_scored} of 6 components{d.components_scored < 6 ? "; the remainder are excluded and this score is renormalized over the confirmed ones" : ""}.
+            Scored on {d.components_scored} of 6 components.
+            {d.included ? "" : " Excluded from the town score: fewer than 5 components are confirmed."}
           </span>
         </p>
+        {d.citations.length > 0 && (
+          <div className="mb-3 flex flex-col gap-2">
+            {d.citations.map((c) => (
+              <div key={`${c.field}-${c.cite}`} className="text-xs border-l-2 border-(--accent) pl-3">
+                <p className="font-semibold">
+                  {c.field.replace("_", " ")} &middot; {c.cite}
+                </p>
+                <p className="italic text-(--ink-dim)">&ldquo;{c.quote}&rdquo;</p>
+                <div className="mt-0.5 flex flex-wrap gap-x-2">
+                  <V2CitationButton
+                    source={{ kind: "pdf", id: c.file, url: c.url, title: c.source_title, file: c.file }}
+                    cite={c.cite}
+                    quote={c.quote}
+                  />
+                  <span aria-hidden>·</span>
+                  <a href={c.url} target="_blank" rel="noopener noreferrer" className="underline hover:text-(--accent)">
+                    {c.source_title}
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
         <div className="grid sm:grid-cols-2 gap-x-6 gap-y-1">
           {d.factors.map((f) => (
             <div key={f.label} className="flex justify-between text-xs border-b border-(--rule) py-1">

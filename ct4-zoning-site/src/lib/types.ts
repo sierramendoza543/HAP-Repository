@@ -57,12 +57,23 @@ export interface V2Factor {
   max_points: number;
 }
 
+export interface V2Citation {
+  field: string;
+  cite: string;
+  quote: string;
+  source_title: string;
+  url: string;
+  file: string;
+}
+
 export interface V2District {
+  citations: V2Citation[];
   district: string;
   acres: number;
   score: number | null;
   components_scored: number;
   land_share: number | null;
+  included: boolean;
   factors: V2Factor[];
   note: string;
 }

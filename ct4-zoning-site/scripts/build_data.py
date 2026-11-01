@@ -5,7 +5,7 @@ text independently verified against the source document's own extracted
 text (via pdftotext on the mirrored PDF). Where we don't have a confirmed
 verbatim match, quote is None -- the UI then says so plainly instead of
 highlighting the wrong thing."""
-import json, os
+import json, os, re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TOWNS_DIR = os.path.join(ROOT, "data", "towns")
@@ -1018,6 +1018,103 @@ V2_DISTRICTS = {
 
 V2_LOOKUP_NORMALIZE = lambda s: s.replace(" ", "").replace("½", "1/2").upper()
 
+# Verbatim citations for V2 district inputs. Each quote is checked against the mirrored
+# PDF's extracted text at build time; a quote that is not found stops the build.
+V2_SOURCES = {
+    "bridgeport": ("bridgeport-zoning.pdf", "Zone Bridgeport form-based code (amended July 2022)", "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf"),
+    "stamford": ("stamford-zoning.pdf", "Zoning Regulations, City of Stamford (through July 10, 2024)", "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000"),
+    "greenwich-div9": ("greenwich-div9.pdf", "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)", "https://www.greenwichct.gov/DocumentCenter/View/37828"),
+    "greenwich-div21": ("greenwich-div21.pdf", "Building Zone Regulations, Div. 21 (Bulk Schedule)", "https://www.greenwichct.gov/DocumentCenter/View/37841"),
+    "norwalk": ("norwalk-art3.pdf", "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)", "https://www.norwalkct.gov/DocumentCenter/View/32245"),
+}
+
+# (district, field) -> (source key, citation, verbatim quote)
+V2_CITES = {
+    ("bridgeport", "N1", "use"): ("bridgeport", "§3.90 House A, Number of Principal Units", "Number of Principal Units 1 in House"),
+    ("bridgeport", "N1", "adu"): ("bridgeport", "§3.90 House A, Number of Accessory Apartments", "Number of Accessory Apartments 1 in House or Backyard Cottage"),
+    ("bridgeport", "N2", "use"): ("bridgeport", "§2.20.2(B) N2 zone description", "N2, Neighborhood: Mid-Century. The N2 zone is"),
+    ("bridgeport", "N2", "lot"): ("bridgeport", "§3.100 House B, Lot Size", "Lot Size No min."),
+    ("bridgeport", "N2", "adu"): ("bridgeport", "§3.100 House B, Number of Accessory Apartments", "Number of Accessory Apartments 1 in Backyard Cottage with special permit"),
+    ("bridgeport", "N3", "lot"): ("bridgeport", "§3.110 House C, Lot Size", "Lot Size 9000 sq. ft. min."),
+    ("bridgeport", "N3", "adu"): ("bridgeport", "§3.110 House C, Number of Accessory Apartments", "Number of Accessory Apartments up to 2; 1 in House and/or 1 in Backyard Cottage"),
+    ("bridgeport", "N4", "lot"): ("bridgeport", "§3.120 House D, Lot Size", "Lot Size 7500 sq. ft. min."),
+    ("bridgeport", "N4", "adu"): ("bridgeport", "§3.120 House D, Number of Accessory Apartments", "Number of Accessory Apartments 1 in House or Backyard Cottage"),
+    ("bridgeport", "NX1", "use"): ("bridgeport", "§2.20.2(E) NX1 zone description", "NX1, Neighborhood Mix. The NX1 zone is intended to"),
+    ("bridgeport", "NX1", "lot"): ("bridgeport", "§3.90 House A, Lot Width (N1/NX1/NX2 columns)", "Lot Width 45 ft. min. 45 ft. min. 35 ft. min."),
+    ("bridgeport", "NX2", "use"): ("bridgeport", "§2.20.2(F) NX2 zone description", "NX2, Neighborhood Mix. The NX2 zone is intended to"),
+    ("bridgeport", "NX3", "use"): ("bridgeport", "§2.20.2(G) NX3 zone description", "NX3, Mixed Residential. The NX3 zone is intended for"),
+    ("bridgeport", "NX1", "adu_size"): ("bridgeport", "§4.70.2(B)(5) accessory apartment size", "may not exceed 49% of the gross floor area of the"),
+    ("bridgeport", "NX2", "adu_size"): ("bridgeport", "§4.70.2(B)(5) accessory apartment size", "may not exceed 49% of the gross floor area of the"),
+    ("bridgeport", "NX2", "parking"): ("bridgeport", "§4.70.2(B)(6) accessory apartment parking", "No additional parking is required for an accessory apartment."),
+    ("stamford", "RA-3", "lot"): ("stamford", "§5.X.3(a)(1) RA-3 minimum lot area", "(1) Minimum Lot Area: 130,680 sq. ft., designed to contain a circle 200 feet in diameter."),
+    ("stamford", "RA-2", "lot"): ("stamford", "§5.X.3(b)(1) RA-2 minimum lot area", "(1) Minimum Lot Area: 87,120 sq. ft., designed to contain a circle 200 feet in diameter."),
+    ("stamford", "RA-1", "lot"): ("stamford", "§5.X.3(c)(1) RA-1 minimum lot area", "(1) Minimum Lot Area: 43,560 sq. ft. designed to contain a circle 125 feet in diameter."),
+    ("stamford", "R-20", "lot"): ("stamford", "§5.Y.3(a)(1) R-20 minimum lot area", "(1) Minimum Lot Area: 20,000 sq. ft., designed to contain a circle 100 feet in diameter."),
+    ("stamford", "R-10", "lot"): ("stamford", "§5.Y.3(b)(1) R-10 minimum lot area", "(1) Minimum Lot Area: 10,000 sq. ft."),
+    ("stamford", "R-7 1/2", "lot"): ("stamford", "§5.Y.3(c)(1) R-7½ minimum lot area", "(1) Minimum Lot Area: 7500 sq. ft."),
+    ("stamford", "R-6", "lot"): ("stamford", "§5.Z.4(a) R-6 minimum lot area", "a. Minimum Lot Area: Single Family Dwelling 5000 sq. ft."),
+    ("stamford", "RA-3", "adu"): ("stamford", "ADU definition, conditions 1 and 4", "Accessory Dwelling Units may only be permitted by Zoning Permit"),
+    ("stamford", "RA-3", "adu_size"): ("stamford", "ADU definition, condition 6", "The size of the ADU shall not exceed eight hundred (800) sf in Gross Floor Area;"),
+    ("stamford", "RA-3", "parking"): ("stamford", "ADU definition, condition 8", "One (1) off-street Parking Space shall be provided for an ADU in addition to the parking"),
+    ("stamford", "RA-3", "use"): ("stamford", "§5.X.1 Purpose, RA-3/RA-2/RA-1", "predominantly for single family"),
+    ("greenwich", "RA-4", "use"): ("greenwich-div9", "§6-93(a)(1)", "Detached single family dwellings, one (1) per lot."),
+    ("greenwich", "RA-4", "lot"): ("greenwich-div21", "Bulk schedule, RA-4 row", "RA-4 3-1/2 50 ft. 4 Acres"),
+    ("greenwich", "RA-2", "lot"): ("greenwich-div21", "Bulk schedule, RA-2 row", "RA-2 3-1/2 47½ ft. 2 Acres"),
+    ("greenwich", "RA-1", "lot"): ("greenwich-div21", "Bulk schedule, RA-1 row", "RA-1 2-1/2 40 ft. 1 Acre"),
+    ("greenwich", "R-20", "lot"): ("greenwich-div21", "Bulk schedule, R-20 row", "R-20 2-1/2 37½ ft. 20,000 100 ft."),
+    ("greenwich", "R-12", "lot"): ("greenwich-div21", "Bulk schedule, R-12 row", "R-12 2-1/2 35 ft. 12,000 80 ft."),
+    ("greenwich", "R-7", "lot"): ("greenwich-div21", "Bulk schedule, R-7 row", "R-7 2-1/2 35 ft. 7,500 65 ft."),
+    ("greenwich", "R-6", "lot"): ("greenwich-div21", "Bulk schedule, R-6 row", "R-6 2-1/2 35 ft. 7,500 sq. ft. 60 ft."),
+    ("greenwich", "R-6", "use"): ("greenwich-div9", "§6-98(a)(3)(A)", "Administrative site plan approval is required on lots of 7,500 square feet or larger for: (A) New two-family dwellings"),
+    ("greenwich", "R-7", "use"): ("greenwich-div9", "§6-97(a)(1)", "All uses permitted in RA-4 zones and uses permitted under Sec. 6-94."),
+    ("greenwich", "R-MF", "use"): ("greenwich-div9", "§6-98.1(a)(2)", "The following uses are permitted as Special Permit uses"),
+    ("greenwich", "RA-4", "adu_size"): ("greenwich-div9", "§6-99(3)(D)(i) external ADU cap", "1,000 square feet in RA-1 and R-20 zones; and 1,200 square feet in RA-2 and RA-4"),
+    ("greenwich", "RA-2", "adu_size"): ("greenwich-div9", "§6-99(3)(D)(i) external ADU cap", "1,000 square feet in RA-1 and R-20 zones; and 1,200 square feet in RA-2 and RA-4"),
+    ("greenwich", "RA-1", "adu_size"): ("greenwich-div9", "§6-99(3)(D)(i) external ADU cap", "1,000 square feet in RA-1 and R-20 zones; and 1,200 square feet in RA-2 and RA-4"),
+    ("greenwich", "R-20", "adu_size"): ("greenwich-div9", "§6-99(3)(D)(i) external ADU cap", "1,000 square feet in RA-1 and R-20 zones; and 1,200 square feet in RA-2 and RA-4"),
+    ("greenwich", "R-12", "adu_size"): ("greenwich-div9", "§6-99(3)(D)(i) external ADU cap", "External ADUs shall be limited to 800 square feet in R-12, R-7 and R-6 zones;"),
+    ("greenwich", "R-7", "adu_size"): ("greenwich-div9", "§6-99(3)(D)(i) external ADU cap", "External ADUs shall be limited to 800 square feet in R-12, R-7 and R-6 zones;"),
+    ("greenwich", "R-6", "adu_size"): ("greenwich-div9", "§6-99(3)(D)(i) external ADU cap", "External ADUs shall be limited to 800 square feet in R-12, R-7 and R-6 zones;"),
+    ("greenwich", "R-6", "adu"): ("greenwich-div9", "§6-99(3)(E) special permit only for larger ADU", "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU"),
+    ("greenwich", "RA-4", "parking"): ("greenwich-div9", "§6-99(3)(F) ADU parking", "There must be at least one off-street parking space on an appropriate solid surface dedicated to the ADU."),
+    ("norwalk", "CD-1L", "use"): ("norwalk", "§3.3.1(A)(1) CD-1L district", "1. Community District CD-1L"),
+    ("norwalk", "CD-1M", "use"): ("norwalk", "§3.3.1(A)(2) CD-1M district", "2. Community District CD-1M"),
+    ("norwalk", "CD-1S", "use"): ("norwalk", "§3.3.1(A)(3) CD-1S district", "3. Community District CD-1S (Sub-Urban Single-"),
+    ("norwalk", "CD-2", "use"): ("norwalk", "§3.3.1(A)(4) CD-2 district", "4. Community District CD-2 (Sub-Urban Single-"),
+}
+
+# Rules stated once in the code apply to every district they cover.
+for _d in ["RA-2", "RA-1", "R-20", "R-10", "R-7 1/2"]:
+    V2_CITES[("stamford", _d, "adu")] = V2_CITES[("stamford", "RA-3", "adu")]
+    V2_CITES[("stamford", _d, "adu_size")] = V2_CITES[("stamford", "RA-3", "adu_size")]
+    V2_CITES[("stamford", _d, "parking")] = V2_CITES[("stamford", "RA-3", "parking")]
+V2_CITES[("stamford", "R-6", "use")] = ("stamford", "Zoning district list, R-6", "R-6               One-Family, Two-Family Residence District")
+for _d in ["RA-4", "RA-2", "RA-1", "R-20", "R-12", "R-7", "R-6", "R-MF"]:
+    V2_CITES[("greenwich", _d, "adu")] = ("greenwich-div9", "§6-99(3)(E) ADU approved by zoning permit unless larger", "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU")
+    V2_CITES[("greenwich", _d, "parking")] = V2_CITES[("greenwich", "RA-4", "parking")]
+for _d in ["RA-2", "RA-1", "R-20", "R-12", "R-7", "R-6"]:
+    V2_CITES[("greenwich", _d, "adu_size")] = V2_CITES[("greenwich", "RA-4", "adu_size")] if _d in ("RA-2", "RA-1", "R-20") else V2_CITES[("greenwich", "R-6", "adu_size")]
+for _d in ["RA-2", "RA-1", "R-20", "R-12", "R-7", "R-6"]:
+    V2_CITES[("greenwich", _d, "use")] = V2_CITES.get(("greenwich", _d, "use"), ("greenwich-div9", "§6-93(a)(1)", "Detached single family dwellings, one (1) per lot."))
+def _pdf_compact_text(filename):
+    import subprocess
+    path = os.path.join(ROOT, "public", "sources", filename)
+    out = subprocess.run(["pdftotext", "-q", "-layout", path, "-"], capture_output=True, text=True, check=True).stdout
+    return re.sub(r"\s+", "", out).lower()
+
+_PDF_TEXT_CACHE = {}
+def v2_citation(slug, district, field):
+    key = (slug, district, field)
+    if key not in V2_CITES:
+        return None
+    src_key, cite, quote = V2_CITES[key]
+    filename, title, url = V2_SOURCES[src_key]
+    if filename not in _PDF_TEXT_CACHE:
+        _PDF_TEXT_CACHE[filename] = _pdf_compact_text(filename)
+    if re.sub(r"\s+", "", quote).lower() not in _PDF_TEXT_CACHE[filename]:
+        raise SystemExit(f"V2 quote not found in {filename}: {key}: {quote[:80]}")
+    return {"field": field, "cite": cite, "quote": quote, "source_title": title, "url": url, "file": f"/sources/{filename}"}
+
 def compute_v2_district(inputs):
     use, approval, adu, lot, parking, demo = (inputs["use"], inputs["approval"], inputs["adu"],
                                               inputs["lot"], inputs["parking"], inputs["demo"])
@@ -1050,13 +1147,17 @@ def compute_v2_town(slug):
             raise SystemExit(f"{slug}: district {code} missing from land-area file")
         _, acres = acres_norm[key]
         r = compute_v2_district(inputs)
+        cites = [c for c in (v2_citation(slug, code, f) for f in ("use", "lot", "adu", "adu_size", "parking")) if c]
         results.append({"district": code, "acres": round(acres, 1), "score": r["score"],
                         "components_scored": r["components_scored"], "factors": r["factors"],
-                        "note": inputs["note"]})
-    scored = [r for r in results if r["score"] is not None]
+                        "note": inputs["note"], "citations": cites})
+    V2_MIN_COMPONENTS = 5
+    for r in results:
+        r["included"] = r["score"] is not None and r["components_scored"] >= V2_MIN_COMPONENTS
+    scored = [r for r in results if r["included"]]
     total_acres = sum(r["acres"] for r in scored)
     for r in results:
-        r["land_share"] = round(r["acres"] / total_acres * 100, 1) if r["score"] is not None and total_acres else None
+        r["land_share"] = round(r["acres"] / total_acres * 100, 1) if r["included"] and total_acres else None
     weighted = sum(r["score"] * r["acres"] for r in scored) / total_acres if total_acres else None
     return {
         "land_weighted_score": round(weighted, 1) if weighted is not None else None,
@@ -1064,7 +1165,7 @@ def compute_v2_town(slug):
         "acres_included": round(total_acres, 1),
         "districts": results,
         "method": ("Each district is scored with the same six-component rubric using only its own rules. "
-                   "The town V2 score is the land-area-weighted mean of included district scores; "
+                   "A district is included only if at least 5 of 6 components are confirmed. The town V2 score is the land-area-weighted mean of included district scores; "
                    "acreage is from data/land_area/%s.json. Components with no confirmed input "
                    "are excluded per district." % slug),
     }
