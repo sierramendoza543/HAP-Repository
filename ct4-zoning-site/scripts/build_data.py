@@ -954,19 +954,19 @@ LAND_DIR = os.path.join(ROOT, "data", "land_area")
 
 V2_DISTRICTS = {
     "bridgeport": {
-        "N1": {"use": "none", "approval": "none", "lot": 0, "adu": "by_right", "parking": 0, "demo": 90,
+        "N1": {"use": "none", "approval": "none", "lot": 0, "adu": "by_right", "parking": 0, "demo": None,
                "note": "House A only (one unit per lot); no lot-area minimum (45 ft width); ADU by right per N1 rule; parking none citywide"},
-        "N2": {"use": "none", "approval": "none", "lot": 0, "adu": "special_permit", "parking": 0, "demo": 90,
+        "N2": {"use": "none", "approval": "none", "lot": 0, "adu": "special_permit", "parking": 0, "demo": None,
                "note": "House B only (single unit); no lot-area minimum (45 ft width); accessory apartment only as backyard cottage with special permit (§3.100 table)"},
-        "N3": {"use": "none", "approval": "none", "lot": 9000, "adu": "by_right", "parking": 0, "demo": 90,
+        "N3": {"use": "none", "approval": "none", "lot": 9000, "adu": "by_right", "parking": 0, "demo": None,
                "note": "House C only; 9,000 sq ft minimum lot (§3.110); up to 2 accessory units, 1 in house and/or 1 in backyard cottage, by right (§3.110 table)"},
-        "N4": {"use": "none", "approval": "none", "lot": 7500, "adu": "by_right", "parking": 0, "demo": 90,
+        "N4": {"use": "none", "approval": "none", "lot": 7500, "adu": "by_right", "parking": 0, "demo": None,
                "note": "House D only; 7,500 sq ft minimum lot (§3.120); 1 accessory apartment in house or backyard cottage, by right (§3.120 table)"},
-        "NX1": {"use": "by_right", "approval": "by_right", "lot": 0, "adu": "by_right", "parking": 0, "demo": 90,
+        "NX1": {"use": "by_right", "approval": "by_right", "lot": 0, "adu": "by_right", "parking": 0, "demo": None,
                 "note": "House A, Row and Double House A permitted (up to 6 units by right per Double House A rule); 45 ft width, no lot-area minimum; 1 accessory apartment by right (§3.90 table); size cap 49% of principal GFA or 800 sq ft (§4.70.2)"},
-        "NX2": {"use": "by_right", "approval": "by_right", "lot": 0, "adu": "by_right", "parking": 0, "demo": 90,
+        "NX2": {"use": "by_right", "approval": "by_right", "lot": 0, "adu": "by_right", "parking": 0, "demo": None,
                 "note": "Small General, Row, Double House A and House A permitted; backyard cottage allowed (Table of accessory structures, 4 = allowed); 35–50 ft width"},
-        "NX3": {"use": "by_right", "approval": "by_right", "lot": None, "adu": None, "parking": 0, "demo": 90,
+        "NX3": {"use": "by_right", "approval": "by_right", "lot": None, "adu": None, "parking": 0, "demo": None,
                 "note": "General, Row and Civic building types (multi-unit); lot-area minimum not confirmed in extracted text"},
     },
     "stamford": {
@@ -987,21 +987,21 @@ V2_DISTRICTS = {
     },
     "greenwich": {
         "RA-4": {"use": "none", "approval": "none", "lot": 174240, "adu": "zoning_permit", "parking": None, "demo": 90,
-                 "note": "Single-family only (Sec. 6-93); 4-acre minimum (div. 21 table); ADU by zoning permit, external ADU up to 1,200 sq ft (§6-99(3)(D)); ADU adds 1 dedicated off-street space (§6-99(3)(F)); single-family base parking not in extracted text"},
+                 "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; 90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Single-family only (Sec. 6-93); 4-acre minimum (div. 21 table); ADU by zoning permit, external ADU up to 1,200 sq ft (§6-99(3)(D)); ADU adds 1 dedicated off-street space (§6-99(3)(F)); single-family base parking not in extracted text"},
         "RA-2": {"use": "none", "approval": "none", "lot": 87120, "adu": "zoning_permit", "parking": None, "demo": 90,
-                 "note": "Single-family only (Sec. 6-93); 2-acre minimum; ADU by zoning permit, external ADU up to 1,200 sq ft (§6-99(3)(D)); base parking not in extracted text"},
+                 "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; 90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Single-family only (Sec. 6-93); 2-acre minimum; ADU by zoning permit, external ADU up to 1,200 sq ft (§6-99(3)(D)); base parking not in extracted text"},
         "RA-1": {"use": "none", "approval": "none", "lot": 43560, "adu": "zoning_permit", "parking": None, "demo": 90,
-                 "note": "Single-family only (Sec. 6-93); 1-acre minimum; ADU by zoning permit, external ADU up to 1,000 sq ft (§6-99(3)(D)); base parking not in extracted text"},
+                 "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; 90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Single-family only (Sec. 6-93); 1-acre minimum; ADU by zoning permit, external ADU up to 1,000 sq ft (§6-99(3)(D)); base parking not in extracted text"},
         "R-20": {"use": "none", "approval": "none", "lot": 20000, "adu": "zoning_permit", "parking": None, "demo": 90,
-                 "note": "Single-family only (Sec. 6-93); 20,000 sq ft minimum (prior variables); ADU by zoning permit, external ADU up to 1,000 sq ft (§6-99(3)(D)); base parking not in extracted text"},
+                 "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; 90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Single-family only (Sec. 6-93); 20,000 sq ft minimum (prior variables); ADU by zoning permit, external ADU up to 1,000 sq ft (§6-99(3)(D)); base parking not in extracted text"},
         "R-12": {"use": "none", "approval": "none", "lot": 12000, "adu": "zoning_permit", "parking": None, "demo": 90,
-                 "note": "Single-family only (Sec. 6-93); 12,000 sq ft minimum (prior variables); ADU by zoning permit, external ADU up to 800 sq ft (§6-99(3)(D)); base parking not in extracted text"},
+                 "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; 90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Single-family only (Sec. 6-93); 12,000 sq ft minimum (prior variables); ADU by zoning permit, external ADU up to 800 sq ft (§6-99(3)(D)); base parking not in extracted text"},
         "R-7": {"use": "none", "approval": "none", "lot": 7500, "adu": "zoning_permit", "parking": None, "demo": 90,
-                "note": "Sec. 6-97: uses of RA-4 only plus §6-94; 7,500 sq ft minimum (div. 21 table); ADU by zoning permit, external ADU up to 800 sq ft (§6-99(3)(D)); base parking not in extracted text"},
+                "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Sec. 6-97: uses of RA-4 only plus §6-94; 7,500 sq ft minimum (div. 21 table); ADU by zoning permit, external ADU up to 800 sq ft (§6-99(3)(D)); base parking not in extracted text"},
         "R-6": {"use": "capped_by_right", "approval": "capped_by_right", "lot": 7500, "adu": "zoning_permit", "parking": None, "demo": 90,
-                "note": "Sec. 6-98: two-family by administrative site plan approval on lots ≥7,500 sq ft; 7,500 sq ft minimum (div. 21 table); ADU external up to 800 sq ft; base parking not in extracted text"},
+                "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Sec. 6-98: two-family by administrative site plan approval on lots ≥7,500 sq ft; 7,500 sq ft minimum (div. 21 table); ADU external up to 800 sq ft; base parking not in extracted text"},
         "R-MF": {"use": "discretionary", "approval": "discretionary", "lot": None, "adu": "zoning_permit", "parking": 2, "demo": 90,
-                 "note": "Two-family / multifamily by Special Permit only (prior variables); lot minimum is per family (2,400 sq ft), not comparable so excluded; 1-2BR parking = 2 spaces (1 garage + 1 outdoor)"},
+                 "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; 90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Two-family / multifamily by Special Permit only (prior variables); lot minimum is per family (2,400 sq ft), not comparable so excluded; 1-2BR parking = 2 spaces (1 garage + 1 outdoor)"},
     },
     "norwalk": {
         "CD-1L": {"use": "none", "approval": "none", "lot": 43560, "adu": None, "parking": None, "demo": 120,
@@ -1043,6 +1043,9 @@ V2_CITES = {
     ("bridgeport", "NX1", "lot"): ("bridgeport", "§3.90 House A, Lot Width (N1/NX1/NX2 columns)", "Lot Width 45 ft. min. 45 ft. min. 35 ft. min."),
     ("bridgeport", "NX2", "use"): ("bridgeport", "§2.20.2(F) NX2 zone description", "NX2, Neighborhood Mix. The NX2 zone is intended to"),
     ("bridgeport", "NX3", "use"): ("bridgeport", "§2.20.2(G) NX3 zone description", "NX3, Mixed Residential. The NX3 zone is intended for"),
+    ("bridgeport", "NX2", "lot"): ("bridgeport", "§3.90 House A, Lot Width (N1/NX1/NX2 columns)", "Lot Width 45 ft. min. 45 ft. min. 35 ft. min."),
+    ("bridgeport", "NX2", "adu"): ("bridgeport", "§3.90 House A, Number of Accessory Apartments", "Number of Accessory Apartments 1 in House or Backyard Cottage"),
+    ("bridgeport", "NX1", "adu"): ("bridgeport", "§3.90 House A, Number of Accessory Apartments", "Number of Accessory Apartments 1 in House or Backyard Cottage"),
     ("bridgeport", "NX1", "adu_size"): ("bridgeport", "§4.70.2(B)(5) accessory apartment size", "may not exceed 49% of the gross floor area of the"),
     ("bridgeport", "NX2", "adu_size"): ("bridgeport", "§4.70.2(B)(5) accessory apartment size", "may not exceed 49% of the gross floor area of the"),
     ("bridgeport", "NX2", "parking"): ("bridgeport", "§4.70.2(B)(6) accessory apartment parking", "No additional parking is required for an accessory apartment."),
@@ -1115,7 +1118,72 @@ def v2_citation(slug, district, field):
         raise SystemExit(f"V2 quote not found in {filename}: {key}: {quote[:80]}")
     return {"field": field, "cite": cite, "quote": quote, "source_title": title, "url": url, "file": f"/sources/{filename}"}
 
-def compute_v2_district(inputs):
+V2_TIER_SCALES = {
+    "use": [
+        ("by_right", "Multifamily allowed by right in a meaningful district with no cap"),
+        ("capped_by_right", "Multifamily or two-family by right, but capped by unit count or density"),
+        ("narrow_by_right", "By right only in a narrow or hard-to-create district"),
+        ("discretionary", "Multifamily allowed only through a special permit or hearing"),
+        ("none", "No multifamily pathway in this district"),
+    ],
+    "approval": [
+        ("by_right", "Approved administratively, no hearing"),
+        ("capped_by_right", "Administrative site-plan approval with a cap"),
+        ("narrow_by_right", "By right only in a narrow district"),
+        ("discretionary", "Special permit or hearing required"),
+        ("none", "No approval pathway for multifamily"),
+    ],
+    "adu": [
+        ("by_right", "Accessory unit allowed by right"),
+        ("administrative", "Administrative review only"),
+        ("zoning_permit", "Zoning permit (staff level)"),
+        ("special_permit", "Special permit with a public hearing"),
+        ("prohibited", "Accessory units not allowed"),
+    ],
+}
+V2_TIER_LABELS = {
+    "by_right": "By right", "capped_by_right": "By right, capped", "narrow_by_right": "By right, narrow",
+    "discretionary": "Discretionary (special permit)", "none": "Not allowed", "administrative": "Administrative",
+    "zoning_permit": "Zoning permit", "special_permit": "Special permit", "prohibited": "Prohibited",
+}
+V2_FACTOR_FIELD = {"Multifamily Access": "use", "Approval Discretion": "use", "Minimum Lot Size": "lot",
+                   "ADU Approval Pathway": "adu", "Parking Mandate": "parking", "Demolition Delay": None}
+V2_FACTOR_SCALE_NOTE = {
+    "Multifamily Access": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+    "Approval Discretion": "The most permissive approval tier is 1 of 10.",
+    "Minimum Lot Size": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+    "ADU Approval Pathway": "The most permissive ADU tier is 1 of 15.",
+    "Parking Mandate": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+    "Demolition Delay": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+}
+
+def _factor_explanation(label, inputs, points):
+    use, approval, adu, lot, parking, demo = (inputs["use"], inputs["approval"], inputs["adu"],
+                                              inputs["lot"], inputs["parking"], inputs["demo"])
+    if label in ("Multifamily Access", "Approval Discretion", "ADU Approval Pathway"):
+        tier = {"Multifamily Access": use, "Approval Discretion": approval, "ADU Approval Pathway": adu}[label]
+        if tier is None:
+            return None, "Not confirmed for this district.", V2_TIER_LABELS.get(tier, "Not confirmed")
+        scale_key = {"Multifamily Access": "use", "Approval Discretion": "approval", "ADU Approval Pathway": "adu"}[label]
+        meaning = dict(V2_TIER_SCALES[scale_key]).get(tier, "")
+        return tier, f"Tier \"{V2_TIER_LABELS.get(tier, tier)}\": {meaning}.", V2_TIER_LABELS.get(tier, tier)
+    if label == "Minimum Lot Size":
+        if lot is None:
+            return None, "No lot-size rule could be confirmed for this district.", "Not confirmed"
+        if lot == 0:
+            return "no_minimum", "The district has no lot-area minimum, so the lot component scores 0.", "No lot-area minimum"
+        return "area", f"Smallest lot is {lot:,} sq ft; the log scale gives {points:.1f} of 20.", f"{lot:,} sq ft"
+    if label == "Parking Mandate":
+        if parking is None:
+            return None, "No parking requirement was confirmed for this district's single-family use.", "Not confirmed"
+        return "spaces", f"{parking} space(s) per unit; scored at {parking}/2.5 of the 10-point scale.", f"{parking} per unit"
+    if label == "Demolition Delay":
+        if demo is None:
+            return None, "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.", "Not confirmed"
+        return "days", f"{demo}-day delay; scored at {demo}/180 of the 15-point scale.", f"{demo} days"
+    return None, "", ""
+
+def compute_v2_district(inputs, citations=None):
     use, approval, adu, lot, parking, demo = (inputs["use"], inputs["approval"], inputs["adu"],
                                               inputs["lot"], inputs["parking"], inputs["demo"])
     factors = [
@@ -1126,6 +1194,24 @@ def compute_v2_district(inputs):
         {"label": "Parking Mandate", "points": parking_points(parking) if parking is not None else None, "max_points": 10},
         {"label": "Demolition Delay", "points": demolition_points(demo) if demo is not None else None, "max_points": 15},
     ]
+    citations = citations or []
+    for f in factors:
+        _, reason, value = _factor_explanation(f["label"], inputs, f["points"])
+        f["reason"] = reason
+        f["value"] = value
+        key = {"Multifamily Access": "use", "Approval Discretion": "use", "Minimum Lot Size": "lot",
+               "ADU Approval Pathway": "adu", "Parking Mandate": "parking"}.get(f["label"])
+        ev = next((c for c in citations if c["field"] == key), None) if key else None
+        f["evidence"] = ev
+        scale_key = {"Multifamily Access": "use", "Approval Discretion": "approval", "ADU Approval Pathway": "adu"}.get(f["label"])
+        if scale_key:
+            tier = {"use": use, "approval": approval, "adu": adu}[scale_key]
+            rubric = {"use": USE_PERMISSIONS_RUBRIC, "approval": APPROVAL_PROCESS_RUBRIC, "adu": ADU_PATHWAY_RUBRIC}[scale_key]
+            f["scale"] = [{"tier": t, "label": V2_TIER_LABELS[t], "points": rubric[t], "meaning": m, "active": t == tier}
+                          for t, m in V2_TIER_SCALES[scale_key]]
+        else:
+            f["scale"] = None
+        f["scale_note"] = V2_FACTOR_SCALE_NOTE[f["label"]]
     scored = [f for f in factors if f["points"] is not None]
     achieved = sum(f["points"] for f in scored)
     possible = sum(f["max_points"] for f in scored)
@@ -1146,8 +1232,8 @@ def compute_v2_town(slug):
         if key not in acres_norm:
             raise SystemExit(f"{slug}: district {code} missing from land-area file")
         _, acres = acres_norm[key]
-        r = compute_v2_district(inputs)
         cites = [c for c in (v2_citation(slug, code, f) for f in ("use", "lot", "adu", "adu_size", "parking")) if c]
+        r = compute_v2_district(inputs, cites)
         results.append({"district": code, "acres": round(acres, 1), "score": r["score"],
                         "components_scored": r["components_scored"], "factors": r["factors"],
                         "note": inputs["note"], "citations": cites})
@@ -1158,12 +1244,17 @@ def compute_v2_town(slug):
     total_acres = sum(r["acres"] for r in scored)
     for r in results:
         r["land_share"] = round(r["acres"] / total_acres * 100, 1) if r["included"] and total_acres else None
+        r["contribution"] = round(r["score"] * r["acres"] / total_acres, 2) if r["included"] and total_acres else None
+        if not r["included"]:
+            r["exclusion_reason"] = ("No score: the district has no confirmed inputs." if r["score"] is None
+                                     else f"Excluded: only {r['components_scored']} of 6 components are confirmed (minimum 5).")
     weighted = sum(r["score"] * r["acres"] for r in scored) / total_acres if total_acres else None
     return {
         "land_weighted_score": round(weighted, 1) if weighted is not None else None,
         "districts_included": len(scored),
         "acres_included": round(total_acres, 1),
         "districts": results,
+        "formula": "V2 = sum(district score x acres) / sum(acres) over included districts",
         "method": ("Each district is scored with the same six-component rubric using only its own rules. "
                    "A district is included only if at least 5 of 6 components are confirmed. The town V2 score is the land-area-weighted mean of included district scores; "
                    "acreage is from data/land_area/%s.json. Components with no confirmed input "

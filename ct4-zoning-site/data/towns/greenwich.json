@@ -520,35 +520,208 @@
           {
             "label": "Multifamily Access",
             "points": 30,
-            "max_points": 30
+            "max_points": 30,
+            "reason": "Tier \"Not allowed\": No multifamily pathway in this district.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§6-93(a)(1)",
+              "quote": "Detached single family dwellings, one (1) per lot.",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": true
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
           },
           {
             "label": "Approval Discretion",
             "points": 10,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "Tier \"Not allowed\": No approval pathway for multifamily.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§6-93(a)(1)",
+              "quote": "Detached single family dwellings, one (1) per lot.",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10."
           },
           {
             "label": "Minimum Lot Size",
             "points": 20,
-            "max_points": 20
+            "max_points": 20,
+            "reason": "Smallest lot is 174,240 sq ft; the log scale gives 20.0 of 20.",
+            "value": "174,240 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "Bulk schedule, RA-4 row",
+              "quote": "4 Acres",
+              "source_title": "Building Zone Regulations, Div. 21 (Bulk Schedule)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37841",
+              "file": "/sources/greenwich-div21.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
           },
           {
             "label": "ADU Approval Pathway",
             "points": 7,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "§6-99(3)(E) ADU approved by zoning permit unless larger",
+              "quote": "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": true
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15."
           },
           {
             "label": "Parking Mandate",
             "points": null,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "No parking requirement was confirmed for this district's single-family use.",
+            "value": "Not confirmed",
+            "evidence": {
+              "field": "parking",
+              "cite": "§6-99(3)(F) ADU parking",
+              "quote": "There must be at least one off-street parking space on an appropriate solid surface dedicated to the ADU.",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
           {
             "label": "Demolition Delay",
             "points": 7.5,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "90-day delay; scored at 90/180 of the 15-point scale.",
+            "value": "90 days",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
-        "note": "Single-family only (Sec. 6-93); 4-acre minimum (div. 21 table); ADU by zoning permit, external ADU up to 1,200 sq ft (§6-99(3)(D)); ADU adds 1 dedicated off-street space (§6-99(3)(F)); single-family base parking not in extracted text",
+        "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; 90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Single-family only (Sec. 6-93); 4-acre minimum (div. 21 table); ADU by zoning permit, external ADU up to 1,200 sq ft (§6-99(3)(D)); ADU adds 1 dedicated off-street space (§6-99(3)(F)); single-family base parking not in extracted text",
         "citations": [
           {
             "field": "use",
@@ -592,7 +765,8 @@
           }
         ],
         "included": true,
-        "land_share": 37.1
+        "land_share": 37.1,
+        "contribution": 30.69
       },
       {
         "district": "RA-2",
@@ -603,35 +777,208 @@
           {
             "label": "Multifamily Access",
             "points": 30,
-            "max_points": 30
+            "max_points": 30,
+            "reason": "Tier \"Not allowed\": No multifamily pathway in this district.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§6-93(a)(1)",
+              "quote": "Detached single family dwellings, one (1) per lot.",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": true
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
           },
           {
             "label": "Approval Discretion",
             "points": 10,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "Tier \"Not allowed\": No approval pathway for multifamily.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§6-93(a)(1)",
+              "quote": "Detached single family dwellings, one (1) per lot.",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10."
           },
           {
             "label": "Minimum Lot Size",
             "points": 16.7,
-            "max_points": 20
+            "max_points": 20,
+            "reason": "Smallest lot is 87,120 sq ft; the log scale gives 16.7 of 20.",
+            "value": "87,120 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "Bulk schedule, RA-2 row",
+              "quote": "2 Acres",
+              "source_title": "Building Zone Regulations, Div. 21 (Bulk Schedule)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37841",
+              "file": "/sources/greenwich-div21.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
           },
           {
             "label": "ADU Approval Pathway",
             "points": 7,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "§6-99(3)(E) ADU approved by zoning permit unless larger",
+              "quote": "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": true
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15."
           },
           {
             "label": "Parking Mandate",
             "points": null,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "No parking requirement was confirmed for this district's single-family use.",
+            "value": "Not confirmed",
+            "evidence": {
+              "field": "parking",
+              "cite": "§6-99(3)(F) ADU parking",
+              "quote": "There must be at least one off-street parking space on an appropriate solid surface dedicated to the ADU.",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
           {
             "label": "Demolition Delay",
             "points": 7.5,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "90-day delay; scored at 90/180 of the 15-point scale.",
+            "value": "90 days",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
-        "note": "Single-family only (Sec. 6-93); 2-acre minimum; ADU by zoning permit, external ADU up to 1,200 sq ft (§6-99(3)(D)); base parking not in extracted text",
+        "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; 90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Single-family only (Sec. 6-93); 2-acre minimum; ADU by zoning permit, external ADU up to 1,200 sq ft (§6-99(3)(D)); base parking not in extracted text",
         "citations": [
           {
             "field": "use",
@@ -675,7 +1022,8 @@
           }
         ],
         "included": true,
-        "land_share": 26.9
+        "land_share": 26.9,
+        "contribution": 21.25
       },
       {
         "district": "RA-1",
@@ -686,35 +1034,208 @@
           {
             "label": "Multifamily Access",
             "points": 30,
-            "max_points": 30
+            "max_points": 30,
+            "reason": "Tier \"Not allowed\": No multifamily pathway in this district.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§6-93(a)(1)",
+              "quote": "Detached single family dwellings, one (1) per lot.",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": true
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
           },
           {
             "label": "Approval Discretion",
             "points": 10,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "Tier \"Not allowed\": No approval pathway for multifamily.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§6-93(a)(1)",
+              "quote": "Detached single family dwellings, one (1) per lot.",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10."
           },
           {
             "label": "Minimum Lot Size",
             "points": 13.5,
-            "max_points": 20
+            "max_points": 20,
+            "reason": "Smallest lot is 43,560 sq ft; the log scale gives 13.5 of 20.",
+            "value": "43,560 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "Bulk schedule, RA-1 row",
+              "quote": "1 Acre",
+              "source_title": "Building Zone Regulations, Div. 21 (Bulk Schedule)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37841",
+              "file": "/sources/greenwich-div21.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
           },
           {
             "label": "ADU Approval Pathway",
             "points": 7,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "§6-99(3)(E) ADU approved by zoning permit unless larger",
+              "quote": "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": true
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15."
           },
           {
             "label": "Parking Mandate",
             "points": null,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "No parking requirement was confirmed for this district's single-family use.",
+            "value": "Not confirmed",
+            "evidence": {
+              "field": "parking",
+              "cite": "§6-99(3)(F) ADU parking",
+              "quote": "There must be at least one off-street parking space on an appropriate solid surface dedicated to the ADU.",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
           {
             "label": "Demolition Delay",
             "points": 7.5,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "90-day delay; scored at 90/180 of the 15-point scale.",
+            "value": "90 days",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
-        "note": "Single-family only (Sec. 6-93); 1-acre minimum; ADU by zoning permit, external ADU up to 1,000 sq ft (§6-99(3)(D)); base parking not in extracted text",
+        "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; 90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Single-family only (Sec. 6-93); 1-acre minimum; ADU by zoning permit, external ADU up to 1,000 sq ft (§6-99(3)(D)); base parking not in extracted text",
         "citations": [
           {
             "field": "use",
@@ -758,7 +1279,8 @@
           }
         ],
         "included": true,
-        "land_share": 16.5
+        "land_share": 16.5,
+        "contribution": 12.44
       },
       {
         "district": "R-20",
@@ -769,35 +1291,208 @@
           {
             "label": "Multifamily Access",
             "points": 30,
-            "max_points": 30
+            "max_points": 30,
+            "reason": "Tier \"Not allowed\": No multifamily pathway in this district.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§6-93(a)(1)",
+              "quote": "Detached single family dwellings, one (1) per lot.",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": true
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
           },
           {
             "label": "Approval Discretion",
             "points": 10,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "Tier \"Not allowed\": No approval pathway for multifamily.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§6-93(a)(1)",
+              "quote": "Detached single family dwellings, one (1) per lot.",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10."
           },
           {
             "label": "Minimum Lot Size",
             "points": 9.8,
-            "max_points": 20
+            "max_points": 20,
+            "reason": "Smallest lot is 20,000 sq ft; the log scale gives 9.8 of 20.",
+            "value": "20,000 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "Bulk schedule, R-20 row",
+              "quote": "20,000",
+              "source_title": "Building Zone Regulations, Div. 21 (Bulk Schedule)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37841",
+              "file": "/sources/greenwich-div21.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
           },
           {
             "label": "ADU Approval Pathway",
             "points": 7,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "§6-99(3)(E) ADU approved by zoning permit unless larger",
+              "quote": "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": true
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15."
           },
           {
             "label": "Parking Mandate",
             "points": null,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "No parking requirement was confirmed for this district's single-family use.",
+            "value": "Not confirmed",
+            "evidence": {
+              "field": "parking",
+              "cite": "§6-99(3)(F) ADU parking",
+              "quote": "There must be at least one off-street parking space on an appropriate solid surface dedicated to the ADU.",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
           {
             "label": "Demolition Delay",
             "points": 7.5,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "90-day delay; scored at 90/180 of the 15-point scale.",
+            "value": "90 days",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
-        "note": "Single-family only (Sec. 6-93); 20,000 sq ft minimum (prior variables); ADU by zoning permit, external ADU up to 1,000 sq ft (§6-99(3)(D)); base parking not in extracted text",
+        "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; 90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Single-family only (Sec. 6-93); 20,000 sq ft minimum (prior variables); ADU by zoning permit, external ADU up to 1,000 sq ft (§6-99(3)(D)); base parking not in extracted text",
         "citations": [
           {
             "field": "use",
@@ -841,7 +1536,8 @@
           }
         ],
         "included": true,
-        "land_share": 4.1
+        "land_share": 4.1,
+        "contribution": 2.94
       },
       {
         "district": "R-12",
@@ -852,35 +1548,208 @@
           {
             "label": "Multifamily Access",
             "points": 30,
-            "max_points": 30
+            "max_points": 30,
+            "reason": "Tier \"Not allowed\": No multifamily pathway in this district.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§6-93(a)(1)",
+              "quote": "Detached single family dwellings, one (1) per lot.",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": true
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
           },
           {
             "label": "Approval Discretion",
             "points": 10,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "Tier \"Not allowed\": No approval pathway for multifamily.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§6-93(a)(1)",
+              "quote": "Detached single family dwellings, one (1) per lot.",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10."
           },
           {
             "label": "Minimum Lot Size",
             "points": 7.4,
-            "max_points": 20
+            "max_points": 20,
+            "reason": "Smallest lot is 12,000 sq ft; the log scale gives 7.4 of 20.",
+            "value": "12,000 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "Bulk schedule, R-12 row",
+              "quote": "12,000",
+              "source_title": "Building Zone Regulations, Div. 21 (Bulk Schedule)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37841",
+              "file": "/sources/greenwich-div21.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
           },
           {
             "label": "ADU Approval Pathway",
             "points": 7,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "§6-99(3)(E) ADU approved by zoning permit unless larger",
+              "quote": "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": true
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15."
           },
           {
             "label": "Parking Mandate",
             "points": null,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "No parking requirement was confirmed for this district's single-family use.",
+            "value": "Not confirmed",
+            "evidence": {
+              "field": "parking",
+              "cite": "§6-99(3)(F) ADU parking",
+              "quote": "There must be at least one off-street parking space on an appropriate solid surface dedicated to the ADU.",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
           {
             "label": "Demolition Delay",
             "points": 7.5,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "90-day delay; scored at 90/180 of the 15-point scale.",
+            "value": "90 days",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
-        "note": "Single-family only (Sec. 6-93); 12,000 sq ft minimum (prior variables); ADU by zoning permit, external ADU up to 800 sq ft (§6-99(3)(D)); base parking not in extracted text",
+        "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; 90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Single-family only (Sec. 6-93); 12,000 sq ft minimum (prior variables); ADU by zoning permit, external ADU up to 800 sq ft (§6-99(3)(D)); base parking not in extracted text",
         "citations": [
           {
             "field": "use",
@@ -924,7 +1793,8 @@
           }
         ],
         "included": true,
-        "land_share": 7.9
+        "land_share": 7.9,
+        "contribution": 5.43
       },
       {
         "district": "R-7",
@@ -935,35 +1805,208 @@
           {
             "label": "Multifamily Access",
             "points": 30,
-            "max_points": 30
+            "max_points": 30,
+            "reason": "Tier \"Not allowed\": No multifamily pathway in this district.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§6-97(a)(1)",
+              "quote": "All uses permitted in RA-4 zones and uses permitted under Sec. 6-94.",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": true
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
           },
           {
             "label": "Approval Discretion",
             "points": 10,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "Tier \"Not allowed\": No approval pathway for multifamily.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§6-97(a)(1)",
+              "quote": "All uses permitted in RA-4 zones and uses permitted under Sec. 6-94.",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10."
           },
           {
             "label": "Minimum Lot Size",
             "points": 5.2,
-            "max_points": 20
+            "max_points": 20,
+            "reason": "Smallest lot is 7,500 sq ft; the log scale gives 5.2 of 20.",
+            "value": "7,500 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "Bulk schedule, R-7 row",
+              "quote": "7,500",
+              "source_title": "Building Zone Regulations, Div. 21 (Bulk Schedule)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37841",
+              "file": "/sources/greenwich-div21.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
           },
           {
             "label": "ADU Approval Pathway",
             "points": 7,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "§6-99(3)(E) ADU approved by zoning permit unless larger",
+              "quote": "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": true
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15."
           },
           {
             "label": "Parking Mandate",
             "points": null,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "No parking requirement was confirmed for this district's single-family use.",
+            "value": "Not confirmed",
+            "evidence": {
+              "field": "parking",
+              "cite": "§6-99(3)(F) ADU parking",
+              "quote": "There must be at least one off-street parking space on an appropriate solid surface dedicated to the ADU.",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
           {
             "label": "Demolition Delay",
             "points": 7.5,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "90-day delay; scored at 90/180 of the 15-point scale.",
+            "value": "90 days",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
-        "note": "Sec. 6-97: uses of RA-4 only plus §6-94; 7,500 sq ft minimum (div. 21 table); ADU by zoning permit, external ADU up to 800 sq ft (§6-99(3)(D)); base parking not in extracted text",
+        "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Sec. 6-97: uses of RA-4 only plus §6-94; 7,500 sq ft minimum (div. 21 table); ADU by zoning permit, external ADU up to 800 sq ft (§6-99(3)(D)); base parking not in extracted text",
         "citations": [
           {
             "field": "use",
@@ -1007,7 +2050,8 @@
           }
         ],
         "included": true,
-        "land_share": 4.0
+        "land_share": 4.0,
+        "contribution": 2.66
       },
       {
         "district": "R-6",
@@ -1018,35 +2062,208 @@
           {
             "label": "Multifamily Access",
             "points": 12,
-            "max_points": 30
+            "max_points": 30,
+            "reason": "Tier \"By right, capped\": Multifamily or two-family by right, but capped by unit count or density.",
+            "value": "By right, capped",
+            "evidence": {
+              "field": "use",
+              "cite": "§6-98(a)(3)(A)",
+              "quote": "Administrative site plan approval is required on lots of 7,500 square feet or larger for: (A) New two-family dwellings",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": true
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": false
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
           },
           {
             "label": "Approval Discretion",
             "points": 4,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "Tier \"By right, capped\": Administrative site-plan approval with a cap.",
+            "value": "By right, capped",
+            "evidence": {
+              "field": "use",
+              "cite": "§6-98(a)(3)(A)",
+              "quote": "Administrative site plan approval is required on lots of 7,500 square feet or larger for: (A) New two-family dwellings",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": true
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10."
           },
           {
             "label": "Minimum Lot Size",
             "points": 5.2,
-            "max_points": 20
+            "max_points": 20,
+            "reason": "Smallest lot is 7,500 sq ft; the log scale gives 5.2 of 20.",
+            "value": "7,500 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "Bulk schedule, R-6 row",
+              "quote": "7,500 sq. ft. 60 ft.",
+              "source_title": "Building Zone Regulations, Div. 21 (Bulk Schedule)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37841",
+              "file": "/sources/greenwich-div21.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
           },
           {
             "label": "ADU Approval Pathway",
             "points": 7,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "§6-99(3)(E) ADU approved by zoning permit unless larger",
+              "quote": "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": true
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15."
           },
           {
             "label": "Parking Mandate",
             "points": null,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "No parking requirement was confirmed for this district's single-family use.",
+            "value": "Not confirmed",
+            "evidence": {
+              "field": "parking",
+              "cite": "§6-99(3)(F) ADU parking",
+              "quote": "There must be at least one off-street parking space on an appropriate solid surface dedicated to the ADU.",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
           {
             "label": "Demolition Delay",
             "points": 7.5,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "90-day delay; scored at 90/180 of the 15-point scale.",
+            "value": "90 days",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
-        "note": "Sec. 6-98: two-family by administrative site plan approval on lots ≥7,500 sq ft; 7,500 sq ft minimum (div. 21 table); ADU external up to 800 sq ft; base parking not in extracted text",
+        "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Sec. 6-98: two-family by administrative site plan approval on lots ≥7,500 sq ft; 7,500 sq ft minimum (div. 21 table); ADU external up to 800 sq ft; base parking not in extracted text",
         "citations": [
           {
             "field": "use",
@@ -1090,7 +2307,8 @@
           }
         ],
         "included": true,
-        "land_share": 3.4
+        "land_share": 3.4,
+        "contribution": 1.34
       },
       {
         "district": "R-MF",
@@ -1101,35 +2319,201 @@
           {
             "label": "Multifamily Access",
             "points": 25,
-            "max_points": 30
+            "max_points": 30,
+            "reason": "Tier \"Discretionary (special permit)\": Multifamily allowed only through a special permit or hearing.",
+            "value": "Discretionary (special permit)",
+            "evidence": {
+              "field": "use",
+              "cite": "§6-98.1(a)(2)",
+              "quote": "The following uses are permitted as Special Permit uses",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": true
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": false
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
           },
           {
             "label": "Approval Discretion",
             "points": 9,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "Tier \"Discretionary (special permit)\": Special permit or hearing required.",
+            "value": "Discretionary (special permit)",
+            "evidence": {
+              "field": "use",
+              "cite": "§6-98.1(a)(2)",
+              "quote": "The following uses are permitted as Special Permit uses",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": true
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10."
           },
           {
             "label": "Minimum Lot Size",
             "points": null,
-            "max_points": 20
+            "max_points": 20,
+            "reason": "No lot-size rule could be confirmed for this district.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
           },
           {
             "label": "ADU Approval Pathway",
             "points": 7,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "§6-99(3)(E) ADU approved by zoning permit unless larger",
+              "quote": "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": true
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15."
           },
           {
             "label": "Parking Mandate",
             "points": 8.0,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "2 space(s) per unit; scored at 2/2.5 of the 10-point scale.",
+            "value": "2 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "§6-99(3)(F) ADU parking",
+              "quote": "There must be at least one off-street parking space on an appropriate solid surface dedicated to the ADU.",
+              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
+              "file": "/sources/greenwich-div9.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
           {
             "label": "Demolition Delay",
             "points": 7.5,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "90-day delay; scored at 90/180 of the 15-point scale.",
+            "value": "90 days",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
-        "note": "Two-family / multifamily by Special Permit only (prior variables); lot minimum is per family (2,400 sq ft), not comparable so excluded; 1-2BR parking = 2 spaces (1 garage + 1 outdoor)",
+        "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; 90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Two-family / multifamily by Special Permit only (prior variables); lot minimum is per family (2,400 sq ft), not comparable so excluded; 1-2BR parking = 2 spaces (1 garage + 1 outdoor)",
         "citations": [
           {
             "field": "use",
@@ -1157,9 +2541,11 @@
           }
         ],
         "included": true,
-        "land_share": 0.2
+        "land_share": 0.2,
+        "contribution": 0.15
       }
     ],
+    "formula": "V2 = sum(district score x acres) / sum(acres) over included districts",
     "method": "Each district is scored with the same six-component rubric using only its own rules. A district is included only if at least 5 of 6 components are confirmed. The town V2 score is the land-area-weighted mean of included district scores; acreage is from data/land_area/greenwich.json. Components with no confirmed input are excluded per district."
   }
 }

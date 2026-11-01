@@ -51,10 +51,23 @@ export interface HapScore {
   methodology_note: string;
 }
 
+export interface V2ScaleStep {
+  tier: string;
+  label: string;
+  points: number;
+  meaning: string;
+  active: boolean;
+}
+
 export interface V2Factor {
   label: string;
   points: number | null;
   max_points: number;
+  value: string;
+  reason: string;
+  scale: V2ScaleStep[] | null;
+  scale_note: string;
+  evidence: V2Citation | null;
 }
 
 export interface V2Citation {
@@ -68,6 +81,8 @@ export interface V2Citation {
 
 export interface V2District {
   citations: V2Citation[];
+  contribution: number | null;
+  exclusion_reason?: string;
   district: string;
   acres: number;
   score: number | null;
@@ -83,6 +98,7 @@ export interface V2Town {
   districts_included: number;
   acres_included: number;
   districts: V2District[];
+  formula: string;
   method: string;
 }
 

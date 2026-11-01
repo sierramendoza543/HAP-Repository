@@ -361,45 +361,204 @@
     "methodology_note": "Computed from the Variables table on this page, not from the NZA data below. Six weighted components (Multifamily Access 30pts, Approval Discretion 10pts, Minimum Lot Size 20pts, ADU Approval Pathway 15pts, Parking Mandate 10pts, Demolition Delay 15pts) are each scored against a fixed, published rubric from a specific cited fact above. Higher = more restrictive."
   },
   "v2": {
-    "land_weighted_score": 40.3,
+    "land_weighted_score": 38.6,
     "districts_included": 6,
     "acres_included": 3673.3,
     "districts": [
       {
         "district": "N1",
         "acres": 201.3,
-        "score": 48.5,
-        "components_scored": 6,
+        "score": 48.2,
+        "components_scored": 5,
         "factors": [
           {
             "label": "Multifamily Access",
             "points": 30,
-            "max_points": 30
+            "max_points": 30,
+            "reason": "Tier \"Not allowed\": No multifamily pathway in this district.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§3.90 House A, Number of Principal Units",
+              "quote": "Number of Principal Units 1 in House",
+              "source_title": "Zone Bridgeport form-based code (amended July 2022)",
+              "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+              "file": "/sources/bridgeport-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": true
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
           },
           {
             "label": "Approval Discretion",
             "points": 10,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "Tier \"Not allowed\": No approval pathway for multifamily.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§3.90 House A, Number of Principal Units",
+              "quote": "Number of Principal Units 1 in House",
+              "source_title": "Zone Bridgeport form-based code (amended July 2022)",
+              "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+              "file": "/sources/bridgeport-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10."
           },
           {
             "label": "Minimum Lot Size",
             "points": 0.0,
-            "max_points": 20
+            "max_points": 20,
+            "reason": "The district has no lot-area minimum, so the lot component scores 0.",
+            "value": "No lot-area minimum",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
           },
           {
             "label": "ADU Approval Pathway",
             "points": 1,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "Tier \"By right\": Accessory unit allowed by right.",
+            "value": "By right",
+            "evidence": {
+              "field": "adu",
+              "cite": "§3.90 House A, Number of Accessory Apartments",
+              "quote": "Number of Accessory Apartments 1 in House or Backyard Cottage",
+              "source_title": "Zone Bridgeport form-based code (amended July 2022)",
+              "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+              "file": "/sources/bridgeport-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": true
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": false
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15."
           },
           {
             "label": "Parking Mandate",
             "points": 0.0,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "0 space(s) per unit; scored at 0/2.5 of the 10-point scale.",
+            "value": "0 per unit",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
           {
             "label": "Demolition Delay",
-            "points": 7.5,
-            "max_points": 15
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
         "note": "House A only (one unit per lot); no lot-area minimum (45 ft width); ADU by right per N1 rule; parking none citywide",
@@ -422,43 +581,210 @@
           }
         ],
         "included": true,
-        "land_share": 5.5
+        "land_share": 5.5,
+        "contribution": 2.64
       },
       {
         "district": "N2",
         "acres": 1099.8,
-        "score": 59.5,
-        "components_scored": 6,
+        "score": 61.2,
+        "components_scored": 5,
         "factors": [
           {
             "label": "Multifamily Access",
             "points": 30,
-            "max_points": 30
+            "max_points": 30,
+            "reason": "Tier \"Not allowed\": No multifamily pathway in this district.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§2.20.2(B) N2 zone description",
+              "quote": "N2, Neighborhood: Mid-Century. The N2 zone is",
+              "source_title": "Zone Bridgeport form-based code (amended July 2022)",
+              "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+              "file": "/sources/bridgeport-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": true
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
           },
           {
             "label": "Approval Discretion",
             "points": 10,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "Tier \"Not allowed\": No approval pathway for multifamily.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§2.20.2(B) N2 zone description",
+              "quote": "N2, Neighborhood: Mid-Century. The N2 zone is",
+              "source_title": "Zone Bridgeport form-based code (amended July 2022)",
+              "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+              "file": "/sources/bridgeport-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10."
           },
           {
             "label": "Minimum Lot Size",
             "points": 0.0,
-            "max_points": 20
+            "max_points": 20,
+            "reason": "The district has no lot-area minimum, so the lot component scores 0.",
+            "value": "No lot-area minimum",
+            "evidence": {
+              "field": "lot",
+              "cite": "§3.100 House B, Lot Size",
+              "quote": "Lot Size No min.",
+              "source_title": "Zone Bridgeport form-based code (amended July 2022)",
+              "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+              "file": "/sources/bridgeport-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
           },
           {
             "label": "ADU Approval Pathway",
             "points": 12,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "Tier \"Special permit\": Special permit with a public hearing.",
+            "value": "Special permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "§3.100 House B, Number of Accessory Apartments",
+              "quote": "Number of Accessory Apartments 1 in Backyard Cottage with special permit",
+              "source_title": "Zone Bridgeport form-based code (amended July 2022)",
+              "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+              "file": "/sources/bridgeport-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": false
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": true
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15."
           },
           {
             "label": "Parking Mandate",
             "points": 0.0,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "0 space(s) per unit; scored at 0/2.5 of the 10-point scale.",
+            "value": "0 per unit",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
           {
             "label": "Demolition Delay",
-            "points": 7.5,
-            "max_points": 15
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
         "note": "House B only (single unit); no lot-area minimum (45 ft width); accessory apartment only as backyard cottage with special permit (§3.100 table)",
@@ -489,43 +815,196 @@
           }
         ],
         "included": true,
-        "land_share": 29.9
+        "land_share": 29.9,
+        "contribution": 18.32
       },
       {
         "district": "N3",
         "acres": 123.1,
-        "score": 54.5,
-        "components_scored": 6,
+        "score": 55.3,
+        "components_scored": 5,
         "factors": [
           {
             "label": "Multifamily Access",
             "points": 30,
-            "max_points": 30
+            "max_points": 30,
+            "reason": "Tier \"Not allowed\": No multifamily pathway in this district.",
+            "value": "Not allowed",
+            "evidence": null,
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": true
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
           },
           {
             "label": "Approval Discretion",
             "points": 10,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "Tier \"Not allowed\": No approval pathway for multifamily.",
+            "value": "Not allowed",
+            "evidence": null,
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10."
           },
           {
             "label": "Minimum Lot Size",
             "points": 6.0,
-            "max_points": 20
+            "max_points": 20,
+            "reason": "Smallest lot is 9,000 sq ft; the log scale gives 6.0 of 20.",
+            "value": "9,000 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "§3.110 House C, Lot Size",
+              "quote": "Lot Size 9000 sq. ft. min.",
+              "source_title": "Zone Bridgeport form-based code (amended July 2022)",
+              "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+              "file": "/sources/bridgeport-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
           },
           {
             "label": "ADU Approval Pathway",
             "points": 1,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "Tier \"By right\": Accessory unit allowed by right.",
+            "value": "By right",
+            "evidence": {
+              "field": "adu",
+              "cite": "§3.110 House C, Number of Accessory Apartments",
+              "quote": "Number of Accessory Apartments up to 2; 1 in House and/or 1 in Backyard Cottage",
+              "source_title": "Zone Bridgeport form-based code (amended July 2022)",
+              "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+              "file": "/sources/bridgeport-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": true
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": false
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15."
           },
           {
             "label": "Parking Mandate",
             "points": 0.0,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "0 space(s) per unit; scored at 0/2.5 of the 10-point scale.",
+            "value": "0 per unit",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
           {
             "label": "Demolition Delay",
-            "points": 7.5,
-            "max_points": 15
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
         "note": "House C only; 9,000 sq ft minimum lot (§3.110); up to 2 accessory units, 1 in house and/or 1 in backyard cottage, by right (§3.110 table)",
@@ -548,43 +1027,196 @@
           }
         ],
         "included": true,
-        "land_share": 3.4
+        "land_share": 3.4,
+        "contribution": 1.85
       },
       {
         "district": "N4",
         "acres": 819.5,
-        "score": 53.7,
-        "components_scored": 6,
+        "score": 54.4,
+        "components_scored": 5,
         "factors": [
           {
             "label": "Multifamily Access",
             "points": 30,
-            "max_points": 30
+            "max_points": 30,
+            "reason": "Tier \"Not allowed\": No multifamily pathway in this district.",
+            "value": "Not allowed",
+            "evidence": null,
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": true
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
           },
           {
             "label": "Approval Discretion",
             "points": 10,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "Tier \"Not allowed\": No approval pathway for multifamily.",
+            "value": "Not allowed",
+            "evidence": null,
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10."
           },
           {
             "label": "Minimum Lot Size",
             "points": 5.2,
-            "max_points": 20
+            "max_points": 20,
+            "reason": "Smallest lot is 7,500 sq ft; the log scale gives 5.2 of 20.",
+            "value": "7,500 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "§3.120 House D, Lot Size",
+              "quote": "Lot Size 7500 sq. ft. min.",
+              "source_title": "Zone Bridgeport form-based code (amended July 2022)",
+              "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+              "file": "/sources/bridgeport-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
           },
           {
             "label": "ADU Approval Pathway",
             "points": 1,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "Tier \"By right\": Accessory unit allowed by right.",
+            "value": "By right",
+            "evidence": {
+              "field": "adu",
+              "cite": "§3.120 House D, Number of Accessory Apartments",
+              "quote": "Number of Accessory Apartments 1 in House or Backyard Cottage",
+              "source_title": "Zone Bridgeport form-based code (amended July 2022)",
+              "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+              "file": "/sources/bridgeport-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": true
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": false
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15."
           },
           {
             "label": "Parking Mandate",
             "points": 0.0,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "0 space(s) per unit; scored at 0/2.5 of the 10-point scale.",
+            "value": "0 per unit",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
           {
             "label": "Demolition Delay",
-            "points": 7.5,
-            "max_points": 15
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
         "note": "House D only; 7,500 sq ft minimum lot (§3.120); 1 accessory apartment in house or backyard cottage, by right (§3.120 table)",
@@ -607,43 +1239,210 @@
           }
         ],
         "included": true,
-        "land_share": 22.3
+        "land_share": 22.3,
+        "contribution": 12.14
       },
       {
         "district": "NX1",
         "acres": 697.3,
-        "score": 15.5,
-        "components_scored": 6,
+        "score": 9.4,
+        "components_scored": 5,
         "factors": [
           {
             "label": "Multifamily Access",
             "points": 6,
-            "max_points": 30
+            "max_points": 30,
+            "reason": "Tier \"By right\": Multifamily allowed by right in a meaningful district with no cap.",
+            "value": "By right",
+            "evidence": {
+              "field": "use",
+              "cite": "§2.20.2(E) NX1 zone description",
+              "quote": "NX1, Neighborhood Mix. The NX1 zone is intended to",
+              "source_title": "Zone Bridgeport form-based code (amended July 2022)",
+              "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+              "file": "/sources/bridgeport-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": true
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": false
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
           },
           {
             "label": "Approval Discretion",
             "points": 1,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "Tier \"By right\": Approved administratively, no hearing.",
+            "value": "By right",
+            "evidence": {
+              "field": "use",
+              "cite": "§2.20.2(E) NX1 zone description",
+              "quote": "NX1, Neighborhood Mix. The NX1 zone is intended to",
+              "source_title": "Zone Bridgeport form-based code (amended July 2022)",
+              "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+              "file": "/sources/bridgeport-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": true
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10."
           },
           {
             "label": "Minimum Lot Size",
             "points": 0.0,
-            "max_points": 20
+            "max_points": 20,
+            "reason": "The district has no lot-area minimum, so the lot component scores 0.",
+            "value": "No lot-area minimum",
+            "evidence": {
+              "field": "lot",
+              "cite": "§3.90 House A, Lot Width (N1/NX1/NX2 columns)",
+              "quote": "Lot Width 45 ft. min. 45 ft. min. 35 ft. min.",
+              "source_title": "Zone Bridgeport form-based code (amended July 2022)",
+              "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+              "file": "/sources/bridgeport-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
           },
           {
             "label": "ADU Approval Pathway",
             "points": 1,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "Tier \"By right\": Accessory unit allowed by right.",
+            "value": "By right",
+            "evidence": {
+              "field": "adu",
+              "cite": "§3.90 House A, Number of Accessory Apartments",
+              "quote": "Number of Accessory Apartments 1 in House or Backyard Cottage",
+              "source_title": "Zone Bridgeport form-based code (amended July 2022)",
+              "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+              "file": "/sources/bridgeport-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": true
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": false
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15."
           },
           {
             "label": "Parking Mandate",
             "points": 0.0,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "0 space(s) per unit; scored at 0/2.5 of the 10-point scale.",
+            "value": "0 per unit",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
           {
             "label": "Demolition Delay",
-            "points": 7.5,
-            "max_points": 15
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
         "note": "House A, Row and Double House A permitted (up to 6 units by right per Double House A rule); 45 ft width, no lot-area minimum; 1 accessory apartment by right (§3.90 table); size cap 49% of principal GFA or 800 sq ft (§4.70.2)",
@@ -665,6 +1464,14 @@
             "file": "/sources/bridgeport-zoning.pdf"
           },
           {
+            "field": "adu",
+            "cite": "§3.90 House A, Number of Accessory Apartments",
+            "quote": "Number of Accessory Apartments 1 in House or Backyard Cottage",
+            "source_title": "Zone Bridgeport form-based code (amended July 2022)",
+            "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+            "file": "/sources/bridgeport-zoning.pdf"
+          },
+          {
             "field": "adu_size",
             "cite": "§4.70.2(B)(5) accessory apartment size",
             "quote": "may not exceed 49% of the gross floor area of the",
@@ -674,43 +1481,217 @@
           }
         ],
         "included": true,
-        "land_share": 19.0
+        "land_share": 19.0,
+        "contribution": 1.78
       },
       {
         "district": "NX2",
         "acres": 732.3,
-        "score": 15.5,
-        "components_scored": 6,
+        "score": 9.4,
+        "components_scored": 5,
         "factors": [
           {
             "label": "Multifamily Access",
             "points": 6,
-            "max_points": 30
+            "max_points": 30,
+            "reason": "Tier \"By right\": Multifamily allowed by right in a meaningful district with no cap.",
+            "value": "By right",
+            "evidence": {
+              "field": "use",
+              "cite": "§2.20.2(F) NX2 zone description",
+              "quote": "NX2, Neighborhood Mix. The NX2 zone is intended to",
+              "source_title": "Zone Bridgeport form-based code (amended July 2022)",
+              "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+              "file": "/sources/bridgeport-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": true
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": false
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
           },
           {
             "label": "Approval Discretion",
             "points": 1,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "Tier \"By right\": Approved administratively, no hearing.",
+            "value": "By right",
+            "evidence": {
+              "field": "use",
+              "cite": "§2.20.2(F) NX2 zone description",
+              "quote": "NX2, Neighborhood Mix. The NX2 zone is intended to",
+              "source_title": "Zone Bridgeport form-based code (amended July 2022)",
+              "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+              "file": "/sources/bridgeport-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": true
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10."
           },
           {
             "label": "Minimum Lot Size",
             "points": 0.0,
-            "max_points": 20
+            "max_points": 20,
+            "reason": "The district has no lot-area minimum, so the lot component scores 0.",
+            "value": "No lot-area minimum",
+            "evidence": {
+              "field": "lot",
+              "cite": "§3.90 House A, Lot Width (N1/NX1/NX2 columns)",
+              "quote": "Lot Width 45 ft. min. 45 ft. min. 35 ft. min.",
+              "source_title": "Zone Bridgeport form-based code (amended July 2022)",
+              "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+              "file": "/sources/bridgeport-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
           },
           {
             "label": "ADU Approval Pathway",
             "points": 1,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "Tier \"By right\": Accessory unit allowed by right.",
+            "value": "By right",
+            "evidence": {
+              "field": "adu",
+              "cite": "§3.90 House A, Number of Accessory Apartments",
+              "quote": "Number of Accessory Apartments 1 in House or Backyard Cottage",
+              "source_title": "Zone Bridgeport form-based code (amended July 2022)",
+              "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+              "file": "/sources/bridgeport-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": true
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": false
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15."
           },
           {
             "label": "Parking Mandate",
             "points": 0.0,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "0 space(s) per unit; scored at 0/2.5 of the 10-point scale.",
+            "value": "0 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "§4.70.2(B)(6) accessory apartment parking",
+              "quote": "No additional parking is required for an accessory apartment.",
+              "source_title": "Zone Bridgeport form-based code (amended July 2022)",
+              "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+              "file": "/sources/bridgeport-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
           {
             "label": "Demolition Delay",
-            "points": 7.5,
-            "max_points": 15
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
         "note": "Small General, Row, Double House A and House A permitted; backyard cottage allowed (Table of accessory structures, 4 = allowed); 35–50 ft width",
@@ -719,6 +1700,22 @@
             "field": "use",
             "cite": "§2.20.2(F) NX2 zone description",
             "quote": "NX2, Neighborhood Mix. The NX2 zone is intended to",
+            "source_title": "Zone Bridgeport form-based code (amended July 2022)",
+            "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+            "file": "/sources/bridgeport-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "§3.90 House A, Lot Width (N1/NX1/NX2 columns)",
+            "quote": "Lot Width 45 ft. min. 45 ft. min. 35 ft. min.",
+            "source_title": "Zone Bridgeport form-based code (amended July 2022)",
+            "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+            "file": "/sources/bridgeport-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "§3.90 House A, Number of Accessory Apartments",
+            "quote": "Number of Accessory Apartments 1 in House or Backyard Cottage",
             "source_title": "Zone Bridgeport form-based code (amended July 2022)",
             "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
             "file": "/sources/bridgeport-zoning.pdf"
@@ -741,43 +1738,196 @@
           }
         ],
         "included": true,
-        "land_share": 19.9
+        "land_share": 19.9,
+        "contribution": 1.87
       },
       {
         "district": "NX3",
         "acres": 471.6,
-        "score": 22.3,
-        "components_scored": 4,
+        "score": 14.0,
+        "components_scored": 3,
         "factors": [
           {
             "label": "Multifamily Access",
             "points": 6,
-            "max_points": 30
+            "max_points": 30,
+            "reason": "Tier \"By right\": Multifamily allowed by right in a meaningful district with no cap.",
+            "value": "By right",
+            "evidence": {
+              "field": "use",
+              "cite": "§2.20.2(G) NX3 zone description",
+              "quote": "NX3, Mixed Residential. The NX3 zone is intended for",
+              "source_title": "Zone Bridgeport form-based code (amended July 2022)",
+              "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+              "file": "/sources/bridgeport-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": true
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": false
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
           },
           {
             "label": "Approval Discretion",
             "points": 1,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "Tier \"By right\": Approved administratively, no hearing.",
+            "value": "By right",
+            "evidence": {
+              "field": "use",
+              "cite": "§2.20.2(G) NX3 zone description",
+              "quote": "NX3, Mixed Residential. The NX3 zone is intended for",
+              "source_title": "Zone Bridgeport form-based code (amended July 2022)",
+              "url": "https://portal.ct.gov/-/media/CSC/1_Dockets-medialibrary/1_MEDIA_DO500_600/DO516/ApplicantSubmissions/Application/UI---City-of-Bridgeport-Zoning-Code-Amended-July-25-2022.pdf",
+              "file": "/sources/bridgeport-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": true
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10."
           },
           {
             "label": "Minimum Lot Size",
             "points": null,
-            "max_points": 20
+            "max_points": 20,
+            "reason": "No lot-size rule could be confirmed for this district.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
           },
           {
             "label": "ADU Approval Pathway",
             "points": null,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "Not confirmed for this district.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": false
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15."
           },
           {
             "label": "Parking Mandate",
             "points": 0.0,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "0 space(s) per unit; scored at 0/2.5 of the 10-point scale.",
+            "value": "0 per unit",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
           {
             "label": "Demolition Delay",
-            "points": 7.5,
-            "max_points": 15
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
         "note": "General, Row and Civic building types (multi-unit); lot-area minimum not confirmed in extracted text",
@@ -792,9 +1942,12 @@
           }
         ],
         "included": false,
-        "land_share": null
+        "land_share": null,
+        "contribution": null,
+        "exclusion_reason": "Excluded: only 3 of 6 components are confirmed (minimum 5)."
       }
     ],
+    "formula": "V2 = sum(district score x acres) / sum(acres) over included districts",
     "method": "Each district is scored with the same six-component rubric using only its own rules. A district is included only if at least 5 of 6 components are confirmed. The town V2 score is the land-area-weighted mean of included district scores; acreage is from data/land_area/bridgeport.json. Components with no confirmed input are excluded per district."
   }
 }

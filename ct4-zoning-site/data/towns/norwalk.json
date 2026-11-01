@@ -400,32 +400,184 @@
           {
             "label": "Multifamily Access",
             "points": 30,
-            "max_points": 30
+            "max_points": 30,
+            "reason": "Tier \"Not allowed\": No multifamily pathway in this district.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§3.3.1(A)(1) CD-1L district",
+              "quote": "1. Community District CD-1L",
+              "source_title": "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)",
+              "url": "https://www.norwalkct.gov/DocumentCenter/View/32245",
+              "file": "/sources/norwalk-art3.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": true
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
           },
           {
             "label": "Approval Discretion",
             "points": 10,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "Tier \"Not allowed\": No approval pathway for multifamily.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§3.3.1(A)(1) CD-1L district",
+              "quote": "1. Community District CD-1L",
+              "source_title": "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)",
+              "url": "https://www.norwalkct.gov/DocumentCenter/View/32245",
+              "file": "/sources/norwalk-art3.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10."
           },
           {
             "label": "Minimum Lot Size",
             "points": 13.5,
-            "max_points": 20
+            "max_points": 20,
+            "reason": "Smallest lot is 43,560 sq ft; the log scale gives 13.5 of 20.",
+            "value": "43,560 sq ft",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
           },
           {
             "label": "ADU Approval Pathway",
             "points": null,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "Not confirmed for this district.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": false
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15."
           },
           {
             "label": "Parking Mandate",
             "points": null,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "No parking requirement was confirmed for this district's single-family use.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
           {
             "label": "Demolition Delay",
             "points": 10.0,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "120-day delay; scored at 120/180 of the 15-point scale.",
+            "value": "120 days",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
         "note": "Sub-Urban Large Lot, single-family per district name (Art. 3); bulk schedule 43,560 sq ft; ADU rule not in extracted text, excluded; parking not extracted",
@@ -440,7 +592,9 @@
           }
         ],
         "included": false,
-        "land_share": null
+        "land_share": null,
+        "contribution": null,
+        "exclusion_reason": "Excluded: only 4 of 6 components are confirmed (minimum 5)."
       },
       {
         "district": "CD-1M",
@@ -451,32 +605,184 @@
           {
             "label": "Multifamily Access",
             "points": 30,
-            "max_points": 30
+            "max_points": 30,
+            "reason": "Tier \"Not allowed\": No multifamily pathway in this district.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§3.3.1(A)(2) CD-1M district",
+              "quote": "2. Community District CD-1M",
+              "source_title": "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)",
+              "url": "https://www.norwalkct.gov/DocumentCenter/View/32245",
+              "file": "/sources/norwalk-art3.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": true
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
           },
           {
             "label": "Approval Discretion",
             "points": 10,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "Tier \"Not allowed\": No approval pathway for multifamily.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§3.3.1(A)(2) CD-1M district",
+              "quote": "2. Community District CD-1M",
+              "source_title": "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)",
+              "url": "https://www.norwalkct.gov/DocumentCenter/View/32245",
+              "file": "/sources/norwalk-art3.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10."
           },
           {
             "label": "Minimum Lot Size",
             "points": 7.6,
-            "max_points": 20
+            "max_points": 20,
+            "reason": "Smallest lot is 12,500 sq ft; the log scale gives 7.6 of 20.",
+            "value": "12,500 sq ft",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
           },
           {
             "label": "ADU Approval Pathway",
             "points": null,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "Not confirmed for this district.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": false
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15."
           },
           {
             "label": "Parking Mandate",
             "points": null,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "No parking requirement was confirmed for this district's single-family use.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
           {
             "label": "Demolition Delay",
             "points": 10.0,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "120-day delay; scored at 120/180 of the 15-point scale.",
+            "value": "120 days",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
         "note": "Sub-Urban Medium Lot, single-family per district name (Art. 3); bulk schedule 12,500 sq ft; ADU rule not in extracted text, excluded; parking not extracted",
@@ -491,7 +797,9 @@
           }
         ],
         "included": false,
-        "land_share": null
+        "land_share": null,
+        "contribution": null,
+        "exclusion_reason": "Excluded: only 4 of 6 components are confirmed (minimum 5)."
       },
       {
         "district": "CD-1S",
@@ -502,32 +810,184 @@
           {
             "label": "Multifamily Access",
             "points": 30,
-            "max_points": 30
+            "max_points": 30,
+            "reason": "Tier \"Not allowed\": No multifamily pathway in this district.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§3.3.1(A)(3) CD-1S district",
+              "quote": "3. Community District CD-1S (Sub-Urban Single-",
+              "source_title": "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)",
+              "url": "https://www.norwalkct.gov/DocumentCenter/View/32245",
+              "file": "/sources/norwalk-art3.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": true
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
           },
           {
             "label": "Approval Discretion",
             "points": 10,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "Tier \"Not allowed\": No approval pathway for multifamily.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§3.3.1(A)(3) CD-1S district",
+              "quote": "3. Community District CD-1S (Sub-Urban Single-",
+              "source_title": "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)",
+              "url": "https://www.norwalkct.gov/DocumentCenter/View/32245",
+              "file": "/sources/norwalk-art3.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10."
           },
           {
             "label": "Minimum Lot Size",
             "points": 4.3,
-            "max_points": 20
+            "max_points": 20,
+            "reason": "Smallest lot is 6,250 sq ft; the log scale gives 4.3 of 20.",
+            "value": "6,250 sq ft",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
           },
           {
             "label": "ADU Approval Pathway",
             "points": 1,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "Tier \"By right\": Accessory unit allowed by right.",
+            "value": "By right",
+            "evidence": null,
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": true
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": false
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15."
           },
           {
             "label": "Parking Mandate",
             "points": null,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "No parking requirement was confirmed for this district's single-family use.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
           {
             "label": "Demolition Delay",
             "points": 10.0,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "120-day delay; scored at 120/180 of the 15-point scale.",
+            "value": "120 days",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
         "note": "Sub-Urban Single-Family; two- and multifamily NP (prior variables); bulk schedule 6,250 sq ft; ADU by right with limitations (prior variables); parking not extracted",
@@ -542,7 +1002,8 @@
           }
         ],
         "included": true,
-        "land_share": 73.4
+        "land_share": 73.4,
+        "contribution": 45.05
       },
       {
         "district": "CD-2",
@@ -553,32 +1014,184 @@
           {
             "label": "Multifamily Access",
             "points": 12,
-            "max_points": 30
+            "max_points": 30,
+            "reason": "Tier \"By right, capped\": Multifamily or two-family by right, but capped by unit count or density.",
+            "value": "By right, capped",
+            "evidence": {
+              "field": "use",
+              "cite": "§3.3.1(A)(4) CD-2 district",
+              "quote": "4. Community District CD-2 (Sub-Urban Single-",
+              "source_title": "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)",
+              "url": "https://www.norwalkct.gov/DocumentCenter/View/32245",
+              "file": "/sources/norwalk-art3.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": true
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": false
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
           },
           {
             "label": "Approval Discretion",
             "points": 4,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "Tier \"By right, capped\": Administrative site-plan approval with a cap.",
+            "value": "By right, capped",
+            "evidence": {
+              "field": "use",
+              "cite": "§3.3.1(A)(4) CD-2 district",
+              "quote": "4. Community District CD-2 (Sub-Urban Single-",
+              "source_title": "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)",
+              "url": "https://www.norwalkct.gov/DocumentCenter/View/32245",
+              "file": "/sources/norwalk-art3.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": true
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10."
           },
           {
             "label": "Minimum Lot Size",
             "points": 3.3,
-            "max_points": 20
+            "max_points": 20,
+            "reason": "Smallest lot is 5,000 sq ft; the log scale gives 3.3 of 20.",
+            "value": "5,000 sq ft",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
           },
           {
             "label": "ADU Approval Pathway",
             "points": 1,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "Tier \"By right\": Accessory unit allowed by right.",
+            "value": "By right",
+            "evidence": null,
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": true
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": false
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15."
           },
           {
             "label": "Parking Mandate",
             "points": null,
-            "max_points": 10
+            "max_points": 10,
+            "reason": "No parking requirement was confirmed for this district's single-family use.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
           {
             "label": "Demolition Delay",
             "points": 10.0,
-            "max_points": 15
+            "max_points": 15,
+            "reason": "120-day delay; scored at 120/180 of the 15-point scale.",
+            "value": "120 days",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
         "note": "Sub-Urban Single- and Two-Family; two-family permitted by right, multifamily NP (prior variables); 5,000 sq ft bulk minimum",
@@ -593,9 +1206,11 @@
           }
         ],
         "included": true,
-        "land_share": 26.6
+        "land_share": 26.6,
+        "contribution": 8.97
       }
     ],
+    "formula": "V2 = sum(district score x acres) / sum(acres) over included districts",
     "method": "Each district is scored with the same six-component rubric using only its own rules. A district is included only if at least 5 of 6 components are confirmed. The town V2 score is the land-area-weighted mean of included district scores; acreage is from data/land_area/norwalk.json. Components with no confirmed input are excluded per district."
   }
 }
