@@ -23,7 +23,7 @@ function compact(s: string): { text: string; map: number[] } {
   let text = "";
   for (let i = 0; i < s.length; i++) {
     const c = s[i];
-    if (/\s/.test(c)) continue;
+    if (/[\s.\u0000-\u001f\u007f\u00a0\u200b\u00ad]/.test(c)) continue;
     text += c.toLowerCase();
     map.push(i);
   }
@@ -73,7 +73,7 @@ function findMatch(items: Item[], needleCompact: { text: string }): [number, num
     const { text, spans } = buildConcat(items, order);
     const pageCompact = compact(text);
     for (const needle of [needleCompact.text, needleCompact.text.slice(0, 40)]) {
-      if (needle.length < 6) continue;
+      if (needle.length < 5) continue;
       const idx = pageCompact.text.indexOf(needle);
       if (idx === -1) continue;
       const startOrig = pageCompact.map[idx];
@@ -127,8 +127,9 @@ export default function SourceViewer({ source, cite, quote, onClose }: Props) {
         const token = searchToken(cite);
 
         let targetPage = 1;
-        let matchIdxRange: [number, number] | null = null;
+        let matchRanges: [number, number][] = [];
         let matchQuality: "found" | "weak" = "found";
+        const pageItems: Item[][] = [];
 
         // Pass 1: exact (or near-exact) quote match, page by page.
         if (quoteCompact && quoteCompact.text.length > 0) {
@@ -136,18 +137,50 @@ export default function SourceViewer({ source, cite, quote, onClose }: Props) {
             const page = await doc.getPage(i);
             const content = await page.getTextContent();
             const items = content.items as unknown as Item[];
+            pageItems[i] = items;
             const m = findMatch(items, quoteCompact);
             if (m) {
-              matchIdxRange = m;
+              matchRanges = [m];
               targetPage = i;
               break;
             }
           }
         }
 
+        // Pass 1b: table rows often split a quote across columns, so the whole
+        // string never appears contiguously. Search the label (first two words)
+        // and the value (the rest) separately and prefer a page containing both.
+        if (matchRanges.length === 0 && quote) {
+          const words = quote.trim().split(/\s+/);
+          if (words.length >= 3) {
+            const head = compact(words.slice(0, 2).join(" "));
+            const tail = compact(words.slice(2).join(" "));
+            let best: { page: number; ranges: [number, number][]; score: number } | null = null;
+            for (let i = 1; i <= doc.numPages; i++) {
+              if (!pageItems[i]) {
+                const pg = await doc.getPage(i);
+                pageItems[i] = (await pg.getTextContent()).items as unknown as Item[];
+              }
+              const mt = findMatch(pageItems[i], tail);
+              if (!mt) continue;
+              const mh = findMatch(pageItems[i], head);
+              const score = mh ? 2 : 1;
+              if (!best || score > best.score) {
+                best = { page: i, ranges: mh ? [mh, mt] : [mt], score };
+              }
+              if (score === 2) break;
+            }
+            if (best) {
+              matchRanges = best.ranges;
+              targetPage = best.page;
+              if (best.score < 2) matchQuality = "weak";
+            }
+          }
+        }
+
         // Pass 2: fall back to the section/number token from the citation,
         // so the viewer still lands on a relevant page instead of page 1.
-        if (!matchIdxRange && token) {
+        if (matchRanges.length === 0 && token) {
           const tokenCompact = compact(token);
           for (let i = 1; i <= doc.numPages; i++) {
             const page = await doc.getPage(i);
@@ -155,7 +188,7 @@ export default function SourceViewer({ source, cite, quote, onClose }: Props) {
             const items = content.items as unknown as Item[];
             const m = findMatch(items, tokenCompact);
             if (m) {
-              matchIdxRange = m;
+              matchRanges = [m];
               targetPage = i;
               matchQuality = "weak";
               break;
@@ -190,7 +223,7 @@ export default function SourceViewer({ source, cite, quote, onClose }: Props) {
           span.style.fontSize = `${fontHeight}px`;
           span.style.whiteSpace = "pre";
           span.style.color = "transparent";
-          if (matchIdxRange && i >= matchIdxRange[0] && i <= matchIdxRange[1]) {
+          if (matchRanges.some(([a, b]) => i >= a && i <= b)) {
             span.style.background =
               matchQuality === "found" ? "rgba(255, 210, 60, 0.6)" : "rgba(255, 210, 60, 0.35)";
             span.style.color = "rgba(0,0,0,0.01)";
@@ -202,8 +235,8 @@ export default function SourceViewer({ source, cite, quote, onClose }: Props) {
 
         if (!cancelled) {
           setPageInfo({ page: targetPage, count: doc.numPages });
-          setStatus(matchIdxRange ? matchQuality : "not-found");
-          if (matchIdxRange) {
+          setStatus(matchRanges.length ? matchQuality : "not-found");
+          if (matchRanges.length) {
             requestAnimationFrame(() => {
               const firstHighlight = textLayerDiv.querySelector("span[data-hit='1']");
               firstHighlight?.scrollIntoView({ block: "center", behavior: "smooth" });
