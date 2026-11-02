@@ -980,10 +980,10 @@ V2_DISTRICTS = {
                  "note": "One Family, verified single-family only (prior variables); ADU by zoning permit (lot ≥10,000 sq ft); 2 spaces verified"},
         "R-10": {"use": "none", "approval": "none", "lot": 10000, "adu": "zoning_permit", "parking": 2, "demo": None,
                  "note": "One Family Residence District, 10,000 sq ft minimum (§5.Y.3); ADU by zoning permit at exactly the 10,000 sq ft threshold; parking as R-20"},
-        "R-7 1/2": {"use": "none", "approval": "none", "lot": 7500, "adu": "prohibited", "parking": 2, "demo": None,
-                    "note": "One Family Residence District, 7,500 sq ft minimum (§5.Y.3); lot below the 10,000 sq ft ADU threshold, so ADUs are prohibited (ADU def., §4)"},
-        "R-6": {"use": "capped_by_right", "approval": "capped_by_right", "lot": 5000, "adu": "prohibited", "parking": 2, "demo": None,
-                "note": "One- and Two-Family (§5.Z); two-family by right with administrative site plan on lots ≥7,500 sq ft; 5,000 sq ft one-family minimum; ADUs prohibited (below 10,000 sq ft and multifamily-ineligible rule)"},
+        "R-7 1/2": {"use": "none", "approval": "none", "lot": 7500, "adu": "zoning_permit", "parking": 2, "demo": None,
+                    "note": "One Family Residence District, 7,500 sq ft minimum (§5.Y.3); ADU by zoning permit only on lots of at least 10,000 sq ft (ADU def., §4), so lots of 7,500 to 9,999 sq ft cannot have one; scored at the qualifying-lot tier, as R-10 and R-20"},
+        "R-6": {"use": "capped_by_right", "approval": "capped_by_right", "lot": 5000, "adu": "zoning_permit", "parking": 2, "demo": None,
+                "note": "One- and Two-Family (§5.Z); two-family by right with administrative site plan on lots ≥7,500 sq ft; 5,000 sq ft one-family minimum; ADU by zoning permit only on lots of at least 10,000 sq ft (ADU def., §4), so smaller lots cannot have one; scored at the qualifying-lot tier"},
     },
     "greenwich": {
         "RA-4": {"use": "none", "approval": "none", "lot": 174240, "adu": "zoning_permit", "parking": None, "demo": 90,
@@ -1091,6 +1091,7 @@ for _d in ["RA-2", "RA-1", "R-20", "R-10", "R-7 1/2"]:
     V2_CITES[("stamford", _d, "adu")] = V2_CITES[("stamford", "RA-3", "adu")]
     V2_CITES[("stamford", _d, "adu_size")] = V2_CITES[("stamford", "RA-3", "adu_size")]
     V2_CITES[("stamford", _d, "parking")] = V2_CITES[("stamford", "RA-3", "parking")]
+V2_CITES[("stamford", "R-6", "adu")] = V2_CITES[("stamford", "RA-3", "adu")]
 V2_CITES[("stamford", "R-6", "use")] = ("stamford", "Zoning district list, R-6", "R-6               One-Family, Two-Family Residence District")
 for _d in ["RA-4", "RA-2", "RA-1", "R-20", "R-12", "R-7", "R-6", "R-MF"]:
     V2_CITES[("greenwich", _d, "adu")] = ("greenwich-div9", "§6-99(3)(E) ADU approved by zoning permit unless larger", "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU")
