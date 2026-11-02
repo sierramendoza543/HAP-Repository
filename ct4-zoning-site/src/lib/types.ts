@@ -61,6 +61,7 @@ export interface V2ScaleStep {
 
 export interface V2Factor {
   label: string;
+  in_score: boolean;
   points: number | null;
   max_points: number;
   value: string;
@@ -86,6 +87,7 @@ export interface V2District {
   district: string;
   acres: number;
   score: number | null;
+  score_extended: number | null;
   components_scored: number;
   components_confirmed: number;
   land_share: number | null;
@@ -120,4 +122,31 @@ export interface Town {
   nza_metrics: NzaMetric[];
   primary_source: SourceRef;
   caveat: string;
+}
+
+export interface NzaPair {
+  ours: number;
+  nza: number;
+}
+
+export type NzaFamily = "1-family" | "2-family" | "3-family" | "4+-family";
+
+export interface NzaCompare {
+  as_of_right: Record<NzaFamily, NzaPair>;
+  hearing: Record<NzaFamily, NzaPair>;
+  prohibited: Record<NzaFamily, NzaPair>;
+  lot80: NzaPair;
+  parking: NzaPair;
+  adu: { ours: string; nza: string };
+  base_acres: { ours: number; nza: number };
+  proxy: {
+    ours: number;
+    nza_stored: number;
+    nza_live: number;
+    difference: number;
+    ours_with_unconfirmed_districts?: number;
+  };
+  method: string;
+  replication_file: string;
+  notes: string[];
 }

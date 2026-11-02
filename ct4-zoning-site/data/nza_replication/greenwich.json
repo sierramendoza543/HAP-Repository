@@ -1,2196 +1,2196 @@
 {
-  "town": "Greenwich, CT (NZA jurisdiction 317)",
-  "method": "A district is residential land if the text of Div. 9 shows at least one dwelling type allowed there. Statuses are read from Div. 9 (use regulations); lot sizes from Div. 21 (bulk schedule); parking from Div. 15. Shares use our gross district acreage from the town's zoning layer (before NZA's removal of protected and unzoned land). Districts whose rules are not in the mirrored text are reported as unclassified and never guessed; their acreage appears in bounds, not in the base. As-of-right includes administrative site plan approval (no public hearing), matching how Stamford was treated.",
-  "sources": [
-    "public/sources/greenwich-div9.pdf",
-    "public/sources/greenwich-div21.pdf",
-    "public/sources/greenwich-div15.pdf",
-    "data/land_area/greenwich.json",
-    "data/nza_replication/nza_snapshots.json (greenwich)",
-    "data/towns/greenwich.json"
-  ],
-  "acreage_note": "Sum of Shape__Area grouped by Layer (district code). Shape__Area is Web Mercator m2 at latitude 41.03; corrected by cos^2(lat)=0.5691 and converted to acres. Total 31051 acres (matches Greenwich's ~31,000 acre footprint). Overlay codes (-HO, -HRO) are kept separately, so underlying base district areas may be understated by the overlay share.",
-  "residential_districts": [
-    "RA-4",
-    "RA-2",
-    "RA-1",
-    "R-20",
-    "R-12",
-    "RA-2-HO",
-    "RA-1-HO",
-    "R-20-HO",
-    "R-12-HO",
-    "R-7",
-    "R-7-HO",
-    "R-6",
-    "R-6-HO",
-    "R-MF",
-    "LB",
-    "LBR-2",
-    "CGB",
-    "CGBR",
-    "GB",
-    "GBO",
-    "LB-HO",
-    "LBR-2-HO",
-    "CGB-HO",
-    "CGBR-HO",
-    "GB-HO",
-    "LBR-1",
-    "LBR-1-HO",
-    "WB",
-    "GB-IND-RE"
-  ],
-  "nonresidential_districts": [
-    "BEX-50",
-    "H-1",
-    "H-2"
-  ],
-  "residential_acres_ours": 29568.3,
-  "residential_acres_nza": 25072,
-  "unclassified_residential_districts": {
-    "RA-C4": {
-      "acres": 563.9,
-      "why": "RA-C (conservation) zone family: no use text in Div. 9, 15 or 21"
-    },
-    "RA-C2": {
-      "acres": 194.2,
-      "why": "same"
-    },
-    "RA-C1": {
-      "acres": 22.9,
-      "why": "same"
-    },
-    "RA-CC4": {
-      "acres": 19.4,
-      "why": "RA-CC family: no use text in Div. 9, 15 or 21"
-    },
-    "RA-CC4-HO": {
-      "acres": 102.2,
-      "why": "same, with Historic Overlay"
-    },
-    "R-C7": {
-      "acres": 82.8,
-      "why": "R-C family: no use text in Div. 9, 15 or 21"
-    },
-    "R-C12": {
-      "acres": 56.0,
-      "why": "same"
-    },
-    "R-C20": {
-      "acres": 8.7,
-      "why": "same"
-    },
-    "R-C7-HO": {
-      "acres": 16.1,
-      "why": "same, with Historic Overlay"
-    },
-    "RC-20-HO": {
-      "acres": 4.7,
-      "why": "same, with Historic Overlay"
-    },
-    "RC-12-HO": {
-      "acres": 1.2,
-      "why": "same, with Historic Overlay"
-    },
-    "R-PR": {
-      "acres": 119.2,
-      "why": "Sec. 6-38-type planned-residential zone: Div. 6 is not mirrored in public/sources"
-    },
-    "R-PHD-SU": {
-      "acres": 22.3,
-      "why": "R-PHD (Div. 6) small-unit zone: not in mirrored Div. 9/15/21"
-    },
-    "R-PHD-E": {
-      "acres": 15.6,
-      "why": "R-PHD (Div. 6) elderly zone: not in mirrored Div. 9/15/21 (Sec. 6-155(2) only mentions it for parking)"
-    },
-    "R-6-HRO": {
-      "acres": 0.2,
-      "why": "R-6 base is known, but 'HRO' overlay text is not in the mirrored Div. 9"
-    }
+ "town": "Greenwich, CT (NZA jurisdiction 317)",
+ "method": "A district is residential land if the text of Div. 9 shows at least one dwelling type allowed there. Statuses are read from Div. 9 (use regulations); lot sizes from Div. 21 (bulk schedule); parking from Div. 15. Shares use our gross district acreage from the town's zoning layer (before NZA's removal of protected and unzoned land). Districts whose rules are not in the mirrored text are reported as unclassified and never guessed; their acreage appears in bounds, not in the base. As-of-right includes administrative site plan approval (no public hearing), matching how Stamford was treated.",
+ "sources": [
+  "public/sources/greenwich-div9.pdf",
+  "public/sources/greenwich-div21.pdf",
+  "public/sources/greenwich-div15.pdf",
+  "data/land_area/greenwich.json",
+  "data/nza_replication/nza_snapshots.json (greenwich)",
+  "data/towns/greenwich.json"
+ ],
+ "acreage_note": "Sum of Shape__Area grouped by Layer (district code). Shape__Area is Web Mercator m2 at latitude 41.03; corrected by cos^2(lat)=0.5691 and converted to acres. Total 31051 acres (matches Greenwich's ~31,000 acre footprint). Overlay codes (-HO, -HRO) are kept separately, so underlying base district areas may be understated by the overlay share.",
+ "residential_districts": [
+  "RA-4",
+  "RA-2",
+  "RA-1",
+  "R-20",
+  "R-12",
+  "RA-2-HO",
+  "RA-1-HO",
+  "R-20-HO",
+  "R-12-HO",
+  "R-7",
+  "R-7-HO",
+  "R-6",
+  "R-6-HO",
+  "R-MF",
+  "LB",
+  "LBR-2",
+  "CGB",
+  "CGBR",
+  "GB",
+  "GBO",
+  "LB-HO",
+  "LBR-2-HO",
+  "CGB-HO",
+  "CGBR-HO",
+  "GB-HO",
+  "LBR-1",
+  "LBR-1-HO",
+  "WB",
+  "GB-IND-RE"
+ ],
+ "nonresidential_districts": [
+  "BEX-50",
+  "H-1",
+  "H-2"
+ ],
+ "residential_acres_ours": 29568.3,
+ "residential_acres_nza": 25072,
+ "unclassified_residential_districts": {
+  "RA-C4": {
+   "acres": 563.9,
+   "why": "RA-C (conservation) zone family: no use text in Div. 9, 15 or 21"
   },
-  "unclassified_residential_acres": 1229.4,
-  "unclassified_other_districts": {
-    "BEX-50-R": {
-      "acres": 156.2,
-      "why": "no text for the BEX-50-R district; GIS zone type blank"
-    },
-    "P": {
-      "acres": 6.9,
-      "why": "no text for the P district in Div. 9/15/21"
-    },
-    "HRO": {
-      "acres": 4.1,
-      "why": "'HRO' overlay text not in the mirrored Div. 9"
-    },
-    "LB-R-C7-HO": {
-      "acres": 6.0,
-      "why": "mixed LB / R-C7 overlay code; R-C7 text not available"
-    }
+  "RA-C2": {
+   "acres": 194.2,
+   "why": "same"
   },
-  "unclassified_other_acres": 173.2,
-  "nonresidential_acres": 80.6,
-  "total_acres_in_layer": 31051.5,
-  "nza_land_categories": {
-    "Unzoned": 3416,
-    "Protected": 1585,
-    "Zoned": 25321
+  "RA-C1": {
+   "acres": 22.9,
+   "why": "same"
   },
-  "per_district": {
-    "RA-4": {
-      "acres": 10704.3,
-      "rule": "RA-4/RA-2/RA-1/R-20/R-12: single-family only",
-      "note": null,
-      "statuses": {
-        "1-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "Detached single family dwellings, one (1) per lot."
-          }
-        },
-        "2-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded:"
-          }
-        },
-        "3-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded:"
-          }
-        },
-        "4+-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded:"
-          }
-        }
-      },
-      "min_lot_sqft": {
-        "value": 174240,
-        "section": "Sec. 6-205(a) bulk schedule (Div. 21), row for the district",
-        "quote": "4 Acres"
-      }
-    },
-    "RA-2": {
-      "acres": 7759.3,
-      "rule": "RA-4/RA-2/RA-1/R-20/R-12: single-family only",
-      "note": null,
-      "statuses": {
-        "1-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "Detached single family dwellings, one (1) per lot."
-          }
-        },
-        "2-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded:"
-          }
-        },
-        "3-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded:"
-          }
-        },
-        "4+-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded:"
-          }
-        }
-      },
-      "min_lot_sqft": {
-        "value": 87120,
-        "section": "Sec. 6-205(a) bulk schedule (Div. 21), row for the district",
-        "quote": "2 Acres"
-      }
-    },
-    "RA-1": {
-      "acres": 4753.3,
-      "rule": "RA-4/RA-2/RA-1/R-20/R-12: single-family only",
-      "note": null,
-      "statuses": {
-        "1-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "Detached single family dwellings, one (1) per lot."
-          }
-        },
-        "2-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded:"
-          }
-        },
-        "3-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded:"
-          }
-        },
-        "4+-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded:"
-          }
-        }
-      },
-      "min_lot_sqft": {
-        "value": 43560,
-        "section": "Sec. 6-205(a) bulk schedule (Div. 21), row for the district",
-        "quote": "1 Acre"
-      }
-    },
-    "R-20": {
-      "acres": 1189.6,
-      "rule": "RA-4/RA-2/RA-1/R-20/R-12: single-family only",
-      "note": null,
-      "statuses": {
-        "1-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "Detached single family dwellings, one (1) per lot."
-          }
-        },
-        "2-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded:"
-          }
-        },
-        "3-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded:"
-          }
-        },
-        "4+-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded:"
-          }
-        }
-      },
-      "min_lot_sqft": {
-        "value": 20000,
-        "section": "Sec. 6-205(a) bulk schedule (Div. 21), row for the district",
-        "quote": "20,000"
-      }
-    },
-    "R-12": {
-      "acres": 2277.5,
-      "rule": "RA-4/RA-2/RA-1/R-20/R-12: single-family only",
-      "note": null,
-      "statuses": {
-        "1-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "Detached single family dwellings, one (1) per lot."
-          }
-        },
-        "2-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded:"
-          }
-        },
-        "3-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded:"
-          }
-        },
-        "4+-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded:"
-          }
-        }
-      },
-      "min_lot_sqft": {
-        "value": 12000,
-        "section": "Sec. 6-205(a) bulk schedule (Div. 21), row for the district",
-        "quote": "12,000"
-      }
-    },
-    "RA-2-HO": {
-      "acres": 5.5,
-      "rule": "RA-4/RA-2/RA-1/R-20/R-12: single-family only",
-      "note": "Historic Overlay (Sec. 6-109): the code treats HO as a rezoning on top of the base district; the base-district use rules still govern, and the HO only lets the Commission authorize extra units by special permit (Sec. 6-109(d)(3)). Counted at the base district's status.",
-      "statuses": {
-        "1-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "Detached single family dwellings, one (1) per lot."
-          }
-        },
-        "2-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded:"
-          }
-        },
-        "3-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded:"
-          }
-        },
-        "4+-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded:"
-          }
-        }
-      },
-      "min_lot_sqft": {
-        "value": 87120,
-        "section": "Sec. 6-205(a) bulk schedule (Div. 21), row for the district (base district)",
-        "quote": "2 Acres"
-      }
-    },
-    "RA-1-HO": {
-      "acres": 4.8,
-      "rule": "RA-4/RA-2/RA-1/R-20/R-12: single-family only",
-      "note": "Historic Overlay (Sec. 6-109): the code treats HO as a rezoning on top of the base district; the base-district use rules still govern, and the HO only lets the Commission authorize extra units by special permit (Sec. 6-109(d)(3)). Counted at the base district's status.",
-      "statuses": {
-        "1-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "Detached single family dwellings, one (1) per lot."
-          }
-        },
-        "2-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded:"
-          }
-        },
-        "3-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded:"
-          }
-        },
-        "4+-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded:"
-          }
-        }
-      },
-      "min_lot_sqft": {
-        "value": 43560,
-        "section": "Sec. 6-205(a) bulk schedule (Div. 21), row for the district (base district)",
-        "quote": "1 Acre"
-      }
-    },
-    "R-20-HO": {
-      "acres": 10.7,
-      "rule": "RA-4/RA-2/RA-1/R-20/R-12: single-family only",
-      "note": "Historic Overlay (Sec. 6-109): the code treats HO as a rezoning on top of the base district; the base-district use rules still govern, and the HO only lets the Commission authorize extra units by special permit (Sec. 6-109(d)(3)). Counted at the base district's status.",
-      "statuses": {
-        "1-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "Detached single family dwellings, one (1) per lot."
-          }
-        },
-        "2-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded:"
-          }
-        },
-        "3-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded:"
-          }
-        },
-        "4+-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded:"
-          }
-        }
-      },
-      "min_lot_sqft": {
-        "value": 20000,
-        "section": "Sec. 6-205(a) bulk schedule (Div. 21), row for the district (base district)",
-        "quote": "20,000"
-      }
-    },
-    "R-12-HO": {
-      "acres": 0.6,
-      "rule": "RA-4/RA-2/RA-1/R-20/R-12: single-family only",
-      "note": "Historic Overlay (Sec. 6-109): the code treats HO as a rezoning on top of the base district; the base-district use rules still govern, and the HO only lets the Commission authorize extra units by special permit (Sec. 6-109(d)(3)). Counted at the base district's status.",
-      "statuses": {
-        "1-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "Detached single family dwellings, one (1) per lot."
-          }
-        },
-        "2-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded:"
-          }
-        },
-        "3-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded:"
-          }
-        },
-        "4+-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-93(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded:"
-          }
-        }
-      },
-      "min_lot_sqft": {
-        "value": 12000,
-        "section": "Sec. 6-205(a) bulk schedule (Div. 21), row for the district (base district)",
-        "quote": "12,000"
-      }
-    },
-    "R-7": {
-      "acres": 1159.2,
-      "rule": "R-7: uses of RA-4 plus Sec. 6-94 only",
-      "note": null,
-      "statuses": {
-        "1-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-97(a)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "All uses permitted in RA-4 zones and uses permitted under Sec. 6-94."
-          }
-        },
-        "2-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-97(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded in R-7 zones"
-          }
-        },
-        "3-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-97(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded in R-7 zones"
-          }
-        },
-        "4+-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-97(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded in R-7 zones"
-          }
-        }
-      },
-      "min_lot_sqft": {
-        "value": 7500,
-        "section": "Sec. 6-205(a) bulk schedule (Div. 21), row for the district",
-        "quote": "7,500"
-      }
-    },
-    "R-7-HO": {
-      "acres": 0.6,
-      "rule": "R-7: uses of RA-4 plus Sec. 6-94 only",
-      "note": "Historic Overlay (Sec. 6-109): the code treats HO as a rezoning on top of the base district; the base-district use rules still govern, and the HO only lets the Commission authorize extra units by special permit (Sec. 6-109(d)(3)). Counted at the base district's status.",
-      "statuses": {
-        "1-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-97(a)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "All uses permitted in RA-4 zones and uses permitted under Sec. 6-94."
-          }
-        },
-        "2-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-97(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded in R-7 zones"
-          }
-        },
-        "3-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-97(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded in R-7 zones"
-          }
-        },
-        "4+-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-97(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "and all other principal uses are expressly excluded in R-7 zones"
-          }
-        }
-      },
-      "min_lot_sqft": {
-        "value": 7500,
-        "section": "Sec. 6-205(a) bulk schedule (Div. 21), row for the district (base district)",
-        "quote": "7,500"
-      }
-    },
-    "R-6": {
-      "acres": 978.0,
-      "rule": "R-6: single-family, two-family by administrative site plan",
-      "note": null,
-      "statuses": {
-        "1-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-98(a)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "All uses permitted in R-7 zones."
-          }
-        },
-        "2-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-98(a)(3)(A)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "Administrative site plan approval is required on lots of 7,500 square feet or larger for",
-            "note": "New two-family dwellings need administrative site plan approval, with no public hearing, on lots of 7,500 sq ft or more. Special permit is needed on smaller lots (Sec. 6-98(a)(4)(A)). Sec. 6-101(d) separately says a special permit is required for two or more dwelling units on a lot in residential zones; we read the specific R-6 rule as controlling and flag it as unresolved."
-          }
-        },
-        "3-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-98(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "are permitted and all other principal uses are expressly excluded in the R-6",
-            "note": "Sec. 6-98(a)(2) allows only additions or renovations to EXISTING two-/multi-family dwellings, not new ones."
-          }
-        },
-        "4+-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-98(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "are permitted and all other principal uses are expressly excluded in the R-6",
-            "note": "Sec. 6-98(a)(2) allows only additions or renovations to EXISTING two-/multi-family dwellings, not new ones."
-          }
-        }
-      },
-      "min_lot_sqft": {
-        "value": 7500,
-        "section": "Sec. 6-205(a) bulk schedule (Div. 21), row for the district",
-        "quote": "7,500 sq. ft. 60 ft."
-      }
-    },
-    "R-6-HO": {
-      "acres": 0.2,
-      "rule": "R-6: single-family, two-family by administrative site plan",
-      "note": "Historic Overlay (Sec. 6-109): the code treats HO as a rezoning on top of the base district; the base-district use rules still govern, and the HO only lets the Commission authorize extra units by special permit (Sec. 6-109(d)(3)). Counted at the base district's status.",
-      "statuses": {
-        "1-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-98(a)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "All uses permitted in R-7 zones."
-          }
-        },
-        "2-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-98(a)(3)(A)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "Administrative site plan approval is required on lots of 7,500 square feet or larger for",
-            "note": "New two-family dwellings need administrative site plan approval, with no public hearing, on lots of 7,500 sq ft or more. Special permit is needed on smaller lots (Sec. 6-98(a)(4)(A)). Sec. 6-101(d) separately says a special permit is required for two or more dwelling units on a lot in residential zones; we read the specific R-6 rule as controlling and flag it as unresolved."
-          }
-        },
-        "3-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-98(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "are permitted and all other principal uses are expressly excluded in the R-6",
-            "note": "Sec. 6-98(a)(2) allows only additions or renovations to EXISTING two-/multi-family dwellings, not new ones."
-          }
-        },
-        "4+-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-98(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "are permitted and all other principal uses are expressly excluded in the R-6",
-            "note": "Sec. 6-98(a)(2) allows only additions or renovations to EXISTING two-/multi-family dwellings, not new ones."
-          }
-        }
-      },
-      "min_lot_sqft": {
-        "value": 7500,
-        "section": "Sec. 6-205(a) bulk schedule (Div. 21), row for the district (base district)",
-        "quote": "7,500 sq. ft. 60 ft."
-      }
-    },
-    "R-MF": {
-      "acres": 60.9,
-      "rule": "R-MF: two-family and multi-family by special permit",
-      "note": null,
-      "statuses": {
-        "1-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-98.1(a)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "All uses permitted in R-7 zones."
-          }
-        },
-        "2-family": {
-          "status": "hearing",
-          "cite": {
-            "section": "Sec. 6-98.1(a)(2)(A)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "The building of a two family dwelling, conversion from a single family to a two-family dwelling"
-          }
-        },
-        "3-family": {
-          "status": "hearing",
-          "cite": {
-            "section": "Sec. 6-98.1(a)(2)(A)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "addition or alteration to one or more multi-family dwellings or a combination of single family, two-family",
-            "note": "Multi-family is not split by unit count in the text, so 3-family and 4+-family get the same special-permit status."
-          }
-        },
-        "4+-family": {
-          "status": "hearing",
-          "cite": {
-            "section": "Sec. 6-98.1(a)(2)(A)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "addition or alteration to one or more multi-family dwellings or a combination of single family, two-family",
-            "note": "Multi-family is not split by unit count in the text, so 3-family and 4+-family get the same special-permit status."
-          }
-        }
-      },
-      "min_lot_sqft": {
-        "value": 3600,
-        "section": "Sec. 6-205(a) bulk schedule (Div. 21), row for the district",
-        "quote": "3,600"
-      }
-    },
-    "LB": {
-      "acres": 77.0,
-      "rule": "Business zone permitting Use Group 3 dwellings (Sec. 6-110)",
-      "note": null,
-      "statuses": {
-        "1-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "2-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "3-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "4+-family": {
-          "status": "hearing",
-          "cite": {
-            "section": "Sec. 6-110(F)(2)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A special permit and site plan are required when the development proposal is five (5) units",
-            "note": "5 or more units need a special permit; a 4-unit building is site-plan-only, so 4+-family is split and we code the class 'hearing'."
-          }
-        }
-      },
-      "min_lot_sqft": {
-        "value": null,
-        "section": "Sec. 6-205(b)",
-        "note": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity."
-      }
-    },
-    "LBR-2": {
-      "acres": 76.8,
-      "rule": "Business zone permitting Use Group 3 dwellings (Sec. 6-110)",
-      "note": null,
-      "statuses": {
-        "1-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "2-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "3-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "4+-family": {
-          "status": "hearing",
-          "cite": {
-            "section": "Sec. 6-110(F)(2)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A special permit and site plan are required when the development proposal is five (5) units",
-            "note": "5 or more units need a special permit; a 4-unit building is site-plan-only, so 4+-family is split and we code the class 'hearing'."
-          }
-        }
-      },
-      "min_lot_sqft": {
-        "value": null,
-        "section": "Sec. 6-205(b)",
-        "note": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity."
-      }
-    },
-    "CGB": {
-      "acres": 98.3,
-      "rule": "Business zone permitting Use Group 3 dwellings (Sec. 6-110)",
-      "note": null,
-      "statuses": {
-        "1-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "2-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "3-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "4+-family": {
-          "status": "hearing",
-          "cite": {
-            "section": "Sec. 6-110(F)(2)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A special permit and site plan are required when the development proposal is five (5) units",
-            "note": "5 or more units need a special permit; a 4-unit building is site-plan-only, so 4+-family is split and we code the class 'hearing'."
-          }
-        }
-      },
-      "min_lot_sqft": {
-        "value": null,
-        "section": "Sec. 6-205(b)",
-        "note": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity."
-      }
-    },
-    "CGBR": {
-      "acres": 51.7,
-      "rule": "Business zone permitting Use Group 3 dwellings (Sec. 6-110)",
-      "note": null,
-      "statuses": {
-        "1-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "2-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "3-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "4+-family": {
-          "status": "hearing",
-          "cite": {
-            "section": "Sec. 6-110(F)(2)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A special permit and site plan are required when the development proposal is five (5) units",
-            "note": "5 or more units need a special permit; a 4-unit building is site-plan-only, so 4+-family is split and we code the class 'hearing'."
-          }
-        }
-      },
-      "min_lot_sqft": {
-        "value": null,
-        "section": "Sec. 6-205(b)",
-        "note": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity."
-      }
-    },
-    "GB": {
-      "acres": 157.3,
-      "rule": "Business zone permitting Use Group 3 dwellings (Sec. 6-110)",
-      "note": null,
-      "statuses": {
-        "1-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "2-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "3-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "4+-family": {
-          "status": "hearing",
-          "cite": {
-            "section": "Sec. 6-110(F)(2)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A special permit and site plan are required when the development proposal is five (5) units",
-            "note": "5 or more units need a special permit; a 4-unit building is site-plan-only, so 4+-family is split and we code the class 'hearing'."
-          }
-        }
-      },
-      "min_lot_sqft": {
-        "value": null,
-        "section": "Sec. 6-205(b)",
-        "note": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity."
-      }
-    },
-    "GBO": {
-      "acres": 98.7,
-      "rule": "Business zone permitting Use Group 3 dwellings (Sec. 6-110)",
-      "note": null,
-      "statuses": {
-        "1-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "2-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "3-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "4+-family": {
-          "status": "hearing",
-          "cite": {
-            "section": "Sec. 6-110(F)(2)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A special permit and site plan are required when the development proposal is five (5) units",
-            "note": "5 or more units need a special permit; a 4-unit building is site-plan-only, so 4+-family is split and we code the class 'hearing'."
-          }
-        }
-      },
-      "min_lot_sqft": {
-        "value": null,
-        "section": "Sec. 6-205(b)",
-        "note": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity."
-      }
-    },
-    "LB-HO": {
-      "acres": 12.0,
-      "rule": "Business zone permitting Use Group 3 dwellings (Sec. 6-110)",
-      "note": "Historic Overlay on a business zone: base-zone status used (Sec. 6-109(d)(1)).",
-      "statuses": {
-        "1-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "2-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "3-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "4+-family": {
-          "status": "hearing",
-          "cite": {
-            "section": "Sec. 6-110(F)(2)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A special permit and site plan are required when the development proposal is five (5) units",
-            "note": "5 or more units need a special permit; a 4-unit building is site-plan-only, so 4+-family is split and we code the class 'hearing'."
-          }
-        }
-      },
-      "min_lot_sqft": {
-        "value": null,
-        "section": "Sec. 6-205(b)",
-        "note": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity."
-      }
-    },
-    "LBR-2-HO": {
-      "acres": 0.9,
-      "rule": "Business zone permitting Use Group 3 dwellings (Sec. 6-110)",
-      "note": "Historic Overlay on a business zone: base-zone status used (Sec. 6-109(d)(1)).",
-      "statuses": {
-        "1-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "2-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "3-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "4+-family": {
-          "status": "hearing",
-          "cite": {
-            "section": "Sec. 6-110(F)(2)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A special permit and site plan are required when the development proposal is five (5) units",
-            "note": "5 or more units need a special permit; a 4-unit building is site-plan-only, so 4+-family is split and we code the class 'hearing'."
-          }
-        }
-      },
-      "min_lot_sqft": {
-        "value": null,
-        "section": "Sec. 6-205(b)",
-        "note": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity."
-      }
-    },
-    "CGB-HO": {
-      "acres": 3.9,
-      "rule": "Business zone permitting Use Group 3 dwellings (Sec. 6-110)",
-      "note": "Historic Overlay on a business zone: base-zone status used (Sec. 6-109(d)(1)).",
-      "statuses": {
-        "1-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "2-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "3-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "4+-family": {
-          "status": "hearing",
-          "cite": {
-            "section": "Sec. 6-110(F)(2)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A special permit and site plan are required when the development proposal is five (5) units",
-            "note": "5 or more units need a special permit; a 4-unit building is site-plan-only, so 4+-family is split and we code the class 'hearing'."
-          }
-        }
-      },
-      "min_lot_sqft": {
-        "value": null,
-        "section": "Sec. 6-205(b)",
-        "note": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity."
-      }
-    },
-    "CGBR-HO": {
-      "acres": 5.4,
-      "rule": "Business zone permitting Use Group 3 dwellings (Sec. 6-110)",
-      "note": "Historic Overlay on a business zone: base-zone status used (Sec. 6-109(d)(1)).",
-      "statuses": {
-        "1-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "2-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "3-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "4+-family": {
-          "status": "hearing",
-          "cite": {
-            "section": "Sec. 6-110(F)(2)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A special permit and site plan are required when the development proposal is five (5) units",
-            "note": "5 or more units need a special permit; a 4-unit building is site-plan-only, so 4+-family is split and we code the class 'hearing'."
-          }
-        }
-      },
-      "min_lot_sqft": {
-        "value": null,
-        "section": "Sec. 6-205(b)",
-        "note": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity."
-      }
-    },
-    "GB-HO": {
-      "acres": 2.0,
-      "rule": "Business zone permitting Use Group 3 dwellings (Sec. 6-110)",
-      "note": "Historic Overlay on a business zone: base-zone status used (Sec. 6-109(d)(1)).",
-      "statuses": {
-        "1-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "2-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "3-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "4+-family": {
-          "status": "hearing",
-          "cite": {
-            "section": "Sec. 6-110(F)(2)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A special permit and site plan are required when the development proposal is five (5) units",
-            "note": "5 or more units need a special permit; a 4-unit building is site-plan-only, so 4+-family is split and we code the class 'hearing'."
-          }
-        }
-      },
-      "min_lot_sqft": {
-        "value": null,
-        "section": "Sec. 6-205(b)",
-        "note": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity."
-      }
-    },
-    "LBR-1": {
-      "acres": 10.9,
-      "rule": "Business zone permitting Use Group 3 dwellings (Sec. 6-110)",
-      "note": "Sec. 6-103(G) lists Use Group 3 for all LBR zones, but Sec. 6-110(c)(1) names only LBR-2; read from Sec. 6-103(G). Flagged.",
-      "statuses": {
-        "1-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "2-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "3-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "4+-family": {
-          "status": "hearing",
-          "cite": {
-            "section": "Sec. 6-110(F)(2)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A special permit and site plan are required when the development proposal is five (5) units",
-            "note": "5 or more units need a special permit; a 4-unit building is site-plan-only, so 4+-family is split and we code the class 'hearing'."
-          }
-        }
-      },
-      "min_lot_sqft": {
-        "value": null,
-        "section": "Sec. 6-205(b)",
-        "note": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity."
-      }
-    },
-    "LBR-1-HO": {
-      "acres": 0.1,
-      "rule": "Business zone permitting Use Group 3 dwellings (Sec. 6-110)",
-      "note": "As LBR-1, with Historic Overlay.",
-      "statuses": {
-        "1-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "2-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "3-family": {
-          "status": "as_of_right",
-          "cite": {
-            "section": "Sec. 6-110(F)(1)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
-            "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
-          }
-        },
-        "4+-family": {
-          "status": "hearing",
-          "cite": {
-            "section": "Sec. 6-110(F)(2)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "A special permit and site plan are required when the development proposal is five (5) units",
-            "note": "5 or more units need a special permit; a 4-unit building is site-plan-only, so 4+-family is split and we code the class 'hearing'."
-          }
-        }
-      },
-      "min_lot_sqft": {
-        "value": null,
-        "section": "Sec. 6-205(b)",
-        "note": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity."
-      }
-    },
-    "WB": {
-      "acres": 58.8,
-      "rule": "WB: multi-family by special permit (Use Group 7c)",
-      "note": null,
-      "statuses": {
-        "1-family": {
-          "status": "prohibited",
-          "cite": {
-            "section": "Sec. 6-100",
-            "doc": "greenwich-div9.pdf",
-            "quote": "Any use not specifically listed in the following Use Groups shall be prohibited",
-            "note": "WB (Sec. 6-107(b)) permits only Use Groups 7a, 7b, 7c; none lists single-family or two-family dwellings by name."
-          }
-        },
-        "2-family": {
-          "status": "unclassified",
-          "cite": {
-            "section": "Sec. 6-107(b), Use Group 7c",
-            "doc": "greenwich-div9.pdf",
-            "quote": "Multi Family Dwellings.",
-            "note": "Use Group 7c requires a special permit (Sec. 6-107(b)); multi-family design standards in Sec. 6-107(c)(4)."
-          }
-        },
-        "3-family": {
-          "status": "hearing",
-          "cite": {
-            "section": "Sec. 6-107(b)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "Use Group 7c (special permit required)"
-          }
-        },
-        "4+-family": {
-          "status": "hearing",
-          "cite": {
-            "section": "Sec. 6-107(b)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "Use Group 7c (special permit required)"
-          }
-        }
-      }
-    },
-    "GB-IND-RE": {
-      "acres": 10.0,
-      "rule": "Business zone with IND-RE overlay: any use needs a special permit",
-      "note": "GB with Industrial Re-Use overlay (Sec. 6-112): every use needs a special permit; dwellings follow the underlying business-zone limits.",
-      "statuses": {
-        "1-family": {
-          "status": "hearing",
-          "cite": {
-            "section": "Sec. 6-112(6)(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "Any proposed use within an IND-RE zone, and any modification of the standards and requirements of the underlying zone"
-          }
-        },
-        "2-family": {
-          "status": "hearing",
-          "cite": {
-            "section": "Sec. 6-112(6)(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "Any proposed use within an IND-RE zone, and any modification of the standards and requirements of the underlying zone"
-          }
-        },
-        "3-family": {
-          "status": "hearing",
-          "cite": {
-            "section": "Sec. 6-112(6)(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "Any proposed use within an IND-RE zone, and any modification of the standards and requirements of the underlying zone"
-          }
-        },
-        "4+-family": {
-          "status": "hearing",
-          "cite": {
-            "section": "Sec. 6-112(6)(a)",
-            "doc": "greenwich-div9.pdf",
-            "quote": "Any proposed use within an IND-RE zone, and any modification of the standards and requirements of the underlying zone"
-          }
-        }
-      },
-      "min_lot_sqft": {
-        "value": null,
-        "section": "Sec. 6-205(b)",
-        "note": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity."
-      }
-    },
-    "BEX-50": {
-      "acres": 68.8,
-      "rule": "No dwelling use in the zone's use list",
-      "cite": {
-        "section": "Sec. 6-108(b)-(d)",
-        "doc": "greenwich-div9.pdf",
-        "quote": "Offices Uses (as defined in Section 6-5(a) (38.2) of the Regulations)",
-        "note": "Permitted uses are offices, reservations, cemeteries; only employee lodgings/caretaker quarters as accessory uses (Sec. 6-108(d)(2))."
-      }
-    },
-    "H-1": {
-      "acres": 10.5,
-      "rule": "No dwelling use in the zone's use list",
-      "cite": {
-        "section": "Sec. 6-113(b)",
-        "doc": "greenwich-div9.pdf",
-        "quote": "The following principal uses are permitted in the Hospital Zones, H-1 and H-2:",
-        "note": "Hospital and support uses only; no dwellings."
-      }
-    },
-    "H-2": {
-      "acres": 1.3,
-      "rule": "No dwelling use in the zone's use list",
-      "cite": {
-        "section": "Sec. 6-113(b)",
-        "doc": "greenwich-div9.pdf",
-        "quote": "The following principal uses are permitted in the Hospital Zones, H-1 and H-2:",
-        "note": "Hospital and support uses only; no dwellings."
-      }
-    }
+  "RA-CC4": {
+   "acres": 19.4,
+   "why": "RA-CC family: no use text in Div. 9, 15 or 21"
   },
-  "housing": {
+  "RA-CC4-HO": {
+   "acres": 102.2,
+   "why": "same, with Historic Overlay"
+  },
+  "R-C7": {
+   "acres": 82.8,
+   "why": "R-C family: no use text in Div. 9, 15 or 21"
+  },
+  "R-C12": {
+   "acres": 56.0,
+   "why": "same"
+  },
+  "R-C20": {
+   "acres": 8.7,
+   "why": "same"
+  },
+  "R-C7-HO": {
+   "acres": 16.1,
+   "why": "same, with Historic Overlay"
+  },
+  "RC-20-HO": {
+   "acres": 4.7,
+   "why": "same, with Historic Overlay"
+  },
+  "RC-12-HO": {
+   "acres": 1.2,
+   "why": "same, with Historic Overlay"
+  },
+  "R-PR": {
+   "acres": 119.2,
+   "why": "Sec. 6-38-type planned-residential zone: Div. 6 is not mirrored in public/sources"
+  },
+  "R-PHD-SU": {
+   "acres": 22.3,
+   "why": "R-PHD (Div. 6) small-unit zone: not in mirrored Div. 9/15/21"
+  },
+  "R-PHD-E": {
+   "acres": 15.6,
+   "why": "R-PHD (Div. 6) elderly zone: not in mirrored Div. 9/15/21 (Sec. 6-155(2) only mentions it for parking)"
+  },
+  "R-6-HRO": {
+   "acres": 0.2,
+   "why": "R-6 base is known, but 'HRO' overlay text is not in the mirrored Div. 9"
+  }
+ },
+ "unclassified_residential_acres": 1229.4,
+ "unclassified_other_districts": {
+  "BEX-50-R": {
+   "acres": 156.2,
+   "why": "no text for the BEX-50-R district; GIS zone type blank"
+  },
+  "P": {
+   "acres": 6.9,
+   "why": "no text for the P district in Div. 9/15/21"
+  },
+  "HRO": {
+   "acres": 4.1,
+   "why": "'HRO' overlay text not in the mirrored Div. 9"
+  },
+  "LB-R-C7-HO": {
+   "acres": 6.0,
+   "why": "mixed LB / R-C7 overlay code; R-C7 text not available"
+  }
+ },
+ "unclassified_other_acres": 173.2,
+ "nonresidential_acres": 80.6,
+ "total_acres_in_layer": 31051.5,
+ "nza_land_categories": {
+  "Unzoned": 3416,
+  "Protected": 1585,
+  "Zoned": 25321
+ },
+ "per_district": {
+  "RA-4": {
+   "acres": 10704.3,
+   "rule": "RA-4/RA-2/RA-1/R-20/R-12: single-family only",
+   "note": null,
+   "statuses": {
     "1-family": {
-      "ours_acres": {
-        "as_of_right": 29499.5,
-        "hearing": 10.0,
-        "prohibited": 58.8,
-        "unclassified": 0.0
-      },
-      "ours_pct": {
-        "as_of_right": 99.8,
-        "hearing": 0.0,
-        "prohibited": 0.2,
-        "unclassified": 0.0
-      },
-      "nza_acres": {
-        "prohibited": 24,
-        "hearing": 233,
-        "as_of_right": 24816
-      },
-      "nza_pct": {
-        "as_of_right": 99.0,
-        "hearing": 0.9,
-        "prohibited": 0.1
-      },
-      "districts": {
-        "as_of_right": [
-          "RA-4",
-          "RA-2",
-          "RA-1",
-          "R-20",
-          "R-12",
-          "RA-2-HO",
-          "RA-1-HO",
-          "R-20-HO",
-          "R-12-HO",
-          "R-7",
-          "R-7-HO",
-          "R-6",
-          "R-6-HO",
-          "R-MF",
-          "LB",
-          "LBR-2",
-          "CGB",
-          "CGBR",
-          "GB",
-          "GBO",
-          "LB-HO",
-          "LBR-2-HO",
-          "CGB-HO",
-          "CGBR-HO",
-          "GB-HO",
-          "LBR-1",
-          "LBR-1-HO"
-        ],
-        "hearing": [
-          "GB-IND-RE"
-        ],
-        "prohibited": [
-          "WB"
-        ],
-        "unclassified": []
-      },
-      "prohibited_pct_bounds_if_unclassified_residential_included": {
-        "lower": 0.2,
-        "upper": 4.2
-      }
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "Detached single family dwellings, one (1) per lot."
+     }
     },
     "2-family": {
-      "ours_acres": {
-        "as_of_right": 1573.2,
-        "hearing": 70.9,
-        "prohibited": 27865.4,
-        "unclassified": 58.8
-      },
-      "ours_pct": {
-        "as_of_right": 5.3,
-        "hearing": 0.2,
-        "prohibited": 94.2,
-        "unclassified": 0.2
-      },
-      "nza_acres": {
-        "prohibited": 24072,
-        "hearing": 153,
-        "as_of_right": 847
-      },
-      "nza_pct": {
-        "as_of_right": 3.4,
-        "hearing": 0.6,
-        "prohibited": 96.0
-      },
-      "districts": {
-        "as_of_right": [
-          "R-6",
-          "R-6-HO",
-          "LB",
-          "LBR-2",
-          "CGB",
-          "CGBR",
-          "GB",
-          "GBO",
-          "LB-HO",
-          "LBR-2-HO",
-          "CGB-HO",
-          "CGBR-HO",
-          "GB-HO",
-          "LBR-1",
-          "LBR-1-HO"
-        ],
-        "hearing": [
-          "R-MF",
-          "GB-IND-RE"
-        ],
-        "prohibited": [
-          "RA-4",
-          "RA-2",
-          "RA-1",
-          "R-20",
-          "R-12",
-          "RA-2-HO",
-          "RA-1-HO",
-          "R-20-HO",
-          "R-12-HO",
-          "R-7",
-          "R-7-HO"
-        ],
-        "unclassified": [
-          "WB"
-        ]
-      },
-      "prohibited_pct_bounds_if_unclassified_residential_included": {
-        "lower": 90.5,
-        "upper": 94.5
-      }
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded:"
+     }
     },
     "3-family": {
-      "ours_acres": {
-        "as_of_right": 595.0,
-        "hearing": 129.7,
-        "prohibited": 28843.6,
-        "unclassified": 0.0
-      },
-      "ours_pct": {
-        "as_of_right": 2.0,
-        "hearing": 0.4,
-        "prohibited": 97.5,
-        "unclassified": 0.0
-      },
-      "nza_acres": {
-        "prohibited": 24535,
-        "hearing": 176,
-        "as_of_right": 361
-      },
-      "nza_pct": {
-        "as_of_right": 1.4,
-        "hearing": 0.7,
-        "prohibited": 97.9
-      },
-      "districts": {
-        "as_of_right": [
-          "LB",
-          "LBR-2",
-          "CGB",
-          "CGBR",
-          "GB",
-          "GBO",
-          "LB-HO",
-          "LBR-2-HO",
-          "CGB-HO",
-          "CGBR-HO",
-          "GB-HO",
-          "LBR-1",
-          "LBR-1-HO"
-        ],
-        "hearing": [
-          "R-MF",
-          "WB",
-          "GB-IND-RE"
-        ],
-        "prohibited": [
-          "RA-4",
-          "RA-2",
-          "RA-1",
-          "R-20",
-          "R-12",
-          "RA-2-HO",
-          "RA-1-HO",
-          "R-20-HO",
-          "R-12-HO",
-          "R-7",
-          "R-7-HO",
-          "R-6",
-          "R-6-HO"
-        ],
-        "unclassified": []
-      },
-      "prohibited_pct_bounds_if_unclassified_residential_included": {
-        "lower": 93.7,
-        "upper": 97.6
-      }
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded:"
+     }
     },
     "4+-family": {
-      "ours_acres": {
-        "as_of_right": 0.0,
-        "hearing": 724.7,
-        "prohibited": 28843.6,
-        "unclassified": 0.0
-      },
-      "ours_pct": {
-        "as_of_right": 0.0,
-        "hearing": 2.5,
-        "prohibited": 97.5,
-        "unclassified": 0.0
-      },
-      "nza_acres": {
-        "prohibited": 24688,
-        "hearing": 23,
-        "as_of_right": 361
-      },
-      "nza_pct": {
-        "as_of_right": 1.4,
-        "hearing": 0.1,
-        "prohibited": 98.5
-      },
-      "districts": {
-        "as_of_right": [],
-        "hearing": [
-          "R-MF",
-          "LB",
-          "LBR-2",
-          "CGB",
-          "CGBR",
-          "GB",
-          "GBO",
-          "LB-HO",
-          "LBR-2-HO",
-          "CGB-HO",
-          "CGBR-HO",
-          "GB-HO",
-          "LBR-1",
-          "LBR-1-HO",
-          "WB",
-          "GB-IND-RE"
-        ],
-        "prohibited": [
-          "RA-4",
-          "RA-2",
-          "RA-1",
-          "R-20",
-          "R-12",
-          "RA-2-HO",
-          "RA-1-HO",
-          "R-20-HO",
-          "R-12-HO",
-          "R-7",
-          "R-7-HO",
-          "R-6",
-          "R-6-HO"
-        ],
-        "unclassified": []
-      },
-      "prohibited_pct_bounds_if_unclassified_residential_included": {
-        "lower": 93.7,
-        "upper": 97.6
-      }
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded:"
+     }
     }
+   },
+   "min_lot_sqft": {
+    "value": 174240,
+    "section": "Sec. 6-205(a) bulk schedule (Div. 21), row for the district",
+    "quote": "4 Acres"
+   }
   },
-  "min_lot_size": {
-    "basis": "1-family land = districts where 1-family is as of right or hearing (same as NZA's 1-family acres)",
-    "bins": {
-      "None": {
-        "districts": [
-          "LB",
-          "LBR-2",
-          "CGB",
-          "CGBR",
-          "GB",
-          "GBO",
-          "LB-HO",
-          "LBR-2-HO",
-          "CGB-HO",
-          "CGBR-HO",
-          "GB-HO",
-          "LBR-1",
-          "LBR-1-HO",
-          "GB-IND-RE"
-        ],
-        "acres": 605.0,
-        "ours_pct": 2.1,
-        "nza_pct": 2.0,
-        "nza_acres": 492
-      },
-      "Less than 10,000 sq ft": {
-        "districts": [
-          "R-7",
-          "R-7-HO",
-          "R-6",
-          "R-6-HO",
-          "R-MF"
-        ],
-        "acres": 2198.9,
-        "ours_pct": 7.5,
-        "nza_pct": 6.5,
-        "nza_acres": 1619
-      },
-      "10,000 to 19,999 sq ft": {
-        "districts": [
-          "R-12",
-          "R-12-HO"
-        ],
-        "acres": 2278.1,
-        "ours_pct": 7.7,
-        "nza_pct": 7.2,
-        "nza_acres": 1784
-      },
-      "20,000 to 39,999 sq ft": {
-        "districts": [
-          "R-20",
-          "R-20-HO"
-        ],
-        "acres": 1200.3,
-        "ours_pct": 4.1,
-        "nza_pct": 3.4,
-        "nza_acres": 849
-      },
-      "40,000 to 79,999 sq ft": {
-        "districts": [
-          "RA-1",
-          "RA-1-HO"
-        ],
-        "acres": 4758.1,
-        "ours_pct": 16.1,
-        "nza_pct": 15.9,
-        "nza_acres": 3942
-      },
-      "80,000 sq ft or more": {
-        "districts": [
-          "RA-4",
-          "RA-2",
-          "RA-2-HO"
-        ],
-        "acres": 18469.1,
-        "ours_pct": 62.6,
-        "nza_pct": 65.0,
-        "nza_acres": 16129
-      }
+  "RA-2": {
+   "acres": 7759.3,
+   "rule": "RA-4/RA-2/RA-1/R-20/R-12: single-family only",
+   "note": null,
+   "statuses": {
+    "1-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "Detached single family dwellings, one (1) per lot."
+     }
     },
-    "land_in_bins_acres": 29509.5,
-    "districts_binned_as_None": [
-      "LB",
-      "LBR-2",
-      "CGB",
-      "CGBR",
-      "GB",
-      "GBO",
-      "LB-HO",
-      "LBR-2-HO",
-      "CGB-HO",
-      "CGBR-HO",
-      "GB-HO",
-      "LBR-1",
-      "LBR-1-HO",
-      "GB-IND-RE"
+    "2-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded:"
+     }
+    },
+    "3-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded:"
+     }
+    },
+    "4+-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded:"
+     }
+    }
+   },
+   "min_lot_sqft": {
+    "value": 87120,
+    "section": "Sec. 6-205(a) bulk schedule (Div. 21), row for the district",
+    "quote": "2 Acres"
+   }
+  },
+  "RA-1": {
+   "acres": 4753.3,
+   "rule": "RA-4/RA-2/RA-1/R-20/R-12: single-family only",
+   "note": null,
+   "statuses": {
+    "1-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "Detached single family dwellings, one (1) per lot."
+     }
+    },
+    "2-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded:"
+     }
+    },
+    "3-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded:"
+     }
+    },
+    "4+-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded:"
+     }
+    }
+   },
+   "min_lot_sqft": {
+    "value": 43560,
+    "section": "Sec. 6-205(a) bulk schedule (Div. 21), row for the district",
+    "quote": "1 Acre"
+   }
+  },
+  "R-20": {
+   "acres": 1189.6,
+   "rule": "RA-4/RA-2/RA-1/R-20/R-12: single-family only",
+   "note": null,
+   "statuses": {
+    "1-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "Detached single family dwellings, one (1) per lot."
+     }
+    },
+    "2-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded:"
+     }
+    },
+    "3-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded:"
+     }
+    },
+    "4+-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded:"
+     }
+    }
+   },
+   "min_lot_sqft": {
+    "value": 20000,
+    "section": "Sec. 6-205(a) bulk schedule (Div. 21), row for the district",
+    "quote": "20,000"
+   }
+  },
+  "R-12": {
+   "acres": 2277.5,
+   "rule": "RA-4/RA-2/RA-1/R-20/R-12: single-family only",
+   "note": null,
+   "statuses": {
+    "1-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "Detached single family dwellings, one (1) per lot."
+     }
+    },
+    "2-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded:"
+     }
+    },
+    "3-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded:"
+     }
+    },
+    "4+-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded:"
+     }
+    }
+   },
+   "min_lot_sqft": {
+    "value": 12000,
+    "section": "Sec. 6-205(a) bulk schedule (Div. 21), row for the district",
+    "quote": "12,000"
+   }
+  },
+  "RA-2-HO": {
+   "acres": 5.5,
+   "rule": "RA-4/RA-2/RA-1/R-20/R-12: single-family only",
+   "note": "Historic Overlay (Sec. 6-109): the code treats HO as a rezoning on top of the base district; the base-district use rules still govern, and the HO only lets the Commission authorize extra units by special permit (Sec. 6-109(d)(3)). Counted at the base district's status.",
+   "statuses": {
+    "1-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "Detached single family dwellings, one (1) per lot."
+     }
+    },
+    "2-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded:"
+     }
+    },
+    "3-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded:"
+     }
+    },
+    "4+-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded:"
+     }
+    }
+   },
+   "min_lot_sqft": {
+    "value": 87120,
+    "section": "Sec. 6-205(a) bulk schedule (Div. 21), row for the district (base district)",
+    "quote": "2 Acres"
+   }
+  },
+  "RA-1-HO": {
+   "acres": 4.8,
+   "rule": "RA-4/RA-2/RA-1/R-20/R-12: single-family only",
+   "note": "Historic Overlay (Sec. 6-109): the code treats HO as a rezoning on top of the base district; the base-district use rules still govern, and the HO only lets the Commission authorize extra units by special permit (Sec. 6-109(d)(3)). Counted at the base district's status.",
+   "statuses": {
+    "1-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "Detached single family dwellings, one (1) per lot."
+     }
+    },
+    "2-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded:"
+     }
+    },
+    "3-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded:"
+     }
+    },
+    "4+-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded:"
+     }
+    }
+   },
+   "min_lot_sqft": {
+    "value": 43560,
+    "section": "Sec. 6-205(a) bulk schedule (Div. 21), row for the district (base district)",
+    "quote": "1 Acre"
+   }
+  },
+  "R-20-HO": {
+   "acres": 10.7,
+   "rule": "RA-4/RA-2/RA-1/R-20/R-12: single-family only",
+   "note": "Historic Overlay (Sec. 6-109): the code treats HO as a rezoning on top of the base district; the base-district use rules still govern, and the HO only lets the Commission authorize extra units by special permit (Sec. 6-109(d)(3)). Counted at the base district's status.",
+   "statuses": {
+    "1-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "Detached single family dwellings, one (1) per lot."
+     }
+    },
+    "2-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded:"
+     }
+    },
+    "3-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded:"
+     }
+    },
+    "4+-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded:"
+     }
+    }
+   },
+   "min_lot_sqft": {
+    "value": 20000,
+    "section": "Sec. 6-205(a) bulk schedule (Div. 21), row for the district (base district)",
+    "quote": "20,000"
+   }
+  },
+  "R-12-HO": {
+   "acres": 0.6,
+   "rule": "RA-4/RA-2/RA-1/R-20/R-12: single-family only",
+   "note": "Historic Overlay (Sec. 6-109): the code treats HO as a rezoning on top of the base district; the base-district use rules still govern, and the HO only lets the Commission authorize extra units by special permit (Sec. 6-109(d)(3)). Counted at the base district's status.",
+   "statuses": {
+    "1-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "Detached single family dwellings, one (1) per lot."
+     }
+    },
+    "2-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded:"
+     }
+    },
+    "3-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded:"
+     }
+    },
+    "4+-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-93(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded:"
+     }
+    }
+   },
+   "min_lot_sqft": {
+    "value": 12000,
+    "section": "Sec. 6-205(a) bulk schedule (Div. 21), row for the district (base district)",
+    "quote": "12,000"
+   }
+  },
+  "R-7": {
+   "acres": 1159.2,
+   "rule": "R-7: uses of RA-4 plus Sec. 6-94 only",
+   "note": null,
+   "statuses": {
+    "1-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-97(a)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "All uses permitted in RA-4 zones and uses permitted under Sec. 6-94."
+     }
+    },
+    "2-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-97(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded in R-7 zones"
+     }
+    },
+    "3-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-97(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded in R-7 zones"
+     }
+    },
+    "4+-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-97(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded in R-7 zones"
+     }
+    }
+   },
+   "min_lot_sqft": {
+    "value": 7500,
+    "section": "Sec. 6-205(a) bulk schedule (Div. 21), row for the district",
+    "quote": "7,500"
+   }
+  },
+  "R-7-HO": {
+   "acres": 0.6,
+   "rule": "R-7: uses of RA-4 plus Sec. 6-94 only",
+   "note": "Historic Overlay (Sec. 6-109): the code treats HO as a rezoning on top of the base district; the base-district use rules still govern, and the HO only lets the Commission authorize extra units by special permit (Sec. 6-109(d)(3)). Counted at the base district's status.",
+   "statuses": {
+    "1-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-97(a)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "All uses permitted in RA-4 zones and uses permitted under Sec. 6-94."
+     }
+    },
+    "2-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-97(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded in R-7 zones"
+     }
+    },
+    "3-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-97(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded in R-7 zones"
+     }
+    },
+    "4+-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-97(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "and all other principal uses are expressly excluded in R-7 zones"
+     }
+    }
+   },
+   "min_lot_sqft": {
+    "value": 7500,
+    "section": "Sec. 6-205(a) bulk schedule (Div. 21), row for the district (base district)",
+    "quote": "7,500"
+   }
+  },
+  "R-6": {
+   "acres": 978.0,
+   "rule": "R-6: single-family, two-family by administrative site plan",
+   "note": null,
+   "statuses": {
+    "1-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-98(a)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "All uses permitted in R-7 zones."
+     }
+    },
+    "2-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-98(a)(3)(A)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "Administrative site plan approval is required on lots of 7,500 square feet or larger for",
+      "note": "New two-family dwellings need administrative site plan approval, with no public hearing, on lots of 7,500 sq ft or more. Special permit is needed on smaller lots (Sec. 6-98(a)(4)(A)). Sec. 6-101(d) separately says a special permit is required for two or more dwelling units on a lot in residential zones; we read the specific R-6 rule as controlling and flag it as unresolved."
+     }
+    },
+    "3-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-98(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "are permitted and all other principal uses are expressly excluded in the R-6",
+      "note": "Sec. 6-98(a)(2) allows only additions or renovations to EXISTING two-/multi-family dwellings, not new ones."
+     }
+    },
+    "4+-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-98(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "are permitted and all other principal uses are expressly excluded in the R-6",
+      "note": "Sec. 6-98(a)(2) allows only additions or renovations to EXISTING two-/multi-family dwellings, not new ones."
+     }
+    }
+   },
+   "min_lot_sqft": {
+    "value": 7500,
+    "section": "Sec. 6-205(a) bulk schedule (Div. 21), row for the district",
+    "quote": "7,500 sq. ft. 60 ft."
+   }
+  },
+  "R-6-HO": {
+   "acres": 0.2,
+   "rule": "R-6: single-family, two-family by administrative site plan",
+   "note": "Historic Overlay (Sec. 6-109): the code treats HO as a rezoning on top of the base district; the base-district use rules still govern, and the HO only lets the Commission authorize extra units by special permit (Sec. 6-109(d)(3)). Counted at the base district's status.",
+   "statuses": {
+    "1-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-98(a)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "All uses permitted in R-7 zones."
+     }
+    },
+    "2-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-98(a)(3)(A)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "Administrative site plan approval is required on lots of 7,500 square feet or larger for",
+      "note": "New two-family dwellings need administrative site plan approval, with no public hearing, on lots of 7,500 sq ft or more. Special permit is needed on smaller lots (Sec. 6-98(a)(4)(A)). Sec. 6-101(d) separately says a special permit is required for two or more dwelling units on a lot in residential zones; we read the specific R-6 rule as controlling and flag it as unresolved."
+     }
+    },
+    "3-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-98(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "are permitted and all other principal uses are expressly excluded in the R-6",
+      "note": "Sec. 6-98(a)(2) allows only additions or renovations to EXISTING two-/multi-family dwellings, not new ones."
+     }
+    },
+    "4+-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-98(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "are permitted and all other principal uses are expressly excluded in the R-6",
+      "note": "Sec. 6-98(a)(2) allows only additions or renovations to EXISTING two-/multi-family dwellings, not new ones."
+     }
+    }
+   },
+   "min_lot_sqft": {
+    "value": 7500,
+    "section": "Sec. 6-205(a) bulk schedule (Div. 21), row for the district (base district)",
+    "quote": "7,500 sq. ft. 60 ft."
+   }
+  },
+  "R-MF": {
+   "acres": 60.9,
+   "rule": "R-MF: two-family and multi-family by special permit",
+   "note": null,
+   "statuses": {
+    "1-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-98.1(a)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "All uses permitted in R-7 zones."
+     }
+    },
+    "2-family": {
+     "status": "hearing",
+     "cite": {
+      "section": "Sec. 6-98.1(a)(2)(A)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "The building of a two family dwelling, conversion from a single family to a two-family dwelling"
+     }
+    },
+    "3-family": {
+     "status": "hearing",
+     "cite": {
+      "section": "Sec. 6-98.1(a)(2)(A)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "addition or alteration to one or more multi-family dwellings or a combination of single family, two-family",
+      "note": "Multi-family is not split by unit count in the text, so 3-family and 4+-family get the same special-permit status."
+     }
+    },
+    "4+-family": {
+     "status": "hearing",
+     "cite": {
+      "section": "Sec. 6-98.1(a)(2)(A)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "addition or alteration to one or more multi-family dwellings or a combination of single family, two-family",
+      "note": "Multi-family is not split by unit count in the text, so 3-family and 4+-family get the same special-permit status."
+     }
+    }
+   },
+   "min_lot_sqft": {
+    "value": 3600,
+    "section": "Sec. 6-205(a) bulk schedule (Div. 21), row for the district",
+    "quote": "3,600"
+   }
+  },
+  "LB": {
+   "acres": 77.0,
+   "rule": "Business zone permitting Use Group 3 dwellings (Sec. 6-110)",
+   "note": null,
+   "statuses": {
+    "1-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "2-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "3-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "4+-family": {
+     "status": "hearing",
+     "cite": {
+      "section": "Sec. 6-110(F)(2)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A special permit and site plan are required when the development proposal is five (5) units",
+      "note": "5 or more units need a special permit; a 4-unit building is site-plan-only, so 4+-family is split and we code the class 'hearing'."
+     }
+    }
+   },
+   "min_lot_sqft": {
+    "value": null,
+    "section": "Sec. 6-205(b)",
+    "note": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity."
+   }
+  },
+  "LBR-2": {
+   "acres": 76.8,
+   "rule": "Business zone permitting Use Group 3 dwellings (Sec. 6-110)",
+   "note": null,
+   "statuses": {
+    "1-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "2-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "3-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "4+-family": {
+     "status": "hearing",
+     "cite": {
+      "section": "Sec. 6-110(F)(2)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A special permit and site plan are required when the development proposal is five (5) units",
+      "note": "5 or more units need a special permit; a 4-unit building is site-plan-only, so 4+-family is split and we code the class 'hearing'."
+     }
+    }
+   },
+   "min_lot_sqft": {
+    "value": null,
+    "section": "Sec. 6-205(b)",
+    "note": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity."
+   }
+  },
+  "CGB": {
+   "acres": 98.3,
+   "rule": "Business zone permitting Use Group 3 dwellings (Sec. 6-110)",
+   "note": null,
+   "statuses": {
+    "1-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "2-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "3-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "4+-family": {
+     "status": "hearing",
+     "cite": {
+      "section": "Sec. 6-110(F)(2)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A special permit and site plan are required when the development proposal is five (5) units",
+      "note": "5 or more units need a special permit; a 4-unit building is site-plan-only, so 4+-family is split and we code the class 'hearing'."
+     }
+    }
+   },
+   "min_lot_sqft": {
+    "value": null,
+    "section": "Sec. 6-205(b)",
+    "note": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity."
+   }
+  },
+  "CGBR": {
+   "acres": 51.7,
+   "rule": "Business zone permitting Use Group 3 dwellings (Sec. 6-110)",
+   "note": null,
+   "statuses": {
+    "1-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "2-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "3-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "4+-family": {
+     "status": "hearing",
+     "cite": {
+      "section": "Sec. 6-110(F)(2)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A special permit and site plan are required when the development proposal is five (5) units",
+      "note": "5 or more units need a special permit; a 4-unit building is site-plan-only, so 4+-family is split and we code the class 'hearing'."
+     }
+    }
+   },
+   "min_lot_sqft": {
+    "value": null,
+    "section": "Sec. 6-205(b)",
+    "note": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity."
+   }
+  },
+  "GB": {
+   "acres": 157.3,
+   "rule": "Business zone permitting Use Group 3 dwellings (Sec. 6-110)",
+   "note": null,
+   "statuses": {
+    "1-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "2-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "3-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "4+-family": {
+     "status": "hearing",
+     "cite": {
+      "section": "Sec. 6-110(F)(2)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A special permit and site plan are required when the development proposal is five (5) units",
+      "note": "5 or more units need a special permit; a 4-unit building is site-plan-only, so 4+-family is split and we code the class 'hearing'."
+     }
+    }
+   },
+   "min_lot_sqft": {
+    "value": null,
+    "section": "Sec. 6-205(b)",
+    "note": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity."
+   }
+  },
+  "GBO": {
+   "acres": 98.7,
+   "rule": "Business zone permitting Use Group 3 dwellings (Sec. 6-110)",
+   "note": null,
+   "statuses": {
+    "1-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "2-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "3-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "4+-family": {
+     "status": "hearing",
+     "cite": {
+      "section": "Sec. 6-110(F)(2)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A special permit and site plan are required when the development proposal is five (5) units",
+      "note": "5 or more units need a special permit; a 4-unit building is site-plan-only, so 4+-family is split and we code the class 'hearing'."
+     }
+    }
+   },
+   "min_lot_sqft": {
+    "value": null,
+    "section": "Sec. 6-205(b)",
+    "note": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity."
+   }
+  },
+  "LB-HO": {
+   "acres": 12.0,
+   "rule": "Business zone permitting Use Group 3 dwellings (Sec. 6-110)",
+   "note": "Historic Overlay on a business zone: base-zone status used (Sec. 6-109(d)(1)).",
+   "statuses": {
+    "1-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "2-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "3-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "4+-family": {
+     "status": "hearing",
+     "cite": {
+      "section": "Sec. 6-110(F)(2)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A special permit and site plan are required when the development proposal is five (5) units",
+      "note": "5 or more units need a special permit; a 4-unit building is site-plan-only, so 4+-family is split and we code the class 'hearing'."
+     }
+    }
+   },
+   "min_lot_sqft": {
+    "value": null,
+    "section": "Sec. 6-205(b)",
+    "note": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity."
+   }
+  },
+  "LBR-2-HO": {
+   "acres": 0.9,
+   "rule": "Business zone permitting Use Group 3 dwellings (Sec. 6-110)",
+   "note": "Historic Overlay on a business zone: base-zone status used (Sec. 6-109(d)(1)).",
+   "statuses": {
+    "1-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "2-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "3-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "4+-family": {
+     "status": "hearing",
+     "cite": {
+      "section": "Sec. 6-110(F)(2)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A special permit and site plan are required when the development proposal is five (5) units",
+      "note": "5 or more units need a special permit; a 4-unit building is site-plan-only, so 4+-family is split and we code the class 'hearing'."
+     }
+    }
+   },
+   "min_lot_sqft": {
+    "value": null,
+    "section": "Sec. 6-205(b)",
+    "note": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity."
+   }
+  },
+  "CGB-HO": {
+   "acres": 3.9,
+   "rule": "Business zone permitting Use Group 3 dwellings (Sec. 6-110)",
+   "note": "Historic Overlay on a business zone: base-zone status used (Sec. 6-109(d)(1)).",
+   "statuses": {
+    "1-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "2-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "3-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "4+-family": {
+     "status": "hearing",
+     "cite": {
+      "section": "Sec. 6-110(F)(2)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A special permit and site plan are required when the development proposal is five (5) units",
+      "note": "5 or more units need a special permit; a 4-unit building is site-plan-only, so 4+-family is split and we code the class 'hearing'."
+     }
+    }
+   },
+   "min_lot_sqft": {
+    "value": null,
+    "section": "Sec. 6-205(b)",
+    "note": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity."
+   }
+  },
+  "CGBR-HO": {
+   "acres": 5.4,
+   "rule": "Business zone permitting Use Group 3 dwellings (Sec. 6-110)",
+   "note": "Historic Overlay on a business zone: base-zone status used (Sec. 6-109(d)(1)).",
+   "statuses": {
+    "1-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "2-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "3-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "4+-family": {
+     "status": "hearing",
+     "cite": {
+      "section": "Sec. 6-110(F)(2)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A special permit and site plan are required when the development proposal is five (5) units",
+      "note": "5 or more units need a special permit; a 4-unit building is site-plan-only, so 4+-family is split and we code the class 'hearing'."
+     }
+    }
+   },
+   "min_lot_sqft": {
+    "value": null,
+    "section": "Sec. 6-205(b)",
+    "note": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity."
+   }
+  },
+  "GB-HO": {
+   "acres": 2.0,
+   "rule": "Business zone permitting Use Group 3 dwellings (Sec. 6-110)",
+   "note": "Historic Overlay on a business zone: base-zone status used (Sec. 6-109(d)(1)).",
+   "statuses": {
+    "1-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "2-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "3-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "4+-family": {
+     "status": "hearing",
+     "cite": {
+      "section": "Sec. 6-110(F)(2)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A special permit and site plan are required when the development proposal is five (5) units",
+      "note": "5 or more units need a special permit; a 4-unit building is site-plan-only, so 4+-family is split and we code the class 'hearing'."
+     }
+    }
+   },
+   "min_lot_sqft": {
+    "value": null,
+    "section": "Sec. 6-205(b)",
+    "note": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity."
+   }
+  },
+  "LBR-1": {
+   "acres": 10.9,
+   "rule": "Business zone permitting Use Group 3 dwellings (Sec. 6-110)",
+   "note": "Sec. 6-103(G) lists Use Group 3 for all LBR zones, but Sec. 6-110(c)(1) names only LBR-2; read from Sec. 6-103(G). Flagged.",
+   "statuses": {
+    "1-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "2-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "3-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "4+-family": {
+     "status": "hearing",
+     "cite": {
+      "section": "Sec. 6-110(F)(2)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A special permit and site plan are required when the development proposal is five (5) units",
+      "note": "5 or more units need a special permit; a 4-unit building is site-plan-only, so 4+-family is split and we code the class 'hearing'."
+     }
+    }
+   },
+   "min_lot_sqft": {
+    "value": null,
+    "section": "Sec. 6-205(b)",
+    "note": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity."
+   }
+  },
+  "LBR-1-HO": {
+   "acres": 0.1,
+   "rule": "Business zone permitting Use Group 3 dwellings (Sec. 6-110)",
+   "note": "As LBR-1, with Historic Overlay.",
+   "statuses": {
+    "1-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "2-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "3-family": {
+     "status": "as_of_right",
+     "cite": {
+      "section": "Sec. 6-110(F)(1)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A site plan application is required when the development proposal is four (4) units or fewer",
+      "note": "Site plan approval only (no special permit) for 4 or fewer units; the code does not distinguish unit types, so 1-, 2- and 3-family are read as site-plan-only. Assumption: a stand-alone single dwelling counts as a 'dwelling unit' under Use Group 3."
+     }
+    },
+    "4+-family": {
+     "status": "hearing",
+     "cite": {
+      "section": "Sec. 6-110(F)(2)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "A special permit and site plan are required when the development proposal is five (5) units",
+      "note": "5 or more units need a special permit; a 4-unit building is site-plan-only, so 4+-family is split and we code the class 'hearing'."
+     }
+    }
+   },
+   "min_lot_sqft": {
+    "value": null,
+    "section": "Sec. 6-205(b)",
+    "note": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity."
+   }
+  },
+  "WB": {
+   "acres": 58.8,
+   "rule": "WB: multi-family by special permit (Use Group 7c)",
+   "note": null,
+   "statuses": {
+    "1-family": {
+     "status": "prohibited",
+     "cite": {
+      "section": "Sec. 6-100",
+      "doc": "greenwich-div9.pdf",
+      "quote": "Any use not specifically listed in the following Use Groups shall be prohibited",
+      "note": "WB (Sec. 6-107(b)) permits only Use Groups 7a, 7b, 7c; none lists single-family or two-family dwellings by name."
+     }
+    },
+    "2-family": {
+     "status": "unclassified",
+     "cite": {
+      "section": "Sec. 6-107(b), Use Group 7c",
+      "doc": "greenwich-div9.pdf",
+      "quote": "Multi Family Dwellings.",
+      "note": "Use Group 7c requires a special permit (Sec. 6-107(b)); multi-family design standards in Sec. 6-107(c)(4)."
+     }
+    },
+    "3-family": {
+     "status": "hearing",
+     "cite": {
+      "section": "Sec. 6-107(b)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "Use Group 7c (special permit required)"
+     }
+    },
+    "4+-family": {
+     "status": "hearing",
+     "cite": {
+      "section": "Sec. 6-107(b)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "Use Group 7c (special permit required)"
+     }
+    }
+   }
+  },
+  "GB-IND-RE": {
+   "acres": 10.0,
+   "rule": "Business zone with IND-RE overlay: any use needs a special permit",
+   "note": "GB with Industrial Re-Use overlay (Sec. 6-112): every use needs a special permit; dwellings follow the underlying business-zone limits.",
+   "statuses": {
+    "1-family": {
+     "status": "hearing",
+     "cite": {
+      "section": "Sec. 6-112(6)(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "Any proposed use within an IND-RE zone, and any modification of the standards and requirements of the underlying zone"
+     }
+    },
+    "2-family": {
+     "status": "hearing",
+     "cite": {
+      "section": "Sec. 6-112(6)(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "Any proposed use within an IND-RE zone, and any modification of the standards and requirements of the underlying zone"
+     }
+    },
+    "3-family": {
+     "status": "hearing",
+     "cite": {
+      "section": "Sec. 6-112(6)(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "Any proposed use within an IND-RE zone, and any modification of the standards and requirements of the underlying zone"
+     }
+    },
+    "4+-family": {
+     "status": "hearing",
+     "cite": {
+      "section": "Sec. 6-112(6)(a)",
+      "doc": "greenwich-div9.pdf",
+      "quote": "Any proposed use within an IND-RE zone, and any modification of the standards and requirements of the underlying zone"
+     }
+    }
+   },
+   "min_lot_sqft": {
+    "value": null,
+    "section": "Sec. 6-205(b)",
+    "note": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity."
+   }
+  },
+  "BEX-50": {
+   "acres": 68.8,
+   "rule": "No dwelling use in the zone's use list",
+   "cite": {
+    "section": "Sec. 6-108(b)-(d)",
+    "doc": "greenwich-div9.pdf",
+    "quote": "Offices Uses (as defined in Section 6-5(a) (38.2) of the Regulations)",
+    "note": "Permitted uses are offices, reservations, cemeteries; only employee lodgings/caretaker quarters as accessory uses (Sec. 6-108(d)(2))."
+   }
+  },
+  "H-1": {
+   "acres": 10.5,
+   "rule": "No dwelling use in the zone's use list",
+   "cite": {
+    "section": "Sec. 6-113(b)",
+    "doc": "greenwich-div9.pdf",
+    "quote": "The following principal uses are permitted in the Hospital Zones, H-1 and H-2:",
+    "note": "Hospital and support uses only; no dwellings."
+   }
+  },
+  "H-2": {
+   "acres": 1.3,
+   "rule": "No dwelling use in the zone's use list",
+   "cite": {
+    "section": "Sec. 6-113(b)",
+    "doc": "greenwich-div9.pdf",
+    "quote": "The following principal uses are permitted in the Hospital Zones, H-1 and H-2:",
+    "note": "Hospital and support uses only; no dwellings."
+   }
+  }
+ },
+ "housing": {
+  "1-family": {
+   "ours_acres": {
+    "as_of_right": 29499.5,
+    "hearing": 10.0,
+    "prohibited": 58.8,
+    "unclassified": 0.0
+   },
+   "ours_pct": {
+    "as_of_right": 99.8,
+    "hearing": 0.0,
+    "prohibited": 0.2,
+    "unclassified": 0.0
+   },
+   "nza_acres": {
+    "prohibited": 24,
+    "hearing": 233,
+    "as_of_right": 24816
+   },
+   "nza_pct": {
+    "as_of_right": 99.0,
+    "hearing": 0.9,
+    "prohibited": 0.1
+   },
+   "districts": {
+    "as_of_right": [
+     "RA-4",
+     "RA-2",
+     "RA-1",
+     "R-20",
+     "R-12",
+     "RA-2-HO",
+     "RA-1-HO",
+     "R-20-HO",
+     "R-12-HO",
+     "R-7",
+     "R-7-HO",
+     "R-6",
+     "R-6-HO",
+     "R-MF",
+     "LB",
+     "LBR-2",
+     "CGB",
+     "CGBR",
+     "GB",
+     "GBO",
+     "LB-HO",
+     "LBR-2-HO",
+     "CGB-HO",
+     "CGBR-HO",
+     "GB-HO",
+     "LBR-1",
+     "LBR-1-HO"
     ],
-    "note_none": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity.",
-    "sensitivity_excluding_business_zones": {
-      "bins": {
-        "None": {
-          "districts": [],
-          "acres": 0,
-          "ours_pct": 0.0,
-          "nza_pct": 2.0,
-          "nza_acres": 492
-        },
-        "Less than 10,000 sq ft": {
-          "districts": [
-            "R-7",
-            "R-7-HO",
-            "R-6",
-            "R-6-HO",
-            "R-MF"
-          ],
-          "acres": 2198.9,
-          "ours_pct": 7.6,
-          "nza_pct": 6.5,
-          "nza_acres": 1619
-        },
-        "10,000 to 19,999 sq ft": {
-          "districts": [
-            "R-12",
-            "R-12-HO"
-          ],
-          "acres": 2278.1,
-          "ours_pct": 7.9,
-          "nza_pct": 7.2,
-          "nza_acres": 1784
-        },
-        "20,000 to 39,999 sq ft": {
-          "districts": [
-            "R-20",
-            "R-20-HO"
-          ],
-          "acres": 1200.3,
-          "ours_pct": 4.2,
-          "nza_pct": 3.4,
-          "nza_acres": 849
-        },
-        "40,000 to 79,999 sq ft": {
-          "districts": [
-            "RA-1",
-            "RA-1-HO"
-          ],
-          "acres": 4758.1,
-          "ours_pct": 16.5,
-          "nza_pct": 15.9,
-          "nza_acres": 3942
-        },
-        "80,000 sq ft or more": {
-          "districts": [
-            "RA-4",
-            "RA-2",
-            "RA-2-HO"
-          ],
-          "acres": 18469.1,
-          "ours_pct": 63.9,
-          "nza_pct": 65.0,
-          "nza_acres": 16129
-        }
-      },
-      "land_in_bins_acres": 28904.5
-    },
-    "share_80000_plus_bounds_if_unclassified_residential_included": {
-      "lower_all_small": 60.1,
-      "upper_all_large": 64.1
-    },
-    "nza_stored_proxy_input_pct": 59.8
+    "hearing": [
+     "GB-IND-RE"
+    ],
+    "prohibited": [
+     "WB"
+    ],
+    "unclassified": []
+   },
+   "prohibited_pct_bounds_if_unclassified_residential_included": {
+    "lower": 0.2,
+    "upper": 4.2
+   }
   },
-  "parking_mandate_pct": {
-    "ours": 100.0,
-    "nza": 92,
-    "numeric_minimum_note": "Sec. 6-154 (single-family) sets no number; numeric minimums exist only for two-/multi-family and business-zone housing (Sec. 6-155), and for ADUs (one space, Sec. 6-99(a)(3)F). If NZA counts only numeric minimums, its 92% would fit a code that leaves some 1-family land with no number; we cannot tell from the text.",
-    "basis": "Every residential-base district is under Sec. 6-154 (single-family: 'sufficient' spaces), Sec. 6-155 (two-/multi-family table) or Sec. 6-110(e) (business zones use Sec. 6-155); so a mandate exists everywhere, but for single-family land it is not a numeric minimum.",
-    "cites": {
-      "single_family": {
-        "section": "Sec. 6-154",
-        "doc": "greenwich-div15.pdf",
-        "quote": "On lots used for single-family residence purposes",
-        "note": "Requires 'sufficient garage space or outdoor parking space' but sets no number."
-      },
-      "two_multi": {
-        "section": "Sec. 6-155",
-        "doc": "greenwich-div15.pdf",
-        "quote": "On lots used for two-family and multi-family residential"
-      },
-      "table": {
-        "section": "Sec. 6-155(1)(a)",
-        "doc": "greenwich-div15.pdf",
-        "quote": "one garage space for each dwelling and one outdoor space for each dwelling"
-      },
-      "mixed_use": {
-        "section": "Sec. 6-155(3)",
-        "doc": "greenwich-div15.pdf",
-        "quote": "One space per dwelling unit unless a greater or lesser number is deemed appropriate by the Commission."
-      },
-      "adu": {
-        "section": "Sec. 6-99(a)(3)F",
-        "doc": "greenwich-div9.pdf",
-        "quote": "There must be at least one off-street parking space on an appropriate solid surface dedicated to the ADU."
-      }
-    }
+  "2-family": {
+   "ours_acres": {
+    "as_of_right": 1573.2,
+    "hearing": 70.9,
+    "prohibited": 27865.4,
+    "unclassified": 58.8
+   },
+   "ours_pct": {
+    "as_of_right": 5.3,
+    "hearing": 0.2,
+    "prohibited": 94.2,
+    "unclassified": 0.2
+   },
+   "nza_acres": {
+    "prohibited": 24072,
+    "hearing": 153,
+    "as_of_right": 847
+   },
+   "nza_pct": {
+    "as_of_right": 3.4,
+    "hearing": 0.6,
+    "prohibited": 96.0
+   },
+   "districts": {
+    "as_of_right": [
+     "R-6",
+     "R-6-HO",
+     "LB",
+     "LBR-2",
+     "CGB",
+     "CGBR",
+     "GB",
+     "GBO",
+     "LB-HO",
+     "LBR-2-HO",
+     "CGB-HO",
+     "CGBR-HO",
+     "GB-HO",
+     "LBR-1",
+     "LBR-1-HO"
+    ],
+    "hearing": [
+     "R-MF",
+     "GB-IND-RE"
+    ],
+    "prohibited": [
+     "RA-4",
+     "RA-2",
+     "RA-1",
+     "R-20",
+     "R-12",
+     "RA-2-HO",
+     "RA-1-HO",
+     "R-20-HO",
+     "R-12-HO",
+     "R-7",
+     "R-7-HO"
+    ],
+    "unclassified": [
+     "WB"
+    ]
+   },
+   "prohibited_pct_bounds_if_unclassified_residential_included": {
+    "lower": 90.5,
+    "upper": 94.5
+   }
   },
-  "adu": {
-    "ours": "Allowed by zoning permit (administrative approval from the Planning and Zoning Office) with owner-occupancy, in RA-4, RA-2, RA-1, R-20, R-12, R-7 and R-6; oversize ADUs or ADUs on nonconforming lots need a special permit.",
-    "ours_acres": {
-      "allowed_with_occupancy_restrictions": 28843.6,
-      "not_listed_in_Sec_6-99_R-MF": 60.9,
-      "not_applicable_business_zones_and_WB": 663.8
+  "3-family": {
+   "ours_acres": {
+    "as_of_right": 595.0,
+    "hearing": 129.7,
+    "prohibited": 28843.6,
+    "unclassified": 0.0
+   },
+   "ours_pct": {
+    "as_of_right": 2.0,
+    "hearing": 0.4,
+    "prohibited": 97.5,
+    "unclassified": 0.0
+   },
+   "nza_acres": {
+    "prohibited": 24535,
+    "hearing": 176,
+    "as_of_right": 361
+   },
+   "nza_pct": {
+    "as_of_right": 1.4,
+    "hearing": 0.7,
+    "prohibited": 97.9
+   },
+   "districts": {
+    "as_of_right": [
+     "LB",
+     "LBR-2",
+     "CGB",
+     "CGBR",
+     "GB",
+     "GBO",
+     "LB-HO",
+     "LBR-2-HO",
+     "CGB-HO",
+     "CGBR-HO",
+     "GB-HO",
+     "LBR-1",
+     "LBR-1-HO"
+    ],
+    "hearing": [
+     "R-MF",
+     "WB",
+     "GB-IND-RE"
+    ],
+    "prohibited": [
+     "RA-4",
+     "RA-2",
+     "RA-1",
+     "R-20",
+     "R-12",
+     "RA-2-HO",
+     "RA-1-HO",
+     "R-20-HO",
+     "R-12-HO",
+     "R-7",
+     "R-7-HO",
+     "R-6",
+     "R-6-HO"
+    ],
+    "unclassified": []
+   },
+   "prohibited_pct_bounds_if_unclassified_residential_included": {
+    "lower": 93.7,
+    "upper": 97.6
+   }
+  },
+  "4+-family": {
+   "ours_acres": {
+    "as_of_right": 0.0,
+    "hearing": 724.7,
+    "prohibited": 28843.6,
+    "unclassified": 0.0
+   },
+   "ours_pct": {
+    "as_of_right": 0.0,
+    "hearing": 2.5,
+    "prohibited": 97.5,
+    "unclassified": 0.0
+   },
+   "nza_acres": {
+    "prohibited": 24688,
+    "hearing": 23,
+    "as_of_right": 361
+   },
+   "nza_pct": {
+    "as_of_right": 1.4,
+    "hearing": 0.1,
+    "prohibited": 98.5
+   },
+   "districts": {
+    "as_of_right": [],
+    "hearing": [
+     "R-MF",
+     "LB",
+     "LBR-2",
+     "CGB",
+     "CGBR",
+     "GB",
+     "GBO",
+     "LB-HO",
+     "LBR-2-HO",
+     "CGB-HO",
+     "CGBR-HO",
+     "GB-HO",
+     "LBR-1",
+     "LBR-1-HO",
+     "WB",
+     "GB-IND-RE"
+    ],
+    "prohibited": [
+     "RA-4",
+     "RA-2",
+     "RA-1",
+     "R-20",
+     "R-12",
+     "RA-2-HO",
+     "RA-1-HO",
+     "R-20-HO",
+     "R-12-HO",
+     "R-7",
+     "R-7-HO",
+     "R-6",
+     "R-6-HO"
+    ],
+    "unclassified": []
+   },
+   "prohibited_pct_bounds_if_unclassified_residential_included": {
+    "lower": 93.7,
+    "upper": 97.6
+   }
+  }
+ },
+ "min_lot_size": {
+  "basis": "1-family land = districts where 1-family is as of right or hearing (same as NZA's 1-family acres)",
+  "bins": {
+   "None": {
+    "districts": [
+     "LB",
+     "LBR-2",
+     "CGB",
+     "CGBR",
+     "GB",
+     "GBO",
+     "LB-HO",
+     "LBR-2-HO",
+     "CGB-HO",
+     "CGBR-HO",
+     "GB-HO",
+     "LBR-1",
+     "LBR-1-HO",
+     "GB-IND-RE"
+    ],
+    "acres": 605.0,
+    "ours_pct": 2.1,
+    "nza_pct": 2.0,
+    "nza_acres": 492
+   },
+   "Less than 10,000 sq ft": {
+    "districts": [
+     "R-7",
+     "R-7-HO",
+     "R-6",
+     "R-6-HO",
+     "R-MF"
+    ],
+    "acres": 2198.9,
+    "ours_pct": 7.5,
+    "nza_pct": 6.5,
+    "nza_acres": 1619
+   },
+   "10,000 to 19,999 sq ft": {
+    "districts": [
+     "R-12",
+     "R-12-HO"
+    ],
+    "acres": 2278.1,
+    "ours_pct": 7.7,
+    "nza_pct": 7.2,
+    "nza_acres": 1784
+   },
+   "20,000 to 39,999 sq ft": {
+    "districts": [
+     "R-20",
+     "R-20-HO"
+    ],
+    "acres": 1200.3,
+    "ours_pct": 4.1,
+    "nza_pct": 3.4,
+    "nza_acres": 849
+   },
+   "40,000 to 79,999 sq ft": {
+    "districts": [
+     "RA-1",
+     "RA-1-HO"
+    ],
+    "acres": 4758.1,
+    "ours_pct": 16.1,
+    "nza_pct": 15.9,
+    "nza_acres": 3942
+   },
+   "80,000 sq ft or more": {
+    "districts": [
+     "RA-4",
+     "RA-2",
+     "RA-2-HO"
+    ],
+    "acres": 18469.1,
+    "ours_pct": 62.6,
+    "nza_pct": 65.0,
+    "nza_acres": 16129
+   }
+  },
+  "land_in_bins_acres": 29509.5,
+  "districts_binned_as_None": [
+   "LB",
+   "LBR-2",
+   "CGB",
+   "CGBR",
+   "GB",
+   "GBO",
+   "LB-HO",
+   "LBR-2-HO",
+   "CGB-HO",
+   "CGBR-HO",
+   "GB-HO",
+   "LBR-1",
+   "LBR-1-HO",
+   "GB-IND-RE"
+  ],
+  "note_none": "Sec. 6-205(b) lists 'Note 1' (= Sec. 6-110(a), which has no area figure) for minimum lot area in LB, LBR, CGB, CGBR, GB, GBO: no numeric minimum, so these are binned as 'None' in the main table and left out in the sensitivity.",
+  "sensitivity_excluding_business_zones": {
+   "bins": {
+    "None": {
+     "districts": [],
+     "acres": 0,
+     "ours_pct": 0.0,
+     "nza_pct": 2.0,
+     "nza_acres": 492
     },
-    "ours_pct_of_residential_base": {
-      "allowed_with_occupancy_restrictions": 97.5,
-      "not_listed_or_not_applicable": 2.5
-    },
-    "ours_pct_of_1family_land_with_ADU_rule": 97.7,
-    "nza_acres": {
-      "Allowed": 24,
-      "Allowed with occupancy restrictions": 21720,
-      "Hearing": 0,
-      "Hearing with occupancy restrictions": 0,
-      "Prohibited": 3073
-    },
-    "nza_pct": {
-      "Allowed": 0.1,
-      "Allowed with occupancy restrictions": 87.5,
-      "Hearing": 0.0,
-      "Hearing with occupancy restrictions": 0.0,
-      "Prohibited": 12.4
-    },
-    "districts_with_adu_rule": [
-      "RA-4",
-      "RA-2",
-      "RA-1",
-      "R-20",
-      "R-12",
-      "RA-2-HO",
-      "RA-1-HO",
-      "R-20-HO",
-      "R-12-HO",
+    "Less than 10,000 sq ft": {
+     "districts": [
       "R-7",
       "R-7-HO",
       "R-6",
-      "R-6-HO"
-    ],
-    "district_notes": {
-      "R-6": "ADU only where the existing structure is a single-family dwelling (Sec. 6-99(a)(3)M); R-6 two-family is separately allowed.",
-      "R-MF": "R-MF is absent from the zone list in Sec. 6-99(a)(3)C, so no ADU rule applies there (not scored)."
+      "R-6-HO",
+      "R-MF"
+     ],
+     "acres": 2198.9,
+     "ours_pct": 7.6,
+     "nza_pct": 6.5,
+     "nza_acres": 1619
     },
-    "cites": {
-      "owner_occupancy": {
-        "section": "Sec. 6-99(a)(3)A",
-        "doc": "greenwich-div9.pdf",
-        "quote": "The owner of record (the “Owner”) must reside in"
-      },
-      "zones": {
-        "section": "Sec. 6-99(a)(3)C",
-        "doc": "greenwich-div9.pdf",
-        "quote": "R-20, R-12, R-7, or R-6 zone."
-      },
-      "procedure": {
-        "section": "Sec. 6-99(a)(4)A",
-        "doc": "greenwich-div9.pdf",
-        "quote": "until the Owner has received approval from the Planning and Zoning Office"
-      },
-      "r6_limit": {
-        "section": "Sec. 6-99(a)(3)M",
-        "doc": "greenwich-div9.pdf",
-        "quote": "An ADU shall be permitted in the R-6 zone only where the existing structure is a single-family dwelling."
-      },
-      "special_permit_for_oversize": {
-        "section": "Sec. 6-99(a)(3)E",
-        "doc": "greenwich-div9.pdf",
-        "quote": "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU"
-      }
+    "10,000 to 19,999 sq ft": {
+     "districts": [
+      "R-12",
+      "R-12-HO"
+     ],
+     "acres": 2278.1,
+     "ours_pct": 7.9,
+     "nza_pct": 7.2,
+     "nza_acres": 1784
     },
-    "adu_max_sqft_external": "800 sq ft in R-12, R-7, R-6; 1,000 in RA-1, R-20; 1,200 in RA-2, RA-4 (Sec. 6-99(a)(3)D(i), as quoted in V2 notes)"
-  },
-  "proxy": {
-    "formula": "composite = (0.30*use_exclusion + 0.25*share of 1-family land needing >=80,000 sq ft + 0.15*share of residential land with a parking mandate)/0.70; use_exclusion = mean(2-family, 3-family, 4+-family prohibited %)",
-    "ours": {
-      "use_exclusion": 96.4,
-      "lots_80000_plus": 62.6,
-      "parking_mandate": 100.0,
-      "composite": 85.1
+    "20,000 to 39,999 sq ft": {
+     "districts": [
+      "R-20",
+      "R-20-HO"
+     ],
+     "acres": 1200.3,
+     "ours_pct": 4.2,
+     "nza_pct": 3.4,
+     "nza_acres": 849
     },
-    "nza_stored_in_town_file": {
-      "use_exclusion": 97.1,
-      "lots_80000_plus": 59.8,
-      "parking_mandate": 92,
-      "composite": 82.7,
-      "recomputed_from_stored_inputs": 82.7
+    "40,000 to 79,999 sq ft": {
+     "districts": [
+      "RA-1",
+      "RA-1-HO"
+     ],
+     "acres": 4758.1,
+     "ours_pct": 16.5,
+     "nza_pct": 15.9,
+     "nza_acres": 3942
     },
-    "nza_recomputed_from_snapshot_acres": {
-      "use_exclusion": 97.5,
-      "lots_80000_plus": 65.0,
-      "parking_mandate": 92,
-      "composite": 84.7
-    },
-    "difference_ours_minus_nza_stored": 2.4,
-    "ours_bounds_with_unclassified_residential": {
-      "lower": 82.6,
-      "upper": 85.7,
-      "note": "Lower: the unclassified RA-C/R-C/R-PR/R-PHD districts are all not-prohibited and all small-lot; upper: all prohibited and all >=80,000 sq ft."
+    "80,000 sq ft or more": {
+     "districts": [
+      "RA-4",
+      "RA-2",
+      "RA-2-HO"
+     ],
+     "acres": 18469.1,
+     "ours_pct": 63.9,
+     "nza_pct": 65.0,
+     "nza_acres": 16129
     }
+   },
+   "land_in_bins_acres": 28904.5
   },
-  "comparison_rows": [
-    {
-      "figure": "1-family as_of_right (% of residential acres)",
-      "ours": 99.8,
-      "nza": 99.0
-    },
-    {
-      "figure": "1-family hearing (% of residential acres)",
-      "ours": 0.0,
-      "nza": 0.9
-    },
-    {
-      "figure": "1-family prohibited (% of residential acres)",
-      "ours": 0.2,
-      "nza": 0.1
-    },
-    {
-      "figure": "2-family as_of_right (% of residential acres)",
-      "ours": 5.3,
-      "nza": 3.4
-    },
-    {
-      "figure": "2-family hearing (% of residential acres)",
-      "ours": 0.2,
-      "nza": 0.6
-    },
-    {
-      "figure": "2-family prohibited (% of residential acres)",
-      "ours": 94.2,
-      "nza": 96.0
-    },
-    {
-      "figure": "3-family as_of_right (% of residential acres)",
-      "ours": 2.0,
-      "nza": 1.4
-    },
-    {
-      "figure": "3-family hearing (% of residential acres)",
-      "ours": 0.4,
-      "nza": 0.7
-    },
-    {
-      "figure": "3-family prohibited (% of residential acres)",
-      "ours": 97.5,
-      "nza": 97.9
-    },
-    {
-      "figure": "4+-family as_of_right (% of residential acres)",
-      "ours": 0.0,
-      "nza": 1.4
-    },
-    {
-      "figure": "4+-family hearing (% of residential acres)",
-      "ours": 2.5,
-      "nza": 0.1
-    },
-    {
-      "figure": "4+-family prohibited (% of residential acres)",
-      "ours": 97.5,
-      "nza": 98.5
-    },
-    {
-      "figure": "1-family min lot: None (%)",
-      "ours": 2.1,
-      "nza": 2.0
-    },
-    {
-      "figure": "1-family min lot: Less than 10,000 sq ft (%)",
-      "ours": 7.5,
-      "nza": 6.5
-    },
-    {
-      "figure": "1-family min lot: 10,000 to 19,999 sq ft (%)",
-      "ours": 7.7,
-      "nza": 7.2
-    },
-    {
-      "figure": "1-family min lot: 20,000 to 39,999 sq ft (%)",
-      "ours": 4.1,
-      "nza": 3.4
-    },
-    {
-      "figure": "1-family min lot: 40,000 to 79,999 sq ft (%)",
-      "ours": 16.1,
-      "nza": 15.9
-    },
-    {
-      "figure": "1-family min lot: 80,000 sq ft or more (%)",
-      "ours": 62.6,
-      "nza": 65.0
-    },
-    {
-      "figure": "Residential land with parking mandate (%)",
-      "ours": 100.0,
-      "nza": 92
-    },
-    {
-      "figure": "Residential acres",
-      "ours": 29568.3,
-      "nza": 25072
-    },
-    {
-      "figure": "Proxy composite",
-      "ours": 85.1,
-      "nza": 82.7
-    }
+  "share_80000_plus_bounds_if_unclassified_residential_included": {
+   "lower_all_small": 60.1,
+   "upper_all_large": 64.1
+  },
+  "nza_stored_proxy_input_pct": 59.8
+ },
+ "parking_mandate_pct": {
+  "ours": 100.0,
+  "nza": 100,
+  "numeric_minimum_note": "Sec. 6-154 (single-family) sets no number; numeric minimums exist only for two-/multi-family and business-zone housing (Sec. 6-155), and for ADUs (one space, Sec. 6-99(a)(3)F). If NZA counts only numeric minimums, its 92% would fit a code that leaves some 1-family land with no number; we cannot tell from the text.",
+  "basis": "Every residential-base district is under Sec. 6-154 (single-family: 'sufficient' spaces), Sec. 6-155 (two-/multi-family table) or Sec. 6-110(e) (business zones use Sec. 6-155); so a mandate exists everywhere, but for single-family land it is not a numeric minimum.",
+  "cites": {
+   "single_family": {
+    "section": "Sec. 6-154",
+    "doc": "greenwich-div15.pdf",
+    "quote": "On lots used for single-family residence purposes",
+    "note": "Requires 'sufficient garage space or outdoor parking space' but sets no number."
+   },
+   "two_multi": {
+    "section": "Sec. 6-155",
+    "doc": "greenwich-div15.pdf",
+    "quote": "On lots used for two-family and multi-family residential"
+   },
+   "table": {
+    "section": "Sec. 6-155(1)(a)",
+    "doc": "greenwich-div15.pdf",
+    "quote": "one garage space for each dwelling and one outdoor space for each dwelling"
+   },
+   "mixed_use": {
+    "section": "Sec. 6-155(3)",
+    "doc": "greenwich-div15.pdf",
+    "quote": "One space per dwelling unit unless a greater or lesser number is deemed appropriate by the Commission."
+   },
+   "adu": {
+    "section": "Sec. 6-99(a)(3)F",
+    "doc": "greenwich-div9.pdf",
+    "quote": "There must be at least one off-street parking space on an appropriate solid surface dedicated to the ADU."
+   }
+  }
+ },
+ "adu": {
+  "ours": "Allowed by zoning permit (administrative approval from the Planning and Zoning Office) with owner-occupancy, in RA-4, RA-2, RA-1, R-20, R-12, R-7 and R-6; oversize ADUs or ADUs on nonconforming lots need a special permit.",
+  "ours_acres": {
+   "allowed_with_occupancy_restrictions": 28843.6,
+   "not_listed_in_Sec_6-99_R-MF": 60.9,
+   "not_applicable_business_zones_and_WB": 663.8
+  },
+  "ours_pct_of_residential_base": {
+   "allowed_with_occupancy_restrictions": 97.5,
+   "not_listed_or_not_applicable": 2.5
+  },
+  "ours_pct_of_1family_land_with_ADU_rule": 97.7,
+  "nza_acres": {
+   "Allowed": 24,
+   "Allowed with occupancy restrictions": 21720,
+   "Hearing": 0,
+   "Hearing with occupancy restrictions": 0,
+   "Prohibited": 3073
+  },
+  "nza_pct": {
+   "Allowed": 0.1,
+   "Allowed with occupancy restrictions": 87.5,
+   "Hearing": 0.0,
+   "Hearing with occupancy restrictions": 0.0,
+   "Prohibited": 12.4
+  },
+  "districts_with_adu_rule": [
+   "RA-4",
+   "RA-2",
+   "RA-1",
+   "R-20",
+   "R-12",
+   "RA-2-HO",
+   "RA-1-HO",
+   "R-20-HO",
+   "R-12-HO",
+   "R-7",
+   "R-7-HO",
+   "R-6",
+   "R-6-HO"
   ],
-  "unresolved": [
-    "RA-C4, RA-C2, RA-C1, RA-CC4, RA-CC4-HO, R-C7, R-C12, R-C20, R-C7-HO, RC-20-HO, RC-12-HO (conservation zone families): no use or bulk text in the mirrored Div. 9/15/21. 1072.1 acres left unclassified.",
-    "R-PR, R-PHD-SU, R-PHD-E (157.1 acres): planned-residential / housing-design zones are in Div. 6, which is not mirrored.",
-    "R-6-HRO (0.2 acres), HRO (4.1), LB-R-C7-HO (6.0), BEX-50-R (156.2), P (6.9): overlay or district text not available.",
-    "R-6 two-family: Sec. 6-98(a)(3) says administrative site plan approval; Sec. 6-101(d) says special permit for two or more dwelling units on a lot in residential zones. Read as administrative (specific over general). If the special permit reading is right, R-6 2-family moves from as-of-right to hearing (978.0 acres, 3.3% of the base).",
-    "Business zones: Use Group 3 'dwelling units' are not typed as 1-, 2-, 3-family. We read up to 4 units as site-plan-only (Sec. 6-110(F)(1)) and 5+ units as special permit (Sec. 6-110(F)(2)); NZA may code business-zone housing differently, and may exclude some of these zones from residential land altogether.",
-    "WB 2-family: Use Group 7c lists only 'Multi Family Dwellings'; whether that includes two-family is not defined in the mirrored text. Left unclassified.",
-    "LBR-1: Sec. 6-103(G) lists Use Group 3 for all LBR zones but Sec. 6-110(c)(1) names only LBR-2.",
-    "Div. 9 is the Aug. 2023 edition; Sec. 6-110 amendments effective 5/6/26 and other later amendments (see build_data.py links) are not in the mirrored PDFs. NZA's coding date for Greenwich is not stated in our files.",
-    "NZA's stored proxy inputs in data/towns/greenwich.json (95.3/97.7/98.3 prohibited, 59.8 for >=80,000 sq ft) do not reproduce from the snapshot acres saved in nza_snapshots.json (96.0/97.9/98.5 and 65.0); the composite 82.7 matches the stored inputs only.",
-    "Overlay codes (-HO) are separate polygons in the acreage layer, so base-district acres may be understated (acreage method note)."
-  ]
+  "district_notes": {
+   "R-6": "ADU only where the existing structure is a single-family dwelling (Sec. 6-99(a)(3)M); R-6 two-family is separately allowed.",
+   "R-MF": "R-MF is absent from the zone list in Sec. 6-99(a)(3)C, so no ADU rule applies there (not scored)."
+  },
+  "cites": {
+   "owner_occupancy": {
+    "section": "Sec. 6-99(a)(3)A",
+    "doc": "greenwich-div9.pdf",
+    "quote": "The owner of record (the “Owner”) must reside in"
+   },
+   "zones": {
+    "section": "Sec. 6-99(a)(3)C",
+    "doc": "greenwich-div9.pdf",
+    "quote": "R-20, R-12, R-7, or R-6 zone."
+   },
+   "procedure": {
+    "section": "Sec. 6-99(a)(4)A",
+    "doc": "greenwich-div9.pdf",
+    "quote": "until the Owner has received approval from the Planning and Zoning Office"
+   },
+   "r6_limit": {
+    "section": "Sec. 6-99(a)(3)M",
+    "doc": "greenwich-div9.pdf",
+    "quote": "An ADU shall be permitted in the R-6 zone only where the existing structure is a single-family dwelling."
+   },
+   "special_permit_for_oversize": {
+    "section": "Sec. 6-99(a)(3)E",
+    "doc": "greenwich-div9.pdf",
+    "quote": "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU"
+   }
+  },
+  "adu_max_sqft_external": "800 sq ft in R-12, R-7, R-6; 1,000 in RA-1, R-20; 1,200 in RA-2, RA-4 (Sec. 6-99(a)(3)D(i), as quoted in V2 notes)"
+ },
+ "proxy": {
+  "formula": "composite = (0.30*use_exclusion + 0.25*share of 1-family land needing >=80,000 sq ft + 0.15*share of residential land with a parking mandate)/0.70; use_exclusion = mean(2-family, 3-family, 4+-family prohibited %)",
+  "ours": {
+   "use_exclusion": 96.4,
+   "lots_80000_plus": 62.6,
+   "parking_mandate": 100.0,
+   "composite": 85.1
+  },
+  "nza_stored_in_town_file": {
+   "use_exclusion": 97.1,
+   "lots_80000_plus": 59.8,
+   "parking_mandate": 92,
+   "composite": 82.7,
+   "recomputed_from_stored_inputs": 82.7
+  },
+  "nza_recomputed_from_snapshot_acres": {
+   "use_exclusion": 97.5,
+   "lots_80000_plus": 65.0,
+   "parking_mandate": 100,
+   "composite": 86.4
+  },
+  "difference_ours_minus_nza_stored": 2.4,
+  "ours_bounds_with_unclassified_residential": {
+   "lower": 82.6,
+   "upper": 85.7,
+   "note": "Lower: the unclassified RA-C/R-C/R-PR/R-PHD districts are all not-prohibited and all small-lot; upper: all prohibited and all >=80,000 sq ft."
+  }
+ },
+ "comparison_rows": [
+  {
+   "figure": "1-family as_of_right (% of residential acres)",
+   "ours": 99.8,
+   "nza": 99.0
+  },
+  {
+   "figure": "1-family hearing (% of residential acres)",
+   "ours": 0.0,
+   "nza": 0.9
+  },
+  {
+   "figure": "1-family prohibited (% of residential acres)",
+   "ours": 0.2,
+   "nza": 0.1
+  },
+  {
+   "figure": "2-family as_of_right (% of residential acres)",
+   "ours": 5.3,
+   "nza": 3.4
+  },
+  {
+   "figure": "2-family hearing (% of residential acres)",
+   "ours": 0.2,
+   "nza": 0.6
+  },
+  {
+   "figure": "2-family prohibited (% of residential acres)",
+   "ours": 94.2,
+   "nza": 96.0
+  },
+  {
+   "figure": "3-family as_of_right (% of residential acres)",
+   "ours": 2.0,
+   "nza": 1.4
+  },
+  {
+   "figure": "3-family hearing (% of residential acres)",
+   "ours": 0.4,
+   "nza": 0.7
+  },
+  {
+   "figure": "3-family prohibited (% of residential acres)",
+   "ours": 97.5,
+   "nza": 97.9
+  },
+  {
+   "figure": "4+-family as_of_right (% of residential acres)",
+   "ours": 0.0,
+   "nza": 1.4
+  },
+  {
+   "figure": "4+-family hearing (% of residential acres)",
+   "ours": 2.5,
+   "nza": 0.1
+  },
+  {
+   "figure": "4+-family prohibited (% of residential acres)",
+   "ours": 97.5,
+   "nza": 98.5
+  },
+  {
+   "figure": "1-family min lot: None (%)",
+   "ours": 2.1,
+   "nza": 2.0
+  },
+  {
+   "figure": "1-family min lot: Less than 10,000 sq ft (%)",
+   "ours": 7.5,
+   "nza": 6.5
+  },
+  {
+   "figure": "1-family min lot: 10,000 to 19,999 sq ft (%)",
+   "ours": 7.7,
+   "nza": 7.2
+  },
+  {
+   "figure": "1-family min lot: 20,000 to 39,999 sq ft (%)",
+   "ours": 4.1,
+   "nza": 3.4
+  },
+  {
+   "figure": "1-family min lot: 40,000 to 79,999 sq ft (%)",
+   "ours": 16.1,
+   "nza": 15.9
+  },
+  {
+   "figure": "1-family min lot: 80,000 sq ft or more (%)",
+   "ours": 62.6,
+   "nza": 65.0
+  },
+  {
+   "figure": "Residential land with parking mandate (%)",
+   "ours": 100.0,
+   "nza": 92
+  },
+  {
+   "figure": "Residential acres",
+   "ours": 29568.3,
+   "nza": 25072
+  },
+  {
+   "figure": "Proxy composite",
+   "ours": 85.1,
+   "nza": 82.7
+  }
+ ],
+ "unresolved": [
+  "RA-C4, RA-C2, RA-C1, RA-CC4, RA-CC4-HO, R-C7, R-C12, R-C20, R-C7-HO, RC-20-HO, RC-12-HO (conservation zone families): no use or bulk text in the mirrored Div. 9/15/21. 1072.1 acres left unclassified.",
+  "R-PR, R-PHD-SU, R-PHD-E (157.1 acres): planned-residential / housing-design zones are in Div. 6, which is not mirrored.",
+  "R-6-HRO (0.2 acres), HRO (4.1), LB-R-C7-HO (6.0), BEX-50-R (156.2), P (6.9): overlay or district text not available.",
+  "R-6 two-family: Sec. 6-98(a)(3) says administrative site plan approval; Sec. 6-101(d) says special permit for two or more dwelling units on a lot in residential zones. Read as administrative (specific over general). If the special permit reading is right, R-6 2-family moves from as-of-right to hearing (978.0 acres, 3.3% of the base).",
+  "Business zones: Use Group 3 'dwelling units' are not typed as 1-, 2-, 3-family. We read up to 4 units as site-plan-only (Sec. 6-110(F)(1)) and 5+ units as special permit (Sec. 6-110(F)(2)); NZA may code business-zone housing differently, and may exclude some of these zones from residential land altogether.",
+  "WB 2-family: Use Group 7c lists only 'Multi Family Dwellings'; whether that includes two-family is not defined in the mirrored text. Left unclassified.",
+  "LBR-1: Sec. 6-103(G) lists Use Group 3 for all LBR zones but Sec. 6-110(c)(1) names only LBR-2.",
+  "Div. 9 is the Aug. 2023 edition; Sec. 6-110 amendments effective 5/6/26 and other later amendments (see build_data.py links) are not in the mirrored PDFs. NZA's coding date for Greenwich is not stated in our files.",
+  "NZA's stored proxy inputs in data/towns/greenwich.json (95.3/97.7/98.3 prohibited, 59.8 for >=80,000 sq ft) do not reproduce from the snapshot acres saved in nza_snapshots.json (96.0/97.9/98.5 and 65.0); the composite 82.7 matches the stored inputs only.",
+  "Overlay codes (-HO) are separate polygons in the acreage layer, so base-district acres may be understated (acreage method note)."
+ ]
 }

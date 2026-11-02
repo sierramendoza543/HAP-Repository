@@ -29,9 +29,11 @@ function arcPath(cx: number, cy: number, r: number, startDeg: number, endDeg: nu
 export default function ScoreGauge({
   score,
   nzaScore,
+  label = "Restrictiveness score",
 }: {
   score: number;
   nzaScore: number;
+  label?: string;
 }) {
   const size = 240;
   const cx = size / 2;
@@ -45,7 +47,7 @@ export default function ScoreGauge({
 
   return (
     <div className="flex flex-col items-center">
-      <svg viewBox={`0 0 ${size} ${size - 40}`} width={240} height={200} role="img" aria-label={`HAP restrictiveness score ${score.toFixed(1)} out of 100`}>
+      <svg viewBox={`0 0 ${size} ${size - 40}`} width={240} height={200} role="img" aria-label={`${label} ${score.toFixed(1)} out of 100`}>
         <defs>
           <linearGradient id="gaugeTrack" x1="0" y1="0" x2="1" y2="0">
             <stop offset="0%" stopColor="var(--allow)" />
@@ -84,9 +86,9 @@ export default function ScoreGauge({
           {bandLabel(score).toUpperCase()}
         </text>
       </svg>
-      <p className="text-xs font-semibold uppercase tracking-wide text-(--ink-dim) -mt-2">HAP Restrictiveness Score</p>
+      <p className="text-xs font-semibold uppercase tracking-wide text-(--ink-dim) -mt-2">{label}</p>
       <p className="text-[11px] text-(--ink-faint) mt-1">
-        NZA-derived proxy:<span className="tabular font-medium">{nzaScore.toFixed(1)}</span>
+        NZA-derived proxy: <span className="tabular font-medium">{nzaScore.toFixed(1)}</span>
         <span className="inline-block w-2 h-0.5 bg-(--ink-faint) align-middle mx-1" /> tick on gauge
       </p>
     </div>

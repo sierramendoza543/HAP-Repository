@@ -391,16 +391,17 @@
     "methodology_note": "Computed from the Variables table on this page, not from the NZA data below. Six weighted components (Multifamily Access 30pts, Approval Discretion 10pts, Minimum Lot Size 20pts, ADU Approval Pathway 15pts, Parking Mandate 10pts, Demolition Delay 15pts) are each scored against a fixed, published rubric from a specific cited fact above. Higher = more restrictive."
   },
   "v2": {
-    "land_weighted_score": 30.0,
+    "land_weighted_score": 35.1,
     "districts_included": 14,
     "acres_included": 5638.5,
     "districts": [
       {
         "district": "N1",
         "acres": 201.3,
-        "score": 48.2,
-        "components_scored": 5,
-        "components_confirmed": 5,
+        "score": 54.7,
+        "components_scored": 4,
+        "components_confirmed": 4,
+        "score_extended": 48.2,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -453,7 +454,8 @@
                 "active": true
               }
             ],
-            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
           },
           {
             "label": "Approval Discretion",
@@ -506,7 +508,8 @@
                 "active": true
               }
             ],
-            "scale_note": "The most permissive approval tier is 1 of 10."
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
           },
           {
             "label": "Minimum Lot Size",
@@ -516,7 +519,8 @@
             "value": "No lot-area minimum",
             "evidence": null,
             "scale": null,
-            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
           },
           {
             "label": "ADU Approval Pathway",
@@ -569,7 +573,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive ADU tier is 1 of 15."
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
           },
           {
             "label": "Parking Mandate",
@@ -586,7 +591,8 @@
               "file": "/sources/bridgeport-zoning.pdf"
             },
             "scale": null,
-            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
           },
           {
             "label": "Demolition Delay",
@@ -596,7 +602,8 @@
             "value": "Not confirmed",
             "evidence": null,
             "scale": null,
-            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
           }
         ],
         "note": "House A only (one unit per lot); no lot-area minimum (45 ft width); ADU by right per N1 rule; parking none citywide",
@@ -628,14 +635,15 @@
         ],
         "included": true,
         "land_share": 3.6,
-        "contribution": 1.72
+        "contribution": 1.95
       },
       {
         "district": "N2",
         "acres": 1099.8,
-        "score": 54.1,
-        "components_scored": 5,
-        "components_confirmed": 5,
+        "score": 61.3,
+        "components_scored": 4,
+        "components_confirmed": 4,
+        "score_extended": 54.1,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -688,7 +696,8 @@
                 "active": false
               }
             ],
-            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
           },
           {
             "label": "Approval Discretion",
@@ -741,7 +750,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive approval tier is 1 of 10."
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
           },
           {
             "label": "Minimum Lot Size",
@@ -758,7 +768,8 @@
               "file": "/sources/bridgeport-zoning.pdf"
             },
             "scale": null,
-            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
           },
           {
             "label": "ADU Approval Pathway",
@@ -811,7 +822,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive ADU tier is 1 of 15."
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
           },
           {
             "label": "Parking Mandate",
@@ -828,7 +840,8 @@
               "file": "/sources/bridgeport-zoning.pdf"
             },
             "scale": null,
-            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
           },
           {
             "label": "Demolition Delay",
@@ -838,7 +851,8 @@
             "value": "Not confirmed",
             "evidence": null,
             "scale": null,
-            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
           }
         ],
         "note": "House B only: 1 principal unit, 2 with special permit (§3.100.9); no lot-area minimum (45 ft width); accessory apartment only as backyard cottage with special permit; parking none citywide",
@@ -878,14 +892,15 @@
         ],
         "included": true,
         "land_share": 19.5,
-        "contribution": 10.55
+        "contribution": 11.96
       },
       {
         "district": "N3",
         "acres": 123.1,
-        "score": 55.3,
-        "components_scored": 5,
-        "components_confirmed": 5,
+        "score": 62.7,
+        "components_scored": 4,
+        "components_confirmed": 4,
+        "score_extended": 55.3,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -938,7 +953,8 @@
                 "active": true
               }
             ],
-            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
           },
           {
             "label": "Approval Discretion",
@@ -991,7 +1007,8 @@
                 "active": true
               }
             ],
-            "scale_note": "The most permissive approval tier is 1 of 10."
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
           },
           {
             "label": "Minimum Lot Size",
@@ -1008,7 +1025,8 @@
               "file": "/sources/bridgeport-zoning.pdf"
             },
             "scale": null,
-            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
           },
           {
             "label": "ADU Approval Pathway",
@@ -1061,7 +1079,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive ADU tier is 1 of 15."
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
           },
           {
             "label": "Parking Mandate",
@@ -1078,7 +1097,8 @@
               "file": "/sources/bridgeport-zoning.pdf"
             },
             "scale": null,
-            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
           },
           {
             "label": "Demolition Delay",
@@ -1088,7 +1108,8 @@
             "value": "Not confirmed",
             "evidence": null,
             "scale": null,
-            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
           }
         ],
         "note": "House C only; 9,000 sq ft minimum lot (§3.110); up to 2 accessory units, 1 in house and/or 1 in backyard cottage, by right (§3.110 table); the general rule in §4.70.2(B)(2) caps accessory apartments at one per lot, so the second unit is unresolved",
@@ -1128,14 +1149,15 @@
         ],
         "included": true,
         "land_share": 2.2,
-        "contribution": 1.21
+        "contribution": 1.37
       },
       {
         "district": "N4",
         "acres": 819.5,
-        "score": 54.4,
-        "components_scored": 5,
-        "components_confirmed": 5,
+        "score": 61.6,
+        "components_scored": 4,
+        "components_confirmed": 4,
+        "score_extended": 54.4,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -1188,7 +1210,8 @@
                 "active": true
               }
             ],
-            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
           },
           {
             "label": "Approval Discretion",
@@ -1241,7 +1264,8 @@
                 "active": true
               }
             ],
-            "scale_note": "The most permissive approval tier is 1 of 10."
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
           },
           {
             "label": "Minimum Lot Size",
@@ -1258,7 +1282,8 @@
               "file": "/sources/bridgeport-zoning.pdf"
             },
             "scale": null,
-            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
           },
           {
             "label": "ADU Approval Pathway",
@@ -1311,7 +1336,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive ADU tier is 1 of 15."
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
           },
           {
             "label": "Parking Mandate",
@@ -1328,7 +1354,8 @@
               "file": "/sources/bridgeport-zoning.pdf"
             },
             "scale": null,
-            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
           },
           {
             "label": "Demolition Delay",
@@ -1338,7 +1365,8 @@
             "value": "Not confirmed",
             "evidence": null,
             "scale": null,
-            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
           }
         ],
         "note": "House D only; 7,500 sq ft minimum lot (§3.120); 1 accessory apartment in house or backyard cottage, by right (§3.120 table)",
@@ -1378,14 +1406,15 @@
         ],
         "included": true,
         "land_share": 14.5,
-        "contribution": 7.91
+        "contribution": 8.95
       },
       {
         "district": "NX1",
         "acres": 697.3,
-        "score": 20.0,
-        "components_scored": 5,
-        "components_confirmed": 5,
+        "score": 26.7,
+        "components_scored": 3,
+        "components_confirmed": 4,
+        "score_extended": 22.9,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -1438,7 +1467,8 @@
                 "active": false
               }
             ],
-            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
           },
           {
             "label": "Approval Discretion",
@@ -1491,7 +1521,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive approval tier is 1 of 10."
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
           },
           {
             "label": "Minimum Lot Size",
@@ -1508,14 +1539,15 @@
               "file": "/sources/bridgeport-zoning.pdf"
             },
             "scale": null,
-            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
           },
           {
             "label": "ADU Approval Pathway",
-            "points": 1,
+            "points": null,
             "max_points": 15,
-            "reason": "Tier \"By right\": Accessory unit allowed by right.",
-            "value": "By right",
+            "reason": "Not applicable: the code already allows several units by right in the principal building here, so a separate accessory-unit pathway adds no restriction. The component is left out of the score (it still counts as confirmed for the five-of-six rule).",
+            "value": "Not applicable",
             "evidence": {
               "field": "adu",
               "cite": "§3.90.9 House A, units in House (NX1 column)",
@@ -1530,7 +1562,7 @@
                 "label": "By right",
                 "points": 1,
                 "meaning": "Accessory unit allowed by right",
-                "active": true
+                "active": false
               },
               {
                 "tier": "administrative",
@@ -1561,7 +1593,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive ADU tier is 1 of 15."
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
           },
           {
             "label": "Parking Mandate",
@@ -1578,7 +1611,8 @@
               "file": "/sources/bridgeport-zoning.pdf"
             },
             "scale": null,
-            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
           },
           {
             "label": "Demolition Delay",
@@ -1588,7 +1622,8 @@
             "value": "Not confirmed",
             "evidence": null,
             "scale": null,
-            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
           }
         ],
         "note": "House A, Row (4 units max) and Double House A permitted by right with administrative site plan; no lot-area minimum (45 ft width for House A); House A allows up to 3 units plus 1 backyard-cottage unit (§3.90.9); size cap 49% of principal GFA or 800 sq ft (§4.70.2). Row amendment 25-06 was still pending in 2025",
@@ -1636,14 +1671,15 @@
         ],
         "included": true,
         "land_share": 12.4,
-        "contribution": 2.47
+        "contribution": 3.3
       },
       {
         "district": "NX2",
         "acres": 732.3,
-        "score": 20.0,
-        "components_scored": 5,
-        "components_confirmed": 5,
+        "score": 26.7,
+        "components_scored": 3,
+        "components_confirmed": 4,
+        "score_extended": 22.9,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -1696,7 +1732,8 @@
                 "active": false
               }
             ],
-            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
           },
           {
             "label": "Approval Discretion",
@@ -1749,7 +1786,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive approval tier is 1 of 10."
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
           },
           {
             "label": "Minimum Lot Size",
@@ -1766,14 +1804,15 @@
               "file": "/sources/bridgeport-zoning.pdf"
             },
             "scale": null,
-            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
           },
           {
             "label": "ADU Approval Pathway",
-            "points": 1,
+            "points": null,
             "max_points": 15,
-            "reason": "Tier \"By right\": Accessory unit allowed by right.",
-            "value": "By right",
+            "reason": "Not applicable: the code already allows several units by right in the principal building here, so a separate accessory-unit pathway adds no restriction. The component is left out of the score (it still counts as confirmed for the five-of-six rule).",
+            "value": "Not applicable",
             "evidence": {
               "field": "adu",
               "cite": "§3.90.9 House A, units in House (NX2 column)",
@@ -1788,7 +1827,7 @@
                 "label": "By right",
                 "points": 1,
                 "meaning": "Accessory unit allowed by right",
-                "active": true
+                "active": false
               },
               {
                 "tier": "administrative",
@@ -1819,7 +1858,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive ADU tier is 1 of 15."
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
           },
           {
             "label": "Parking Mandate",
@@ -1836,7 +1876,8 @@
               "file": "/sources/bridgeport-zoning.pdf"
             },
             "scale": null,
-            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
           },
           {
             "label": "Demolition Delay",
@@ -1846,7 +1887,8 @@
             "value": "Not confirmed",
             "evidence": null,
             "scale": null,
-            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
           }
         ],
         "note": "Small General, Row (8 units max), Double House A and House A permitted by right with administrative site plan; no lot-area minimum; House A allows up to 4 units plus 1 backyard-cottage unit (§3.90.9)",
@@ -1894,14 +1936,15 @@
         ],
         "included": true,
         "land_share": 13.0,
-        "contribution": 2.6
+        "contribution": 3.47
       },
       {
         "district": "NX3",
         "acres": 471.6,
-        "score": 10.0,
-        "components_scored": 4,
-        "components_confirmed": 5,
+        "score": 11.7,
+        "components_scored": 3,
+        "components_confirmed": 4,
+        "score_extended": 10.0,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -1954,7 +1997,8 @@
                 "active": false
               }
             ],
-            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
           },
           {
             "label": "Approval Discretion",
@@ -2007,7 +2051,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive approval tier is 1 of 10."
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
           },
           {
             "label": "Minimum Lot Size",
@@ -2017,7 +2062,8 @@
             "value": "No lot-area minimum",
             "evidence": null,
             "scale": null,
-            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
           },
           {
             "label": "ADU Approval Pathway",
@@ -2063,7 +2109,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive ADU tier is 1 of 15."
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
           },
           {
             "label": "Parking Mandate",
@@ -2080,7 +2127,8 @@
               "file": "/sources/bridgeport-zoning.pdf"
             },
             "scale": null,
-            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
           },
           {
             "label": "Demolition Delay",
@@ -2090,7 +2138,8 @@
             "value": "Not confirmed",
             "evidence": null,
             "scale": null,
-            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
           }
         ],
         "note": "General Building (3 units minimum, no maximum) by right (§3.50.9); no lot-area row in the General Building table; accessory apartments are not listed because multi-unit buildings are already allowed",
@@ -2114,14 +2163,15 @@
         ],
         "included": true,
         "land_share": 8.4,
-        "contribution": 0.84
+        "contribution": 0.98
       },
       {
         "district": "NX4",
         "acres": 37.6,
-        "score": 10.0,
-        "components_scored": 4,
-        "components_confirmed": 5,
+        "score": 11.7,
+        "components_scored": 3,
+        "components_confirmed": 4,
+        "score_extended": 10.0,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -2174,7 +2224,8 @@
                 "active": false
               }
             ],
-            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
           },
           {
             "label": "Approval Discretion",
@@ -2227,7 +2278,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive approval tier is 1 of 10."
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
           },
           {
             "label": "Minimum Lot Size",
@@ -2237,7 +2289,8 @@
             "value": "No lot-area minimum",
             "evidence": null,
             "scale": null,
-            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
           },
           {
             "label": "ADU Approval Pathway",
@@ -2283,7 +2336,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive ADU tier is 1 of 15."
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
           },
           {
             "label": "Parking Mandate",
@@ -2300,7 +2354,8 @@
               "file": "/sources/bridgeport-zoning.pdf"
             },
             "scale": null,
-            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
           },
           {
             "label": "Demolition Delay",
@@ -2310,7 +2365,8 @@
             "value": "Not confirmed",
             "evidence": null,
             "scale": null,
-            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
           }
         ],
         "note": "General Building (3 units minimum, no maximum) by right (§3.50.9, NX3/NX4 column); no lot-area row in the General Building table",
@@ -2334,14 +2390,15 @@
         ],
         "included": true,
         "land_share": 0.7,
-        "contribution": 0.07
+        "contribution": 0.08
       },
       {
         "district": "DX1",
         "acres": 25.5,
-        "score": 10.0,
-        "components_scored": 4,
-        "components_confirmed": 5,
+        "score": 11.7,
+        "components_scored": 3,
+        "components_confirmed": 4,
+        "score_extended": 10.0,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -2394,7 +2451,8 @@
                 "active": false
               }
             ],
-            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
           },
           {
             "label": "Approval Discretion",
@@ -2447,7 +2505,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive approval tier is 1 of 10."
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
           },
           {
             "label": "Minimum Lot Size",
@@ -2457,7 +2516,8 @@
             "value": "No lot-area minimum",
             "evidence": null,
             "scale": null,
-            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
           },
           {
             "label": "ADU Approval Pathway",
@@ -2503,7 +2563,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive ADU tier is 1 of 15."
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
           },
           {
             "label": "Parking Mandate",
@@ -2520,7 +2581,8 @@
               "file": "/sources/bridgeport-zoning.pdf"
             },
             "scale": null,
-            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
           },
           {
             "label": "Demolition Delay",
@@ -2530,7 +2592,8 @@
             "value": "Not confirmed",
             "evidence": null,
             "scale": null,
-            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
           }
         ],
         "note": "Storefront building type, no limit on principal units (§3.20.9); downtown form-based district, no lot-area row",
@@ -2559,9 +2622,10 @@
       {
         "district": "DX2",
         "acres": 139.4,
-        "score": 10.0,
-        "components_scored": 4,
-        "components_confirmed": 5,
+        "score": 11.7,
+        "components_scored": 3,
+        "components_confirmed": 4,
+        "score_extended": 10.0,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -2614,7 +2678,8 @@
                 "active": false
               }
             ],
-            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
           },
           {
             "label": "Approval Discretion",
@@ -2667,7 +2732,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive approval tier is 1 of 10."
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
           },
           {
             "label": "Minimum Lot Size",
@@ -2677,7 +2743,8 @@
             "value": "No lot-area minimum",
             "evidence": null,
             "scale": null,
-            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
           },
           {
             "label": "ADU Approval Pathway",
@@ -2723,7 +2790,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive ADU tier is 1 of 15."
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
           },
           {
             "label": "Parking Mandate",
@@ -2740,7 +2808,8 @@
               "file": "/sources/bridgeport-zoning.pdf"
             },
             "scale": null,
-            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
           },
           {
             "label": "Demolition Delay",
@@ -2750,7 +2819,8 @@
             "value": "Not confirmed",
             "evidence": null,
             "scale": null,
-            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
           }
         ],
         "note": "General Building (3 units minimum, no maximum) by right (§3.50.9)",
@@ -2774,14 +2844,15 @@
         ],
         "included": true,
         "land_share": 2.5,
-        "contribution": 0.25
+        "contribution": 0.29
       },
       {
         "district": "MX1",
         "acres": 113.2,
-        "score": 10.0,
-        "components_scored": 4,
-        "components_confirmed": 5,
+        "score": 11.7,
+        "components_scored": 3,
+        "components_confirmed": 4,
+        "score_extended": 10.0,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -2834,7 +2905,8 @@
                 "active": false
               }
             ],
-            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
           },
           {
             "label": "Approval Discretion",
@@ -2887,7 +2959,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive approval tier is 1 of 10."
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
           },
           {
             "label": "Minimum Lot Size",
@@ -2897,7 +2970,8 @@
             "value": "No lot-area minimum",
             "evidence": null,
             "scale": null,
-            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
           },
           {
             "label": "ADU Approval Pathway",
@@ -2943,7 +3017,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive ADU tier is 1 of 15."
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
           },
           {
             "label": "Parking Mandate",
@@ -2960,7 +3035,8 @@
               "file": "/sources/bridgeport-zoning.pdf"
             },
             "scale": null,
-            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
           },
           {
             "label": "Demolition Delay",
@@ -2970,7 +3046,8 @@
             "value": "Not confirmed",
             "evidence": null,
             "scale": null,
-            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
           }
         ],
         "note": "Storefront building type, no limit on principal units (§3.20.9)",
@@ -2994,14 +3071,15 @@
         ],
         "included": true,
         "land_share": 2.0,
-        "contribution": 0.2
+        "contribution": 0.23
       },
       {
         "district": "MX2",
         "acres": 190.4,
-        "score": 10.0,
-        "components_scored": 4,
-        "components_confirmed": 5,
+        "score": 11.7,
+        "components_scored": 3,
+        "components_confirmed": 4,
+        "score_extended": 10.0,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -3054,7 +3132,8 @@
                 "active": false
               }
             ],
-            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
           },
           {
             "label": "Approval Discretion",
@@ -3107,7 +3186,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive approval tier is 1 of 10."
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
           },
           {
             "label": "Minimum Lot Size",
@@ -3117,7 +3197,8 @@
             "value": "No lot-area minimum",
             "evidence": null,
             "scale": null,
-            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
           },
           {
             "label": "ADU Approval Pathway",
@@ -3163,7 +3244,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive ADU tier is 1 of 15."
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
           },
           {
             "label": "Parking Mandate",
@@ -3180,7 +3262,8 @@
               "file": "/sources/bridgeport-zoning.pdf"
             },
             "scale": null,
-            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
           },
           {
             "label": "Demolition Delay",
@@ -3190,7 +3273,8 @@
             "value": "Not confirmed",
             "evidence": null,
             "scale": null,
-            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
           }
         ],
         "note": "Storefront building type, no limit on principal units (§3.20.9)",
@@ -3214,14 +3298,15 @@
         ],
         "included": true,
         "land_share": 3.4,
-        "contribution": 0.34
+        "contribution": 0.4
       },
       {
         "district": "MXN",
         "acres": 7.0,
-        "score": 22.9,
-        "components_scored": 4,
-        "components_confirmed": 5,
+        "score": 26.7,
+        "components_scored": 3,
+        "components_confirmed": 4,
+        "score_extended": 22.9,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -3274,7 +3359,8 @@
                 "active": false
               }
             ],
-            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
           },
           {
             "label": "Approval Discretion",
@@ -3327,7 +3413,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive approval tier is 1 of 10."
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
           },
           {
             "label": "Minimum Lot Size",
@@ -3337,7 +3424,8 @@
             "value": "No lot-area minimum",
             "evidence": null,
             "scale": null,
-            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
           },
           {
             "label": "ADU Approval Pathway",
@@ -3383,7 +3471,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive ADU tier is 1 of 15."
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
           },
           {
             "label": "Parking Mandate",
@@ -3400,7 +3489,8 @@
               "file": "/sources/bridgeport-zoning.pdf"
             },
             "scale": null,
-            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
           },
           {
             "label": "Demolition Delay",
@@ -3410,7 +3500,8 @@
             "value": "Not confirmed",
             "evidence": null,
             "scale": null,
-            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
           }
         ],
         "note": "Storefront building type capped at 8 principal units (§3.20.9)",
@@ -3439,9 +3530,10 @@
       {
         "district": "RX2",
         "acres": 980.5,
-        "score": 10.0,
-        "components_scored": 4,
-        "components_confirmed": 5,
+        "score": 11.7,
+        "components_scored": 3,
+        "components_confirmed": 4,
+        "score_extended": 10.0,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -3494,7 +3586,8 @@
                 "active": false
               }
             ],
-            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
           },
           {
             "label": "Approval Discretion",
@@ -3547,7 +3640,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive approval tier is 1 of 10."
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
           },
           {
             "label": "Minimum Lot Size",
@@ -3557,7 +3651,8 @@
             "value": "No lot-area minimum",
             "evidence": null,
             "scale": null,
-            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
           },
           {
             "label": "ADU Approval Pathway",
@@ -3603,7 +3698,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive ADU tier is 1 of 15."
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
           },
           {
             "label": "Parking Mandate",
@@ -3620,7 +3716,8 @@
               "file": "/sources/bridgeport-zoning.pdf"
             },
             "scale": null,
-            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
           },
           {
             "label": "Demolition Delay",
@@ -3630,7 +3727,8 @@
             "value": "Not confirmed",
             "evidence": null,
             "scale": null,
-            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
           }
         ],
         "note": "General Building (3 units minimum, no maximum) by right (§3.50.9)",
@@ -3654,10 +3752,10 @@
         ],
         "included": true,
         "land_share": 17.4,
-        "contribution": 1.74
+        "contribution": 2.03
       }
     ],
     "formula": "V2 = sum(district score x acres) / sum(acres) over included districts",
-    "method": "Each district is scored with the same six-component rubric using only its own rules. A district is included only if at least 5 of 6 components are confirmed. The town V2 score is the land-area-weighted mean of included district scores; acreage is from data/land_area/bridgeport.json. Components with no confirmed input are excluded per district."
+    "method": "Each district is scored with the same six-component rubric using only its own rules. The score uses four components that every town can document (multifamily access, approval discretion, minimum lot size, ADU pathway); a district is included only if all four are confirmed. Parking and demolition delay are shown as context but not scored, so towns share one scale. The town V2 score is the land-area-weighted mean of included district scores; acreage is from data/land_area/bridgeport.json. Components with no confirmed input are excluded per district."
   }
 }

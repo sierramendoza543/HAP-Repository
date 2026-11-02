@@ -1,0 +1,7 @@
+CT-4 town outlines (ct4-towns.geojson)
+Source: U.S. Census Bureau Cartographic Boundary File, 2021, County Subdivisions, Connecticut, 1:500,000 (cb_2021_09_cousub_500k), clipped to shoreline.
+URL: https://www2.census.gov/geo/tiger/GENZ2021/shp/cb_2021_09_cousub_500k.zip
+License: U.S. Government work, public domain (no restrictions; attribution to U.S. Census Bureau requested).
+Retrieved: 2026-11-02. CRS NAD83 lon/lat (EPSG:4269), treated as WGS84 (differences ~1 m).
+Processing: kept Fairfield County (COUNTYFP 001) towns for the 17 CT-4 slugs; Douglas-Peucker simplify tolerance 0.0001 deg (topology preserved); coordinates rounded to 5 decimals; properties {slug, name}.
+Note: 2021 vintage is the last with Connecticut towns (2022+ TIGER uses planning regions).

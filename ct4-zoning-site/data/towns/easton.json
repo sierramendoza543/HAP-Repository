@@ -392,5 +392,528 @@
       }
     ],
     "methodology_note": "Computed from the Variables table on this page, not from the NZA data below. Six weighted components (Multifamily Access 30pts, Approval Discretion 10pts, Minimum Lot Size 20pts, ADU Approval Pathway 15pts, Parking Mandate 10pts, Demolition Delay 15pts) are each scored against a fixed, published rubric from a specific cited fact above. Higher = more restrictive."
+  },
+  "v2": {
+    "land_weighted_score": 86.9,
+    "districts_included": 2,
+    "acres_included": 18255.9,
+    "districts": [
+      {
+        "district": "Residence A",
+        "acres": 1513.6,
+        "score": 80.1,
+        "components_scored": 4,
+        "components_confirmed": 4,
+        "score_extended": 80.1,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 30,
+            "max_points": 30,
+            "reason": "Tier \"Not allowed\": No multifamily pathway in this district.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§3230.1 Residential-Related Uses (printed p.23)",
+              "quote": "Dwelling ‐ Single family dwelling, not to exceed one dwelling per lot.",
+              "source_title": "Easton Zoning Regulations (last revised July 7, 2024)",
+              "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
+              "file": "/sources/easton-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": true
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 10,
+            "max_points": 10,
+            "reason": "Tier \"Not allowed\": No approval pathway for multifamily.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§3230.1 Residential-Related Uses (printed p.23)",
+              "quote": "Dwelling ‐ Single family dwelling, not to exceed one dwelling per lot.",
+              "source_title": "Easton Zoning Regulations (last revised July 7, 2024)",
+              "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
+              "file": "/sources/easton-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 13.1,
+            "max_points": 20,
+            "reason": "Smallest lot is 40,000 sq ft; the log scale gives 13.1 of 20.",
+            "value": "40,000 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "§3510 Lot Area table, Residence A (printed p.31)",
+              "quote": "Minimum Lot Area                                 40,000 square feet",
+              "source_title": "Easton Zoning Regulations (last revised July 7, 2024)",
+              "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
+              "file": "/sources/easton-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 7,
+            "max_points": 15,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "§3320.2 Accessory Dwelling Unit, Attached (printed p.24); detached ADU §3450.2 (p.45)",
+              "quote": "Accessory Dwelling Unit, Attached – An accessory dwelling unit within or attached",
+              "source_title": "Easton Zoning Regulations (last revised July 7, 2024)",
+              "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
+              "file": "/sources/easton-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": true
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 8.0,
+            "max_points": 10,
+            "reason": "2 space(s) per unit; scored at 2/2.5 of the 10-point scale.",
+            "value": "2 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "§6221 Minimum parking requirements, single-family dwelling (printed p.70)",
+              "quote": "Single‐family dwelling                         2.0 spaces",
+              "source_title": "Easton Zoning Regulations (last revised July 7, 2024)",
+              "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
+              "file": "/sources/easton-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
+          }
+        ],
+        "note": "Single-family dwelling only, one per lot (§3230.1); multifamily and two-family are not listed and unlisted uses are prohibited (§1420); 40,000 sq ft minimum lot (§3510); ADU, attached or detached, by staff zoning permit (§3320.2, §3450.2) subject to §5200 (owner occupancy, size caps); single-family parking 2.0 spaces (§6221), ADU adds 2.0; no demolition delay found in the regulations",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "§3230.1 Residential-Related Uses (printed p.23)",
+            "quote": "Dwelling ‐ Single family dwelling, not to exceed one dwelling per lot.",
+            "source_title": "Easton Zoning Regulations (last revised July 7, 2024)",
+            "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
+            "file": "/sources/easton-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "§3510 Lot Area table, Residence A (printed p.31)",
+            "quote": "Minimum Lot Area                                 40,000 square feet",
+            "source_title": "Easton Zoning Regulations (last revised July 7, 2024)",
+            "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
+            "file": "/sources/easton-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "§3320.2 Accessory Dwelling Unit, Attached (printed p.24); detached ADU §3450.2 (p.45)",
+            "quote": "Accessory Dwelling Unit, Attached – An accessory dwelling unit within or attached",
+            "source_title": "Easton Zoning Regulations (last revised July 7, 2024)",
+            "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
+            "file": "/sources/easton-zoning.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "§6221 Minimum parking requirements, single-family dwelling (printed p.70)",
+            "quote": "Single‐family dwelling                         2.0 spaces",
+            "source_title": "Easton Zoning Regulations (last revised July 7, 2024)",
+            "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
+            "file": "/sources/easton-zoning.pdf"
+          }
+        ],
+        "included": true,
+        "land_share": 8.3,
+        "contribution": 6.64
+      },
+      {
+        "district": "Residence B",
+        "acres": 16742.3,
+        "score": 87.5,
+        "components_scored": 4,
+        "components_confirmed": 4,
+        "score_extended": 86.6,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 30,
+            "max_points": 30,
+            "reason": "Tier \"Not allowed\": No multifamily pathway in this district.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§3230.1 Residential-Related Uses (printed p.23)",
+              "quote": "Dwelling ‐ Single family dwelling, not to exceed one dwelling per lot.",
+              "source_title": "Easton Zoning Regulations (last revised July 7, 2024)",
+              "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
+              "file": "/sources/easton-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": true
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 10,
+            "max_points": 10,
+            "reason": "Tier \"Not allowed\": No approval pathway for multifamily.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§3230.1 Residential-Related Uses (printed p.23)",
+              "quote": "Dwelling ‐ Single family dwelling, not to exceed one dwelling per lot.",
+              "source_title": "Easton Zoning Regulations (last revised July 7, 2024)",
+              "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
+              "file": "/sources/easton-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 18.6,
+            "max_points": 20,
+            "reason": "Smallest lot is 130,680 sq ft; the log scale gives 18.6 of 20.",
+            "value": "130,680 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "§3510 Lot Area table, Residence B (printed p.31)",
+              "quote": "130,680 square feet",
+              "source_title": "Easton Zoning Regulations (last revised July 7, 2024)",
+              "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
+              "file": "/sources/easton-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 7,
+            "max_points": 15,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "§3320.2 Accessory Dwelling Unit, Attached (printed p.24); detached ADU §3450.2 (p.45)",
+              "quote": "Accessory Dwelling Unit, Attached – An accessory dwelling unit within or attached",
+              "source_title": "Easton Zoning Regulations (last revised July 7, 2024)",
+              "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
+              "file": "/sources/easton-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": true
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 8.0,
+            "max_points": 10,
+            "reason": "2 space(s) per unit; scored at 2/2.5 of the 10-point scale.",
+            "value": "2 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "§6221 Minimum parking requirements, single-family dwelling (printed p.70)",
+              "quote": "Single‐family dwelling                         2.0 spaces",
+              "source_title": "Easton Zoning Regulations (last revised July 7, 2024)",
+              "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
+              "file": "/sources/easton-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
+          }
+        ],
+        "note": "Same use rules as Residence A (§3230.1); 3.0 acre (130,680 sq ft) minimum lot (§3510); ADU by staff zoning permit; detached ADU size cap depends on buildable area (§5220.2.b); parking as Residence A",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "§3230.1 Residential-Related Uses (printed p.23)",
+            "quote": "Dwelling ‐ Single family dwelling, not to exceed one dwelling per lot.",
+            "source_title": "Easton Zoning Regulations (last revised July 7, 2024)",
+            "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
+            "file": "/sources/easton-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "§3510 Lot Area table, Residence B (printed p.31)",
+            "quote": "130,680 square feet",
+            "source_title": "Easton Zoning Regulations (last revised July 7, 2024)",
+            "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
+            "file": "/sources/easton-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "§3320.2 Accessory Dwelling Unit, Attached (printed p.24); detached ADU §3450.2 (p.45)",
+            "quote": "Accessory Dwelling Unit, Attached – An accessory dwelling unit within or attached",
+            "source_title": "Easton Zoning Regulations (last revised July 7, 2024)",
+            "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
+            "file": "/sources/easton-zoning.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "§6221 Minimum parking requirements, single-family dwelling (printed p.70)",
+            "quote": "Single‐family dwelling                         2.0 spaces",
+            "source_title": "Easton Zoning Regulations (last revised July 7, 2024)",
+            "url": "https://ct-easton.civicplus.com/DocumentCenter/View/3109",
+            "file": "/sources/easton-zoning.pdf"
+          }
+        ],
+        "included": true,
+        "land_share": 91.7,
+        "contribution": 80.25
+      }
+    ],
+    "formula": "V2 = sum(district score x acres) / sum(acres) over included districts",
+    "method": "Each district is scored with the same six-component rubric using only its own rules. The score uses four components that every town can document (multifamily access, approval discretion, minimum lot size, ADU pathway); a district is included only if all four are confirmed. Parking and demolition delay are shown as context but not scored, so towns share one scale. The town V2 score is the land-area-weighted mean of included district scores; acreage is from data/land_area/easton.json. Components with no confirmed input are excluded per district."
   }
 }

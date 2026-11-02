@@ -5,7 +5,7 @@
   "population": 65300,
   "land_area_acres": 18618,
   "districts_analyzed": 17,
-  "composite_score": 61.7,
+  "composite_score": 78.6,
   "last_checked": "2026-10-16",
   "restrictive_district": "AAA/AA/R-3/R-2/A",
   "permissive_district": "District C",
@@ -418,7 +418,7 @@
     },
     {
       "label": "1-family lots requiring ≥80,000 sq ft",
-      "value": 0.0,
+      "value": 47.1,
       "unit": "% of 1-family land",
       "source": {
         "kind": "nza",
@@ -508,5 +508,3358 @@
       }
     ],
     "methodology_note": "Computed from the Variables table on this page, not from the NZA data below. Six weighted components (Multifamily Access 30pts, Approval Discretion 10pts, Minimum Lot Size 20pts, ADU Approval Pathway 15pts, Parking Mandate 10pts, Demolition Delay 15pts) are each scored against a fixed, published rubric from a specific cited fact above. Higher = more restrictive."
+  },
+  "v2": {
+    "land_weighted_score": 76.7,
+    "districts_included": 10,
+    "acres_included": 18461.2,
+    "districts": [
+      {
+        "district": "AAA",
+        "acres": 8090.6,
+        "score": 84.9,
+        "components_scored": 4,
+        "components_confirmed": 4,
+        "score_extended": 84.4,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 30,
+            "max_points": 30,
+            "reason": "Tier \"Not allowed\": No multifamily pathway in this district.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§3.2 Permitted Uses preamble",
+              "quote": "No use shall be permitted in said Districts, except as these Single-Family Residence District regulations provide",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": true
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 10,
+            "max_points": 10,
+            "reason": "Tier \"Not allowed\": No approval pathway for multifamily.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§3.2 Permitted Uses preamble",
+              "quote": "No use shall be permitted in said Districts, except as these Single-Family Residence District regulations provide",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 16.7,
+            "max_points": 20,
+            "reason": "Smallest lot is 87,120 sq ft; the log scale gives 16.7 of 20.",
+            "value": "87,120 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "§3.3.1 Minimum Lot Area row",
+              "quote": "A. Minimum Lot Area (sf or acres if noted) 2 ac 1 ac 20,000 14,000 9,375",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 7,
+            "max_points": 15,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "§13.4 Application Procedure (permit from Zoning Enforcement Officer)",
+              "quote": "has received a written permit from the Zoning Enforcement Officer",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": true
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 8.0,
+            "max_points": 10,
+            "reason": "2 space(s) per unit; scored at 2/2.5 of the 10-point scale.",
+            "value": "2 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "§25.4.1(K) single-family parking",
+              "quote": "Single-family residential - 2 spaces",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
+          }
+        ],
+        "note": "Single-Family Residence District (§3.1-3.2), single-family dwellings only; minimum lot 2 ac (§3.3.1); attached and detached ADU (§3.2 rows S and T, §13.3.H), issued as a written permit by the Zoning Enforcement Officer (§13.4); owner-occupancy required and 40%/1,500 sq ft size cap (§13.3); parking 2 spaces per single-family dwelling, 1 for an ADU (§25.4.1 K)",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "§3.2 Permitted Uses preamble",
+            "quote": "No use shall be permitted in said Districts, except as these Single-Family Residence District regulations provide",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "§3.3.1 Minimum Lot Area row",
+            "quote": "A. Minimum Lot Area (sf or acres if noted) 2 ac 1 ac 20,000 14,000 9,375",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "§13.4 Application Procedure (permit from Zoning Enforcement Officer)",
+            "quote": "has received a written permit from the Zoning Enforcement Officer",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "§25.4.1(K) single-family parking",
+            "quote": "Single-family residential - 2 spaces",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          }
+        ],
+        "included": true,
+        "land_share": 43.8,
+        "contribution": 37.21
+      },
+      {
+        "district": "AA",
+        "acres": 2190.8,
+        "score": 80.7,
+        "components_scored": 4,
+        "components_confirmed": 4,
+        "score_extended": 80.6,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 30,
+            "max_points": 30,
+            "reason": "Tier \"Not allowed\": No multifamily pathway in this district.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§3.2 Permitted Uses preamble",
+              "quote": "No use shall be permitted in said Districts, except as these Single-Family Residence District regulations provide",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": true
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 10,
+            "max_points": 10,
+            "reason": "Tier \"Not allowed\": No approval pathway for multifamily.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§3.2 Permitted Uses preamble",
+              "quote": "No use shall be permitted in said Districts, except as these Single-Family Residence District regulations provide",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 13.5,
+            "max_points": 20,
+            "reason": "Smallest lot is 43,560 sq ft; the log scale gives 13.5 of 20.",
+            "value": "43,560 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "§3.3.1 Minimum Lot Area row",
+              "quote": "A. Minimum Lot Area (sf or acres if noted) 2 ac 1 ac 20,000 14,000 9,375",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 7,
+            "max_points": 15,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "§13.4 Application Procedure (permit from Zoning Enforcement Officer)",
+              "quote": "has received a written permit from the Zoning Enforcement Officer",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": true
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 8.0,
+            "max_points": 10,
+            "reason": "2 space(s) per unit; scored at 2/2.5 of the 10-point scale.",
+            "value": "2 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "§25.4.1(K) single-family parking",
+              "quote": "Single-family residential - 2 spaces",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
+          }
+        ],
+        "note": "Single-Family Residence District (§3.1-3.2), single-family dwellings only; minimum lot 1 ac (§3.3.1); attached and detached ADU (§3.2 rows S and T, §13.3.H), issued as a written permit by the Zoning Enforcement Officer (§13.4); owner-occupancy required and 40%/1,500 sq ft size cap (§13.3); parking 2 spaces per single-family dwelling, 1 for an ADU (§25.4.1 K)",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "§3.2 Permitted Uses preamble",
+            "quote": "No use shall be permitted in said Districts, except as these Single-Family Residence District regulations provide",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "§3.3.1 Minimum Lot Area row",
+            "quote": "A. Minimum Lot Area (sf or acres if noted) 2 ac 1 ac 20,000 14,000 9,375",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "§13.4 Application Procedure (permit from Zoning Enforcement Officer)",
+            "quote": "has received a written permit from the Zoning Enforcement Officer",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "§25.4.1(K) single-family parking",
+            "quote": "Single-family residential - 2 spaces",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          }
+        ],
+        "included": true,
+        "land_share": 11.9,
+        "contribution": 9.58
+      },
+      {
+        "district": "R-3",
+        "acres": 3118.7,
+        "score": 75.7,
+        "components_scored": 4,
+        "components_confirmed": 4,
+        "score_extended": 76.2,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 30,
+            "max_points": 30,
+            "reason": "Tier \"Not allowed\": No multifamily pathway in this district.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§3.2 Permitted Uses preamble",
+              "quote": "No use shall be permitted in said Districts, except as these Single-Family Residence District regulations provide",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": true
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 10,
+            "max_points": 10,
+            "reason": "Tier \"Not allowed\": No approval pathway for multifamily.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§3.2 Permitted Uses preamble",
+              "quote": "No use shall be permitted in said Districts, except as these Single-Family Residence District regulations provide",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 9.8,
+            "max_points": 20,
+            "reason": "Smallest lot is 20,000 sq ft; the log scale gives 9.8 of 20.",
+            "value": "20,000 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "§3.3.1 Minimum Lot Area row",
+              "quote": "A. Minimum Lot Area (sf or acres if noted) 2 ac 1 ac 20,000 14,000 9,375",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 7,
+            "max_points": 15,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "§13.4 Application Procedure (permit from Zoning Enforcement Officer)",
+              "quote": "has received a written permit from the Zoning Enforcement Officer",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": true
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 8.0,
+            "max_points": 10,
+            "reason": "2 space(s) per unit; scored at 2/2.5 of the 10-point scale.",
+            "value": "2 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "§25.4.1(K) single-family parking",
+              "quote": "Single-family residential - 2 spaces",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
+          }
+        ],
+        "note": "Single-Family Residence District (§3.1-3.2), single-family dwellings only; minimum lot 20,000 (§3.3.1); attached and detached ADU (§3.2 rows S and T, §13.3.H), issued as a written permit by the Zoning Enforcement Officer (§13.4); owner-occupancy required and 40%/1,500 sq ft size cap (§13.3); parking 2 spaces per single-family dwelling, 1 for an ADU (§25.4.1 K)",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "§3.2 Permitted Uses preamble",
+            "quote": "No use shall be permitted in said Districts, except as these Single-Family Residence District regulations provide",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "§3.3.1 Minimum Lot Area row",
+            "quote": "A. Minimum Lot Area (sf or acres if noted) 2 ac 1 ac 20,000 14,000 9,375",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "§13.4 Application Procedure (permit from Zoning Enforcement Officer)",
+            "quote": "has received a written permit from the Zoning Enforcement Officer",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "§25.4.1(K) single-family parking",
+            "quote": "Single-family residential - 2 spaces",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          }
+        ],
+        "included": true,
+        "land_share": 16.9,
+        "contribution": 12.79
+      },
+      {
+        "district": "R-2",
+        "acres": 296.0,
+        "score": 73.5,
+        "components_scored": 4,
+        "components_confirmed": 4,
+        "score_extended": 74.2,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 30,
+            "max_points": 30,
+            "reason": "Tier \"Not allowed\": No multifamily pathway in this district.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§3.2 Permitted Uses preamble",
+              "quote": "No use shall be permitted in said Districts, except as these Single-Family Residence District regulations provide",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": true
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 10,
+            "max_points": 10,
+            "reason": "Tier \"Not allowed\": No approval pathway for multifamily.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§3.2 Permitted Uses preamble",
+              "quote": "No use shall be permitted in said Districts, except as these Single-Family Residence District regulations provide",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 8.1,
+            "max_points": 20,
+            "reason": "Smallest lot is 14,000 sq ft; the log scale gives 8.1 of 20.",
+            "value": "14,000 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "§3.3.1 Minimum Lot Area row",
+              "quote": "A. Minimum Lot Area (sf or acres if noted) 2 ac 1 ac 20,000 14,000 9,375",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 7,
+            "max_points": 15,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "§13.4 Application Procedure (permit from Zoning Enforcement Officer)",
+              "quote": "has received a written permit from the Zoning Enforcement Officer",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": true
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 8.0,
+            "max_points": 10,
+            "reason": "2 space(s) per unit; scored at 2/2.5 of the 10-point scale.",
+            "value": "2 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "§25.4.1(K) single-family parking",
+              "quote": "Single-family residential - 2 spaces",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
+          }
+        ],
+        "note": "Single-Family Residence District (§3.1-3.2), single-family dwellings only; minimum lot 14,000 (§3.3.1); attached ADU only; detached ADU not allowed in R-2 or A (§3.2 row T blank), issued as a written permit by the Zoning Enforcement Officer (§13.4); owner-occupancy required and 40%/1,500 sq ft size cap (§13.3); parking 2 spaces per single-family dwelling, 1 for an ADU (§25.4.1 K)",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "§3.2 Permitted Uses preamble",
+            "quote": "No use shall be permitted in said Districts, except as these Single-Family Residence District regulations provide",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "§3.3.1 Minimum Lot Area row",
+            "quote": "A. Minimum Lot Area (sf or acres if noted) 2 ac 1 ac 20,000 14,000 9,375",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "§13.4 Application Procedure (permit from Zoning Enforcement Officer)",
+            "quote": "has received a written permit from the Zoning Enforcement Officer",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "§25.4.1(K) single-family parking",
+            "quote": "Single-family residential - 2 spaces",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          }
+        ],
+        "included": true,
+        "land_share": 1.6,
+        "contribution": 1.18
+      },
+      {
+        "district": "A",
+        "acres": 3109.2,
+        "score": 70.9,
+        "components_scored": 4,
+        "components_confirmed": 4,
+        "score_extended": 72.0,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 30,
+            "max_points": 30,
+            "reason": "Tier \"Not allowed\": No multifamily pathway in this district.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§3.2 Permitted Uses preamble",
+              "quote": "No use shall be permitted in said Districts, except as these Single-Family Residence District regulations provide",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": true
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 10,
+            "max_points": 10,
+            "reason": "Tier \"Not allowed\": No approval pathway for multifamily.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§3.2 Permitted Uses preamble",
+              "quote": "No use shall be permitted in said Districts, except as these Single-Family Residence District regulations provide",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 6.2,
+            "max_points": 20,
+            "reason": "Smallest lot is 9,375 sq ft; the log scale gives 6.2 of 20.",
+            "value": "9,375 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "§3.3.1 Minimum Lot Area row",
+              "quote": "A. Minimum Lot Area (sf or acres if noted) 2 ac 1 ac 20,000 14,000 9,375",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 7,
+            "max_points": 15,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "§13.4 Application Procedure (permit from Zoning Enforcement Officer)",
+              "quote": "has received a written permit from the Zoning Enforcement Officer",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": true
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 8.0,
+            "max_points": 10,
+            "reason": "2 space(s) per unit; scored at 2/2.5 of the 10-point scale.",
+            "value": "2 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "§25.4.1(K) single-family parking",
+              "quote": "Single-family residential - 2 spaces",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
+          }
+        ],
+        "note": "Single-Family Residence District (§3.1-3.2), single-family dwellings only; minimum lot 9,375 (§3.3.1); attached ADU only; detached ADU not allowed in R-2 or A (§3.2 row T blank), issued as a written permit by the Zoning Enforcement Officer (§13.4); owner-occupancy required and 40%/1,500 sq ft size cap (§13.3); parking 2 spaces per single-family dwelling, 1 for an ADU (§25.4.1 K)",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "§3.2 Permitted Uses preamble",
+            "quote": "No use shall be permitted in said Districts, except as these Single-Family Residence District regulations provide",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "§3.3.1 Minimum Lot Area row",
+            "quote": "A. Minimum Lot Area (sf or acres if noted) 2 ac 1 ac 20,000 14,000 9,375",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "§13.4 Application Procedure (permit from Zoning Enforcement Officer)",
+            "quote": "has received a written permit from the Zoning Enforcement Officer",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "§25.4.1(K) single-family parking",
+            "quote": "Single-family residential - 2 spaces",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          }
+        ],
+        "included": true,
+        "land_share": 16.8,
+        "contribution": 11.94
+      },
+      {
+        "district": "B",
+        "acres": 1000.8,
+        "score": 38.7,
+        "components_scored": 4,
+        "components_confirmed": 4,
+        "score_extended": 43.5,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 12,
+            "max_points": 30,
+            "reason": "Tier \"By right, capped\": Multifamily or two-family by right, but capped by unit count or density.",
+            "value": "By right, capped",
+            "evidence": {
+              "field": "use",
+              "cite": "§5.2 permitted uses table, Two-Family row",
+              "quote": "A. Two-Family Dwellings P P Section 5.3",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": true
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": false
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 4,
+            "max_points": 10,
+            "reason": "Tier \"By right, capped\": Administrative site-plan approval with a cap.",
+            "value": "By right, capped",
+            "evidence": {
+              "field": "use",
+              "cite": "§5.2 permitted uses table, Two-Family row",
+              "quote": "A. Two-Family Dwellings P P Section 5.3",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": true
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 6.0,
+            "max_points": 20,
+            "reason": "Smallest lot is 9,000 sq ft; the log scale gives 6.0 of 20.",
+            "value": "9,000 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "§5.3.1 Minimum Lot Area for Single-Family",
+              "quote": "Minimum Lot Area for Single-Family (sf) 6,000 5,000",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 7,
+            "max_points": 15,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "§5.2.2(C) attached ADUs",
+              "quote": "Attached Accessory Dwelling Units are permitted per the standards of Section 13, but only where the minimum lot requirements are met and where there exists only a single-family residence on the parcel.",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": true
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 8.0,
+            "max_points": 10,
+            "reason": "2 space(s) per unit; scored at 2/2.5 of the 10-point scale.",
+            "value": "2 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "§25.4.1(K) multi-family parking (16 units or fewer)",
+              "quote": "Multi-family: 1 space for up to each 1-bedroom and 2 spaces for each 2-bedroom unit or larger.",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
+          }
+        ],
+        "note": "Residence B (§5.2): two-family dwellings permitted by right (P), three- and four-family not permitted; minimum lot 6,000 sq ft single-family, 9,000 sq ft two-family (§5.3.1; single-family figure scored, as Stamford R-6); attached ADU only on a lot with a single-family residence (§5.2.2.C) by written ZEO permit (§13.4); parking 2 for a 2-bedroom unit (§25.4.1 K); 5-unit affordable bonus on 15,000 sq ft lots (§5.3.2)",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "§5.2 permitted uses table, Two-Family row",
+            "quote": "A. Two-Family Dwellings P P Section 5.3",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "§5.3.1 Minimum Lot Area for Single-Family",
+            "quote": "Minimum Lot Area for Single-Family (sf) 6,000 5,000",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "§5.2.2(C) attached ADUs",
+            "quote": "Attached Accessory Dwelling Units are permitted per the standards of Section 13, but only where the minimum lot requirements are met and where there exists only a single-family residence on the parcel.",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "§25.4.1(K) multi-family parking (16 units or fewer)",
+            "quote": "Multi-family: 1 space for up to each 1-bedroom and 2 spaces for each 2-bedroom unit or larger.",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          }
+        ],
+        "included": true,
+        "land_share": 5.4,
+        "contribution": 2.1
+      },
+      {
+        "district": "C",
+        "acres": 86.4,
+        "score": 37.6,
+        "components_scored": 4,
+        "components_confirmed": 4,
+        "score_extended": 42.6,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 12,
+            "max_points": 30,
+            "reason": "Tier \"By right, capped\": Multifamily or two-family by right, but capped by unit count or density.",
+            "value": "By right, capped",
+            "evidence": {
+              "field": "use",
+              "cite": "§5.2 permitted uses table, Four-Family row",
+              "quote": "C. Four-Family Dwellings — P",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": true
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": false
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 4,
+            "max_points": 10,
+            "reason": "Tier \"By right, capped\": Administrative site-plan approval with a cap.",
+            "value": "By right, capped",
+            "evidence": {
+              "field": "use",
+              "cite": "§5.2 permitted uses table, Four-Family row",
+              "quote": "C. Four-Family Dwellings — P",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": true
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 5.2,
+            "max_points": 20,
+            "reason": "Smallest lot is 7,500 sq ft; the log scale gives 5.2 of 20.",
+            "value": "7,500 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "§5.3.1 Minimum Lot Area for Single-Family",
+              "quote": "Minimum Lot Area for Single-Family (sf) 6,000 5,000",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 7,
+            "max_points": 15,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "§5.2.2(C) attached ADUs",
+              "quote": "Attached Accessory Dwelling Units are permitted per the standards of Section 13, but only where the minimum lot requirements are met and where there exists only a single-family residence on the parcel.",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": true
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 8.0,
+            "max_points": 10,
+            "reason": "2 space(s) per unit; scored at 2/2.5 of the 10-point scale.",
+            "value": "2 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "§25.4.1(K) multi-family parking (16 units or fewer)",
+              "quote": "Multi-family: 1 space for up to each 1-bedroom and 2 spaces for each 2-bedroom unit or larger.",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
+          }
+        ],
+        "note": "Residence C (§5.2): two-, three- and four-family dwellings permitted by right (P), capped at four units; minimum lot 5,000 sq ft single-family, 7,500 two-family, 10,000 three-family, 12,500 four-family (§5.3.1; single-family figure scored); attached ADU only on a single-family lot (§5.2.2.C), written ZEO permit (§13.4); parking 2 for a 2-bedroom unit (§25.4.1 K)",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "§5.2 permitted uses table, Four-Family row",
+            "quote": "C. Four-Family Dwellings — P",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "§5.3.1 Minimum Lot Area for Single-Family",
+            "quote": "Minimum Lot Area for Single-Family (sf) 6,000 5,000",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "§5.2.2(C) attached ADUs",
+            "quote": "Attached Accessory Dwelling Units are permitted per the standards of Section 13, but only where the minimum lot requirements are met and where there exists only a single-family residence on the parcel.",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "§25.4.1(K) multi-family parking (16 units or fewer)",
+            "quote": "Multi-family: 1 space for up to each 1-bedroom and 2 spaces for each 2-bedroom unit or larger.",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          }
+        ],
+        "included": true,
+        "land_share": 0.5,
+        "contribution": 0.18
+      },
+      {
+        "district": "BD",
+        "acres": 146.5,
+        "score": 77.0,
+        "components_scored": 3,
+        "components_confirmed": 3,
+        "score_extended": 77.4,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 30,
+            "max_points": 30,
+            "reason": "Tier \"Not allowed\": No multifamily pathway in this district.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§4.2(A) Beach District permitted use",
+              "quote": "A single detached dwelling for one family and not more than one such dwelling per lot",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": true
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 10,
+            "max_points": 10,
+            "reason": "Tier \"Not allowed\": No approval pathway for multifamily.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§4.2(A) Beach District permitted use",
+              "quote": "A single detached dwelling for one family and not more than one such dwelling per lot",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 6.2,
+            "max_points": 20,
+            "reason": "Smallest lot is 9,375 sq ft; the log scale gives 6.2 of 20.",
+            "value": "9,375 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "§4.4 Conforming Lots",
+              "quote": "Each lot shall have a minimum area of 9,375 square feet",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": null,
+            "max_points": 15,
+            "reason": "Not confirmed for this district.",
+            "value": "Not confirmed",
+            "evidence": {
+              "field": "adu",
+              "cite": "§4.2(D)(1) Beach District accessory structures",
+              "quote": "no detached accessory structure shall contain any finished livable floor area, plumbing fixtures or heat",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": false
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 8.0,
+            "max_points": 10,
+            "reason": "2 space(s) per unit; scored at 2/2.5 of the 10-point scale.",
+            "value": "2 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "§25.4.1(K) single-family parking",
+              "quote": "Single-family residential - 2 spaces",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
+          }
+        ],
+        "note": "Beach District (§4.2): one single detached dwelling per lot, nothing else; 9,375 sq ft minimum, each lot a 50 ft square (§4.4); multiple dwellings only to rebuild an existing multi-unit lot with the same unit count by Special Exception (§4.5); ADU scored prohibited by INFERENCE: §13.3 lists AAA, AA, A, R-3, R-2, B and C but not Beach, §4.2.D bars livable detached accessory structures, and §2.4.A prohibits unlisted uses; parking per §25 (2 per single-family)",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "§4.2(A) Beach District permitted use",
+            "quote": "A single detached dwelling for one family and not more than one such dwelling per lot",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "§4.4 Conforming Lots",
+            "quote": "Each lot shall have a minimum area of 9,375 square feet",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "§4.2(D)(1) Beach District accessory structures",
+            "quote": "no detached accessory structure shall contain any finished livable floor area, plumbing fixtures or heat",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "§25.4.1(K) single-family parking",
+            "quote": "Single-family residential - 2 spaces",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          }
+        ],
+        "included": false,
+        "land_share": null,
+        "contribution": null,
+        "exclusion_reason": "Excluded: only 3 of the 4 scored components are confirmed (all 4 are required)."
+      },
+      {
+        "district": "CDD",
+        "acres": 66.9,
+        "score": 56.7,
+        "components_scored": 3,
+        "components_confirmed": 4,
+        "score_extended": 60.0,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 25,
+            "max_points": 30,
+            "reason": "Tier \"Discretionary (special permit)\": Multifamily allowed only through a special permit or hearing.",
+            "value": "Discretionary (special permit)",
+            "evidence": {
+              "field": "use",
+              "cite": "§6.3 permitted uses table, row Z (CDD / DCD / NDD columns)",
+              "quote": "Z. Residential uses provided it shall not be located on a ground P P P 6.3.4",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": true
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": false
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 9,
+            "max_points": 10,
+            "reason": "Tier \"Discretionary (special permit)\": Special permit or hearing required.",
+            "value": "Discretionary (special permit)",
+            "evidence": {
+              "field": "use",
+              "cite": "§6.3 permitted uses table, row Z (CDD / DCD / NDD columns)",
+              "quote": "Z. Residential uses provided it shall not be located on a ground P P P 6.3.4",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": true
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 0.0,
+            "max_points": 20,
+            "reason": "The district has no lot-area minimum, so the lot component scores 0.",
+            "value": "No lot-area minimum",
+            "evidence": {
+              "field": "lot",
+              "cite": "§6.4 table row B, minimum lot size",
+              "quote": "B. Minimum Lot Size (sf) No minimum No minimum No minimum",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": null,
+            "max_points": 15,
+            "reason": "Not applicable: the code already allows several units by right in the principal building here, so a separate accessory-unit pathway adds no restriction. The component is left out of the score (it still counts as confirmed for the five-of-six rule).",
+            "value": "Not applicable",
+            "evidence": {
+              "field": "adu",
+              "cite": "§6.3 permitted uses table, row Z (CDD / DCD / NDD columns)",
+              "quote": "Z. Residential uses provided it shall not be located on a ground P P P 6.3.4",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": false
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 8.0,
+            "max_points": 10,
+            "reason": "2 space(s) per unit; scored at 2/2.5 of the 10-point scale.",
+            "value": "2 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "§25.4.1(K) multi-family parking (16 units or fewer)",
+              "quote": "Multi-family: 1 space for up to each 1-bedroom and 2 spaces for each 2-bedroom unit or larger.",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
+          }
+        ],
+        "note": "Center Designed Business District (§6.3 row Z): residential uses permitted (P) but not on the ground floor; new construction, alterations or additions need a Special Permit under Section 31 (§6.2); conversion of an existing commercial building to residential is a no-hearing Compliance Application, 65 days (§6.3.2, PA 25-164); no minimum lot size (§6.4 row B); 4 stories/52 ft, 90% lot coverage, floor area 325%; no unit cap stated, only bulk limits; ADU treated n/a because multi-unit residential is permitted (Greenwich business-zone precedent) -- JUDGMENT; use tier could alternatively be 'discretionary'",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "§6.3 permitted uses table, row Z (CDD / DCD / NDD columns)",
+            "quote": "Z. Residential uses provided it shall not be located on a ground P P P 6.3.4",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "§6.4 table row B, minimum lot size",
+            "quote": "B. Minimum Lot Size (sf) No minimum No minimum No minimum",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "§6.3 permitted uses table, row Z (CDD / DCD / NDD columns)",
+            "quote": "Z. Residential uses provided it shall not be located on a ground P P P 6.3.4",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "§25.4.1(K) multi-family parking (16 units or fewer)",
+            "quote": "Multi-family: 1 space for up to each 1-bedroom and 2 spaces for each 2-bedroom unit or larger.",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          }
+        ],
+        "included": true,
+        "land_share": 0.4,
+        "contribution": 0.21
+      },
+      {
+        "district": "DCD",
+        "acres": 445.7,
+        "score": 56.7,
+        "components_scored": 3,
+        "components_confirmed": 4,
+        "score_extended": 60.0,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 25,
+            "max_points": 30,
+            "reason": "Tier \"Discretionary (special permit)\": Multifamily allowed only through a special permit or hearing.",
+            "value": "Discretionary (special permit)",
+            "evidence": {
+              "field": "use",
+              "cite": "§6.3 permitted uses table, row Z (CDD / DCD / NDD columns)",
+              "quote": "Z. Residential uses provided it shall not be located on a ground P P P 6.3.4",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": true
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": false
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 9,
+            "max_points": 10,
+            "reason": "Tier \"Discretionary (special permit)\": Special permit or hearing required.",
+            "value": "Discretionary (special permit)",
+            "evidence": {
+              "field": "use",
+              "cite": "§6.3 permitted uses table, row Z (CDD / DCD / NDD columns)",
+              "quote": "Z. Residential uses provided it shall not be located on a ground P P P 6.3.4",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": true
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 0.0,
+            "max_points": 20,
+            "reason": "The district has no lot-area minimum, so the lot component scores 0.",
+            "value": "No lot-area minimum",
+            "evidence": {
+              "field": "lot",
+              "cite": "§6.4 table row B, minimum lot size",
+              "quote": "B. Minimum Lot Size (sf) No minimum No minimum No minimum",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": null,
+            "max_points": 15,
+            "reason": "Not applicable: the code already allows several units by right in the principal building here, so a separate accessory-unit pathway adds no restriction. The component is left out of the score (it still counts as confirmed for the five-of-six rule).",
+            "value": "Not applicable",
+            "evidence": {
+              "field": "adu",
+              "cite": "§6.3 permitted uses table, row Z (CDD / DCD / NDD columns)",
+              "quote": "Z. Residential uses provided it shall not be located on a ground P P P 6.3.4",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": false
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 8.0,
+            "max_points": 10,
+            "reason": "2 space(s) per unit; scored at 2/2.5 of the 10-point scale.",
+            "value": "2 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "§25.4.1(K) multi-family parking (16 units or fewer)",
+              "quote": "Multi-family: 1 space for up to each 1-bedroom and 2 spaces for each 2-bedroom unit or larger.",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
+          }
+        ],
+        "note": "Designed Commercial District (§6.3 row Z): residential uses permitted (P) but not on the ground floor; new construction, alterations or additions need a Special Permit under Section 31 (§6.2); conversion of an existing commercial building to residential is a no-hearing Compliance Application, 65 days (§6.3.2, PA 25-164); no minimum lot size (§6.4 row B); 4 stories/52 ft, 80% coverage, floor area 275%; no unit cap stated, only bulk limits; ADU treated n/a because multi-unit residential is permitted (Greenwich business-zone precedent) -- JUDGMENT; use tier could alternatively be 'discretionary'",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "§6.3 permitted uses table, row Z (CDD / DCD / NDD columns)",
+            "quote": "Z. Residential uses provided it shall not be located on a ground P P P 6.3.4",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "§6.4 table row B, minimum lot size",
+            "quote": "B. Minimum Lot Size (sf) No minimum No minimum No minimum",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "§6.3 permitted uses table, row Z (CDD / DCD / NDD columns)",
+            "quote": "Z. Residential uses provided it shall not be located on a ground P P P 6.3.4",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "§25.4.1(K) multi-family parking (16 units or fewer)",
+            "quote": "Multi-family: 1 space for up to each 1-bedroom and 2 spaces for each 2-bedroom unit or larger.",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          }
+        ],
+        "included": true,
+        "land_share": 2.4,
+        "contribution": 1.37
+      },
+      {
+        "district": "NDD",
+        "acres": 56.1,
+        "score": 56.7,
+        "components_scored": 3,
+        "components_confirmed": 4,
+        "score_extended": 60.0,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 25,
+            "max_points": 30,
+            "reason": "Tier \"Discretionary (special permit)\": Multifamily allowed only through a special permit or hearing.",
+            "value": "Discretionary (special permit)",
+            "evidence": {
+              "field": "use",
+              "cite": "§6.3 permitted uses table, row Z (CDD / DCD / NDD columns)",
+              "quote": "Z. Residential uses provided it shall not be located on a ground P P P 6.3.4",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": true
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": false
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 9,
+            "max_points": 10,
+            "reason": "Tier \"Discretionary (special permit)\": Special permit or hearing required.",
+            "value": "Discretionary (special permit)",
+            "evidence": {
+              "field": "use",
+              "cite": "§6.3 permitted uses table, row Z (CDD / DCD / NDD columns)",
+              "quote": "Z. Residential uses provided it shall not be located on a ground P P P 6.3.4",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": true
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 0.0,
+            "max_points": 20,
+            "reason": "The district has no lot-area minimum, so the lot component scores 0.",
+            "value": "No lot-area minimum",
+            "evidence": {
+              "field": "lot",
+              "cite": "§6.4 table row B, minimum lot size",
+              "quote": "B. Minimum Lot Size (sf) No minimum No minimum No minimum",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": null,
+            "max_points": 15,
+            "reason": "Not applicable: the code already allows several units by right in the principal building here, so a separate accessory-unit pathway adds no restriction. The component is left out of the score (it still counts as confirmed for the five-of-six rule).",
+            "value": "Not applicable",
+            "evidence": {
+              "field": "adu",
+              "cite": "§6.3 permitted uses table, row Z (CDD / DCD / NDD columns)",
+              "quote": "Z. Residential uses provided it shall not be located on a ground P P P 6.3.4",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": false
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 8.0,
+            "max_points": 10,
+            "reason": "2 space(s) per unit; scored at 2/2.5 of the 10-point scale.",
+            "value": "2 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "§25.4.1(K) multi-family parking (16 units or fewer)",
+              "quote": "Multi-family: 1 space for up to each 1-bedroom and 2 spaces for each 2-bedroom unit or larger.",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
+          }
+        ],
+        "note": "Neighborhood Designed Business District (§6.3 row Z): residential uses permitted (P) but not on the ground floor; new construction, alterations or additions need a Special Permit under Section 31 (§6.2); conversion of an existing commercial building to residential is a no-hearing Compliance Application, 65 days (§6.3.2, PA 25-164); no minimum lot size (§6.4 row B); 3 stories/40 ft, 75% coverage, floor area 150%; ground-floor residential only in a second building set back 70 ft, residential at most 50% of floor area (§6.3.1.C); no unit cap stated, only bulk limits; ADU treated n/a because multi-unit residential is permitted (Greenwich business-zone precedent) -- JUDGMENT; use tier could alternatively be 'discretionary'",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "§6.3 permitted uses table, row Z (CDD / DCD / NDD columns)",
+            "quote": "Z. Residential uses provided it shall not be located on a ground P P P 6.3.4",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "§6.4 table row B, minimum lot size",
+            "quote": "B. Minimum Lot Size (sf) No minimum No minimum No minimum",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "§6.3 permitted uses table, row Z (CDD / DCD / NDD columns)",
+            "quote": "Z. Residential uses provided it shall not be located on a ground P P P 6.3.4",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "§25.4.1(K) multi-family parking (16 units or fewer)",
+            "quote": "Multi-family: 1 space for up to each 1-bedroom and 2 spaces for each 2-bedroom unit or larger.",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          }
+        ],
+        "included": true,
+        "land_share": 0.3,
+        "contribution": 0.17
+      },
+      {
+        "district": "DRD",
+        "acres": 307.8,
+        "score": 85.0,
+        "components_scored": 2,
+        "components_confirmed": 2,
+        "score_extended": 84.0,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 25,
+            "max_points": 30,
+            "reason": "Tier \"Discretionary (special permit)\": Multifamily allowed only through a special permit or hearing.",
+            "value": "Discretionary (special permit)",
+            "evidence": {
+              "field": "use",
+              "cite": "§10.4(A) Designed Residence special permit use",
+              "quote": "A dwelling for one or more families and accessory uses, customary with and incidental to such use",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": true
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": false
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 9,
+            "max_points": 10,
+            "reason": "Tier \"Discretionary (special permit)\": Special permit or hearing required.",
+            "value": "Discretionary (special permit)",
+            "evidence": {
+              "field": "use",
+              "cite": "§10.4(A) Designed Residence special permit use",
+              "quote": "A dwelling for one or more families and accessory uses, customary with and incidental to such use",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": true
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": null,
+            "max_points": 20,
+            "reason": "No lot-size rule could be confirmed for this district.",
+            "value": "Not confirmed",
+            "evidence": {
+              "field": "lot",
+              "cite": "§10.6.2(B) other parcels",
+              "quote": "On all other parcels, the maximum allowable dwelling unit density shall be 10 units per acre and each lot shall have a minimum area of 1 acre.",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": null,
+            "max_points": 15,
+            "reason": "Not confirmed for this district.",
+            "value": "Not confirmed",
+            "evidence": {
+              "field": "adu",
+              "cite": "§10.4(A) Designed Residence special permit use",
+              "quote": "A dwelling for one or more families and accessory uses, customary with and incidental to such use",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": false
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 8.0,
+            "max_points": 10,
+            "reason": "2 space(s) per unit; scored at 2/2.5 of the 10-point scale.",
+            "value": "2 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "§25.4.1(K) multi-family parking (16 units or fewer)",
+              "quote": "Multi-family: 1 space for up to each 1-bedroom and 2 spaces for each 2-bedroom unit or larger.",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
+          }
+        ],
+        "note": "Designed Residence District (§10): dwelling for one or more families only by Special Permit (§10.4.A); density 1 unit for first 9,375 sq ft plus 1 per additional 3,000 sq ft, with minimum lot by underlying zone AAA 30 ac, AA 10 ac, R-3 5 ac, R-2 2 ac, A/B/C 1 ac (§10.6.1), 10 units/acre and 1-acre lot on other parcels (§10.6.2.B), 17 units/acre near I-95 or a station on former business/industrial land; max 4 units per building (§10.9); the underlying zone is not in the mapped layer, so lot scored at the 1-acre floor (43,560) -- JUDGMENT; where the underlying zone was residential its prior uses also stay permitted (§10.3.B), so ADU is not resolved and is scored n/a because multi-unit is permitted -- JUDGMENT",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "§10.4(A) Designed Residence special permit use",
+            "quote": "A dwelling for one or more families and accessory uses, customary with and incidental to such use",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "§10.6.2(B) other parcels",
+            "quote": "On all other parcels, the maximum allowable dwelling unit density shall be 10 units per acre and each lot shall have a minimum area of 1 acre.",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "§10.4(A) Designed Residence special permit use",
+            "quote": "A dwelling for one or more families and accessory uses, customary with and incidental to such use",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "§25.4.1(K) multi-family parking (16 units or fewer)",
+            "quote": "Multi-family: 1 space for up to each 1-bedroom and 2 spaces for each 2-bedroom unit or larger.",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          }
+        ],
+        "included": false,
+        "land_share": null,
+        "contribution": null,
+        "exclusion_reason": "Excluded: only 2 of the 4 scored components are confirmed (all 4 are required)."
+      },
+      {
+        "district": "DI",
+        "acres": 260.9,
+        "score": 85.0,
+        "components_scored": 2,
+        "components_confirmed": 2,
+        "score_extended": 78.0,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 25,
+            "max_points": 30,
+            "reason": "Tier \"Discretionary (special permit)\": Multifamily allowed only through a special permit or hearing.",
+            "value": "Discretionary (special permit)",
+            "evidence": {
+              "field": "use",
+              "cite": "§8.8.3(A) Transportation/Commercial Park permitted uses",
+              "quote": "Residential uses for one or more families.",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": true
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": false
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 9,
+            "max_points": 10,
+            "reason": "Tier \"Discretionary (special permit)\": Special permit or hearing required.",
+            "value": "Discretionary (special permit)",
+            "evidence": {
+              "field": "use",
+              "cite": "§8.8.3(A) Transportation/Commercial Park permitted uses",
+              "quote": "Residential uses for one or more families.",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": true
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": null,
+            "max_points": 20,
+            "reason": "No lot-size rule could be confirmed for this district.",
+            "value": "Not confirmed",
+            "evidence": {
+              "field": "lot",
+              "cite": "§8.8.5(A) qualifying park",
+              "quote": "having a minimum of 10 acres in an area adjacent to a railroad passenger station",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": null,
+            "max_points": 15,
+            "reason": "Not confirmed for this district.",
+            "value": "Not confirmed",
+            "evidence": {
+              "field": "adu",
+              "cite": "§8.8.3(A) Transportation/Commercial Park permitted uses",
+              "quote": "Residential uses for one or more families.",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": false
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 5.0,
+            "max_points": 10,
+            "reason": "1.25 space(s) per unit; scored at 1.25/2.5 of the 10-point scale.",
+            "value": "1.25 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "§8.8.7(C) residential parking",
+              "quote": "C. Residential Uses: Lesser of 1 parking space per bedroom or 1.25 spaces per household.",
+              "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+              "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+              "file": "/sources/fairfield-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
+          }
+        ],
+        "note": "Designed Industrial District: dwellings only inside a Transportation/Commercial Park (§8.8.3.A), which must be 10+ acres with some part within 300 ft of a railroad passenger station (§8.8.5.A), determined by Commission application (§8.8.6) and built by Special Permit (§8.8.2); 50 bedrooms/acre and residential at most 70% of floor area (§8.8.10.E); residential parking lesser of 1 per bedroom or 1.25 per household (§8.8.7.C). Otherwise industrial. Lot = 10-acre qualifying tract (a designation threshold, not a building-lot minimum) -- JUDGMENT. Recommend EXCLUDE: DI is an industrial district and the residential path applies to only a few station-adjacent parcels",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "§8.8.3(A) Transportation/Commercial Park permitted uses",
+            "quote": "Residential uses for one or more families.",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "§8.8.5(A) qualifying park",
+            "quote": "having a minimum of 10 acres in an area adjacent to a railroad passenger station",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "§8.8.3(A) Transportation/Commercial Park permitted uses",
+            "quote": "Residential uses for one or more families.",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "§8.8.7(C) residential parking",
+            "quote": "C. Residential Uses: Lesser of 1 parking space per bedroom or 1.25 spaces per household.",
+            "source_title": "Fairfield Zoning Regulations (eff. Sept. 6, 2025)",
+            "url": "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf",
+            "file": "/sources/fairfield-zoning.pdf"
+          }
+        ],
+        "included": false,
+        "land_share": null,
+        "contribution": null,
+        "exclusion_reason": "Excluded: only 2 of the 4 scored components are confirmed (all 4 are required)."
+      }
+    ],
+    "formula": "V2 = sum(district score x acres) / sum(acres) over included districts",
+    "method": "Each district is scored with the same six-component rubric using only its own rules. The score uses four components that every town can document (multifamily access, approval discretion, minimum lot size, ADU pathway); a district is included only if all four are confirmed. Parking and demolition delay are shown as context but not scored, so towns share one scale. The town V2 score is the land-area-weighted mean of included district scores; acreage is from data/land_area/fairfield.json. Components with no confirmed input are excluded per district."
   }
 }

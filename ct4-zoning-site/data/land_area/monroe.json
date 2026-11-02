@@ -1,0 +1,81 @@
+{
+ "slug": "monroe",
+ "source": {
+  "title": "Monroe Zoning (Monroe_Zoning MapServer layer 3, CT Metro COG)",
+  "url": "https://maps.ctmetro.org/server/rest/services/Monroe/Monroe_Zoning/MapServer/3",
+  "retrieved": "2026-11-02"
+ },
+ "method": "Sum of Area_Acres grouped by Zone via outStatistics (groupByFieldsForStatistics=Zone); 'parcels' is the count of mapped zone polygons, not tax parcels. One unlabeled sliver (0.007 ac) omitted. Total = 16792 acres.",
+ "districts": {
+  "RF-1": {
+   "acres": 6526.3,
+   "parcels": 14,
+   "description": "Residential and Farming 1"
+  },
+  "RF-2": {
+   "acres": 4417.5,
+   "parcels": 6,
+   "description": "Residential and Farming 2"
+  },
+  "RF-3": {
+   "acres": 2737.7,
+   "parcels": 5,
+   "description": "Residential and Farming 3"
+  },
+  "RR": {
+   "acres": 755.1,
+   "parcels": 6,
+   "description": "Recreation Residence"
+  },
+  "MFR": {
+   "acres": 577.6,
+   "parcels": 5,
+   "description": "Multifamily Residence"
+  },
+  "ARR": {
+   "acres": 100.7,
+   "parcels": 4,
+   "description": "Age Restricted Residence"
+  },
+  "HOD": {
+   "acres": 24.7,
+   "parcels": 1,
+   "description": "Housing Opportunity"
+  },
+  "B-1": {
+   "acres": 263.8,
+   "parcels": 15,
+   "description": "Business 1"
+  },
+  "B-2": {
+   "acres": 170.2,
+   "parcels": 10,
+   "description": "Business 2"
+  },
+  "LOR": {
+   "acres": 71.3,
+   "parcels": 1,
+   "description": "Limited Office Retail"
+  },
+  "SB-2": {
+   "acres": 44.7,
+   "parcels": 1,
+   "description": "Stevenson Business 2"
+  },
+  "I-1": {
+   "acres": 104.9,
+   "parcels": 8,
+   "description": "Industrial 1"
+  },
+  "I-2": {
+   "acres": 809.5,
+   "parcels": 3,
+   "description": "Industrial 2"
+  },
+  "I-3": {
+   "acres": 188.1,
+   "parcels": 5,
+   "description": "Industrial 3"
+  }
+ }
+}

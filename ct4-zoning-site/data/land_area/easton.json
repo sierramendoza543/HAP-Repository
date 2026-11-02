@@ -1,0 +1,21 @@
+{
+  "slug": "easton",
+  "source": {
+    "title": "Easton Zoning (CT Metro COG, Easton_Zoning MapServer layer 1)",
+    "url": "https://maps.ctmetro.org/server/rest/services/Easton/Easton_Zoning/MapServer/1",
+    "retrieved": "2026-11-02"
+  },
+  "method": "Sum of Shape_Area (state-plane feet squared, EPSG:2234 / wkid 102656, NAD83 CT State Plane ftUS, so no projection correction needed) grouped by Zone via outStatistics; converted to acres via /43560. Total = 18256 acres (layer polygons include water; the town land-area figure on the town page is 17110 acres). Layer contains only two zones, RA and RB, one polygon each.",
+  "districts": {
+    "Residence A": {
+      "acres": 1513.6,
+      "parcels": 1,
+      "description": "Residence A (layer code RA)"
+    },
+    "Residence B": {
+      "acres": 16742.3,
+      "parcels": 1,
+      "description": "Residence B (layer code RB)"
+    }
+  }
+}

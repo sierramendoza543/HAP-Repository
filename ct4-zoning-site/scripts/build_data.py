@@ -59,8 +59,8 @@ OA = "Overlays & Affordability"
 # ================= GREENWICH =================
 gw9 = pdf("greenwich", "greenwich-div9.pdf", "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)", "https://www.greenwichct.gov/DocumentCenter/View/37828")
 gw21 = pdf("greenwich21", "greenwich-div21.pdf", "Building Zone Regulations, Div. 21 (Bulk Schedule)", "https://www.greenwichct.gov/DocumentCenter/View/37841")
-add("greenwich", "Greenwich", 317, 64594, 30322, 49, 82.7,
-    nza_block(317, 95.3, 97.7, 98.3, 59.8, 92), gw9, "R-20 / RA-2", "R-MF",
+add("greenwich", "Greenwich", 317, 64594, 30322, 49, 86.4,
+    nza_block(317, 96.0, 97.9, 98.5, 65.0, 100), gw9, "R-20 / RA-2", "R-MF",
     [
         v(U, "R-20/RA-2/RA-4/RA-1/R-12", "Single-family", "Allowed by-right — only permitted use", gw9, "§6-93(a)(1)",
           "The following principal uses are permitted in RA-4, RA-2, RA-1, R-20 and R-12 Zones and all other principal uses are expressly excluded: (1) Detached single family dwellings, one (1) per lot."),
@@ -492,8 +492,8 @@ add("easton", "Easton", 316, 7815, 17110, 3, 96.9,
 
 # ================= FAIRFIELD =================
 ff = pdf("fairfield", "fairfield-zoning.pdf", "Fairfield Zoning Regulations (eff. Sept. 6, 2025)", "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf")
-add("fairfield", "Fairfield", 315, 65300, 18618, 17, 61.7,
-    nza_block(315, 91.2, 95.8, 95.1, 0.0, 100), ff, "AAA/AA/R-3/R-2/A", "District C",
+add("fairfield", "Fairfield", 315, 65300, 18618, 17, 78.6,
+    nza_block(315, 91.2, 95.8, 95.1, 47.1, 100), ff, "AAA/AA/R-3/R-2/A", "District C",
     [
         v(U, "AAA/AA/R-3/R-2/A", "No multi-unit housing category", "Exists at all in these five districts", ff, "§1.2, §3.1 preamble",
           "No use shall be permitted in said Districts, except as these Single-Family Residence District regulations"),
@@ -1048,6 +1048,8 @@ V2_SOURCES = {
     "greenwich-div21": ("greenwich-div21.pdf", "Building Zone Regulations, Div. 21 (Bulk Schedule)", "https://www.greenwichct.gov/DocumentCenter/View/37841"),
     "norwalk-art4": ("norwalk-art4.pdf", "Norwalk Zoning Regulations, Art. 4 (Building & Lot/Building Site Standards, compiled 9/23/2025)", "https://www.norwalkct.gov/DocumentCenter/View/32250"),
     "norwalk-usetable": ("norwalk-usetable.pdf", "Norwalk Zoning Regulations, Use Table extract (7/10/26; ADU text rev. eff. 4/24/26)", "https://norwalkct.gov/DocumentCenter/View/38584"),
+    "greenwich-div2": ("greenwich-div2.pdf", "Building Zone Regulations, Div. 2 (Administrative Provisions and Definitions, Sec. 6-5)", "https://www.greenwichct.gov/DocumentCenter/View/37821"),
+    "greenwich-div6": ("greenwich-div6.pdf", "Building Zone Regulations, Div. 6 (R-PHD-SU, amended 4-24-2013)", "https://www.greenwichct.gov/DocumentCenter/View/37825"),
     "greenwich-div15": ("greenwich-div15.pdf", "Building Zone Regulations, Div. 15 (Parking and Garages, Aug. 2023)", "https://www.greenwichct.gov/DocumentCenter/View/37834"),
     "norwalk": ("norwalk-art3.pdf", "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)", "https://www.norwalkct.gov/DocumentCenter/View/32245"),
 }
@@ -1157,6 +1159,605 @@ for _d, _q in _NW_LOT.items():
     V2_CITES[("norwalk", _d, "parking")] = _NW_PARK
 V2_CITES[("norwalk", "CD-3", "parking")] = ("norwalk-art4", "Table 4.3.12.B-1 multifamily parking", "Large Multifamily Building and Small Multifamily Building 1.3 per Dwelling Unit")
 
+# Greenwich: districts outside the single-family zones that permit dwellings (Sec. 6-110 business zones,
+# WB, R-PHD-SU). Conservation zones, R-PR and R-PHD-E stay out because their ADU rule is not addressed.
+_BIZ_NOTE = ("Use Group 3 dwellings permitted in {z} under Sec. 6-110(c)(1); no cap on number of units (6-110(f)(1)); "
+             "4 units or fewer need only site plan, 5 or more need special permit + site plan (6-110(F)(1)-(2)); "
+             "no numeric minimum lot area in the Sec. 6-205(b) table (area cell reads 'Note 1', which points to 6-110(a), a purpose clause); "
+             "{extra}; ADU not applicable because multi-unit buildings are already permitted; parking for multifamily follows Sec. 6-155 (6-110(e)(1)); demolition not scored")
+
+V2_DISTRICTS_GREENWICH_ADD = {
+    "LB":   {"use": "capped_by_right", "approval": "discretionary", "lot": 0, "adu": "n/a", "parking": None, "demo": None,
+             "note": _BIZ_NOTE.format(z="LB", extra="ground-floor dwellings prohibited unless waived with below-market units (6-110(d)(1)); height 2.5 stories/35 ft")},
+    "LBR-2": {"use": "capped_by_right", "approval": "discretionary", "lot": 0, "adu": "n/a", "parking": None, "demo": None,
+              "note": _BIZ_NOTE.format(z="LBR-2", extra="dwellings only above the ground floor (6-110(c)(1)B)")},
+    "CGB":  {"use": "capped_by_right", "approval": "discretionary", "lot": 0, "adu": "n/a", "parking": None, "demo": None,
+             "note": _BIZ_NOTE.format(z="CGB", extra="ground-floor residential permitted (6-110(d)(1)); Use Group 3 listed in 6-104.1(B)")},
+    "CGBR": {"use": "capped_by_right", "approval": "discretionary", "lot": 0, "adu": "n/a", "parking": None, "demo": None,
+             "note": _BIZ_NOTE.format(z="CGBR (spelled 'CBGR' in 6-110(c)(1))", extra="dwellings only above the ground floor (6-103.1(C), 6-110(c)(1)B)")},
+    "GB":   {"use": "capped_by_right", "approval": "discretionary", "lot": 0, "adu": "n/a", "parking": None, "demo": None,
+             "note": _BIZ_NOTE.format(z="GB", extra="ground-floor residential permitted (6-110(d)(1)); Use Group 3 listed in 6-105(a)")},
+    "GBO":  {"use": "capped_by_right", "approval": "discretionary", "lot": 0, "adu": "n/a", "parking": None, "demo": None,
+             "note": _BIZ_NOTE.format(z="GBO", extra="ground-floor residential permitted (6-110(d)(1)); Use Group 3 listed in 6-106(a)")},
+    "WB":   {"use": "discretionary", "approval": "discretionary", "lot": 20000, "adu": "prohibited", "parking": None, "demo": None,
+             "note": "Multi-family dwellings are Use Group 7c, special permit required (6-100, 6-107(b)); 20,000 sq ft minimum lot for multifamily (6-107(e)(4)(A)); net density 1 unit per 4,200 sq ft and 15% moderate-income units above 5 units (6-107(e)(4)(D)); no dwellings in FEMA V-zones; ADU 'prohibited' is an inference: the Sec. 6-5(18.1) definition allows an ADU only on a property containing or zoned for a single-family dwelling, and WB lists no single-family use"},
+    "R-PHD-SU": {"use": "capped_by_right", "approval": "capped_by_right", "lot": 1800, "adu": "n/a", "parking": None, "demo": None,
+             "note": "Multi-family dwellings only (6-70(a)); zone exists only where mapped in the Plan of Development after a Commission hearing and plan approval, then built to that plan; density by lot area per unit type (1,800 sq ft for efficiency/1-BR, 3,000 sq ft for 2-BR; 1,350/2,250 for 8-30g applications), building area <=20% and FAR <=0.5; lot=1,800 is the smallest per-unit land requirement, there is no stand-alone minimum lot size; parking per 6-155"},
+}
+
+V2_CITES_GREENWICH_ADD = {}
+_BIZ_USE = ("greenwich-div9", "§6-110(F)(1)-(2) procedure for business-zone dwellings (page 9-45)",
+            "A site plan application is required when the development proposal is four (4) units or fewer, and/or the building’s size does not trigger a special permit as required pursuant to Section 6-101, and/or the development does not use any of the incentives outlined in Section 6-110(c). (2) A special permit and site plan are required when the development proposal is five (5) units or more")
+_BIZ_LOT = ("greenwich-div21", "§6-205(b) Business Zones schedule, Note 1 (minimum lot AREA cell for LB, LBR, CGB, CGBR, GB, GBO) (page 21-5)",
+            "Note 1. See Sec. 6-110(a) (6/11/86)")
+_BIZ_ADU = ("greenwich-div9", "§6-110(f)(1) no limit on number of dwelling units (page 9-44/9-45)",
+            "There are not limits on the number of dwelling units permitted within those structures.")
+for _d in ["LB", "LBR-2", "CGB", "CGBR", "GB", "GBO"]:
+    V2_CITES_GREENWICH_ADD[("greenwich", _d, "use")] = _BIZ_USE
+    V2_CITES_GREENWICH_ADD[("greenwich", _d, "lot")] = _BIZ_LOT
+    V2_CITES_GREENWICH_ADD[("greenwich", _d, "adu")] = _BIZ_ADU
+# Zone-listing quote (verified, usable as the 'use' quote instead if a single zone-naming quote is preferred):
+#   ("greenwich-div9", "§6-110(c)(1) (page 9-42)", "Dwelling units are permitted within residential or mixed-use development in the LB, LBR-2, CGB, CBGR, GB and GBO zones provided the units comply")
+
+V2_CITES_GREENWICH_ADD[("greenwich", "WB", "use")] = ("greenwich-div9", "§6-107(b) Permitted uses, Use Group 7c (multi-family is a 7c use per §6-100) (page 9-29)", "Use Group 7c (special permit required)")
+V2_CITES_GREENWICH_ADD[("greenwich", "WB", "lot")] = ("greenwich-div9", "§6-107(e)(4)(A) multifamily minimum lot (page 9-30)", "All multi-family residential developments shall have a minimum lot size of 20,000 square feet")
+V2_CITES_GREENWICH_ADD[("greenwich", "WB", "adu")] = ("greenwich-div2", "§6-5(18.1) ADU definition (page 2-3)", "An ADU is only permitted on a residential property currently containing or zoned for a single-family dwelling unit")
+
+V2_CITES_GREENWICH_ADD[("greenwich", "R-PHD-SU", "use")] = ("greenwich-div6", "§6-70(a) R-PHD-SU use regulations (page 6-3)", "The principal permitted use shall be: (1) Multi-family dwellings only.")
+V2_CITES_GREENWICH_ADD[("greenwich", "R-PHD-SU", "lot")] = ("greenwich-div6", "§6-64(c) minimum lot area per unit type (page 6-2)", "1 Room-Efficiency 450 sq. ft. 1800 sq. ft.")
+V2_CITES_GREENWICH_ADD[("greenwich", "R-PHD-SU", "adu")] = ("greenwich-div6", "§6-70(a) multi-family only", "The principal permitted use shall be: (1) Multi-family dwellings only.")
+
+
+V2_DISTRICTS["greenwich"].update(V2_DISTRICTS_GREENWICH_ADD)
+V2_CITES.update(V2_CITES_GREENWICH_ADD)
+
+# Historic-overlay (-HO) polygons keep their base zone's regulations (Sec. 6-109(b)(7)), so their acreage is
+# folded into the base zone instead of being scored separately.
+V2_ACRE_FOLD = {"greenwich": {"RA-2-HO": "RA-2", "RA-1-HO": "RA-1", "R-20-HO": "R-20", "R-12-HO": "R-12", "R-7-HO": "R-7", "R-6-HO": "R-6",
+           "LB-HO": "LB", "CGB-HO": "CGB", "GB-HO": "GB", "CGBR-HO": "CGBR", "LBR-2-HO": "LBR-2",
+           "R-C7-HO": "R-C7", "RC-20-HO": "R-C20", "RC-12-HO": "R-C12", "RA-CC4-HO": "RA-CC4", "LBR-1-HO": "LBR-1"}}
+
+# Stamford: districts outside the single-family zones that permit dwellings (Appendix A Table I, Appendix B
+# Tables II and III, and each design district's own section of Article 5).
+_STAMFORD_ADDED = {
+    # R-H: 115.8 acres. Status: include. Source: PDF text pp. 5-105 to 5-107 (Article 5.CC); Appendix B Table II (B-1)
+    'R-H': {"use": 'capped_by_right', "approval": 'capped_by_right', "lot": 5000, "adu": 'n/a', "parking": None, "demo": None,
+           "note": 'R-H Multiple Family High Density Design (§5.CC): all R-MF as-of-right uses incl. multi-family (§5.CC.3, App. A Table I); lots under 20,000 sq ft follow R-MF (5,000 sq ft minimum, 2,000 sq ft per unit; 1,250 on 20,000+; 725 on 1+ acre); Zoning Enforcement Officer reviews most applications, Zoning Board reviews lots of one acre or more (§5.CC.2, 5.CC.5.c); multi-unit by right so ADU pathway is not applicable'},
+    # C-N: 167.8 acres. Status: include. Source: PDF text A-1 to A-9 (Appendix A Table I, dwelling rows; PDF pages 436-441) and B-2 (Appendix B Table III); Art. 5.C-5.I just cross-reference App. A/B
+    'C-N': {"use": 'capped_by_right', "approval": 'capped_by_right', "lot": 5000, "adu": 'n/a', "parking": None, "demo": None,
+           "note": 'C-N Neighborhood Commercial (App. A Table I): multi-family is a check-mark (as-of-right) use, capped by density of 2,500 sq ft of land per family (App. B Table III); minimum plot 5,000 sq ft; site plan approval may apply (App. A legend); multi-unit by right so ADU pathway not applicable'},
+    # C-B: 38.3 acres. Status: include. Source: PDF text A-1 to A-9 (Appendix A Table I, dwelling rows; PDF pages 436-441) and B-2 (Appendix B Table III); Art. 5.C-5.I just cross-reference App. A/B
+    'C-B': {"use": 'capped_by_right', "approval": 'capped_by_right', "lot": 5000, "adu": 'n/a', "parking": None, "demo": None,
+           "note": 'C-B Community Business (App. A Table I): multi-family is a check-mark (as-of-right) use, capped by density of 1,500 sq ft of land per family (App. B Table III); minimum plot 5,000 sq ft; site plan approval may apply (App. A legend); multi-unit by right so ADU pathway not applicable'},
+    # C-L: 73.9 acres. Status: include. Source: PDF text A-1 to A-9 (Appendix A Table I, dwelling rows; PDF pages 436-441) and B-2 (Appendix B Table III); Art. 5.C-5.I just cross-reference App. A/B
+    'C-L': {"use": 'capped_by_right', "approval": 'capped_by_right', "lot": 4000, "adu": 'n/a', "parking": None, "demo": None,
+           "note": 'C-L Limited Commercial (App. A Table I): multi-family is a check-mark (as-of-right) use, capped by density of 1,250 sq ft of land per family (App. B Table III); minimum plot 4,000 sq ft; site plan approval may apply (App. A legend); multi-unit by right so ADU pathway not applicable'},
+    # C-I: 37.5 acres. Status: include. Source: PDF text A-1 to A-9 (Appendix A Table I, dwelling rows; PDF pages 436-441) and B-2 (Appendix B Table III); Art. 5.C-5.I just cross-reference App. A/B
+    'C-I': {"use": 'capped_by_right', "approval": 'capped_by_right', "lot": 4000, "adu": 'n/a', "parking": None, "demo": None,
+           "note": 'C-I Intermediate Commercial (App. A Table I): multi-family is a check-mark (as-of-right) use, capped by density of 1,250 sq ft of land per family (App. B Table III); minimum plot 4,000 sq ft; site plan approval may apply (App. A legend); multi-unit by right so ADU pathway not applicable'},
+    # C-G: 65.5 acres. Status: include. Source: PDF text A-1 to A-9 (Appendix A Table I, dwelling rows; PDF pages 436-441) and B-2 (Appendix B Table III); Art. 5.C-5.I just cross-reference App. A/B
+    'C-G': {"use": 'capped_by_right', "approval": 'capped_by_right', "lot": 4000, "adu": 'n/a', "parking": None, "demo": None,
+           "note": 'C-G General Commercial (App. A Table I): multi-family is a check-mark (as-of-right) use, capped by density of 1,000 sq ft of land per family (500 sq ft for R-MF-type residential-only buildings, App. B fn 4) (App. B Table III); minimum plot 4,000 sq ft; site plan approval may apply (App. A legend); multi-unit by right so ADU pathway not applicable'},
+    # CC: 144.2 acres. Status: include. Source: PDF text A-1 to A-9 (Appendix A Table I, dwelling rows; PDF pages 436-441) and B-2 (Appendix B Table III); Art. 5.C-5.I just cross-reference App. A/B
+    'CC': {"use": 'capped_by_right', "approval": 'capped_by_right', "lot": 4000, "adu": 'n/a', "parking": None, "demo": None,
+           "note": 'CC Central City (App. A Table I): multi-family is a check-mark (as-of-right) use, capped by density of 450 sq ft of land per family (400 sq ft downtown mixed use by Special Permit, App. B fn 4) (App. B Table III); minimum plot 4,000 sq ft; site plan approval may apply (App. A legend); multi-unit by right so ADU pathway not applicable'},
+    # R-HD: 40.5 acres. Status: include. Source: PDF text pp. 5-110 to 5-116 (Article 5.DD)
+    'R-HD': {"use": 'capped_by_right', "approval": 'capped_by_right', "lot": 5000, "adu": 'n/a', "parking": None, "demo": None,
+           "note": 'R-HD Residential High Density (§5.DD): apartment house, multiple dwelling and town houses authorized as-of-right (§5.DD.3); lots under one acre 5,000 sq ft minimum, one acre or more 43,560 sq ft (§5.DD.4); density by FAR 2.5/3.75 and 1,000 sq ft per market-rate unit; Zoning Board site plan approval on parcels of 20,000 sq ft or more, Land Use Bureau Chief below that (§5.DD.5.d); multi-unit by right so ADU not applicable'},
+    # NX-D: 16.2 acres. Status: include. Source: PDF text pp. 5-73 to 5-83 (Article 5.U)
+    'NX-D': {"use": 'capped_by_right', "approval": 'capped_by_right', "lot": 5000, "adu": 'n/a', "parking": None, "demo": None,
+           "note": 'NX-D Neighborhood Mixed Use Design (§5.U): Dwelling Multiple allowed as of right (§5.U.2); minimum lot 5,000 sq ft for 1- and 2-family, 6,000 sq ft for 3+ family; 1,000 sq ft residential density divider and FAR 1.5 (§5.U.3); Zoning Board site plan review above 20,000 sq ft of lot, Land Use Bureau Chief administrative review below (§5.U.5.e); multi-unit by right so ADU not applicable'},
+    # V-C: 75.6 acres. Status: include. Source: PDF text pp. 5-155 to 5-165 (Article 5.JJ)
+    'V-C': {"use": 'capped_by_right', "approval": 'capped_by_right', "lot": 5000, "adu": 'n/a', "parking": None, "demo": None,
+           "note": 'V-C Village Commercial (§5.JJ): on land beyond 125 ft of Commercial Streets the same uses as R-MF are permitted (§5.JJ.2.b), within 125 ft in Glenbrook/Springdale C-N uses except single- and two-family; minimum lot 5,000 sq ft (§5.JJ.3); Zoning Board Special Permit and site plan only for substantial new construction (over 20,000 sq ft of floor area), otherwise administrative (§5.JJ.f); multi-unit by right so ADU not applicable'},
+    # MX-D: 31.8 acres. Status: include. Source: PDF text pp. 5-67 to 5-68 (Article 5.T)
+    'MX-D': {"use": 'capped_by_right', "approval": 'capped_by_right', "lot": 87120, "adu": 'n/a', "parking": None, "demo": None,
+           "note": 'MX-D Mixed Use Development (§5.T): Apartment House, Two-Family and Multiple Dwellings permitted subject to Zoning Board authorization within site plan review (§5.T.3); FAR cap 3.0 (§5.T.4); no lot minimum stated, so lot is the two-acre minimum site for designation (§5.T.2) -- JUDGMENT, see report; multi-unit permitted so ADU not applicable'},
+    # P-D: 10.4 acres. Status: include. Source: PDF text pp. 5-85 to 5-86 (Article 5.W)
+    'P-D': {"use": 'capped_by_right', "approval": 'capped_by_right', "lot": 30000, "adu": 'n/a', "parking": None, "demo": None,
+           "note": 'P-D Planned Development (§5.W): Apartment House or Dwelling permitted subject to Zoning Board authorization as part of site plan review (§5.W.3); density cap 75/108 units per acre (§5.W.4); no lot minimum stated, so lot is the 30,000 sq ft minimum site for designation (§5.W.2) -- JUDGMENT; multi-unit permitted so ADU not applicable'},
+    # SRD-N: 22.6 acres. Status: include. Source: PDF text pp. 5-126 to 5-131 (Article 5.GG)
+    'SRD-N': {"use": 'capped_by_right', "approval": 'capped_by_right', "lot": 871200, "adu": 'n/a', "parking": None, "demo": None,
+           "note": 'SRD-N South End Redevelopment North (§5.GG): uses are those of SRD-S (which lists Dwelling, Multiple) (§5.GG.4.a); density 50 units per acre (§5.GG.5.a); design district so Zoning Board site and architectural review (§1.B.6); no lot minimum stated, so lot is the 20-acre minimum Zoning Tract (§5.GG.3.b) -- JUDGMENT (a tract threshold, not a building-lot minimum; consider None); ADU not applicable'},
+    # SRD-S: 67.5 acres. Status: include. Source: PDF text pp. 5-132 to 5-142 (Article 5.HH)
+    'SRD-S': {"use": 'capped_by_right', "approval": 'capped_by_right', "lot": 871200, "adu": 'n/a', "parking": None, "demo": None,
+           "note": 'SRD-S South End Redevelopment South (§5.HH): Dwelling, Multiple allowed (§5.HH.4.a); density 50 units per acre (§5.HH.5.a); design district so Zoning Board site plan review (§1.B.6, §5.HH); no lot minimum stated, so lot is the 20-acre minimum Zoning Tract (§5.HH.3.b) -- JUDGMENT (consider None); ADU not applicable'},
+    # TCDD: 56.7 acres. Status: include. Source: PDF text pp. 5-143 to 5-154 (Article 5.II)
+    'TCDD': {"use": 'capped_by_right', "approval": 'capped_by_right', "lot": 0, "adu": 'n/a', "parking": None, "demo": None,
+           "note": 'TCD-D Transportation Center Design (§5.II): Dwelling Multiple and town houses permitted (§5.II.3); minimum lot none for zoning lots under one acre, 43,560 sq ft for one acre or more (§5.II.4.a); density by FAR and 700-800 sq ft residential density divider; design district so Zoning Board site and architectural review (§1.B.6); ADU not applicable'},
+    # B-D: 10.7 acres. Status: include (flagged). Source: PDF text pp. 5-6 to 5-8 (Article 5.B)
+    'B-D': {"use": 'discretionary', "approval": 'discretionary', "lot": 5000, "adu": 'prohibited', "parking": None, "demo": None,
+           "note": 'B-D Designed Business (§5.B): residential apartments only on the second floor above commercial uses, lots up to 20,000 sq ft, subject to Zoning Board approval after public hearing (§5.B.3.f, 5.B.4); lot size governed by the C-N schedule (5,000 sq ft); no single-family dwelling is authorized, and the ADU rule requires one (ADU def. cond. 4), so ADU is scored prohibited -- INFERRED'},
+    # C-D: 257.1 acres. Status: include (flagged). Source: PDF text pp. 5-11 to 5-14 (Article 5.E)
+    'C-D': {"use": 'discretionary', "approval": 'discretionary', "lot": 653400, "adu": 'zoning_permit', "parking": None, "demo": None,
+           "note": 'C-D Designed Commercial (§5.E): single-, two- and multi-family dwellings only in contiguous C-D districts with more than 50 acres, and every use only by Special Permit (§5.E.3); density 12-14 units per acre (§5.E.4.c); no lot minimum stated, so lot is the 15-acre minimum designation area (§5.E.2) -- JUDGMENT; single-family is a (Special Permit) use so the generic ADU zoning permit applies; whether any mapped C-D parcel group exceeds 50 acres is not verified'},
+    # CW-D: 56.9 acres. Status: include (flagged). Source: PDF text pp. 5-24 to 5-28 (Article 5.K)
+    'CW-D': {"use": 'discretionary', "approval": 'discretionary', "lot": 4000, "adu": 'prohibited', "parking": None, "demo": None,
+           "note": 'C-WD Coastal Water Dependent (§5.K): multi-family residences only by Special Permit as non-water-dependent uses subordinate to a water-dependent use or as adaptive reuse of existing buildings (§5.K.2.b(3), 5.K.8); minimum lot 4,000 sq ft (§5.K.3.a); no single-family dwelling authorized so ADU scored prohibited -- INFERRED'},
+    # DW-D: 43.6 acres. Status: include (flagged). Source: PDF text pp. 5-29 to 5-38 (Article 5.L)
+    'DW-D': {"use": 'discretionary', "approval": 'discretionary', "lot": 10000, "adu": 'prohibited', "parking": None, "demo": None,
+           "note": "DW-D Designed Waterfront (§5.L): Dwelling, Multiple, town houses and apartments only by Special Permit in the Board's sole discretion (§5.L.3); minimum lot 10,000 sq ft (§5.L.4.a); density up to 44 units per acre with BMR bonus; no single-family dwelling authorized so ADU scored prohibited -- INFERRED"},
+}
+V2_DISTRICTS["stamford"].update(_STAMFORD_ADDED)
+# R-H: source PDF text pp. 5-105 to 5-107 (Article 5.CC); Appendix B Table II (B-1)
+V2_CITES[("stamford", 'R-H', 'use')] = ("stamford", '§5.CC.3 R-H authorized uses', 'for all of the uses permitted as-of-right in the R-MF')
+V2_CITES[("stamford", 'R-H', 'lot')] = ("stamford", 'Appendix B Table II, R-H row (first line: 5,000 sq ft plot area, 50 ft frontage, 2,000 sq ft per family)', 'R-H 5000 50 - 2000 - 4 40 30 15 40 8 18 30')
+V2_CITES[("stamford", 'R-H', 'adu')] = ("stamford", 'ADU definition, condition 9', 'No Multiple-Family Dwelling, including but not limited to legally non-conforming two- and three-family Dwellings, shall be eligible for Accessory Dwelling Units;')
+V2_CITES[("stamford", 'R-H', 'approval')] = ("stamford", '§5.CC.2 R-H review procedure', 'All other R-H applications shall be subject to review and approval by the Zoning Enforcement Officer.')
+# C-N: source PDF text A-1 to A-9 (Appendix A Table I, dwelling rows; PDF pages 436-441) and B-2 (Appendix B Table III); Art. 5.C-5.I just cross-reference App. A/B
+V2_CITES[("stamford", 'C-N', 'use')] = ("stamford", 'Appendix A Table I, Dwelling, Multi-Family row (symbols run RA-3..M-G; check mark under C-N)', 'Dwelling, Multi‐Family ‐ ‐ ‐ ‐ ‐ ‐ ‐ √ √ √ √ √ √ √ √ √ √ ‐ ‐')
+V2_CITES[("stamford", 'C-N', 'adu')] = ("stamford", 'ADU definition, condition 9', 'No Multiple-Family Dwelling, including but not limited to legally non-conforming two- and three-family Dwellings, shall be eligible for Accessory Dwelling Units;')
+V2_CITES[("stamford", 'C-N', 'approval')] = ("stamford", 'Appendix A Table I legend, check-mark definition', 'Indicates a Use that is permitted as‐of‐right in the respective district, but Site Plan or Large‐Scale Development Plan approval pursuant to')
+V2_CITES[("stamford", 'C-N', 'lot')] = ("stamford", 'Appendix B Table III, C-N row (first figure = minimum plot area)', 'C-N(15) 5000 50 2500(15.1,4) 0.3 2 25 30')
+# C-B: source PDF text A-1 to A-9 (Appendix A Table I, dwelling rows; PDF pages 436-441) and B-2 (Appendix B Table III); Art. 5.C-5.I just cross-reference App. A/B
+V2_CITES[("stamford", 'C-B', 'use')] = ("stamford", 'Appendix A Table I, Dwelling, Multi-Family row (symbols run RA-3..M-G; check mark under C-B)', 'Dwelling, Multi‐Family ‐ ‐ ‐ ‐ ‐ ‐ ‐ √ √ √ √ √ √ √ √ √ √ ‐ ‐')
+V2_CITES[("stamford", 'C-B', 'adu')] = ("stamford", 'ADU definition, condition 9', 'No Multiple-Family Dwelling, including but not limited to legally non-conforming two- and three-family Dwellings, shall be eligible for Accessory Dwelling Units;')
+V2_CITES[("stamford", 'C-B', 'approval')] = ("stamford", 'Appendix A Table I legend, check-mark definition', 'Indicates a Use that is permitted as‐of‐right in the respective district, but Site Plan or Large‐Scale Development Plan approval pursuant to')
+V2_CITES[("stamford", 'C-B', 'lot')] = ("stamford", '§5.C.3(a) C-B minimum lot area', 'a. Minimum Lot Area: 5,000 square feet')
+# C-L: source PDF text A-1 to A-9 (Appendix A Table I, dwelling rows; PDF pages 436-441) and B-2 (Appendix B Table III); Art. 5.C-5.I just cross-reference App. A/B
+V2_CITES[("stamford", 'C-L', 'use')] = ("stamford", 'Appendix A Table I, Dwelling, Multi-Family row (symbols run RA-3..M-G; check mark under C-L)', 'Dwelling, Multi‐Family ‐ ‐ ‐ ‐ ‐ ‐ ‐ √ √ √ √ √ √ √ √ √ √ ‐ ‐')
+V2_CITES[("stamford", 'C-L', 'adu')] = ("stamford", 'ADU definition, condition 9', 'No Multiple-Family Dwelling, including but not limited to legally non-conforming two- and three-family Dwellings, shall be eligible for Accessory Dwelling Units;')
+V2_CITES[("stamford", 'C-L', 'approval')] = ("stamford", 'Appendix A Table I legend, check-mark definition', 'Indicates a Use that is permitted as‐of‐right in the respective district, but Site Plan or Large‐Scale Development Plan approval pursuant to')
+V2_CITES[("stamford", 'C-L', 'lot')] = ("stamford", 'Appendix B Table III, C-L row (first figure = minimum plot area)', 'C-L 4000 40 1250(4) 1.0(13) 4(13) 45(13)')
+# C-I: source PDF text A-1 to A-9 (Appendix A Table I, dwelling rows; PDF pages 436-441) and B-2 (Appendix B Table III); Art. 5.C-5.I just cross-reference App. A/B
+V2_CITES[("stamford", 'C-I', 'use')] = ("stamford", 'Appendix A Table I, Dwelling, Multi-Family row (symbols run RA-3..M-G; check mark under C-I)', 'Dwelling, Multi‐Family ‐ ‐ ‐ ‐ ‐ ‐ ‐ √ √ √ √ √ √ √ √ √ √ ‐ ‐')
+V2_CITES[("stamford", 'C-I', 'adu')] = ("stamford", 'ADU definition, condition 9', 'No Multiple-Family Dwelling, including but not limited to legally non-conforming two- and three-family Dwellings, shall be eligible for Accessory Dwelling Units;')
+V2_CITES[("stamford", 'C-I', 'approval')] = ("stamford", 'Appendix A Table I legend, check-mark definition', 'Indicates a Use that is permitted as‐of‐right in the respective district, but Site Plan or Large‐Scale Development Plan approval pursuant to')
+V2_CITES[("stamford", 'C-I', 'lot')] = ("stamford", 'Appendix B Table III, C-I row (first figure = minimum plot area)', 'C-I(5) 4000 40 1250(4)(9) 1.2(9) 5 55(9)')
+# C-G: source PDF text A-1 to A-9 (Appendix A Table I, dwelling rows; PDF pages 436-441) and B-2 (Appendix B Table III); Art. 5.C-5.I just cross-reference App. A/B
+V2_CITES[("stamford", 'C-G', 'use')] = ("stamford", 'Appendix A Table I, Dwelling, Multi-Family row (symbols run RA-3..M-G; check mark under C-G)', 'Dwelling, Multi‐Family ‐ ‐ ‐ ‐ ‐ ‐ ‐ √ √ √ √ √ √ √ √ √ √ ‐ ‐')
+V2_CITES[("stamford", 'C-G', 'adu')] = ("stamford", 'ADU definition, condition 9', 'No Multiple-Family Dwelling, including but not limited to legally non-conforming two- and three-family Dwellings, shall be eligible for Accessory Dwelling Units;')
+V2_CITES[("stamford", 'C-G', 'approval')] = ("stamford", 'Appendix A Table I legend, check-mark definition', 'Indicates a Use that is permitted as‐of‐right in the respective district, but Site Plan or Large‐Scale Development Plan approval pursuant to')
+V2_CITES[("stamford", 'C-G', 'lot')] = ("stamford", 'Appendix B Table III, C-G row (first figure = minimum plot area)', 'C-G(3.2) 4000 40 1000(4) 1.8(13) - 100(1')
+# CC: source PDF text A-1 to A-9 (Appendix A Table I, dwelling rows; PDF pages 436-441) and B-2 (Appendix B Table III); Art. 5.C-5.I just cross-reference App. A/B
+V2_CITES[("stamford", 'CC', 'use')] = ("stamford", 'Appendix A Table I, Dwelling, Multi-Family row (symbols run RA-3..M-G; check mark under CC)', 'Dwelling, Multi‐Family ‐ ‐ ‐ ‐ ‐ ‐ ‐ √ √ √ √ √ √ √ √ √ √ ‐ ‐')
+V2_CITES[("stamford", 'CC', 'adu')] = ("stamford", 'ADU definition, condition 9', 'No Multiple-Family Dwelling, including but not limited to legally non-conforming two- and three-family Dwellings, shall be eligible for Accessory Dwelling Units;')
+V2_CITES[("stamford", 'CC', 'approval')] = ("stamford", 'Appendix A Table I legend, check-mark definition', 'Indicates a Use that is permitted as‐of‐right in the respective district, but Site Plan or Large‐Scale Development Plan approval pursuant to')
+V2_CITES[("stamford", 'CC', 'lot')] = ("stamford", 'Appendix B Table III, CC row (first figure = minimum plot area)', 'CC (3.2) 4000 40 450(4) 2.0(13,23,24) -(')
+# R-HD: source PDF text pp. 5-110 to 5-116 (Article 5.DD)
+V2_CITES[("stamford", 'R-HD', 'use')] = ("stamford", '§5.DD.3 R-HD authorized uses', 'Apartment House or Dwelling')
+V2_CITES[("stamford", 'R-HD', 'lot')] = ("stamford", '§5.DD.4(a) R-HD minimum lot size (lots less than one acre)', 'a. Minimum Lot Size 5,000 sf')
+V2_CITES[("stamford", 'R-HD', 'adu')] = ("stamford", 'ADU definition, condition 9', 'No Multiple-Family Dwelling, including but not limited to legally non-conforming two- and three-family Dwellings, shall be eligible for Accessory Dwelling Units;')
+V2_CITES[("stamford", 'R-HD', 'approval')] = ("stamford", '§5.DD.5.d(1) R-HD reviewing authority', 'On parcels 20,000 sf and larger, the Zoning Board shall review and determine compliance')
+# NX-D: source PDF text pp. 5-73 to 5-83 (Article 5.U)
+V2_CITES[("stamford", 'NX-D', 'use')] = ("stamford", '§5.U.2 NX-D as-of-right uses, item 19.1', '19.1 Dwelling, Multiple R')
+V2_CITES[("stamford", 'NX-D', 'lot')] = ("stamford", '§5.U.3 NX-D development standards, minimum lot size (1-2 family column first)', 'Minimum 5,000 square feet 6,000 square feet')
+V2_CITES[("stamford", 'NX-D', 'adu')] = ("stamford", 'ADU definition, condition 9', 'No Multiple-Family Dwelling, including but not limited to legally non-conforming two- and three-family Dwellings, shall be eligible for Accessory Dwelling Units;')
+V2_CITES[("stamford", 'NX-D', 'approval')] = ("stamford", '§5.U.5.e(2) NX-D reviewing authority', 'The Land Use Bureau Chief shall conduct an administrative site plan and architectural')
+# V-C: source PDF text pp. 5-155 to 5-165 (Article 5.JJ)
+V2_CITES[("stamford", 'V-C', 'use')] = ("stamford", '§5.JJ.2(b) V-C authorized uses', 'the same uses as in the R-MF District shall be permitted.')
+V2_CITES[("stamford", 'V-C', 'lot')] = ("stamford", '§5.JJ.3(a) V-C minimum lot size', 'a. Minimum Lot 5,000 sf 5,000 sf 5,000sf 5,000sf')
+V2_CITES[("stamford", 'V-C', 'adu')] = ("stamford", 'ADU definition, condition 9', 'No Multiple-Family Dwelling, including but not limited to legally non-conforming two- and three-family Dwellings, shall be eligible for Accessory Dwelling Units;')
+V2_CITES[("stamford", 'V-C', 'approval')] = ("stamford", '§5.JJ f. V-C reviewing authority', 'The Zoning Board shall review and determine compliance with the standards of the V-C')
+# MX-D: source PDF text pp. 5-67 to 5-68 (Article 5.T)
+V2_CITES[("stamford", 'MX-D', 'use')] = ("stamford", '§5.T.3 MX-D permitted uses', 'a. Agencies; Apartment House or Dwelling; Dwelling, Two-Family;')
+V2_CITES[("stamford", 'MX-D', 'lot')] = ("stamford", '§5.T.2 MX-D minimum area (designation threshold, not a per-lot minimum)', 'shall be two acres (87,120 square feet) in area')
+V2_CITES[("stamford", 'MX-D', 'adu')] = ("stamford", 'ADU definition, condition 9', 'No Multiple-Family Dwelling, including but not limited to legally non-conforming two- and three-family Dwellings, shall be eligible for Accessory Dwelling Units;')
+V2_CITES[("stamford", 'MX-D', 'approval')] = ("stamford", '§5.T.3 MX-D approval', 'shall be subject to Zoning Board authorization for each use as a part of site plan review and approval')
+# P-D: source PDF text pp. 5-85 to 5-86 (Article 5.W)
+V2_CITES[("stamford", 'P-D', 'use')] = ("stamford", '§5.W.3 P-D permitted uses', 'Hotel, Extended Stay; Apartment House or Dwelling;')
+V2_CITES[("stamford", 'P-D', 'lot')] = ("stamford", '§5.W.2 P-D minimum area (designation threshold)', 'shall be 30,000 square feet in area')
+V2_CITES[("stamford", 'P-D', 'adu')] = ("stamford", 'ADU definition, condition 9', 'No Multiple-Family Dwelling, including but not limited to legally non-conforming two- and three-family Dwellings, shall be eligible for Accessory Dwelling Units;')
+V2_CITES[("stamford", 'P-D', 'approval')] = ("stamford", '§5.W.3 P-D approval', 'subject Zoning Board authorization for each as a part of its site plan review and approval')
+# SRD-N: source PDF text pp. 5-126 to 5-131 (Article 5.GG)
+V2_CITES[("stamford", 'SRD-N', 'use')] = ("stamford", '§5.GG.4(a) SRD-N uses (incorporates SRD-S use list)', 'Uses permitted within the SRD-S District with the same Floor Area limitations contained therein')
+V2_CITES[("stamford", 'SRD-N', 'lot')] = ("stamford", '§5.GG.3(b) SRD-N minimum acreage (designation threshold)', 'not less than twenty (20) contiguous acres in area')
+V2_CITES[("stamford", 'SRD-N', 'adu')] = ("stamford", 'ADU definition, condition 9', 'No Multiple-Family Dwelling, including but not limited to legally non-conforming two- and three-family Dwellings, shall be eligible for Accessory Dwelling Units;')
+V2_CITES[("stamford", 'SRD-N', 'approval')] = ("stamford", '§1.B.6 Design Districts', 'All Development and Redevelopment in Design Districts (marked with an asterisk (“*”) on the List of Zoning Districts in Subsection 1.B.1.) shall be subject to Site and Architectural Plan Review')
+# SRD-S: source PDF text pp. 5-132 to 5-142 (Article 5.HH)
+V2_CITES[("stamford", 'SRD-S', 'use')] = ("stamford", '§5.HH.4(a) SRD-S permitted uses', 'Houses; Dwelling, Multiple; Emergency Shelter')
+V2_CITES[("stamford", 'SRD-S', 'lot')] = ("stamford", '§5.HH.3(b) SRD-S minimum acreage (designation threshold)', 'single ownership or control, not less than twenty (20) acres in area')
+V2_CITES[("stamford", 'SRD-S', 'adu')] = ("stamford", 'ADU definition, condition 9', 'No Multiple-Family Dwelling, including but not limited to legally non-conforming two- and three-family Dwellings, shall be eligible for Accessory Dwelling Units;')
+V2_CITES[("stamford", 'SRD-S', 'approval')] = ("stamford", '§1.B.6 Design Districts', 'All Development and Redevelopment in Design Districts (marked with an asterisk (“*”) on the List of Zoning Districts in Subsection 1.B.1.) shall be subject to Site and Architectural Plan Review')
+# TCDD: source PDF text pp. 5-143 to 5-154 (Article 5.II)
+V2_CITES[("stamford", 'TCDD', 'use')] = ("stamford", '§5.II.3 TCD-D permitted uses', 'Dwelling Multiple • Dwelling - Group or Town Houses')
+V2_CITES[("stamford", 'TCDD', 'lot')] = ("stamford", '§5.II.4(a) TCD-D minimum lot size (lots under one acre)', 'a. Minimum Lot size none')
+V2_CITES[("stamford", 'TCDD', 'adu')] = ("stamford", 'ADU definition, condition 9', 'No Multiple-Family Dwelling, including but not limited to legally non-conforming two- and three-family Dwellings, shall be eligible for Accessory Dwelling Units;')
+V2_CITES[("stamford", 'TCDD', 'approval')] = ("stamford", '§1.B.6 Design Districts', 'All Development and Redevelopment in Design Districts (marked with an asterisk (“*”) on the List of Zoning Districts in Subsection 1.B.1.) shall be subject to Site and Architectural Plan Review')
+# B-D: source PDF text pp. 5-6 to 5-8 (Article 5.B)
+V2_CITES[("stamford", 'B-D', 'use')] = ("stamford", '§5.B.3(f) B-D residential apartments', 'f. Subject to approval by the Zoning Board, residential apartments may be permitted on the second floor above commercial uses')
+V2_CITES[("stamford", 'B-D', 'lot')] = ("stamford", '§5.B.3(e) B-D lot size by reference to C-N (5,000 sq ft, App. B Table III)', 'Lot size and Yard space shall be governed by the requirements for the C-N Neighborhood Business District')
+V2_CITES[("stamford", 'B-D', 'adu')] = ("stamford", 'ADU definition, condition 4 (single-family principal dwelling required)', 'ADUs shall only be permitted on Lots containing no more than one (1) Single-Family Dwelling and which have a Lot Area of at least 10,000sf;')
+V2_CITES[("stamford", 'B-D', 'approval')] = ("stamford", '§5.B.4 B-D procedure', 'who shall not approve same until after a public hearing.')
+# C-D: source PDF text pp. 5-11 to 5-14 (Article 5.E)
+V2_CITES[("stamford", 'C-D', 'use')] = ("stamford", '§5.E.3(c) C-D residential uses', 'Dwellings in contiguous C-D districts with more than 50 acres')
+V2_CITES[("stamford", 'C-D', 'lot')] = ("stamford", '§5.E.2 C-D minimum area (designation threshold)', 'shall be fifteen (15) acres')
+V2_CITES[("stamford", 'C-D', 'adu')] = ("stamford", 'ADU definition, preamble (zoning permit)', 'Accessory Dwelling Units may only be permitted by Zoning Permit')
+V2_CITES[("stamford", 'C-D', 'approval')] = ("stamford", '§5.E.3 C-D permitted uses', 'Any use in the C-D District shall be permitted only by Special Permit.')
+# CW-D: source PDF text pp. 5-24 to 5-28 (Article 5.K)
+V2_CITES[("stamford", 'CW-D', 'use')] = ("stamford", '§5.K.2(b)(3) C-WD special permit uses', '(3) Retail, office, multi-family residences, senior housing, service establishments, and')
+V2_CITES[("stamford", 'CW-D', 'lot')] = ("stamford", '§5.K.3(a) C-WD minimum lot area', 'a. Minimum Lot Area: 4,000 square feet')
+V2_CITES[("stamford", 'CW-D', 'adu')] = ("stamford", 'ADU definition, condition 4 (single-family principal dwelling required)', 'ADUs shall only be permitted on Lots containing no more than one (1) Single-Family Dwelling and which have a Lot Area of at least 10,000sf;')
+V2_CITES[("stamford", 'CW-D', 'approval')] = ("stamford", '§5.K.2 C-WD authorized uses', 'subject to the issuance of a Special Permit in accordance with the standards of Subsections 5.K.4. and 5.K.6. herein:')
+# DW-D: source PDF text pp. 5-29 to 5-38 (Article 5.L)
+V2_CITES[("stamford", 'DW-D', 'use')] = ("stamford", '§5.L.3(b) DW-D additional uses', 'Dwelling, Group or Town Houses • Dwelling, Multiple')
+V2_CITES[("stamford", 'DW-D', 'lot')] = ("stamford", '§5.L.4(a) DW-D minimum lot size', 'a. Minimum Lot Size: 10,000 sq. ft.')
+V2_CITES[("stamford", 'DW-D', 'adu')] = ("stamford", 'ADU definition, condition 4 (single-family principal dwelling required)', 'ADUs shall only be permitted on Lots containing no more than one (1) Single-Family Dwelling and which have a Lot Area of at least 10,000sf;')
+V2_CITES[("stamford", 'DW-D', 'approval')] = ("stamford", '§5.L.3 DW-D permitted uses', 'the Board, in its sole discretion, determines such uses to be appropriate')
+
+# A minimum area needed to designate a district (MX-D, P-D, SRD-N, SRD-S, C-D) is not a per-lot minimum, and an
+# ADU rule inferred from a definition is not quoted text, so those inputs stay unconfirmed and the districts out.
+for _d in ("MX-D", "P-D", "SRD-N", "SRD-S", "C-D"):
+    V2_DISTRICTS["stamford"][_d]["lot"] = None
+for _d in ("B-D", "CW-D", "DW-D"):
+    V2_DISTRICTS["stamford"][_d]["adu"] = None
+# Multi-family by right already allows several units, so no separate ADU pathway applies (same rule as R-H).
+for _d in ("R-5", "RM-1", "R-MF"):
+    V2_DISTRICTS["stamford"][_d]["adu"] = "n/a"
+    V2_CITES[("stamford", _d, "adu")] = V2_CITES[("stamford", "R-H", "adu")]
+# Designed-residential (R-D) overlay polygons keep their base district's uses and density (Sec. 5.BB.2.b-c).
+V2_ACRE_FOLD["stamford"] = {"R-10/R-D": "R-10", "R-20/R-D": "R-20", "RA-1/R-D": "RA-1", "RA-2/R-D": "RA-2"}
+
+# Easton: Residence A and Residence B only.
+_EASTON_SOURCES = {
+    "easton": ("easton-zoning.pdf", "Easton Zoning Regulations (last revised July 7, 2024)", "https://ct-easton.civicplus.com/DocumentCenter/View/3109"),
+}
+
+# Layer codes: RA ("Residential A") and RB ("Residential B") only; no other zones in the layer.
+_EASTON_DISTRICTS = {
+    "easton": {
+        "Residence A": {"use": "none", "approval": "none", "lot": 40000, "adu": "zoning_permit", "parking": 2, "demo": None,
+                        "note": "Single-family dwelling only, one per lot (§3230.1); multifamily and two-family are not listed and unlisted uses are prohibited (§1420); 40,000 sq ft minimum lot (§3510); ADU, attached or detached, by staff zoning permit (§3320.2, §3450.2) subject to §5200 (owner occupancy, size caps); single-family parking 2.0 spaces (§6221), ADU adds 2.0; no demolition delay found in the regulations"},
+        "Residence B": {"use": "none", "approval": "none", "lot": 130680, "adu": "zoning_permit", "parking": 2, "demo": None,
+                        "note": "Same use rules as Residence A (§3230.1); 3.0 acre (130,680 sq ft) minimum lot (§3510); ADU by staff zoning permit; detached ADU size cap depends on buildable area (§5220.2.b); parking as Residence A"},
+    },
+}
+
+_EZ = "easton"
+_USE = (_EZ, "§3230.1 Residential-Related Uses (printed p.23)", "Dwelling ‐ Single family dwelling, not to exceed one dwelling per lot.")
+_ADU = (_EZ, "§3320.2 Accessory Dwelling Unit, Attached (printed p.24); detached ADU §3450.2 (p.45)", "Accessory Dwelling Unit, Attached – An accessory dwelling unit within or attached")
+_PARK = (_EZ, "§6221 Minimum parking requirements, single-family dwelling (printed p.70)", "Single‐family dwelling                         2.0 spaces")
+_EASTON_CITES = {
+    ("easton", "Residence A", "use"): _USE,
+    ("easton", "Residence B", "use"): _USE,
+    # approval: no multifamily pathway, so the approval tier is the same 'none' as use; same quote
+    ("easton", "Residence A", "approval"): (_EZ, "§1420 Prohibited if not permitted (printed p.3)", "Any use or activity within a zoning district which is not explicitly permitted by these Regulations shall be deemed to be prohibited within such district."),
+    ("easton", "Residence B", "approval"): (_EZ, "§1420 Prohibited if not permitted (printed p.3)", "Any use or activity within a zoning district which is not explicitly permitted by these Regulations shall be deemed to be prohibited within such district."),
+    ("easton", "Residence A", "lot"): (_EZ, "§3510 Lot Area table, Residence A (printed p.31)", "Minimum Lot Area                                 40,000 square feet"),
+    ("easton", "Residence B", "lot"): (_EZ, "§3510 Lot Area table, Residence B (printed p.31)", "130,680 square feet"),
+    ("easton", "Residence A", "adu"): _ADU,
+    ("easton", "Residence B", "adu"): _ADU,
+    ("easton", "Residence A", "parking"): _PARK,
+    ("easton", "Residence B", "parking"): _PARK,
+    # demo: None for both. The regulations contain no demolition-delay provision (only an enforcement reference to a "demolition order" in the plot-plan section).
+}
+
+V2_SOURCES.update(_EASTON_SOURCES)
+V2_DISTRICTS.update(_EASTON_DISTRICTS)
+V2_CITES.update(_EASTON_CITES)
+
+# Monroe: single-family zones RF-1, RF-2, RF-3 and the rural residence zone RR.
+V2_SOURCES["monroe"] = ("monroe-zoning.pdf", 'Monroe Zoning Regulations (amended through July 2, 2026)', 'https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da')
+V2_DISTRICTS_MONROE = {
+    # MF/ADU/use rows: §10.1 Schedule, Use Schedule p.5-6. Lot: Art. 3. Parking: §10.2 Schedule p.9 (and §6.1.19 caps 17+ unit projects at 1 / 2 spaces).
+    "RF-1": {"use": "none", "approval": "none", "lot": 43560, "adu": "zoning_permit", "parking": 2.0, "demo": None,
+             "note": "Multi-Family Dwelling not permitted; single-family 1 per lot by right; 1 acre minimum (§3.1.4(A)); ADU is an accessory use ('ACC') needing a Certificate of Use signed by ZEO, Building Inspector, Sanitarian and Fire Marshal (§6.9.2(H)), attached only, owner-occupied; no demolition delay found"},
+    "RF-2": {"use": "none", "approval": "none", "lot": 87120, "adu": "zoning_permit", "parking": 2.0, "demo": None,
+             "note": "Same use rules as RF-1; 2 acre minimum (§3.2.4(A)); ADU as RF-1"},
+    "RF-3": {"use": "none", "approval": "none", "lot": 130680, "adu": "zoning_permit", "parking": 2.0, "demo": None,
+             "note": "Same use rules as RF-1; 3 acre minimum (§3.3.4(A)); ADU as RF-1 but detached ADU also allowed, new construction reviewed by the Commission (§6.9.1(B))"},
+    "MFR": {"use": "discretionary", "approval": "discretionary", "lot": 3049200, "adu": "prohibited", "parking": 2.0, "demo": None,
+            "note": "Multi-Family Dwelling by Special Exception Permit only; floating district needing a 70-acre parcel (§3.4.5(B)) = 3,049,200 sq ft; 2.5 attached units/gross acre; MF units capped at 10% of town single-family count (§3.4.2(A)); accessory apartment 'x'"},
+    "ARR": {"use": "discretionary", "approval": "discretionary", "lot": 435600, "adu": "prohibited", "parking": 2.0, "demo": None,
+            "note": "Only age-restricted (55+) attached/detached dwellings, by Special Exception Permit; Multi-Family 'x'; 10 acre minimum (§3.5.5(B)) = 435,600 sq ft; 5 attached units/gross acre; accessory apartment 'x'. Age restriction narrows the housing type - judgment call whether to score"},
+    "HOD": {"use": "discretionary", "approval": "discretionary", "lot": 871200, "adu": "prohibited", "parking": 2.0, "demo": None,
+            "note": "Multi-Family Dwelling by Special Exception Permit; floating district rezoned from a 20-25 acre parcel (§3.7.6(B)) = 871,200 sq ft; 1.5 units/gross acre; 30-year affordable set-aside (§3.7); accessory apartment 'x'"},
+    "RR": {"use": "none", "approval": "none", "lot": 32670, "adu": "prohibited", "parking": 2.0, "demo": None,
+           "note": "Single-family only (SEP); Multi-Family 'x'; individual lot 3/4 acre = 32,670 sq ft within a 25-acre minimum parcel (§3.6.5(B),(D)); accessory apartment 'x'"},
+}
+
+# Not residential-capable on their own (excluded): B-1, B-2, SB-2, LOR (Multi-Family 'x'/'X'; Single-Family 'x'; only SDP mixed-use,
+# defined as 2-9 units above ground-floor commercial, eligibility tied to the MDD overlay, §8.2.3(T)); I-1..I-3; AH (not mapped; SDP only, §5.3);
+# MDD overlay (not a base district; multi-family on 15+ acre projects by Special Exception, §5.4.6).
+
+_MO_MF = ("monroe", "§10.1 Schedule of Permitted Land Uses, Multi-Family Dwelling row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH ...), Use Schedule p.5",
+          "Multi-Family Dwelling x x x x SEP x SEP X x x X x x x x")
+_MO_ADU = ("monroe", "§10.1 Schedule, Accessory Apartment row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH), Use Schedule p.6",
+           "Accessory Apartment ACC ACC ACC x x x x X")
+_MO_PARK = ("monroe", "§10.2 Schedule of Required Off-Street Parking, Residential, Off-Street Parking Schedule p.9",
+            "Two-Bedroom or more 2.0 spaces per unit with adequate driveway turnaround.")
+V2_CITES_MONROE = {}
+for _d in ("RF-1", "RF-2", "RF-3", "MFR", "ARR", "HOD", "RR"):
+    V2_CITES_MONROE[("monroe", _d, "use")] = _MO_MF
+    V2_CITES_MONROE[("monroe", _d, "adu")] = _MO_ADU
+    V2_CITES_MONROE[("monroe", _d, "parking")] = _MO_PARK
+for _d in ("RF-1", "RF-2", "RF-3"):   # ADU process, Art. 6 p.65 (§6.9.2(H)(1)); size/attachment §6.9.1 p.64
+    V2_CITES_MONROE[("monroe", _d, "adu")] = _MO_ADU
+V2_CITES_MONROE[("monroe", "RF-1", "lot")] = ("monroe", "§3.1.4(A) RF-1 minimum lot area, Art. 3", "Each lot shall have a minimum area of one (1) acre (or 43,560 square feet)")
+V2_CITES_MONROE[("monroe", "RF-2", "lot")] = ("monroe", "§3.2.4(A) RF-2 minimum lot area, Art. 3", "Each lot shall have a minimum area of two (2) acres (or 87,120 square feet)")
+V2_CITES_MONROE[("monroe", "RF-3", "lot")] = ("monroe", "§3.3.4(A) RF-3 minimum lot area, Art. 3", "Each lot shall have a minimum area of three (3) acres (130,680 square feet)")
+V2_CITES_MONROE[("monroe", "MFR", "lot")] = ("monroe", "§3.4.5(B) MFR minimum parcel size, Art. 3 p.10", "Minimum parcel size shall be seventy (70) acres under same ownership in a single continuous")
+V2_CITES_MONROE[("monroe", "ARR", "lot")] = ("monroe", "§3.5.5(B) ARR minimum lot area, Art. 3", "Minimum lot area shall be not less than ten (10) acres contained within a single contiguous")
+V2_CITES_MONROE[("monroe", "HOD", "lot")] = ("monroe", "§3.7.6(B) HOD minimum parcel size, Art. 3", "not less than twenty (20) nor more than twenty-five (25) contiguous acres")
+V2_CITES_MONROE[("monroe", "RR", "lot")] = ("monroe", "§3.6.5(D) RR minimum individual lot, Art. 3", "(3/4 acres or 32,670 square feet)")
+# ARR/HOD use refinements (optional, replaces the generic MF row cite)
+V2_CITES_MONROE[("monroe", "ARR", "use")] = ("monroe", "§10.1 Schedule, Age Restricted Attached Dwelling row, Use Schedule p.6", "Age Restricted Attached Dwelling x x x SEP x x x X")
+
+V2_DISTRICTS["monroe"] = V2_DISTRICTS_MONROE
+V2_CITES.update(V2_CITES_MONROE)
+# MFR, ARR and HOD are floating districts: the figure in the code is the minimum parcel needed to create the
+# district, not a per-lot minimum, so their lot input stays unconfirmed and they stay out of the score.
+for _d in ("MFR", "ARR", "HOD"):
+    V2_DISTRICTS["monroe"][_d]["lot"] = None
+
+# Fairfield: single-family zones, the residence B and C zones, and the design districts that permit dwellings.
+V2_SOURCES["fairfield"] = ("fairfield-zoning.pdf", "Fairfield Zoning Regulations (eff. Sept. 6, 2025)", "https://fairfieldct.gov/Fairfield_ZoningRegulations_Adopted_Effective_09062025%20-%20updated%209.28.26.pdf")
+V2_DISTRICTS_FAIRFIELD = {
+    # AAA: status include
+    'AAA': {"use": 'none', "approval": 'none', "lot": 87120, "adu": 'zoning_permit', "parking": 2, "demo": None,
+        "note": 'Single-Family Residence District (§3.1-3.2), single-family dwellings only; minimum lot 2 ac (§3.3.1); attached and detached ADU (§3.2 rows S and T, §13.3.H), issued as a written permit by the Zoning Enforcement Officer (§13.4); owner-occupancy required and 40%/1,500 sq ft size cap (§13.3); parking 2 spaces per single-family dwelling, 1 for an ADU (§25.4.1 K)'},
+    # AA: status include
+    'AA': {"use": 'none', "approval": 'none', "lot": 43560, "adu": 'zoning_permit', "parking": 2, "demo": None,
+        "note": 'Single-Family Residence District (§3.1-3.2), single-family dwellings only; minimum lot 1 ac (§3.3.1); attached and detached ADU (§3.2 rows S and T, §13.3.H), issued as a written permit by the Zoning Enforcement Officer (§13.4); owner-occupancy required and 40%/1,500 sq ft size cap (§13.3); parking 2 spaces per single-family dwelling, 1 for an ADU (§25.4.1 K)'},
+    # R-3: status include
+    'R-3': {"use": 'none', "approval": 'none', "lot": 20000, "adu": 'zoning_permit', "parking": 2, "demo": None,
+        "note": 'Single-Family Residence District (§3.1-3.2), single-family dwellings only; minimum lot 20,000 (§3.3.1); attached and detached ADU (§3.2 rows S and T, §13.3.H), issued as a written permit by the Zoning Enforcement Officer (§13.4); owner-occupancy required and 40%/1,500 sq ft size cap (§13.3); parking 2 spaces per single-family dwelling, 1 for an ADU (§25.4.1 K)'},
+    # R-2: status include
+    'R-2': {"use": 'none', "approval": 'none', "lot": 14000, "adu": 'zoning_permit', "parking": 2, "demo": None,
+        "note": 'Single-Family Residence District (§3.1-3.2), single-family dwellings only; minimum lot 14,000 (§3.3.1); attached ADU only; detached ADU not allowed in R-2 or A (§3.2 row T blank), issued as a written permit by the Zoning Enforcement Officer (§13.4); owner-occupancy required and 40%/1,500 sq ft size cap (§13.3); parking 2 spaces per single-family dwelling, 1 for an ADU (§25.4.1 K)'},
+    # A: status include
+    'A': {"use": 'none', "approval": 'none', "lot": 9375, "adu": 'zoning_permit', "parking": 2, "demo": None,
+        "note": 'Single-Family Residence District (§3.1-3.2), single-family dwellings only; minimum lot 9,375 (§3.3.1); attached ADU only; detached ADU not allowed in R-2 or A (§3.2 row T blank), issued as a written permit by the Zoning Enforcement Officer (§13.4); owner-occupancy required and 40%/1,500 sq ft size cap (§13.3); parking 2 spaces per single-family dwelling, 1 for an ADU (§25.4.1 K)'},
+    # B: status include
+    'B': {"use": 'capped_by_right', "approval": 'capped_by_right', "lot": 6000, "adu": 'zoning_permit', "parking": 2, "demo": None,
+        "note": 'Residence B (§5.2): two-family dwellings permitted by right (P), three- and four-family not permitted; minimum lot 6,000 sq ft single-family, 9,000 sq ft two-family (§5.3.1; single-family figure scored, as Stamford R-6); attached ADU only on a lot with a single-family residence (§5.2.2.C) by written ZEO permit (§13.4); parking 2 for a 2-bedroom unit (§25.4.1 K); 5-unit affordable bonus on 15,000 sq ft lots (§5.3.2)'},
+    # C: status include
+    'C': {"use": 'capped_by_right', "approval": 'capped_by_right', "lot": 5000, "adu": 'zoning_permit', "parking": 2, "demo": None,
+        "note": 'Residence C (§5.2): two-, three- and four-family dwellings permitted by right (P), capped at four units; minimum lot 5,000 sq ft single-family, 7,500 two-family, 10,000 three-family, 12,500 four-family (§5.3.1; single-family figure scored); attached ADU only on a single-family lot (§5.2.2.C), written ZEO permit (§13.4); parking 2 for a 2-bedroom unit (§25.4.1 K)'},
+    # BD: status include (flag ADU inference)
+    'BD': {"use": 'none', "approval": 'none', "lot": 9375, "adu": 'prohibited', "parking": 2, "demo": None,
+        "note": 'Beach District (§4.2): one single detached dwelling per lot, nothing else; 9,375 sq ft minimum, each lot a 50 ft square (§4.4); multiple dwellings only to rebuild an existing multi-unit lot with the same unit count by Special Exception (§4.5); ADU scored prohibited by INFERENCE: §13.3 lists AAA, AA, A, R-3, R-2, B and C but not Beach, §4.2.D bars livable detached accessory structures, and §2.4.A prohibits unlisted uses; parking per §25 (2 per single-family)'},
+    # CDD: status include (flag)
+    'CDD': {"use": 'capped_by_right', "approval": 'discretionary', "lot": 0, "adu": 'n/a', "parking": 2, "demo": None,
+        "note": "Center Designed Business District (§6.3 row Z): residential uses permitted (P) but not on the ground floor; new construction, alterations or additions need a Special Permit under Section 31 (§6.2); conversion of an existing commercial building to residential is a no-hearing Compliance Application, 65 days (§6.3.2, PA 25-164); no minimum lot size (§6.4 row B); 4 stories/52 ft, 90% lot coverage, floor area 325%; no unit cap stated, only bulk limits; ADU treated n/a because multi-unit residential is permitted (Greenwich business-zone precedent) -- JUDGMENT; use tier could alternatively be 'discretionary'"},
+    # DCD: status include (flag)
+    'DCD': {"use": 'capped_by_right', "approval": 'discretionary', "lot": 0, "adu": 'n/a', "parking": 2, "demo": None,
+        "note": "Designed Commercial District (§6.3 row Z): residential uses permitted (P) but not on the ground floor; new construction, alterations or additions need a Special Permit under Section 31 (§6.2); conversion of an existing commercial building to residential is a no-hearing Compliance Application, 65 days (§6.3.2, PA 25-164); no minimum lot size (§6.4 row B); 4 stories/52 ft, 80% coverage, floor area 275%; no unit cap stated, only bulk limits; ADU treated n/a because multi-unit residential is permitted (Greenwich business-zone precedent) -- JUDGMENT; use tier could alternatively be 'discretionary'"},
+    # NDD: status include (flag)
+    'NDD': {"use": 'capped_by_right', "approval": 'discretionary', "lot": 0, "adu": 'n/a', "parking": 2, "demo": None,
+        "note": "Neighborhood Designed Business District (§6.3 row Z): residential uses permitted (P) but not on the ground floor; new construction, alterations or additions need a Special Permit under Section 31 (§6.2); conversion of an existing commercial building to residential is a no-hearing Compliance Application, 65 days (§6.3.2, PA 25-164); no minimum lot size (§6.4 row B); 3 stories/40 ft, 75% coverage, floor area 150%; ground-floor residential only in a second building set back 70 ft, residential at most 50% of floor area (§6.3.1.C); no unit cap stated, only bulk limits; ADU treated n/a because multi-unit residential is permitted (Greenwich business-zone precedent) -- JUDGMENT; use tier could alternatively be 'discretionary'"},
+    # DRD: status include (flag)
+    'DRD': {"use": 'discretionary', "approval": 'discretionary', "lot": 43560, "adu": 'n/a', "parking": 2, "demo": None,
+        "note": 'Designed Residence District (§10): dwelling for one or more families only by Special Permit (§10.4.A); density 1 unit for first 9,375 sq ft plus 1 per additional 3,000 sq ft, with minimum lot by underlying zone AAA 30 ac, AA 10 ac, R-3 5 ac, R-2 2 ac, A/B/C 1 ac (§10.6.1), 10 units/acre and 1-acre lot on other parcels (§10.6.2.B), 17 units/acre near I-95 or a station on former business/industrial land; max 4 units per building (§10.9); the underlying zone is not in the mapped layer, so lot scored at the 1-acre floor (43,560) -- JUDGMENT; where the underlying zone was residential its prior uses also stay permitted (§10.3.B), so ADU is not resolved and is scored n/a because multi-unit is permitted -- JUDGMENT'},
+    # DI: status exclude (recommended)
+    'DI': {"use": 'discretionary', "approval": 'discretionary', "lot": 435600, "adu": 'n/a', "parking": 1.25, "demo": None,
+        "note": 'Designed Industrial District: dwellings only inside a Transportation/Commercial Park (§8.8.3.A), which must be 10+ acres with some part within 300 ft of a railroad passenger station (§8.8.5.A), determined by Commission application (§8.8.6) and built by Special Permit (§8.8.2); 50 bedrooms/acre and residential at most 70% of floor area (§8.8.10.E); residential parking lesser of 1 per bedroom or 1.25 per household (§8.8.7.C). Otherwise industrial. Lot = 10-acre qualifying tract (a designation threshold, not a building-lot minimum) -- JUDGMENT. Recommend EXCLUDE: DI is an industrial district and the residential path applies to only a few station-adjacent parcels'},
+}
+
+V2_CITES_FAIRFIELD = {}
+# page [PDF [11]]
+V2_CITES_FAIRFIELD[("fairfield", 'AAA', 'use')] = ("fairfield", '§3.2 Permitted Uses preamble', 'No use shall be permitted in said Districts, except as these Single-Family Residence District regulations provide')
+# page [PDF [13]]
+V2_CITES_FAIRFIELD[("fairfield", 'AAA', 'lot')] = ("fairfield", '§3.3.1 Minimum Lot Area row', 'A. Minimum Lot Area (sf or acres if noted) 2 ac 1 ac 20,000 14,000 9,375')
+# page [PDF [64]]
+V2_CITES_FAIRFIELD[("fairfield", 'AAA', 'adu')] = ("fairfield", '§13.4 Application Procedure (permit from Zoning Enforcement Officer)', 'has received a written permit from the Zoning Enforcement Officer')
+# page [PDF [97]]
+V2_CITES_FAIRFIELD[("fairfield", 'AAA', 'parking')] = ("fairfield", '§25.4.1(K) single-family parking', 'Single-family residential - 2 spaces')
+# page [PDF [11]]
+V2_CITES_FAIRFIELD[("fairfield", 'AA', 'use')] = ("fairfield", '§3.2 Permitted Uses preamble', 'No use shall be permitted in said Districts, except as these Single-Family Residence District regulations provide')
+# page [PDF [13]]
+V2_CITES_FAIRFIELD[("fairfield", 'AA', 'lot')] = ("fairfield", '§3.3.1 Minimum Lot Area row', 'A. Minimum Lot Area (sf or acres if noted) 2 ac 1 ac 20,000 14,000 9,375')
+# page [PDF [64]]
+V2_CITES_FAIRFIELD[("fairfield", 'AA', 'adu')] = ("fairfield", '§13.4 Application Procedure (permit from Zoning Enforcement Officer)', 'has received a written permit from the Zoning Enforcement Officer')
+# page [PDF [97]]
+V2_CITES_FAIRFIELD[("fairfield", 'AA', 'parking')] = ("fairfield", '§25.4.1(K) single-family parking', 'Single-family residential - 2 spaces')
+# page [PDF [11]]
+V2_CITES_FAIRFIELD[("fairfield", 'R-3', 'use')] = ("fairfield", '§3.2 Permitted Uses preamble', 'No use shall be permitted in said Districts, except as these Single-Family Residence District regulations provide')
+# page [PDF [13]]
+V2_CITES_FAIRFIELD[("fairfield", 'R-3', 'lot')] = ("fairfield", '§3.3.1 Minimum Lot Area row', 'A. Minimum Lot Area (sf or acres if noted) 2 ac 1 ac 20,000 14,000 9,375')
+# page [PDF [64]]
+V2_CITES_FAIRFIELD[("fairfield", 'R-3', 'adu')] = ("fairfield", '§13.4 Application Procedure (permit from Zoning Enforcement Officer)', 'has received a written permit from the Zoning Enforcement Officer')
+# page [PDF [97]]
+V2_CITES_FAIRFIELD[("fairfield", 'R-3', 'parking')] = ("fairfield", '§25.4.1(K) single-family parking', 'Single-family residential - 2 spaces')
+# page [PDF [11]]
+V2_CITES_FAIRFIELD[("fairfield", 'R-2', 'use')] = ("fairfield", '§3.2 Permitted Uses preamble', 'No use shall be permitted in said Districts, except as these Single-Family Residence District regulations provide')
+# page [PDF [13]]
+V2_CITES_FAIRFIELD[("fairfield", 'R-2', 'lot')] = ("fairfield", '§3.3.1 Minimum Lot Area row', 'A. Minimum Lot Area (sf or acres if noted) 2 ac 1 ac 20,000 14,000 9,375')
+# page [PDF [64]]
+V2_CITES_FAIRFIELD[("fairfield", 'R-2', 'adu')] = ("fairfield", '§13.4 Application Procedure (permit from Zoning Enforcement Officer)', 'has received a written permit from the Zoning Enforcement Officer')
+# page [PDF [97]]
+V2_CITES_FAIRFIELD[("fairfield", 'R-2', 'parking')] = ("fairfield", '§25.4.1(K) single-family parking', 'Single-family residential - 2 spaces')
+# page [PDF [11]]
+V2_CITES_FAIRFIELD[("fairfield", 'A', 'use')] = ("fairfield", '§3.2 Permitted Uses preamble', 'No use shall be permitted in said Districts, except as these Single-Family Residence District regulations provide')
+# page [PDF [13]]
+V2_CITES_FAIRFIELD[("fairfield", 'A', 'lot')] = ("fairfield", '§3.3.1 Minimum Lot Area row', 'A. Minimum Lot Area (sf or acres if noted) 2 ac 1 ac 20,000 14,000 9,375')
+# page [PDF [64]]
+V2_CITES_FAIRFIELD[("fairfield", 'A', 'adu')] = ("fairfield", '§13.4 Application Procedure (permit from Zoning Enforcement Officer)', 'has received a written permit from the Zoning Enforcement Officer')
+# page [PDF [97]]
+V2_CITES_FAIRFIELD[("fairfield", 'A', 'parking')] = ("fairfield", '§25.4.1(K) single-family parking', 'Single-family residential - 2 spaces')
+# page [PDF [22]]
+V2_CITES_FAIRFIELD[("fairfield", 'B', 'use')] = ("fairfield", '§5.2 permitted uses table, Two-Family row', 'A. Two-Family Dwellings P P Section 5.3')
+# page [PDF [22]]
+V2_CITES_FAIRFIELD[("fairfield", 'B', 'approval')] = ("fairfield", '§5.2 permitted uses table, Two-Family row', 'A. Two-Family Dwellings P P Section 5.3')
+# page [PDF [23]]
+V2_CITES_FAIRFIELD[("fairfield", 'B', 'lot')] = ("fairfield", '§5.3.1 Minimum Lot Area for Single-Family', 'Minimum Lot Area for Single-Family (sf) 6,000 5,000')
+# page [PDF [22]]
+V2_CITES_FAIRFIELD[("fairfield", 'B', 'adu')] = ("fairfield", '§5.2.2(C) attached ADUs', 'Attached Accessory Dwelling Units are permitted per the standards of Section 13, but only where the minimum lot requirements are met and where there exists only a single-family residence on the parcel.')
+# page [PDF [97]]
+V2_CITES_FAIRFIELD[("fairfield", 'B', 'parking')] = ("fairfield", '§25.4.1(K) multi-family parking (16 units or fewer)', 'Multi-family: 1 space for up to each 1-bedroom and 2 spaces for each 2-bedroom unit or larger.')
+# page [PDF [22]]
+V2_CITES_FAIRFIELD[("fairfield", 'C', 'use')] = ("fairfield", '§5.2 permitted uses table, Four-Family row', 'C. Four-Family Dwellings — P')
+# page [PDF [22]]
+V2_CITES_FAIRFIELD[("fairfield", 'C', 'approval')] = ("fairfield", '§5.2 permitted uses table, Four-Family row', 'C. Four-Family Dwellings — P')
+# page [PDF [23]]
+V2_CITES_FAIRFIELD[("fairfield", 'C', 'lot')] = ("fairfield", '§5.3.1 Minimum Lot Area for Single-Family', 'Minimum Lot Area for Single-Family (sf) 6,000 5,000')
+# page [PDF [22]]
+V2_CITES_FAIRFIELD[("fairfield", 'C', 'adu')] = ("fairfield", '§5.2.2(C) attached ADUs', 'Attached Accessory Dwelling Units are permitted per the standards of Section 13, but only where the minimum lot requirements are met and where there exists only a single-family residence on the parcel.')
+# page [PDF [97]]
+V2_CITES_FAIRFIELD[("fairfield", 'C', 'parking')] = ("fairfield", '§25.4.1(K) multi-family parking (16 units or fewer)', 'Multi-family: 1 space for up to each 1-bedroom and 2 spaces for each 2-bedroom unit or larger.')
+# page [PDF [17]]
+V2_CITES_FAIRFIELD[("fairfield", 'BD', 'use')] = ("fairfield", '§4.2(A) Beach District permitted use', 'A single detached dwelling for one family and not more than one such dwelling per lot')
+# page [PDF [18]]
+V2_CITES_FAIRFIELD[("fairfield", 'BD', 'lot')] = ("fairfield", '§4.4 Conforming Lots', 'Each lot shall have a minimum area of 9,375 square feet')
+# page [PDF [17]]
+V2_CITES_FAIRFIELD[("fairfield", 'BD', 'adu')] = ("fairfield", '§4.2(D)(1) Beach District accessory structures', 'no detached accessory structure shall contain any finished livable floor area, plumbing fixtures or heat')
+# page [PDF [97]]
+V2_CITES_FAIRFIELD[("fairfield", 'BD', 'parking')] = ("fairfield", '§25.4.1(K) single-family parking', 'Single-family residential - 2 spaces')
+# page [PDF [28]]
+V2_CITES_FAIRFIELD[("fairfield", 'CDD', 'use')] = ("fairfield", '§6.3 permitted uses table, row Z (CDD / DCD / NDD columns)', 'Z. Residential uses provided it shall not be located on a ground P P P 6.3.4')
+# page [PDF [26]]
+V2_CITES_FAIRFIELD[("fairfield", 'CDD', 'approval')] = ("fairfield", '§6.2 Special Permit Uses', 'A Special Permit under Section 31 of these regulations shall be required for any new construction, re-construction, exterior alterations, or addition for a use permitted in Section 6.3')
+# page [PDF [31]]
+V2_CITES_FAIRFIELD[("fairfield", 'CDD', 'lot')] = ("fairfield", '§6.4 table row B, minimum lot size', 'B. Minimum Lot Size (sf) No minimum No minimum No minimum')
+# page [PDF [28]]
+V2_CITES_FAIRFIELD[("fairfield", 'CDD', 'adu')] = ("fairfield", '§6.3 permitted uses table, row Z (CDD / DCD / NDD columns)', 'Z. Residential uses provided it shall not be located on a ground P P P 6.3.4')
+# page [PDF [97]]
+V2_CITES_FAIRFIELD[("fairfield", 'CDD', 'parking')] = ("fairfield", '§25.4.1(K) multi-family parking (16 units or fewer)', 'Multi-family: 1 space for up to each 1-bedroom and 2 spaces for each 2-bedroom unit or larger.')
+# page [PDF [28]]
+V2_CITES_FAIRFIELD[("fairfield", 'DCD', 'use')] = ("fairfield", '§6.3 permitted uses table, row Z (CDD / DCD / NDD columns)', 'Z. Residential uses provided it shall not be located on a ground P P P 6.3.4')
+# page [PDF [26]]
+V2_CITES_FAIRFIELD[("fairfield", 'DCD', 'approval')] = ("fairfield", '§6.2 Special Permit Uses', 'A Special Permit under Section 31 of these regulations shall be required for any new construction, re-construction, exterior alterations, or addition for a use permitted in Section 6.3')
+# page [PDF [31]]
+V2_CITES_FAIRFIELD[("fairfield", 'DCD', 'lot')] = ("fairfield", '§6.4 table row B, minimum lot size', 'B. Minimum Lot Size (sf) No minimum No minimum No minimum')
+# page [PDF [28]]
+V2_CITES_FAIRFIELD[("fairfield", 'DCD', 'adu')] = ("fairfield", '§6.3 permitted uses table, row Z (CDD / DCD / NDD columns)', 'Z. Residential uses provided it shall not be located on a ground P P P 6.3.4')
+# page [PDF [97]]
+V2_CITES_FAIRFIELD[("fairfield", 'DCD', 'parking')] = ("fairfield", '§25.4.1(K) multi-family parking (16 units or fewer)', 'Multi-family: 1 space for up to each 1-bedroom and 2 spaces for each 2-bedroom unit or larger.')
+# page [PDF [28]]
+V2_CITES_FAIRFIELD[("fairfield", 'NDD', 'use')] = ("fairfield", '§6.3 permitted uses table, row Z (CDD / DCD / NDD columns)', 'Z. Residential uses provided it shall not be located on a ground P P P 6.3.4')
+# page [PDF [26]]
+V2_CITES_FAIRFIELD[("fairfield", 'NDD', 'approval')] = ("fairfield", '§6.2 Special Permit Uses', 'A Special Permit under Section 31 of these regulations shall be required for any new construction, re-construction, exterior alterations, or addition for a use permitted in Section 6.3')
+# page [PDF [31]]
+V2_CITES_FAIRFIELD[("fairfield", 'NDD', 'lot')] = ("fairfield", '§6.4 table row B, minimum lot size', 'B. Minimum Lot Size (sf) No minimum No minimum No minimum')
+# page [PDF [28]]
+V2_CITES_FAIRFIELD[("fairfield", 'NDD', 'adu')] = ("fairfield", '§6.3 permitted uses table, row Z (CDD / DCD / NDD columns)', 'Z. Residential uses provided it shall not be located on a ground P P P 6.3.4')
+# page [PDF [97]]
+V2_CITES_FAIRFIELD[("fairfield", 'NDD', 'parking')] = ("fairfield", '§25.4.1(K) multi-family parking (16 units or fewer)', 'Multi-family: 1 space for up to each 1-bedroom and 2 spaces for each 2-bedroom unit or larger.')
+# page [PDF [52]]
+V2_CITES_FAIRFIELD[("fairfield", 'DRD', 'use')] = ("fairfield", '§10.4(A) Designed Residence special permit use', 'A dwelling for one or more families and accessory uses, customary with and incidental to such use')
+# page [PDF [52]]
+V2_CITES_FAIRFIELD[("fairfield", 'DRD', 'approval')] = ("fairfield", '§10.4 Special Permit Uses preamble', 'the use of land, buildings and other structures shall be subject to securing a Special Permit from the Commission as provided for in Section 31')
+# page [PDF [54]]
+V2_CITES_FAIRFIELD[("fairfield", 'DRD', 'lot')] = ("fairfield", '§10.6.2(B) other parcels', 'On all other parcels, the maximum allowable dwelling unit density shall be 10 units per acre and each lot shall have a minimum area of 1 acre.')
+# page [PDF [52]]
+V2_CITES_FAIRFIELD[("fairfield", 'DRD', 'adu')] = ("fairfield", '§10.4(A) Designed Residence special permit use', 'A dwelling for one or more families and accessory uses, customary with and incidental to such use')
+# page [PDF [97]]
+V2_CITES_FAIRFIELD[("fairfield", 'DRD', 'parking')] = ("fairfield", '§25.4.1(K) multi-family parking (16 units or fewer)', 'Multi-family: 1 space for up to each 1-bedroom and 2 spaces for each 2-bedroom unit or larger.')
+# page [PDF [45]]
+V2_CITES_FAIRFIELD[("fairfield", 'DI', 'use')] = ("fairfield", '§8.8.3(A) Transportation/Commercial Park permitted uses', 'Residential uses for one or more families.')
+# page [PDF [45]]
+V2_CITES_FAIRFIELD[("fairfield", 'DI', 'approval')] = ("fairfield", '§8.8.2 Transportation/Commercial Park special permit', 'A Special Permit under Section 31 of these regulations shall be required for any new construction, reconstruction, exterior alteration or addition for a use permitted by Section 8.8.3.')
+# page [PDF [46]]
+V2_CITES_FAIRFIELD[("fairfield", 'DI', 'lot')] = ("fairfield", '§8.8.5(A) qualifying park', 'having a minimum of 10 acres in an area adjacent to a railroad passenger station')
+# page [PDF [45]]
+V2_CITES_FAIRFIELD[("fairfield", 'DI', 'adu')] = ("fairfield", '§8.8.3(A) Transportation/Commercial Park permitted uses', 'Residential uses for one or more families.')
+# page [PDF [47]]
+V2_CITES_FAIRFIELD[("fairfield", 'DI', 'parking')] = ("fairfield", '§8.8.7(C) residential parking', 'C. Residential Uses: Lesser of 1 parking space per bedroom or 1.25 spaces per household.')
+
+V2_DISTRICTS["fairfield"] = V2_DISTRICTS_FAIRFIELD
+V2_CITES.update(V2_CITES_FAIRFIELD)
+# Demolition: no demolition-delay rule appears anywhere in the mirrored zoning regulations (searched 'demoli' and 'delay'); demo stays None for every district.
+
+V2_DISTRICTS["fairfield"] = V2_DISTRICTS_FAIRFIELD
+V2_CITES.update(V2_CITES_FAIRFIELD)
+# Only quoted text is scored: BD's ADU rule is inferred, DRD has no underlying zone in the map layer, and DI's
+# 10-acre figure is a tract threshold, not a lot minimum, so those inputs stay unconfirmed.
+V2_DISTRICTS["fairfield"]["BD"]["adu"] = None
+V2_DISTRICTS["fairfield"]["DRD"]["adu"] = None
+V2_DISTRICTS["fairfield"]["DI"]["lot"] = None
+
+# Trumbull: Residence AAA, AA and A.
+V2_SOURCES["trumbull"] = ("trumbull-zoning.pdf", "Trumbull Zoning Regulations (amended through Aug. 19, 2026)", "https://trumbull-ct.gov/DocumentCenter/View/1323")
+_ADU_SP = ("trumbull", "Art. II §1.1.2(7)(D) Accessory apartment application procedure (p. 47)",
+           "All other applications for accessory apartments shall be a Special Permit application made to the Planning and Zoning Commission")
+_ADU_ADMIN = ("trumbull", "Art. II §1.1.2(7)(D) Accessory apartment application procedure (p. 47)",
+              "then an application may be made to, and approved by, the Zoning Enforcement Officer.")
+_SF_USE = ("trumbull", "Art. II §1.1.1 Residence AAA/AA/A permitted uses (p. 42)",
+           "no Building or Structure shall be erected, altered, occupied or used, arranged or designed to be used for other than one or more of the following specified purposes: 1. One-Family Dwelling;")
+
+V2_DISTRICTS_TRUMBULL = {
+    # AAA: 1,433.7 acres. Include. Art. I §2 (p. 3), Art. II §1.1 (pp. 42-47), Art. III Exhibit
+    "AAA": {"use": "none", "approval": "none", "lot": 43560, "adu": "administrative", "parking": None, "demo": None,
+            "note": "Residence AAA (Art. II §1.1): One-Family Dwelling only; 1 acre minimum (Art. I §2); attached accessory apartment only: ZEO approval if inside the existing footprint, otherwise Special Permit, detached ADU barred, owner-occupancy, 40-year 8-30g deed restriction, 4 off-street spaces (§1.1.2(7)) -- ADU tier is a JUDGMENT (best-case qualifying pathway, as Stamford R-6; alternative special_permit); no per-unit parking minimum found, only a 4-vehicle maximum (§1.1.6), so parking None; no demolition waiting period in the code"},
+    # AA: 6,752.6 acres. Include.
+    "AA": {"use": "none", "approval": "none", "lot": 43560, "adu": "administrative", "parking": None, "demo": None,
+           "note": "Residence AA: as AAA (shared Art. II §1.1); 1 acre minimum (Art. I §2)"},
+    # A: 3,629.7 acres. Include.
+    "A": {"use": "none", "approval": "none", "lot": 21780, "adu": "administrative", "parking": None, "demo": None,
+          "note": "Residence A: as AAA (shared Art. II §1.1); 1/2 acre minimum (Art. I §2)"},
+    # B-C LHGTHN: 30.3 acres. Include (flagged). Art. II §3.2 (pp. 117-123); Art. III Exhibit (B-C row)
+    "B-C LHGTHN": {"use": "discretionary", "approval": "discretionary", "lot": 87120, "adu": "prohibited", "parking": None, "demo": None,
+                   "note": "B-C Long Hill Green / Town Hall Node (§3.2): Multi-Family Dwellings are item 14 of a numbered list that runs on from the §3.2.4 Special Permit list (items 1-5 post offices..gas stations, 6-14 day care, fast food, ..., multi-family); §3.2.1 permitted list stops at item 5 (and excludes Fast Food) -- Special Permit reading is INFERRED from list numbering, confirm against the adopted text; cap 12 units/gross acre, max 50% of floor area, upper floors on parcels under 1 acre, studios-2BR only, 10% affordable (§3.2.1 item 14); lot 2 acres = underlying B-C minimum (Art. III Exhibit) -- JUDGMENT, §3.2.5(1) deems existing lots buildable; no single-family dwelling or accessory-apartment rule applies in this zone (ADU rule sits in §1.1.2 for Residence A/AA/AAA only) so ADU scored prohibited -- INFERRED; parking sufficient per ITE (§3.2.7), no ratio"},
+    # MDD: 83.9 acres. Include (flagged). Art. II §3.4 (pp. 134-139)
+    "MDD": {"use": "discretionary", "approval": "discretionary", "lot": 87120, "adu": "prohibited", "parking": None, "demo": None,
+            "note": "Mixed-Use Design District (§3.4): any multi-family residential use must receive Special Permit (§3.4.5); no multi-family in the §3.4.2 permitted list; separate parcels must be at least 2 acres (§3.4.6(1)) -- lot is that parcel minimum; no single-family or ADU provision applies so ADU prohibited -- INFERRED; age-restricted units 1.5 spaces/unit (§3.4.7) but that is a subcategory, parking None"},
+    # MFO overlay: 50.2 acres (overlay layer; overlaps I-L/I-L2). Include (flagged). Art. II §7.6 (pp. 171-173)
+    "MFO": {"use": "discretionary", "approval": "discretionary", "lot": 435600, "adu": "prohibited", "parking": 2.0, "demo": None,
+            "note": "Multi-Family Overlay (§7.6): requires rezoning of existing I-L/I-L2 land of at least 10 acres without direct state-highway access (§7.6.2), then Special Permit for up to 220 units (§7.6.3); 20 units/acre, 600-unit town-wide cap, 220 per 12 months (§7.6.4(1)); lot = 10-acre eligibility minimum (435,600 sq ft) -- JUDGMENT, tract threshold; parking 1.8/1BR, 2.0/2BR plus 1 guest per 20 units (§7.6.4(5)), scored 2.0; ADU prohibited -- INFERRED (multi-family only, no ADU rule); Art. XVII moratorium on rental housing applications over 50 units runs to Feb. 28, 2027"},
+}
+
+V2_CITES_TRUMBULL = {}
+for _d in ("AAA", "AA", "A"):
+    V2_CITES_TRUMBULL[("trumbull", _d, "use")] = _SF_USE
+    V2_CITES_TRUMBULL[("trumbull", _d, "adu")] = _ADU_ADMIN
+V2_CITES_TRUMBULL[("trumbull", "AAA", "lot")] = ("trumbull", "Art. I §2 Classes of Zones, Residence AAA (p. 3)", "Residence Zone AAA              (minimum lot size 1 acre, 43,560 sq. ft.)")
+V2_CITES_TRUMBULL[("trumbull", "AA", "lot")] = ("trumbull", "Art. I §2 Classes of Zones, Residence AA (p. 3)", "Residence Zone AA               (minimum lot size 1 acre, 43,560 sq. ft.)")
+V2_CITES_TRUMBULL[("trumbull", "A", "lot")] = ("trumbull", "Art. I §2 Classes of Zones, Residence A (p. 3)", "Residence Zone A                (minimum lot size ½ acre, 21,780 sq. ft.)")
+# Parking (A/AA/AAA): NOT a minimum. Only a maximum is stated; quote kept for the record, parking stays None.
+TRUMBULL_PARKING_CONTEXT = ("trumbull", "Art. II §1.1.6(1) Maximum Outdoor Parking for a Dwelling (p. 53)", "No more than four (4) motor vehicles shall be parked on any Lot, other than motor vehicles parked within a Private Garage.")
+
+V2_CITES_TRUMBULL[("trumbull", "B-C LHGTHN", "use")] = ("trumbull", "Art. II §3.2.4 Special Permit list, item 14 Multi-Family Dwellings (pp. 119-120)", "Multi-family dwellings in this zone may be permitted subject to the following regulations:")
+V2_CITES_TRUMBULL[("trumbull", "B-C LHGTHN", "lot")] = ("trumbull", "Art. III Exhibit, Commercial B-C row (p. 183)", "Commercial B-C        2 acres        250")
+V2_CITES_TRUMBULL[("trumbull", "B-C LHGTHN", "adu")] = ("trumbull", "Art. II §3.2.1 permitted-use limiting clause (p. 117)", "no Building or Structure shall be erected, altered, occupied or used, arranged or designed to be used for other than one or more of the following specified uses")
+V2_CITES_TRUMBULL[("trumbull", "MDD", "use")] = ("trumbull", "Art. II §3.4.5 MDD site plan / special permit (p. 137)", "any multi- family residential use must receive Special")
+V2_CITES_TRUMBULL[("trumbull", "MDD", "lot")] = ("trumbull", "Art. II §3.4.6(1) MDD bulk (p. 137)", "must have a minimum lot size of 2 (two) acres")
+V2_CITES_TRUMBULL[("trumbull", "MDD", "adu")] = ("trumbull", "Art. II §3.4.2 MDD permitted uses (p. 133)", "no building or structure shall be erected, altered, occupied, or used, arranged or designed to be used for other than one or more of the following")
+V2_CITES_TRUMBULL[("trumbull", "MFO", "use")] = ("trumbull", "Art. II §7.6.3 Uses Permitted by Special Permit (p. 172)", "Multi-family residential development of not more than 220 units")
+V2_CITES_TRUMBULL[("trumbull", "MFO", "lot")] = ("trumbull", "Art. II §7.6.2(b) MFO location criteria (p. 171)", "b. Not less than 10 acres; and")
+V2_CITES_TRUMBULL[("trumbull", "MFO", "adu")] = ("trumbull", "Art. II §7.6.3 Uses Permitted by Special Permit (p. 172)", "Multi-family residential development of not more than 220 units and associated clubhouse and amenity and/or active recreational space")
+V2_CITES_TRUMBULL[("trumbull", "MFO", "parking")] = ("trumbull", "Art. II §7.6.4(5) MFO parking (p. 172)", "Parking for residential units shall be provided at 2.0 spaces per two bedroom unit and 1.8 spaces per one bedroom unit.")
+
+V2_DISTRICTS["trumbull"] = V2_DISTRICTS_TRUMBULL
+V2_CITES.update(V2_CITES_TRUMBULL)
+# Accessory apartments inside the existing footprint go to the Zoning Enforcement Officer, but every other
+# application is a Special Permit (Art. II 1.1.2(7)(D)); score the pathway most new ADUs face.
+for _d in ("AAA", "AA", "A"):
+    V2_DISTRICTS["trumbull"][_d]["adu"] = "special_permit"
+    V2_CITES[("trumbull", _d, "adu")] = _ADU_SP
+# The non-residential districts' ADU rule would be inferred from a closed use list, and MFO's 10 acres is a
+# site threshold, so these stay unconfirmed and out of the score.
+for _d in ("B-C LHGTHN", "MDD", "MFO"):
+    V2_DISTRICTS["trumbull"][_d]["adu"] = None
+
+# Corrections from the evidence audit (Nov. 2026). Each one is a rule the quoted text does not support as written,
+# so the input is either narrowed to the value the text states or left unconfirmed (and the district drops out).
+_AUDIT_FIXES = [
+    # Stamford: lot minimums must match the multifamily column the tier describes; C-D and TCDD follow the code.
+    ("stamford", "NX-D", {"lot": 6000}),
+    ("stamford", "R-5", {"lot": 9000}),
+    ("stamford", "TCDD", {"lot": 43560}),
+    ("stamford", "C-D", {"adu": None}),
+    # Greenwich: business zones state no area minimum (the table points to a purpose clause); WB's accessory-unit
+    # rule is inferred; R-PHD-SU is a floating zone created by map change, and its 1,800 sq ft figure is per unit.
+    ("greenwich", "LB", {"lot": None}), ("greenwich", "LBR-2", {"lot": None}),
+    ("greenwich", "CGB", {"lot": None}), ("greenwich", "CGBR", {"lot": None}),
+    ("greenwich", "GB", {"lot": None}), ("greenwich", "GBO", {"lot": None}),
+    ("greenwich", "WB", {"adu": None}),
+    ("greenwich", "R-PHD-SU", {"lot": None, "approval": "discretionary", "use": "narrow_by_right"}),
+    # Fairfield: B and C are scored on the two-family minimum (the tier is two-family by right); CDD, DCD and NDD
+    # need a Special Permit for new construction; DRD's 1-acre figure is only a floor; DI's use is Special Permit only.
+    ("fairfield", "B", {"lot": 9000}), ("fairfield", "C", {"lot": 7500}),
+    ("fairfield", "CDD", {"use": "discretionary"}), ("fairfield", "DCD", {"use": "discretionary"}),
+    ("fairfield", "NDD", {"use": "discretionary"}),
+    ("fairfield", "DRD", {"lot": None}), ("fairfield", "DI", {"adu": None}),
+    # Bridgeport: NX1 and NX2 already allow several units by right, so the accessory-unit pathway is not applicable.
+    ("bridgeport", "NX1", {"adu": "n/a"}), ("bridgeport", "NX2", {"adu": "n/a"}),
+]
+for _slug, _d, _changes in _AUDIT_FIXES:
+    V2_DISTRICTS[_slug][_d].update(_changes)
+# Trumbull's Residence A/AA/AAA note still described the administrative pathway that the scored value no longer uses.
+# Scored on the easiest pathway open to an ordinary owner, the same rule applied to Stamford and Greenwich: a
+# Zoning Enforcement Officer approval for an accessory apartment inside the existing footprint (Art. II 1.1.2(7)(D)).
+# Other applications need a Special Permit, which is the harder pathway and is stated in the note.
+for _d in ("AAA", "AA", "A"):
+    V2_DISTRICTS["trumbull"][_d]["adu"] = "zoning_permit"
+    V2_CITES[("trumbull", _d, "adu")] = _ADU_ADMIN
+    V2_DISTRICTS["trumbull"][_d]["note"] = (
+        "Single-family dwelling only (Art. II 1.1.1); minimum lot per Art. I 2 (AAA and AA 43,560 sq ft, A 21,780 sq ft). "
+        "Accessory apartments inside the existing footprint are approved by the Zoning Enforcement Officer (scored: easiest pathway); "
+        "all other applications need a Special Permit (Art. II 1.1.2(7)(D)); owner occupancy and a deed restriction apply."
+    )
+
 def _pdf_compact_text(filename):
     import subprocess
     path = os.path.join(ROOT, "public", "sources", filename)
@@ -1245,6 +1846,8 @@ def _factor_explanation(label, inputs, points):
         return "days", f"{demo}-day delay; scored at {demo}/180 of the 15-point scale.", f"{demo} days"
     return None, "", ""
 
+V2_CORE_COMPONENTS = ("Multifamily Access", "Approval Discretion", "Minimum Lot Size", "ADU Approval Pathway")
+
 def compute_v2_district(inputs, citations=None):
     use, approval, adu, lot, parking, demo = (inputs["use"], inputs["approval"], inputs["adu"],
                                               inputs["lot"], inputs["parking"], inputs["demo"])
@@ -1274,12 +1877,21 @@ def compute_v2_district(inputs, citations=None):
         else:
             f["scale"] = None
         f["scale_note"] = V2_FACTOR_SCALE_NOTE[f["label"]]
-    scored = [f for f in factors if f["points"] is not None]
-    achieved = sum(f["points"] for f in scored)
-    possible = sum(f["max_points"] for f in scored)
+    # Cross-town basis: only the components every compared town can document (the core four)
+    # count toward the score. Parking and demolition delay stay on each district as context,
+    # because Greenwich has no numeric single-family parking rule and Stamford and Bridgeport
+    # have no quoted demolition-delay period, so including them would put towns on different scales.
+    for f in factors:
+        f["in_score"] = f["label"] in V2_CORE_COMPONENTS
+    core = [f for f in factors if f["in_score"] and f["points"] is not None]
+    achieved = sum(f["points"] for f in core)
+    possible = sum(f["max_points"] for f in core)
+    extended = [f for f in factors if f["points"] is not None]
+    ext_possible = sum(f["max_points"] for f in extended)
     return {"score": round(achieved / possible * 100, 1) if possible else None,
-            "components_scored": len(scored),
-            "components_confirmed": len(scored) + (1 if adu == "n/a" else 0), "factors": factors}
+            "score_extended": round(sum(f["points"] for f in extended) / ext_possible * 100, 1) if ext_possible else None,
+            "components_scored": len(core),
+            "components_confirmed": len(core) + (1 if adu == "n/a" else 0), "factors": factors}
 
 def compute_v2_town(slug):
     land_path = os.path.join(LAND_DIR, f"{slug}.json")
@@ -1288,6 +1900,11 @@ def compute_v2_town(slug):
         acres_by_code = {k: v["acres"] for k, v in land["districts_current_code"].items()}
     else:
         acres_by_code = {k: v["acres"] for k, v in land["districts"].items()}
+    for alias, base in V2_ACRE_FOLD.get(slug, {}).items():
+        if alias in acres_by_code and base not in acres_by_code:
+            raise SystemExit(f"{slug}: acreage fold {alias} -> {base}: base district missing from land-area file")
+        if alias in acres_by_code:
+            acres_by_code[base] = acres_by_code[base] + acres_by_code.pop(alias)
     acres_norm = {V2_LOOKUP_NORMALIZE(k): (k, a) for k, a in acres_by_code.items()}
     results = []
     for code, inputs in V2_DISTRICTS[slug].items():
@@ -1299,9 +1916,10 @@ def compute_v2_town(slug):
         r = compute_v2_district(inputs, cites)
         results.append({"district": code, "acres": round(acres, 1), "score": r["score"],
                         "components_scored": r["components_scored"],
-                        "components_confirmed": r["components_confirmed"], "factors": r["factors"],
+                        "components_confirmed": r["components_confirmed"], "score_extended": r["score_extended"],
+                        "factors": r["factors"],
                         "note": inputs["note"], "citations": cites})
-    V2_MIN_COMPONENTS = 5
+    V2_MIN_COMPONENTS = len(V2_CORE_COMPONENTS)
     for r in results:
         r["included"] = r["score"] is not None and r["components_confirmed"] >= V2_MIN_COMPONENTS
     scored = [r for r in results if r["included"]]
@@ -1311,7 +1929,7 @@ def compute_v2_town(slug):
         r["contribution"] = round(r["score"] * r["acres"] / total_acres, 2) if r["included"] and total_acres else None
         if not r["included"]:
             r["exclusion_reason"] = ("No score: the district has no confirmed inputs." if r["score"] is None
-                                     else f"Excluded: only {r['components_confirmed']} of 6 components are confirmed (minimum 5).")
+                                     else f"Excluded: only {r['components_confirmed']} of the {V2_MIN_COMPONENTS} scored components are confirmed (all {V2_MIN_COMPONENTS} are required).")
     weighted = sum(r["score"] * r["acres"] for r in scored) / total_acres if total_acres else None
     return {
         "land_weighted_score": round(weighted, 1) if weighted is not None else None,
@@ -1320,7 +1938,7 @@ def compute_v2_town(slug):
         "districts": results,
         "formula": "V2 = sum(district score x acres) / sum(acres) over included districts",
         "method": ("Each district is scored with the same six-component rubric using only its own rules. "
-                   "A district is included only if at least 5 of 6 components are confirmed. The town V2 score is the land-area-weighted mean of included district scores; "
+                   "The score uses four components that every town can document (multifamily access, approval discretion, minimum lot size, ADU pathway); a district is included only if all four are confirmed. Parking and demolition delay are shown as context but not scored, so towns share one scale. The town V2 score is the land-area-weighted mean of included district scores; "
                    "acreage is from data/land_area/%s.json. Components with no confirmed input "
                    "are excluded per district." % slug),
     }

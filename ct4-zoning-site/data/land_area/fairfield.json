@@ -1,0 +1,86 @@
+{
+ "slug": "fairfield",
+ "source": {
+  "title": "Town of Fairfield Zoning Districts (Fairfield_Landuse MapServer layer 7, hosted at maps.ctmetro.org)",
+  "url": "https://maps.ctmetro.org/server/rest/services/Fairfield/Fairfield_Landuse/MapServer/7",
+  "retrieved": "2026-11-02"
+ },
+ "method": "Sum of Shape_Area (state-plane feet squared, NAD83 CT State Plane, EPSG:2234) grouped by ZONE via outStatistics; converted to acres via /43560; 'parcels' is the polygon count per ZONE. Total = 19650 acres. The Commerce Drive Area Designed District (MapServer layer 9, 189.5 acres) is an overlay on DCD/DI polygons and is already counted inside DCD and DI here.",
+ "districts": {
+  "AAA": {
+   "acres": 8090.6,
+   "parcels": 3,
+   "description": "Residence AAA (single-family, 2 acre)"
+  },
+  "R-3": {
+   "acres": 3118.7,
+   "parcels": 12,
+   "description": "Residence R-3 (single-family, 20,000 sq ft)"
+  },
+  "A": {
+   "acres": 3109.2,
+   "parcels": 14,
+   "description": "Residence A (single-family, 9,375 sq ft)"
+  },
+  "AA": {
+   "acres": 2190.8,
+   "parcels": 5,
+   "description": "Residence AA (single-family, 1 acre)"
+  },
+  "B": {
+   "acres": 1000.8,
+   "parcels": 20,
+   "description": "Residence B (one- and two-family)"
+  },
+  "DCD": {
+   "acres": 445.7,
+   "parcels": 12,
+   "description": "Designed Commercial District"
+  },
+  "FPD": {
+   "acres": 370.4,
+   "parcels": 1,
+   "description": "Flood Plain District"
+  },
+  "DRD": {
+   "acres": 307.8,
+   "parcels": 46,
+   "description": "Designed Residence District"
+  },
+  "R-2": {
+   "acres": 296.0,
+   "parcels": 4,
+   "description": "Residence R-2 (single-family, 14,000 sq ft)"
+  },
+  "DI": {
+   "acres": 260.9,
+   "parcels": 13,
+   "description": "Designed Industrial District"
+  },
+  "BD": {
+   "acres": 146.5,
+   "parcels": 1,
+   "description": "Beach District"
+  },
+  "DR": {
+   "acres": 103.0,
+   "parcels": 2,
+   "description": "Designed Research District"
+  },
+  "C": {
+   "acres": 86.4,
+   "parcels": 10,
+   "description": "Residence C (one- to four-family)"
+  },
+  "CDD": {
+   "acres": 66.9,
+   "parcels": 3,
+   "description": "Center Designed Business District"
+  },
+  "NDD": {
+   "acres": 56.1,
+   "parcels": 12,
+   "description": "Neighborhood Designed Business District"
+  }
+ }
+}

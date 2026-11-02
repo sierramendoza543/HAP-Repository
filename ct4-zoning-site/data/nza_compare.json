@@ -1,0 +1,342 @@
+{
+ "stamford": {
+  "as_of_right": {
+   "1-family": {
+    "ours": 99.3,
+    "nza": 95.8
+   },
+   "2-family": {
+    "ours": 10.4,
+    "nza": 10.3
+   },
+   "3-family": {
+    "ours": 9.1,
+    "nza": 8.5
+   },
+   "4+-family": {
+    "ours": 9.1,
+    "nza": 8.5
+   }
+  },
+  "hearing": {
+   "1-family": {
+    "ours": 0.0,
+    "nza": 2.9
+   },
+   "2-family": {
+    "ours": 0.0,
+    "nza": 3.2
+   },
+   "3-family": {
+    "ours": 0.0,
+    "nza": 3.6
+   },
+   "4+-family": {
+    "ours": 0.0,
+    "nza": 17.6
+   }
+  },
+  "prohibited": {
+   "1-family": {
+    "ours": 0.7,
+    "nza": 1.4
+   },
+   "2-family": {
+    "ours": 89.6,
+    "nza": 86.5
+   },
+   "3-family": {
+    "ours": 90.9,
+    "nza": 87.9
+   },
+   "4+-family": {
+    "ours": 90.9,
+    "nza": 73.9
+   }
+  },
+  "lot80": {
+   "ours": 27.4,
+   "nza": 21.9
+  },
+  "parking": {
+   "ours": 100.0,
+   "nza": 100
+  },
+  "adu": {
+   "ours": "Allowed by Zoning Permit with owner-occupancy on lots of at least 10,000 sq ft, in every district that permits single-family (ADU definition, Sec. 4)",
+   "nza": "100% of 1-family land coded Prohibited"
+  },
+  "base_acres": {
+   "ours": 21766.4,
+   "nza": 17693
+  },
+  "notes": [
+   "NZA shows 17.6% of residential land where 4+-family housing may be allowed after a hearing; Appendix A of the 2024 code shows none, and the difference is unexplained.",
+   "NZA codes every 1-family acre as ADU-prohibited; the 2024 code allows ADUs by zoning permit with owner occupancy on lots of at least 10,000 sq ft.",
+   "Our shares use gross district acres; NZA removes protected and unzoned land."
+  ],
+  "proxy": {
+   "ours": 70.0,
+   "nza_stored": 64.7,
+   "nza_live": 64.7,
+   "difference": 5.3
+  },
+  "method": "Recomputed from the town's mirrored zoning code and our district acreage, using NZA's own definitions (share of residential land by status; 1-family minimum-lot bins; parking mandate share) and the proxy formula (0.30 x mean of 2-, 3-, 4+-family prohibited + 0.25 x large-lot share + 0.15 x parking share) / 0.70.",
+  "replication_file": "data/nza_replication/stamford.json"
+ },
+ "greenwich": {
+  "as_of_right": {
+   "1-family": {
+    "ours": 99.8,
+    "nza": 99.0
+   },
+   "2-family": {
+    "ours": 5.3,
+    "nza": 3.4
+   },
+   "3-family": {
+    "ours": 2.0,
+    "nza": 1.4
+   },
+   "4+-family": {
+    "ours": 0.0,
+    "nza": 1.4
+   }
+  },
+  "hearing": {
+   "1-family": {
+    "ours": 0.0,
+    "nza": 0.9
+   },
+   "2-family": {
+    "ours": 0.2,
+    "nza": 0.6
+   },
+   "3-family": {
+    "ours": 0.4,
+    "nza": 0.7
+   },
+   "4+-family": {
+    "ours": 2.5,
+    "nza": 0.1
+   }
+  },
+  "prohibited": {
+   "1-family": {
+    "ours": 0.2,
+    "nza": 0.1
+   },
+   "2-family": {
+    "ours": 94.2,
+    "nza": 96.0
+   },
+   "3-family": {
+    "ours": 97.5,
+    "nza": 97.9
+   },
+   "4+-family": {
+    "ours": 97.5,
+    "nza": 98.5
+   }
+  },
+  "lot80": {
+   "ours": 62.6,
+   "nza": 65.0
+  },
+  "parking": {
+   "ours": 100.0,
+   "nza": 100
+  },
+  "adu": {
+   "ours": "Allowed by zoning permit (administrative approval from the Planning and Zoning Office) with owner-occupancy, in RA-4, RA-2, RA-1, R-20, R-12, R-7 and R-6; oversize ADUs or ADUs on nonconforming lots need a special permit.",
+   "nza": "NZA codes 87.5% of 1-family land as allowed with occupancy restrictions and 12.4% prohibited"
+  },
+  "base_acres": {
+   "ours": 29568.3,
+   "nza": 25072
+  },
+  "notes": [
+   "Stored NZA inputs were checked against NZA's live snapshot on 2026-11-02 and match it (parking 100%, large-lot 65.0%).",
+   "Single-family parking (Sec. 6-154) requires 'sufficient' spaces with no number, so we count it as a mandate; NZA's 92% probably counts only numeric minimums.",
+   "1,229 acres of conservation, R-PR and R-PHD zones are unclassified because their text is not mirrored."
+  ],
+  "proxy": {
+   "ours": 85.1,
+   "nza_stored": 86.4,
+   "nza_live": 86.4,
+   "difference": -1.3
+  },
+  "method": "Recomputed from the town's mirrored zoning code and our district acreage, using NZA's own definitions (share of residential land by status; 1-family minimum-lot bins; parking mandate share) and the proxy formula (0.30 x mean of 2-, 3-, 4+-family prohibited + 0.25 x large-lot share + 0.15 x parking share) / 0.70.",
+  "replication_file": "data/nza_replication/greenwich.json"
+ },
+ "norwalk": {
+  "as_of_right": {
+   "1-family": {
+    "ours": 100.0,
+    "nza": 96.1
+   },
+   "2-family": {
+    "ours": 11.9,
+    "nza": 22.5
+   },
+   "3-family": {
+    "ours": 4.3,
+    "nza": 18.1
+   },
+   "4+-family": {
+    "ours": 4.3,
+    "nza": 18.1
+   }
+  },
+  "hearing": {
+   "1-family": {
+    "ours": 0.0,
+    "nza": 0.0
+   },
+   "2-family": {
+    "ours": 0.0,
+    "nza": 0.0
+   },
+   "3-family": {
+    "ours": 0.0,
+    "nza": 0.0
+   },
+   "4+-family": {
+    "ours": 0.0,
+    "nza": 0.0
+   }
+  },
+  "prohibited": {
+   "1-family": {
+    "ours": 0.0,
+    "nza": 3.9
+   },
+   "2-family": {
+    "ours": 88.1,
+    "nza": 77.5
+   },
+   "3-family": {
+    "ours": 95.7,
+    "nza": 81.9
+   },
+   "4+-family": {
+    "ours": 95.7,
+    "nza": 81.9
+   }
+  },
+  "lot80": {
+   "ours": 0.0,
+   "nza": 0.0
+  },
+  "parking": {
+   "ours": 100.0,
+   "nza": 100
+  },
+  "adu": {
+   "ours": "Permitted by zoning permit with limitations in every Community District (Table 4.3.9.D)",
+   "nza": "NZA codes 10,018 of 10,019 acres of 1-family land as allowed with occupancy restrictions"
+  },
+  "base_acres": {
+   "ours": 12521.1,
+   "nza": 10431
+  },
+  "notes": [
+   "Only five districts have user-confirmed acreage; CD-3W, CD-3C, CD-4 and CD-4W (multifamily) are not in the base, so our multifamily share is below NZA's. Adding them from the unconfirmed flyer crosswalk gives a proxy of 58.1.",
+   "NZA coded the pre-2024 code and our acreage layer is also pre-rewrite."
+  ],
+  "proxy": {
+   "ours": 61.4,
+   "nza_stored": 55.9,
+   "nza_live": 55.9,
+   "difference": 5.5,
+   "ours_with_unconfirmed_districts": 58.1
+  },
+  "method": "Recomputed from the town's mirrored zoning code and our district acreage, using NZA's own definitions (share of residential land by status; 1-family minimum-lot bins; parking mandate share) and the proxy formula (0.30 x mean of 2-, 3-, 4+-family prohibited + 0.25 x large-lot share + 0.15 x parking share) / 0.70.",
+  "replication_file": "data/nza_replication/norwalk.json"
+ },
+ "bridgeport": {
+  "as_of_right": {
+   "1-family": {
+    "ours": 89.0,
+    "nza": 82.5
+   },
+   "2-family": {
+    "ours": 50.9,
+    "nza": 49.8
+   },
+   "3-family": {
+    "ours": 61.9,
+    "nza": 60.7
+   },
+   "4+-family": {
+    "ours": 61.9,
+    "nza": 60.7
+   }
+  },
+  "hearing": {
+   "1-family": {
+    "ours": 0.0,
+    "nza": 0.0
+   },
+   "2-family": {
+    "ours": 18.7,
+    "nza": 18.6
+   },
+   "3-family": {
+    "ours": 0.0,
+    "nza": 0.0
+   },
+   "4+-family": {
+    "ours": 0.0,
+    "nza": 1.4
+   }
+  },
+  "prohibited": {
+   "1-family": {
+    "ours": 11.0,
+    "nza": 17.5
+   },
+   "2-family": {
+    "ours": 30.5,
+    "nza": 31.5
+   },
+   "3-family": {
+    "ours": 38.1,
+    "nza": 39.3
+   },
+   "4+-family": {
+    "ours": 38.1,
+    "nza": 37.9
+   }
+  },
+  "lot80": {
+   "ours": 0.0,
+   "nza": 0.0
+  },
+  "parking": {
+   "ours": 0.0,
+   "nza": 0
+  },
+  "adu": {
+   "ours": "By right in N1, N3, N4; special permit in N2 (accessory apartment rules, Sec. 3.90-3.120)",
+   "nza": "NZA codes 1,132 acres allowed and 1,096 acres hearing, close to our N1+N3+N4 and N2"
+  },
+  "base_acres": {
+   "ours": 5885.2,
+   "nza": 5885
+  },
+  "notes": [
+   "NZA has about 378 more 1-family-prohibited acres than we find; one possible cause is treating upper-story-only storefront units as not 1-family (that reading gives a proxy of 19.0).",
+   "NZA reads a pre-2022 code; Bridgeport adopted Zone Bridgeport in 2022."
+  ],
+  "proxy": {
+   "ours": 15.2,
+   "nza_stored": 15.5,
+   "nza_live": 15.5,
+   "difference": -0.3,
+   "ours_with_unconfirmed_districts": 19.0
+  },
+  "method": "Recomputed from the town's mirrored zoning code and our district acreage, using NZA's own definitions (share of residential land by status; 1-family minimum-lot bins; parking mandate share) and the proxy formula (0.30 x mean of 2-, 3-, 4+-family prohibited + 0.25 x large-lot share + 0.15 x parking share) / 0.70.",
+  "replication_file": "data/nza_replication/bridgeport.json"
+ }
+}

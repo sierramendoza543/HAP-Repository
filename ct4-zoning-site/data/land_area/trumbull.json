@@ -1,0 +1,61 @@
+{
+ "slug": "trumbull",
+ "source": {
+  "title": "Town of Trumbull PlanningZones and OverlayZones (CT Metro COG, Trumbull_Parcels_NAD83 MapServer layers 7 and 6)",
+  "url": "https://maps.ctmetro.org/server/rest/services/Trumbull/Trumbull_Parcels_NAD83/MapServer/7",
+  "retrieved": "2026-11-02"
+ },
+ "method": "Sum of abs(Shape_Area) (state-plane feet squared, NAD83 CT State Plane, EPSG:2234 US survey feet; raw areas were negative on some features) grouped by Zone, queried without geometry; converted to acres via /43560. Base-zone total = 12655 acres (town land area is 14,786 acres, so about 2,100 acres of roads, water and unzoned land are not in the layer). MFO acres are from OverlayZones layer 6 (ZONECLASS MFOZ, two polygons, 39.9 + 10.3) and overlap the I-L/I-L2 base.",
+ "districts": {
+  "AA": {
+   "acres": 6752.6,
+   "parcels": 1,
+   "description": "Residence AA (1 acre)"
+  },
+  "A": {
+   "acres": 3629.7,
+   "parcels": 3,
+   "description": "Residence A (1/2 acre)"
+  },
+  "AAA": {
+   "acres": 1433.7,
+   "parcels": 1,
+   "description": "Residence AAA (1 acre)"
+  },
+  "I-L2": {
+   "acres": 284.3,
+   "parcels": 18,
+   "description": "Industrial I-L2 (Light Industry, 2 acres)"
+  },
+  "B-C": {
+   "acres": 183.7,
+   "parcels": 13,
+   "description": "Commercial B-C (Business)"
+  },
+  "I-L": {
+   "acres": 140.0,
+   "parcels": 5,
+   "description": "Industrial I-L (Light Industry, 5 acres)"
+  },
+  "I-L3": {
+   "acres": 116.5,
+   "parcels": 1,
+   "description": "Industrial I-L3 (Light Industry, 3 acres)"
+  },
+  "MDD": {
+   "acres": 83.9,
+   "parcels": 1,
+   "description": "Mixed-Use Design District"
+  },
+  "B-C LHGTHN": {
+   "acres": 30.3,
+   "parcels": 5,
+   "description": "B-C Long Hill Green / Town Hall Node (Business/Residential)"
+  },
+  "MFO": {
+   "acres": 50.2,
+   "parcels": 2,
+   "description": "Multi-Family Overlay Zone (overlay layer; overlaps I-L/I-L2, not additive to the total)"
+  }
+ }
+}

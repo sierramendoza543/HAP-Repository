@@ -413,16 +413,17 @@
     "methodology_note": "Computed from the Variables table on this page, not from the NZA data below. Six weighted components (Multifamily Access 30pts, Approval Discretion 10pts, Minimum Lot Size 20pts, ADU Approval Pathway 15pts, Parking Mandate 10pts, Demolition Delay 15pts) are each scored against a fixed, published rubric from a specific cited fact above. Higher = more restrictive."
   },
   "v2": {
-    "land_weighted_score": 70.3,
+    "land_weighted_score": 69.9,
     "districts_included": 5,
     "acres_included": 12521.1,
     "districts": [
       {
         "district": "CD-1L",
         "acres": 4179.3,
-        "score": 78.5,
-        "components_scored": 6,
-        "components_confirmed": 6,
+        "score": 80.7,
+        "components_scored": 4,
+        "components_confirmed": 4,
+        "score_extended": 78.5,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -475,7 +476,8 @@
                 "active": true
               }
             ],
-            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
           },
           {
             "label": "Approval Discretion",
@@ -528,7 +530,8 @@
                 "active": true
               }
             ],
-            "scale_note": "The most permissive approval tier is 1 of 10."
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
           },
           {
             "label": "Minimum Lot Size",
@@ -545,7 +548,8 @@
               "file": "/sources/norwalk-art4.pdf"
             },
             "scale": null,
-            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
           },
           {
             "label": "ADU Approval Pathway",
@@ -598,7 +602,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive ADU tier is 1 of 15."
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
           },
           {
             "label": "Parking Mandate",
@@ -615,7 +620,8 @@
               "file": "/sources/norwalk-art4.pdf"
             },
             "scale": null,
-            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
           },
           {
             "label": "Demolition Delay",
@@ -625,7 +631,8 @@
             "value": "120 days",
             "evidence": null,
             "scale": null,
-            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
           }
         ],
         "note": "Sub-Urban Large Lot; multifamily and two-family not permitted (Table 4.3.9.A); 43,560 sq ft (Table 4.3.1); ADU by zoning permit when it meets principal-building setbacks (§4.3.9.G.4); 2 spaces per dwelling unit (Table 4.3.12.B-1); demolition: 120-day maximum delay (City Code §55-5, adopted 4-24-1984, not a mirrored PDF)",
@@ -665,14 +672,15 @@
         ],
         "included": true,
         "land_share": 33.4,
-        "contribution": 26.2
+        "contribution": 26.94
       },
       {
         "district": "CD-1M",
         "acres": 4255.1,
-        "score": 72.6,
-        "components_scored": 6,
-        "components_confirmed": 6,
+        "score": 72.8,
+        "components_scored": 4,
+        "components_confirmed": 4,
+        "score_extended": 72.6,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -725,7 +733,8 @@
                 "active": true
               }
             ],
-            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
           },
           {
             "label": "Approval Discretion",
@@ -778,7 +787,8 @@
                 "active": true
               }
             ],
-            "scale_note": "The most permissive approval tier is 1 of 10."
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
           },
           {
             "label": "Minimum Lot Size",
@@ -795,7 +805,8 @@
               "file": "/sources/norwalk-art4.pdf"
             },
             "scale": null,
-            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
           },
           {
             "label": "ADU Approval Pathway",
@@ -848,7 +859,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive ADU tier is 1 of 15."
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
           },
           {
             "label": "Parking Mandate",
@@ -865,7 +877,8 @@
               "file": "/sources/norwalk-art4.pdf"
             },
             "scale": null,
-            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
           },
           {
             "label": "Demolition Delay",
@@ -875,7 +888,8 @@
             "value": "120 days",
             "evidence": null,
             "scale": null,
-            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
           }
         ],
         "note": "Sub-Urban Medium Lot; multifamily and two-family not permitted; 12,500 sq ft (Table 4.3.1); ADU by zoning permit; 2 spaces per dwelling unit; demolition as CD-1L",
@@ -915,14 +929,15 @@
         ],
         "included": true,
         "land_share": 34.0,
-        "contribution": 24.67
+        "contribution": 24.74
       },
       {
         "district": "CD-1S",
         "acres": 2599.4,
-        "score": 69.3,
-        "components_scored": 6,
-        "components_confirmed": 6,
+        "score": 68.4,
+        "components_scored": 4,
+        "components_confirmed": 4,
+        "score_extended": 69.3,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -975,7 +990,8 @@
                 "active": true
               }
             ],
-            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
           },
           {
             "label": "Approval Discretion",
@@ -1028,7 +1044,8 @@
                 "active": true
               }
             ],
-            "scale_note": "The most permissive approval tier is 1 of 10."
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
           },
           {
             "label": "Minimum Lot Size",
@@ -1045,7 +1062,8 @@
               "file": "/sources/norwalk-art4.pdf"
             },
             "scale": null,
-            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
           },
           {
             "label": "ADU Approval Pathway",
@@ -1098,7 +1116,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive ADU tier is 1 of 15."
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
           },
           {
             "label": "Parking Mandate",
@@ -1115,7 +1134,8 @@
               "file": "/sources/norwalk-art4.pdf"
             },
             "scale": null,
-            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
           },
           {
             "label": "Demolition Delay",
@@ -1125,7 +1145,8 @@
             "value": "120 days",
             "evidence": null,
             "scale": null,
-            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
           }
         ],
         "note": "Sub-Urban Single-Family; multifamily and two-family not permitted; 6,250 sq ft (Table 4.3.1); ADU by zoning permit; 2 spaces per dwelling unit; demolition as CD-1L",
@@ -1165,14 +1186,15 @@
         ],
         "included": true,
         "land_share": 20.8,
-        "contribution": 14.39
+        "contribution": 14.2
       },
       {
         "district": "CD-2",
         "acres": 943.2,
-        "score": 44.3,
-        "components_scored": 6,
-        "components_confirmed": 6,
+        "score": 35.1,
+        "components_scored": 4,
+        "components_confirmed": 4,
+        "score_extended": 44.3,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -1225,7 +1247,8 @@
                 "active": false
               }
             ],
-            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
           },
           {
             "label": "Approval Discretion",
@@ -1278,7 +1301,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive approval tier is 1 of 10."
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
           },
           {
             "label": "Minimum Lot Size",
@@ -1295,7 +1319,8 @@
               "file": "/sources/norwalk-art4.pdf"
             },
             "scale": null,
-            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
           },
           {
             "label": "ADU Approval Pathway",
@@ -1348,7 +1373,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive ADU tier is 1 of 15."
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
           },
           {
             "label": "Parking Mandate",
@@ -1365,7 +1391,8 @@
               "file": "/sources/norwalk-art4.pdf"
             },
             "scale": null,
-            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
           },
           {
             "label": "Demolition Delay",
@@ -1375,7 +1402,8 @@
             "value": "120 days",
             "evidence": null,
             "scale": null,
-            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
           }
         ],
         "note": "Sub-Urban Single- and Two-Family; two-family detached permitted, multifamily not; 5,000 sq ft (Table 4.3.1); ADU by zoning permit; 2 spaces per dwelling unit; demolition as CD-1L",
@@ -1415,14 +1443,15 @@
         ],
         "included": true,
         "land_share": 7.5,
-        "contribution": 3.34
+        "contribution": 2.64
       },
       {
         "district": "CD-3",
         "acres": 544.1,
-        "score": 38.2,
-        "components_scored": 6,
-        "components_confirmed": 6,
+        "score": 30.7,
+        "components_scored": 4,
+        "components_confirmed": 4,
+        "score_extended": 38.2,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -1475,7 +1504,8 @@
                 "active": false
               }
             ],
-            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
           },
           {
             "label": "Approval Discretion",
@@ -1528,7 +1558,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive approval tier is 1 of 10."
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
           },
           {
             "label": "Minimum Lot Size",
@@ -1545,7 +1576,8 @@
               "file": "/sources/norwalk-art4.pdf"
             },
             "scale": null,
-            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
           },
           {
             "label": "ADU Approval Pathway",
@@ -1598,7 +1630,8 @@
                 "active": false
               }
             ],
-            "scale_note": "The most permissive ADU tier is 1 of 15."
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
           },
           {
             "label": "Parking Mandate",
@@ -1615,7 +1648,8 @@
               "file": "/sources/norwalk-art4.pdf"
             },
             "scale": null,
-            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
           },
           {
             "label": "Demolition Delay",
@@ -1625,7 +1659,8 @@
             "value": "120 days",
             "evidence": null,
             "scale": null,
-            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
           }
         ],
         "note": "General Urban: large and small multifamily permitted with limitations (14-29 units need site plan approval, over 29 a special permit; §4.3.9.G.4); no lot-area minimum (Table 4.3.1 shows NR); 1.3 spaces per dwelling unit; ADU permitted with limitations (Table 4.3.9.D); demolition as CD-1L; acreage is CD-3 from the user-confirmed crosswalk (old D and NB), CD-3W is not separable",
@@ -1665,10 +1700,10 @@
         ],
         "included": true,
         "land_share": 4.3,
-        "contribution": 1.66
+        "contribution": 1.33
       }
     ],
     "formula": "V2 = sum(district score x acres) / sum(acres) over included districts",
-    "method": "Each district is scored with the same six-component rubric using only its own rules. A district is included only if at least 5 of 6 components are confirmed. The town V2 score is the land-area-weighted mean of included district scores; acreage is from data/land_area/norwalk.json. Components with no confirmed input are excluded per district."
+    "method": "Each district is scored with the same six-component rubric using only its own rules. The score uses four components that every town can document (multifamily access, approval discretion, minimum lot size, ADU pathway); a district is included only if all four are confirmed. Parking and demolition delay are shown as context but not scored, so towns share one scale. The town V2 score is the land-area-weighted mean of included district scores; acreage is from data/land_area/norwalk.json. Components with no confirmed input are excluded per district."
   }
 }

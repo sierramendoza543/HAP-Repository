@@ -423,5 +423,1816 @@
       }
     ],
     "methodology_note": "Computed from the Variables table on this page, not from the NZA data below. Six weighted components (Multifamily Access 30pts, Approval Discretion 10pts, Minimum Lot Size 20pts, ADU Approval Pathway 15pts, Parking Mandate 10pts, Demolition Delay 15pts) are each scored against a fixed, published rubric from a specific cited fact above. Higher = more restrictive."
+  },
+  "v2": {
+    "land_weighted_score": 83.7,
+    "districts_included": 4,
+    "acres_included": 14436.6,
+    "districts": [
+      {
+        "district": "RF-1",
+        "acres": 6526.3,
+        "score": 80.7,
+        "components_scored": 4,
+        "components_confirmed": 4,
+        "score_extended": 80.6,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 30,
+            "max_points": 30,
+            "reason": "Tier \"Not allowed\": No multifamily pathway in this district.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§10.1 Schedule of Permitted Land Uses, Multi-Family Dwelling row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH ...), Use Schedule p.5",
+              "quote": "Multi-Family Dwelling x x x x SEP x SEP X x x X x x x x",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": true
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 10,
+            "max_points": 10,
+            "reason": "Tier \"Not allowed\": No approval pathway for multifamily.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§10.1 Schedule of Permitted Land Uses, Multi-Family Dwelling row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH ...), Use Schedule p.5",
+              "quote": "Multi-Family Dwelling x x x x SEP x SEP X x x X x x x x",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 13.5,
+            "max_points": 20,
+            "reason": "Smallest lot is 43,560 sq ft; the log scale gives 13.5 of 20.",
+            "value": "43,560 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "§3.1.4(A) RF-1 minimum lot area, Art. 3",
+              "quote": "Each lot shall have a minimum area of one (1) acre (or 43,560 square feet)",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 7,
+            "max_points": 15,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "§10.1 Schedule, Accessory Apartment row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH), Use Schedule p.6",
+              "quote": "Accessory Apartment ACC ACC ACC x x x x X",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": true
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 8.0,
+            "max_points": 10,
+            "reason": "2.0 space(s) per unit; scored at 2.0/2.5 of the 10-point scale.",
+            "value": "2.0 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "§10.2 Schedule of Required Off-Street Parking, Residential, Off-Street Parking Schedule p.9",
+              "quote": "Two-Bedroom or more 2.0 spaces per unit with adequate driveway turnaround.",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
+          }
+        ],
+        "note": "Multi-Family Dwelling not permitted; single-family 1 per lot by right; 1 acre minimum (§3.1.4(A)); ADU is an accessory use ('ACC') needing a Certificate of Use signed by ZEO, Building Inspector, Sanitarian and Fire Marshal (§6.9.2(H)), attached only, owner-occupied; no demolition delay found",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "§10.1 Schedule of Permitted Land Uses, Multi-Family Dwelling row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH ...), Use Schedule p.5",
+            "quote": "Multi-Family Dwelling x x x x SEP x SEP X x x X x x x x",
+            "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+            "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+            "file": "/sources/monroe-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "§3.1.4(A) RF-1 minimum lot area, Art. 3",
+            "quote": "Each lot shall have a minimum area of one (1) acre (or 43,560 square feet)",
+            "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+            "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+            "file": "/sources/monroe-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "§10.1 Schedule, Accessory Apartment row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH), Use Schedule p.6",
+            "quote": "Accessory Apartment ACC ACC ACC x x x x X",
+            "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+            "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+            "file": "/sources/monroe-zoning.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "§10.2 Schedule of Required Off-Street Parking, Residential, Off-Street Parking Schedule p.9",
+            "quote": "Two-Bedroom or more 2.0 spaces per unit with adequate driveway turnaround.",
+            "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+            "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+            "file": "/sources/monroe-zoning.pdf"
+          }
+        ],
+        "included": true,
+        "land_share": 45.2,
+        "contribution": 36.48
+      },
+      {
+        "district": "RF-2",
+        "acres": 4417.5,
+        "score": 84.9,
+        "components_scored": 4,
+        "components_confirmed": 4,
+        "score_extended": 84.4,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 30,
+            "max_points": 30,
+            "reason": "Tier \"Not allowed\": No multifamily pathway in this district.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§10.1 Schedule of Permitted Land Uses, Multi-Family Dwelling row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH ...), Use Schedule p.5",
+              "quote": "Multi-Family Dwelling x x x x SEP x SEP X x x X x x x x",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": true
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 10,
+            "max_points": 10,
+            "reason": "Tier \"Not allowed\": No approval pathway for multifamily.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§10.1 Schedule of Permitted Land Uses, Multi-Family Dwelling row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH ...), Use Schedule p.5",
+              "quote": "Multi-Family Dwelling x x x x SEP x SEP X x x X x x x x",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 16.7,
+            "max_points": 20,
+            "reason": "Smallest lot is 87,120 sq ft; the log scale gives 16.7 of 20.",
+            "value": "87,120 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "§3.2.4(A) RF-2 minimum lot area, Art. 3",
+              "quote": "Each lot shall have a minimum area of two (2) acres (or 87,120 square feet)",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 7,
+            "max_points": 15,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "§10.1 Schedule, Accessory Apartment row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH), Use Schedule p.6",
+              "quote": "Accessory Apartment ACC ACC ACC x x x x X",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": true
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 8.0,
+            "max_points": 10,
+            "reason": "2.0 space(s) per unit; scored at 2.0/2.5 of the 10-point scale.",
+            "value": "2.0 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "§10.2 Schedule of Required Off-Street Parking, Residential, Off-Street Parking Schedule p.9",
+              "quote": "Two-Bedroom or more 2.0 spaces per unit with adequate driveway turnaround.",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
+          }
+        ],
+        "note": "Same use rules as RF-1; 2 acre minimum (§3.2.4(A)); ADU as RF-1",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "§10.1 Schedule of Permitted Land Uses, Multi-Family Dwelling row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH ...), Use Schedule p.5",
+            "quote": "Multi-Family Dwelling x x x x SEP x SEP X x x X x x x x",
+            "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+            "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+            "file": "/sources/monroe-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "§3.2.4(A) RF-2 minimum lot area, Art. 3",
+            "quote": "Each lot shall have a minimum area of two (2) acres (or 87,120 square feet)",
+            "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+            "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+            "file": "/sources/monroe-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "§10.1 Schedule, Accessory Apartment row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH), Use Schedule p.6",
+            "quote": "Accessory Apartment ACC ACC ACC x x x x X",
+            "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+            "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+            "file": "/sources/monroe-zoning.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "§10.2 Schedule of Required Off-Street Parking, Residential, Off-Street Parking Schedule p.9",
+            "quote": "Two-Bedroom or more 2.0 spaces per unit with adequate driveway turnaround.",
+            "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+            "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+            "file": "/sources/monroe-zoning.pdf"
+          }
+        ],
+        "included": true,
+        "land_share": 30.6,
+        "contribution": 25.98
+      },
+      {
+        "district": "RF-3",
+        "acres": 2737.7,
+        "score": 87.5,
+        "components_scored": 4,
+        "components_confirmed": 4,
+        "score_extended": 86.6,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 30,
+            "max_points": 30,
+            "reason": "Tier \"Not allowed\": No multifamily pathway in this district.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§10.1 Schedule of Permitted Land Uses, Multi-Family Dwelling row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH ...), Use Schedule p.5",
+              "quote": "Multi-Family Dwelling x x x x SEP x SEP X x x X x x x x",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": true
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 10,
+            "max_points": 10,
+            "reason": "Tier \"Not allowed\": No approval pathway for multifamily.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§10.1 Schedule of Permitted Land Uses, Multi-Family Dwelling row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH ...), Use Schedule p.5",
+              "quote": "Multi-Family Dwelling x x x x SEP x SEP X x x X x x x x",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 18.6,
+            "max_points": 20,
+            "reason": "Smallest lot is 130,680 sq ft; the log scale gives 18.6 of 20.",
+            "value": "130,680 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "§3.3.4(A) RF-3 minimum lot area, Art. 3",
+              "quote": "Each lot shall have a minimum area of three (3) acres (130,680 square feet)",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 7,
+            "max_points": 15,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "§10.1 Schedule, Accessory Apartment row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH), Use Schedule p.6",
+              "quote": "Accessory Apartment ACC ACC ACC x x x x X",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": true
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 8.0,
+            "max_points": 10,
+            "reason": "2.0 space(s) per unit; scored at 2.0/2.5 of the 10-point scale.",
+            "value": "2.0 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "§10.2 Schedule of Required Off-Street Parking, Residential, Off-Street Parking Schedule p.9",
+              "quote": "Two-Bedroom or more 2.0 spaces per unit with adequate driveway turnaround.",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
+          }
+        ],
+        "note": "Same use rules as RF-1; 3 acre minimum (§3.3.4(A)); ADU as RF-1 but detached ADU also allowed, new construction reviewed by the Commission (§6.9.1(B))",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "§10.1 Schedule of Permitted Land Uses, Multi-Family Dwelling row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH ...), Use Schedule p.5",
+            "quote": "Multi-Family Dwelling x x x x SEP x SEP X x x X x x x x",
+            "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+            "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+            "file": "/sources/monroe-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "§3.3.4(A) RF-3 minimum lot area, Art. 3",
+            "quote": "Each lot shall have a minimum area of three (3) acres (130,680 square feet)",
+            "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+            "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+            "file": "/sources/monroe-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "§10.1 Schedule, Accessory Apartment row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH), Use Schedule p.6",
+            "quote": "Accessory Apartment ACC ACC ACC x x x x X",
+            "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+            "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+            "file": "/sources/monroe-zoning.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "§10.2 Schedule of Required Off-Street Parking, Residential, Off-Street Parking Schedule p.9",
+            "quote": "Two-Bedroom or more 2.0 spaces per unit with adequate driveway turnaround.",
+            "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+            "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+            "file": "/sources/monroe-zoning.pdf"
+          }
+        ],
+        "included": true,
+        "land_share": 19.0,
+        "contribution": 16.59
+      },
+      {
+        "district": "MFR",
+        "acres": 577.6,
+        "score": 89.1,
+        "components_scored": 3,
+        "components_confirmed": 3,
+        "score_extended": 87.7,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 25,
+            "max_points": 30,
+            "reason": "Tier \"Discretionary (special permit)\": Multifamily allowed only through a special permit or hearing.",
+            "value": "Discretionary (special permit)",
+            "evidence": {
+              "field": "use",
+              "cite": "§10.1 Schedule of Permitted Land Uses, Multi-Family Dwelling row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH ...), Use Schedule p.5",
+              "quote": "Multi-Family Dwelling x x x x SEP x SEP X x x X x x x x",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": true
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": false
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 9,
+            "max_points": 10,
+            "reason": "Tier \"Discretionary (special permit)\": Special permit or hearing required.",
+            "value": "Discretionary (special permit)",
+            "evidence": {
+              "field": "use",
+              "cite": "§10.1 Schedule of Permitted Land Uses, Multi-Family Dwelling row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH ...), Use Schedule p.5",
+              "quote": "Multi-Family Dwelling x x x x SEP x SEP X x x X x x x x",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": true
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": null,
+            "max_points": 20,
+            "reason": "No lot-size rule could be confirmed for this district.",
+            "value": "Not confirmed",
+            "evidence": {
+              "field": "lot",
+              "cite": "§3.4.5(B) MFR minimum parcel size, Art. 3 p.10",
+              "quote": "Minimum parcel size shall be seventy (70) acres under same ownership in a single continuous",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 15,
+            "max_points": 15,
+            "reason": "Tier \"Prohibited\": Accessory units not allowed.",
+            "value": "Prohibited",
+            "evidence": {
+              "field": "adu",
+              "cite": "§10.1 Schedule, Accessory Apartment row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH), Use Schedule p.6",
+              "quote": "Accessory Apartment ACC ACC ACC x x x x X",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": false
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 8.0,
+            "max_points": 10,
+            "reason": "2.0 space(s) per unit; scored at 2.0/2.5 of the 10-point scale.",
+            "value": "2.0 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "§10.2 Schedule of Required Off-Street Parking, Residential, Off-Street Parking Schedule p.9",
+              "quote": "Two-Bedroom or more 2.0 spaces per unit with adequate driveway turnaround.",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
+          }
+        ],
+        "note": "Multi-Family Dwelling by Special Exception Permit only; floating district needing a 70-acre parcel (§3.4.5(B)) = 3,049,200 sq ft; 2.5 attached units/gross acre; MF units capped at 10% of town single-family count (§3.4.2(A)); accessory apartment 'x'",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "§10.1 Schedule of Permitted Land Uses, Multi-Family Dwelling row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH ...), Use Schedule p.5",
+            "quote": "Multi-Family Dwelling x x x x SEP x SEP X x x X x x x x",
+            "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+            "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+            "file": "/sources/monroe-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "§3.4.5(B) MFR minimum parcel size, Art. 3 p.10",
+            "quote": "Minimum parcel size shall be seventy (70) acres under same ownership in a single continuous",
+            "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+            "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+            "file": "/sources/monroe-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "§10.1 Schedule, Accessory Apartment row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH), Use Schedule p.6",
+            "quote": "Accessory Apartment ACC ACC ACC x x x x X",
+            "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+            "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+            "file": "/sources/monroe-zoning.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "§10.2 Schedule of Required Off-Street Parking, Residential, Off-Street Parking Schedule p.9",
+            "quote": "Two-Bedroom or more 2.0 spaces per unit with adequate driveway turnaround.",
+            "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+            "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+            "file": "/sources/monroe-zoning.pdf"
+          }
+        ],
+        "included": false,
+        "land_share": null,
+        "contribution": null,
+        "exclusion_reason": "Excluded: only 3 of the 4 scored components are confirmed (all 4 are required)."
+      },
+      {
+        "district": "ARR",
+        "acres": 100.7,
+        "score": 89.1,
+        "components_scored": 3,
+        "components_confirmed": 3,
+        "score_extended": 87.7,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 25,
+            "max_points": 30,
+            "reason": "Tier \"Discretionary (special permit)\": Multifamily allowed only through a special permit or hearing.",
+            "value": "Discretionary (special permit)",
+            "evidence": {
+              "field": "use",
+              "cite": "§10.1 Schedule, Age Restricted Attached Dwelling row, Use Schedule p.6",
+              "quote": "Age Restricted Attached Dwelling x x x SEP x x x X",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": true
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": false
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 9,
+            "max_points": 10,
+            "reason": "Tier \"Discretionary (special permit)\": Special permit or hearing required.",
+            "value": "Discretionary (special permit)",
+            "evidence": {
+              "field": "use",
+              "cite": "§10.1 Schedule, Age Restricted Attached Dwelling row, Use Schedule p.6",
+              "quote": "Age Restricted Attached Dwelling x x x SEP x x x X",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": true
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": null,
+            "max_points": 20,
+            "reason": "No lot-size rule could be confirmed for this district.",
+            "value": "Not confirmed",
+            "evidence": {
+              "field": "lot",
+              "cite": "§3.5.5(B) ARR minimum lot area, Art. 3",
+              "quote": "Minimum lot area shall be not less than ten (10) acres contained within a single contiguous",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 15,
+            "max_points": 15,
+            "reason": "Tier \"Prohibited\": Accessory units not allowed.",
+            "value": "Prohibited",
+            "evidence": {
+              "field": "adu",
+              "cite": "§10.1 Schedule, Accessory Apartment row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH), Use Schedule p.6",
+              "quote": "Accessory Apartment ACC ACC ACC x x x x X",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": false
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 8.0,
+            "max_points": 10,
+            "reason": "2.0 space(s) per unit; scored at 2.0/2.5 of the 10-point scale.",
+            "value": "2.0 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "§10.2 Schedule of Required Off-Street Parking, Residential, Off-Street Parking Schedule p.9",
+              "quote": "Two-Bedroom or more 2.0 spaces per unit with adequate driveway turnaround.",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
+          }
+        ],
+        "note": "Only age-restricted (55+) attached/detached dwellings, by Special Exception Permit; Multi-Family 'x'; 10 acre minimum (§3.5.5(B)) = 435,600 sq ft; 5 attached units/gross acre; accessory apartment 'x'. Age restriction narrows the housing type - judgment call whether to score",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "§10.1 Schedule, Age Restricted Attached Dwelling row, Use Schedule p.6",
+            "quote": "Age Restricted Attached Dwelling x x x SEP x x x X",
+            "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+            "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+            "file": "/sources/monroe-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "§3.5.5(B) ARR minimum lot area, Art. 3",
+            "quote": "Minimum lot area shall be not less than ten (10) acres contained within a single contiguous",
+            "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+            "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+            "file": "/sources/monroe-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "§10.1 Schedule, Accessory Apartment row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH), Use Schedule p.6",
+            "quote": "Accessory Apartment ACC ACC ACC x x x x X",
+            "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+            "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+            "file": "/sources/monroe-zoning.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "§10.2 Schedule of Required Off-Street Parking, Residential, Off-Street Parking Schedule p.9",
+            "quote": "Two-Bedroom or more 2.0 spaces per unit with adequate driveway turnaround.",
+            "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+            "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+            "file": "/sources/monroe-zoning.pdf"
+          }
+        ],
+        "included": false,
+        "land_share": null,
+        "contribution": null,
+        "exclusion_reason": "Excluded: only 3 of the 4 scored components are confirmed (all 4 are required)."
+      },
+      {
+        "district": "HOD",
+        "acres": 24.7,
+        "score": 89.1,
+        "components_scored": 3,
+        "components_confirmed": 3,
+        "score_extended": 87.7,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 25,
+            "max_points": 30,
+            "reason": "Tier \"Discretionary (special permit)\": Multifamily allowed only through a special permit or hearing.",
+            "value": "Discretionary (special permit)",
+            "evidence": {
+              "field": "use",
+              "cite": "§10.1 Schedule of Permitted Land Uses, Multi-Family Dwelling row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH ...), Use Schedule p.5",
+              "quote": "Multi-Family Dwelling x x x x SEP x SEP X x x X x x x x",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": true
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": false
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 9,
+            "max_points": 10,
+            "reason": "Tier \"Discretionary (special permit)\": Special permit or hearing required.",
+            "value": "Discretionary (special permit)",
+            "evidence": {
+              "field": "use",
+              "cite": "§10.1 Schedule of Permitted Land Uses, Multi-Family Dwelling row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH ...), Use Schedule p.5",
+              "quote": "Multi-Family Dwelling x x x x SEP x SEP X x x X x x x x",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": true
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": null,
+            "max_points": 20,
+            "reason": "No lot-size rule could be confirmed for this district.",
+            "value": "Not confirmed",
+            "evidence": {
+              "field": "lot",
+              "cite": "§3.7.6(B) HOD minimum parcel size, Art. 3",
+              "quote": "not less than twenty (20) nor more than twenty-five (25) contiguous acres",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 15,
+            "max_points": 15,
+            "reason": "Tier \"Prohibited\": Accessory units not allowed.",
+            "value": "Prohibited",
+            "evidence": {
+              "field": "adu",
+              "cite": "§10.1 Schedule, Accessory Apartment row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH), Use Schedule p.6",
+              "quote": "Accessory Apartment ACC ACC ACC x x x x X",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": false
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 8.0,
+            "max_points": 10,
+            "reason": "2.0 space(s) per unit; scored at 2.0/2.5 of the 10-point scale.",
+            "value": "2.0 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "§10.2 Schedule of Required Off-Street Parking, Residential, Off-Street Parking Schedule p.9",
+              "quote": "Two-Bedroom or more 2.0 spaces per unit with adequate driveway turnaround.",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
+          }
+        ],
+        "note": "Multi-Family Dwelling by Special Exception Permit; floating district rezoned from a 20-25 acre parcel (§3.7.6(B)) = 871,200 sq ft; 1.5 units/gross acre; 30-year affordable set-aside (§3.7); accessory apartment 'x'",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "§10.1 Schedule of Permitted Land Uses, Multi-Family Dwelling row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH ...), Use Schedule p.5",
+            "quote": "Multi-Family Dwelling x x x x SEP x SEP X x x X x x x x",
+            "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+            "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+            "file": "/sources/monroe-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "§3.7.6(B) HOD minimum parcel size, Art. 3",
+            "quote": "not less than twenty (20) nor more than twenty-five (25) contiguous acres",
+            "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+            "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+            "file": "/sources/monroe-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "§10.1 Schedule, Accessory Apartment row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH), Use Schedule p.6",
+            "quote": "Accessory Apartment ACC ACC ACC x x x x X",
+            "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+            "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+            "file": "/sources/monroe-zoning.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "§10.2 Schedule of Required Off-Street Parking, Residential, Off-Street Parking Schedule p.9",
+            "quote": "Two-Bedroom or more 2.0 spaces per unit with adequate driveway turnaround.",
+            "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+            "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+            "file": "/sources/monroe-zoning.pdf"
+          }
+        ],
+        "included": false,
+        "land_share": null,
+        "contribution": null,
+        "exclusion_reason": "Excluded: only 3 of the 4 scored components are confirmed (all 4 are required)."
+      },
+      {
+        "district": "RR",
+        "acres": 755.1,
+        "score": 89.5,
+        "components_scored": 4,
+        "components_confirmed": 4,
+        "score_extended": 88.4,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 30,
+            "max_points": 30,
+            "reason": "Tier \"Not allowed\": No multifamily pathway in this district.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§10.1 Schedule of Permitted Land Uses, Multi-Family Dwelling row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH ...), Use Schedule p.5",
+              "quote": "Multi-Family Dwelling x x x x SEP x SEP X x x X x x x x",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": true
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 10,
+            "max_points": 10,
+            "reason": "Tier \"Not allowed\": No approval pathway for multifamily.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "§10.1 Schedule of Permitted Land Uses, Multi-Family Dwelling row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH ...), Use Schedule p.5",
+              "quote": "Multi-Family Dwelling x x x x SEP x SEP X x x X x x x x",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 12.1,
+            "max_points": 20,
+            "reason": "Smallest lot is 32,670 sq ft; the log scale gives 12.1 of 20.",
+            "value": "32,670 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "§3.6.5(D) RR minimum individual lot, Art. 3",
+              "quote": "(3/4 acres or 32,670 square feet)",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 15,
+            "max_points": 15,
+            "reason": "Tier \"Prohibited\": Accessory units not allowed.",
+            "value": "Prohibited",
+            "evidence": {
+              "field": "adu",
+              "cite": "§10.1 Schedule, Accessory Apartment row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH), Use Schedule p.6",
+              "quote": "Accessory Apartment ACC ACC ACC x x x x X",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": false
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 8.0,
+            "max_points": 10,
+            "reason": "2.0 space(s) per unit; scored at 2.0/2.5 of the 10-point scale.",
+            "value": "2.0 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "§10.2 Schedule of Required Off-Street Parking, Residential, Off-Street Parking Schedule p.9",
+              "quote": "Two-Bedroom or more 2.0 spaces per unit with adequate driveway turnaround.",
+              "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+              "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+              "file": "/sources/monroe-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
+          }
+        ],
+        "note": "Single-family only (SEP); Multi-Family 'x'; individual lot 3/4 acre = 32,670 sq ft within a 25-acre minimum parcel (§3.6.5(B),(D)); accessory apartment 'x'",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "§10.1 Schedule of Permitted Land Uses, Multi-Family Dwelling row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH ...), Use Schedule p.5",
+            "quote": "Multi-Family Dwelling x x x x SEP x SEP X x x X x x x x",
+            "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+            "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+            "file": "/sources/monroe-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "§3.6.5(D) RR minimum individual lot, Art. 3",
+            "quote": "(3/4 acres or 32,670 square feet)",
+            "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+            "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+            "file": "/sources/monroe-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "§10.1 Schedule, Accessory Apartment row (columns RF-1 RF-2 RF-3 ARR MFR RR HOD AH), Use Schedule p.6",
+            "quote": "Accessory Apartment ACC ACC ACC x x x x X",
+            "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+            "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+            "file": "/sources/monroe-zoning.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "§10.2 Schedule of Required Off-Street Parking, Residential, Off-Street Parking Schedule p.9",
+            "quote": "Two-Bedroom or more 2.0 spaces per unit with adequate driveway turnaround.",
+            "source_title": "Monroe Zoning Regulations (amended through July 2, 2026)",
+            "url": "https://www.monroect.gov/Home/DownloadDocument?docId=82b32408-e8ae-4afd-b9ca-58f87c1e35da",
+            "file": "/sources/monroe-zoning.pdf"
+          }
+        ],
+        "included": true,
+        "land_share": 5.2,
+        "contribution": 4.68
+      }
+    ],
+    "formula": "V2 = sum(district score x acres) / sum(acres) over included districts",
+    "method": "Each district is scored with the same six-component rubric using only its own rules. The score uses four components that every town can document (multifamily access, approval discretion, minimum lot size, ADU pathway); a district is included only if all four are confirmed. Parking and demolition delay are shown as context but not scored, so towns share one scale. The town V2 score is the land-area-weighted mean of included district scores; acreage is from data/land_area/monroe.json. Components with no confirmed input are excluded per district."
   }
 }

@@ -494,5 +494,1484 @@
       }
     ],
     "methodology_note": "Computed from the Variables table on this page, not from the NZA data below. Six weighted components (Multifamily Access 30pts, Approval Discretion 10pts, Minimum Lot Size 20pts, ADU Approval Pathway 15pts, Parking Mandate 10pts, Demolition Delay 15pts) are each scored against a fixed, published rubric from a specific cited fact above. Higher = more restrictive. 1 of 6 components had no independently-confirmed input for this town and were excluded; the composite is renormalized over the remaining 5."
+  },
+  "v2": {
+    "land_weighted_score": 79.3,
+    "districts_included": 3,
+    "acres_included": 11816.0,
+    "districts": [
+      {
+        "district": "AAA",
+        "acres": 1433.7,
+        "score": 80.7,
+        "components_scored": 4,
+        "components_confirmed": 4,
+        "score_extended": 80.7,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 30,
+            "max_points": 30,
+            "reason": "Tier \"Not allowed\": No multifamily pathway in this district.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "Art. II §1.1.1 Residence AAA/AA/A permitted uses (p. 42)",
+              "quote": "no Building or Structure shall be erected, altered, occupied or used, arranged or designed to be used for other than one or more of the following specified purposes: 1. One-Family Dwelling;",
+              "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+              "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+              "file": "/sources/trumbull-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": true
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 10,
+            "max_points": 10,
+            "reason": "Tier \"Not allowed\": No approval pathway for multifamily.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "Art. II §1.1.1 Residence AAA/AA/A permitted uses (p. 42)",
+              "quote": "no Building or Structure shall be erected, altered, occupied or used, arranged or designed to be used for other than one or more of the following specified purposes: 1. One-Family Dwelling;",
+              "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+              "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+              "file": "/sources/trumbull-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 13.5,
+            "max_points": 20,
+            "reason": "Smallest lot is 43,560 sq ft; the log scale gives 13.5 of 20.",
+            "value": "43,560 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "Art. I §2 Classes of Zones, Residence AAA (p. 3)",
+              "quote": "Residence Zone AAA              (minimum lot size 1 acre, 43,560 sq. ft.)",
+              "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+              "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+              "file": "/sources/trumbull-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 7,
+            "max_points": 15,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "Art. II §1.1.2(7)(D) Accessory apartment application procedure (p. 47)",
+              "quote": "then an application may be made to, and approved by, the Zoning Enforcement Officer.",
+              "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+              "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+              "file": "/sources/trumbull-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": true
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
+          },
+          {
+            "label": "Parking Mandate",
+            "points": null,
+            "max_points": 10,
+            "reason": "No parking requirement was confirmed for this district's single-family use.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
+          }
+        ],
+        "note": "Single-family dwelling only (Art. II 1.1.1); minimum lot per Art. I 2 (AAA and AA 43,560 sq ft, A 21,780 sq ft). Accessory apartments inside the existing footprint are approved by the Zoning Enforcement Officer (scored: easiest pathway); all other applications need a Special Permit (Art. II 1.1.2(7)(D)); owner occupancy and a deed restriction apply.",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "Art. II §1.1.1 Residence AAA/AA/A permitted uses (p. 42)",
+            "quote": "no Building or Structure shall be erected, altered, occupied or used, arranged or designed to be used for other than one or more of the following specified purposes: 1. One-Family Dwelling;",
+            "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+            "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+            "file": "/sources/trumbull-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "Art. I §2 Classes of Zones, Residence AAA (p. 3)",
+            "quote": "Residence Zone AAA              (minimum lot size 1 acre, 43,560 sq. ft.)",
+            "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+            "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+            "file": "/sources/trumbull-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "Art. II §1.1.2(7)(D) Accessory apartment application procedure (p. 47)",
+            "quote": "then an application may be made to, and approved by, the Zoning Enforcement Officer.",
+            "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+            "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+            "file": "/sources/trumbull-zoning.pdf"
+          }
+        ],
+        "included": true,
+        "land_share": 12.1,
+        "contribution": 9.79
+      },
+      {
+        "district": "AA",
+        "acres": 6752.6,
+        "score": 80.7,
+        "components_scored": 4,
+        "components_confirmed": 4,
+        "score_extended": 80.7,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 30,
+            "max_points": 30,
+            "reason": "Tier \"Not allowed\": No multifamily pathway in this district.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "Art. II §1.1.1 Residence AAA/AA/A permitted uses (p. 42)",
+              "quote": "no Building or Structure shall be erected, altered, occupied or used, arranged or designed to be used for other than one or more of the following specified purposes: 1. One-Family Dwelling;",
+              "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+              "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+              "file": "/sources/trumbull-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": true
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 10,
+            "max_points": 10,
+            "reason": "Tier \"Not allowed\": No approval pathway for multifamily.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "Art. II §1.1.1 Residence AAA/AA/A permitted uses (p. 42)",
+              "quote": "no Building or Structure shall be erected, altered, occupied or used, arranged or designed to be used for other than one or more of the following specified purposes: 1. One-Family Dwelling;",
+              "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+              "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+              "file": "/sources/trumbull-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 13.5,
+            "max_points": 20,
+            "reason": "Smallest lot is 43,560 sq ft; the log scale gives 13.5 of 20.",
+            "value": "43,560 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "Art. I §2 Classes of Zones, Residence AA (p. 3)",
+              "quote": "Residence Zone AA               (minimum lot size 1 acre, 43,560 sq. ft.)",
+              "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+              "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+              "file": "/sources/trumbull-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 7,
+            "max_points": 15,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "Art. II §1.1.2(7)(D) Accessory apartment application procedure (p. 47)",
+              "quote": "then an application may be made to, and approved by, the Zoning Enforcement Officer.",
+              "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+              "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+              "file": "/sources/trumbull-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": true
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
+          },
+          {
+            "label": "Parking Mandate",
+            "points": null,
+            "max_points": 10,
+            "reason": "No parking requirement was confirmed for this district's single-family use.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
+          }
+        ],
+        "note": "Single-family dwelling only (Art. II 1.1.1); minimum lot per Art. I 2 (AAA and AA 43,560 sq ft, A 21,780 sq ft). Accessory apartments inside the existing footprint are approved by the Zoning Enforcement Officer (scored: easiest pathway); all other applications need a Special Permit (Art. II 1.1.2(7)(D)); owner occupancy and a deed restriction apply.",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "Art. II §1.1.1 Residence AAA/AA/A permitted uses (p. 42)",
+            "quote": "no Building or Structure shall be erected, altered, occupied or used, arranged or designed to be used for other than one or more of the following specified purposes: 1. One-Family Dwelling;",
+            "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+            "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+            "file": "/sources/trumbull-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "Art. I §2 Classes of Zones, Residence AA (p. 3)",
+            "quote": "Residence Zone AA               (minimum lot size 1 acre, 43,560 sq. ft.)",
+            "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+            "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+            "file": "/sources/trumbull-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "Art. II §1.1.2(7)(D) Accessory apartment application procedure (p. 47)",
+            "quote": "then an application may be made to, and approved by, the Zoning Enforcement Officer.",
+            "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+            "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+            "file": "/sources/trumbull-zoning.pdf"
+          }
+        ],
+        "included": true,
+        "land_share": 57.1,
+        "contribution": 46.12
+      },
+      {
+        "district": "A",
+        "acres": 3629.7,
+        "score": 76.3,
+        "components_scored": 4,
+        "components_confirmed": 4,
+        "score_extended": 76.3,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 30,
+            "max_points": 30,
+            "reason": "Tier \"Not allowed\": No multifamily pathway in this district.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "Art. II §1.1.1 Residence AAA/AA/A permitted uses (p. 42)",
+              "quote": "no Building or Structure shall be erected, altered, occupied or used, arranged or designed to be used for other than one or more of the following specified purposes: 1. One-Family Dwelling;",
+              "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+              "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+              "file": "/sources/trumbull-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": true
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 10,
+            "max_points": 10,
+            "reason": "Tier \"Not allowed\": No approval pathway for multifamily.",
+            "value": "Not allowed",
+            "evidence": {
+              "field": "use",
+              "cite": "Art. II §1.1.1 Residence AAA/AA/A permitted uses (p. 42)",
+              "quote": "no Building or Structure shall be erected, altered, occupied or used, arranged or designed to be used for other than one or more of the following specified purposes: 1. One-Family Dwelling;",
+              "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+              "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+              "file": "/sources/trumbull-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": true
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 10.2,
+            "max_points": 20,
+            "reason": "Smallest lot is 21,780 sq ft; the log scale gives 10.2 of 20.",
+            "value": "21,780 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "Art. I §2 Classes of Zones, Residence A (p. 3)",
+              "quote": "Residence Zone A                (minimum lot size ½ acre, 21,780 sq. ft.)",
+              "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+              "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+              "file": "/sources/trumbull-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 7,
+            "max_points": 15,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "Art. II §1.1.2(7)(D) Accessory apartment application procedure (p. 47)",
+              "quote": "then an application may be made to, and approved by, the Zoning Enforcement Officer.",
+              "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+              "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+              "file": "/sources/trumbull-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": true
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
+          },
+          {
+            "label": "Parking Mandate",
+            "points": null,
+            "max_points": 10,
+            "reason": "No parking requirement was confirmed for this district's single-family use.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
+          }
+        ],
+        "note": "Single-family dwelling only (Art. II 1.1.1); minimum lot per Art. I 2 (AAA and AA 43,560 sq ft, A 21,780 sq ft). Accessory apartments inside the existing footprint are approved by the Zoning Enforcement Officer (scored: easiest pathway); all other applications need a Special Permit (Art. II 1.1.2(7)(D)); owner occupancy and a deed restriction apply.",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "Art. II §1.1.1 Residence AAA/AA/A permitted uses (p. 42)",
+            "quote": "no Building or Structure shall be erected, altered, occupied or used, arranged or designed to be used for other than one or more of the following specified purposes: 1. One-Family Dwelling;",
+            "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+            "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+            "file": "/sources/trumbull-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "Art. I §2 Classes of Zones, Residence A (p. 3)",
+            "quote": "Residence Zone A                (minimum lot size ½ acre, 21,780 sq. ft.)",
+            "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+            "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+            "file": "/sources/trumbull-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "Art. II §1.1.2(7)(D) Accessory apartment application procedure (p. 47)",
+            "quote": "then an application may be made to, and approved by, the Zoning Enforcement Officer.",
+            "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+            "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+            "file": "/sources/trumbull-zoning.pdf"
+          }
+        ],
+        "included": true,
+        "land_share": 30.7,
+        "contribution": 23.44
+      },
+      {
+        "district": "B-C LHGTHN",
+        "acres": 30.3,
+        "score": 84.5,
+        "components_scored": 3,
+        "components_confirmed": 3,
+        "score_extended": 84.5,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 25,
+            "max_points": 30,
+            "reason": "Tier \"Discretionary (special permit)\": Multifamily allowed only through a special permit or hearing.",
+            "value": "Discretionary (special permit)",
+            "evidence": {
+              "field": "use",
+              "cite": "Art. II §3.2.4 Special Permit list, item 14 Multi-Family Dwellings (pp. 119-120)",
+              "quote": "Multi-family dwellings in this zone may be permitted subject to the following regulations:",
+              "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+              "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+              "file": "/sources/trumbull-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": true
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": false
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 9,
+            "max_points": 10,
+            "reason": "Tier \"Discretionary (special permit)\": Special permit or hearing required.",
+            "value": "Discretionary (special permit)",
+            "evidence": {
+              "field": "use",
+              "cite": "Art. II §3.2.4 Special Permit list, item 14 Multi-Family Dwellings (pp. 119-120)",
+              "quote": "Multi-family dwellings in this zone may be permitted subject to the following regulations:",
+              "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+              "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+              "file": "/sources/trumbull-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": true
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 16.7,
+            "max_points": 20,
+            "reason": "Smallest lot is 87,120 sq ft; the log scale gives 16.7 of 20.",
+            "value": "87,120 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "Art. III Exhibit, Commercial B-C row (p. 183)",
+              "quote": "Commercial B-C        2 acres        250",
+              "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+              "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+              "file": "/sources/trumbull-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": null,
+            "max_points": 15,
+            "reason": "Not confirmed for this district.",
+            "value": "Not confirmed",
+            "evidence": {
+              "field": "adu",
+              "cite": "Art. II §3.2.1 permitted-use limiting clause (p. 117)",
+              "quote": "no Building or Structure shall be erected, altered, occupied or used, arranged or designed to be used for other than one or more of the following specified uses",
+              "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+              "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+              "file": "/sources/trumbull-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": false
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
+          },
+          {
+            "label": "Parking Mandate",
+            "points": null,
+            "max_points": 10,
+            "reason": "No parking requirement was confirmed for this district's single-family use.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
+          }
+        ],
+        "note": "B-C Long Hill Green / Town Hall Node (§3.2): Multi-Family Dwellings are item 14 of a numbered list that runs on from the §3.2.4 Special Permit list (items 1-5 post offices..gas stations, 6-14 day care, fast food, ..., multi-family); §3.2.1 permitted list stops at item 5 (and excludes Fast Food) -- Special Permit reading is INFERRED from list numbering, confirm against the adopted text; cap 12 units/gross acre, max 50% of floor area, upper floors on parcels under 1 acre, studios-2BR only, 10% affordable (§3.2.1 item 14); lot 2 acres = underlying B-C minimum (Art. III Exhibit) -- JUDGMENT, §3.2.5(1) deems existing lots buildable; no single-family dwelling or accessory-apartment rule applies in this zone (ADU rule sits in §1.1.2 for Residence A/AA/AAA only) so ADU scored prohibited -- INFERRED; parking sufficient per ITE (§3.2.7), no ratio",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "Art. II §3.2.4 Special Permit list, item 14 Multi-Family Dwellings (pp. 119-120)",
+            "quote": "Multi-family dwellings in this zone may be permitted subject to the following regulations:",
+            "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+            "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+            "file": "/sources/trumbull-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "Art. III Exhibit, Commercial B-C row (p. 183)",
+            "quote": "Commercial B-C        2 acres        250",
+            "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+            "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+            "file": "/sources/trumbull-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "Art. II §3.2.1 permitted-use limiting clause (p. 117)",
+            "quote": "no Building or Structure shall be erected, altered, occupied or used, arranged or designed to be used for other than one or more of the following specified uses",
+            "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+            "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+            "file": "/sources/trumbull-zoning.pdf"
+          }
+        ],
+        "included": false,
+        "land_share": null,
+        "contribution": null,
+        "exclusion_reason": "Excluded: only 3 of the 4 scored components are confirmed (all 4 are required)."
+      },
+      {
+        "district": "MDD",
+        "acres": 83.9,
+        "score": 84.5,
+        "components_scored": 3,
+        "components_confirmed": 3,
+        "score_extended": 84.5,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 25,
+            "max_points": 30,
+            "reason": "Tier \"Discretionary (special permit)\": Multifamily allowed only through a special permit or hearing.",
+            "value": "Discretionary (special permit)",
+            "evidence": {
+              "field": "use",
+              "cite": "Art. II §3.4.5 MDD site plan / special permit (p. 137)",
+              "quote": "any multi- family residential use must receive Special",
+              "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+              "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+              "file": "/sources/trumbull-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": true
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": false
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 9,
+            "max_points": 10,
+            "reason": "Tier \"Discretionary (special permit)\": Special permit or hearing required.",
+            "value": "Discretionary (special permit)",
+            "evidence": {
+              "field": "use",
+              "cite": "Art. II §3.4.5 MDD site plan / special permit (p. 137)",
+              "quote": "any multi- family residential use must receive Special",
+              "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+              "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+              "file": "/sources/trumbull-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": true
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 16.7,
+            "max_points": 20,
+            "reason": "Smallest lot is 87,120 sq ft; the log scale gives 16.7 of 20.",
+            "value": "87,120 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "Art. II §3.4.6(1) MDD bulk (p. 137)",
+              "quote": "must have a minimum lot size of 2 (two) acres",
+              "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+              "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+              "file": "/sources/trumbull-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": null,
+            "max_points": 15,
+            "reason": "Not confirmed for this district.",
+            "value": "Not confirmed",
+            "evidence": {
+              "field": "adu",
+              "cite": "Art. II §3.4.2 MDD permitted uses (p. 133)",
+              "quote": "no building or structure shall be erected, altered, occupied, or used, arranged or designed to be used for other than one or more of the following",
+              "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+              "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+              "file": "/sources/trumbull-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": false
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
+          },
+          {
+            "label": "Parking Mandate",
+            "points": null,
+            "max_points": 10,
+            "reason": "No parking requirement was confirmed for this district's single-family use.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
+          }
+        ],
+        "note": "Mixed-Use Design District (§3.4): any multi-family residential use must receive Special Permit (§3.4.5); no multi-family in the §3.4.2 permitted list; separate parcels must be at least 2 acres (§3.4.6(1)) -- lot is that parcel minimum; no single-family or ADU provision applies so ADU prohibited -- INFERRED; age-restricted units 1.5 spaces/unit (§3.4.7) but that is a subcategory, parking None",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "Art. II §3.4.5 MDD site plan / special permit (p. 137)",
+            "quote": "any multi- family residential use must receive Special",
+            "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+            "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+            "file": "/sources/trumbull-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "Art. II §3.4.6(1) MDD bulk (p. 137)",
+            "quote": "must have a minimum lot size of 2 (two) acres",
+            "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+            "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+            "file": "/sources/trumbull-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "Art. II §3.4.2 MDD permitted uses (p. 133)",
+            "quote": "no building or structure shall be erected, altered, occupied, or used, arranged or designed to be used for other than one or more of the following",
+            "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+            "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+            "file": "/sources/trumbull-zoning.pdf"
+          }
+        ],
+        "included": false,
+        "land_share": null,
+        "contribution": null,
+        "exclusion_reason": "Excluded: only 3 of the 4 scored components are confirmed (all 4 are required)."
+      },
+      {
+        "district": "MFO",
+        "acres": 50.2,
+        "score": 90.0,
+        "components_scored": 3,
+        "components_confirmed": 3,
+        "score_extended": 88.6,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 25,
+            "max_points": 30,
+            "reason": "Tier \"Discretionary (special permit)\": Multifamily allowed only through a special permit or hearing.",
+            "value": "Discretionary (special permit)",
+            "evidence": {
+              "field": "use",
+              "cite": "Art. II §7.6.3 Uses Permitted by Special Permit (p. 172)",
+              "quote": "Multi-family residential development of not more than 220 units",
+              "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+              "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+              "file": "/sources/trumbull-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": true
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": false
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30.",
+            "in_score": true
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 9,
+            "max_points": 10,
+            "reason": "Tier \"Discretionary (special permit)\": Special permit or hearing required.",
+            "value": "Discretionary (special permit)",
+            "evidence": {
+              "field": "use",
+              "cite": "Art. II §7.6.3 Uses Permitted by Special Permit (p. 172)",
+              "quote": "Multi-family residential development of not more than 220 units",
+              "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+              "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+              "file": "/sources/trumbull-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": false
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": true
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10.",
+            "in_score": true
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 20,
+            "max_points": 20,
+            "reason": "Smallest lot is 435,600 sq ft; the log scale gives 20.0 of 20.",
+            "value": "435,600 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "Art. II §7.6.2(b) MFO location criteria (p. 171)",
+              "quote": "b. Not less than 10 acres; and",
+              "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+              "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+              "file": "/sources/trumbull-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
+            "in_score": true
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": null,
+            "max_points": 15,
+            "reason": "Not confirmed for this district.",
+            "value": "Not confirmed",
+            "evidence": {
+              "field": "adu",
+              "cite": "Art. II §7.6.3 Uses Permitted by Special Permit (p. 172)",
+              "quote": "Multi-family residential development of not more than 220 units and associated clubhouse and amenity and/or active recreational space",
+              "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+              "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+              "file": "/sources/trumbull-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": false
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15.",
+            "in_score": true
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 8.0,
+            "max_points": 10,
+            "reason": "2.0 space(s) per unit; scored at 2.0/2.5 of the 10-point scale.",
+            "value": "2.0 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "Art. II §7.6.4(5) MFO parking (p. 172)",
+              "quote": "Parking for residential units shall be provided at 2.0 spaces per two bedroom unit and 1.8 spaces per one bedroom unit.",
+              "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+              "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+              "file": "/sources/trumbull-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10.",
+            "in_score": false
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15.",
+            "in_score": false
+          }
+        ],
+        "note": "Multi-Family Overlay (§7.6): requires rezoning of existing I-L/I-L2 land of at least 10 acres without direct state-highway access (§7.6.2), then Special Permit for up to 220 units (§7.6.3); 20 units/acre, 600-unit town-wide cap, 220 per 12 months (§7.6.4(1)); lot = 10-acre eligibility minimum (435,600 sq ft) -- JUDGMENT, tract threshold; parking 1.8/1BR, 2.0/2BR plus 1 guest per 20 units (§7.6.4(5)), scored 2.0; ADU prohibited -- INFERRED (multi-family only, no ADU rule); Art. XVII moratorium on rental housing applications over 50 units runs to Feb. 28, 2027",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "Art. II §7.6.3 Uses Permitted by Special Permit (p. 172)",
+            "quote": "Multi-family residential development of not more than 220 units",
+            "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+            "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+            "file": "/sources/trumbull-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "Art. II §7.6.2(b) MFO location criteria (p. 171)",
+            "quote": "b. Not less than 10 acres; and",
+            "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+            "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+            "file": "/sources/trumbull-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "Art. II §7.6.3 Uses Permitted by Special Permit (p. 172)",
+            "quote": "Multi-family residential development of not more than 220 units and associated clubhouse and amenity and/or active recreational space",
+            "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+            "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+            "file": "/sources/trumbull-zoning.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "Art. II §7.6.4(5) MFO parking (p. 172)",
+            "quote": "Parking for residential units shall be provided at 2.0 spaces per two bedroom unit and 1.8 spaces per one bedroom unit.",
+            "source_title": "Trumbull Zoning Regulations (amended through Aug. 19, 2026)",
+            "url": "https://trumbull-ct.gov/DocumentCenter/View/1323",
+            "file": "/sources/trumbull-zoning.pdf"
+          }
+        ],
+        "included": false,
+        "land_share": null,
+        "contribution": null,
+        "exclusion_reason": "Excluded: only 3 of the 4 scored components are confirmed (all 4 are required)."
+      }
+    ],
+    "formula": "V2 = sum(district score x acres) / sum(acres) over included districts",
+    "method": "Each district is scored with the same six-component rubric using only its own rules. The score uses four components that every town can document (multifamily access, approval discretion, minimum lot size, ADU pathway); a district is included only if all four are confirmed. Parking and demolition delay are shown as context but not scored, so towns share one scale. The town V2 score is the land-area-weighted mean of included district scores; acreage is from data/land_area/trumbull.json. Components with no confirmed input are excluded per district."
   }
 }

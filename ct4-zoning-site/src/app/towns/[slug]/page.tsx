@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getAllSlugs, getTown, compositeBreakdown } from "@/lib/towns";
+import { getAllSlugs, getTown, compositeBreakdown, getNzaCompare } from "@/lib/towns";
 import { CitationBadge } from "@/components/CitationFact";
 import UpdateChecker from "@/components/UpdateChecker";
 import VariableTable from "@/components/VariableTable";
 import ScoreGauge from "@/components/ScoreGauge";
 import ScoreBreakdown from "@/components/ScoreBreakdown";
+import V2TownSection from "@/components/V2TownSection";
+import NzaComparePanel from "@/components/NzaComparePanel";
 
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -17,6 +19,10 @@ export default async function TownPage({ params }: { params: Promise<{ slug: str
   if (!town) notFound();
 
   const breakdown = compositeBreakdown(town);
+  const compare = getNzaCompare()[town.slug];
+  const v2Score = town.v2?.land_weighted_score ?? null;
+  const headline = v2Score ?? town.composite_score;
+  const basisLabel = v2Score !== null ? "Our score (district-level)" : "NZA-derived proxy";
   const verifiedCount = town.variables.filter((v) => v.quote).length;
   const nzaSource = town.nza_metrics[0].source;
 
@@ -24,7 +30,7 @@ export default async function TownPage({ params }: { params: Promise<{ slug: str
     <div className="px-4 max-w-5xl mx-auto w-full pb-16">
       <div className="pt-6">
         <Link href="/" className="text-sm text-(--ink-dim) hover:text-(--accent)">
-          &larr; All 17 towns
+          &larr; Dashboard
         </Link>
       </div>
 
@@ -50,9 +56,31 @@ export default async function TownPage({ params }: { params: Promise<{ slug: str
 
       <section className="pb-6 border-b border-(--rule) grid md:grid-cols-[auto_1fr] gap-6 items-center">
         <div className="flex justify-center md:justify-start">
-          <ScoreGauge score={town.hap_score.composite} nzaScore={town.composite_score} />
+          <ScoreGauge score={headline} nzaScore={town.composite_score} label={basisLabel} />
         </div>
         <div>
+          <dl className="grid grid-cols-[auto_1fr] gap-x-4 gap-y-1 text-sm mb-3 max-w-md tabular">
+            {v2Score !== null ? (
+              <>
+                <dt className="text-(--ink-dim)">Our score (district-level)</dt>
+                <dd className="font-bold">{v2Score.toFixed(1)}</dd>
+                <dt className="text-(--ink-dim)">NZA-derived proxy</dt>
+                <dd className="font-semibold">{town.composite_score.toFixed(1)}</dd>
+                <dt className="text-(--ink-dim)">Difference</dt>
+                <dd>
+                  {v2Score - town.composite_score >= 0 ? "+" : ""}
+                  {(v2Score - town.composite_score).toFixed(1)}
+                </dd>
+              </>
+            ) : (
+              <>
+                <dt className="text-(--ink-dim)">NZA-derived proxy</dt>
+                <dd className="font-bold">{town.composite_score.toFixed(1)}</dd>
+                <dt className="text-(--ink-dim)">Our district-level score</dt>
+                <dd className="text-(--ink-faint)">not built yet</dd>
+              </>
+            )}
+          </dl>
           <div className="flex flex-wrap gap-4 text-xs text-(--ink-dim) mb-3">
             <span>
               Most restrictive district: <b className="text-(--ink)">{town.restrictive_district}</b>
@@ -62,10 +90,37 @@ export default async function TownPage({ params }: { params: Promise<{ slug: str
             </span>
             <span>Last research pass: {town.last_checked}</span>
           </div>
-          <p className="text-xs text-(--ink-dim) leading-relaxed mb-4 max-w-xl">{town.hap_score.methodology_note}</p>
-          <ScoreBreakdown factors={town.hap_score.factors} />
+          {v2Score === null && (
+            <p className="text-xs text-(--ink-dim) leading-relaxed max-w-xl">
+              District-level scoring is not built for {town.name} yet, so only the NZA proxy is shown as the headline. The earlier
+              town-level estimate from the variables table is below for reference; it rates the town by its most permissive
+              district and is not comparable with district-level scores.
+            </p>
+          )}
         </div>
       </section>
+
+      {town.v2 && (
+        <section className="py-6 border-b border-(--rule)">
+          <V2TownSection town={town} compare={compare} />
+        </section>
+      )}
+
+      {compare && (
+        <section className="py-6 border-b border-(--rule)">
+          <NzaComparePanel townName={town.name} compare={compare} />
+        </section>
+      )}
+
+      <details className="py-6 border-b border-(--rule)" open={!town.v2}>
+        <summary className="cursor-pointer select-none">
+          <span className="text-base font-semibold">Earlier town-level estimate from the variables table ({town.hap_score.composite.toFixed(1)}; not comparable with district scores)</span>
+          <span className="block text-xs text-(--ink-dim) mt-1 max-w-2xl">{town.hap_score.methodology_note}</span>
+        </summary>
+        <div className="mt-4">
+          <ScoreBreakdown factors={town.hap_score.factors} />
+        </div>
+      </details>
 
       <section className="py-6 border-b border-(--rule)">
         <h2 className="text-base font-semibold mb-1">Variables We Found</h2>
