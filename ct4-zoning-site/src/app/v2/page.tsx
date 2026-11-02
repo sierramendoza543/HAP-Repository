@@ -108,7 +108,11 @@ function DistrictRow({ d, maxAcres }: { d: V2District; maxAcres: number }) {
         <div className="text-xs text-(--ink-dim) mb-2">
           <span>{d.note}</span>
           <span className="block mt-1 text-(--ink-faint)">
-            Scored on {d.components_scored} of 6 components.
+            Scored on {d.components_scored} of 6 components
+            {d.components_confirmed > d.components_scored
+              ? ` (plus ${d.components_confirmed - d.components_scored} marked not applicable)`
+              : ""}
+            .
             {d.included
               ? d.contribution !== null
                 ? ` Contributes ${d.contribution.toFixed(2)} points to the town score.`

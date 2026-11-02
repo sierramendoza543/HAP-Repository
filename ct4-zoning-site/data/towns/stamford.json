@@ -530,15 +530,16 @@
     "methodology_note": "Computed from the Variables table on this page, not from the NZA data below. Six weighted components (Multifamily Access 30pts, Approval Discretion 10pts, Minimum Lot Size 20pts, ADU Approval Pathway 15pts, Parking Mandate 10pts, Demolition Delay 15pts) are each scored against a fixed, published rubric from a specific cited fact above. Higher = more restrictive."
   },
   "v2": {
-    "land_weighted_score": 79.4,
-    "districts_included": 7,
-    "acres_included": 19782.1,
+    "land_weighted_score": 79.0,
+    "districts_included": 10,
+    "acres_included": 21123.4,
     "districts": [
       {
         "district": "RA-3",
         "acres": 3147.4,
-        "score": 86.6,
+        "score": 88.9,
         "components_scored": 5,
+        "components_confirmed": 5,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -718,14 +719,14 @@
           },
           {
             "label": "Parking Mandate",
-            "points": 8.0,
+            "points": 10,
             "max_points": 10,
-            "reason": "2 space(s) per unit; scored at 2/2.5 of the 10-point scale.",
-            "value": "2 per unit",
+            "reason": "3 space(s) per unit; scored at 3/2.5 of the 10-point scale.",
+            "value": "3 per unit",
             "evidence": {
               "field": "parking",
-              "cite": "ADU definition, condition 8",
-              "quote": "One (1) off-street Parking Space shall be provided for an ADU in addition to the parking",
+              "cite": "§12.D.2 Table 12.7, single-family house, market rate (Category 1 / 2 / 3)",
+              "quote": "Single family 2 2 1 2 2 1 3 2 1 house",
               "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
               "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
               "file": "/sources/stamford-zoning.pdf"
@@ -744,7 +745,7 @@
             "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
-        "note": "One Family Residence District (§5.X.3); single-family only; ADU by zoning permit (ADU def., 2024 text, §4): lot ≥10,000 sq ft, 800 sq ft cap, 1 ADU parking space; single-family base parking 2 applied (verified R-20/R-6 only)",
+        "note": "One Family Residence District (§5.X.3); single-family only; ADU by zoning permit (ADU def., 2024 text, §4): lot ≥10,000 sq ft, 800 sq ft cap, 1 ADU parking space; single-family parking is 3 in Parking Category 3 (Table 12.7), which is everything outside the mapped downtown areas (Map 12.8)",
         "citations": [
           {
             "field": "use",
@@ -780,22 +781,23 @@
           },
           {
             "field": "parking",
-            "cite": "ADU definition, condition 8",
-            "quote": "One (1) off-street Parking Space shall be provided for an ADU in addition to the parking",
+            "cite": "§12.D.2 Table 12.7, single-family house, market rate (Category 1 / 2 / 3)",
+            "quote": "Single family 2 2 1 2 2 1 3 2 1 house",
             "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
             "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
             "file": "/sources/stamford-zoning.pdf"
           }
         ],
         "included": true,
-        "land_share": 15.9,
-        "contribution": 13.78
+        "land_share": 14.9,
+        "contribution": 13.25
       },
       {
         "district": "RA-2",
         "acres": 2666.4,
-        "score": 84.4,
+        "score": 86.7,
         "components_scored": 5,
+        "components_confirmed": 5,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -961,14 +963,14 @@
           },
           {
             "label": "Parking Mandate",
-            "points": 8.0,
+            "points": 10,
             "max_points": 10,
-            "reason": "2 space(s) per unit; scored at 2/2.5 of the 10-point scale.",
-            "value": "2 per unit",
+            "reason": "3 space(s) per unit; scored at 3/2.5 of the 10-point scale.",
+            "value": "3 per unit",
             "evidence": {
               "field": "parking",
-              "cite": "ADU definition, condition 8",
-              "quote": "One (1) off-street Parking Space shall be provided for an ADU in addition to the parking",
+              "cite": "§12.D.2 Table 12.7, single-family house, market rate (Category 1 / 2 / 3)",
+              "quote": "Single family 2 2 1 2 2 1 3 2 1 house",
               "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
               "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
               "file": "/sources/stamford-zoning.pdf"
@@ -1015,22 +1017,23 @@
           },
           {
             "field": "parking",
-            "cite": "ADU definition, condition 8",
-            "quote": "One (1) off-street Parking Space shall be provided for an ADU in addition to the parking",
+            "cite": "§12.D.2 Table 12.7, single-family house, market rate (Category 1 / 2 / 3)",
+            "quote": "Single family 2 2 1 2 2 1 3 2 1 house",
             "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
             "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
             "file": "/sources/stamford-zoning.pdf"
           }
         ],
         "included": true,
-        "land_share": 13.5,
-        "contribution": 11.38
+        "land_share": 12.6,
+        "contribution": 10.94
       },
       {
         "district": "RA-1",
         "acres": 8798.7,
-        "score": 80.6,
+        "score": 82.9,
         "components_scored": 5,
+        "components_confirmed": 5,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -1196,14 +1199,14 @@
           },
           {
             "label": "Parking Mandate",
-            "points": 8.0,
+            "points": 10,
             "max_points": 10,
-            "reason": "2 space(s) per unit; scored at 2/2.5 of the 10-point scale.",
-            "value": "2 per unit",
+            "reason": "3 space(s) per unit; scored at 3/2.5 of the 10-point scale.",
+            "value": "3 per unit",
             "evidence": {
               "field": "parking",
-              "cite": "ADU definition, condition 8",
-              "quote": "One (1) off-street Parking Space shall be provided for an ADU in addition to the parking",
+              "cite": "§12.D.2 Table 12.7, single-family house, market rate (Category 1 / 2 / 3)",
+              "quote": "Single family 2 2 1 2 2 1 3 2 1 house",
               "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
               "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
               "file": "/sources/stamford-zoning.pdf"
@@ -1250,22 +1253,23 @@
           },
           {
             "field": "parking",
-            "cite": "ADU definition, condition 8",
-            "quote": "One (1) off-street Parking Space shall be provided for an ADU in addition to the parking",
+            "cite": "§12.D.2 Table 12.7, single-family house, market rate (Category 1 / 2 / 3)",
+            "quote": "Single family 2 2 1 2 2 1 3 2 1 house",
             "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
             "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
             "file": "/sources/stamford-zoning.pdf"
           }
         ],
         "included": true,
-        "land_share": 44.5,
-        "contribution": 35.85
+        "land_share": 41.7,
+        "contribution": 34.53
       },
       {
         "district": "R-20",
         "acres": 1489.3,
-        "score": 76.2,
+        "score": 78.6,
         "components_scored": 5,
+        "components_confirmed": 5,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -1431,14 +1435,14 @@
           },
           {
             "label": "Parking Mandate",
-            "points": 8.0,
+            "points": 10,
             "max_points": 10,
-            "reason": "2 space(s) per unit; scored at 2/2.5 of the 10-point scale.",
-            "value": "2 per unit",
+            "reason": "3 space(s) per unit; scored at 3/2.5 of the 10-point scale.",
+            "value": "3 per unit",
             "evidence": {
               "field": "parking",
-              "cite": "ADU definition, condition 8",
-              "quote": "One (1) off-street Parking Space shall be provided for an ADU in addition to the parking",
+              "cite": "§12.D.2 Table 12.7, single-family house, market rate (Category 1 / 2 / 3)",
+              "quote": "Single family 2 2 1 2 2 1 3 2 1 house",
               "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
               "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
               "file": "/sources/stamford-zoning.pdf"
@@ -1457,7 +1461,7 @@
             "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
-        "note": "One Family, verified single-family only (prior variables); ADU by zoning permit (lot ≥10,000 sq ft); 2 spaces verified",
+        "note": "One Family, single-family only; ADU by zoning permit (lot ≥10,000 sq ft); parking as RA-3",
         "citations": [
           {
             "field": "lot",
@@ -1485,22 +1489,23 @@
           },
           {
             "field": "parking",
-            "cite": "ADU definition, condition 8",
-            "quote": "One (1) off-street Parking Space shall be provided for an ADU in addition to the parking",
+            "cite": "§12.D.2 Table 12.7, single-family house, market rate (Category 1 / 2 / 3)",
+            "quote": "Single family 2 2 1 2 2 1 3 2 1 house",
             "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
             "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
             "file": "/sources/stamford-zoning.pdf"
           }
         ],
         "included": true,
-        "land_share": 7.5,
-        "contribution": 5.74
+        "land_share": 7.1,
+        "contribution": 5.54
       },
       {
         "district": "R-10",
         "acres": 1943.5,
-        "score": 72.4,
+        "score": 74.7,
         "components_scored": 5,
+        "components_confirmed": 5,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -1666,14 +1671,14 @@
           },
           {
             "label": "Parking Mandate",
-            "points": 8.0,
+            "points": 10,
             "max_points": 10,
-            "reason": "2 space(s) per unit; scored at 2/2.5 of the 10-point scale.",
-            "value": "2 per unit",
+            "reason": "3 space(s) per unit; scored at 3/2.5 of the 10-point scale.",
+            "value": "3 per unit",
             "evidence": {
               "field": "parking",
-              "cite": "ADU definition, condition 8",
-              "quote": "One (1) off-street Parking Space shall be provided for an ADU in addition to the parking",
+              "cite": "§12.D.2 Table 12.7, single-family house, market rate (Category 1 / 2 / 3)",
+              "quote": "Single family 2 2 1 2 2 1 3 2 1 house",
               "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
               "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
               "file": "/sources/stamford-zoning.pdf"
@@ -1692,7 +1697,7 @@
             "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
-        "note": "One Family Residence District, 10,000 sq ft minimum (§5.Y.3); ADU by zoning permit at exactly the 10,000 sq ft threshold; parking as R-20",
+        "note": "One Family Residence District, 10,000 sq ft minimum (§5.Y.3); ADU by zoning permit at exactly the 10,000 sq ft threshold; parking as RA-3",
         "citations": [
           {
             "field": "lot",
@@ -1720,22 +1725,23 @@
           },
           {
             "field": "parking",
-            "cite": "ADU definition, condition 8",
-            "quote": "One (1) off-street Parking Space shall be provided for an ADU in addition to the parking",
+            "cite": "§12.D.2 Table 12.7, single-family house, market rate (Category 1 / 2 / 3)",
+            "quote": "Single family 2 2 1 2 2 1 3 2 1 house",
             "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
             "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
             "file": "/sources/stamford-zoning.pdf"
           }
         ],
         "included": true,
-        "land_share": 9.8,
-        "contribution": 7.11
+        "land_share": 9.2,
+        "contribution": 6.87
       },
       {
         "district": "R-7 1/2",
         "acres": 1313.5,
-        "score": 70.8,
+        "score": 73.2,
         "components_scored": 5,
+        "components_confirmed": 5,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -1901,14 +1907,14 @@
           },
           {
             "label": "Parking Mandate",
-            "points": 8.0,
+            "points": 10,
             "max_points": 10,
-            "reason": "2 space(s) per unit; scored at 2/2.5 of the 10-point scale.",
-            "value": "2 per unit",
+            "reason": "3 space(s) per unit; scored at 3/2.5 of the 10-point scale.",
+            "value": "3 per unit",
             "evidence": {
               "field": "parking",
-              "cite": "ADU definition, condition 8",
-              "quote": "One (1) off-street Parking Space shall be provided for an ADU in addition to the parking",
+              "cite": "§12.D.2 Table 12.7, single-family house, market rate (Category 1 / 2 / 3)",
+              "quote": "Single family 2 2 1 2 2 1 3 2 1 house",
               "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
               "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
               "file": "/sources/stamford-zoning.pdf"
@@ -1927,7 +1933,7 @@
             "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
-        "note": "One Family Residence District, 7,500 sq ft minimum (§5.Y.3); ADU by zoning permit only on lots of at least 10,000 sq ft (ADU def., §4), so lots of 7,500 to 9,999 sq ft cannot have one; scored at the qualifying-lot tier, as R-10 and R-20",
+        "note": "One Family Residence District, 7,500 sq ft minimum (§5.Y.3); ADU by zoning permit only on lots of at least 10,000 sq ft (ADU def., §4), so lots of 7,500 to 9,999 sq ft cannot have one; scored at the qualifying-lot tier, as R-10 and R-20; parking 3 (Category 3), though parts near downtown are Category 1 or 2",
         "citations": [
           {
             "field": "lot",
@@ -1955,22 +1961,23 @@
           },
           {
             "field": "parking",
-            "cite": "ADU definition, condition 8",
-            "quote": "One (1) off-street Parking Space shall be provided for an ADU in addition to the parking",
+            "cite": "§12.D.2 Table 12.7, single-family house, market rate (Category 1 / 2 / 3)",
+            "quote": "Single family 2 2 1 2 2 1 3 2 1 house",
             "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
             "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
             "file": "/sources/stamford-zoning.pdf"
           }
         ],
         "included": true,
-        "land_share": 6.6,
-        "contribution": 4.7
+        "land_share": 6.2,
+        "contribution": 4.55
       },
       {
         "district": "R-6",
         "acres": 423.3,
         "score": 40.4,
         "components_scored": 5,
+        "components_confirmed": 5,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -1980,8 +1987,8 @@
             "value": "By right, capped",
             "evidence": {
               "field": "use",
-              "cite": "Zoning district list, R-6",
-              "quote": "R-6               One-Family, Two-Family Residence District",
+              "cite": "§5.Z.2 R-6 permitted uses",
+              "quote": "Multiple Dwellings are specifically prohibited.",
               "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
               "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
               "file": "/sources/stamford-zoning.pdf"
@@ -2033,8 +2040,8 @@
             "value": "By right, capped",
             "evidence": {
               "field": "use",
-              "cite": "Zoning district list, R-6",
-              "quote": "R-6               One-Family, Two-Family Residence District",
+              "cite": "§5.Z.2 R-6 permitted uses",
+              "quote": "Multiple Dwellings are specifically prohibited.",
               "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
               "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
               "file": "/sources/stamford-zoning.pdf"
@@ -2154,7 +2161,14 @@
             "max_points": 10,
             "reason": "2 space(s) per unit; scored at 2/2.5 of the 10-point scale.",
             "value": "2 per unit",
-            "evidence": null,
+            "evidence": {
+              "field": "parking",
+              "cite": "§12.D.2 Table 12.7, single-family house, market rate (Category 1 / 2 / 3)",
+              "quote": "Single family 2 2 1 2 2 1 3 2 1 house",
+              "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+              "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+              "file": "/sources/stamford-zoning.pdf"
+            },
             "scale": null,
             "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
@@ -2169,12 +2183,12 @@
             "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
-        "note": "One- and Two-Family (§5.Z); two-family by right with administrative site plan on lots ≥7,500 sq ft; 5,000 sq ft one-family minimum; ADU by zoning permit only on lots of at least 10,000 sq ft (ADU def., §4), so smaller lots cannot have one; scored at the qualifying-lot tier",
+        "note": "One- and Two-Family (§5.Z); two-family detached by right, multiple dwellings prohibited; 5,000 sq ft one-family minimum, 6,000 sq ft two-family (§5.Z.4(a)); ADU by zoning permit only on lots of at least 10,000 sq ft (ADU def., §4); parking scored at the Category 1/2 value of 2 because much of R-6 lies in the West Side, East Side and South End areas of Map 12.8 (Category 3 would be 3)",
         "citations": [
           {
             "field": "use",
-            "cite": "Zoning district list, R-6",
-            "quote": "R-6               One-Family, Two-Family Residence District",
+            "cite": "§5.Z.2 R-6 permitted uses",
+            "quote": "Multiple Dwellings are specifically prohibited.",
             "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
             "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
             "file": "/sources/stamford-zoning.pdf"
@@ -2194,11 +2208,769 @@
             "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
             "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
             "file": "/sources/stamford-zoning.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "§12.D.2 Table 12.7, single-family house, market rate (Category 1 / 2 / 3)",
+            "quote": "Single family 2 2 1 2 2 1 3 2 1 house",
+            "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+            "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+            "file": "/sources/stamford-zoning.pdf"
           }
         ],
         "included": true,
-        "land_share": 2.1,
-        "contribution": 0.86
+        "land_share": 2.0,
+        "contribution": 0.81
+      },
+      {
+        "district": "R-5",
+        "acres": 737.6,
+        "score": 39.2,
+        "components_scored": 5,
+        "components_confirmed": 5,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 12,
+            "max_points": 30,
+            "reason": "Tier \"By right, capped\": Multifamily or two-family by right, but capped by unit count or density.",
+            "value": "By right, capped",
+            "evidence": {
+              "field": "use",
+              "cite": "§5.AA.2 R-5 site plan review",
+              "quote": "R-5 projects located on Lots of less than 30,000 square feet shall be subject to",
+              "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+              "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+              "file": "/sources/stamford-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": true
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": false
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 4,
+            "max_points": 10,
+            "reason": "Tier \"By right, capped\": Administrative site-plan approval with a cap.",
+            "value": "By right, capped",
+            "evidence": {
+              "field": "use",
+              "cite": "§5.AA.2 R-5 site plan review",
+              "quote": "R-5 projects located on Lots of less than 30,000 square feet shall be subject to",
+              "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+              "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+              "file": "/sources/stamford-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": true
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10."
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 3.3,
+            "max_points": 20,
+            "reason": "Smallest lot is 5,000 sq ft; the log scale gives 3.3 of 20.",
+            "value": "5,000 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "§5.AA.5(a) R-5 minimum lot area",
+              "quote": "One Family Dwelling: 5000 sq. ft.",
+              "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+              "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+              "file": "/sources/stamford-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 7,
+            "max_points": 15,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "ADU definition, conditions 1 and 4",
+              "quote": "Accessory Dwelling Units may only be permitted by Zoning Permit",
+              "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+              "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+              "file": "/sources/stamford-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": true
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15."
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 7.0,
+            "max_points": 10,
+            "reason": "1.75 space(s) per unit; scored at 1.75/2.5 of the 10-point scale.",
+            "value": "1.75 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "§12.D.2 Table 12.7, 2-bedroom apartment, market rate (Category 1 / 2 / 3)",
+              "quote": "2 BR -Apt 1.25 1 0.33 1.75 1 0.33 1.75 1.5 0.75",
+              "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+              "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+              "file": "/sources/stamford-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
+          }
+        ],
+        "note": "R-5 Multi-Family Medium Density: multi-family is a permitted use; projects on lots under 30,000 sq ft are reviewed by the Zoning Enforcement Officer, larger ones by the Zoning Board (§5.AA); one-family lot 5,000 sq ft (multi-family 9,000); parking scored at the 2-bedroom market-rate multifamily value (Table 12.7); ADU by zoning permit on single-family lots (ADU def., §4)",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "§5.AA.2 R-5 site plan review",
+            "quote": "R-5 projects located on Lots of less than 30,000 square feet shall be subject to",
+            "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+            "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+            "file": "/sources/stamford-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "§5.AA.5(a) R-5 minimum lot area",
+            "quote": "One Family Dwelling: 5000 sq. ft.",
+            "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+            "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+            "file": "/sources/stamford-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "ADU definition, conditions 1 and 4",
+            "quote": "Accessory Dwelling Units may only be permitted by Zoning Permit",
+            "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+            "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+            "file": "/sources/stamford-zoning.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "§12.D.2 Table 12.7, 2-bedroom apartment, market rate (Category 1 / 2 / 3)",
+            "quote": "2 BR -Apt 1.25 1 0.33 1.75 1 0.33 1.75 1.5 0.75",
+            "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+            "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+            "file": "/sources/stamford-zoning.pdf"
+          }
+        ],
+        "included": true,
+        "land_share": 3.5,
+        "contribution": 1.37
+      },
+      {
+        "district": "RM-1",
+        "acres": 271.2,
+        "score": 39.2,
+        "components_scored": 5,
+        "components_confirmed": 5,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 12,
+            "max_points": 30,
+            "reason": "Tier \"By right, capped\": Multifamily or two-family by right, but capped by unit count or density.",
+            "value": "By right, capped",
+            "evidence": {
+              "field": "use",
+              "cite": "§5.EE.3 RM-1 permitted uses",
+              "quote": "Dwellings - single family, two family and multi-family.",
+              "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+              "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+              "file": "/sources/stamford-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": true
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": false
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 4,
+            "max_points": 10,
+            "reason": "Tier \"By right, capped\": Administrative site-plan approval with a cap.",
+            "value": "By right, capped",
+            "evidence": {
+              "field": "use",
+              "cite": "§5.EE.3 RM-1 permitted uses",
+              "quote": "Dwellings - single family, two family and multi-family.",
+              "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+              "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+              "file": "/sources/stamford-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": true
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10."
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 3.3,
+            "max_points": 20,
+            "reason": "Smallest lot is 5,000 sq ft; the log scale gives 3.3 of 20.",
+            "value": "5,000 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "§5.EE.5(a) RM-1 minimum lot area",
+              "quote": "a. Minimum Lot Area: 5000 sq. ft.",
+              "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+              "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+              "file": "/sources/stamford-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 7,
+            "max_points": 15,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "ADU definition, conditions 1 and 4",
+              "quote": "Accessory Dwelling Units may only be permitted by Zoning Permit",
+              "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+              "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+              "file": "/sources/stamford-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": true
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15."
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 7.0,
+            "max_points": 10,
+            "reason": "1.75 space(s) per unit; scored at 1.75/2.5 of the 10-point scale.",
+            "value": "1.75 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "§12.D.2 Table 12.7, 2-bedroom apartment, market rate (Category 1 / 2 / 3)",
+              "quote": "2 BR -Apt 1.25 1 0.33 1.75 1 0.33 1.75 1.5 0.75",
+              "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+              "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+              "file": "/sources/stamford-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
+          }
+        ],
+        "note": "RM-1 Multi-Family Residence: single-family, two-family and multi-family dwellings permitted (§5.EE.3); 5,000 sq ft minimum lot, 3,750 sq ft per dwelling unit (§5.EE.5); parking and ADU as R-5",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "§5.EE.3 RM-1 permitted uses",
+            "quote": "Dwellings - single family, two family and multi-family.",
+            "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+            "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+            "file": "/sources/stamford-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "§5.EE.5(a) RM-1 minimum lot area",
+            "quote": "a. Minimum Lot Area: 5000 sq. ft.",
+            "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+            "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+            "file": "/sources/stamford-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "ADU definition, conditions 1 and 4",
+            "quote": "Accessory Dwelling Units may only be permitted by Zoning Permit",
+            "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+            "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+            "file": "/sources/stamford-zoning.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "§12.D.2 Table 12.7, 2-bedroom apartment, market rate (Category 1 / 2 / 3)",
+            "quote": "2 BR -Apt 1.25 1 0.33 1.75 1 0.33 1.75 1.5 0.75",
+            "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+            "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+            "file": "/sources/stamford-zoning.pdf"
+          }
+        ],
+        "included": true,
+        "land_share": 1.3,
+        "contribution": 0.5
+      },
+      {
+        "district": "R-MF",
+        "acres": 332.5,
+        "score": 39.2,
+        "components_scored": 5,
+        "components_confirmed": 5,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 12,
+            "max_points": 30,
+            "reason": "Tier \"By right, capped\": Multifamily or two-family by right, but capped by unit count or density.",
+            "value": "By right, capped",
+            "evidence": {
+              "field": "use",
+              "cite": "§5.FF.2 R-MF site plan review",
+              "quote": "R-MF projects located on Lots of less than 20,000 square feet",
+              "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+              "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+              "file": "/sources/stamford-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": true
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": false
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 4,
+            "max_points": 10,
+            "reason": "Tier \"By right, capped\": Administrative site-plan approval with a cap.",
+            "value": "By right, capped",
+            "evidence": {
+              "field": "use",
+              "cite": "§5.FF.2 R-MF site plan review",
+              "quote": "R-MF projects located on Lots of less than 20,000 square feet",
+              "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+              "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+              "file": "/sources/stamford-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": true
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10."
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 3.3,
+            "max_points": 20,
+            "reason": "Smallest lot is 5,000 sq ft; the log scale gives 3.3 of 20.",
+            "value": "5,000 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "§5.FF.6(a) R-MF minimum lot area",
+              "quote": "a. Minimum Lot Area: 5,000 square feet",
+              "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+              "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+              "file": "/sources/stamford-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 7,
+            "max_points": 15,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "ADU definition, conditions 1 and 4",
+              "quote": "Accessory Dwelling Units may only be permitted by Zoning Permit",
+              "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+              "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+              "file": "/sources/stamford-zoning.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": true
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15."
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 7.0,
+            "max_points": 10,
+            "reason": "1.75 space(s) per unit; scored at 1.75/2.5 of the 10-point scale.",
+            "value": "1.75 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "§12.D.2 Table 12.7, 2-bedroom apartment, market rate (Category 1 / 2 / 3)",
+              "quote": "2 BR -Apt 1.25 1 0.33 1.75 1 0.33 1.75 1.5 0.75",
+              "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+              "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+              "file": "/sources/stamford-zoning.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
+          },
+          {
+            "label": "Demolition Delay",
+            "points": null,
+            "max_points": 15,
+            "reason": "No demolition-delay period was confirmed in the source text for this district, so the component is excluded.",
+            "value": "Not confirmed",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
+          }
+        ],
+        "note": "R-MF Multi-Family Residence Design District: projects on lots under 20,000 sq ft are reviewed by the Zoning Enforcement Officer, larger ones by the Zoning Board (§5.FF.2); 5,000 sq ft minimum lot, 2,000 sq ft per dwelling unit (§5.FF.6); parking and ADU as R-5",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "§5.FF.2 R-MF site plan review",
+            "quote": "R-MF projects located on Lots of less than 20,000 square feet",
+            "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+            "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+            "file": "/sources/stamford-zoning.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "§5.FF.6(a) R-MF minimum lot area",
+            "quote": "a. Minimum Lot Area: 5,000 square feet",
+            "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+            "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+            "file": "/sources/stamford-zoning.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "ADU definition, conditions 1 and 4",
+            "quote": "Accessory Dwelling Units may only be permitted by Zoning Permit",
+            "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+            "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+            "file": "/sources/stamford-zoning.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "§12.D.2 Table 12.7, 2-bedroom apartment, market rate (Category 1 / 2 / 3)",
+            "quote": "2 BR -Apt 1.25 1 0.33 1.75 1 0.33 1.75 1.5 0.75",
+            "source_title": "Zoning Regulations, City of Stamford (through July 10, 2024)",
+            "url": "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000",
+            "file": "/sources/stamford-zoning.pdf"
+          }
+        ],
+        "included": true,
+        "land_share": 1.6,
+        "contribution": 0.62
       }
     ],
     "formula": "V2 = sum(district score x acres) / sum(acres) over included districts",

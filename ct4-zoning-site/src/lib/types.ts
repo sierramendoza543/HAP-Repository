@@ -87,6 +87,7 @@ export interface V2District {
   acres: number;
   score: number | null;
   components_scored: number;
+  components_confirmed: number;
   land_share: number | null;
   included: boolean;
   factors: V2Factor[];

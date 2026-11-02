@@ -558,6 +558,7 @@
         "acres": 10704.3,
         "score": 82.8,
         "components_scored": 5,
+        "components_confirmed": 5,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -690,8 +691,8 @@
             "value": "Zoning permit",
             "evidence": {
               "field": "adu",
-              "cite": "§6-99(3)(E) ADU approved by zoning permit unless larger",
-              "quote": "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU",
+              "cite": "§6-99(3)(J) ADU zoning permit",
+              "quote": "prior to the issuance of a zoning permit.",
               "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
               "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
               "file": "/sources/greenwich-div9.pdf"
@@ -741,14 +742,7 @@
             "max_points": 10,
             "reason": "No parking requirement was confirmed for this district's single-family use.",
             "value": "Not confirmed",
-            "evidence": {
-              "field": "parking",
-              "cite": "§6-99(3)(F) ADU parking",
-              "quote": "There must be at least one off-street parking space on an appropriate solid surface dedicated to the ADU.",
-              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
-              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
-              "file": "/sources/greenwich-div9.pdf"
-            },
+            "evidence": null,
             "scale": null,
             "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
@@ -763,7 +757,7 @@
             "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
-        "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; 90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Single-family only (Sec. 6-93); 4-acre minimum (div. 21 table); ADU by zoning permit, external ADU up to 1,200 sq ft (§6-99(3)(D)); ADU adds 1 dedicated off-street space (§6-99(3)(F)); single-family base parking not in extracted text",
+        "note": "Single-family only (Sec. 6-93); 4-acre minimum (div. 21 table); ADU by zoning permit, external ADU up to 1,200 sq ft (§6-99(3)(D)); ADU adds 1 dedicated off-street space (§6-99(3)(F)); single-family parking (§6-154) sets no number, so it is not scored; demolition: 90-day ceiling for pre-1940 buildings of 500 sq ft or more (Municipal Code §6-316, from the town's web page, not the mirrored zoning text)",
         "citations": [
           {
             "field": "use",
@@ -783,8 +777,8 @@
           },
           {
             "field": "adu",
-            "cite": "§6-99(3)(E) ADU approved by zoning permit unless larger",
-            "quote": "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU",
+            "cite": "§6-99(3)(J) ADU zoning permit",
+            "quote": "prior to the issuance of a zoning permit.",
             "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
             "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
             "file": "/sources/greenwich-div9.pdf"
@@ -793,14 +787,6 @@
             "field": "adu_size",
             "cite": "§6-99(3)(D)(i) external ADU cap",
             "quote": "1,000 square feet in RA-1 and R-20 zones; and 1,200 square feet in RA-2 and RA-4",
-            "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
-            "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
-            "file": "/sources/greenwich-div9.pdf"
-          },
-          {
-            "field": "parking",
-            "cite": "§6-99(3)(F) ADU parking",
-            "quote": "There must be at least one off-street parking space on an appropriate solid surface dedicated to the ADU.",
             "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
             "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
             "file": "/sources/greenwich-div9.pdf"
@@ -815,6 +801,7 @@
         "acres": 7759.3,
         "score": 79.1,
         "components_scored": 5,
+        "components_confirmed": 5,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -947,8 +934,8 @@
             "value": "Zoning permit",
             "evidence": {
               "field": "adu",
-              "cite": "§6-99(3)(E) ADU approved by zoning permit unless larger",
-              "quote": "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU",
+              "cite": "§6-99(3)(J) ADU zoning permit",
+              "quote": "prior to the issuance of a zoning permit.",
               "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
               "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
               "file": "/sources/greenwich-div9.pdf"
@@ -998,14 +985,7 @@
             "max_points": 10,
             "reason": "No parking requirement was confirmed for this district's single-family use.",
             "value": "Not confirmed",
-            "evidence": {
-              "field": "parking",
-              "cite": "§6-99(3)(F) ADU parking",
-              "quote": "There must be at least one off-street parking space on an appropriate solid surface dedicated to the ADU.",
-              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
-              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
-              "file": "/sources/greenwich-div9.pdf"
-            },
+            "evidence": null,
             "scale": null,
             "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
@@ -1020,7 +1000,7 @@
             "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
-        "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; 90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Single-family only (Sec. 6-93); 2-acre minimum; ADU by zoning permit, external ADU up to 1,200 sq ft (§6-99(3)(D)); base parking not in extracted text",
+        "note": "Single-family only (Sec. 6-93); 2-acre minimum; ADU by zoning permit, external ADU up to 1,200 sq ft (§6-99(3)(D)); single-family parking sets no number; demolition as RA-4",
         "citations": [
           {
             "field": "use",
@@ -1040,8 +1020,8 @@
           },
           {
             "field": "adu",
-            "cite": "§6-99(3)(E) ADU approved by zoning permit unless larger",
-            "quote": "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU",
+            "cite": "§6-99(3)(J) ADU zoning permit",
+            "quote": "prior to the issuance of a zoning permit.",
             "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
             "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
             "file": "/sources/greenwich-div9.pdf"
@@ -1050,14 +1030,6 @@
             "field": "adu_size",
             "cite": "§6-99(3)(D)(i) external ADU cap",
             "quote": "1,000 square feet in RA-1 and R-20 zones; and 1,200 square feet in RA-2 and RA-4",
-            "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
-            "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
-            "file": "/sources/greenwich-div9.pdf"
-          },
-          {
-            "field": "parking",
-            "cite": "§6-99(3)(F) ADU parking",
-            "quote": "There must be at least one off-street parking space on an appropriate solid surface dedicated to the ADU.",
             "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
             "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
             "file": "/sources/greenwich-div9.pdf"
@@ -1072,6 +1044,7 @@
         "acres": 4753.3,
         "score": 75.6,
         "components_scored": 5,
+        "components_confirmed": 5,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -1204,8 +1177,8 @@
             "value": "Zoning permit",
             "evidence": {
               "field": "adu",
-              "cite": "§6-99(3)(E) ADU approved by zoning permit unless larger",
-              "quote": "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU",
+              "cite": "§6-99(3)(J) ADU zoning permit",
+              "quote": "prior to the issuance of a zoning permit.",
               "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
               "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
               "file": "/sources/greenwich-div9.pdf"
@@ -1255,14 +1228,7 @@
             "max_points": 10,
             "reason": "No parking requirement was confirmed for this district's single-family use.",
             "value": "Not confirmed",
-            "evidence": {
-              "field": "parking",
-              "cite": "§6-99(3)(F) ADU parking",
-              "quote": "There must be at least one off-street parking space on an appropriate solid surface dedicated to the ADU.",
-              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
-              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
-              "file": "/sources/greenwich-div9.pdf"
-            },
+            "evidence": null,
             "scale": null,
             "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
@@ -1277,7 +1243,7 @@
             "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
-        "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; 90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Single-family only (Sec. 6-93); 1-acre minimum; ADU by zoning permit, external ADU up to 1,000 sq ft (§6-99(3)(D)); base parking not in extracted text",
+        "note": "Single-family only (Sec. 6-93); 1-acre minimum; ADU by zoning permit, external ADU up to 1,000 sq ft (§6-99(3)(D)); single-family parking sets no number; demolition as RA-4",
         "citations": [
           {
             "field": "use",
@@ -1297,8 +1263,8 @@
           },
           {
             "field": "adu",
-            "cite": "§6-99(3)(E) ADU approved by zoning permit unless larger",
-            "quote": "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU",
+            "cite": "§6-99(3)(J) ADU zoning permit",
+            "quote": "prior to the issuance of a zoning permit.",
             "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
             "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
             "file": "/sources/greenwich-div9.pdf"
@@ -1307,14 +1273,6 @@
             "field": "adu_size",
             "cite": "§6-99(3)(D)(i) external ADU cap",
             "quote": "1,000 square feet in RA-1 and R-20 zones; and 1,200 square feet in RA-2 and RA-4",
-            "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
-            "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
-            "file": "/sources/greenwich-div9.pdf"
-          },
-          {
-            "field": "parking",
-            "cite": "§6-99(3)(F) ADU parking",
-            "quote": "There must be at least one off-street parking space on an appropriate solid surface dedicated to the ADU.",
             "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
             "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
             "file": "/sources/greenwich-div9.pdf"
@@ -1329,6 +1287,7 @@
         "acres": 1189.6,
         "score": 71.4,
         "components_scored": 5,
+        "components_confirmed": 5,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -1461,8 +1420,8 @@
             "value": "Zoning permit",
             "evidence": {
               "field": "adu",
-              "cite": "§6-99(3)(E) ADU approved by zoning permit unless larger",
-              "quote": "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU",
+              "cite": "§6-99(3)(J) ADU zoning permit",
+              "quote": "prior to the issuance of a zoning permit.",
               "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
               "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
               "file": "/sources/greenwich-div9.pdf"
@@ -1512,14 +1471,7 @@
             "max_points": 10,
             "reason": "No parking requirement was confirmed for this district's single-family use.",
             "value": "Not confirmed",
-            "evidence": {
-              "field": "parking",
-              "cite": "§6-99(3)(F) ADU parking",
-              "quote": "There must be at least one off-street parking space on an appropriate solid surface dedicated to the ADU.",
-              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
-              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
-              "file": "/sources/greenwich-div9.pdf"
-            },
+            "evidence": null,
             "scale": null,
             "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
@@ -1534,7 +1486,7 @@
             "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
-        "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; 90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Single-family only (Sec. 6-93); 20,000 sq ft minimum (prior variables); ADU by zoning permit, external ADU up to 1,000 sq ft (§6-99(3)(D)); base parking not in extracted text",
+        "note": "Single-family only (Sec. 6-93); 20,000 sq ft minimum; ADU by zoning permit, external ADU up to 1,000 sq ft (§6-99(3)(D)); single-family parking sets no number; demolition as RA-4",
         "citations": [
           {
             "field": "use",
@@ -1554,8 +1506,8 @@
           },
           {
             "field": "adu",
-            "cite": "§6-99(3)(E) ADU approved by zoning permit unless larger",
-            "quote": "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU",
+            "cite": "§6-99(3)(J) ADU zoning permit",
+            "quote": "prior to the issuance of a zoning permit.",
             "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
             "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
             "file": "/sources/greenwich-div9.pdf"
@@ -1564,14 +1516,6 @@
             "field": "adu_size",
             "cite": "§6-99(3)(D)(i) external ADU cap",
             "quote": "1,000 square feet in RA-1 and R-20 zones; and 1,200 square feet in RA-2 and RA-4",
-            "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
-            "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
-            "file": "/sources/greenwich-div9.pdf"
-          },
-          {
-            "field": "parking",
-            "cite": "§6-99(3)(F) ADU parking",
-            "quote": "There must be at least one off-street parking space on an appropriate solid surface dedicated to the ADU.",
             "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
             "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
             "file": "/sources/greenwich-div9.pdf"
@@ -1586,6 +1530,7 @@
         "acres": 2277.5,
         "score": 68.8,
         "components_scored": 5,
+        "components_confirmed": 5,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -1718,8 +1663,8 @@
             "value": "Zoning permit",
             "evidence": {
               "field": "adu",
-              "cite": "§6-99(3)(E) ADU approved by zoning permit unless larger",
-              "quote": "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU",
+              "cite": "§6-99(3)(J) ADU zoning permit",
+              "quote": "prior to the issuance of a zoning permit.",
               "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
               "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
               "file": "/sources/greenwich-div9.pdf"
@@ -1769,14 +1714,7 @@
             "max_points": 10,
             "reason": "No parking requirement was confirmed for this district's single-family use.",
             "value": "Not confirmed",
-            "evidence": {
-              "field": "parking",
-              "cite": "§6-99(3)(F) ADU parking",
-              "quote": "There must be at least one off-street parking space on an appropriate solid surface dedicated to the ADU.",
-              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
-              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
-              "file": "/sources/greenwich-div9.pdf"
-            },
+            "evidence": null,
             "scale": null,
             "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
@@ -1791,7 +1729,7 @@
             "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
-        "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; 90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Single-family only (Sec. 6-93); 12,000 sq ft minimum (prior variables); ADU by zoning permit, external ADU up to 800 sq ft (§6-99(3)(D)); base parking not in extracted text",
+        "note": "Single-family only (Sec. 6-93); 12,000 sq ft minimum; ADU by zoning permit, external ADU up to 800 sq ft (§6-99(3)(D)); single-family parking sets no number; demolition as RA-4",
         "citations": [
           {
             "field": "use",
@@ -1811,8 +1749,8 @@
           },
           {
             "field": "adu",
-            "cite": "§6-99(3)(E) ADU approved by zoning permit unless larger",
-            "quote": "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU",
+            "cite": "§6-99(3)(J) ADU zoning permit",
+            "quote": "prior to the issuance of a zoning permit.",
             "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
             "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
             "file": "/sources/greenwich-div9.pdf"
@@ -1821,14 +1759,6 @@
             "field": "adu_size",
             "cite": "§6-99(3)(D)(i) external ADU cap",
             "quote": "External ADUs shall be limited to 800 square feet in R-12, R-7 and R-6 zones;",
-            "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
-            "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
-            "file": "/sources/greenwich-div9.pdf"
-          },
-          {
-            "field": "parking",
-            "cite": "§6-99(3)(F) ADU parking",
-            "quote": "There must be at least one off-street parking space on an appropriate solid surface dedicated to the ADU.",
             "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
             "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
             "file": "/sources/greenwich-div9.pdf"
@@ -1843,6 +1773,7 @@
         "acres": 1159.2,
         "score": 66.3,
         "components_scored": 5,
+        "components_confirmed": 5,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -1975,8 +1906,8 @@
             "value": "Zoning permit",
             "evidence": {
               "field": "adu",
-              "cite": "§6-99(3)(E) ADU approved by zoning permit unless larger",
-              "quote": "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU",
+              "cite": "§6-99(3)(J) ADU zoning permit",
+              "quote": "prior to the issuance of a zoning permit.",
               "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
               "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
               "file": "/sources/greenwich-div9.pdf"
@@ -2026,14 +1957,7 @@
             "max_points": 10,
             "reason": "No parking requirement was confirmed for this district's single-family use.",
             "value": "Not confirmed",
-            "evidence": {
-              "field": "parking",
-              "cite": "§6-99(3)(F) ADU parking",
-              "quote": "There must be at least one off-street parking space on an appropriate solid surface dedicated to the ADU.",
-              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
-              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
-              "file": "/sources/greenwich-div9.pdf"
-            },
+            "evidence": null,
             "scale": null,
             "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
@@ -2048,7 +1972,7 @@
             "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
-        "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Sec. 6-97: uses of RA-4 only plus §6-94; 7,500 sq ft minimum (div. 21 table); ADU by zoning permit, external ADU up to 800 sq ft (§6-99(3)(D)); base parking not in extracted text",
+        "note": "Sec. 6-97: uses of RA-4 only plus §6-94; 7,500 sq ft minimum (div. 21 table); ADU by zoning permit, external ADU up to 800 sq ft (§6-99(3)(D)); single-family parking sets no number; demolition as RA-4",
         "citations": [
           {
             "field": "use",
@@ -2068,8 +1992,8 @@
           },
           {
             "field": "adu",
-            "cite": "§6-99(3)(E) ADU approved by zoning permit unless larger",
-            "quote": "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU",
+            "cite": "§6-99(3)(J) ADU zoning permit",
+            "quote": "prior to the issuance of a zoning permit.",
             "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
             "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
             "file": "/sources/greenwich-div9.pdf"
@@ -2078,14 +2002,6 @@
             "field": "adu_size",
             "cite": "§6-99(3)(D)(i) external ADU cap",
             "quote": "External ADUs shall be limited to 800 square feet in R-12, R-7 and R-6 zones;",
-            "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
-            "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
-            "file": "/sources/greenwich-div9.pdf"
-          },
-          {
-            "field": "parking",
-            "cite": "§6-99(3)(F) ADU parking",
-            "quote": "There must be at least one off-street parking space on an appropriate solid surface dedicated to the ADU.",
             "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
             "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
             "file": "/sources/greenwich-div9.pdf"
@@ -2100,6 +2016,7 @@
         "acres": 978.0,
         "score": 39.7,
         "components_scored": 5,
+        "components_confirmed": 5,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -2232,8 +2149,8 @@
             "value": "Zoning permit",
             "evidence": {
               "field": "adu",
-              "cite": "§6-99(3)(E) ADU approved by zoning permit unless larger",
-              "quote": "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU",
+              "cite": "§6-99(3)(J) ADU zoning permit",
+              "quote": "prior to the issuance of a zoning permit.",
               "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
               "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
               "file": "/sources/greenwich-div9.pdf"
@@ -2283,14 +2200,7 @@
             "max_points": 10,
             "reason": "No parking requirement was confirmed for this district's single-family use.",
             "value": "Not confirmed",
-            "evidence": {
-              "field": "parking",
-              "cite": "§6-99(3)(F) ADU parking",
-              "quote": "There must be at least one off-street parking space on an appropriate solid surface dedicated to the ADU.",
-              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
-              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
-              "file": "/sources/greenwich-div9.pdf"
-            },
+            "evidence": null,
             "scale": null,
             "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
@@ -2305,7 +2215,7 @@
             "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
-        "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Sec. 6-98: two-family by administrative site plan approval on lots ≥7,500 sq ft; 7,500 sq ft minimum (div. 21 table); ADU external up to 800 sq ft; base parking not in extracted text",
+        "note": "Sec. 6-98: two-family by administrative site plan approval on lots ≥7,500 sq ft; 7,500 sq ft minimum (div. 21 table); ADU external up to 800 sq ft; single-family parking sets no number (two-family parking in §6-155 is one garage plus one outdoor space per dwelling); demolition as RA-4",
         "citations": [
           {
             "field": "use",
@@ -2325,8 +2235,8 @@
           },
           {
             "field": "adu",
-            "cite": "§6-99(3)(E) ADU approved by zoning permit unless larger",
-            "quote": "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU",
+            "cite": "§6-99(3)(J) ADU zoning permit",
+            "quote": "prior to the issuance of a zoning permit.",
             "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
             "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
             "file": "/sources/greenwich-div9.pdf"
@@ -2335,14 +2245,6 @@
             "field": "adu_size",
             "cite": "§6-99(3)(D)(i) external ADU cap",
             "quote": "External ADUs shall be limited to 800 square feet in R-12, R-7 and R-6 zones;",
-            "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
-            "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
-            "file": "/sources/greenwich-div9.pdf"
-          },
-          {
-            "field": "parking",
-            "cite": "§6-99(3)(F) ADU parking",
-            "quote": "There must be at least one off-street parking space on an appropriate solid surface dedicated to the ADU.",
             "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
             "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
             "file": "/sources/greenwich-div9.pdf"
@@ -2355,8 +2257,9 @@
       {
         "district": "R-MF",
         "acres": 60.9,
-        "score": 70.6,
+        "score": 60.2,
         "components_scored": 5,
+        "components_confirmed": 5,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -2466,28 +2369,28 @@
           },
           {
             "label": "Minimum Lot Size",
-            "points": null,
+            "points": 1.7,
             "max_points": 20,
-            "reason": "No lot-size rule could be confirmed for this district.",
-            "value": "Not confirmed",
-            "evidence": null,
+            "reason": "Smallest lot is 3,600 sq ft; the log scale gives 1.7 of 20.",
+            "value": "3,600 sq ft",
+            "evidence": {
+              "field": "lot",
+              "cite": "Bulk schedule, R-MF row",
+              "quote": "R-MF 2-1/2 35 ft. 3,600 60 ft.",
+              "source_title": "Building Zone Regulations, Div. 21 (Bulk Schedule)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37841",
+              "file": "/sources/greenwich-div21.pdf"
+            },
             "scale": null,
             "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
           },
           {
             "label": "ADU Approval Pathway",
-            "points": 7,
+            "points": null,
             "max_points": 15,
-            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
-            "value": "Zoning permit",
-            "evidence": {
-              "field": "adu",
-              "cite": "§6-99(3)(E) ADU approved by zoning permit unless larger",
-              "quote": "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU",
-              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
-              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
-              "file": "/sources/greenwich-div9.pdf"
-            },
+            "reason": "Not confirmed for this district.",
+            "value": "Not confirmed",
+            "evidence": null,
             "scale": [
               {
                 "tier": "by_right",
@@ -2508,7 +2411,7 @@
                 "label": "Zoning permit",
                 "points": 7,
                 "meaning": "Zoning permit (staff level)",
-                "active": true
+                "active": false
               },
               {
                 "tier": "special_permit",
@@ -2535,11 +2438,11 @@
             "value": "2 per unit",
             "evidence": {
               "field": "parking",
-              "cite": "§6-99(3)(F) ADU parking",
-              "quote": "There must be at least one off-street parking space on an appropriate solid surface dedicated to the ADU.",
-              "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
-              "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
-              "file": "/sources/greenwich-div9.pdf"
+              "cite": "§6-155(1)(a) two-family and multifamily parking",
+              "quote": "Dwelling with one or two bedrooms*: one garage space for each dwelling and one outdoor space for each dwelling.",
+              "source_title": "Building Zone Regulations, Div. 15 (Parking and Garages, Aug. 2023)",
+              "url": "https://www.greenwichct.gov/DocumentCenter/View/37834",
+              "file": "/sources/greenwich-div15.pdf"
             },
             "scale": null,
             "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
@@ -2555,7 +2458,7 @@
             "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
-        "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; 90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Two-family / multifamily by Special Permit only (prior variables); lot minimum is per family (2,400 sq ft), not comparable so excluded; 1-2BR parking = 2 spaces (1 garage + 1 outdoor)",
+        "note": "Two-family / multifamily by Special Permit (§6-98.1); lot area 3,600 sq ft for single and two-family, 2,400 sq ft per family for multifamily (div. 21 table); parking one garage plus one outdoor space per 1-2 bedroom dwelling (§6-155(1)(a); the 2026 PA 25-1 amendment may remove this for projects under 17 units); the ADU section lists no R-MF rule, so ADU is not scored; demolition as RA-4",
         "citations": [
           {
             "field": "use",
@@ -2566,25 +2469,25 @@
             "file": "/sources/greenwich-div9.pdf"
           },
           {
-            "field": "adu",
-            "cite": "§6-99(3)(E) ADU approved by zoning permit unless larger",
-            "quote": "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU",
-            "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
-            "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
-            "file": "/sources/greenwich-div9.pdf"
+            "field": "lot",
+            "cite": "Bulk schedule, R-MF row",
+            "quote": "R-MF 2-1/2 35 ft. 3,600 60 ft.",
+            "source_title": "Building Zone Regulations, Div. 21 (Bulk Schedule)",
+            "url": "https://www.greenwichct.gov/DocumentCenter/View/37841",
+            "file": "/sources/greenwich-div21.pdf"
           },
           {
             "field": "parking",
-            "cite": "§6-99(3)(F) ADU parking",
-            "quote": "There must be at least one off-street parking space on an appropriate solid surface dedicated to the ADU.",
-            "source_title": "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)",
-            "url": "https://www.greenwichct.gov/DocumentCenter/View/37828",
-            "file": "/sources/greenwich-div9.pdf"
+            "cite": "§6-155(1)(a) two-family and multifamily parking",
+            "quote": "Dwelling with one or two bedrooms*: one garage space for each dwelling and one outdoor space for each dwelling.",
+            "source_title": "Building Zone Regulations, Div. 15 (Parking and Garages, Aug. 2023)",
+            "url": "https://www.greenwichct.gov/DocumentCenter/View/37834",
+            "file": "/sources/greenwich-div15.pdf"
           }
         ],
         "included": true,
         "land_share": 0.2,
-        "contribution": 0.15
+        "contribution": 0.13
       }
     ],
     "formula": "V2 = sum(district score x acres) / sum(acres) over included districts",

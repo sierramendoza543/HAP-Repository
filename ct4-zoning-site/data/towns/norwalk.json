@@ -413,15 +413,16 @@
     "methodology_note": "Computed from the Variables table on this page, not from the NZA data below. Six weighted components (Multifamily Access 30pts, Approval Discretion 10pts, Minimum Lot Size 20pts, ADU Approval Pathway 15pts, Parking Mandate 10pts, Demolition Delay 15pts) are each scored against a fixed, published rubric from a specific cited fact above. Higher = more restrictive."
   },
   "v2": {
-    "land_weighted_score": 54.0,
-    "districts_included": 2,
-    "acres_included": 3542.6,
+    "land_weighted_score": 70.3,
+    "districts_included": 5,
+    "acres_included": 12521.1,
     "districts": [
       {
         "district": "CD-1L",
         "acres": 4179.3,
-        "score": 84.7,
-        "components_scored": 4,
+        "score": 78.5,
+        "components_scored": 6,
+        "components_confirmed": 6,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -431,11 +432,11 @@
             "value": "Not allowed",
             "evidence": {
               "field": "use",
-              "cite": "§3.3.1(A)(1) CD-1L district",
-              "quote": "1. Community District CD-1L",
-              "source_title": "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)",
-              "url": "https://www.norwalkct.gov/DocumentCenter/View/32245",
-              "file": "/sources/norwalk-art3.pdf"
+              "cite": "Table 4.3.9.A Large Multifamily Building row (CD-1L / 1M / 1S / 2 / 3 ... columns)",
+              "quote": "Large Multifamily NP NP NP NP PL NP PL PL PL NP NP NP NP SPU NP Building",
+              "source_title": "Norwalk Zoning Regulations, Use Table extract (7/10/26; ADU text rev. eff. 4/24/26)",
+              "url": "https://norwalkct.gov/DocumentCenter/View/38584",
+              "file": "/sources/norwalk-usetable.pdf"
             },
             "scale": [
               {
@@ -484,11 +485,11 @@
             "value": "Not allowed",
             "evidence": {
               "field": "use",
-              "cite": "§3.3.1(A)(1) CD-1L district",
-              "quote": "1. Community District CD-1L",
-              "source_title": "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)",
-              "url": "https://www.norwalkct.gov/DocumentCenter/View/32245",
-              "file": "/sources/norwalk-art3.pdf"
+              "cite": "Table 4.3.9.A Large Multifamily Building row (CD-1L / 1M / 1S / 2 / 3 ... columns)",
+              "quote": "Large Multifamily NP NP NP NP PL NP PL PL PL NP NP NP NP SPU NP Building",
+              "source_title": "Norwalk Zoning Regulations, Use Table extract (7/10/26; ADU text rev. eff. 4/24/26)",
+              "url": "https://norwalkct.gov/DocumentCenter/View/38584",
+              "file": "/sources/norwalk-usetable.pdf"
             },
             "scale": [
               {
@@ -535,17 +536,31 @@
             "max_points": 20,
             "reason": "Smallest lot is 43,560 sq ft; the log scale gives 13.5 of 20.",
             "value": "43,560 sq ft",
-            "evidence": null,
+            "evidence": {
+              "field": "lot",
+              "cite": "Table 4.3.1 CD-1L Lot/Building Site Area",
+              "quote": "Lot/Building Site Area 43,560 sq. ft.",
+              "source_title": "Norwalk Zoning Regulations, Art. 4 (Building & Lot/Building Site Standards, compiled 9/23/2025)",
+              "url": "https://www.norwalkct.gov/DocumentCenter/View/32250",
+              "file": "/sources/norwalk-art4.pdf"
+            },
             "scale": null,
             "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
           },
           {
             "label": "ADU Approval Pathway",
-            "points": null,
+            "points": 7,
             "max_points": 15,
-            "reason": "Not confirmed for this district.",
-            "value": "Not confirmed",
-            "evidence": null,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "§4.3.9.G.4.a(3) ADU permitting procedures",
+              "quote": "a. Permitted by Zoning Permit in accordance",
+              "source_title": "Norwalk Zoning Regulations, Use Table extract (7/10/26; ADU text rev. eff. 4/24/26)",
+              "url": "https://norwalkct.gov/DocumentCenter/View/38584",
+              "file": "/sources/norwalk-usetable.pdf"
+            },
             "scale": [
               {
                 "tier": "by_right",
@@ -566,7 +581,7 @@
                 "label": "Zoning permit",
                 "points": 7,
                 "meaning": "Zoning permit (staff level)",
-                "active": false
+                "active": true
               },
               {
                 "tier": "special_permit",
@@ -587,11 +602,18 @@
           },
           {
             "label": "Parking Mandate",
-            "points": null,
+            "points": 8.0,
             "max_points": 10,
-            "reason": "No parking requirement was confirmed for this district's single-family use.",
-            "value": "Not confirmed",
-            "evidence": null,
+            "reason": "2 space(s) per unit; scored at 2/2.5 of the 10-point scale.",
+            "value": "2 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "Table 4.3.12.B-1 single-family and two-family parking",
+              "quote": "2 per Dwelling Unit; except that within the CD-3, CD-3W,",
+              "source_title": "Norwalk Zoning Regulations, Art. 4 (Building & Lot/Building Site Standards, compiled 9/23/2025)",
+              "url": "https://www.norwalkct.gov/DocumentCenter/View/32250",
+              "file": "/sources/norwalk-art4.pdf"
+            },
             "scale": null,
             "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
@@ -606,27 +628,51 @@
             "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
-        "note": "Sub-Urban Large Lot, single-family per district name (Art. 3); bulk schedule 43,560 sq ft; ADU rule not in extracted text, excluded; parking not extracted",
+        "note": "Sub-Urban Large Lot; multifamily and two-family not permitted (Table 4.3.9.A); 43,560 sq ft (Table 4.3.1); ADU by zoning permit when it meets principal-building setbacks (§4.3.9.G.4); 2 spaces per dwelling unit (Table 4.3.12.B-1); demolition: 120-day maximum delay (City Code §55-5, adopted 4-24-1984, not a mirrored PDF)",
         "citations": [
           {
             "field": "use",
-            "cite": "§3.3.1(A)(1) CD-1L district",
-            "quote": "1. Community District CD-1L",
-            "source_title": "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)",
-            "url": "https://www.norwalkct.gov/DocumentCenter/View/32245",
-            "file": "/sources/norwalk-art3.pdf"
+            "cite": "Table 4.3.9.A Large Multifamily Building row (CD-1L / 1M / 1S / 2 / 3 ... columns)",
+            "quote": "Large Multifamily NP NP NP NP PL NP PL PL PL NP NP NP NP SPU NP Building",
+            "source_title": "Norwalk Zoning Regulations, Use Table extract (7/10/26; ADU text rev. eff. 4/24/26)",
+            "url": "https://norwalkct.gov/DocumentCenter/View/38584",
+            "file": "/sources/norwalk-usetable.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "Table 4.3.1 CD-1L Lot/Building Site Area",
+            "quote": "Lot/Building Site Area 43,560 sq. ft.",
+            "source_title": "Norwalk Zoning Regulations, Art. 4 (Building & Lot/Building Site Standards, compiled 9/23/2025)",
+            "url": "https://www.norwalkct.gov/DocumentCenter/View/32250",
+            "file": "/sources/norwalk-art4.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "§4.3.9.G.4.a(3) ADU permitting procedures",
+            "quote": "a. Permitted by Zoning Permit in accordance",
+            "source_title": "Norwalk Zoning Regulations, Use Table extract (7/10/26; ADU text rev. eff. 4/24/26)",
+            "url": "https://norwalkct.gov/DocumentCenter/View/38584",
+            "file": "/sources/norwalk-usetable.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "Table 4.3.12.B-1 single-family and two-family parking",
+            "quote": "2 per Dwelling Unit; except that within the CD-3, CD-3W,",
+            "source_title": "Norwalk Zoning Regulations, Art. 4 (Building & Lot/Building Site Standards, compiled 9/23/2025)",
+            "url": "https://www.norwalkct.gov/DocumentCenter/View/32250",
+            "file": "/sources/norwalk-art4.pdf"
           }
         ],
-        "included": false,
-        "land_share": null,
-        "contribution": null,
-        "exclusion_reason": "Excluded: only 4 of 6 components are confirmed (minimum 5)."
+        "included": true,
+        "land_share": 33.4,
+        "contribution": 26.2
       },
       {
         "district": "CD-1M",
         "acres": 4255.1,
-        "score": 76.8,
-        "components_scored": 4,
+        "score": 72.6,
+        "components_scored": 6,
+        "components_confirmed": 6,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -636,11 +682,11 @@
             "value": "Not allowed",
             "evidence": {
               "field": "use",
-              "cite": "§3.3.1(A)(2) CD-1M district",
-              "quote": "2. Community District CD-1M",
-              "source_title": "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)",
-              "url": "https://www.norwalkct.gov/DocumentCenter/View/32245",
-              "file": "/sources/norwalk-art3.pdf"
+              "cite": "Table 4.3.9.A Large Multifamily Building row (CD-1L / 1M / 1S / 2 / 3 ... columns)",
+              "quote": "Large Multifamily NP NP NP NP PL NP PL PL PL NP NP NP NP SPU NP Building",
+              "source_title": "Norwalk Zoning Regulations, Use Table extract (7/10/26; ADU text rev. eff. 4/24/26)",
+              "url": "https://norwalkct.gov/DocumentCenter/View/38584",
+              "file": "/sources/norwalk-usetable.pdf"
             },
             "scale": [
               {
@@ -689,11 +735,11 @@
             "value": "Not allowed",
             "evidence": {
               "field": "use",
-              "cite": "§3.3.1(A)(2) CD-1M district",
-              "quote": "2. Community District CD-1M",
-              "source_title": "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)",
-              "url": "https://www.norwalkct.gov/DocumentCenter/View/32245",
-              "file": "/sources/norwalk-art3.pdf"
+              "cite": "Table 4.3.9.A Large Multifamily Building row (CD-1L / 1M / 1S / 2 / 3 ... columns)",
+              "quote": "Large Multifamily NP NP NP NP PL NP PL PL PL NP NP NP NP SPU NP Building",
+              "source_title": "Norwalk Zoning Regulations, Use Table extract (7/10/26; ADU text rev. eff. 4/24/26)",
+              "url": "https://norwalkct.gov/DocumentCenter/View/38584",
+              "file": "/sources/norwalk-usetable.pdf"
             },
             "scale": [
               {
@@ -740,17 +786,31 @@
             "max_points": 20,
             "reason": "Smallest lot is 12,500 sq ft; the log scale gives 7.6 of 20.",
             "value": "12,500 sq ft",
-            "evidence": null,
+            "evidence": {
+              "field": "lot",
+              "cite": "Table 4.3.1 CD-1M Lot/Building Site Area",
+              "quote": "Lot/Building Site Area 12,500 sq. ft.",
+              "source_title": "Norwalk Zoning Regulations, Art. 4 (Building & Lot/Building Site Standards, compiled 9/23/2025)",
+              "url": "https://www.norwalkct.gov/DocumentCenter/View/32250",
+              "file": "/sources/norwalk-art4.pdf"
+            },
             "scale": null,
             "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
           },
           {
             "label": "ADU Approval Pathway",
-            "points": null,
+            "points": 7,
             "max_points": 15,
-            "reason": "Not confirmed for this district.",
-            "value": "Not confirmed",
-            "evidence": null,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "§4.3.9.G.4.a(3) ADU permitting procedures",
+              "quote": "a. Permitted by Zoning Permit in accordance",
+              "source_title": "Norwalk Zoning Regulations, Use Table extract (7/10/26; ADU text rev. eff. 4/24/26)",
+              "url": "https://norwalkct.gov/DocumentCenter/View/38584",
+              "file": "/sources/norwalk-usetable.pdf"
+            },
             "scale": [
               {
                 "tier": "by_right",
@@ -771,7 +831,7 @@
                 "label": "Zoning permit",
                 "points": 7,
                 "meaning": "Zoning permit (staff level)",
-                "active": false
+                "active": true
               },
               {
                 "tier": "special_permit",
@@ -792,11 +852,18 @@
           },
           {
             "label": "Parking Mandate",
-            "points": null,
+            "points": 8.0,
             "max_points": 10,
-            "reason": "No parking requirement was confirmed for this district's single-family use.",
-            "value": "Not confirmed",
-            "evidence": null,
+            "reason": "2 space(s) per unit; scored at 2/2.5 of the 10-point scale.",
+            "value": "2 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "Table 4.3.12.B-1 single-family and two-family parking",
+              "quote": "2 per Dwelling Unit; except that within the CD-3, CD-3W,",
+              "source_title": "Norwalk Zoning Regulations, Art. 4 (Building & Lot/Building Site Standards, compiled 9/23/2025)",
+              "url": "https://www.norwalkct.gov/DocumentCenter/View/32250",
+              "file": "/sources/norwalk-art4.pdf"
+            },
             "scale": null,
             "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
@@ -811,27 +878,51 @@
             "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
-        "note": "Sub-Urban Medium Lot, single-family per district name (Art. 3); bulk schedule 12,500 sq ft; ADU rule not in extracted text, excluded; parking not extracted",
+        "note": "Sub-Urban Medium Lot; multifamily and two-family not permitted; 12,500 sq ft (Table 4.3.1); ADU by zoning permit; 2 spaces per dwelling unit; demolition as CD-1L",
         "citations": [
           {
             "field": "use",
-            "cite": "§3.3.1(A)(2) CD-1M district",
-            "quote": "2. Community District CD-1M",
-            "source_title": "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)",
-            "url": "https://www.norwalkct.gov/DocumentCenter/View/32245",
-            "file": "/sources/norwalk-art3.pdf"
+            "cite": "Table 4.3.9.A Large Multifamily Building row (CD-1L / 1M / 1S / 2 / 3 ... columns)",
+            "quote": "Large Multifamily NP NP NP NP PL NP PL PL PL NP NP NP NP SPU NP Building",
+            "source_title": "Norwalk Zoning Regulations, Use Table extract (7/10/26; ADU text rev. eff. 4/24/26)",
+            "url": "https://norwalkct.gov/DocumentCenter/View/38584",
+            "file": "/sources/norwalk-usetable.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "Table 4.3.1 CD-1M Lot/Building Site Area",
+            "quote": "Lot/Building Site Area 12,500 sq. ft.",
+            "source_title": "Norwalk Zoning Regulations, Art. 4 (Building & Lot/Building Site Standards, compiled 9/23/2025)",
+            "url": "https://www.norwalkct.gov/DocumentCenter/View/32250",
+            "file": "/sources/norwalk-art4.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "§4.3.9.G.4.a(3) ADU permitting procedures",
+            "quote": "a. Permitted by Zoning Permit in accordance",
+            "source_title": "Norwalk Zoning Regulations, Use Table extract (7/10/26; ADU text rev. eff. 4/24/26)",
+            "url": "https://norwalkct.gov/DocumentCenter/View/38584",
+            "file": "/sources/norwalk-usetable.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "Table 4.3.12.B-1 single-family and two-family parking",
+            "quote": "2 per Dwelling Unit; except that within the CD-3, CD-3W,",
+            "source_title": "Norwalk Zoning Regulations, Art. 4 (Building & Lot/Building Site Standards, compiled 9/23/2025)",
+            "url": "https://www.norwalkct.gov/DocumentCenter/View/32250",
+            "file": "/sources/norwalk-art4.pdf"
           }
         ],
-        "included": false,
-        "land_share": null,
-        "contribution": null,
-        "exclusion_reason": "Excluded: only 4 of 6 components are confirmed (minimum 5)."
+        "included": true,
+        "land_share": 34.0,
+        "contribution": 24.67
       },
       {
         "district": "CD-1S",
         "acres": 2599.4,
-        "score": 61.4,
-        "components_scored": 5,
+        "score": 69.3,
+        "components_scored": 6,
+        "components_confirmed": 6,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -841,11 +932,11 @@
             "value": "Not allowed",
             "evidence": {
               "field": "use",
-              "cite": "§3.3.1(A)(3) CD-1S district",
-              "quote": "3. Community District CD-1S (Sub-Urban Single-",
-              "source_title": "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)",
-              "url": "https://www.norwalkct.gov/DocumentCenter/View/32245",
-              "file": "/sources/norwalk-art3.pdf"
+              "cite": "Table 4.3.9.A Large Multifamily Building row (CD-1L / 1M / 1S / 2 / 3 ... columns)",
+              "quote": "Large Multifamily NP NP NP NP PL NP PL PL PL NP NP NP NP SPU NP Building",
+              "source_title": "Norwalk Zoning Regulations, Use Table extract (7/10/26; ADU text rev. eff. 4/24/26)",
+              "url": "https://norwalkct.gov/DocumentCenter/View/38584",
+              "file": "/sources/norwalk-usetable.pdf"
             },
             "scale": [
               {
@@ -894,11 +985,11 @@
             "value": "Not allowed",
             "evidence": {
               "field": "use",
-              "cite": "§3.3.1(A)(3) CD-1S district",
-              "quote": "3. Community District CD-1S (Sub-Urban Single-",
-              "source_title": "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)",
-              "url": "https://www.norwalkct.gov/DocumentCenter/View/32245",
-              "file": "/sources/norwalk-art3.pdf"
+              "cite": "Table 4.3.9.A Large Multifamily Building row (CD-1L / 1M / 1S / 2 / 3 ... columns)",
+              "quote": "Large Multifamily NP NP NP NP PL NP PL PL PL NP NP NP NP SPU NP Building",
+              "source_title": "Norwalk Zoning Regulations, Use Table extract (7/10/26; ADU text rev. eff. 4/24/26)",
+              "url": "https://norwalkct.gov/DocumentCenter/View/38584",
+              "file": "/sources/norwalk-usetable.pdf"
             },
             "scale": [
               {
@@ -945,24 +1036,38 @@
             "max_points": 20,
             "reason": "Smallest lot is 6,250 sq ft; the log scale gives 4.3 of 20.",
             "value": "6,250 sq ft",
-            "evidence": null,
+            "evidence": {
+              "field": "lot",
+              "cite": "Table 4.3.1 CD-1S Lot/Building Site Area",
+              "quote": "Lot/Building Site Area 6,250 sq. ft.",
+              "source_title": "Norwalk Zoning Regulations, Art. 4 (Building & Lot/Building Site Standards, compiled 9/23/2025)",
+              "url": "https://www.norwalkct.gov/DocumentCenter/View/32250",
+              "file": "/sources/norwalk-art4.pdf"
+            },
             "scale": null,
             "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
           },
           {
             "label": "ADU Approval Pathway",
-            "points": 1,
+            "points": 7,
             "max_points": 15,
-            "reason": "Tier \"By right\": Accessory unit allowed by right.",
-            "value": "By right",
-            "evidence": null,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "§4.3.9.G.4.a(3) ADU permitting procedures",
+              "quote": "a. Permitted by Zoning Permit in accordance",
+              "source_title": "Norwalk Zoning Regulations, Use Table extract (7/10/26; ADU text rev. eff. 4/24/26)",
+              "url": "https://norwalkct.gov/DocumentCenter/View/38584",
+              "file": "/sources/norwalk-usetable.pdf"
+            },
             "scale": [
               {
                 "tier": "by_right",
                 "label": "By right",
                 "points": 1,
                 "meaning": "Accessory unit allowed by right",
-                "active": true
+                "active": false
               },
               {
                 "tier": "administrative",
@@ -976,7 +1081,7 @@
                 "label": "Zoning permit",
                 "points": 7,
                 "meaning": "Zoning permit (staff level)",
-                "active": false
+                "active": true
               },
               {
                 "tier": "special_permit",
@@ -997,11 +1102,18 @@
           },
           {
             "label": "Parking Mandate",
-            "points": null,
+            "points": 8.0,
             "max_points": 10,
-            "reason": "No parking requirement was confirmed for this district's single-family use.",
-            "value": "Not confirmed",
-            "evidence": null,
+            "reason": "2 space(s) per unit; scored at 2/2.5 of the 10-point scale.",
+            "value": "2 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "Table 4.3.12.B-1 single-family and two-family parking",
+              "quote": "2 per Dwelling Unit; except that within the CD-3, CD-3W,",
+              "source_title": "Norwalk Zoning Regulations, Art. 4 (Building & Lot/Building Site Standards, compiled 9/23/2025)",
+              "url": "https://www.norwalkct.gov/DocumentCenter/View/32250",
+              "file": "/sources/norwalk-art4.pdf"
+            },
             "scale": null,
             "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
@@ -1016,26 +1128,51 @@
             "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
-        "note": "Sub-Urban Single-Family; two- and multifamily NP (prior variables); bulk schedule 6,250 sq ft; ADU by right with limitations (prior variables); parking not extracted",
+        "note": "Sub-Urban Single-Family; multifamily and two-family not permitted; 6,250 sq ft (Table 4.3.1); ADU by zoning permit; 2 spaces per dwelling unit; demolition as CD-1L",
         "citations": [
           {
             "field": "use",
-            "cite": "§3.3.1(A)(3) CD-1S district",
-            "quote": "3. Community District CD-1S (Sub-Urban Single-",
-            "source_title": "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)",
-            "url": "https://www.norwalkct.gov/DocumentCenter/View/32245",
-            "file": "/sources/norwalk-art3.pdf"
+            "cite": "Table 4.3.9.A Large Multifamily Building row (CD-1L / 1M / 1S / 2 / 3 ... columns)",
+            "quote": "Large Multifamily NP NP NP NP PL NP PL PL PL NP NP NP NP SPU NP Building",
+            "source_title": "Norwalk Zoning Regulations, Use Table extract (7/10/26; ADU text rev. eff. 4/24/26)",
+            "url": "https://norwalkct.gov/DocumentCenter/View/38584",
+            "file": "/sources/norwalk-usetable.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "Table 4.3.1 CD-1S Lot/Building Site Area",
+            "quote": "Lot/Building Site Area 6,250 sq. ft.",
+            "source_title": "Norwalk Zoning Regulations, Art. 4 (Building & Lot/Building Site Standards, compiled 9/23/2025)",
+            "url": "https://www.norwalkct.gov/DocumentCenter/View/32250",
+            "file": "/sources/norwalk-art4.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "§4.3.9.G.4.a(3) ADU permitting procedures",
+            "quote": "a. Permitted by Zoning Permit in accordance",
+            "source_title": "Norwalk Zoning Regulations, Use Table extract (7/10/26; ADU text rev. eff. 4/24/26)",
+            "url": "https://norwalkct.gov/DocumentCenter/View/38584",
+            "file": "/sources/norwalk-usetable.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "Table 4.3.12.B-1 single-family and two-family parking",
+            "quote": "2 per Dwelling Unit; except that within the CD-3, CD-3W,",
+            "source_title": "Norwalk Zoning Regulations, Art. 4 (Building & Lot/Building Site Standards, compiled 9/23/2025)",
+            "url": "https://www.norwalkct.gov/DocumentCenter/View/32250",
+            "file": "/sources/norwalk-art4.pdf"
           }
         ],
         "included": true,
-        "land_share": 73.4,
-        "contribution": 45.05
+        "land_share": 20.8,
+        "contribution": 14.39
       },
       {
         "district": "CD-2",
         "acres": 943.2,
-        "score": 33.7,
-        "components_scored": 5,
+        "score": 44.3,
+        "components_scored": 6,
+        "components_confirmed": 6,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -1045,11 +1182,11 @@
             "value": "By right, capped",
             "evidence": {
               "field": "use",
-              "cite": "§3.3.1(A)(4) CD-2 district",
-              "quote": "4. Community District CD-2 (Sub-Urban Single-",
-              "source_title": "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)",
-              "url": "https://www.norwalkct.gov/DocumentCenter/View/32245",
-              "file": "/sources/norwalk-art3.pdf"
+              "cite": "Table 4.3.9.A Two-Family Detached Dwelling row",
+              "quote": "Two-Family Detached NP NP NP P P P P NP NP NP NP NP NP NP NP Dwelling",
+              "source_title": "Norwalk Zoning Regulations, Use Table extract (7/10/26; ADU text rev. eff. 4/24/26)",
+              "url": "https://norwalkct.gov/DocumentCenter/View/38584",
+              "file": "/sources/norwalk-usetable.pdf"
             },
             "scale": [
               {
@@ -1098,11 +1235,11 @@
             "value": "By right, capped",
             "evidence": {
               "field": "use",
-              "cite": "§3.3.1(A)(4) CD-2 district",
-              "quote": "4. Community District CD-2 (Sub-Urban Single-",
-              "source_title": "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)",
-              "url": "https://www.norwalkct.gov/DocumentCenter/View/32245",
-              "file": "/sources/norwalk-art3.pdf"
+              "cite": "Table 4.3.9.A Two-Family Detached Dwelling row",
+              "quote": "Two-Family Detached NP NP NP P P P P NP NP NP NP NP NP NP NP Dwelling",
+              "source_title": "Norwalk Zoning Regulations, Use Table extract (7/10/26; ADU text rev. eff. 4/24/26)",
+              "url": "https://norwalkct.gov/DocumentCenter/View/38584",
+              "file": "/sources/norwalk-usetable.pdf"
             },
             "scale": [
               {
@@ -1149,24 +1286,38 @@
             "max_points": 20,
             "reason": "Smallest lot is 5,000 sq ft; the log scale gives 3.3 of 20.",
             "value": "5,000 sq ft",
-            "evidence": null,
+            "evidence": {
+              "field": "lot",
+              "cite": "Table 4.3.1 CD-2 Lot/Building Site Area",
+              "quote": "Lot/Building Site Area 5,000 sq. ft.",
+              "source_title": "Norwalk Zoning Regulations, Art. 4 (Building & Lot/Building Site Standards, compiled 9/23/2025)",
+              "url": "https://www.norwalkct.gov/DocumentCenter/View/32250",
+              "file": "/sources/norwalk-art4.pdf"
+            },
             "scale": null,
             "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
           },
           {
             "label": "ADU Approval Pathway",
-            "points": 1,
+            "points": 7,
             "max_points": 15,
-            "reason": "Tier \"By right\": Accessory unit allowed by right.",
-            "value": "By right",
-            "evidence": null,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "§4.3.9.G.4.a(3) ADU permitting procedures",
+              "quote": "a. Permitted by Zoning Permit in accordance",
+              "source_title": "Norwalk Zoning Regulations, Use Table extract (7/10/26; ADU text rev. eff. 4/24/26)",
+              "url": "https://norwalkct.gov/DocumentCenter/View/38584",
+              "file": "/sources/norwalk-usetable.pdf"
+            },
             "scale": [
               {
                 "tier": "by_right",
                 "label": "By right",
                 "points": 1,
                 "meaning": "Accessory unit allowed by right",
-                "active": true
+                "active": false
               },
               {
                 "tier": "administrative",
@@ -1180,7 +1331,7 @@
                 "label": "Zoning permit",
                 "points": 7,
                 "meaning": "Zoning permit (staff level)",
-                "active": false
+                "active": true
               },
               {
                 "tier": "special_permit",
@@ -1201,11 +1352,18 @@
           },
           {
             "label": "Parking Mandate",
-            "points": null,
+            "points": 8.0,
             "max_points": 10,
-            "reason": "No parking requirement was confirmed for this district's single-family use.",
-            "value": "Not confirmed",
-            "evidence": null,
+            "reason": "2 space(s) per unit; scored at 2/2.5 of the 10-point scale.",
+            "value": "2 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "Table 4.3.12.B-1 single-family and two-family parking",
+              "quote": "2 per Dwelling Unit; except that within the CD-3, CD-3W,",
+              "source_title": "Norwalk Zoning Regulations, Art. 4 (Building & Lot/Building Site Standards, compiled 9/23/2025)",
+              "url": "https://www.norwalkct.gov/DocumentCenter/View/32250",
+              "file": "/sources/norwalk-art4.pdf"
+            },
             "scale": null,
             "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
           },
@@ -1220,20 +1378,294 @@
             "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
           }
         ],
-        "note": "Sub-Urban Single- and Two-Family; two-family permitted by right, multifamily NP (prior variables); 5,000 sq ft bulk minimum",
+        "note": "Sub-Urban Single- and Two-Family; two-family detached permitted, multifamily not; 5,000 sq ft (Table 4.3.1); ADU by zoning permit; 2 spaces per dwelling unit; demolition as CD-1L",
         "citations": [
           {
             "field": "use",
-            "cite": "§3.3.1(A)(4) CD-2 district",
-            "quote": "4. Community District CD-2 (Sub-Urban Single-",
-            "source_title": "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)",
-            "url": "https://www.norwalkct.gov/DocumentCenter/View/32245",
-            "file": "/sources/norwalk-art3.pdf"
+            "cite": "Table 4.3.9.A Two-Family Detached Dwelling row",
+            "quote": "Two-Family Detached NP NP NP P P P P NP NP NP NP NP NP NP NP Dwelling",
+            "source_title": "Norwalk Zoning Regulations, Use Table extract (7/10/26; ADU text rev. eff. 4/24/26)",
+            "url": "https://norwalkct.gov/DocumentCenter/View/38584",
+            "file": "/sources/norwalk-usetable.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "Table 4.3.1 CD-2 Lot/Building Site Area",
+            "quote": "Lot/Building Site Area 5,000 sq. ft.",
+            "source_title": "Norwalk Zoning Regulations, Art. 4 (Building & Lot/Building Site Standards, compiled 9/23/2025)",
+            "url": "https://www.norwalkct.gov/DocumentCenter/View/32250",
+            "file": "/sources/norwalk-art4.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "§4.3.9.G.4.a(3) ADU permitting procedures",
+            "quote": "a. Permitted by Zoning Permit in accordance",
+            "source_title": "Norwalk Zoning Regulations, Use Table extract (7/10/26; ADU text rev. eff. 4/24/26)",
+            "url": "https://norwalkct.gov/DocumentCenter/View/38584",
+            "file": "/sources/norwalk-usetable.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "Table 4.3.12.B-1 single-family and two-family parking",
+            "quote": "2 per Dwelling Unit; except that within the CD-3, CD-3W,",
+            "source_title": "Norwalk Zoning Regulations, Art. 4 (Building & Lot/Building Site Standards, compiled 9/23/2025)",
+            "url": "https://www.norwalkct.gov/DocumentCenter/View/32250",
+            "file": "/sources/norwalk-art4.pdf"
           }
         ],
         "included": true,
-        "land_share": 26.6,
-        "contribution": 8.97
+        "land_share": 7.5,
+        "contribution": 3.34
+      },
+      {
+        "district": "CD-3",
+        "acres": 544.1,
+        "score": 38.2,
+        "components_scored": 6,
+        "components_confirmed": 6,
+        "factors": [
+          {
+            "label": "Multifamily Access",
+            "points": 12,
+            "max_points": 30,
+            "reason": "Tier \"By right, capped\": Multifamily or two-family by right, but capped by unit count or density.",
+            "value": "By right, capped",
+            "evidence": {
+              "field": "use",
+              "cite": "Table 4.3.9.A Large Multifamily Building row (CD-1L / 1M / 1S / 2 / 3 ... columns)",
+              "quote": "Large Multifamily NP NP NP NP PL NP PL PL PL NP NP NP NP SPU NP Building",
+              "source_title": "Norwalk Zoning Regulations, Use Table extract (7/10/26; ADU text rev. eff. 4/24/26)",
+              "url": "https://norwalkct.gov/DocumentCenter/View/38584",
+              "file": "/sources/norwalk-usetable.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 6,
+                "meaning": "Multifamily allowed by right in a meaningful district with no cap",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 12,
+                "meaning": "Multifamily or two-family by right, but capped by unit count or density",
+                "active": true
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 17,
+                "meaning": "By right only in a narrow or hard-to-create district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 25,
+                "meaning": "Multifamily allowed only through a special permit or hearing",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 30,
+                "meaning": "No multifamily pathway in this district",
+                "active": false
+              }
+            ],
+            "scale_note": "No tier scores 0 in this rubric; the most permissive tier is 6 of 30."
+          },
+          {
+            "label": "Approval Discretion",
+            "points": 4,
+            "max_points": 10,
+            "reason": "Tier \"By right, capped\": Administrative site-plan approval with a cap.",
+            "value": "By right, capped",
+            "evidence": {
+              "field": "use",
+              "cite": "Table 4.3.9.A Large Multifamily Building row (CD-1L / 1M / 1S / 2 / 3 ... columns)",
+              "quote": "Large Multifamily NP NP NP NP PL NP PL PL PL NP NP NP NP SPU NP Building",
+              "source_title": "Norwalk Zoning Regulations, Use Table extract (7/10/26; ADU text rev. eff. 4/24/26)",
+              "url": "https://norwalkct.gov/DocumentCenter/View/38584",
+              "file": "/sources/norwalk-usetable.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Approved administratively, no hearing",
+                "active": false
+              },
+              {
+                "tier": "capped_by_right",
+                "label": "By right, capped",
+                "points": 4,
+                "meaning": "Administrative site-plan approval with a cap",
+                "active": true
+              },
+              {
+                "tier": "narrow_by_right",
+                "label": "By right, narrow",
+                "points": 6,
+                "meaning": "By right only in a narrow district",
+                "active": false
+              },
+              {
+                "tier": "discretionary",
+                "label": "Discretionary (special permit)",
+                "points": 9,
+                "meaning": "Special permit or hearing required",
+                "active": false
+              },
+              {
+                "tier": "none",
+                "label": "Not allowed",
+                "points": 10,
+                "meaning": "No approval pathway for multifamily",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive approval tier is 1 of 10."
+          },
+          {
+            "label": "Minimum Lot Size",
+            "points": 0.0,
+            "max_points": 20,
+            "reason": "The district has no lot-area minimum, so the lot component scores 0.",
+            "value": "No lot-area minimum",
+            "evidence": {
+              "field": "lot",
+              "cite": "Table 4.3.1 CD-3 Lot/Building Site Area",
+              "quote": "Lot/Building Site Area NR",
+              "source_title": "Norwalk Zoning Regulations, Art. 4 (Building & Lot/Building Site Standards, compiled 9/23/2025)",
+              "url": "https://www.norwalkct.gov/DocumentCenter/View/32250",
+              "file": "/sources/norwalk-art4.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20."
+          },
+          {
+            "label": "ADU Approval Pathway",
+            "points": 7,
+            "max_points": 15,
+            "reason": "Tier \"Zoning permit\": Zoning permit (staff level).",
+            "value": "Zoning permit",
+            "evidence": {
+              "field": "adu",
+              "cite": "§4.3.9.G.4.a(3) ADU permitting procedures",
+              "quote": "a. Permitted by Zoning Permit in accordance",
+              "source_title": "Norwalk Zoning Regulations, Use Table extract (7/10/26; ADU text rev. eff. 4/24/26)",
+              "url": "https://norwalkct.gov/DocumentCenter/View/38584",
+              "file": "/sources/norwalk-usetable.pdf"
+            },
+            "scale": [
+              {
+                "tier": "by_right",
+                "label": "By right",
+                "points": 1,
+                "meaning": "Accessory unit allowed by right",
+                "active": false
+              },
+              {
+                "tier": "administrative",
+                "label": "Administrative",
+                "points": 4,
+                "meaning": "Administrative review only",
+                "active": false
+              },
+              {
+                "tier": "zoning_permit",
+                "label": "Zoning permit",
+                "points": 7,
+                "meaning": "Zoning permit (staff level)",
+                "active": true
+              },
+              {
+                "tier": "special_permit",
+                "label": "Special permit",
+                "points": 12,
+                "meaning": "Special permit with a public hearing",
+                "active": false
+              },
+              {
+                "tier": "prohibited",
+                "label": "Prohibited",
+                "points": 15,
+                "meaning": "Accessory units not allowed",
+                "active": false
+              }
+            ],
+            "scale_note": "The most permissive ADU tier is 1 of 15."
+          },
+          {
+            "label": "Parking Mandate",
+            "points": 5.2,
+            "max_points": 10,
+            "reason": "1.3 space(s) per unit; scored at 1.3/2.5 of the 10-point scale.",
+            "value": "1.3 per unit",
+            "evidence": {
+              "field": "parking",
+              "cite": "Table 4.3.12.B-1 multifamily parking",
+              "quote": "Large Multifamily Building and Small Multifamily Building 1.3 per Dwelling Unit",
+              "source_title": "Norwalk Zoning Regulations, Art. 4 (Building & Lot/Building Site Standards, compiled 9/23/2025)",
+              "url": "https://www.norwalkct.gov/DocumentCenter/View/32250",
+              "file": "/sources/norwalk-art4.pdf"
+            },
+            "scale": null,
+            "scale_note": "Scored linearly: 0 spaces per unit = 0; 2.5 spaces per unit or more = 10."
+          },
+          {
+            "label": "Demolition Delay",
+            "points": 10.0,
+            "max_points": 15,
+            "reason": "120-day delay; scored at 120/180 of the 15-point scale.",
+            "value": "120 days",
+            "evidence": null,
+            "scale": null,
+            "scale_note": "Scored linearly: 0 days = 0; 180 days or more = 15."
+          }
+        ],
+        "note": "General Urban: large and small multifamily permitted with limitations (14-29 units need site plan approval, over 29 a special permit; §4.3.9.G.4); no lot-area minimum (Table 4.3.1 shows NR); 1.3 spaces per dwelling unit; ADU permitted with limitations (Table 4.3.9.D); demolition as CD-1L; acreage is CD-3 from the user-confirmed crosswalk (old D and NB), CD-3W is not separable",
+        "citations": [
+          {
+            "field": "use",
+            "cite": "Table 4.3.9.A Large Multifamily Building row (CD-1L / 1M / 1S / 2 / 3 ... columns)",
+            "quote": "Large Multifamily NP NP NP NP PL NP PL PL PL NP NP NP NP SPU NP Building",
+            "source_title": "Norwalk Zoning Regulations, Use Table extract (7/10/26; ADU text rev. eff. 4/24/26)",
+            "url": "https://norwalkct.gov/DocumentCenter/View/38584",
+            "file": "/sources/norwalk-usetable.pdf"
+          },
+          {
+            "field": "lot",
+            "cite": "Table 4.3.1 CD-3 Lot/Building Site Area",
+            "quote": "Lot/Building Site Area NR",
+            "source_title": "Norwalk Zoning Regulations, Art. 4 (Building & Lot/Building Site Standards, compiled 9/23/2025)",
+            "url": "https://www.norwalkct.gov/DocumentCenter/View/32250",
+            "file": "/sources/norwalk-art4.pdf"
+          },
+          {
+            "field": "adu",
+            "cite": "§4.3.9.G.4.a(3) ADU permitting procedures",
+            "quote": "a. Permitted by Zoning Permit in accordance",
+            "source_title": "Norwalk Zoning Regulations, Use Table extract (7/10/26; ADU text rev. eff. 4/24/26)",
+            "url": "https://norwalkct.gov/DocumentCenter/View/38584",
+            "file": "/sources/norwalk-usetable.pdf"
+          },
+          {
+            "field": "parking",
+            "cite": "Table 4.3.12.B-1 multifamily parking",
+            "quote": "Large Multifamily Building and Small Multifamily Building 1.3 per Dwelling Unit",
+            "source_title": "Norwalk Zoning Regulations, Art. 4 (Building & Lot/Building Site Standards, compiled 9/23/2025)",
+            "url": "https://www.norwalkct.gov/DocumentCenter/View/32250",
+            "file": "/sources/norwalk-art4.pdf"
+          }
+        ],
+        "included": true,
+        "land_share": 4.3,
+        "contribution": 1.66
       }
     ],
     "formula": "V2 = sum(district score x acres) / sum(acres) over included districts",

@@ -956,65 +956,86 @@ V2_DISTRICTS = {
     "bridgeport": {
         "N1": {"use": "none", "approval": "none", "lot": 0, "adu": "by_right", "parking": 0, "demo": None,
                "note": "House A only (one unit per lot); no lot-area minimum (45 ft width); ADU by right per N1 rule; parking none citywide"},
-        "N2": {"use": "none", "approval": "none", "lot": 0, "adu": "special_permit", "parking": 0, "demo": None,
-               "note": "House B only (single unit); no lot-area minimum (45 ft width); accessory apartment only as backyard cottage with special permit (§3.100 table)"},
+        "N2": {"use": "discretionary", "approval": "discretionary", "lot": 0, "adu": "special_permit", "parking": 0, "demo": None,
+               "note": "House B only: 1 principal unit, 2 with special permit (§3.100.9); no lot-area minimum (45 ft width); accessory apartment only as backyard cottage with special permit; parking none citywide"},
         "N3": {"use": "none", "approval": "none", "lot": 9000, "adu": "by_right", "parking": 0, "demo": None,
-               "note": "House C only; 9,000 sq ft minimum lot (§3.110); up to 2 accessory units, 1 in house and/or 1 in backyard cottage, by right (§3.110 table)"},
+               "note": "House C only; 9,000 sq ft minimum lot (§3.110); up to 2 accessory units, 1 in house and/or 1 in backyard cottage, by right (§3.110 table); the general rule in §4.70.2(B)(2) caps accessory apartments at one per lot, so the second unit is unresolved"},
         "N4": {"use": "none", "approval": "none", "lot": 7500, "adu": "by_right", "parking": 0, "demo": None,
                "note": "House D only; 7,500 sq ft minimum lot (§3.120); 1 accessory apartment in house or backyard cottage, by right (§3.120 table)"},
-        "NX1": {"use": "by_right", "approval": "by_right", "lot": 0, "adu": "by_right", "parking": 0, "demo": None,
-                "note": "House A, Row and Double House A permitted (up to 6 units by right per Double House A rule); 45 ft width, no lot-area minimum; 1 accessory apartment by right (§3.90 table); size cap 49% of principal GFA or 800 sq ft (§4.70.2)"},
-        "NX2": {"use": "by_right", "approval": "by_right", "lot": 0, "adu": "by_right", "parking": 0, "demo": None,
-                "note": "Small General, Row, Double House A and House A permitted; backyard cottage allowed (Table of accessory structures, 4 = allowed); 35–50 ft width"},
-        "NX3": {"use": "by_right", "approval": "by_right", "lot": None, "adu": None, "parking": 0, "demo": None,
-                "note": "General, Row and Civic building types (multi-unit); lot-area minimum not confirmed in extracted text"},
+        "NX1": {"use": "capped_by_right", "approval": "capped_by_right", "lot": 0, "adu": "by_right", "parking": 0, "demo": None,
+                "note": "House A, Row (4 units max) and Double House A permitted by right with administrative site plan; no lot-area minimum (45 ft width for House A); House A allows up to 3 units plus 1 backyard-cottage unit (§3.90.9); size cap 49% of principal GFA or 800 sq ft (§4.70.2). Row amendment 25-06 was still pending in 2025"},
+        "NX2": {"use": "capped_by_right", "approval": "capped_by_right", "lot": 0, "adu": "by_right", "parking": 0, "demo": None,
+                "note": "Small General, Row (8 units max), Double House A and House A permitted by right with administrative site plan; no lot-area minimum; House A allows up to 4 units plus 1 backyard-cottage unit (§3.90.9)"},
+        "NX3": {"use": "by_right", "approval": "by_right", "lot": 0, "adu": "n/a", "parking": 0, "demo": None,
+                "note": "General Building (3 units minimum, no maximum) by right (§3.50.9); no lot-area row in the General Building table; accessory apartments are not listed because multi-unit buildings are already allowed"},
+        "NX4": {"use": "by_right", "approval": "by_right", "lot": 0, "adu": "n/a", "parking": 0, "demo": None,
+                "note": "General Building (3 units minimum, no maximum) by right (§3.50.9, NX3/NX4 column); no lot-area row in the General Building table"},
+        "DX1": {"use": "by_right", "approval": "by_right", "lot": 0, "adu": "n/a", "parking": 0, "demo": None,
+                "note": "Storefront building type, no limit on principal units (§3.20.9); downtown form-based district, no lot-area row"},
+        "DX2": {"use": "by_right", "approval": "by_right", "lot": 0, "adu": "n/a", "parking": 0, "demo": None,
+                "note": "General Building (3 units minimum, no maximum) by right (§3.50.9)"},
+        "MX1": {"use": "by_right", "approval": "by_right", "lot": 0, "adu": "n/a", "parking": 0, "demo": None,
+                "note": "Storefront building type, no limit on principal units (§3.20.9)"},
+        "MX2": {"use": "by_right", "approval": "by_right", "lot": 0, "adu": "n/a", "parking": 0, "demo": None,
+                "note": "Storefront building type, no limit on principal units (§3.20.9)"},
+        "MXN": {"use": "capped_by_right", "approval": "capped_by_right", "lot": 0, "adu": "n/a", "parking": 0, "demo": None,
+                "note": "Storefront building type capped at 8 principal units (§3.20.9)"},
+        "RX2": {"use": "by_right", "approval": "by_right", "lot": 0, "adu": "n/a", "parking": 0, "demo": None,
+                "note": "General Building (3 units minimum, no maximum) by right (§3.50.9)"},
     },
     "stamford": {
-        "RA-3": {"use": "none", "approval": "none", "lot": 130680, "adu": "zoning_permit", "parking": 2, "demo": None,
-                 "note": "One Family Residence District (§5.X.3); single-family only; ADU by zoning permit (ADU def., 2024 text, §4): lot ≥10,000 sq ft, 800 sq ft cap, 1 ADU parking space; single-family base parking 2 applied (verified R-20/R-6 only)"},
-        "RA-2": {"use": "none", "approval": "none", "lot": 87120, "adu": "zoning_permit", "parking": 2, "demo": None,
+        "RA-3": {"use": "none", "approval": "none", "lot": 130680, "adu": "zoning_permit", "parking": 3, "demo": None,
+                 "note": "One Family Residence District (§5.X.3); single-family only; ADU by zoning permit (ADU def., 2024 text, §4): lot ≥10,000 sq ft, 800 sq ft cap, 1 ADU parking space; single-family parking is 3 in Parking Category 3 (Table 12.7), which is everything outside the mapped downtown areas (Map 12.8)"},
+        "RA-2": {"use": "none", "approval": "none", "lot": 87120, "adu": "zoning_permit", "parking": 3, "demo": None,
                  "note": "One Family Residence District (§5.X.3); single-family only; ADU by zoning permit, lot ≥10,000 sq ft; parking as RA-3"},
-        "RA-1": {"use": "none", "approval": "none", "lot": 43560, "adu": "zoning_permit", "parking": 2, "demo": None,
+        "RA-1": {"use": "none", "approval": "none", "lot": 43560, "adu": "zoning_permit", "parking": 3, "demo": None,
                  "note": "One Family Residence District (§5.X.3); single-family only; ADU by zoning permit, lot ≥10,000 sq ft; parking as RA-3"},
-        "R-20": {"use": "none", "approval": "none", "lot": 20000, "adu": "zoning_permit", "parking": 2, "demo": None,
-                 "note": "One Family, verified single-family only (prior variables); ADU by zoning permit (lot ≥10,000 sq ft); 2 spaces verified"},
-        "R-10": {"use": "none", "approval": "none", "lot": 10000, "adu": "zoning_permit", "parking": 2, "demo": None,
-                 "note": "One Family Residence District, 10,000 sq ft minimum (§5.Y.3); ADU by zoning permit at exactly the 10,000 sq ft threshold; parking as R-20"},
-        "R-7 1/2": {"use": "none", "approval": "none", "lot": 7500, "adu": "zoning_permit", "parking": 2, "demo": None,
-                    "note": "One Family Residence District, 7,500 sq ft minimum (§5.Y.3); ADU by zoning permit only on lots of at least 10,000 sq ft (ADU def., §4), so lots of 7,500 to 9,999 sq ft cannot have one; scored at the qualifying-lot tier, as R-10 and R-20"},
+        "R-20": {"use": "none", "approval": "none", "lot": 20000, "adu": "zoning_permit", "parking": 3, "demo": None,
+                 "note": "One Family, single-family only; ADU by zoning permit (lot ≥10,000 sq ft); parking as RA-3"},
+        "R-10": {"use": "none", "approval": "none", "lot": 10000, "adu": "zoning_permit", "parking": 3, "demo": None,
+                 "note": "One Family Residence District, 10,000 sq ft minimum (§5.Y.3); ADU by zoning permit at exactly the 10,000 sq ft threshold; parking as RA-3"},
+        "R-7 1/2": {"use": "none", "approval": "none", "lot": 7500, "adu": "zoning_permit", "parking": 3, "demo": None,
+                    "note": "One Family Residence District, 7,500 sq ft minimum (§5.Y.3); ADU by zoning permit only on lots of at least 10,000 sq ft (ADU def., §4), so lots of 7,500 to 9,999 sq ft cannot have one; scored at the qualifying-lot tier, as R-10 and R-20; parking 3 (Category 3), though parts near downtown are Category 1 or 2"},
         "R-6": {"use": "capped_by_right", "approval": "capped_by_right", "lot": 5000, "adu": "zoning_permit", "parking": 2, "demo": None,
-                "note": "One- and Two-Family (§5.Z); two-family by right with administrative site plan on lots ≥7,500 sq ft; 5,000 sq ft one-family minimum; ADU by zoning permit only on lots of at least 10,000 sq ft (ADU def., §4), so smaller lots cannot have one; scored at the qualifying-lot tier"},
+                "note": "One- and Two-Family (§5.Z); two-family detached by right, multiple dwellings prohibited; 5,000 sq ft one-family minimum, 6,000 sq ft two-family (§5.Z.4(a)); ADU by zoning permit only on lots of at least 10,000 sq ft (ADU def., §4); parking scored at the Category 1/2 value of 2 because much of R-6 lies in the West Side, East Side and South End areas of Map 12.8 (Category 3 would be 3)"},
+        "R-5": {"use": "capped_by_right", "approval": "capped_by_right", "lot": 5000, "adu": "zoning_permit", "parking": 1.75, "demo": None,
+                "note": "R-5 Multi-Family Medium Density: multi-family is a permitted use; projects on lots under 30,000 sq ft are reviewed by the Zoning Enforcement Officer, larger ones by the Zoning Board (§5.AA); one-family lot 5,000 sq ft (multi-family 9,000); parking scored at the 2-bedroom market-rate multifamily value (Table 12.7); ADU by zoning permit on single-family lots (ADU def., §4)"},
+        "RM-1": {"use": "capped_by_right", "approval": "capped_by_right", "lot": 5000, "adu": "zoning_permit", "parking": 1.75, "demo": None,
+                 "note": "RM-1 Multi-Family Residence: single-family, two-family and multi-family dwellings permitted (§5.EE.3); 5,000 sq ft minimum lot, 3,750 sq ft per dwelling unit (§5.EE.5); parking and ADU as R-5"},
+        "R-MF": {"use": "capped_by_right", "approval": "capped_by_right", "lot": 5000, "adu": "zoning_permit", "parking": 1.75, "demo": None,
+                 "note": "R-MF Multi-Family Residence Design District: projects on lots under 20,000 sq ft are reviewed by the Zoning Enforcement Officer, larger ones by the Zoning Board (§5.FF.2); 5,000 sq ft minimum lot, 2,000 sq ft per dwelling unit (§5.FF.6); parking and ADU as R-5"},
     },
     "greenwich": {
         "RA-4": {"use": "none", "approval": "none", "lot": 174240, "adu": "zoning_permit", "parking": None, "demo": 90,
-                 "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; 90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Single-family only (Sec. 6-93); 4-acre minimum (div. 21 table); ADU by zoning permit, external ADU up to 1,200 sq ft (§6-99(3)(D)); ADU adds 1 dedicated off-street space (§6-99(3)(F)); single-family base parking not in extracted text"},
+                 "note": "Single-family only (Sec. 6-93); 4-acre minimum (div. 21 table); ADU by zoning permit, external ADU up to 1,200 sq ft (§6-99(3)(D)); ADU adds 1 dedicated off-street space (§6-99(3)(F)); single-family parking (§6-154) sets no number, so it is not scored; demolition: 90-day ceiling for pre-1940 buildings of 500 sq ft or more (Municipal Code §6-316, from the town's web page, not the mirrored zoning text)"},
         "RA-2": {"use": "none", "approval": "none", "lot": 87120, "adu": "zoning_permit", "parking": None, "demo": 90,
-                 "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; 90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Single-family only (Sec. 6-93); 2-acre minimum; ADU by zoning permit, external ADU up to 1,200 sq ft (§6-99(3)(D)); base parking not in extracted text"},
+                 "note": "Single-family only (Sec. 6-93); 2-acre minimum; ADU by zoning permit, external ADU up to 1,200 sq ft (§6-99(3)(D)); single-family parking sets no number; demolition as RA-4"},
         "RA-1": {"use": "none", "approval": "none", "lot": 43560, "adu": "zoning_permit", "parking": None, "demo": 90,
-                 "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; 90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Single-family only (Sec. 6-93); 1-acre minimum; ADU by zoning permit, external ADU up to 1,000 sq ft (§6-99(3)(D)); base parking not in extracted text"},
+                 "note": "Single-family only (Sec. 6-93); 1-acre minimum; ADU by zoning permit, external ADU up to 1,000 sq ft (§6-99(3)(D)); single-family parking sets no number; demolition as RA-4"},
         "R-20": {"use": "none", "approval": "none", "lot": 20000, "adu": "zoning_permit", "parking": None, "demo": 90,
-                 "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; 90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Single-family only (Sec. 6-93); 20,000 sq ft minimum (prior variables); ADU by zoning permit, external ADU up to 1,000 sq ft (§6-99(3)(D)); base parking not in extracted text"},
+                 "note": "Single-family only (Sec. 6-93); 20,000 sq ft minimum; ADU by zoning permit, external ADU up to 1,000 sq ft (§6-99(3)(D)); single-family parking sets no number; demolition as RA-4"},
         "R-12": {"use": "none", "approval": "none", "lot": 12000, "adu": "zoning_permit", "parking": None, "demo": 90,
-                 "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; 90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Single-family only (Sec. 6-93); 12,000 sq ft minimum (prior variables); ADU by zoning permit, external ADU up to 800 sq ft (§6-99(3)(D)); base parking not in extracted text"},
+                 "note": "Single-family only (Sec. 6-93); 12,000 sq ft minimum; ADU by zoning permit, external ADU up to 800 sq ft (§6-99(3)(D)); single-family parking sets no number; demolition as RA-4"},
         "R-7": {"use": "none", "approval": "none", "lot": 7500, "adu": "zoning_permit", "parking": None, "demo": 90,
-                "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Sec. 6-97: uses of RA-4 only plus §6-94; 7,500 sq ft minimum (div. 21 table); ADU by zoning permit, external ADU up to 800 sq ft (§6-99(3)(D)); base parking not in extracted text"},
+                "note": "Sec. 6-97: uses of RA-4 only plus §6-94; 7,500 sq ft minimum (div. 21 table); ADU by zoning permit, external ADU up to 800 sq ft (§6-99(3)(D)); single-family parking sets no number; demolition as RA-4"},
         "R-6": {"use": "capped_by_right", "approval": "capped_by_right", "lot": 7500, "adu": "zoning_permit", "parking": None, "demo": 90,
-                "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Sec. 6-98: two-family by administrative site plan approval on lots ≥7,500 sq ft; 7,500 sq ft minimum (div. 21 table); ADU external up to 800 sq ft; base parking not in extracted text"},
-        "R-MF": {"use": "discretionary", "approval": "discretionary", "lot": None, "adu": "zoning_permit", "parking": 2, "demo": 90,
-                 "note": "90-day delay is from the town permitting page (45 + 45), not yet verified in the code; 90-day delay is from the town permitting page (45 + 45), not yet verified in the code; Two-family / multifamily by Special Permit only (prior variables); lot minimum is per family (2,400 sq ft), not comparable so excluded; 1-2BR parking = 2 spaces (1 garage + 1 outdoor)"},
+                "note": "Sec. 6-98: two-family by administrative site plan approval on lots ≥7,500 sq ft; 7,500 sq ft minimum (div. 21 table); ADU external up to 800 sq ft; single-family parking sets no number (two-family parking in §6-155 is one garage plus one outdoor space per dwelling); demolition as RA-4"},
+        "R-MF": {"use": "discretionary", "approval": "discretionary", "lot": 3600, "adu": None, "parking": 2, "demo": 90,
+                 "note": "Two-family / multifamily by Special Permit (§6-98.1); lot area 3,600 sq ft for single and two-family, 2,400 sq ft per family for multifamily (div. 21 table); parking one garage plus one outdoor space per 1-2 bedroom dwelling (§6-155(1)(a); the 2026 PA 25-1 amendment may remove this for projects under 17 units); the ADU section lists no R-MF rule, so ADU is not scored; demolition as RA-4"},
     },
     "norwalk": {
-        "CD-1L": {"use": "none", "approval": "none", "lot": 43560, "adu": None, "parking": None, "demo": 120,
-                  "note": "Sub-Urban Large Lot, single-family per district name (Art. 3); bulk schedule 43,560 sq ft; ADU rule not in extracted text, excluded; parking not extracted"},
-        "CD-1M": {"use": "none", "approval": "none", "lot": 12500, "adu": None, "parking": None, "demo": 120,
-                  "note": "Sub-Urban Medium Lot, single-family per district name (Art. 3); bulk schedule 12,500 sq ft; ADU rule not in extracted text, excluded; parking not extracted"},
-        "CD-1S": {"use": "none", "approval": "none", "lot": 6250, "adu": "by_right", "parking": None, "demo": 120,
-                  "note": "Sub-Urban Single-Family; two- and multifamily NP (prior variables); bulk schedule 6,250 sq ft; ADU by right with limitations (prior variables); parking not extracted"},
-        "CD-2": {"use": "capped_by_right", "approval": "capped_by_right", "lot": 5000, "adu": "by_right", "parking": None, "demo": 120,
-                 "note": "Sub-Urban Single- and Two-Family; two-family permitted by right, multifamily NP (prior variables); 5,000 sq ft bulk minimum"},
+        "CD-1L": {"use": "none", "approval": "none", "lot": 43560, "adu": "zoning_permit", "parking": 2, "demo": 120,
+                  "note": "Sub-Urban Large Lot; multifamily and two-family not permitted (Table 4.3.9.A); 43,560 sq ft (Table 4.3.1); ADU by zoning permit when it meets principal-building setbacks (§4.3.9.G.4); 2 spaces per dwelling unit (Table 4.3.12.B-1); demolition: 120-day maximum delay (City Code §55-5, adopted 4-24-1984, not a mirrored PDF)"},
+        "CD-1M": {"use": "none", "approval": "none", "lot": 12500, "adu": "zoning_permit", "parking": 2, "demo": 120,
+                  "note": "Sub-Urban Medium Lot; multifamily and two-family not permitted; 12,500 sq ft (Table 4.3.1); ADU by zoning permit; 2 spaces per dwelling unit; demolition as CD-1L"},
+        "CD-1S": {"use": "none", "approval": "none", "lot": 6250, "adu": "zoning_permit", "parking": 2, "demo": 120,
+                  "note": "Sub-Urban Single-Family; multifamily and two-family not permitted; 6,250 sq ft (Table 4.3.1); ADU by zoning permit; 2 spaces per dwelling unit; demolition as CD-1L"},
+        "CD-2": {"use": "capped_by_right", "approval": "capped_by_right", "lot": 5000, "adu": "zoning_permit", "parking": 2, "demo": 120,
+                 "note": "Sub-Urban Single- and Two-Family; two-family detached permitted, multifamily not; 5,000 sq ft (Table 4.3.1); ADU by zoning permit; 2 spaces per dwelling unit; demolition as CD-1L"},
+        "CD-3": {"use": "capped_by_right", "approval": "capped_by_right", "lot": 0, "adu": "zoning_permit", "parking": 1.3, "demo": 120,
+                 "note": "General Urban: large and small multifamily permitted with limitations (14-29 units need site plan approval, over 29 a special permit; §4.3.9.G.4); no lot-area minimum (Table 4.3.1 shows NR); 1.3 spaces per dwelling unit; ADU permitted with limitations (Table 4.3.9.D); demolition as CD-1L; acreage is CD-3 from the user-confirmed crosswalk (old D and NB), CD-3W is not separable"},
     },
 }
-# CD-3 (General Urban) is mixed residential and commercial in Art. 3 §3.3.2 and is excluded from the residential set.
 
 V2_LOOKUP_NORMALIZE = lambda s: s.replace(" ", "").replace("½", "1/2").upper()
 
@@ -1025,6 +1046,9 @@ V2_SOURCES = {
     "stamford": ("stamford-zoning.pdf", "Zoning Regulations, City of Stamford (through July 10, 2024)", "https://stamfordct.gov/home/showpublisheddocument/5847/638568338177670000"),
     "greenwich-div9": ("greenwich-div9.pdf", "Building Zone Regulations, Div. 9 (Use Regs, Aug. 2023)", "https://www.greenwichct.gov/DocumentCenter/View/37828"),
     "greenwich-div21": ("greenwich-div21.pdf", "Building Zone Regulations, Div. 21 (Bulk Schedule)", "https://www.greenwichct.gov/DocumentCenter/View/37841"),
+    "norwalk-art4": ("norwalk-art4.pdf", "Norwalk Zoning Regulations, Art. 4 (Building & Lot/Building Site Standards, compiled 9/23/2025)", "https://www.norwalkct.gov/DocumentCenter/View/32250"),
+    "norwalk-usetable": ("norwalk-usetable.pdf", "Norwalk Zoning Regulations, Use Table extract (7/10/26; ADU text rev. eff. 4/24/26)", "https://norwalkct.gov/DocumentCenter/View/38584"),
+    "greenwich-div15": ("greenwich-div15.pdf", "Building Zone Regulations, Div. 15 (Parking and Garages, Aug. 2023)", "https://www.greenwichct.gov/DocumentCenter/View/37834"),
     "norwalk": ("norwalk-art3.pdf", "Norwalk Zoning Regulations, Art. 3 (Zoning Districts, eff. Feb. 2024)", "https://www.norwalkct.gov/DocumentCenter/View/32245"),
 }
 
@@ -1032,20 +1056,14 @@ V2_SOURCES = {
 V2_CITES = {
     ("bridgeport", "N1", "use"): ("bridgeport", "§3.90 House A, Number of Principal Units", "Number of Principal Units 1 in House"),
     ("bridgeport", "N1", "adu"): ("bridgeport", "§3.90 House A, Number of Accessory Apartments", "Number of Accessory Apartments 1 in House or Backyard Cottage"),
-    ("bridgeport", "N2", "use"): ("bridgeport", "§2.20.2(B) N2 zone description", "N2, Neighborhood: Mid-Century. The N2 zone is"),
     ("bridgeport", "N2", "lot"): ("bridgeport", "§3.100 House B, Lot Size", "Lot Size No min."),
     ("bridgeport", "N2", "adu"): ("bridgeport", "§3.100 House B, Number of Accessory Apartments", "Number of Accessory Apartments 1 in Backyard Cottage with special permit"),
     ("bridgeport", "N3", "lot"): ("bridgeport", "§3.110 House C, Lot Size", "Lot Size 9000 sq. ft. min."),
     ("bridgeport", "N3", "adu"): ("bridgeport", "§3.110 House C, Number of Accessory Apartments", "Number of Accessory Apartments up to 2; 1 in House and/or 1 in Backyard Cottage"),
     ("bridgeport", "N4", "lot"): ("bridgeport", "§3.120 House D, Lot Size", "Lot Size 7500 sq. ft. min."),
     ("bridgeport", "N4", "adu"): ("bridgeport", "§3.120 House D, Number of Accessory Apartments", "Number of Accessory Apartments 1 in House or Backyard Cottage"),
-    ("bridgeport", "NX1", "use"): ("bridgeport", "§2.20.2(E) NX1 zone description", "NX1, Neighborhood Mix. The NX1 zone is intended to"),
     ("bridgeport", "NX1", "lot"): ("bridgeport", "§3.90 House A, Lot Width (N1/NX1/NX2 columns)", "Lot Width 45 ft. min. 45 ft. min. 35 ft. min."),
-    ("bridgeport", "NX2", "use"): ("bridgeport", "§2.20.2(F) NX2 zone description", "NX2, Neighborhood Mix. The NX2 zone is intended to"),
-    ("bridgeport", "NX3", "use"): ("bridgeport", "§2.20.2(G) NX3 zone description", "NX3, Mixed Residential. The NX3 zone is intended for"),
     ("bridgeport", "NX2", "lot"): ("bridgeport", "§3.90 House A, Lot Width (N1/NX1/NX2 columns)", "Lot Width 45 ft. min. 45 ft. min. 35 ft. min."),
-    ("bridgeport", "NX2", "adu"): ("bridgeport", "§3.90 House A, Number of Accessory Apartments", "Number of Accessory Apartments 1 in House or Backyard Cottage"),
-    ("bridgeport", "NX1", "adu"): ("bridgeport", "§3.90 House A, Number of Accessory Apartments", "Number of Accessory Apartments 1 in House or Backyard Cottage"),
     ("bridgeport", "NX1", "adu_size"): ("bridgeport", "§4.70.2(B)(5) accessory apartment size", "may not exceed 49% of the gross floor area of the"),
     ("bridgeport", "NX2", "adu_size"): ("bridgeport", "§4.70.2(B)(5) accessory apartment size", "may not exceed 49% of the gross floor area of the"),
     ("bridgeport", "NX2", "parking"): ("bridgeport", "§4.70.2(B)(6) accessory apartment parking", "No additional parking is required for an accessory apartment."),
@@ -1058,7 +1076,6 @@ V2_CITES = {
     ("stamford", "R-6", "lot"): ("stamford", "§5.Z.4(a) R-6 minimum lot area", "a. Minimum Lot Area: Single Family Dwelling 5000 sq. ft."),
     ("stamford", "RA-3", "adu"): ("stamford", "ADU definition, conditions 1 and 4", "Accessory Dwelling Units may only be permitted by Zoning Permit"),
     ("stamford", "RA-3", "adu_size"): ("stamford", "ADU definition, condition 6", "The size of the ADU shall not exceed eight hundred (800) sf in Gross Floor Area;"),
-    ("stamford", "RA-3", "parking"): ("stamford", "ADU definition, condition 8", "One (1) off-street Parking Space shall be provided for an ADU in addition to the parking"),
     ("stamford", "RA-3", "use"): ("stamford", "§5.X.1 Purpose, RA-3/RA-2/RA-1", "predominantly for single family"),
     ("greenwich", "RA-4", "use"): ("greenwich-div9", "§6-93(a)(1)", "Detached single family dwellings, one (1) per lot."),
     ("greenwich", "RA-4", "lot"): ("greenwich-div21", "Bulk schedule, RA-4 row", "4 Acres"),
@@ -1079,27 +1096,67 @@ V2_CITES = {
     ("greenwich", "R-7", "adu_size"): ("greenwich-div9", "§6-99(3)(D)(i) external ADU cap", "External ADUs shall be limited to 800 square feet in R-12, R-7 and R-6 zones;"),
     ("greenwich", "R-6", "adu_size"): ("greenwich-div9", "§6-99(3)(D)(i) external ADU cap", "External ADUs shall be limited to 800 square feet in R-12, R-7 and R-6 zones;"),
     ("greenwich", "R-6", "adu"): ("greenwich-div9", "§6-99(3)(E) special permit only for larger ADU", "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU"),
-    ("greenwich", "RA-4", "parking"): ("greenwich-div9", "§6-99(3)(F) ADU parking", "There must be at least one off-street parking space on an appropriate solid surface dedicated to the ADU."),
-    ("norwalk", "CD-1L", "use"): ("norwalk", "§3.3.1(A)(1) CD-1L district", "1. Community District CD-1L"),
-    ("norwalk", "CD-1M", "use"): ("norwalk", "§3.3.1(A)(2) CD-1M district", "2. Community District CD-1M"),
-    ("norwalk", "CD-1S", "use"): ("norwalk", "§3.3.1(A)(3) CD-1S district", "3. Community District CD-1S (Sub-Urban Single-"),
-    ("norwalk", "CD-2", "use"): ("norwalk", "§3.3.1(A)(4) CD-2 district", "4. Community District CD-2 (Sub-Urban Single-"),
 }
 
 # Rules stated once in the code apply to every district they cover.
 for _d in ["RA-2", "RA-1", "R-20", "R-10", "R-7 1/2"]:
     V2_CITES[("stamford", _d, "adu")] = V2_CITES[("stamford", "RA-3", "adu")]
     V2_CITES[("stamford", _d, "adu_size")] = V2_CITES[("stamford", "RA-3", "adu_size")]
-    V2_CITES[("stamford", _d, "parking")] = V2_CITES[("stamford", "RA-3", "parking")]
 V2_CITES[("stamford", "R-6", "adu")] = V2_CITES[("stamford", "RA-3", "adu")]
 V2_CITES[("stamford", "R-6", "use")] = ("stamford", "Zoning district list, R-6", "R-6               One-Family, Two-Family Residence District")
-for _d in ["RA-4", "RA-2", "RA-1", "R-20", "R-12", "R-7", "R-6", "R-MF"]:
-    V2_CITES[("greenwich", _d, "adu")] = ("greenwich-div9", "§6-99(3)(E) ADU approved by zoning permit unless larger", "Upon an application for a Special Permit, the Planning and Zoning Commission may authorize an ADU")
-    V2_CITES[("greenwich", _d, "parking")] = V2_CITES[("greenwich", "RA-4", "parking")]
+for _d in ["RA-4", "RA-2", "RA-1", "R-20", "R-12", "R-7", "R-6"]:
+    V2_CITES[("greenwich", _d, "adu")] = ("greenwich-div9", "§6-99(3)(J) ADU zoning permit", "prior to the issuance of a zoning permit.")
 for _d in ["RA-2", "RA-1", "R-20", "R-12", "R-7", "R-6"]:
     V2_CITES[("greenwich", _d, "adu_size")] = V2_CITES[("greenwich", "RA-4", "adu_size")] if _d in ("RA-2", "RA-1", "R-20") else V2_CITES[("greenwich", "R-6", "adu_size")]
 for _d in ["RA-2", "RA-1", "R-20", "R-12", "R-7", "R-6"]:
     V2_CITES[("greenwich", _d, "use")] = V2_CITES.get(("greenwich", _d, "use"), ("greenwich-div9", "§6-93(a)(1)", "Detached single family dwellings, one (1) per lot."))
+# Citations added after the district-by-district fact check (Nov. 2026).
+_BP_PARKING = ("bridgeport", "§8.20.1 Parking", "This zoning code does not establish minimum off-street")
+for _d in V2_DISTRICTS["bridgeport"]:
+    V2_CITES[("bridgeport", _d, "parking")] = _BP_PARKING
+V2_CITES[("bridgeport", "N2", "use")] = ("bridgeport", "§3.100.9 House B, Number of Principal Units", "Number of Principal Units 1 in House, 2 with special permit")
+for _d, _sec in (("N3", "§3.110.9"), ("N4", "§3.120.9")):
+    V2_CITES[("bridgeport", _d, "use")] = ("bridgeport", f"{_sec} House {'C' if _d == 'N3' else 'D'}, Number of Principal Units", "Number of Principal Units 1 in House")
+for _d in ("NX1", "NX2"):
+    V2_CITES[("bridgeport", _d, "use")] = ("bridgeport", "§3.70.4 Row, Facade Width per Street Frontage (NX1 / NX2 / NX3 columns)", "4 units max. 8 units max. 10 units max.")
+V2_CITES[("bridgeport", "NX1", "adu")] = ("bridgeport", "§3.90.9 House A, units in House (NX1 column)", "up to 3 in House plus 1")
+V2_CITES[("bridgeport", "NX2", "adu")] = ("bridgeport", "§3.90.9 House A, units in House (NX2 column)", "up to 4 in House plus 1")
+for _d in ("NX3", "NX4", "DX2", "RX2"):
+    V2_CITES[("bridgeport", _d, "use")] = ("bridgeport", "§3.50.9 General Building, Number of Principal Units", "Number of Principal Units 3 min. 3 min.")
+for _d in ("DX1", "MX1", "MX2", "MXN"):
+    V2_CITES[("bridgeport", _d, "use")] = ("bridgeport", "§3.20.9 Storefront, Number of Principal Units (DX1 / MX1 / MX2 / MXN columns)", "Number of Principal Units No limits No limits No limits 8 max.")
+
+_ST_SF_PARKING = ("stamford", "§12.D.2 Table 12.7, single-family house, market rate (Category 1 / 2 / 3)", "Single family 2 2 1 2 2 1 3 2 1 house")
+_ST_MF_PARKING = ("stamford", "§12.D.2 Table 12.7, 2-bedroom apartment, market rate (Category 1 / 2 / 3)", "2 BR -Apt 1.25 1 0.33 1.75 1 0.33 1.75 1.5 0.75")
+for _d in ("RA-3", "RA-2", "RA-1", "R-20", "R-10", "R-7 1/2", "R-6"):
+    V2_CITES[("stamford", _d, "parking")] = _ST_SF_PARKING
+for _d in ("R-5", "RM-1", "R-MF"):
+    V2_CITES[("stamford", _d, "parking")] = _ST_MF_PARKING
+    V2_CITES[("stamford", _d, "adu")] = V2_CITES[("stamford", "RA-3", "adu")]
+V2_CITES[("stamford", "R-6", "use")] = ("stamford", "§5.Z.2 R-6 permitted uses", "Multiple Dwellings are specifically prohibited.")
+V2_CITES[("stamford", "R-5", "use")] = ("stamford", "§5.AA.2 R-5 site plan review", "R-5 projects located on Lots of less than 30,000 square feet shall be subject to")
+V2_CITES[("stamford", "R-5", "lot")] = ("stamford", "§5.AA.5(a) R-5 minimum lot area", "One Family Dwelling: 5000 sq. ft.")
+V2_CITES[("stamford", "RM-1", "use")] = ("stamford", "§5.EE.3 RM-1 permitted uses", "Dwellings - single family, two family and multi-family.")
+V2_CITES[("stamford", "RM-1", "lot")] = ("stamford", "§5.EE.5(a) RM-1 minimum lot area", "a. Minimum Lot Area: 5000 sq. ft.")
+V2_CITES[("stamford", "R-MF", "use")] = ("stamford", "§5.FF.2 R-MF site plan review", "R-MF projects located on Lots of less than 20,000 square feet")
+V2_CITES[("stamford", "R-MF", "lot")] = ("stamford", "§5.FF.6(a) R-MF minimum lot area", "a. Minimum Lot Area: 5,000 square feet")
+
+V2_CITES[("greenwich", "R-MF", "parking")] = ("greenwich-div15", "§6-155(1)(a) two-family and multifamily parking", "Dwelling with one or two bedrooms*: one garage space for each dwelling and one outdoor space for each dwelling.")
+V2_CITES[("greenwich", "R-MF", "lot")] = ("greenwich-div21", "Bulk schedule, R-MF row", "R-MF 2-1/2 35 ft. 3,600 60 ft.")
+
+_NW_USE_ROW = ("norwalk-usetable", "Table 4.3.9.A Large Multifamily Building row (CD-1L / 1M / 1S / 2 / 3 ... columns)", "Large Multifamily NP NP NP NP PL NP PL PL PL NP NP NP NP SPU NP Building")
+_NW_ADU = ("norwalk-usetable", "§4.3.9.G.4.a(3) ADU permitting procedures", "a. Permitted by Zoning Permit in accordance")
+_NW_PARK = ("norwalk-art4", "Table 4.3.12.B-1 single-family and two-family parking", "2 per Dwelling Unit; except that within the CD-3, CD-3W,")
+_NW_LOT = {"CD-1L": "43,560 sq. ft.", "CD-1M": "12,500 sq. ft.", "CD-1S": "6,250 sq. ft.", "CD-2": "5,000 sq. ft.", "CD-3": "NR"}
+for _d in ("CD-1L", "CD-1M", "CD-1S", "CD-3"):
+    V2_CITES[("norwalk", _d, "use")] = _NW_USE_ROW
+V2_CITES[("norwalk", "CD-2", "use")] = ("norwalk-usetable", "Table 4.3.9.A Two-Family Detached Dwelling row", "Two-Family Detached NP NP NP P P P P NP NP NP NP NP NP NP NP Dwelling")
+for _d, _q in _NW_LOT.items():
+    V2_CITES[("norwalk", _d, "lot")] = ("norwalk-art4", f"Table 4.3.1 {_d} Lot/Building Site Area", f"Lot/Building Site Area {_q}")
+    V2_CITES[("norwalk", _d, "adu")] = _NW_ADU
+    V2_CITES[("norwalk", _d, "parking")] = _NW_PARK
+V2_CITES[("norwalk", "CD-3", "parking")] = ("norwalk-art4", "Table 4.3.12.B-1 multifamily parking", "Large Multifamily Building and Small Multifamily Building 1.3 per Dwelling Unit")
+
 def _pdf_compact_text(filename):
     import subprocess
     path = os.path.join(ROOT, "public", "sources", filename)
@@ -1163,6 +1220,10 @@ def _factor_explanation(label, inputs, points):
                                               inputs["lot"], inputs["parking"], inputs["demo"])
     if label in ("Multifamily Access", "Approval Discretion", "ADU Approval Pathway"):
         tier = {"Multifamily Access": use, "Approval Discretion": approval, "ADU Approval Pathway": adu}[label]
+        if tier == "n/a":
+            return None, ("Not applicable: the code already allows several units by right in the principal "
+                          "building here, so a separate accessory-unit pathway adds no restriction. The component "
+                          "is left out of the score (it still counts as confirmed for the five-of-six rule)."), "Not applicable"
         if tier is None:
             return None, "Not confirmed for this district.", V2_TIER_LABELS.get(tier, "Not confirmed")
         scale_key = {"Multifamily Access": "use", "Approval Discretion": "approval", "ADU Approval Pathway": "adu"}[label]
@@ -1191,7 +1252,7 @@ def compute_v2_district(inputs, citations=None):
         {"label": "Multifamily Access", "points": USE_PERMISSIONS_RUBRIC[use] if use else None, "max_points": 30},
         {"label": "Approval Discretion", "points": APPROVAL_PROCESS_RUBRIC[approval] if approval else None, "max_points": 10},
         {"label": "Minimum Lot Size", "points": lot_size_points(lot) if lot is not None else None, "max_points": 20},
-        {"label": "ADU Approval Pathway", "points": ADU_PATHWAY_RUBRIC[adu] if adu else None, "max_points": 15},
+        {"label": "ADU Approval Pathway", "points": ADU_PATHWAY_RUBRIC[adu] if adu and adu != "n/a" else None, "max_points": 15},
         {"label": "Parking Mandate", "points": parking_points(parking) if parking is not None else None, "max_points": 10},
         {"label": "Demolition Delay", "points": demolition_points(demo) if demo is not None else None, "max_points": 15},
     ]
@@ -1217,7 +1278,8 @@ def compute_v2_district(inputs, citations=None):
     achieved = sum(f["points"] for f in scored)
     possible = sum(f["max_points"] for f in scored)
     return {"score": round(achieved / possible * 100, 1) if possible else None,
-            "components_scored": len(scored), "factors": factors}
+            "components_scored": len(scored),
+            "components_confirmed": len(scored) + (1 if adu == "n/a" else 0), "factors": factors}
 
 def compute_v2_town(slug):
     land_path = os.path.join(LAND_DIR, f"{slug}.json")
@@ -1236,11 +1298,12 @@ def compute_v2_town(slug):
         cites = [c for c in (v2_citation(slug, code, f) for f in ("use", "lot", "adu", "adu_size", "parking")) if c]
         r = compute_v2_district(inputs, cites)
         results.append({"district": code, "acres": round(acres, 1), "score": r["score"],
-                        "components_scored": r["components_scored"], "factors": r["factors"],
+                        "components_scored": r["components_scored"],
+                        "components_confirmed": r["components_confirmed"], "factors": r["factors"],
                         "note": inputs["note"], "citations": cites})
     V2_MIN_COMPONENTS = 5
     for r in results:
-        r["included"] = r["score"] is not None and r["components_scored"] >= V2_MIN_COMPONENTS
+        r["included"] = r["score"] is not None and r["components_confirmed"] >= V2_MIN_COMPONENTS
     scored = [r for r in results if r["included"]]
     total_acres = sum(r["acres"] for r in scored)
     for r in results:
@@ -1248,7 +1311,7 @@ def compute_v2_town(slug):
         r["contribution"] = round(r["score"] * r["acres"] / total_acres, 2) if r["included"] and total_acres else None
         if not r["included"]:
             r["exclusion_reason"] = ("No score: the district has no confirmed inputs." if r["score"] is None
-                                     else f"Excluded: only {r['components_scored']} of 6 components are confirmed (minimum 5).")
+                                     else f"Excluded: only {r['components_confirmed']} of 6 components are confirmed (minimum 5).")
     weighted = sum(r["score"] * r["acres"] for r in scored) / total_acres if total_acres else None
     return {
         "land_weighted_score": round(weighted, 1) if weighted is not None else None,
