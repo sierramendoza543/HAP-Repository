@@ -1,0 +1,1410 @@
+{
+  "method": "Residential land = districts where Table 2-2 allows at least one building type whose 'Number of Principal Units' row admits a dwelling. Family status per district: a building type allowed in the zone (Table 2-2 check mark) admits a k-unit building when its unit rule permits k units: 'No limits' = 1 or more, 'N max.' = 1 to N, '3 min.'/'3 minimum' = 3 or more, '1 in House' = exactly 1, '2 with special permit' = 2 only after a hearing (hearing status). A Double House A has at least 2 units (Sec. 3.80.1: two House A types side by side). 4+-family means a building type that can hold 4 or more units. Storefront/Commercial House dwelling entries marked '8' (upper stories only) are counted as allowed. The backyard-cottage unit in NX1/NX2 is not counted toward the 4+ test (Row Building already allows 4+ there). Shares use our gross parcel acreage (data/land_area/bridgeport.json), not NZA's net of protected land.",
+  "source": "public/sources/bridgeport-zoning.pdf (Zone Bridgeport, Table 2-2 and Sec. 3.20-3.120, 4.70, 8.20.1); data/land_area/bridgeport.json; NZA data in data/nza_replication/nza_snapshots.json and data/towns/bridgeport.json",
+  "residential_districts": [
+    "DX1",
+    "RX2",
+    "NX4",
+    "RX1",
+    "NX3",
+    "MX1",
+    "N1",
+    "MXN",
+    "NX1",
+    "N2",
+    "N4",
+    "NX2",
+    "N3",
+    "DX2",
+    "MX2"
+  ],
+  "no_dwelling_districts": [
+    "IX",
+    "P2",
+    "P4",
+    "CX",
+    "P5",
+    "P1",
+    "I"
+  ],
+  "unclassified_districts": [
+    {
+      "district": "(blank)",
+      "acres": 9.3,
+      "reason": "parcels with no ZONE_2021 value in the city layer"
+    },
+    {
+      "district": "PDD",
+      "acres": 84.8,
+      "reason": "PDD is a legacy Planned Development District governed by each parcel's recorded general development plan, which is not in the mirrored code (Sec. 2.60.1 A(1))"
+    }
+  ],
+  "unresolved": [
+    {
+      "item": "PDD (legacy Planned Development District)",
+      "acres": 84.8,
+      "why": "Rules sit in each recorded general development plan, not in the mirrored code (Sec. 2.60.1)"
+    },
+    {
+      "item": "(blank) parcels",
+      "acres": 9.3,
+      "why": "No zone code in the city layer"
+    },
+    {
+      "item": "Row Building amendment 25-06",
+      "acres": null,
+      "why": "Noted in V2 as pending in 2025; the July 2022 text mirrored here is what is read"
+    },
+    {
+      "item": "NZA reads a pre-2022 code",
+      "acres": null,
+      "why": "NZA's Bridgeport map is dated to the earlier code; its status per district cannot be inspected"
+    },
+    {
+      "item": "P3 (public/institutional)",
+      "acres": null,
+      "why": "Appears in Table 2-2 (Civic Building, household living by special permit) but is not in the acreage file"
+    }
+  ],
+  "residential_acres_ours": 5885.2,
+  "residential_acres_nza": 5885,
+  "per_district": {
+    "IX": {
+      "acres": 21.2,
+      "class": "no dwelling type",
+      "table_2_2_building_types": [
+        "General Building"
+      ],
+      "dwelling_building_types": [],
+      "reason": "Table 2-2 allows no building type with a Number of Principal Units; Civic/Workshop/Open-site/General pages show '–' for units in this zone"
+    },
+    "P2": {
+      "acres": 662.9,
+      "class": "no dwelling type",
+      "table_2_2_building_types": [
+        "Civic Building",
+        "General Building",
+        "Open Outdoor Site"
+      ],
+      "dwelling_building_types": [],
+      "reason": "Table 2-2 allows no building type with a Number of Principal Units; Civic/Workshop/Open-site/General pages show '–' for units in this zone"
+    },
+    "P4": {
+      "acres": 66.8,
+      "class": "no dwelling type",
+      "table_2_2_building_types": [
+        "Civic Building"
+      ],
+      "dwelling_building_types": [],
+      "reason": "Table 2-2 allows no building type with a Number of Principal Units; Civic/Workshop/Open-site/General pages show '–' for units in this zone"
+    },
+    "DX1": {
+      "acres": 25.5,
+      "class": "residential",
+      "table_2_2_building_types": [
+        "Civic Building",
+        "Patio Outdoor Site",
+        "Storefront Building"
+      ],
+      "dwelling_building_types": [
+        "Storefront Building"
+      ],
+      "status": {
+        "1-family": {
+          "status": "as_of_right",
+          "via": [
+            "Storefront Building (as_of_right)"
+          ]
+        },
+        "2-family": {
+          "status": "as_of_right",
+          "via": [
+            "Storefront Building (as_of_right)"
+          ]
+        },
+        "3-family": {
+          "status": "as_of_right",
+          "via": [
+            "Storefront Building (as_of_right)"
+          ]
+        },
+        "4+-family": {
+          "status": "as_of_right",
+          "via": [
+            "Storefront Building (as_of_right)"
+          ]
+        }
+      },
+      "adu": "prohibited",
+      "min_lot_sqft": 0,
+      "parking_minimum": "none (Sec. 8.20.1)"
+    },
+    "CX": {
+      "acres": 92.1,
+      "class": "no dwelling type",
+      "table_2_2_building_types": [
+        "Civic Building",
+        "General Building",
+        "Open Outdoor Site",
+        "Workshop"
+      ],
+      "dwelling_building_types": [],
+      "reason": "Table 2-2 allows no building type with a Number of Principal Units; Civic/Workshop/Open-site/General pages show '–' for units in this zone"
+    },
+    "RX2": {
+      "acres": 980.5,
+      "class": "residential",
+      "table_2_2_building_types": [
+        "Civic Building",
+        "Commercial House",
+        "General Building",
+        "Row Building"
+      ],
+      "dwelling_building_types": [
+        "Commercial House",
+        "General Building",
+        "Row Building"
+      ],
+      "status": {
+        "1-family": {
+          "status": "as_of_right",
+          "via": [
+            "Commercial House (as_of_right)"
+          ]
+        },
+        "2-family": {
+          "status": "as_of_right",
+          "via": [
+            "Commercial House (as_of_right)"
+          ]
+        },
+        "3-family": {
+          "status": "as_of_right",
+          "via": [
+            "Commercial House (as_of_right)",
+            "General Building (as_of_right)",
+            "Row Building (as_of_right)"
+          ]
+        },
+        "4+-family": {
+          "status": "as_of_right",
+          "via": [
+            "Commercial House (as_of_right)",
+            "General Building (as_of_right)",
+            "Row Building (as_of_right)"
+          ]
+        }
+      },
+      "adu": "prohibited",
+      "min_lot_sqft": 0,
+      "parking_minimum": "none (Sec. 8.20.1)"
+    },
+    "NX4": {
+      "acres": 37.6,
+      "class": "residential",
+      "table_2_2_building_types": [
+        "Civic Building",
+        "General Building",
+        "Row Building"
+      ],
+      "dwelling_building_types": [
+        "General Building",
+        "Row Building"
+      ],
+      "status": {
+        "1-family": {
+          "status": "prohibited",
+          "via": []
+        },
+        "2-family": {
+          "status": "prohibited",
+          "via": []
+        },
+        "3-family": {
+          "status": "as_of_right",
+          "via": [
+            "General Building (as_of_right)",
+            "Row Building (as_of_right)"
+          ]
+        },
+        "4+-family": {
+          "status": "as_of_right",
+          "via": [
+            "General Building (as_of_right)",
+            "Row Building (as_of_right)"
+          ]
+        }
+      },
+      "adu": "prohibited",
+      "min_lot_sqft": 0,
+      "parking_minimum": "none (Sec. 8.20.1)"
+    },
+    "P5": {
+      "acres": 15.4,
+      "class": "no dwelling type",
+      "table_2_2_building_types": [
+        "Civic Building"
+      ],
+      "dwelling_building_types": [],
+      "reason": "Table 2-2 allows no building type with a Number of Principal Units; Civic/Workshop/Open-site/General pages show '–' for units in this zone"
+    },
+    "RX1": {
+      "acres": 246.7,
+      "class": "residential",
+      "table_2_2_building_types": [
+        "Civic Building",
+        "Commercial House",
+        "Row Building",
+        "Small General Building"
+      ],
+      "dwelling_building_types": [
+        "Commercial House",
+        "Row Building",
+        "Small General Building"
+      ],
+      "status": {
+        "1-family": {
+          "status": "as_of_right",
+          "via": [
+            "Commercial House (as_of_right)"
+          ]
+        },
+        "2-family": {
+          "status": "as_of_right",
+          "via": [
+            "Commercial House (as_of_right)"
+          ]
+        },
+        "3-family": {
+          "status": "as_of_right",
+          "via": [
+            "Commercial House (as_of_right)",
+            "Small General Building (as_of_right)",
+            "Row Building (as_of_right)"
+          ]
+        },
+        "4+-family": {
+          "status": "as_of_right",
+          "via": [
+            "Commercial House (as_of_right)",
+            "Small General Building (as_of_right)",
+            "Row Building (as_of_right)"
+          ]
+        }
+      },
+      "adu": "prohibited",
+      "min_lot_sqft": 0,
+      "parking_minimum": "none (Sec. 8.20.1)"
+    },
+    "NX3": {
+      "acres": 471.6,
+      "class": "residential",
+      "table_2_2_building_types": [
+        "Civic Building",
+        "General Building",
+        "Row Building"
+      ],
+      "dwelling_building_types": [
+        "General Building",
+        "Row Building"
+      ],
+      "status": {
+        "1-family": {
+          "status": "prohibited",
+          "via": []
+        },
+        "2-family": {
+          "status": "prohibited",
+          "via": []
+        },
+        "3-family": {
+          "status": "as_of_right",
+          "via": [
+            "General Building (as_of_right)",
+            "Row Building (as_of_right)"
+          ]
+        },
+        "4+-family": {
+          "status": "as_of_right",
+          "via": [
+            "General Building (as_of_right)",
+            "Row Building (as_of_right)"
+          ]
+        }
+      },
+      "adu": "prohibited",
+      "min_lot_sqft": 0,
+      "parking_minimum": "none (Sec. 8.20.1)"
+    },
+    "(blank)": {
+      "acres": 9.3,
+      "class": "unclassified",
+      "reason": "parcels with no ZONE_2021 value in the city layer"
+    },
+    "MX1": {
+      "acres": 113.2,
+      "class": "residential",
+      "table_2_2_building_types": [
+        "Civic Building",
+        "Commercial House",
+        "Patio Outdoor Site",
+        "Storefront Building"
+      ],
+      "dwelling_building_types": [
+        "Commercial House",
+        "Storefront Building"
+      ],
+      "status": {
+        "1-family": {
+          "status": "as_of_right",
+          "via": [
+            "Storefront Building (as_of_right)",
+            "Commercial House (as_of_right)"
+          ]
+        },
+        "2-family": {
+          "status": "as_of_right",
+          "via": [
+            "Storefront Building (as_of_right)",
+            "Commercial House (as_of_right)"
+          ]
+        },
+        "3-family": {
+          "status": "as_of_right",
+          "via": [
+            "Storefront Building (as_of_right)",
+            "Commercial House (as_of_right)"
+          ]
+        },
+        "4+-family": {
+          "status": "as_of_right",
+          "via": [
+            "Storefront Building (as_of_right)",
+            "Commercial House (as_of_right)"
+          ]
+        }
+      },
+      "adu": "prohibited",
+      "min_lot_sqft": 0,
+      "parking_minimum": "none (Sec. 8.20.1)"
+    },
+    "N1": {
+      "acres": 201.3,
+      "class": "residential",
+      "table_2_2_building_types": [
+        "House A"
+      ],
+      "dwelling_building_types": [
+        "House A"
+      ],
+      "status": {
+        "1-family": {
+          "status": "as_of_right",
+          "via": [
+            "House A (as_of_right)"
+          ]
+        },
+        "2-family": {
+          "status": "prohibited",
+          "via": []
+        },
+        "3-family": {
+          "status": "prohibited",
+          "via": []
+        },
+        "4+-family": {
+          "status": "prohibited",
+          "via": []
+        }
+      },
+      "adu": "as_of_right",
+      "min_lot_sqft": 0,
+      "parking_minimum": "none (Sec. 8.20.1)"
+    },
+    "MXN": {
+      "acres": 7.0,
+      "class": "residential",
+      "table_2_2_building_types": [
+        "Commercial House",
+        "Storefront Building"
+      ],
+      "dwelling_building_types": [
+        "Commercial House",
+        "Storefront Building"
+      ],
+      "status": {
+        "1-family": {
+          "status": "as_of_right",
+          "via": [
+            "Storefront Building (as_of_right)",
+            "Commercial House (as_of_right)"
+          ]
+        },
+        "2-family": {
+          "status": "as_of_right",
+          "via": [
+            "Storefront Building (as_of_right)",
+            "Commercial House (as_of_right)"
+          ]
+        },
+        "3-family": {
+          "status": "as_of_right",
+          "via": [
+            "Storefront Building (as_of_right)",
+            "Commercial House (as_of_right)"
+          ]
+        },
+        "4+-family": {
+          "status": "as_of_right",
+          "via": [
+            "Storefront Building (as_of_right)",
+            "Commercial House (as_of_right)"
+          ]
+        }
+      },
+      "adu": "prohibited",
+      "min_lot_sqft": 0,
+      "parking_minimum": "none (Sec. 8.20.1)"
+    },
+    "PDD": {
+      "acres": 84.8,
+      "class": "unclassified",
+      "reason": "PDD is a legacy Planned Development District governed by each parcel's recorded general development plan, which is not in the mirrored code (Sec. 2.60.1 A(1))"
+    },
+    "NX1": {
+      "acres": 697.3,
+      "class": "residential",
+      "table_2_2_building_types": [
+        "Double House A",
+        "House A",
+        "Row Building"
+      ],
+      "dwelling_building_types": [
+        "Double House A",
+        "House A",
+        "Row Building"
+      ],
+      "status": {
+        "1-family": {
+          "status": "as_of_right",
+          "via": [
+            "House A (as_of_right)"
+          ]
+        },
+        "2-family": {
+          "status": "as_of_right",
+          "via": [
+            "Double House A (as_of_right)",
+            "House A (as_of_right)"
+          ]
+        },
+        "3-family": {
+          "status": "as_of_right",
+          "via": [
+            "Row Building (as_of_right)",
+            "Double House A (as_of_right)",
+            "House A (as_of_right)"
+          ]
+        },
+        "4+-family": {
+          "status": "as_of_right",
+          "via": [
+            "Row Building (as_of_right)",
+            "Double House A (as_of_right)"
+          ]
+        }
+      },
+      "adu": "prohibited",
+      "min_lot_sqft": 0,
+      "parking_minimum": "none (Sec. 8.20.1)"
+    },
+    "N2": {
+      "acres": 1099.8,
+      "class": "residential",
+      "table_2_2_building_types": [
+        "House B"
+      ],
+      "dwelling_building_types": [
+        "House B"
+      ],
+      "status": {
+        "1-family": {
+          "status": "as_of_right",
+          "via": [
+            "House B (as_of_right)"
+          ]
+        },
+        "2-family": {
+          "status": "hearing",
+          "via": [
+            "House B (hearing)"
+          ]
+        },
+        "3-family": {
+          "status": "prohibited",
+          "via": []
+        },
+        "4+-family": {
+          "status": "prohibited",
+          "via": []
+        }
+      },
+      "adu": "hearing",
+      "min_lot_sqft": 0,
+      "parking_minimum": "none (Sec. 8.20.1)"
+    },
+    "P1": {
+      "acres": 821.4,
+      "class": "no dwelling type",
+      "table_2_2_building_types": [
+        "Civic Building",
+        "Open Outdoor Site"
+      ],
+      "dwelling_building_types": [],
+      "reason": "Table 2-2 allows no building type with a Number of Principal Units; Civic/Workshop/Open-site/General pages show '–' for units in this zone"
+    },
+    "N4": {
+      "acres": 819.5,
+      "class": "residential",
+      "table_2_2_building_types": [
+        "House D"
+      ],
+      "dwelling_building_types": [
+        "House D"
+      ],
+      "status": {
+        "1-family": {
+          "status": "as_of_right",
+          "via": [
+            "House D (as_of_right)"
+          ]
+        },
+        "2-family": {
+          "status": "prohibited",
+          "via": []
+        },
+        "3-family": {
+          "status": "prohibited",
+          "via": []
+        },
+        "4+-family": {
+          "status": "prohibited",
+          "via": []
+        }
+      },
+      "adu": "as_of_right",
+      "min_lot_sqft": 7500,
+      "parking_minimum": "none (Sec. 8.20.1)"
+    },
+    "NX2": {
+      "acres": 732.3,
+      "class": "residential",
+      "table_2_2_building_types": [
+        "Double House A",
+        "House A",
+        "Row Building",
+        "Small General Building"
+      ],
+      "dwelling_building_types": [
+        "Double House A",
+        "House A",
+        "Row Building",
+        "Small General Building"
+      ],
+      "status": {
+        "1-family": {
+          "status": "as_of_right",
+          "via": [
+            "House A (as_of_right)"
+          ]
+        },
+        "2-family": {
+          "status": "as_of_right",
+          "via": [
+            "Double House A (as_of_right)",
+            "House A (as_of_right)"
+          ]
+        },
+        "3-family": {
+          "status": "as_of_right",
+          "via": [
+            "Small General Building (as_of_right)",
+            "Row Building (as_of_right)",
+            "Double House A (as_of_right)",
+            "House A (as_of_right)"
+          ]
+        },
+        "4+-family": {
+          "status": "as_of_right",
+          "via": [
+            "Small General Building (as_of_right)",
+            "Row Building (as_of_right)",
+            "Double House A (as_of_right)",
+            "House A (as_of_right)"
+          ]
+        }
+      },
+      "adu": "prohibited",
+      "min_lot_sqft": 0,
+      "parking_minimum": "none (Sec. 8.20.1)"
+    },
+    "N3": {
+      "acres": 123.1,
+      "class": "residential",
+      "table_2_2_building_types": [
+        "House C"
+      ],
+      "dwelling_building_types": [
+        "House C"
+      ],
+      "status": {
+        "1-family": {
+          "status": "as_of_right",
+          "via": [
+            "House C (as_of_right)"
+          ]
+        },
+        "2-family": {
+          "status": "prohibited",
+          "via": []
+        },
+        "3-family": {
+          "status": "prohibited",
+          "via": []
+        },
+        "4+-family": {
+          "status": "prohibited",
+          "via": []
+        }
+      },
+      "adu": "as_of_right",
+      "min_lot_sqft": 9000,
+      "parking_minimum": "none (Sec. 8.20.1)"
+    },
+    "I": {
+      "acres": 430.0,
+      "class": "no dwelling type",
+      "table_2_2_building_types": [
+        "General Building",
+        "Open Outdoor Site",
+        "Workshop"
+      ],
+      "dwelling_building_types": [],
+      "reason": "Table 2-2 allows no building type with a Number of Principal Units; Civic/Workshop/Open-site/General pages show '–' for units in this zone"
+    },
+    "DX2": {
+      "acres": 139.4,
+      "class": "residential",
+      "table_2_2_building_types": [
+        "Civic Building",
+        "General Building"
+      ],
+      "dwelling_building_types": [
+        "General Building"
+      ],
+      "status": {
+        "1-family": {
+          "status": "prohibited",
+          "via": []
+        },
+        "2-family": {
+          "status": "prohibited",
+          "via": []
+        },
+        "3-family": {
+          "status": "as_of_right",
+          "via": [
+            "General Building (as_of_right)"
+          ]
+        },
+        "4+-family": {
+          "status": "as_of_right",
+          "via": [
+            "General Building (as_of_right)"
+          ]
+        }
+      },
+      "adu": "prohibited",
+      "min_lot_sqft": 0,
+      "parking_minimum": "none (Sec. 8.20.1)"
+    },
+    "MX2": {
+      "acres": 190.4,
+      "class": "residential",
+      "table_2_2_building_types": [
+        "Civic Building",
+        "Commercial Center",
+        "Commercial House",
+        "Patio Outdoor Site",
+        "Storefront Building"
+      ],
+      "dwelling_building_types": [
+        "Commercial Center",
+        "Commercial House",
+        "Storefront Building"
+      ],
+      "status": {
+        "1-family": {
+          "status": "as_of_right",
+          "via": [
+            "Storefront Building (as_of_right)",
+            "Commercial Center (as_of_right)",
+            "Commercial House (as_of_right)"
+          ]
+        },
+        "2-family": {
+          "status": "as_of_right",
+          "via": [
+            "Storefront Building (as_of_right)",
+            "Commercial Center (as_of_right)",
+            "Commercial House (as_of_right)"
+          ]
+        },
+        "3-family": {
+          "status": "as_of_right",
+          "via": [
+            "Storefront Building (as_of_right)",
+            "Commercial Center (as_of_right)",
+            "Commercial House (as_of_right)"
+          ]
+        },
+        "4+-family": {
+          "status": "as_of_right",
+          "via": [
+            "Storefront Building (as_of_right)",
+            "Commercial Center (as_of_right)",
+            "Commercial House (as_of_right)"
+          ]
+        }
+      },
+      "adu": "prohibited",
+      "min_lot_sqft": 0,
+      "parking_minimum": "none (Sec. 8.20.1)"
+    }
+  },
+  "unit_rule_cites": {
+    "Storefront Building": {
+      "cite": "Sec. 3.20.9 Storefront, Number of Principal Units",
+      "quote": "Number of Principal Units No limits No limits No limits 8 max.",
+      "pdf_page": 24,
+      "printed_page": "3-10",
+      "zones": {
+        "DX1": {
+          "min": 1,
+          "max": null,
+          "special_permit_max": null
+        },
+        "MX1": {
+          "min": 1,
+          "max": null,
+          "special_permit_max": null
+        },
+        "MX2": {
+          "min": 1,
+          "max": null,
+          "special_permit_max": null
+        },
+        "MXN": {
+          "min": 1,
+          "max": 8,
+          "special_permit_max": null
+        }
+      }
+    },
+    "Commercial Center": {
+      "cite": "Sec. 3.30.9 Commercial Center, Number of Principal Units",
+      "quote": "Number of Principal Units No limits",
+      "pdf_page": 32,
+      "printed_page": "3-18",
+      "zones": {
+        "MX2": {
+          "min": 1,
+          "max": null,
+          "special_permit_max": null
+        }
+      }
+    },
+    "Commercial House": {
+      "cite": "Sec. 3.40.9 Commercial House, Number of Principal Units",
+      "quote": "Number of Principal Units No limits No limits 6 max. 6 max. No limits",
+      "pdf_page": 40,
+      "printed_page": "3-26",
+      "zones": {
+        "MX1": {
+          "min": 1,
+          "max": null,
+          "special_permit_max": null
+        },
+        "MX2": {
+          "min": 1,
+          "max": null,
+          "special_permit_max": null
+        },
+        "MXN": {
+          "min": 1,
+          "max": 6,
+          "special_permit_max": null
+        },
+        "RX1": {
+          "min": 1,
+          "max": 6,
+          "special_permit_max": null
+        },
+        "RX2": {
+          "min": 1,
+          "max": null,
+          "special_permit_max": null
+        }
+      }
+    },
+    "General Building": {
+      "cite": "Sec. 3.50.9 General Building, Number of Principal Units",
+      "quote": "Number of Principal Units 3 min. 3 min. – – – 3 min.",
+      "pdf_page": 48,
+      "printed_page": "3-34",
+      "zones": {
+        "DX2": {
+          "min": 3,
+          "max": null,
+          "special_permit_max": null
+        },
+        "RX2": {
+          "min": 3,
+          "max": null,
+          "special_permit_max": null
+        },
+        "NX3": {
+          "min": 3,
+          "max": null,
+          "special_permit_max": null
+        },
+        "NX4": {
+          "min": 3,
+          "max": null,
+          "special_permit_max": null
+        }
+      }
+    },
+    "Small General Building": {
+      "cite": "Sec. 3.60.9 Small General Building, Number of Principal Units",
+      "quote": "Number of Principal Units 3 min., 6 max., 3 min. up to 8 units with special permit",
+      "pdf_page": 56,
+      "printed_page": "3-42",
+      "zones": {
+        "NX2": {
+          "min": 3,
+          "max": 6,
+          "special_permit_max": 8
+        },
+        "RX1": {
+          "min": 3,
+          "max": null,
+          "special_permit_max": null
+        }
+      }
+    },
+    "Row Building": {
+      "cite": "Sec. 3.70.9 Row, Number of Principal Units",
+      "quote": "Number of Principal Units 3 minimum 3 minimum 3 minimum",
+      "pdf_page": 64,
+      "printed_page": "3-50",
+      "zones": {
+        "NX1": {
+          "min": 3,
+          "max": null,
+          "special_permit_max": null
+        },
+        "NX2": {
+          "min": 3,
+          "max": null,
+          "special_permit_max": null
+        },
+        "NX3": {
+          "min": 3,
+          "max": null,
+          "special_permit_max": null
+        },
+        "NX4": {
+          "min": 3,
+          "max": null,
+          "special_permit_max": null
+        },
+        "RX1": {
+          "min": 3,
+          "max": null,
+          "special_permit_max": null
+        },
+        "RX2": {
+          "min": 3,
+          "max": null,
+          "special_permit_max": null
+        }
+      }
+    },
+    "Double House A": {
+      "cite": "Sec. 3.80.9 Double House A, Number of Principal Units; minimum 2 from Sec. 3.80.1 ('essentially two House A types ... housing multiple units')",
+      "quote": "up to 4, 6 with special permit in House; up to 6, 8 with special permit in House;",
+      "pdf_page": 72,
+      "printed_page": "3-58",
+      "zones": {
+        "NX1": {
+          "min": 2,
+          "max": 4,
+          "special_permit_max": 6
+        },
+        "NX2": {
+          "min": 2,
+          "max": 6,
+          "special_permit_max": 8
+        }
+      }
+    },
+    "House A": {
+      "cite": "Sec. 3.90.9 House A, Number of Principal Units",
+      "quote": "Number of Principal Units 1 in House up to 3 in House plus 1",
+      "pdf_page": 80,
+      "printed_page": "3-66",
+      "zones": {
+        "N1": {
+          "min": 1,
+          "max": 1,
+          "special_permit_max": null
+        },
+        "NX1": {
+          "min": 1,
+          "max": 3,
+          "special_permit_max": null
+        },
+        "NX2": {
+          "min": 1,
+          "max": 4,
+          "special_permit_max": null
+        }
+      }
+    },
+    "House B": {
+      "cite": "Sec. 3.100.9 House B, Number of Principal Units",
+      "quote": "Number of Principal Units 1 in House, 2 with special permit",
+      "pdf_page": 88,
+      "printed_page": "3-74",
+      "zones": {
+        "N2": {
+          "min": 1,
+          "max": 1,
+          "special_permit_max": 2
+        }
+      }
+    },
+    "House C": {
+      "cite": "Sec. 3.110.9 House C, Number of Principal Units",
+      "quote": "Number of Principal Units 1 in House",
+      "pdf_page": 96,
+      "printed_page": "3-82",
+      "zones": {
+        "N3": {
+          "min": 1,
+          "max": 1,
+          "special_permit_max": null
+        }
+      }
+    },
+    "House D": {
+      "cite": "Sec. 3.120.9 House D, Number of Principal Units",
+      "quote": "Number of Principal Units 1 in House",
+      "pdf_page": 104,
+      "printed_page": "3-90",
+      "zones": {
+        "N4": {
+          "min": 1,
+          "max": 1,
+          "special_permit_max": null
+        }
+      }
+    },
+    "Table 2-2": {
+      "pdf_pages": [
+        12,
+        13
+      ],
+      "note": "parsed live; check mark extracts as '4', dash as '–', '0 DP' = development plan"
+    }
+  },
+  "other_cites": {
+    "parking": {
+      "cite": "Sec. 8.20.1 Minimum Ratios",
+      "quote": "This zoning code does not establish minimum off-street parking requirements",
+      "pdf_page": 226,
+      "printed_page": "8-2"
+    },
+    "lot_house_b": {
+      "cite": "Sec. 3.100.4 House B, Lot Size",
+      "quote": "Lot Size No min.",
+      "pdf_page": 84,
+      "printed_page": "3-70"
+    },
+    "lot_house_c": {
+      "cite": "Sec. 3.110.4 House C, Lot Size",
+      "quote": "Lot Size 9000 sq. ft. min.",
+      "pdf_page": 92,
+      "printed_page": "3-78"
+    },
+    "lot_house_d": {
+      "cite": "Sec. 3.120.4 House D, Lot Size",
+      "quote": "Lot Size 7500 sq. ft. min.",
+      "pdf_page": 100,
+      "printed_page": "3-86"
+    },
+    "adu_n1": {
+      "cite": "Sec. 3.90.9 House A, ACCESSORY USES table (N1 / NX1 / NX2 columns)",
+      "quote": "Accessory Apartments 4 – –",
+      "pdf_page": 81,
+      "printed_page": "3-67"
+    },
+    "adu_n2": {
+      "cite": "Sec. 3.100.9 House B, Number of Accessory Apartments",
+      "quote": "Number of Accessory Apartments 1 in Backyard Cottage with special permit",
+      "pdf_page": 88,
+      "printed_page": "3-74"
+    },
+    "adu_n3": {
+      "cite": "Sec. 3.110.9 House C, Number of Accessory Apartments",
+      "quote": "Number of Accessory Apartments up to 2; 1 in House and/or 1 in Backyard Cottage",
+      "pdf_page": 96,
+      "printed_page": "3-82"
+    },
+    "adu_n4": {
+      "cite": "Sec. 3.120.9 House D, Number of Accessory Apartments",
+      "quote": "Number of Accessory Apartments 1 in House or Backyard Cottage",
+      "pdf_page": 104,
+      "printed_page": "3-90"
+    },
+    "key": {
+      "cite": "Sec. 3.20.9 use-table key",
+      "quote": "KEY: 4 = Allowed Use 8 = Allowed in Upper Stories Only",
+      "pdf_page": 24,
+      "printed_page": "3-10"
+    }
+  },
+  "ours": {
+    "residential_acres": 5885.2,
+    "family": {
+      "1-family": {
+        "as_of_right": 5236.6,
+        "hearing": 0.0,
+        "prohibited": 648.6,
+        "pct": {
+          "as_of_right": 89.0,
+          "hearing": 0.0,
+          "prohibited": 11.0
+        }
+      },
+      "2-family": {
+        "as_of_right": 2992.9,
+        "hearing": 1099.8,
+        "prohibited": 1792.5,
+        "pct": {
+          "as_of_right": 50.9,
+          "hearing": 18.7,
+          "prohibited": 30.5
+        }
+      },
+      "3-family": {
+        "as_of_right": 3641.5,
+        "hearing": 0.0,
+        "prohibited": 2243.7,
+        "pct": {
+          "as_of_right": 61.9,
+          "hearing": 0.0,
+          "prohibited": 38.1
+        }
+      },
+      "4+-family": {
+        "as_of_right": 3641.5,
+        "hearing": 0.0,
+        "prohibited": 2243.7,
+        "pct": {
+          "as_of_right": 61.9,
+          "hearing": 0.0,
+          "prohibited": 38.1
+        }
+      }
+    },
+    "one_family_land_acres": 5236.6,
+    "min_lot_bins": {
+      "None": {
+        "districts": [
+          "DX1",
+          "RX2",
+          "RX1",
+          "MX1",
+          "N1",
+          "MXN",
+          "NX1",
+          "N2",
+          "NX2",
+          "MX2"
+        ],
+        "acres": 4294.0,
+        "pct": 82.0
+      },
+      "Less than 10,000 sq ft": {
+        "districts": [
+          "N4",
+          "N3"
+        ],
+        "acres": 942.6,
+        "pct": 18.0
+      },
+      "10,000 to 19,999 sq ft": {
+        "districts": [],
+        "acres": 0,
+        "pct": 0.0
+      },
+      "20,000 to 39,999 sq ft": {
+        "districts": [],
+        "acres": 0,
+        "pct": 0.0
+      },
+      "40,000 to 79,999 sq ft": {
+        "districts": [],
+        "acres": 0,
+        "pct": 0.0
+      },
+      "80,000 sq ft or more": {
+        "districts": [],
+        "acres": 0,
+        "pct": 0.0
+      }
+    },
+    "adu_acres_on_one_family_land": {
+      "as_of_right": 1143.9,
+      "hearing": 1099.8,
+      "prohibited": 2992.9
+    },
+    "proxy": {
+      "use_exclusion": 35.6,
+      "share_1fam_ge_80000": 0.0,
+      "share_parking_mandate": 0.0,
+      "composite": 15.2
+    }
+  },
+  "ours_sensitivity_mixed_use_only_counts_for_3plus": {
+    "residential_acres": 5885.2,
+    "family": {
+      "1-family": {
+        "as_of_right": 3673.3,
+        "hearing": 0.0,
+        "prohibited": 2211.9,
+        "pct": {
+          "as_of_right": 62.4,
+          "hearing": 0.0,
+          "prohibited": 37.6
+        }
+      },
+      "2-family": {
+        "as_of_right": 1429.6,
+        "hearing": 1099.8,
+        "prohibited": 3355.8,
+        "pct": {
+          "as_of_right": 24.3,
+          "hearing": 18.7,
+          "prohibited": 57.0
+        }
+      },
+      "3-family": {
+        "as_of_right": 3641.5,
+        "hearing": 0.0,
+        "prohibited": 2243.7,
+        "pct": {
+          "as_of_right": 61.9,
+          "hearing": 0.0,
+          "prohibited": 38.1
+        }
+      },
+      "4+-family": {
+        "as_of_right": 3641.5,
+        "hearing": 0.0,
+        "prohibited": 2243.7,
+        "pct": {
+          "as_of_right": 61.9,
+          "hearing": 0.0,
+          "prohibited": 38.1
+        }
+      }
+    },
+    "one_family_land_acres": 3673.3,
+    "min_lot_bins": {
+      "None": {
+        "districts": [
+          "N1",
+          "NX1",
+          "N2",
+          "NX2"
+        ],
+        "acres": 2730.7,
+        "pct": 74.3
+      },
+      "Less than 10,000 sq ft": {
+        "districts": [
+          "N4",
+          "N3"
+        ],
+        "acres": 942.6,
+        "pct": 25.7
+      },
+      "10,000 to 19,999 sq ft": {
+        "districts": [],
+        "acres": 0,
+        "pct": 0.0
+      },
+      "20,000 to 39,999 sq ft": {
+        "districts": [],
+        "acres": 0,
+        "pct": 0.0
+      },
+      "40,000 to 79,999 sq ft": {
+        "districts": [],
+        "acres": 0,
+        "pct": 0.0
+      },
+      "80,000 sq ft or more": {
+        "districts": [],
+        "acres": 0,
+        "pct": 0.0
+      }
+    },
+    "adu_acres_on_one_family_land": {
+      "as_of_right": 1143.9,
+      "hearing": 1099.8,
+      "prohibited": 1429.6
+    },
+    "proxy": {
+      "use_exclusion": 44.4,
+      "share_1fam_ge_80000": 0.0,
+      "share_parking_mandate": 0.0,
+      "composite": 19.0
+    }
+  },
+  "nza": {
+    "residential_acres": 5885,
+    "family": {
+      "1-family": {
+        "prohibited": 1027,
+        "hearing": 0,
+        "as_of_right": 4858,
+        "pct": {
+          "prohibited": 17.5,
+          "hearing": 0.0,
+          "as_of_right": 82.5
+        },
+        "sum_acres": 5885
+      },
+      "2-family": {
+        "prohibited": 1855,
+        "hearing": 1096,
+        "as_of_right": 2933,
+        "pct": {
+          "prohibited": 31.5,
+          "hearing": 18.6,
+          "as_of_right": 49.8
+        },
+        "sum_acres": 5884
+      },
+      "3-family": {
+        "prohibited": 2312,
+        "hearing": 0,
+        "as_of_right": 3573,
+        "pct": {
+          "prohibited": 39.3,
+          "hearing": 0.0,
+          "as_of_right": 60.7
+        },
+        "sum_acres": 5885
+      },
+      "4+-family": {
+        "prohibited": 2229,
+        "hearing": 83,
+        "as_of_right": 3573,
+        "pct": {
+          "prohibited": 37.9,
+          "hearing": 1.4,
+          "as_of_right": 60.7
+        },
+        "sum_acres": 5885
+      }
+    },
+    "min_lot_bins": {
+      "None": {
+        "acres": 3926,
+        "pct": 80.8
+      },
+      "Less than 10,000 sq ft": {
+        "acres": 931,
+        "pct": 19.2
+      },
+      "10,000 to 19,999 sq ft": {
+        "acres": 0,
+        "pct": 0.0
+      },
+      "20,000 to 39,999 sq ft": {
+        "acres": 0,
+        "pct": 0.0
+      },
+      "40,000 to 79,999 sq ft": {
+        "acres": 0,
+        "pct": 0.0
+      },
+      "80,000 sq ft or more": {
+        "acres": 0,
+        "pct": 0.0
+      }
+    },
+    "adu_acres": {
+      "Allowed": 1132,
+      "Allowed with occupancy restrictions": 0,
+      "Hearing": 1096,
+      "Hearing with occupancy restrictions": 0,
+      "Prohibited": 2629
+    },
+    "proxy_recomputed": {
+      "use_exclusion": 36.2,
+      "share_1fam_ge_80000": 0.0,
+      "share_parking_mandate": 0.0,
+      "composite": 15.5
+    },
+    "proxy_stored": {
+      "composite_score": 15.5,
+      "nza_metrics": {
+        "2-family housing prohibited": 31.5,
+        "3-family housing prohibited": 39.3,
+        "4+-family housing prohibited": 37.9,
+        "1-family lots requiring ≥80,000 sq ft": 0.0,
+        "Residential land with a parking mandate": 0
+      }
+    }
+  },
+  "parking_mandate_pct": {
+    "ours": 0.0,
+    "nza": 0,
+    "basis": "Sec. 8.20.1 Minimum Ratios: This zoning code does not establish minimum off-street parking requirements"
+  },
+  "adu": {
+    "ours_acres_on_one_family_land": {
+      "as_of_right": 1143.9,
+      "hearing": 1099.8,
+      "prohibited": 2992.9
+    },
+    "nza_acres": {
+      "allowed": 1132,
+      "hearing": 1096,
+      "prohibited": 2629
+    },
+    "rule": "N1, N3, N4 allow accessory apartments by right; N2 only with special permit (backyard cottage); NX1/NX2 House A page shows '–' for Accessory Apartments (the extra backyard-cottage unit is counted as a principal unit); mixed-use House-less zones show '–'"
+  },
+  "comparison": {
+    "composite_ours": 15.2,
+    "composite_nza_stored": 15.5,
+    "composite_difference_ours_minus_nza": -0.3,
+    "composite_sensitivity_mixed_use_3plus_only": 19.0
+  }
+}

@@ -1,0 +1,1029 @@
+{
+  "method": "Residential land = districts whose column allows at least one dwelling type (P, PL or SPU in any dwelling row of Table 4.3.9.A). Shares use our gross district acreage (ArcGIS layer, pre-rewrite map) with no protected/unzoned/water deductions. Status: P and PL = as_of_right (PL is permitted by right with limitations, e.g. site plan), SPU = hearing, NP = prohibited. Mapping rule for family types (Table 4.3.8.B defines Small Multifamily Building as 3 to 6 units and Large Multifamily Building as 7+ units): 3-family = Small Multifamily Building status; 4+-family = the more permissive of Small Multifamily (4-6 units) and Large Multifamily (7+); Townhouse (1 unit per building) is not mapped to 3 or 4+-family. 1-family = Single-Family Detached Dwelling; 2-family = Two-Family Detached Dwelling.",
+  "legend": {
+    "P": "Permitted by Right",
+    "PL": "Permitted by Right with Limitations",
+    "SPU": "Special Permit Use",
+    "NP": "Not Permitted",
+    "NR": "Not Regulated"
+  },
+  "source": {
+    "use_table": "Table 4.3.9.A, printed p.250 (PDF p.3 of public/sources/norwalk-usetable.pdf); columns checked by x-position against the header; header order: CD-1L, CD-1M, CD-1S, CD-2, CD-3, CD-3W, CD-3C, CD-4, CD-4W, SD-H, SD-IC, SD-LI, SD-HI, SD-MC, CV",
+    "building_types": "Table 4.3.8.B: Small Multifamily PDF p.191 (printed 238) 'Units per Building 3 min., 6 max.'; Large Multifamily PDF p.192 (printed 239) 'Units per Building 7 min.' of norwalk-art4.pdf",
+    "lot_standards": "Table 4.3.1-A to 4.3.1-I, norwalk-art4.pdf (pages in min_lot_size)",
+    "parking": "Table 4.3.12.B-1, norwalk-art4.pdf PDF p.263 (printed 310)",
+    "adu": "Table 4.3.9.D row 'Accessory Dwelling Unit', printed p.260 (PDF p.13) and Sec. 4.3.9.G.4.a, printed pp.264-265 (PDF pp.17-18) of norwalk-usetable.pdf",
+    "acreage": "data/land_area/norwalk.json"
+  },
+  "per_district": {
+    "CD-1L": {
+      "symbols": {
+        "single_family_detached": "P",
+        "two_family_detached": "NP",
+        "townhouse": "NP",
+        "small_multifamily": "NP",
+        "large_multifamily": "NP",
+        "flex_residential": "NP",
+        "live_work_residential": "NP",
+        "mid_rise_residential": "NP",
+        "mixed_use_residential": "NP"
+      },
+      "status": {
+        "1-family": "as_of_right",
+        "2-family": "prohibited",
+        "3-family": "prohibited",
+        "4+-family": "prohibited"
+      },
+      "acres_confirmed": 4179.3,
+      "acres_sensitivity": 4179.3,
+      "allows_any_dwelling": true
+    },
+    "CD-1M": {
+      "symbols": {
+        "single_family_detached": "P",
+        "two_family_detached": "NP",
+        "townhouse": "NP",
+        "small_multifamily": "NP",
+        "large_multifamily": "NP",
+        "flex_residential": "NP",
+        "live_work_residential": "NP",
+        "mid_rise_residential": "NP",
+        "mixed_use_residential": "NP"
+      },
+      "status": {
+        "1-family": "as_of_right",
+        "2-family": "prohibited",
+        "3-family": "prohibited",
+        "4+-family": "prohibited"
+      },
+      "acres_confirmed": 4255.1,
+      "acres_sensitivity": 4255.1,
+      "allows_any_dwelling": true
+    },
+    "CD-1S": {
+      "symbols": {
+        "single_family_detached": "P",
+        "two_family_detached": "NP",
+        "townhouse": "NP",
+        "small_multifamily": "NP",
+        "large_multifamily": "NP",
+        "flex_residential": "NP",
+        "live_work_residential": "NP",
+        "mid_rise_residential": "NP",
+        "mixed_use_residential": "NP"
+      },
+      "status": {
+        "1-family": "as_of_right",
+        "2-family": "prohibited",
+        "3-family": "prohibited",
+        "4+-family": "prohibited"
+      },
+      "acres_confirmed": 2599.4,
+      "acres_sensitivity": 2599.4,
+      "allows_any_dwelling": true
+    },
+    "CD-2": {
+      "symbols": {
+        "single_family_detached": "P",
+        "two_family_detached": "P",
+        "townhouse": "NP",
+        "small_multifamily": "NP",
+        "large_multifamily": "NP",
+        "flex_residential": "NP",
+        "live_work_residential": "NP",
+        "mid_rise_residential": "NP",
+        "mixed_use_residential": "NP"
+      },
+      "status": {
+        "1-family": "as_of_right",
+        "2-family": "as_of_right",
+        "3-family": "prohibited",
+        "4+-family": "prohibited"
+      },
+      "acres_confirmed": 943.2,
+      "acres_sensitivity": 943.2,
+      "allows_any_dwelling": true
+    },
+    "CD-3": {
+      "symbols": {
+        "single_family_detached": "P",
+        "two_family_detached": "P",
+        "townhouse": "P",
+        "small_multifamily": "PL",
+        "large_multifamily": "PL",
+        "flex_residential": "P",
+        "live_work_residential": "PL",
+        "mid_rise_residential": "NP",
+        "mixed_use_residential": "PL"
+      },
+      "status": {
+        "1-family": "as_of_right",
+        "2-family": "as_of_right",
+        "3-family": "as_of_right",
+        "4+-family": "as_of_right"
+      },
+      "acres_confirmed": 544.1,
+      "acres_sensitivity": 639.4,
+      "allows_any_dwelling": true
+    },
+    "CD-3W": {
+      "symbols": {
+        "single_family_detached": "P",
+        "two_family_detached": "P",
+        "townhouse": "P",
+        "small_multifamily": "PL",
+        "large_multifamily": "NP",
+        "flex_residential": "NP",
+        "live_work_residential": "PL",
+        "mid_rise_residential": "NP",
+        "mixed_use_residential": "PL"
+      },
+      "status": {
+        "1-family": "as_of_right",
+        "2-family": "as_of_right",
+        "3-family": "as_of_right",
+        "4+-family": "as_of_right"
+      },
+      "acres_confirmed": null,
+      "acres_sensitivity": 10.7,
+      "allows_any_dwelling": true
+    },
+    "CD-3C": {
+      "symbols": {
+        "single_family_detached": "P",
+        "two_family_detached": "P",
+        "townhouse": "P",
+        "small_multifamily": "PL",
+        "large_multifamily": "PL",
+        "flex_residential": "PL",
+        "live_work_residential": "PL",
+        "mid_rise_residential": "PL",
+        "mixed_use_residential": "PL"
+      },
+      "status": {
+        "1-family": "as_of_right",
+        "2-family": "as_of_right",
+        "3-family": "as_of_right",
+        "4+-family": "as_of_right"
+      },
+      "acres_confirmed": null,
+      "acres_sensitivity": 735.7,
+      "allows_any_dwelling": true
+    },
+    "CD-4": {
+      "symbols": {
+        "single_family_detached": "NP",
+        "two_family_detached": "NP",
+        "townhouse": "P",
+        "small_multifamily": "PL",
+        "large_multifamily": "PL",
+        "flex_residential": "P",
+        "live_work_residential": "PL",
+        "mid_rise_residential": "PL",
+        "mixed_use_residential": "PL"
+      },
+      "status": {
+        "1-family": "prohibited",
+        "2-family": "prohibited",
+        "3-family": "as_of_right",
+        "4+-family": "as_of_right"
+      },
+      "acres_confirmed": null,
+      "acres_sensitivity": 407.2,
+      "allows_any_dwelling": true
+    },
+    "CD-4W": {
+      "symbols": {
+        "single_family_detached": "NP",
+        "two_family_detached": "NP",
+        "townhouse": "P",
+        "small_multifamily": "PL",
+        "large_multifamily": "PL",
+        "flex_residential": "P",
+        "live_work_residential": "PL",
+        "mid_rise_residential": "PL",
+        "mixed_use_residential": "PL"
+      },
+      "status": {
+        "1-family": "prohibited",
+        "2-family": "prohibited",
+        "3-family": "as_of_right",
+        "4+-family": "as_of_right"
+      },
+      "acres_confirmed": null,
+      "acres_sensitivity": 6.5,
+      "allows_any_dwelling": true
+    },
+    "SD-H": {
+      "symbols": {
+        "single_family_detached": "NP",
+        "two_family_detached": "NP",
+        "townhouse": "NP",
+        "small_multifamily": "NP",
+        "large_multifamily": "NP",
+        "flex_residential": "NP",
+        "live_work_residential": "NP",
+        "mid_rise_residential": "NP",
+        "mixed_use_residential": "NP"
+      },
+      "status": {
+        "1-family": "prohibited",
+        "2-family": "prohibited",
+        "3-family": "prohibited",
+        "4+-family": "prohibited"
+      },
+      "acres_confirmed": null,
+      "acres_sensitivity": null,
+      "allows_any_dwelling": false
+    },
+    "SD-IC": {
+      "symbols": {
+        "single_family_detached": "P",
+        "two_family_detached": "NP",
+        "townhouse": "NP",
+        "small_multifamily": "NP",
+        "large_multifamily": "NP",
+        "flex_residential": "NP",
+        "live_work_residential": "NP",
+        "mid_rise_residential": "NP",
+        "mixed_use_residential": "NP"
+      },
+      "status": {
+        "1-family": "as_of_right",
+        "2-family": "prohibited",
+        "3-family": "prohibited",
+        "4+-family": "prohibited"
+      },
+      "acres_confirmed": null,
+      "acres_sensitivity": null,
+      "allows_any_dwelling": true
+    },
+    "SD-LI": {
+      "symbols": {
+        "single_family_detached": "NP",
+        "two_family_detached": "NP",
+        "townhouse": "NP",
+        "small_multifamily": "NP",
+        "large_multifamily": "NP",
+        "flex_residential": "PL",
+        "live_work_residential": "PL",
+        "mid_rise_residential": "NP",
+        "mixed_use_residential": "PL"
+      },
+      "status": {
+        "1-family": "prohibited",
+        "2-family": "prohibited",
+        "3-family": "prohibited",
+        "4+-family": "prohibited"
+      },
+      "acres_confirmed": null,
+      "acres_sensitivity": null,
+      "allows_any_dwelling": true
+    },
+    "SD-HI": {
+      "symbols": {
+        "single_family_detached": "NP",
+        "two_family_detached": "NP",
+        "townhouse": "NP",
+        "small_multifamily": "NP",
+        "large_multifamily": "NP",
+        "flex_residential": "NP",
+        "live_work_residential": "NP",
+        "mid_rise_residential": "NP",
+        "mixed_use_residential": "NP"
+      },
+      "status": {
+        "1-family": "prohibited",
+        "2-family": "prohibited",
+        "3-family": "prohibited",
+        "4+-family": "prohibited"
+      },
+      "acres_confirmed": null,
+      "acres_sensitivity": null,
+      "allows_any_dwelling": false
+    },
+    "SD-MC": {
+      "symbols": {
+        "single_family_detached": "NP",
+        "two_family_detached": "NP",
+        "townhouse": "SPU",
+        "small_multifamily": "SPU",
+        "large_multifamily": "SPU",
+        "flex_residential": "PL",
+        "live_work_residential": "PL",
+        "mid_rise_residential": "NP",
+        "mixed_use_residential": "PL"
+      },
+      "status": {
+        "1-family": "prohibited",
+        "2-family": "prohibited",
+        "3-family": "hearing",
+        "4+-family": "hearing"
+      },
+      "acres_confirmed": null,
+      "acres_sensitivity": null,
+      "allows_any_dwelling": true
+    },
+    "CV": {
+      "symbols": {
+        "single_family_detached": "NP",
+        "two_family_detached": "NP",
+        "townhouse": "NP",
+        "small_multifamily": "NP",
+        "large_multifamily": "NP",
+        "flex_residential": "NP",
+        "live_work_residential": "NP",
+        "mid_rise_residential": "NP",
+        "mixed_use_residential": "NP"
+      },
+      "status": {
+        "1-family": "prohibited",
+        "2-family": "prohibited",
+        "3-family": "prohibited",
+        "4+-family": "prohibited"
+      },
+      "acres_confirmed": null,
+      "acres_sensitivity": null,
+      "allows_any_dwelling": false
+    }
+  },
+  "cases": {
+    "confirmed": {
+      "label": "Confirmed-acreage districts only (CD-1L, CD-1M, CD-1S, CD-2, CD-3)",
+      "basis": "land_area/norwalk.json districts_current_code (user-confirmed crosswalk)",
+      "residential_districts": [
+        "CD-1L",
+        "CD-1M",
+        "CD-1S",
+        "CD-2",
+        "CD-3"
+      ],
+      "residential_acres_ours": 12521.1,
+      "residential_acres_nza": 10431,
+      "housing": {
+        "1-family": {
+          "ours_acres": {
+            "as_of_right": 12521.1,
+            "hearing": 0.0,
+            "prohibited": 0.0,
+            "unclassified": 0.0
+          },
+          "ours_pct": {
+            "as_of_right": 100.0,
+            "hearing": 0.0,
+            "prohibited": 0.0
+          },
+          "nza_acres": {
+            "prohibited": 412,
+            "hearing": 0,
+            "as_of_right": 10019
+          },
+          "nza_pct": {
+            "as_of_right": 96.1,
+            "hearing": 0.0,
+            "prohibited": 3.9
+          },
+          "districts_as_of_right": [
+            "CD-1L",
+            "CD-1M",
+            "CD-1S",
+            "CD-2",
+            "CD-3"
+          ],
+          "districts_hearing": [],
+          "districts_prohibited": []
+        },
+        "2-family": {
+          "ours_acres": {
+            "as_of_right": 1487.3,
+            "hearing": 0.0,
+            "prohibited": 11033.8,
+            "unclassified": 0.0
+          },
+          "ours_pct": {
+            "as_of_right": 11.9,
+            "hearing": 0.0,
+            "prohibited": 88.1
+          },
+          "nza_acres": {
+            "prohibited": 8087,
+            "hearing": 0,
+            "as_of_right": 2345
+          },
+          "nza_pct": {
+            "as_of_right": 22.5,
+            "hearing": 0.0,
+            "prohibited": 77.5
+          },
+          "districts_as_of_right": [
+            "CD-2",
+            "CD-3"
+          ],
+          "districts_hearing": [],
+          "districts_prohibited": [
+            "CD-1L",
+            "CD-1M",
+            "CD-1S"
+          ]
+        },
+        "3-family": {
+          "ours_acres": {
+            "as_of_right": 544.1,
+            "hearing": 0.0,
+            "prohibited": 11977.0,
+            "unclassified": 0.0
+          },
+          "ours_pct": {
+            "as_of_right": 4.3,
+            "hearing": 0.0,
+            "prohibited": 95.7
+          },
+          "nza_acres": {
+            "prohibited": 8543,
+            "hearing": 0,
+            "as_of_right": 1888
+          },
+          "nza_pct": {
+            "as_of_right": 18.1,
+            "hearing": 0.0,
+            "prohibited": 81.9
+          },
+          "districts_as_of_right": [
+            "CD-3"
+          ],
+          "districts_hearing": [],
+          "districts_prohibited": [
+            "CD-1L",
+            "CD-1M",
+            "CD-1S",
+            "CD-2"
+          ]
+        },
+        "4+-family": {
+          "ours_acres": {
+            "as_of_right": 544.1,
+            "hearing": 0.0,
+            "prohibited": 11977.0,
+            "unclassified": 0.0
+          },
+          "ours_pct": {
+            "as_of_right": 4.3,
+            "hearing": 0.0,
+            "prohibited": 95.7
+          },
+          "nza_acres": {
+            "prohibited": 8543,
+            "hearing": 0,
+            "as_of_right": 1888
+          },
+          "nza_pct": {
+            "as_of_right": 18.1,
+            "hearing": 0.0,
+            "prohibited": 81.9
+          },
+          "districts_as_of_right": [
+            "CD-3"
+          ],
+          "districts_hearing": [],
+          "districts_prohibited": [
+            "CD-1L",
+            "CD-1M",
+            "CD-1S",
+            "CD-2"
+          ]
+        }
+      },
+      "four_plus_if_all_multi_unit_building_types_counted_pct_prohibited": 95.7,
+      "min_lot_size": {
+        "one_family_land_acres": 12521.1,
+        "bins": {
+          "None": {
+            "districts": [
+              "CD-3"
+            ],
+            "acres": 544.1,
+            "ours_pct": 4.3,
+            "nza_acres": 365,
+            "nza_pct": 3.6
+          },
+          "Less than 10,000 sq ft": {
+            "districts": [
+              "CD-1S",
+              "CD-2"
+            ],
+            "acres": 3542.6,
+            "ours_pct": 28.3,
+            "nza_acres": 3564,
+            "nza_pct": 35.6
+          },
+          "10,000 to 19,999 sq ft": {
+            "districts": [
+              "CD-1M"
+            ],
+            "acres": 4255.1,
+            "ours_pct": 34.0,
+            "nza_acres": 3349,
+            "nza_pct": 33.4
+          },
+          "20,000 to 39,999 sq ft": {
+            "districts": [],
+            "acres": 0,
+            "ours_pct": 0.0,
+            "nza_acres": 0,
+            "nza_pct": 0.0
+          },
+          "40,000 to 79,999 sq ft": {
+            "districts": [
+              "CD-1L"
+            ],
+            "acres": 4179.3,
+            "ours_pct": 33.4,
+            "nza_acres": 2740,
+            "nza_pct": 27.3
+          },
+          "80,000 sq ft or more": {
+            "districts": [],
+            "acres": 0,
+            "ours_pct": 0.0,
+            "nza_acres": 1,
+            "nza_pct": 0.0
+          }
+        },
+        "lot_area_by_district": {
+          "CD-1L": {
+            "quoted": "43,560 sq. ft.",
+            "sq_ft_used": 43560,
+            "cite": "Table 4.3.1, PDF p.4 (printed p.51) of norwalk-art4.pdf"
+          },
+          "CD-1M": {
+            "quoted": "12,500 sq. ft.",
+            "sq_ft_used": 12500,
+            "cite": "Table 4.3.1, PDF p.15 (printed p.62) of norwalk-art4.pdf"
+          },
+          "CD-1S": {
+            "quoted": "6,250 sq. ft.",
+            "sq_ft_used": 6250,
+            "cite": "Table 4.3.1, PDF p.23 (printed p.70) of norwalk-art4.pdf"
+          },
+          "CD-2": {
+            "quoted": "5,000 sq. ft.",
+            "sq_ft_used": 5000,
+            "cite": "Table 4.3.1, PDF p.31 (printed p.78) of norwalk-art4.pdf"
+          },
+          "CD-3": {
+            "quoted": "NR",
+            "sq_ft_used": 0,
+            "cite": "Table 4.3.1, PDF p.41 (printed p.88) of norwalk-art4.pdf"
+          }
+        },
+        "note": "NR (not regulated) is binned as 'None'. 'Varies' bin is empty for us."
+      },
+      "parking_mandate_pct": {
+        "ours": 100.0,
+        "nza": 100,
+        "basis": "Table 4.3.12.B-1 (PDF p.263 of norwalk-art4.pdf, printed p.310) sets a per-dwelling-unit minimum for every dwelling type (2 per unit single/two-family, 1.3 in CD-3/3W/3C/4/4W; 1.3 multifamily; 1 townhouse). Transit-area reductions (Table 4.3.12.B-4) were not applied."
+      },
+      "proxy": {
+        "use_exclusion": 93.17,
+        "share_1f_land_ge_80000": 0.0,
+        "share_residential_with_parking_mandate": 100.0,
+        "ours": 61.4,
+        "nza": 55.9,
+        "difference_ours_minus_nza": 5.5
+      }
+    },
+    "sensitivity": {
+      "label": "SENSITIVITY: confirmed plus flyer-based mappings (NOT user-confirmed)",
+      "basis": "adds old-zone codes mapped from the city flyer; see sensitivity_mappings",
+      "residential_districts": [
+        "CD-1L",
+        "CD-1M",
+        "CD-1S",
+        "CD-2",
+        "CD-3",
+        "CD-3W",
+        "CD-3C",
+        "CD-4",
+        "CD-4W"
+      ],
+      "residential_acres_ours": 13776.5,
+      "residential_acres_nza": 10431,
+      "housing": {
+        "1-family": {
+          "ours_acres": {
+            "as_of_right": 13362.8,
+            "hearing": 0.0,
+            "prohibited": 413.7,
+            "unclassified": 0.0
+          },
+          "ours_pct": {
+            "as_of_right": 97.0,
+            "hearing": 0.0,
+            "prohibited": 3.0
+          },
+          "nza_acres": {
+            "prohibited": 412,
+            "hearing": 0,
+            "as_of_right": 10019
+          },
+          "nza_pct": {
+            "as_of_right": 96.1,
+            "hearing": 0.0,
+            "prohibited": 3.9
+          },
+          "districts_as_of_right": [
+            "CD-1L",
+            "CD-1M",
+            "CD-1S",
+            "CD-2",
+            "CD-3",
+            "CD-3W",
+            "CD-3C"
+          ],
+          "districts_hearing": [],
+          "districts_prohibited": [
+            "CD-4",
+            "CD-4W"
+          ]
+        },
+        "2-family": {
+          "ours_acres": {
+            "as_of_right": 2329.0,
+            "hearing": 0.0,
+            "prohibited": 11447.5,
+            "unclassified": 0.0
+          },
+          "ours_pct": {
+            "as_of_right": 16.9,
+            "hearing": 0.0,
+            "prohibited": 83.1
+          },
+          "nza_acres": {
+            "prohibited": 8087,
+            "hearing": 0,
+            "as_of_right": 2345
+          },
+          "nza_pct": {
+            "as_of_right": 22.5,
+            "hearing": 0.0,
+            "prohibited": 77.5
+          },
+          "districts_as_of_right": [
+            "CD-2",
+            "CD-3",
+            "CD-3W",
+            "CD-3C"
+          ],
+          "districts_hearing": [],
+          "districts_prohibited": [
+            "CD-1L",
+            "CD-1M",
+            "CD-1S",
+            "CD-4",
+            "CD-4W"
+          ]
+        },
+        "3-family": {
+          "ours_acres": {
+            "as_of_right": 1799.5,
+            "hearing": 0.0,
+            "prohibited": 11977.0,
+            "unclassified": 0.0
+          },
+          "ours_pct": {
+            "as_of_right": 13.1,
+            "hearing": 0.0,
+            "prohibited": 86.9
+          },
+          "nza_acres": {
+            "prohibited": 8543,
+            "hearing": 0,
+            "as_of_right": 1888
+          },
+          "nza_pct": {
+            "as_of_right": 18.1,
+            "hearing": 0.0,
+            "prohibited": 81.9
+          },
+          "districts_as_of_right": [
+            "CD-3",
+            "CD-3W",
+            "CD-3C",
+            "CD-4",
+            "CD-4W"
+          ],
+          "districts_hearing": [],
+          "districts_prohibited": [
+            "CD-1L",
+            "CD-1M",
+            "CD-1S",
+            "CD-2"
+          ]
+        },
+        "4+-family": {
+          "ours_acres": {
+            "as_of_right": 1799.5,
+            "hearing": 0.0,
+            "prohibited": 11977.0,
+            "unclassified": 0.0
+          },
+          "ours_pct": {
+            "as_of_right": 13.1,
+            "hearing": 0.0,
+            "prohibited": 86.9
+          },
+          "nza_acres": {
+            "prohibited": 8543,
+            "hearing": 0,
+            "as_of_right": 1888
+          },
+          "nza_pct": {
+            "as_of_right": 18.1,
+            "hearing": 0.0,
+            "prohibited": 81.9
+          },
+          "districts_as_of_right": [
+            "CD-3",
+            "CD-3W",
+            "CD-3C",
+            "CD-4",
+            "CD-4W"
+          ],
+          "districts_hearing": [],
+          "districts_prohibited": [
+            "CD-1L",
+            "CD-1M",
+            "CD-1S",
+            "CD-2"
+          ]
+        }
+      },
+      "four_plus_if_all_multi_unit_building_types_counted_pct_prohibited": 86.9,
+      "min_lot_size": {
+        "one_family_land_acres": 13362.8,
+        "bins": {
+          "None": {
+            "districts": [
+              "CD-3",
+              "CD-3W",
+              "CD-3C"
+            ],
+            "acres": 1385.8,
+            "ours_pct": 10.4,
+            "nza_acres": 365,
+            "nza_pct": 3.6
+          },
+          "Less than 10,000 sq ft": {
+            "districts": [
+              "CD-1S",
+              "CD-2"
+            ],
+            "acres": 3542.6,
+            "ours_pct": 26.5,
+            "nza_acres": 3564,
+            "nza_pct": 35.6
+          },
+          "10,000 to 19,999 sq ft": {
+            "districts": [
+              "CD-1M"
+            ],
+            "acres": 4255.1,
+            "ours_pct": 31.8,
+            "nza_acres": 3349,
+            "nza_pct": 33.4
+          },
+          "20,000 to 39,999 sq ft": {
+            "districts": [],
+            "acres": 0,
+            "ours_pct": 0.0,
+            "nza_acres": 0,
+            "nza_pct": 0.0
+          },
+          "40,000 to 79,999 sq ft": {
+            "districts": [
+              "CD-1L"
+            ],
+            "acres": 4179.3,
+            "ours_pct": 31.3,
+            "nza_acres": 2740,
+            "nza_pct": 27.3
+          },
+          "80,000 sq ft or more": {
+            "districts": [],
+            "acres": 0,
+            "ours_pct": 0.0,
+            "nza_acres": 1,
+            "nza_pct": 0.0
+          }
+        },
+        "lot_area_by_district": {
+          "CD-1L": {
+            "quoted": "43,560 sq. ft.",
+            "sq_ft_used": 43560,
+            "cite": "Table 4.3.1, PDF p.4 (printed p.51) of norwalk-art4.pdf"
+          },
+          "CD-1M": {
+            "quoted": "12,500 sq. ft.",
+            "sq_ft_used": 12500,
+            "cite": "Table 4.3.1, PDF p.15 (printed p.62) of norwalk-art4.pdf"
+          },
+          "CD-1S": {
+            "quoted": "6,250 sq. ft.",
+            "sq_ft_used": 6250,
+            "cite": "Table 4.3.1, PDF p.23 (printed p.70) of norwalk-art4.pdf"
+          },
+          "CD-2": {
+            "quoted": "5,000 sq. ft.",
+            "sq_ft_used": 5000,
+            "cite": "Table 4.3.1, PDF p.31 (printed p.78) of norwalk-art4.pdf"
+          },
+          "CD-3": {
+            "quoted": "NR",
+            "sq_ft_used": 0,
+            "cite": "Table 4.3.1, PDF p.41 (printed p.88) of norwalk-art4.pdf"
+          },
+          "CD-3W": {
+            "quoted": "NR",
+            "sq_ft_used": 0,
+            "cite": "Table 4.3.1, PDF p.64 (printed p.111) of norwalk-art4.pdf"
+          },
+          "CD-3C": {
+            "quoted": "NR",
+            "sq_ft_used": 0,
+            "cite": "Table 4.3.1, PDF p.78 (printed p.125) of norwalk-art4.pdf"
+          }
+        },
+        "note": "NR (not regulated) is binned as 'None'. 'Varies' bin is empty for us."
+      },
+      "parking_mandate_pct": {
+        "ours": 100.0,
+        "nza": 100,
+        "basis": "Table 4.3.12.B-1 (PDF p.263 of norwalk-art4.pdf, printed p.310) sets a per-dwelling-unit minimum for every dwelling type (2 per unit single/two-family, 1.3 in CD-3/3W/3C/4/4W; 1.3 multifamily; 1 townhouse). Transit-area reductions (Table 4.3.12.B-4) were not applied."
+      },
+      "proxy": {
+        "use_exclusion": 85.63,
+        "share_1f_land_ge_80000": 0.0,
+        "share_residential_with_parking_mandate": 100.0,
+        "ours": 58.1,
+        "nza": 55.9,
+        "difference_ours_minus_nza": 2.2
+      }
+    }
+  },
+  "sensitivity_mappings": {
+    "source": "Updated_Zoning Reg Flyer_Zoning Map103123.pdf, table 'Proposed Zone Name / Existing Zone Name' (Oct 31, 2023)",
+    "added": {
+      "CD-3C": [
+        {
+          "layer_code": "B1",
+          "acres": 139.5,
+          "flyer_name": "Business No. 1",
+          "note": "layer code B1 read as Business No. 1"
+        },
+        {
+          "layer_code": "B2",
+          "acres": 596.2,
+          "flyer_name": "Business No. 2",
+          "note": "layer code B2 read as Business No. 2"
+        }
+      ],
+      "CD-3": [
+        {
+          "layer_code": "EVD",
+          "acres": 86.4,
+          "flyer_name": "East Avenue Village District",
+          "note": "abbreviation read from name"
+        },
+        {
+          "layer_code": "GHVD",
+          "acres": 8.9,
+          "flyer_name": "Golden Hill Village District",
+          "note": "abbreviation read from name"
+        }
+      ],
+      "CD-3W": [
+        {
+          "layer_code": "RVD",
+          "acres": 10.7,
+          "flyer_name": "Rowayton Avenue Village District",
+          "note": "abbreviation read from name; flyer name is Rowayton Avenue"
+        }
+      ],
+      "CD-4": [
+        {
+          "layer_code": "SSDD",
+          "acres": 65.7,
+          "flyer_name": "Sono Station Design District",
+          "note": "abbreviation read from name"
+        },
+        {
+          "layer_code": "RD",
+          "acres": 91.6,
+          "flyer_name": "Reed-Putnam Design District",
+          "note": "layer code RD read as Reed-Putnam Design"
+        },
+        {
+          "layer_code": "CBD",
+          "acres": 134.1,
+          "flyer_name": "Central Business District",
+          "note": "exact name"
+        },
+        {
+          "layer_code": "SNBD",
+          "acres": 22.1,
+          "flyer_name": "South Norwalk Business District",
+          "note": "abbreviation read from name"
+        },
+        {
+          "layer_code": "EO",
+          "acres": 74.6,
+          "flyer_name": "Executive Office",
+          "note": "abbreviation read from name"
+        },
+        {
+          "layer_code": "WSDD",
+          "acres": 19.1,
+          "flyer_name": "Washington Street Design District",
+          "note": "abbreviation read from name"
+        }
+      ],
+      "CD-4W": [
+        {
+          "layer_code": "CBD W",
+          "acres": 6.5,
+          "flyer_name": "Central Business District-Water",
+          "note": "layer code CBD W read as CBD-Water"
+        }
+      ]
+    },
+    "acres_by_cd": {
+      "CD-1M": 4255.1,
+      "CD-1L": 4179.3,
+      "CD-1S": 2599.4,
+      "CD-2": 943.2,
+      "CD-3": 639.4,
+      "CD-3C": 735.7,
+      "CD-3W": 10.7,
+      "CD-4": 407.2,
+      "CD-4W": 6.5
+    },
+    "caveat": "Not user-confirmed. Flyer names were matched to ArcGIS layer abbreviations by reading the abbreviation; the layer is the pre-rewrite map."
+  },
+  "adu": {
+    "ours": "Accessory Dwelling Unit is PL (permitted by right with limitations) in CD-1L, CD-1M, CD-1S, CD-2, CD-3, CD-3W, CD-3C, CD-4, CD-4W (Table 4.3.9.D); limitations include owner residing on the lot, 6-month minimum rental, one ADU per lot, Zoning Permit (Sec. 4.3.9.G.4.a). NZA category equivalent: Allowed with occupancy restrictions on 100% of 1-family land.",
+    "nza": {
+      "Allowed with occupancy restrictions": 10018,
+      "Prohibited": 1
+    }
+  },
+  "nza": {
+    "residential_acres": 10431,
+    "housing_acres": {
+      "1-family": {
+        "prohibited": 412,
+        "hearing": 0,
+        "as_of_right": 10019
+      },
+      "2-family": {
+        "prohibited": 8087,
+        "hearing": 0,
+        "as_of_right": 2345
+      },
+      "3-family": {
+        "prohibited": 8543,
+        "hearing": 0,
+        "as_of_right": 1888
+      },
+      "4+-family": {
+        "prohibited": 8543,
+        "hearing": 0,
+        "as_of_right": 1888
+      }
+    },
+    "min_lot_acres": {
+      "None": 365,
+      "Less than 10,000 sq ft": 3564,
+      "10,000 to 19,999 sq ft": 3349,
+      "20,000 to 39,999 sq ft": 0,
+      "40,000 to 79,999 sq ft": 2740,
+      "80,000 sq ft or more": 1,
+      "Varies": 0
+    },
+    "one_family_land_acres": 10019,
+    "proxy_inputs": {
+      "use_exclusion": 80.43,
+      "share_1f_land_ge_80000": 0.0,
+      "parking": 100
+    },
+    "composite": 55.9,
+    "stored_composite_score": 55.9
+  },
+  "unresolved": [
+    "Old-zone layer codes with no confirmed or flyer-based CD mapping (excluded from both cases): I1 313.5 ac, IC 232.3 ac, RI 204.6 ac, MC 51.1 ac, RPDA 35.5 ac, HZ 23.4 ac, RPDE 18.6 ac, LI2 12.7 ac, RPDD 9.6 ac, RPDC 6.9 ac, SVD 3.8 ac; WATER (6208.2 ac) is water.",
+    "NB is confirmed as CD-3 only; the flyer says some neighborhood business land is CD-3W (Rowayton), which the layer cannot separate.",
+    "SD-IC permits single-family detached (P) but no layer code is mapped to any SD district, so SD acreage is zero in both cases.",
+    "The ArcGIS layer predates the 2024 rewrite; district boundaries and acreage may be stale.",
+    "Large Multifamily in CD-3 needs a Special Permit above 29 units (Sec. 4.3.9.G.4.bb); counted as as_of_right because the table symbol is PL.",
+    "Table 4.3.9.A notes: footnote * and ** (Silvermine Tavern Village District Overlay) alter CD-1L single-family; overlay acreage not separable."
+  ]
+}

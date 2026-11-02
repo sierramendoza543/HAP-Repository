@@ -1,0 +1,201 @@
+{
+  "method": "Districts that allow at least one dwelling type in Appendix A, Table I are treated as residential land. Shares use our district acreage (gross, before NZA's protected-land and unzoned-land deductions). Symbol key: a check mark is as-of-right (site plan may still apply), A and B are Zoning Board of Appeals or Zoning Board approval, a dash is not permitted.",
+  "source": "public/sources/stamford-zoning.pdf, Appendix A Table I (PDF page 438); data/land_area/stamford.json",
+  "residential_districts": [
+    "RA-3",
+    "RA-2",
+    "RA-1",
+    "R-20",
+    "R-10",
+    "R-7 1/2",
+    "R-6",
+    "RM-1",
+    "R-5",
+    "R-MF",
+    "R-H",
+    "C-N",
+    "C-B",
+    "C-L",
+    "C-G",
+    "CC",
+    "C-I"
+  ],
+  "residential_acres_ours": 21766.4,
+  "residential_acres_nza": 17693,
+  "housing": {
+    "1-family": {
+      "ours_pct": {
+        "as_of_right": 99.3,
+        "hearing": 0.0,
+        "prohibited": 0.7
+      },
+      "nza_pct": {
+        "as_of_right": 95.8,
+        "hearing": 2.9,
+        "prohibited": 1.4
+      },
+      "districts_as_of_right": [
+        "RA-3",
+        "RA-2",
+        "RA-1",
+        "R-20",
+        "R-10",
+        "R-7 1/2",
+        "R-6",
+        "RM-1",
+        "R-5",
+        "R-MF",
+        "R-H",
+        "C-N",
+        "C-B",
+        "C-L",
+        "C-G",
+        "C-I"
+      ],
+      "districts_hearing": []
+    },
+    "2-family": {
+      "ours_pct": {
+        "as_of_right": 10.4,
+        "hearing": 0.0,
+        "prohibited": 89.6
+      },
+      "nza_pct": {
+        "as_of_right": 10.3,
+        "hearing": 3.2,
+        "prohibited": 86.5
+      },
+      "districts_as_of_right": [
+        "R-6",
+        "RM-1",
+        "R-5",
+        "R-MF",
+        "R-H",
+        "C-N",
+        "C-B",
+        "C-L",
+        "C-G",
+        "C-I"
+      ],
+      "districts_hearing": []
+    },
+    "3-family": {
+      "ours_pct": {
+        "as_of_right": 9.1,
+        "hearing": 0.0,
+        "prohibited": 90.9
+      },
+      "nza_pct": {
+        "as_of_right": 8.5,
+        "hearing": 3.6,
+        "prohibited": 87.9
+      },
+      "districts_as_of_right": [
+        "RM-1",
+        "R-5",
+        "R-MF",
+        "R-H",
+        "C-N",
+        "C-B",
+        "C-L",
+        "C-G",
+        "CC",
+        "C-I"
+      ],
+      "districts_hearing": []
+    },
+    "4+-family": {
+      "ours_pct": {
+        "as_of_right": 9.1,
+        "hearing": 0.0,
+        "prohibited": 90.9
+      },
+      "nza_pct": {
+        "as_of_right": 8.5,
+        "hearing": 17.6,
+        "prohibited": 73.9
+      },
+      "districts_as_of_right": [
+        "RM-1",
+        "R-5",
+        "R-MF",
+        "R-H",
+        "C-N",
+        "C-B",
+        "C-L",
+        "C-G",
+        "CC",
+        "C-I"
+      ],
+      "districts_hearing": []
+    }
+  },
+  "min_lot_size": {
+    "bins": {
+      "None": {
+        "districts": [],
+        "ours_pct": 0.0,
+        "nza_pct": 0.1
+      },
+      "Less than 10,000 sq ft": {
+        "districts": [
+          "R-7 1/2",
+          "R-6",
+          "RM-1",
+          "R-5",
+          "R-MF",
+          "R-H"
+        ],
+        "ours_pct": 15.0,
+        "nza_pct": 16.9
+      },
+      "10,000 to 19,999 sq ft": {
+        "districts": [
+          "R-10"
+        ],
+        "ours_pct": 9.2,
+        "nza_pct": 17.1
+      },
+      "20,000 to 39,999 sq ft": {
+        "districts": [
+          "R-20"
+        ],
+        "ours_pct": 7.0,
+        "nza_pct": 0.0
+      },
+      "40,000 to 79,999 sq ft": {
+        "districts": [
+          "RA-1"
+        ],
+        "ours_pct": 41.4,
+        "nza_pct": 44.0
+      },
+      "80,000 sq ft or more": {
+        "districts": [
+          "RA-3",
+          "RA-2"
+        ],
+        "ours_pct": 27.4,
+        "nza_pct": 21.9
+      }
+    },
+    "districts_without_a_quoted_minimum": [
+      "C-N",
+      "C-B",
+      "C-L",
+      "C-G",
+      "C-I"
+    ],
+    "acres_without_a_quoted_minimum": 383.0,
+    "note": "Minimum lot sizes are the ones quoted in the V2 inputs; commercial districts that permit single-family are left out of the bins because we have no quoted minimum for them."
+  },
+  "parking_mandate_pct": {
+    "ours": 100.0,
+    "nza": 100,
+    "basis": "Table 12.7 (Residential Parking Requirements by Parking Category) applies to every residential use"
+  },
+  "adu": {
+    "ours": "Allowed by Zoning Permit with owner-occupancy on lots of at least 10,000 sq ft, in every district that permits single-family (ADU definition, Sec. 4)",
+    "nza": "100% of 1-family land coded Prohibited"
+  }
+}

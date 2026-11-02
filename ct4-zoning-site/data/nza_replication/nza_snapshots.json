@@ -1,0 +1,279 @@
+{
+ "note": "Read from the Highcharts data on each NZA Jurisdiction Snapshot page on 2026-11-02. Parking mandate is reported by NZA as a single percentage (see towns data).",
+ "stamford": {
+  "jurisdiction_id": 304,
+  "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/304/",
+  "land_area_acres": 23707,
+  "land_use_acres": {
+   "Nonresidential": 1197,
+   "Mixed With Residential": 712,
+   "Primarily Residential": 16981
+  },
+  "housing_acres": {
+   "1-family": {
+    "prohibited": 244,
+    "hearing": 505,
+    "as_of_right": 16944
+   },
+   "2-family": {
+    "prohibited": 15303,
+    "hearing": 564,
+    "as_of_right": 1826
+   },
+   "3-family": {
+    "prohibited": 15557,
+    "hearing": 629,
+    "as_of_right": 1507
+   },
+   "4+-family": {
+    "prohibited": 13078,
+    "hearing": 3108,
+    "as_of_right": 1507
+   }
+  },
+  "adu_acres_order": [
+   "Allowed",
+   "Allowed with occupancy restrictions",
+   "Hearing",
+   "Hearing with occupancy restrictions",
+   "Prohibited"
+  ],
+  "adu_acres": [
+   0,
+   0,
+   0,
+   0,
+   16944
+  ],
+  "min_lot_acres_order": [
+   "None",
+   "Less than 10,000 sq ft",
+   "10,000 to 19,999 sq ft",
+   "20,000 to 39,999 sq ft",
+   "40,000 to 79,999 sq ft",
+   "80,000 sq ft or more",
+   "Varies"
+  ],
+  "min_lot_acres": [
+   19,
+   2859,
+   2891,
+   0,
+   7459,
+   3717,
+   0
+  ],
+  "land_categories": {
+   "Unzoned": 3050,
+   "Protected": 1767,
+   "Zoned": 18890
+  }
+ },
+ "greenwich": {
+  "jurisdiction_id": 317,
+  "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/317/",
+  "land_area_acres": 30322,
+  "land_use_acres": {
+   "Nonresidential": 249,
+   "Mixed With Residential": 2691,
+   "Primarily Residential": 22381
+  },
+  "housing_acres": {
+   "1-family": {
+    "prohibited": 24,
+    "hearing": 233,
+    "as_of_right": 24816
+   },
+   "2-family": {
+    "prohibited": 24072,
+    "hearing": 153,
+    "as_of_right": 847
+   },
+   "3-family": {
+    "prohibited": 24535,
+    "hearing": 176,
+    "as_of_right": 361
+   },
+   "4+-family": {
+    "prohibited": 24688,
+    "hearing": 23,
+    "as_of_right": 361
+   }
+  },
+  "adu_acres_order": [
+   "Allowed",
+   "Allowed with occupancy restrictions",
+   "Hearing",
+   "Hearing with occupancy restrictions",
+   "Prohibited"
+  ],
+  "adu_acres": [
+   24,
+   21720,
+   0,
+   0,
+   3073
+  ],
+  "min_lot_acres_order": [
+   "None",
+   "Less than 10,000 sq ft",
+   "10,000 to 19,999 sq ft",
+   "20,000 to 39,999 sq ft",
+   "40,000 to 79,999 sq ft",
+   "80,000 sq ft or more",
+   "Varies"
+  ],
+  "min_lot_acres": [
+   492,
+   1619,
+   1784,
+   849,
+   3942,
+   16129,
+   0
+  ],
+  "land_categories": {
+   "Unzoned": 3416,
+   "Protected": 1585,
+   "Zoned": 25321
+  }
+ },
+ "norwalk": {
+  "jurisdiction_id": 303,
+  "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/303/",
+  "land_area_acres": 14503,
+  "land_use_acres": {
+   "Nonresidential": 1095,
+   "Mixed With Residential": 412,
+   "Primarily Residential": 10019
+  },
+  "housing_acres": {
+   "1-family": {
+    "prohibited": 412,
+    "hearing": 0,
+    "as_of_right": 10019
+   },
+   "2-family": {
+    "prohibited": 8087,
+    "hearing": 0,
+    "as_of_right": 2345
+   },
+   "3-family": {
+    "prohibited": 8543,
+    "hearing": 0,
+    "as_of_right": 1888
+   },
+   "4+-family": {
+    "prohibited": 8543,
+    "hearing": 0,
+    "as_of_right": 1888
+   }
+  },
+  "adu_acres_order": [
+   "Allowed",
+   "Allowed with occupancy restrictions",
+   "Hearing",
+   "Hearing with occupancy restrictions",
+   "Prohibited"
+  ],
+  "adu_acres": [
+   0,
+   10018,
+   0,
+   0,
+   1
+  ],
+  "min_lot_acres_order": [
+   "None",
+   "Less than 10,000 sq ft",
+   "10,000 to 19,999 sq ft",
+   "20,000 to 39,999 sq ft",
+   "40,000 to 79,999 sq ft",
+   "80,000 sq ft or more",
+   "Varies"
+  ],
+  "min_lot_acres": [
+   365,
+   3564,
+   3349,
+   0,
+   2740,
+   1,
+   0
+  ],
+  "land_categories": {
+   "Unzoned": 2283,
+   "Protected": 693,
+   "Zoned": 11527
+  }
+ },
+ "bridgeport": {
+  "jurisdiction_id": 311,
+  "url": "https://edit.zoningatlas.org/statsrollup/jurisdiction/311/",
+  "land_area_acres": 10246,
+  "land_use_acres": {
+   "Nonresidential": 1496,
+   "Mixed With Residential": 1727,
+   "Primarily Residential": 4158
+  },
+  "housing_acres": {
+   "1-family": {
+    "prohibited": 1027,
+    "hearing": 0,
+    "as_of_right": 4858
+   },
+   "2-family": {
+    "prohibited": 1855,
+    "hearing": 1096,
+    "as_of_right": 2933
+   },
+   "3-family": {
+    "prohibited": 2312,
+    "hearing": 0,
+    "as_of_right": 3573
+   },
+   "4+-family": {
+    "prohibited": 2229,
+    "hearing": 83,
+    "as_of_right": 3573
+   }
+  },
+  "adu_acres_order": [
+   "Allowed",
+   "Allowed with occupancy restrictions",
+   "Hearing",
+   "Hearing with occupancy restrictions",
+   "Prohibited"
+  ],
+  "adu_acres": [
+   1132,
+   0,
+   1096,
+   0,
+   2629
+  ],
+  "min_lot_acres_order": [
+   "None",
+   "Less than 10,000 sq ft",
+   "10,000 to 19,999 sq ft",
+   "20,000 to 39,999 sq ft",
+   "40,000 to 79,999 sq ft",
+   "80,000 sq ft or more",
+   "Varies"
+  ],
+  "min_lot_acres": [
+   3926,
+   931,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "land_categories": {
+   "Unzoned": 2232,
+   "Protected": 633,
+   "Zoned": 7381
+  }
+ }
+}
