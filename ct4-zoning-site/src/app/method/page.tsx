@@ -75,7 +75,7 @@ export default function MethodPage() {
 
       <Section title="Evidence">
         <p>
-          Every district input carries a verbatim quote from the town&rsquo;s zoning code, with its section and a link that opens the
+          Every scored district input is meant to carry a verbatim quote from the town&rsquo;s zoning code, with its section and a link that opens the
           mirrored PDF at the quote. The data build refuses to run if any quote is missing from its PDF&rsquo;s extracted text. Inputs
           that could not be read from the text are left unconfirmed, never filled in. Searches on the open web were used only to find
           the right official document.

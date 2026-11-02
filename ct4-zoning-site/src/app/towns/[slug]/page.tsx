@@ -21,6 +21,9 @@ export default async function TownPage({ params }: { params: Promise<{ slug: str
   const breakdown = compositeBreakdown(town);
   const compare = getNzaCompare()[town.slug];
   const v2Score = town.v2?.land_weighted_score ?? null;
+  const v2Scored = town.v2
+    ? town.v2.districts.filter((d) => d.included && d.score !== null).sort((a, b) => (b.score ?? 0) - (a.score ?? 0))
+    : null;
   const headline = v2Score ?? town.composite_score;
   const basisLabel = v2Score !== null ? "Our score (district-level)" : "NZA-derived proxy";
   const verifiedCount = town.variables.filter((v) => v.quote).length;
@@ -83,10 +86,10 @@ export default async function TownPage({ params }: { params: Promise<{ slug: str
           </dl>
           <div className="flex flex-wrap gap-4 text-xs text-(--ink-dim) mb-3">
             <span>
-              Most restrictive district: <b className="text-(--ink)">{town.restrictive_district}</b>
+              Most restrictive district: <b className="text-(--ink)">{v2Scored ? v2Scored[0].district : town.restrictive_district}</b>
             </span>
             <span>
-              Most permissive district: <b className="text-(--ink)">{town.permissive_district}</b>
+              Most permissive district: <b className="text-(--ink)">{v2Scored ? v2Scored[v2Scored.length - 1].district : town.permissive_district}</b>
             </span>
             <span>Last research pass: {town.last_checked}</span>
           </div>
@@ -112,7 +115,7 @@ export default async function TownPage({ params }: { params: Promise<{ slug: str
         </section>
       )}
 
-      <details className="py-6 border-b border-(--rule)" open={!town.v2}>
+      <details className="py-6 border-b border-(--rule)">
         <summary className="cursor-pointer select-none">
           <span className="text-base font-semibold">Earlier town-level estimate from the variables table ({town.hap_score.composite.toFixed(1)}; not comparable with district scores)</span>
           <span className="block text-xs text-(--ink-dim) mt-1 max-w-2xl">{town.hap_score.methodology_note}</span>

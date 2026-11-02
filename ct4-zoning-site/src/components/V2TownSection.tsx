@@ -108,7 +108,15 @@ function DistrictRow({ d, maxAcres, town, compare }: { d: V2District; maxAcres: 
         <span className="w-28 text-right text-xs text-(--ink-dim) tabular shrink-0">
           {d.acres.toLocaleString()} ac{d.land_share !== null ? ` · ${d.land_share}%` : ""}
         </span>
-        <span className="w-16 text-right text-sm font-bold tabular shrink-0" style={{ color }}>
+        {!d.included && (
+          <span className="shrink-0 text-[10px] uppercase tracking-wide px-1.5 py-0.5 rounded bg-(--surface-2) text-(--ink-dim)">
+            excluded
+          </span>
+        )}
+        <span
+          className="w-16 text-right text-sm font-bold tabular shrink-0"
+          style={{ color: d.included ? color : "var(--ink-faint)" }}
+        >
           {d.score === null ? "n/a" : d.score.toFixed(1)}
         </span>
         <span className="text-(--ink-faint) text-xs group-open:rotate-90 transition-transform" aria-hidden>

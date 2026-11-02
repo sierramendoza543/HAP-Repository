@@ -123,7 +123,7 @@ export default function Home() {
         <DashboardTable rows={rows} />
       </section>
 
-      <section className="py-6 border-b border-(--rule) grid lg:grid-cols-2 gap-8">
+      <section className="py-6 border-b border-(--rule) grid grid-cols-[minmax(0,1fr)] lg:grid-cols-2 gap-8 [&>*]:min-w-0">
         <div>
           <h2 className="text-base font-semibold mb-1">Our score vs the NZA proxy</h2>
           <p className="text-xs text-(--ink-dim) mb-3">
@@ -148,7 +148,7 @@ export default function Home() {
         <LandByScore towns={v2Towns} />
       </section>
 
-      <section className="py-6 border-b border-(--rule) grid lg:grid-cols-2 gap-8">
+      <section className="py-6 border-b border-(--rule) grid grid-cols-[minmax(0,1fr)] lg:grid-cols-2 gap-8 [&>*]:min-w-0">
         <div>
           <h2 className="text-base font-semibold mb-1">Our four components, by town</h2>
           <p className="text-xs text-(--ink-dim) mb-3">Which rules drive each town&rsquo;s score.</p>
