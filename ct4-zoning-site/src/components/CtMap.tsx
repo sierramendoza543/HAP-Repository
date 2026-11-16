@@ -305,6 +305,11 @@ export default function CtMap({
                     fillOpacity={s && s.included ? 0.92 : 0.55}
                     stroke={code && code === hoverDistrict ? "var(--ink)" : "var(--surface)"}
                     strokeWidth={code && code === hoverDistrict ? 2 : 0.6}
+                    tabIndex={code && scores[code]?.included ? 0 : -1}
+                    aria-label={code ? `${code}${scores[code]?.included && scores[code]?.score !== null ? `: score ${scores[code]?.score?.toFixed(1)}` : " (not scored)"}` : "Unscored land"}
+                    className="outline-none"
+                    onFocus={() => setHoverDistrict(code)}
+                    onBlur={() => setHoverDistrict(null)}
                     onMouseEnter={() => setHoverDistrict(code)}
                     onMouseLeave={() => setHoverDistrict(null)}
                   />
@@ -361,6 +366,9 @@ export default function CtMap({
                 .map(([code, v]) => (
                   <li
                     key={code}
+                    tabIndex={0}
+                    onFocus={() => setHoverDistrict(code)}
+                    onBlur={() => setHoverDistrict(null)}
                     onMouseEnter={() => setHoverDistrict(code)}
                     onMouseLeave={() => setHoverDistrict(null)}
                     className={`flex items-center gap-2 rounded px-1.5 py-0.5 ${hoverDistrict === code ? "bg-(--surface-2)" : ""}`}

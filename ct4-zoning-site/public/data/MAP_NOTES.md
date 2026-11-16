@@ -42,3 +42,7 @@ All 5 CD codes present.
 - Stamford, Greenwich and Norwalk city open-data portals with plain zoning downloads were not found (Greenwich GIS is request/fee-based; Stamford and Norwalk offer only viewers).
 - All Atlas-derived files are 2022 vintage.
 - Tools: Python 3.12 + shapely 2.2 + pyshp in a scratchpad venv; downloads treated as untrusted data.
+
+
+## Update (Nov. 2026)
+Stamford: nine commercial and design polygons were given our codes by matching the 2022 atlas name (Center City North to CC, Community Business to C-B, General Commercial to C-G, Intermediate Commercial to C-I, Limited Business to C-L, Neighborhood Business to C-N, Neighborhood Mixed Use Design to NX-D, Designed Transportation Center to TCDD, Village Commercial to V-C). Not assigned: the two high-density multifamily names (Multiple Family Design High Density, which may be R-H or R-HD, and the R-H row) because the names are ambiguous. Those districts stay grey on the map and are still scored in the town data.

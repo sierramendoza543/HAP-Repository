@@ -268,8 +268,14 @@ export default function SourceViewer({ source, cite, quote, onClose }: Props) {
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4"
       onClick={onClose}
+      onKeyDown={(e) => {
+        if (e.key === "Escape") onClose();
+      }}
     >
       <div
+        role="dialog"
+        aria-modal="true"
+        aria-label={cite}
         className="bg-(--surface) text-(--ink) rounded-xl max-w-3xl w-full max-h-[88vh] flex flex-col overflow-hidden border border-(--rule)"
         onClick={(e) => e.stopPropagation()}
       >

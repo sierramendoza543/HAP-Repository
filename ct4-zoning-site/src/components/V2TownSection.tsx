@@ -97,7 +97,7 @@ function DistrictRow({ d, maxAcres, town, compare }: { d: V2District; maxAcres: 
   const color = scoreColor(d.score);
   return (
     <details className="group border border-(--rule) rounded-lg overflow-hidden bg-(--surface)">
-      <summary className="cursor-pointer list-none flex items-center gap-3 px-3 py-2.5 hover:bg-(--surface-2)">
+      <summary className="cursor-pointer list-none flex flex-wrap items-center gap-x-3 gap-y-1 px-3 py-2.5 hover:bg-(--surface-2)">
         <span className="w-20 shrink-0 text-sm font-semibold">{d.district}</span>
         <span className="flex-1 h-4 rounded bg-(--surface-2) relative overflow-hidden" aria-hidden>
           <span
@@ -153,9 +153,9 @@ function FactorRow({ f, nza }: { f: V2Factor; nza: string }) {
   const scored = f.points !== null;
   return (
     <details className="group/f border border-(--rule) rounded-md bg-(--surface)">
-      <summary className="cursor-pointer list-none flex items-center gap-3 px-3 py-2 hover:bg-(--surface-2)">
-        <span className="w-40 shrink-0 text-xs font-semibold">{f.label}</span>
-        <span className="flex-1 min-w-0 text-xs text-(--ink-dim) truncate">{f.value}</span>
+      <summary className="cursor-pointer list-none flex flex-wrap items-center gap-x-3 gap-y-1 px-3 py-2 hover:bg-(--surface-2)">
+        <span className="w-full sm:w-40 shrink-0 text-xs font-semibold">{f.label}</span>
+        <span className="flex-1 min-w-0 text-xs text-(--ink-dim) sm:truncate">{f.value}</span>
         {!f.in_score && (
           <span className="text-[10px] uppercase tracking-wide text-(--ink-faint) shrink-0">context only</span>
         )}
@@ -183,12 +183,12 @@ function FactorRow({ f, nza }: { f: V2Factor; nza: string }) {
               {f.scale.map((step) => (
                 <div
                   key={step.tier}
-                  className={`flex items-center gap-2 rounded px-2 py-1 ${step.active ? "bg-(--accent)/15 ring-1 ring-(--accent)" : ""}`}
+                  className={`flex flex-wrap items-center gap-x-2 gap-y-0.5 rounded px-2 py-1 ${step.active ? "bg-(--accent)/15 ring-1 ring-(--accent)" : ""}`}
                 >
                   <span className="w-20 shrink-0 tabular font-semibold">
                     {step.points} / {f.max_points}
                   </span>
-                  <span className="w-44 shrink-0 font-semibold">{step.label}</span>
+                  <span className="w-full sm:w-44 shrink-0 font-semibold">{step.label}</span>
                   <span className="flex-1 text-(--ink-dim)">{step.meaning}</span>
                   {step.active && <span className="text-(--accent) font-semibold shrink-0">this district</span>}
                 </div>
