@@ -99,7 +99,7 @@ export default function SourceViewer({ source, cite, quote, onClose }: Props) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const textLayerRef = useRef<HTMLDivElement>(null);
   const [status, setStatus] = useState<"loading" | "found" | "weak" | "not-found" | "error">("loading");
-  const [pageInfo, setPageInfo] = useState<{ page: number; count: number } | null>(null);
+  const [pageInfo, setPageInfo] = useState<{ page: number; count: number; matches: number } | null>(null);
 
   useEffect(() => {
     document.body.style.overflow = "hidden";
@@ -129,6 +129,7 @@ export default function SourceViewer({ source, cite, quote, onClose }: Props) {
         let targetPage = 1;
         let matchRanges: [number, number][] = [];
         let matchQuality: "found" | "weak" = "found";
+        let matchPages = 0;
         const pageItems: Item[][] = [];
 
         // Pass 1: exact (or near-exact) quote match, page by page.
@@ -140,9 +141,11 @@ export default function SourceViewer({ source, cite, quote, onClose }: Props) {
             pageItems[i] = items;
             const m = findMatch(items, quoteCompact);
             if (m) {
-              matchRanges = [m];
-              targetPage = i;
-              break;
+              matchPages += 1;
+              if (matchRanges.length === 0) {
+                matchRanges = [m];
+                targetPage = i;
+              }
             }
           }
         }
@@ -234,7 +237,7 @@ export default function SourceViewer({ source, cite, quote, onClose }: Props) {
         });
 
         if (!cancelled) {
-          setPageInfo({ page: targetPage, count: doc.numPages });
+          setPageInfo({ page: targetPage, count: doc.numPages, matches: matchPages });
           setStatus(matchRanges.length ? matchQuality : "not-found");
           if (matchRanges.length) {
             requestAnimationFrame(() => {
@@ -354,6 +357,12 @@ export default function SourceViewer({ source, cite, quote, onClose }: Props) {
                 <p className="text-xs text-(--ink-dim) mb-2">
                   Page {pageInfo.page} of {pageInfo.count}
                   {status === "found" && " — highlighted below"}
+                  {status === "found" && pageInfo.matches > 1 && (
+                    <span className="block mt-1 text-(--maybe)">
+                      This exact text appears on {pageInfo.matches} pages. The first match is shown; check the cited section
+                      number against the page before relying on it.
+                    </span>
+                  )}
                   {status === "weak" && ` — couldn't match the exact quote text, but found "${cite}" on this page (highlighted below)`}
                   {status === "not-found" && " — couldn't auto-locate this text in the mirrored PDF; shown at page 1"}
                 </p>

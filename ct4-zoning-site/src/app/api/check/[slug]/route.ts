@@ -4,11 +4,26 @@ import { getTown } from "@/lib/towns";
 
 export const runtime = "nodejs";
 
+// Each check downloads a whole source PDF, so results are cached per town for six hours.
+const CACHE_MS = 6 * 60 * 60 * 1000;
+const cache = new Map<string, { at: number; body: unknown; status: number }>();
+
 export async function GET(
   _req: NextRequest,
   { params }: { params: Promise<{ slug: string }> }
 ) {
   const { slug } = await params;
+  const hit = cache.get(slug);
+  if (hit && Date.now() - hit.at < CACHE_MS) {
+    return NextResponse.json(hit.body, { status: hit.status });
+  }
+  const res = await runCheck(slug);
+  const body = await res.clone().json();
+  cache.set(slug, { at: Date.now(), body, status: res.status });
+  return res;
+}
+
+async function runCheck(slug: string): Promise<NextResponse> {
   const town = getTown(slug);
   if (!town) {
     return NextResponse.json({ error: "Unknown town" }, { status: 404 });

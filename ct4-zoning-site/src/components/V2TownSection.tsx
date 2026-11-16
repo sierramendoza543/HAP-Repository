@@ -68,13 +68,13 @@ export default function V2TownSection({ town, compare }: { town: Town; compare?:
           </p>
         </div>
         <div className="text-right">
-          <p className="text-[11px] uppercase tracking-wide text-(--ink-faint)">Land-weighted V2 score</p>
+          <p className="text-[11px] uppercase tracking-wide text-(--ink-faint)">Land-weighted district score</p>
           <p className="text-3xl font-extrabold tabular" style={{ color: scoreColor(score) }}>
             {score?.toFixed(1) ?? "n/a"}
           </p>
           <p className="text-xs text-(--ink-dim) tabular mt-1">
             NZA-derived proxy: <span className="font-semibold text-(--ink)">{town.composite_score.toFixed(1)}</span>
-            {" "}&middot; V2 minus NZA proxy {gap >= 0 ? "+" : ""}
+            {" "}&middot; Difference from NZA proxy {gap >= 0 ? "+" : ""}
             {gap.toFixed(1)}
           </p>
         </div>

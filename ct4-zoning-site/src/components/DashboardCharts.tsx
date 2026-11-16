@@ -95,7 +95,7 @@ export function LandByScore({ towns }: { towns: Town[] }) {
             <div className="flex items-baseline justify-between mb-1">
               <Link href={`/towns/${t.slug}`} className="text-sm font-semibold hover:text-(--accent)">{t.name}</Link>
               <span className="text-xs tabular text-(--ink-dim)">
-                {t.v2!.land_weighted_score?.toFixed(1)} V2 &middot; NZA proxy {t.composite_score.toFixed(1)} &middot; {total.toLocaleString()} acres scored
+                {t.v2!.land_weighted_score?.toFixed(1)} our score &middot; NZA proxy {t.composite_score.toFixed(1)} &middot; {total.toLocaleString()} acres scored
               </span>
             </div>
             <div className="flex h-9 rounded overflow-hidden border border-(--rule)" role="img" aria-label={`${t.name} land by district score`}>
@@ -114,7 +114,7 @@ export function LandByScore({ towns }: { towns: Town[] }) {
         );
       })}
       <p className="text-[11px] text-(--ink-faint)">
-        Segment width is the district&rsquo;s share of scored land; color is its V2 score (green least restrictive, red most). Hover for details.
+        Segment width is the district&rsquo;s share of scored land; color is its district score (green least restrictive, red most). Hover for details.
       </p>
     </div>
   );
@@ -142,7 +142,7 @@ export function ComponentHeatmap({ rows }: { rows: DashboardRow[] }) {
             {labels.map((l) => (
               <th key={l} className="px-2 py-2 font-semibold text-center">{COMP_SHORT[l] ?? l}</th>
             ))}
-            <th className="px-2 py-2 font-semibold text-center">Town V2</th>
+            <th className="px-2 py-2 font-semibold text-center">Our score</th>
             <th className="px-2 py-2 font-semibold text-center">NZA proxy</th>
           </tr>
         </thead>

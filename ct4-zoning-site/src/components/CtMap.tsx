@@ -192,7 +192,7 @@ export default function CtMap({
         </div>
         <p className="text-xs text-(--ink-dim) mb-2">
           {zoom && zoomTown
-            ? `${zoomTown.name}: each district colored by its V2 score (0 = least restrictive, 100 = most). Gray districts are not scored.`
+            ? `${zoomTown.name}: each district colored by its score (0 = least restrictive, 100 = most). Gray districts are not scored.`
             : metricDef.note}
         </p>
 
@@ -290,7 +290,7 @@ export default function CtMap({
               viewBox={`0 0 ${WIDTH} ${districtView.height}`}
               className="w-full h-auto max-h-[680px] block"
               role="group"
-              aria-label={`Zoning districts of ${zoomTown?.name}, colored by V2 score`}
+              aria-label={`Zoning districts of ${zoomTown?.name}, colored by district score`}
             >
               {zoomedGeo.features.map((f, i) => {
                 const code = f.properties.code as string | null;
@@ -342,7 +342,7 @@ export default function CtMap({
               <div className="mt-2 text-sm">
                 <p className="font-semibold">{hoverDistrict}</p>
                 <p className="tabular">
-                  V2 score: <b>{hoverInfo.included && hoverInfo.score !== null ? hoverInfo.score.toFixed(1) : "not scored"}</b>
+                  Score: <b>{hoverInfo.included && hoverInfo.score !== null ? hoverInfo.score.toFixed(1) : "not scored"}</b>
                 </p>
                 <p className="tabular text-(--ink-dim)">{hoverInfo.acres.toLocaleString()} acres</p>
               </div>
