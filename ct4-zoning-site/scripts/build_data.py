@@ -1758,6 +1758,16 @@ for _d in ("AAA", "AA", "A"):
         "all other applications need a Special Permit (Art. II 1.1.2(7)(D)); owner occupancy and a deed restriction apply."
     )
 
+# Evidence fixes (Nov. 2026). Stamford's single-family-only districts take their multifamily tier from the Appendix A
+# dwelling row, where the dashes sit under each district; Bridgeport's zones state lot widths only, so an area minimum
+# cannot be quoted and the lot input is left unconfirmed.
+_ST_MF_ROW = ("stamford", "Appendix A Table I, Dwelling, Multi-Family row (dashes under RA-3 to R-6, PDF p. 438)",
+              "Dwelling, Multi\u2010Family \u2010 \u2010 \u2010 \u2010 \u2010 \u2010 \u2010 \u221a \u221a \u221a \u221a \u221a \u221a \u221a \u221a \u221a \u221a \u2010 \u2010")
+for _d in ("RA-2", "RA-1", "R-20", "R-10", "R-7 1/2"):
+    V2_CITES[("stamford", _d, "use")] = _ST_MF_ROW
+for _d in ("N1", "NX3", "NX4", "DX1", "DX2", "MX1", "MX2", "MXN", "RX2"):
+    V2_DISTRICTS["bridgeport"][_d]["lot"] = None
+
 def _pdf_compact_text(filename):
     import subprocess
     path = os.path.join(ROOT, "public", "sources", filename)

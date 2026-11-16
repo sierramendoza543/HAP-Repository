@@ -391,17 +391,17 @@
     "methodology_note": "Computed from the Variables table on this page, not from the NZA data below. Six weighted components (Multifamily Access 30pts, Approval Discretion 10pts, Minimum Lot Size 20pts, ADU Approval Pathway 15pts, Parking Mandate 10pts, Demolition Delay 15pts) are each scored against a fixed, published rubric from a specific cited fact above. Higher = more restrictive."
   },
   "v2": {
-    "land_weighted_score": 35.1,
-    "districts_included": 14,
-    "acres_included": 5638.5,
+    "land_weighted_score": 47.2,
+    "districts_included": 5,
+    "acres_included": 3472.0,
     "districts": [
       {
         "district": "N1",
         "acres": 201.3,
-        "score": 54.7,
-        "components_scored": 4,
-        "components_confirmed": 4,
-        "score_extended": 48.2,
+        "score": 74.5,
+        "components_scored": 3,
+        "components_confirmed": 3,
+        "score_extended": 63.1,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -513,10 +513,10 @@
           },
           {
             "label": "Minimum Lot Size",
-            "points": 0.0,
+            "points": null,
             "max_points": 20,
-            "reason": "The district has no lot-area minimum, so the lot component scores 0.",
-            "value": "No lot-area minimum",
+            "reason": "No lot-size rule could be confirmed for this district.",
+            "value": "Not confirmed",
             "evidence": null,
             "scale": null,
             "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
@@ -633,9 +633,10 @@
             "file": "/sources/bridgeport-zoning.pdf"
           }
         ],
-        "included": true,
-        "land_share": 3.6,
-        "contribution": 1.95
+        "included": false,
+        "land_share": null,
+        "contribution": null,
+        "exclusion_reason": "Excluded: only 3 of the 4 scored components are confirmed (all 4 are required)."
       },
       {
         "district": "N2",
@@ -891,8 +892,8 @@
           }
         ],
         "included": true,
-        "land_share": 19.5,
-        "contribution": 11.96
+        "land_share": 31.7,
+        "contribution": 19.42
       },
       {
         "district": "N3",
@@ -1148,8 +1149,8 @@
           }
         ],
         "included": true,
-        "land_share": 2.2,
-        "contribution": 1.37
+        "land_share": 3.5,
+        "contribution": 2.22
       },
       {
         "district": "N4",
@@ -1405,8 +1406,8 @@
           }
         ],
         "included": true,
-        "land_share": 14.5,
-        "contribution": 8.95
+        "land_share": 23.6,
+        "contribution": 14.54
       },
       {
         "district": "NX1",
@@ -1670,8 +1671,8 @@
           }
         ],
         "included": true,
-        "land_share": 12.4,
-        "contribution": 3.3
+        "land_share": 20.1,
+        "contribution": 5.36
       },
       {
         "district": "NX2",
@@ -1935,16 +1936,16 @@
           }
         ],
         "included": true,
-        "land_share": 13.0,
-        "contribution": 3.47
+        "land_share": 21.1,
+        "contribution": 5.63
       },
       {
         "district": "NX3",
         "acres": 471.6,
-        "score": 11.7,
-        "components_scored": 3,
-        "components_confirmed": 4,
-        "score_extended": 10.0,
+        "score": 17.5,
+        "components_scored": 2,
+        "components_confirmed": 3,
+        "score_extended": 14.0,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -2056,10 +2057,10 @@
           },
           {
             "label": "Minimum Lot Size",
-            "points": 0.0,
+            "points": null,
             "max_points": 20,
-            "reason": "The district has no lot-area minimum, so the lot component scores 0.",
-            "value": "No lot-area minimum",
+            "reason": "No lot-size rule could be confirmed for this district.",
+            "value": "Not confirmed",
             "evidence": null,
             "scale": null,
             "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
@@ -2161,17 +2162,18 @@
             "file": "/sources/bridgeport-zoning.pdf"
           }
         ],
-        "included": true,
-        "land_share": 8.4,
-        "contribution": 0.98
+        "included": false,
+        "land_share": null,
+        "contribution": null,
+        "exclusion_reason": "Excluded: only 3 of the 4 scored components are confirmed (all 4 are required)."
       },
       {
         "district": "NX4",
         "acres": 37.6,
-        "score": 11.7,
-        "components_scored": 3,
-        "components_confirmed": 4,
-        "score_extended": 10.0,
+        "score": 17.5,
+        "components_scored": 2,
+        "components_confirmed": 3,
+        "score_extended": 14.0,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -2283,10 +2285,10 @@
           },
           {
             "label": "Minimum Lot Size",
-            "points": 0.0,
+            "points": null,
             "max_points": 20,
-            "reason": "The district has no lot-area minimum, so the lot component scores 0.",
-            "value": "No lot-area minimum",
+            "reason": "No lot-size rule could be confirmed for this district.",
+            "value": "Not confirmed",
             "evidence": null,
             "scale": null,
             "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
@@ -2388,17 +2390,18 @@
             "file": "/sources/bridgeport-zoning.pdf"
           }
         ],
-        "included": true,
-        "land_share": 0.7,
-        "contribution": 0.08
+        "included": false,
+        "land_share": null,
+        "contribution": null,
+        "exclusion_reason": "Excluded: only 3 of the 4 scored components are confirmed (all 4 are required)."
       },
       {
         "district": "DX1",
         "acres": 25.5,
-        "score": 11.7,
-        "components_scored": 3,
-        "components_confirmed": 4,
-        "score_extended": 10.0,
+        "score": 17.5,
+        "components_scored": 2,
+        "components_confirmed": 3,
+        "score_extended": 14.0,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -2510,10 +2513,10 @@
           },
           {
             "label": "Minimum Lot Size",
-            "points": 0.0,
+            "points": null,
             "max_points": 20,
-            "reason": "The district has no lot-area minimum, so the lot component scores 0.",
-            "value": "No lot-area minimum",
+            "reason": "No lot-size rule could be confirmed for this district.",
+            "value": "Not confirmed",
             "evidence": null,
             "scale": null,
             "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
@@ -2615,17 +2618,18 @@
             "file": "/sources/bridgeport-zoning.pdf"
           }
         ],
-        "included": true,
-        "land_share": 0.5,
-        "contribution": 0.05
+        "included": false,
+        "land_share": null,
+        "contribution": null,
+        "exclusion_reason": "Excluded: only 3 of the 4 scored components are confirmed (all 4 are required)."
       },
       {
         "district": "DX2",
         "acres": 139.4,
-        "score": 11.7,
-        "components_scored": 3,
-        "components_confirmed": 4,
-        "score_extended": 10.0,
+        "score": 17.5,
+        "components_scored": 2,
+        "components_confirmed": 3,
+        "score_extended": 14.0,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -2737,10 +2741,10 @@
           },
           {
             "label": "Minimum Lot Size",
-            "points": 0.0,
+            "points": null,
             "max_points": 20,
-            "reason": "The district has no lot-area minimum, so the lot component scores 0.",
-            "value": "No lot-area minimum",
+            "reason": "No lot-size rule could be confirmed for this district.",
+            "value": "Not confirmed",
             "evidence": null,
             "scale": null,
             "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
@@ -2842,17 +2846,18 @@
             "file": "/sources/bridgeport-zoning.pdf"
           }
         ],
-        "included": true,
-        "land_share": 2.5,
-        "contribution": 0.29
+        "included": false,
+        "land_share": null,
+        "contribution": null,
+        "exclusion_reason": "Excluded: only 3 of the 4 scored components are confirmed (all 4 are required)."
       },
       {
         "district": "MX1",
         "acres": 113.2,
-        "score": 11.7,
-        "components_scored": 3,
-        "components_confirmed": 4,
-        "score_extended": 10.0,
+        "score": 17.5,
+        "components_scored": 2,
+        "components_confirmed": 3,
+        "score_extended": 14.0,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -2964,10 +2969,10 @@
           },
           {
             "label": "Minimum Lot Size",
-            "points": 0.0,
+            "points": null,
             "max_points": 20,
-            "reason": "The district has no lot-area minimum, so the lot component scores 0.",
-            "value": "No lot-area minimum",
+            "reason": "No lot-size rule could be confirmed for this district.",
+            "value": "Not confirmed",
             "evidence": null,
             "scale": null,
             "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
@@ -3069,17 +3074,18 @@
             "file": "/sources/bridgeport-zoning.pdf"
           }
         ],
-        "included": true,
-        "land_share": 2.0,
-        "contribution": 0.23
+        "included": false,
+        "land_share": null,
+        "contribution": null,
+        "exclusion_reason": "Excluded: only 3 of the 4 scored components are confirmed (all 4 are required)."
       },
       {
         "district": "MX2",
         "acres": 190.4,
-        "score": 11.7,
-        "components_scored": 3,
-        "components_confirmed": 4,
-        "score_extended": 10.0,
+        "score": 17.5,
+        "components_scored": 2,
+        "components_confirmed": 3,
+        "score_extended": 14.0,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -3191,10 +3197,10 @@
           },
           {
             "label": "Minimum Lot Size",
-            "points": 0.0,
+            "points": null,
             "max_points": 20,
-            "reason": "The district has no lot-area minimum, so the lot component scores 0.",
-            "value": "No lot-area minimum",
+            "reason": "No lot-size rule could be confirmed for this district.",
+            "value": "Not confirmed",
             "evidence": null,
             "scale": null,
             "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
@@ -3296,17 +3302,18 @@
             "file": "/sources/bridgeport-zoning.pdf"
           }
         ],
-        "included": true,
-        "land_share": 3.4,
-        "contribution": 0.4
+        "included": false,
+        "land_share": null,
+        "contribution": null,
+        "exclusion_reason": "Excluded: only 3 of the 4 scored components are confirmed (all 4 are required)."
       },
       {
         "district": "MXN",
         "acres": 7.0,
-        "score": 26.7,
-        "components_scored": 3,
-        "components_confirmed": 4,
-        "score_extended": 22.9,
+        "score": 40.0,
+        "components_scored": 2,
+        "components_confirmed": 3,
+        "score_extended": 32.0,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -3418,10 +3425,10 @@
           },
           {
             "label": "Minimum Lot Size",
-            "points": 0.0,
+            "points": null,
             "max_points": 20,
-            "reason": "The district has no lot-area minimum, so the lot component scores 0.",
-            "value": "No lot-area minimum",
+            "reason": "No lot-size rule could be confirmed for this district.",
+            "value": "Not confirmed",
             "evidence": null,
             "scale": null,
             "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
@@ -3523,17 +3530,18 @@
             "file": "/sources/bridgeport-zoning.pdf"
           }
         ],
-        "included": true,
-        "land_share": 0.1,
-        "contribution": 0.03
+        "included": false,
+        "land_share": null,
+        "contribution": null,
+        "exclusion_reason": "Excluded: only 3 of the 4 scored components are confirmed (all 4 are required)."
       },
       {
         "district": "RX2",
         "acres": 980.5,
-        "score": 11.7,
-        "components_scored": 3,
-        "components_confirmed": 4,
-        "score_extended": 10.0,
+        "score": 17.5,
+        "components_scored": 2,
+        "components_confirmed": 3,
+        "score_extended": 14.0,
         "factors": [
           {
             "label": "Multifamily Access",
@@ -3645,10 +3653,10 @@
           },
           {
             "label": "Minimum Lot Size",
-            "points": 0.0,
+            "points": null,
             "max_points": 20,
-            "reason": "The district has no lot-area minimum, so the lot component scores 0.",
-            "value": "No lot-area minimum",
+            "reason": "No lot-size rule could be confirmed for this district.",
+            "value": "Not confirmed",
             "evidence": null,
             "scale": null,
             "scale_note": "Scored on a log scale: lots at or below 2,500 sq ft score 0; lots of 174,240 sq ft (4 acres) or more score 20.",
@@ -3750,9 +3758,10 @@
             "file": "/sources/bridgeport-zoning.pdf"
           }
         ],
-        "included": true,
-        "land_share": 17.4,
-        "contribution": 2.03
+        "included": false,
+        "land_share": null,
+        "contribution": null,
+        "exclusion_reason": "Excluded: only 3 of the 4 scored components are confirmed (all 4 are required)."
       }
     ],
     "formula": "V2 = sum(district score x acres) / sum(acres) over included districts",
